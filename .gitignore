@@ -5,6 +5,9 @@ dist/
 coverage/
 playwright-report/
 test-results/
+# Ingest pipeline scratch space (Codex draft fragments) — never committed; only the
+# final data/propositions/<slug>.json result is.
+data/propositions/.drafts/
 .env
 .env.*
 !.env.example
