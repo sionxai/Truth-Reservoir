@@ -1,0 +1,35 @@
+name: CI
+
+# Required status checks for the protected branch (PRD §3 / §10):
+# validate + hash:verify must pass before merge. Configure branch protection in
+# GitHub repo settings to require these checks, PR review, and no force-push.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Schema integrity (Zod, claimNature enforcement)
+        run: npm run validate
+      - name: Hash reproduction (propositionId/versionId/certHash/spanHash)
+        run: npm run hash:verify
+      - name: Emit machine-readable contracts
+        run: npm run schema:emit
+      - name: Unit + integration tests
+        run: npm test
+      - name: Static build (export + /public/api/v2)
+        run: npm run build
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+      - name: E2E + accessibility
+        run: npm run test:e2e

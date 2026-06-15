@@ -4,8 +4,9 @@ import { DetailActions } from "../../components/DetailActions";
 import { EvidenceNetwork } from "../../components/EvidenceNetwork";
 import { GradePanel } from "../../components/GradePanel";
 import { ReviewLogViewer } from "../../components/ReviewLogViewer";
+import { InstitutionalBanner } from "../../components/InstitutionalBanner";
 import { legalStatusLabels } from "../../../lib/display.ts";
-import { loadPropositions } from "../../../lib/data.ts";
+import { loadInstitutionalMetrics, loadPropositions } from "../../../lib/data.ts";
 import { decodePropositionId, encodePropositionId } from "../../../lib/ids.ts";
 
 type PageProps = {
@@ -29,6 +30,8 @@ export default async function PropositionDetailPage({ params }: PageProps) {
   if (!proposition) {
     notFound();
   }
+
+  const metrics = await loadInstitutionalMetrics();
 
   return (
     <main className="detail-page">
@@ -55,6 +58,8 @@ export default async function PropositionDetailPage({ params }: PageProps) {
         </div>
         <DetailActions proposition={proposition} />
       </div>
+
+      <InstitutionalBanner metrics={metrics} />
     </main>
   );
 }
