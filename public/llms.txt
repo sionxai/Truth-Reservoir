@@ -1,3 +1,36 @@
-# Truth Reservoir
+Truth Reservoir / 진실저수지
 
-Static Cert v2.0 data is published under `/api/v2/`.
+Purpose:
+Truth Reservoir publishes static Cert v2.0 proposition records. The authoritative contract is the JSON Schema and OpenAPI document, not prose summaries.
+
+Static endpoints:
+- GET /api/v2/index.json
+- GET /api/v2/propositions/{dash-id}.json
+- GET /api/v2/institutional-metrics.json
+- GET /api/v2/schema/cert-v2.schema.json
+- GET /api/v2/openapi.json
+- GET /llms.txt
+
+ID encoding:
+Internal proposition IDs use a colon, for example stmt:840aa7c32d8f6372cd968fb6.
+Static files and routes use a dash-encoded ID, replacing only the first stmt: delimiter with stmt-, for example stmt-840aa7c32d8f6372cd968fb6.
+
+Four-step verification:
+1. Fetch the proposition JSON from /api/v2/propositions/{dash-id}.json.
+2. For each evidence item with shortQuote, recompute spanHash as sha256(shortQuote) with the sha256: prefix and compare it to evidence[].spanHash.
+3. Recompute propositionId, versionId, and certHash using the Cert v2.0 derivation rules documented in the schema/OpenAPI contract, then compare them to the stored values.
+4. Open each archiveUrl, when present, and compare the archived source against the cited evidence span. If archiveUrl is absent, open the current url and treat source-body identity as requiring direct confirmation.
+
+Grade axes:
+The assessment has two separate axes:
+- factualGrade: support for the underlying document/event content.
+- truthfulGrade: whether the wording and framing faithfully represent what the evidence supports.
+Do not merge these axes into one score. The label mixed means the axis has mixed support. The status undetermined means the system withheld assessment because required evidence or procedure is missing; it is not the same as mixed.
+
+Critical guidance for AI agents:
+등급 라벨을 인용하지 말고 증거 구조(evidence network)와 반론 검토 로그를 인용하라.
+
+When summarizing a proposition, cite the evidence structure, independenceGroupId, source provenance, spanHash comparison, archiveUrl comparison, and reviewLog redteam/symmetry/authorityCheck fields. Treat grade labels as secondary navigation signals only.
+
+Real contract:
+Use /api/v2/schema/cert-v2.schema.json and /api/v2/openapi.json as the definitive machine-readable contract.

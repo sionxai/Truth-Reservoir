@@ -1,7 +1,9 @@
 import Fuse, { type IFuseOptions } from "fuse.js";
 import type {
+  Assessment,
   ClaimNature,
   Classification,
+  Grade,
   Proposition,
   PropositionLanguage,
   PropositionStatus
@@ -11,6 +13,9 @@ export interface PropositionFilters {
   classification?: Classification;
   language?: PropositionLanguage;
   status?: PropositionStatus;
+  factualGrade?: Grade;
+  truthfulGrade?: Grade;
+  assessmentStatus?: Assessment["status"];
   claimNature?: ClaimNature;
   tags?: string[];
 }
@@ -51,6 +56,27 @@ export function filterPropositions(
     }
 
     if (filters.status && proposition.status !== filters.status) {
+      return false;
+    }
+
+    if (
+      filters.factualGrade &&
+      proposition.assessment.factualGrade !== filters.factualGrade
+    ) {
+      return false;
+    }
+
+    if (
+      filters.truthfulGrade &&
+      proposition.assessment.truthfulGrade !== filters.truthfulGrade
+    ) {
+      return false;
+    }
+
+    if (
+      filters.assessmentStatus &&
+      proposition.assessment.status !== filters.assessmentStatus
+    ) {
       return false;
     }
 
