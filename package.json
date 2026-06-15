@@ -10,6 +10,7 @@
     "start": "node --input-type=module -e \"console.log('Truth Reservoir is static-export only. Run npm run build, then serve the out/ directory with any static file server.')\"",
     "validate": "node node_modules/tsx/dist/cli.mjs scripts/validate.ts",
     "hash:verify": "node node_modules/tsx/dist/cli.mjs scripts/hash-verify.ts",
+    "hash:apply": "node node_modules/tsx/dist/cli.mjs scripts/apply-hashes.ts",
     "schema:emit": "node node_modules/tsx/dist/cli.mjs scripts/schema-emit.ts",
     "test": "vitest run",
     "test:e2e": "playwright test"
