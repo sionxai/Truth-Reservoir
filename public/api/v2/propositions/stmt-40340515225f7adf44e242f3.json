@@ -1,8 +1,8 @@
 {
   "certVersion": "2.0",
   "propositionId": "stmt:40340515225f7adf44e242f3",
-  "versionId": "ver:a84eaee916267207",
-  "certHash": "sha256:44350b89660ebb81462259e3cb6e142f585c759a8f8298158798052d828a01ea",
+  "versionId": "ver:ddf84e85255cc6e1",
+  "certHash": "sha256:8a802e48b3a563753c644edf5287873478e34ba25ff2da1acdb52929e0a3d469",
   "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
   "claimNature": "event_occurrence",
   "classification": "F",

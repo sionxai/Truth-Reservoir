@@ -2,6 +2,10 @@
 
 :root {
   --color-primary: #1f6feb;
+  /* Link text needs >=4.5:1 on --color-background; #1f6feb measures only 4.08:1,
+     so text links use a lighter blue (Primer dark link, ~7:1) while #1f6feb
+     stays for action fills, borders, and focus rings. (PRD §12.2/§12.7) */
+  --color-link: #58a6ff;
   --color-secondary: #6e7681;
   --color-background: #0d1117;
   --color-surface: #161b22;
@@ -54,9 +58,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    linear-gradient(180deg, rgb(31 111 235 / 8%), transparent 320px),
-    var(--color-background);
+  /* Solid background only — no decorative gradients (DNG1). */
+  background: var(--color-background);
   color: var(--color-text);
 }
 
@@ -65,13 +68,13 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-link);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: #58a6ff;
+  color: #79c0ff;
 }
 
 :focus-visible {

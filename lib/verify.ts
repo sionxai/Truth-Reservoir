@@ -1,5 +1,5 @@
 import { sha256hex, sha256Prefixed } from "./hash.ts";
-import type { Assessment, EvidenceItem, Proposition, PropositionLanguage } from "./types.ts";
+import type { EvidenceItem, Proposition, PropositionLanguage } from "./types.ts";
 
 type JsonObject = Record<string, unknown>;
 
@@ -73,12 +73,18 @@ export async function derivePropositionId(
   return `stmt:${digest.slice(0, 24)}`;
 }
 
-export async function deriveVersionId(
-  propositionId: string,
-  assessment: Assessment,
-  updatedAt: string
-): Promise<string> {
-  const digest = await sha256hex(`${propositionId}|${canonicalize(assessment)}|${updatedAt}`);
+/**
+ * versionId identifies a distinct verification version. It is derived from the
+ * FULL cert content (every field except versionId and certHash) so that ANY
+ * material change to the verification — assessment, reviewer, asOfDate, evidence,
+ * corrections, updatedAt — yields a new versionId. This closes the silent-edit
+ * gap (PRD §0/G5: 조용한 수정 금지): a changed reviewer or asOfDate that did not
+ * bump updatedAt would otherwise share the previous versionId. propositionId
+ * stays stable (separate derivation) so URLs survive corrections.
+ */
+export async function deriveVersionId(cert: Proposition): Promise<string> {
+  const { versionId: _versionId, certHash: _certHash, ...versionedContent } = cert;
+  const digest = await sha256hex(canonicalize(versionedContent));
   return `ver:${digest.slice(0, 16)}`;
 }
 
@@ -108,7 +114,7 @@ export async function deriveHashes(cert: Proposition): Promise<DerivedHashes> {
     }))
   );
 
-  const versionId = await deriveVersionId(propositionId, nextCert.assessment, nextCert.updatedAt);
+  const versionId = await deriveVersionId(nextCert);
   nextCert.versionId = versionId;
 
   const certHash = await deriveCertHash(nextCert);
@@ -141,11 +147,7 @@ export async function applyDerivedHashes(cert: Proposition): Promise<Proposition
     }))
   );
 
-  nextCert.versionId = await deriveVersionId(
-    nextCert.propositionId,
-    nextCert.assessment,
-    nextCert.updatedAt
-  );
+  nextCert.versionId = await deriveVersionId(nextCert);
   nextCert.certHash = await deriveCertHash(nextCert);
 
   return nextCert;
@@ -195,7 +197,7 @@ export async function verifyPropositionHashes(cert: Proposition): Promise<HashMi
 /*
  * Cert v2 identity derivation:
  * - propositionId = "stmt:" + sha256hex(normalizeProposition(canonicalProposition) + "\n" + language).slice(0, 24)
- * - versionId = "ver:" + sha256hex(propositionId + "|" + canonicalJson(assessment) + "|" + updatedAt).slice(0, 16)
+ * - versionId = "ver:" + sha256hex(canonicalJson(cert without versionId & certHash)).slice(0, 16)
  * - certHash = "sha256:" + sha256hex(canonicalJson(certWithoutCertHash))
  * - spanHash = "sha256:" + sha256hex(shortQuote)
  *

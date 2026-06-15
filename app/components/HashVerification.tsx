@@ -70,20 +70,18 @@ export function HashVerification({ proposition }: HashVerificationProps) {
           proposition.canonicalProposition,
           proposition.language
         );
-        const versionId = await deriveVersionId(
-          propositionId,
-          proposition.assessment,
-          proposition.updatedAt
-        );
         const reconstructed = structuredClone(proposition);
         reconstructed.propositionId = propositionId;
-        reconstructed.versionId = versionId;
         reconstructed.evidence = reconstructed.evidence.map((evidence, index) => {
           const spanCheck = spanChecks[index];
           return spanCheck?.status === "match" || spanCheck?.status === "mismatch"
             ? { ...evidence, spanHash: spanCheck.actual }
             : evidence;
         });
+        // versionId is derived from the full reconstructed cert (minus versionId/certHash),
+        // matching applyDerivedHashes ordering: propositionId + spanHashes set first.
+        const versionId = await deriveVersionId(reconstructed);
+        reconstructed.versionId = versionId;
         const certHash = await deriveCertHash(reconstructed);
 
         const versionChecks: HashCheck[] = [

@@ -11,8 +11,8 @@
     "validate": "node node_modules/tsx/dist/cli.mjs scripts/validate.ts",
     "hash:verify": "node node_modules/tsx/dist/cli.mjs scripts/hash-verify.ts",
     "schema:emit": "node node_modules/tsx/dist/cli.mjs scripts/schema-emit.ts",
-    "test": "node -e \"console.log('No unit tests configured yet.')\"",
-    "test:e2e": "node -e \"console.log('No e2e tests configured yet.')\""
+    "test": "vitest run",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "fuse.js": "7.4.2",
@@ -24,12 +24,15 @@
     "zod-to-json-schema": "3.25.2"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
+    "@playwright/test": "^1.61.0",
     "@tailwindcss/postcss": "4.3.1",
     "@types/node": "25.9.3",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "tailwindcss": "4.3.1",
     "tsx": "4.22.4",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "vitest": "^4.1.9"
   }
 }

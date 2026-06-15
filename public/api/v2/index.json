@@ -3,8 +3,8 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:52e6260a60e04599d809ae61",
-      "versionId": "ver:7e6277d739b6b3fd",
-      "certHash": "sha256:dd369881559b5c12872ed6547fe6a2e3f89719f12323dcde6b3cd135836fdd1e",
+      "versionId": "ver:00d4d7e5b6ded357",
+      "certHash": "sha256:0cdc03b8408937228e7a7d8835f67273c5122872960ad0aec22345568320fb74",
       "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
       "claimNature": "document_content",
       "classification": "F",
@@ -97,8 +97,8 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-      "versionId": "ver:5c84f914fe950542",
-      "certHash": "sha256:0ee2fbbc46ca52e89c35ad95e6c914da1d0c93136ebc159144272d4fa64c7691",
+      "versionId": "ver:7d4eceead2caadc9",
+      "certHash": "sha256:f32b61fc6dcf07cbdc815751f67737c2170d5253e4c0cc52ae48b1f52937c784",
       "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
       "claimNature": "document_content",
       "classification": "F",
@@ -192,8 +192,8 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:40340515225f7adf44e242f3",
-      "versionId": "ver:a84eaee916267207",
-      "certHash": "sha256:44350b89660ebb81462259e3cb6e142f585c759a8f8298158798052d828a01ea",
+      "versionId": "ver:ddf84e85255cc6e1",
+      "certHash": "sha256:8a802e48b3a563753c644edf5287873478e34ba25ff2da1acdb52929e0a3d469",
       "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
       "claimNature": "event_occurrence",
       "classification": "F",
