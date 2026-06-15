@@ -1,0 +1,338 @@
+{
+  "data": [
+    {
+      "certVersion": "2.0",
+      "propositionId": "stmt:52e6260a60e04599d809ae61",
+      "versionId": "ver:7e6277d739b6b3fd",
+      "certHash": "sha256:dd369881559b5c12872ed6547fe6a2e3f89719f12323dcde6b3cd135836fdd1e",
+      "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
+      "claimNature": "document_content",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-15",
+      "status": "active",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "truthfulGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "법률 제10465호 부칙 제1조의 시행일 문구가 명제의 인용문과 일치한다.",
+        "rubricVersion": "rubric-2.1",
+        "pipelineVersion": "pipeline-2.1"
+      },
+      "evidence": [
+        {
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
+          "title": "개인정보 보호법 법률 제10465호 부칙 제1조",
+          "retrievedAt": "2026-06-15T00:00:00Z",
+          "evidenceSpans": [
+            {
+              "start": 120,
+              "end": 145
+            }
+          ],
+          "spanHash": "sha256:4b0e56522eb80a38250462e01cdb3644b3c41d4df3a7c1f75ace48639162297c",
+          "shortQuote": "공포 후 6개월이 경과한 날부터 시행한다",
+          "retrievalMethod": "official_gazette",
+          "retrievalLimitations": "연혁 법령 표시에서 부칙 접힘 여부에 따라 수동 펼침이 필요할 수 있다.",
+          "independenceGroupId": "law-go-kr-act-10465",
+          "independenceLevel": "independent",
+          "independenceNote": "원문 법령의 부칙 조문으로 문언 확인에 직접 독립성을 가진다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "국가법령정보센터는 부칙 원문 확인에 적합한 공식 출처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "공포 후 6개월의 계산 결과가 9월 30일인지 여부가 명제에 영향을 줄 수 있다.",
+          "response": "명제는 계산된 시행일이 아니라 부칙 원문 문구만 검증하도록 범위를 제한했다.",
+          "errorsFound": 0,
+          "framingChecks": "계산일 논쟁을 원문 문구 검증과 분리해 과잉 결론을 피했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "부칙 제1조가 다른 시행 문구를 가진다는 반대 가능성을 원문 문구로 확인했다.",
+          "result": "원문은 명제의 인용문을 직접 지지한다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "출처 권위보다 조문 문구 자체의 일치 여부를 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "foundation-seed",
+          "date": "2026-06-15",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "부칙 제1조의 원문 인용 범위를 확인했다.",
+          "adoptedReason": "원문 문구가 명제의 따옴표 문장과 실질적으로 일치한다.",
+          "rejectedAlternatives": "시행일을 2011년 9월 30일로 계산하는 별도 명제는 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "limitations": "'시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.",
+      "tags": [
+        "privacy",
+        "law-10465",
+        "addendum"
+      ],
+      "createdAt": "2026-06-15T00:00:00Z",
+      "updatedAt": "2026-06-15T00:00:00Z"
+    },
+    {
+      "certVersion": "2.0",
+      "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
+      "versionId": "ver:5c84f914fe950542",
+      "certHash": "sha256:0ee2fbbc46ca52e89c35ad95e6c914da1d0c93136ebc159144272d4fa64c7691",
+      "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
+      "claimNature": "document_content",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-15",
+      "status": "active",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "truthfulGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "부칙 제2조는 구 공공기관 개인정보보호 법률의 폐지를 직접 규정한다.",
+        "gradeDivergenceNote": "폐지 사실은 원문으로 완전하게 확인되지만 '후신'이라는 표현은 제도적 대체 관계를 요약하는 해석 요소가 있어 진실성 평가는 한 단계 낮췄다.",
+        "rubricVersion": "rubric-2.1",
+        "pipelineVersion": "pipeline-2.1"
+      },
+      "evidence": [
+        {
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
+          "title": "개인정보 보호법 법률 제10465호 부칙 제2조",
+          "retrievedAt": "2026-06-15T00:00:00Z",
+          "evidenceSpans": [
+            {
+              "start": 210,
+              "end": 238
+            }
+          ],
+          "spanHash": "sha256:0fc648fc50957f215003060b59fd3a124505e040a94a9098df421a7cb1578b3d",
+          "shortQuote": "공공기관의 개인정보보호에 관한 법률은 폐지한다",
+          "retrievalMethod": "official_gazette",
+          "retrievalLimitations": "부칙 제2조의 폐지 조문은 확인되지만 후신이라는 요약 표현은 별도 제도사 설명이 필요할 수 있다.",
+          "independenceGroupId": "law-go-kr-act-10465",
+          "independenceLevel": "independent",
+          "independenceNote": "폐지 조문 자체는 원문 법령에서 직접 확인된다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "국가법령정보센터는 폐지 부칙 확인에 적합한 공식 출처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "'후신'은 법률 문구가 아니라 제도적 평가에 가까울 수 있다.",
+          "response": "폐지 조문은 사실로 채택하되 후신 표현의 해석 여지는 gradeDivergenceNote와 truthfulGrade에 반영했다.",
+          "errorsFound": 0,
+          "framingChecks": "폐지 조문과 제도적 후속 관계를 구분해 표현했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "구 법률이 폐지되지 않았다는 반대 명제를 부칙 제2조 원문으로 대조했다.",
+          "result": "부칙 제2조가 폐지를 명시해 반대 명제는 지지되지 않는다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "공식 법령 출처를 사용하되 후신 표현의 해석 요소를 별도로 제한했다."
+        },
+        "humanReview": {
+          "reviewer": "foundation-seed",
+          "date": "2026-06-15",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "폐지 조문은 직접 확인했고 후신 표현은 제한적으로 수용했다.",
+          "adoptedReason": "부칙 제2조의 폐지 문구가 명제의 핵심 사실을 뒷받침한다.",
+          "rejectedAlternatives": "후신 표현을 완전한 법적 동일성 주장으로 확대하는 해석은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "limitations": "폐지 조문 확인에 초점을 두며 '후신' 표현은 제도적 연속성을 요약한 제한적 표현이다.",
+      "tags": [
+        "privacy",
+        "law-10465",
+        "repeal"
+      ],
+      "createdAt": "2026-06-15T00:00:00Z",
+      "updatedAt": "2026-06-15T00:00:00Z"
+    },
+    {
+      "certVersion": "2.0",
+      "propositionId": "stmt:40340515225f7adf44e242f3",
+      "versionId": "ver:a84eaee916267207",
+      "certHash": "sha256:44350b89660ebb81462259e3cb6e142f585c759a8f8298158798052d828a01ea",
+      "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-15",
+      "status": "active",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "truthfulGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "법령 원문과 정책브리핑 자료가 법률 제10465호의 공포일을 같은 날짜로 지시한다.",
+        "rubricVersion": "rubric-2.1",
+        "pipelineVersion": "pipeline-2.1"
+      },
+      "evidence": [
+        {
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
+          "title": "개인정보 보호법 법률 제10465호 공포문 및 부칙",
+          "retrievedAt": "2026-06-15T00:00:00Z",
+          "evidenceSpans": [
+            {
+              "start": 0,
+              "end": 15
+            }
+          ],
+          "spanHash": "sha256:e0fdf97afec5f67f46dc8bf9e9292386346a4178be2211d7c0538be4fd35fc25",
+          "shortQuote": "2011년 3월 29일 공포",
+          "retrievalMethod": "official_gazette",
+          "retrievalLimitations": "법령정보 페이지의 현행/연혁 전환에 따라 표시 형식이 달라질 수 있다.",
+          "independenceGroupId": "law-go-kr-act-10465",
+          "independenceLevel": "independent",
+          "independenceNote": "법령 원문 생산기관 자료로 2차 보도와 독립된 원천이다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "국가법령정보센터는 법령 원문 확인에 적합한 공식 출처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=155749843",
+          "title": "정책브리핑 개인정보 보호법 공포 관련 자료",
+          "retrievedAt": "2026-06-15T00:00:00Z",
+          "evidenceSpans": [
+            {
+              "start": 48,
+              "end": 60
+            }
+          ],
+          "spanHash": "sha256:5b5b5ffc102dfb59a3c5e168d9ffbe99c9eaa93b2f3c8dc4d4e9e799d5e96d5c",
+          "shortQuote": "개인정보 보호법 공포",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "정책브리핑 자료는 2차 설명 성격이므로 원문 법령과 함께 대조했다.",
+          "independenceGroupId": "korea-kr-policy-briefing",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "정부 정책 설명 자료로 법령 원문과 생산 체계가 일부 공유된다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "공식 정책 설명 자료로 공포 사실 확인의 보조 출처로 적합하다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "정책 설명 자료만으로는 공포일을 확정하기 어렵다.",
+          "response": "법령 원문 출처가 같은 공포일을 제공하므로 정책 자료는 보조 증거로만 사용했다.",
+          "errorsFound": 0,
+          "framingChecks": "공포일 사실만 다루고 법의 평가나 정책 효과 주장은 제외했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "공포되지 않았다는 반대 명제의 직접 증거 가능성을 원문 법령 기준으로 확인했다.",
+          "result": "원문 법령상 공포일이 명시되어 반대 명제는 지지되지 않는다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "권위 출처를 이유로 결론을 대체하지 않고 원문 표시와 날짜를 직접 대조했다."
+        },
+        "humanReview": {
+          "reviewer": "foundation-seed",
+          "date": "2026-06-15",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "법령 원문과 보조 자료의 날짜 일치를 확인했다.",
+          "adoptedReason": "원문 법령의 공포일 표기가 명제를 직접 지지한다.",
+          "rejectedAlternatives": "정책 효과나 시행 이후 평가까지 포함하는 넓은 명제는 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "limitations": "공포일 확인에 한정하며 법률의 시행 효과나 사회적 평가는 판단하지 않는다.",
+      "tags": [
+        "privacy",
+        "law-10465",
+        "promulgation"
+      ],
+      "createdAt": "2026-06-15T00:00:00Z",
+      "updatedAt": "2026-06-15T00:00:00Z"
+    }
+  ],
+  "meta": {
+    "total": 3,
+    "dataVersion": "2026.06.15",
+    "certVersion": "2.0",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "institutionalMetrics": {
+      "path": "/api/v2/institutional-metrics.json",
+      "status": "unestablished",
+      "totalPropositionsVerified": 3
+    },
+    "propositions": [
+      {
+        "propositionId": "stmt:52e6260a60e04599d809ae61",
+        "path": "/api/v2/propositions/stmt-52e6260a60e04599d809ae61.json"
+      },
+      {
+        "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
+        "path": "/api/v2/propositions/stmt-840aa7c32d8f6372cd968fb6.json"
+      },
+      {
+        "propositionId": "stmt:40340515225f7adf44e242f3",
+        "path": "/api/v2/propositions/stmt-40340515225f7adf44e242f3.json"
+      }
+    ]
+  }
+}

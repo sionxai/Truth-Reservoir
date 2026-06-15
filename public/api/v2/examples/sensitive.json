@@ -1,0 +1,96 @@
+{
+  "certVersion": "2.0",
+  "propositionId": "stmt:52e6260a60e04599d809ae61",
+  "versionId": "ver:37c30cf0f7ad7341",
+  "certHash": "sha256:b9a6b3c7344a393de1f9934cef7ad6f33b729ee80f448bd9d1954e9e2cd0a925",
+  "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
+  "claimNature": "document_content",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-15",
+  "status": "active",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "truthfulGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "법률 제10465호 부칙 제1조의 시행일 문구가 명제의 인용문과 일치한다.",
+    "rubricVersion": "rubric-2.1",
+    "pipelineVersion": "pipeline-2.1"
+  },
+  "evidence": [
+    {
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
+      "title": "개인정보 보호법 법률 제10465호 부칙 제1조",
+      "retrievedAt": "2026-06-15T00:00:00Z",
+      "evidenceSpans": [
+        {
+          "start": 120,
+          "end": 145
+        }
+      ],
+      "spanHash": "sha256:4b0e56522eb80a38250462e01cdb3644b3c41d4df3a7c1f75ace48639162297c",
+      "shortQuote": "공포 후 6개월이 경과한 날부터 시행한다",
+      "retrievalMethod": "official_gazette",
+      "retrievalLimitations": "연혁 법령 표시에서 부칙 접힘 여부에 따라 수동 펼침이 필요할 수 있다.",
+      "independenceGroupId": "law-go-kr-act-10465",
+      "independenceLevel": "independent",
+      "independenceNote": "원문 법령의 부칙 조문으로 문언 확인에 직접 독립성을 가진다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "국가법령정보센터는 부칙 원문 확인에 적합한 공식 출처다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "공포 후 6개월의 계산 결과가 9월 30일인지 여부가 명제에 영향을 줄 수 있다.",
+      "response": "명제는 계산된 시행일이 아니라 부칙 원문 문구만 검증하도록 범위를 제한했다.",
+      "errorsFound": 0,
+      "framingChecks": "계산일 논쟁을 원문 문구 검증과 분리해 과잉 결론을 피했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "부칙 제1조가 다른 시행 문구를 가진다는 반대 가능성을 원문 문구로 확인했다.",
+      "result": "원문은 명제의 인용문을 직접 지지한다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "출처 권위보다 조문 문구 자체의 일치 여부를 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "foundation-seed",
+      "date": "2026-06-15",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "부칙 제1조의 원문 인용 범위를 확인했다.",
+      "adoptedReason": "원문 문구가 명제의 따옴표 문장과 실질적으로 일치한다.",
+      "rejectedAlternatives": "시행일을 2011년 9월 30일로 계산하는 별도 명제는 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "allegation",
+    "presumptionNotice": "민감 예시 문서는 사실확정이 아닌 검증 절차 설명용이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "limitations": "'시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.",
+  "tags": [
+    "privacy",
+    "law-10465",
+    "addendum"
+  ],
+  "createdAt": "2026-06-15T00:00:00Z",
+  "updatedAt": "2026-06-15T00:00:03Z"
+}

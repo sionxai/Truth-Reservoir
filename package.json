@@ -1,0 +1,35 @@
+{
+  "name": "truth-reservoir",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node node_modules/next/dist/bin/next dev",
+    "build": "node node_modules/tsx/dist/cli.mjs scripts/schema-emit.ts && node node_modules/tsx/dist/cli.mjs scripts/build-api.ts && node node_modules/next/dist/bin/next build",
+    "build-api": "node node_modules/tsx/dist/cli.mjs scripts/build-api.ts",
+    "start": "node --input-type=module -e \"console.log('Truth Reservoir is static-export only. Run npm run build, then serve the out/ directory with any static file server.')\"",
+    "validate": "node node_modules/tsx/dist/cli.mjs scripts/validate.ts",
+    "hash:verify": "node node_modules/tsx/dist/cli.mjs scripts/hash-verify.ts",
+    "schema:emit": "node node_modules/tsx/dist/cli.mjs scripts/schema-emit.ts",
+    "test": "node -e \"console.log('No unit tests configured yet.')\"",
+    "test:e2e": "node -e \"console.log('No e2e tests configured yet.')\""
+  },
+  "dependencies": {
+    "fuse.js": "7.4.2",
+    "next": "15.5.19",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-markdown": "9.1.0",
+    "zod": "4.4.3",
+    "zod-to-json-schema": "3.25.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.1",
+    "@types/node": "25.9.3",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "tailwindcss": "4.3.1",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "totalPropositionsVerified": 3,
+  "measuredErrorRate": {
+    "value": null,
+    "unit": "ratio",
+    "sampleSize": 0,
+    "periodStart": "2026-06-15",
+    "periodEnd": "2026-06-15",
+    "method": "미측정(표본 부족)",
+    "status": "unmeasured_insufficient_sample"
+  },
+  "externalAudits": [],
+  "status": "unestablished"
+}

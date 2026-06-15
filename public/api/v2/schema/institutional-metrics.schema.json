@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truthreservoir.example/api/v2/schema/institutional-metrics.schema.json",
+  "type": "object",
+  "properties": {
+    "totalPropositionsVerified": {
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "measuredErrorRate": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "const": "ratio"
+        },
+        "sampleSize": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "periodStart": {
+          "type": "string"
+        },
+        "periodEnd": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "measured",
+            "unmeasured_insufficient_sample"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "sampleSize",
+        "periodStart",
+        "periodEnd",
+        "method",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "externalAudits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "auditor": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "reportUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "sampleSize": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "findingsSummary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "auditor",
+          "date",
+          "reportUrl",
+          "sampleSize",
+          "findingsSummary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "established",
+        "unestablished"
+      ]
+    }
+  },
+  "required": [
+    "totalPropositionsVerified",
+    "measuredErrorRate",
+    "externalAudits",
+    "status"
+  ],
+  "additionalProperties": false
+}

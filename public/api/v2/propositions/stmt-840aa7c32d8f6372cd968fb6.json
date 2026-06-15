@@ -1,0 +1,95 @@
+{
+  "certVersion": "2.0",
+  "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
+  "versionId": "ver:5c84f914fe950542",
+  "certHash": "sha256:0ee2fbbc46ca52e89c35ad95e6c914da1d0c93136ebc159144272d4fa64c7691",
+  "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
+  "claimNature": "document_content",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-15",
+  "status": "active",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "truthfulGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "부칙 제2조는 구 공공기관 개인정보보호 법률의 폐지를 직접 규정한다.",
+    "gradeDivergenceNote": "폐지 사실은 원문으로 완전하게 확인되지만 '후신'이라는 표현은 제도적 대체 관계를 요약하는 해석 요소가 있어 진실성 평가는 한 단계 낮췄다.",
+    "rubricVersion": "rubric-2.1",
+    "pipelineVersion": "pipeline-2.1"
+  },
+  "evidence": [
+    {
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
+      "title": "개인정보 보호법 법률 제10465호 부칙 제2조",
+      "retrievedAt": "2026-06-15T00:00:00Z",
+      "evidenceSpans": [
+        {
+          "start": 210,
+          "end": 238
+        }
+      ],
+      "spanHash": "sha256:0fc648fc50957f215003060b59fd3a124505e040a94a9098df421a7cb1578b3d",
+      "shortQuote": "공공기관의 개인정보보호에 관한 법률은 폐지한다",
+      "retrievalMethod": "official_gazette",
+      "retrievalLimitations": "부칙 제2조의 폐지 조문은 확인되지만 후신이라는 요약 표현은 별도 제도사 설명이 필요할 수 있다.",
+      "independenceGroupId": "law-go-kr-act-10465",
+      "independenceLevel": "independent",
+      "independenceNote": "폐지 조문 자체는 원문 법령에서 직접 확인된다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "국가법령정보센터는 폐지 부칙 확인에 적합한 공식 출처다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "'후신'은 법률 문구가 아니라 제도적 평가에 가까울 수 있다.",
+      "response": "폐지 조문은 사실로 채택하되 후신 표현의 해석 여지는 gradeDivergenceNote와 truthfulGrade에 반영했다.",
+      "errorsFound": 0,
+      "framingChecks": "폐지 조문과 제도적 후속 관계를 구분해 표현했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "구 법률이 폐지되지 않았다는 반대 명제를 부칙 제2조 원문으로 대조했다.",
+      "result": "부칙 제2조가 폐지를 명시해 반대 명제는 지지되지 않는다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "공식 법령 출처를 사용하되 후신 표현의 해석 요소를 별도로 제한했다."
+    },
+    "humanReview": {
+      "reviewer": "foundation-seed",
+      "date": "2026-06-15",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "폐지 조문은 직접 확인했고 후신 표현은 제한적으로 수용했다.",
+      "adoptedReason": "부칙 제2조의 폐지 문구가 명제의 핵심 사실을 뒷받침한다.",
+      "rejectedAlternatives": "후신 표현을 완전한 법적 동일성 주장으로 확대하는 해석은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "limitations": "폐지 조문 확인에 초점을 두며 '후신' 표현은 제도적 연속성을 요약한 제한적 표현이다.",
+  "tags": [
+    "privacy",
+    "law-10465",
+    "repeal"
+  ],
+  "createdAt": "2026-06-15T00:00:00Z",
+  "updatedAt": "2026-06-15T00:00:00Z"
+}

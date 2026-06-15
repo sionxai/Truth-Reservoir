@@ -1,0 +1,553 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truthreservoir.example/api/v2/schema/cert-v2.schema.json",
+  "type": "object",
+  "properties": {
+    "certVersion": {
+      "type": "string",
+      "const": "2.0"
+    },
+    "propositionId": {
+      "type": "string",
+      "pattern": "^stmt:[a-f0-9]{24}$"
+    },
+    "versionId": {
+      "type": "string",
+      "pattern": "^ver:[a-f0-9]{16}$"
+    },
+    "certHash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "previousVersionId": {
+      "type": "string",
+      "pattern": "^ver:[a-f0-9]{16}$"
+    },
+    "canonicalProposition": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 300
+    },
+    "originalClaim": {
+      "type": "string"
+    },
+    "claimNature": {
+      "type": "string",
+      "enum": [
+        "event_occurrence",
+        "document_content"
+      ]
+    },
+    "classification": {
+      "type": "string",
+      "enum": [
+        "F",
+        "O",
+        "M"
+      ]
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "ko",
+        "en"
+      ]
+    },
+    "asOfDate": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "superseded",
+        "retracted",
+        "needs_review"
+      ]
+    },
+    "assessment": {
+      "type": "object",
+      "properties": {
+        "factualGrade": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "fully_reliable",
+                "largely_reliable",
+                "mixed",
+                "largely_unreliable",
+                "not_reliable"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "truthfulGrade": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "fully_reliable",
+                "largely_reliable",
+                "mixed",
+                "largely_unreliable",
+                "not_reliable"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "assessed",
+            "undetermined"
+          ]
+        },
+        "gradeRationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gradeDivergenceNote": {
+          "type": "string"
+        },
+        "rubricVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pipelineVersion": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "factualGrade",
+        "truthfulGrade",
+        "status",
+        "gradeRationale",
+        "rubricVersion",
+        "pipelineVersion"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrievedAt": {
+            "type": "string"
+          },
+          "evidenceSpans": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "start",
+                "end"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "spanHash": {
+            "type": "string",
+            "pattern": "^sha256:[a-f0-9]{64}$"
+          },
+          "shortQuote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "archiveUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "archiveProvider": {
+            "type": "string",
+            "enum": [
+              "internet_archive",
+              "perma",
+              "manual_pdf",
+              "repository",
+              "other"
+            ]
+          },
+          "archivedAt": {
+            "type": "string"
+          },
+          "retrievalMethod": {
+            "type": "string",
+            "enum": [
+              "manual",
+              "crawler",
+              "pdf_extract",
+              "api",
+              "official_gazette",
+              "court_document"
+            ]
+          },
+          "retrievalLimitations": {
+            "type": "string"
+          },
+          "independenceGroupId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "independenceLevel": {
+            "type": "string",
+            "enum": [
+              "independent",
+              "partially_independent",
+              "shared_origin",
+              "unknown"
+            ]
+          },
+          "independenceNote": {
+            "type": "string"
+          },
+          "sourceCompetence": {
+            "type": "string",
+            "enum": [
+              "domain_expert",
+              "relevant",
+              "tangential",
+              "unqualified"
+            ]
+          },
+          "competenceNote": {
+            "type": "string"
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": [
+              "primary_producer",
+              "secondary_report",
+              "aggregator"
+            ]
+          },
+          "sourceProvenance": {
+            "type": "object",
+            "properties": {
+              "productionIndependence": {
+                "type": "string",
+                "enum": [
+                  "independent",
+                  "govt_produced",
+                  "party_interested",
+                  "contested"
+                ]
+              },
+              "productionConcerns": {
+                "default": [],
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "requiresMethodologyAudit": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "productionIndependence",
+              "productionConcerns",
+              "requiresMethodologyAudit"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "url",
+          "title",
+          "retrievedAt",
+          "evidenceSpans",
+          "spanHash",
+          "retrievalMethod",
+          "retrievalLimitations",
+          "independenceGroupId",
+          "independenceLevel",
+          "independenceNote",
+          "sourceCompetence",
+          "competenceNote",
+          "sourceType",
+          "sourceProvenance"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reviewLog": {
+      "type": "object",
+      "properties": {
+        "redteam": {
+          "type": "object",
+          "properties": {
+            "strongestCounterargument": {
+              "type": "string"
+            },
+            "response": {
+              "type": "string"
+            },
+            "errorsFound": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "framingChecks": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "strongestCounterargument",
+            "response",
+            "errorsFound",
+            "framingChecks"
+          ],
+          "additionalProperties": false
+        },
+        "symmetry": {
+          "type": "object",
+          "properties": {
+            "checked": {
+              "type": "boolean"
+            },
+            "method": {
+              "type": "string"
+            },
+            "pairedPropositionId": {
+              "type": "string",
+              "pattern": "^stmt:[a-f0-9]{24}$"
+            },
+            "result": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "checked",
+            "method",
+            "result"
+          ],
+          "additionalProperties": false
+        },
+        "authorityCheck": {
+          "type": "object",
+          "properties": {
+            "checked": {
+              "type": "boolean"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "checked",
+            "note"
+          ],
+          "additionalProperties": false
+        },
+        "humanReview": {
+          "type": "object",
+          "properties": {
+            "reviewer": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "checksPerformed": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "omission",
+                  "asymmetry",
+                  "framing",
+                  "authority_assumption"
+                ]
+              }
+            },
+            "reviewMemo": {
+              "type": "string"
+            },
+            "adoptedReason": {
+              "type": "string"
+            },
+            "rejectedAlternatives": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "reviewer",
+            "date",
+            "checksPerformed",
+            "reviewMemo",
+            "adoptedReason",
+            "rejectedAlternatives"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "redteam",
+        "symmetry",
+        "authorityCheck",
+        "humanReview"
+      ],
+      "additionalProperties": false
+    },
+    "sensitive": {
+      "type": "object",
+      "properties": {
+        "sensitive": {
+          "type": "boolean"
+        },
+        "sensitivityReason": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "living_person",
+              "criminal_allegation",
+              "ongoing_litigation",
+              "political_claim",
+              "medical_or_financial_harm"
+            ]
+          }
+        },
+        "legalStatus": {
+          "type": "string",
+          "enum": [
+            "final_judgment",
+            "pending",
+            "allegation",
+            "official_record",
+            "unknown"
+          ]
+        },
+        "presumptionNotice": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sensitive",
+        "sensitivityReason",
+        "legalStatus",
+        "presumptionNotice"
+      ],
+      "additionalProperties": false
+    },
+    "undeterminedItems": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "correctionHistory": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "error": {
+            "type": "string"
+          },
+          "detectedBy": {
+            "type": "string"
+          },
+          "before": {
+            "type": "string"
+          },
+          "after": {
+            "type": "string"
+          },
+          "scoreChange": {
+            "type": "string"
+          },
+          "newVersionId": {
+            "type": "string",
+            "pattern": "^ver:[a-f0-9]{16}$"
+          }
+        },
+        "required": [
+          "date",
+          "error",
+          "detectedBy",
+          "before",
+          "after",
+          "scoreChange",
+          "newVersionId"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "limitations": {
+      "type": "string"
+    },
+    "tags": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "certVersion",
+    "propositionId",
+    "versionId",
+    "certHash",
+    "canonicalProposition",
+    "claimNature",
+    "classification",
+    "language",
+    "asOfDate",
+    "status",
+    "assessment",
+    "evidence",
+    "reviewLog",
+    "sensitive",
+    "undeterminedItems",
+    "correctionHistory",
+    "limitations",
+    "tags",
+    "createdAt",
+    "updatedAt"
+  ],
+  "additionalProperties": false
+}

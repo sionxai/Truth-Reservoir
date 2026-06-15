@@ -1,0 +1,111 @@
+{
+  "certVersion": "2.0",
+  "propositionId": "stmt:40340515225f7adf44e242f3",
+  "versionId": "ver:a84eaee916267207",
+  "certHash": "sha256:44350b89660ebb81462259e3cb6e142f585c759a8f8298158798052d828a01ea",
+  "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-15",
+  "status": "active",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "truthfulGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "법령 원문과 정책브리핑 자료가 법률 제10465호의 공포일을 같은 날짜로 지시한다.",
+    "rubricVersion": "rubric-2.1",
+    "pipelineVersion": "pipeline-2.1"
+  },
+  "evidence": [
+    {
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
+      "title": "개인정보 보호법 법률 제10465호 공포문 및 부칙",
+      "retrievedAt": "2026-06-15T00:00:00Z",
+      "evidenceSpans": [
+        {
+          "start": 0,
+          "end": 15
+        }
+      ],
+      "spanHash": "sha256:e0fdf97afec5f67f46dc8bf9e9292386346a4178be2211d7c0538be4fd35fc25",
+      "shortQuote": "2011년 3월 29일 공포",
+      "retrievalMethod": "official_gazette",
+      "retrievalLimitations": "법령정보 페이지의 현행/연혁 전환에 따라 표시 형식이 달라질 수 있다.",
+      "independenceGroupId": "law-go-kr-act-10465",
+      "independenceLevel": "independent",
+      "independenceNote": "법령 원문 생산기관 자료로 2차 보도와 독립된 원천이다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "국가법령정보센터는 법령 원문 확인에 적합한 공식 출처다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=155749843",
+      "title": "정책브리핑 개인정보 보호법 공포 관련 자료",
+      "retrievedAt": "2026-06-15T00:00:00Z",
+      "evidenceSpans": [
+        {
+          "start": 48,
+          "end": 60
+        }
+      ],
+      "spanHash": "sha256:5b5b5ffc102dfb59a3c5e168d9ffbe99c9eaa93b2f3c8dc4d4e9e799d5e96d5c",
+      "shortQuote": "개인정보 보호법 공포",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "정책브리핑 자료는 2차 설명 성격이므로 원문 법령과 함께 대조했다.",
+      "independenceGroupId": "korea-kr-policy-briefing",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "정부 정책 설명 자료로 법령 원문과 생산 체계가 일부 공유된다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "공식 정책 설명 자료로 공포 사실 확인의 보조 출처로 적합하다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "정책 설명 자료만으로는 공포일을 확정하기 어렵다.",
+      "response": "법령 원문 출처가 같은 공포일을 제공하므로 정책 자료는 보조 증거로만 사용했다.",
+      "errorsFound": 0,
+      "framingChecks": "공포일 사실만 다루고 법의 평가나 정책 효과 주장은 제외했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "공포되지 않았다는 반대 명제의 직접 증거 가능성을 원문 법령 기준으로 확인했다.",
+      "result": "원문 법령상 공포일이 명시되어 반대 명제는 지지되지 않는다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "권위 출처를 이유로 결론을 대체하지 않고 원문 표시와 날짜를 직접 대조했다."
+    },
+    "humanReview": {
+      "reviewer": "foundation-seed",
+      "date": "2026-06-15",
+      "checksPerformed": ["omission", "asymmetry", "framing", "authority_assumption"],
+      "reviewMemo": "법령 원문과 보조 자료의 날짜 일치를 확인했다.",
+      "adoptedReason": "원문 법령의 공포일 표기가 명제를 직접 지지한다.",
+      "rejectedAlternatives": "정책 효과나 시행 이후 평가까지 포함하는 넓은 명제는 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "limitations": "공포일 확인에 한정하며 법률의 시행 효과나 사회적 평가는 판단하지 않는다.",
+  "tags": ["privacy", "law-10465", "promulgation"],
+  "createdAt": "2026-06-15T00:00:00Z",
+  "updatedAt": "2026-06-15T00:00:00Z"
+}
