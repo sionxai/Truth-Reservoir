@@ -34,26 +34,30 @@ for (const evidence of (raw.evidence as Array<Record<string, unknown>>) ?? []) {
   evidence.spanHash ??= PLACEHOLDER_SHA;
 }
 
+// Schema-parse FIRST so Zod defaults (e.g. openCorrectionRequests, tags) are
+// materialized BEFORE hashing — otherwise certHash would be computed over an
+// object missing its defaulted fields, then those fields get written in, leaving
+// stored certHash inconsistent with the recomputed one.
+const parsed = CertV2Schema.safeParse(raw);
+if (!parsed.success) {
+  console.error(`Draft is not schema-valid. Fix these, then re-run:`);
+  for (const issue of parsed.error.issues) {
+    console.error(`  ${issue.path.join(".") || "(root)"}: ${issue.message}`);
+  }
+  process.exit(1);
+}
+
 let stamped: Proposition;
 try {
-  stamped = await applyDerivedHashes(raw as unknown as Proposition);
+  stamped = await applyDerivedHashes(parsed.data);
 } catch (error) {
   console.error(`Failed to derive hashes for ${file}:`);
   console.error(error instanceof Error ? error.message : error);
   process.exit(1);
 }
 
-const result = CertV2Schema.safeParse(stamped);
-if (!result.success) {
-  console.error(`Draft is not schema-valid after stamping. Fix these, then re-run:`);
-  for (const issue of result.error.issues) {
-    console.error(`  ${issue.path.join(".") || "(root)"}: ${issue.message}`);
-  }
-  process.exit(1);
-}
-
-await writeFile(file, `${JSON.stringify(result.data, null, 2)}\n`);
+await writeFile(file, `${JSON.stringify(stamped, null, 2)}\n`);
 console.log(`Applied canonical hashes to ${file}`);
-console.log(`  propositionId: ${result.data.propositionId}`);
-console.log(`  versionId:     ${result.data.versionId}`);
-console.log(`  certHash:      ${result.data.certHash}`);
+console.log(`  propositionId: ${stamped.propositionId}`);
+console.log(`  versionId:     ${stamped.versionId}`);
+console.log(`  certHash:      ${stamped.certHash}`);

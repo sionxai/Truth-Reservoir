@@ -3,8 +3,8 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:52e6260a60e04599d809ae61",
-      "versionId": "ver:00d4d7e5b6ded357",
-      "certHash": "sha256:0cdc03b8408937228e7a7d8835f67273c5122872960ad0aec22345568320fb74",
+      "versionId": "ver:e5df22b30da92016",
+      "certHash": "sha256:4d9ccd12eadb230fa823713ce230ebce7e4360dfe7be86dd0718a3ade3c06fcd",
       "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
       "claimNature": "document_content",
       "classification": "F",
@@ -85,6 +85,7 @@
       },
       "undeterminedItems": [],
       "correctionHistory": [],
+      "openCorrectionRequests": 0,
       "limitations": "'시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.",
       "tags": [
         "privacy",
@@ -97,8 +98,8 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-      "versionId": "ver:7d4eceead2caadc9",
-      "certHash": "sha256:f32b61fc6dcf07cbdc815751f67737c2170d5253e4c0cc52ae48b1f52937c784",
+      "versionId": "ver:58ec461aab981eaf",
+      "certHash": "sha256:eb5974188b743b1111b72a0b6d6764523cd94a55c3fb2b5aa27b081c4bcaf17a",
       "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
       "claimNature": "document_content",
       "classification": "F",
@@ -180,6 +181,7 @@
       },
       "undeterminedItems": [],
       "correctionHistory": [],
+      "openCorrectionRequests": 0,
       "limitations": "폐지 조문 확인에 초점을 두며 '후신' 표현은 제도적 연속성을 요약한 제한적 표현이다.",
       "tags": [
         "privacy",
@@ -192,8 +194,8 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:40340515225f7adf44e242f3",
-      "versionId": "ver:ddf84e85255cc6e1",
-      "certHash": "sha256:8a802e48b3a563753c644edf5287873478e34ba25ff2da1acdb52929e0a3d469",
+      "versionId": "ver:49d94938ca1296f4",
+      "certHash": "sha256:dc1a9d6893b6791b7bb298e9142fd86838fdd948d6bd85dcf2efe89957c7ce4a",
       "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
       "claimNature": "event_occurrence",
       "classification": "F",
@@ -300,6 +302,7 @@
       },
       "undeterminedItems": [],
       "correctionHistory": [],
+      "openCorrectionRequests": 0,
       "limitations": "공포일 확인에 한정하며 법률의 시행 효과나 사회적 평가는 판단하지 않는다.",
       "tags": [
         "privacy",
@@ -318,7 +321,9 @@
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalPropositionsVerified": 3
+      "totalEntries": 3,
+      "totalAssessed": 3,
+      "openCorrectionRequests": 0
     },
     "propositions": [
       {

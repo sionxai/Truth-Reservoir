@@ -623,6 +623,12 @@
               "additionalProperties": false
             }
           },
+          "openCorrectionRequests": {
+            "default": 0,
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
           "limitations": {
             "type": "string"
           },
@@ -657,6 +663,7 @@
           "sensitive",
           "undeterminedItems",
           "correctionHistory",
+          "openCorrectionRequests",
           "limitations",
           "tags",
           "createdAt",
@@ -669,9 +676,24 @@
         "$id": "https://truthreservoir.example/api/v2/schema/institutional-metrics.schema.json",
         "type": "object",
         "properties": {
-          "totalPropositionsVerified": {
+          "totalEntries": {
             "type": "integer",
-            "minimum": -9007199254740991,
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "totalAssessed": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "totalUndetermined": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "totalRetracted": {
+            "type": "integer",
+            "minimum": 0,
             "maximum": 9007199254740991
           },
           "measuredErrorRate": {
@@ -724,6 +746,63 @@
             ],
             "additionalProperties": false
           },
+          "correctionMetrics": {
+            "type": "object",
+            "properties": {
+              "openCorrectionRequests": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "acceptedCorrections": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "rejectedCorrections": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "staleCorrectionRequests": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "medianCorrectionLatencyDays": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "latencyStatus": {
+                "type": "string",
+                "enum": [
+                  "measured",
+                  "no_requests_yet"
+                ]
+              },
+              "staleThresholdDays": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "openCorrectionRequests",
+              "acceptedCorrections",
+              "rejectedCorrections",
+              "staleCorrectionRequests",
+              "medianCorrectionLatencyDays",
+              "latencyStatus",
+              "staleThresholdDays"
+            ],
+            "additionalProperties": false
+          },
           "externalAudits": {
             "type": "array",
             "items": {
@@ -767,8 +846,12 @@
           }
         },
         "required": [
-          "totalPropositionsVerified",
+          "totalEntries",
+          "totalAssessed",
+          "totalUndetermined",
+          "totalRetracted",
           "measuredErrorRate",
+          "correctionMetrics",
           "externalAudits",
           "status"
         ],

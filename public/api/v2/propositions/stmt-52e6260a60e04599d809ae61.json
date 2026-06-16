@@ -1,8 +1,8 @@
 {
   "certVersion": "2.0",
   "propositionId": "stmt:52e6260a60e04599d809ae61",
-  "versionId": "ver:00d4d7e5b6ded357",
-  "certHash": "sha256:0cdc03b8408937228e7a7d8835f67273c5122872960ad0aec22345568320fb74",
+  "versionId": "ver:e5df22b30da92016",
+  "certHash": "sha256:4d9ccd12eadb230fa823713ce230ebce7e4360dfe7be86dd0718a3ade3c06fcd",
   "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
   "claimNature": "document_content",
   "classification": "F",
@@ -83,6 +83,7 @@
   },
   "undeterminedItems": [],
   "correctionHistory": [],
+  "openCorrectionRequests": 0,
   "limitations": "'시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.",
   "tags": [
     "privacy",

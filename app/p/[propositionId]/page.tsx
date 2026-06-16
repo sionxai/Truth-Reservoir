@@ -35,6 +35,13 @@ export default async function PropositionDetailPage({ params }: PageProps) {
 
   return (
     <main className="detail-page">
+      {proposition.openCorrectionRequests > 0 ? (
+        <section className="notice--warning" role="status">
+          <strong>이의제기 중</strong> — 현재 열린 정정 요청 {proposition.openCorrectionRequests}건.
+          이 라벨은 검토 중이며 새 증거로 바뀔 수 있습니다.
+        </section>
+      ) : null}
+
       {proposition.sensitive.sensitive ? (
         <section className="sensitive-notice">
           <strong>

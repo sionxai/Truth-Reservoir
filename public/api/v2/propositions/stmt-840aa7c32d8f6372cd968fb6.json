@@ -1,8 +1,8 @@
 {
   "certVersion": "2.0",
   "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-  "versionId": "ver:7d4eceead2caadc9",
-  "certHash": "sha256:f32b61fc6dcf07cbdc815751f67737c2170d5253e4c0cc52ae48b1f52937c784",
+  "versionId": "ver:58ec461aab981eaf",
+  "certHash": "sha256:eb5974188b743b1111b72a0b6d6764523cd94a55c3fb2b5aa27b081c4bcaf17a",
   "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
   "claimNature": "document_content",
   "classification": "F",
@@ -84,6 +84,7 @@
   },
   "undeterminedItems": [],
   "correctionHistory": [],
+  "openCorrectionRequests": 0,
   "limitations": "폐지 조문 확인에 초점을 두며 '후신' 표현은 제도적 연속성을 요약한 제한적 표현이다.",
   "tags": [
     "privacy",

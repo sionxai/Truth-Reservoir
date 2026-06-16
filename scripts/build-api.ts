@@ -56,6 +56,7 @@ async function createExamples(propositions: Proposition[]): Promise<Record<strin
     gradeDivergenceNote: undefined
   };
   needsReview.undeterminedItems = ["원문 대조 범위 확정 필요"];
+  needsReview.openCorrectionRequests = 2;
 
   const sensitive = structuredClone(base);
   sensitive.updatedAt = "2026-06-15T00:00:03Z";
@@ -103,7 +104,9 @@ const index = {
     institutionalMetrics: {
       path: "/api/v2/institutional-metrics.json",
       status: metrics.status,
-      totalPropositionsVerified: metrics.totalPropositionsVerified
+      totalEntries: metrics.totalEntries,
+      totalAssessed: metrics.totalAssessed,
+      openCorrectionRequests: metrics.correctionMetrics.openCorrectionRequests
     },
     propositions: propositions.map((proposition) => ({
       propositionId: proposition.propositionId,

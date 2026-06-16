@@ -5,9 +5,11 @@ const webServerCommand = process.env.PLAYWRIGHT_WEB_SERVER_COMMAND ?? "npm run d
 
 export default defineConfig({
   testDir: "./tests/e2e",
-  timeout: 30000,
+  // Generous timeouts: against `npm run dev` the first hit to a dynamic route
+  // triggers on-demand compilation (~10s cold), which would otherwise flake.
+  timeout: 60000,
   expect: {
-    timeout: 10000
+    timeout: 20000
   },
   use: {
     baseURL,

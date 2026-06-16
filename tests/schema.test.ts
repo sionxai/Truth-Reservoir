@@ -1,7 +1,8 @@
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { CertV2Schema } from "../schema/cert-v2.ts";
+import { CertV2Schema, InstitutionalMetricsSchema } from "../schema/cert-v2.ts";
 import { loadPropositions } from "../lib/data.ts";
-import { cloneProposition } from "./test-utils.ts";
+import { cloneProposition, readJsonFile } from "./test-utils.ts";
 
 describe("Cert v2 schema", () => {
   it("parses a valid seed", async () => {
@@ -89,5 +90,44 @@ describe("Cert v2 schema", () => {
     };
 
     expect(CertV2Schema.safeParse(candidate).success).toBe(false);
+  });
+
+  it("defaults openCorrectionRequests to 0 and rejects negatives", async () => {
+    const [seed] = await loadPropositions();
+    const candidate = cloneProposition(seed) as unknown as Record<string, unknown>;
+    delete candidate.openCorrectionRequests;
+    const parsed = CertV2Schema.safeParse(candidate);
+    expect(parsed.success).toBe(true);
+    if (parsed.success) {
+      expect(parsed.data.openCorrectionRequests).toBe(0);
+    }
+
+    candidate.openCorrectionRequests = -1;
+    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
+  });
+});
+
+describe("InstitutionalMetrics schema", () => {
+  it("parses the live institutional-metrics.json", async () => {
+    const metrics = await readJsonFile(join(process.cwd(), "data", "institutional-metrics.json"));
+    expect(InstitutionalMetricsSchema.safeParse(metrics).success).toBe(true);
+  });
+
+  it("rejects the legacy shape (totalPropositionsVerified only)", () => {
+    const legacy = {
+      totalPropositionsVerified: 3,
+      measuredErrorRate: {
+        value: null,
+        unit: "ratio",
+        sampleSize: 0,
+        periodStart: "2026-06-15",
+        periodEnd: "2026-06-15",
+        method: "x",
+        status: "unmeasured_insufficient_sample"
+      },
+      externalAudits: [],
+      status: "unestablished"
+    };
+    expect(InstitutionalMetricsSchema.safeParse(legacy).success).toBe(false);
   });
 });

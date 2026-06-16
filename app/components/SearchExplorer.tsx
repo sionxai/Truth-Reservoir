@@ -205,6 +205,9 @@ function PropositionList({ propositions }: { propositions: Proposition[] }) {
               <span>{classificationLabels[proposition.classification]}</span>
               <span>{claimNatureLabels[proposition.claimNature]}</span>
               <span>{assessmentStatusLabels[proposition.assessment.status]}</span>
+              {proposition.openCorrectionRequests > 0 ? (
+                <span className="card-flag">이의제기 중 {proposition.openCorrectionRequests}</span>
+              ) : null}
             </div>
             <h3>
               <Link href={`/p/${dashId}`}>{proposition.canonicalProposition}</Link>

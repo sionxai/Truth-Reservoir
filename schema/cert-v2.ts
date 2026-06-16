@@ -164,6 +164,9 @@ export const CertV2Schema = z
     sensitive: SensitivePolicySchema,
     undeterminedItems: z.array(z.string()).default([]),
     correctionHistory: z.array(CorrectionSchema).default([]),
+    // Count of currently-open (unresolved) correction requests for this proposition.
+    // >0 surfaces an "이의제기 중" notice on the detail page and list card.
+    openCorrectionRequests: z.number().int().min(0).default(0),
     limitations: z.string(),
     tags: z.array(z.string()).default([]),
     createdAt: isoStringSchema,
@@ -221,7 +224,11 @@ export const CertV2Schema = z
   });
 
 export const InstitutionalMetricsSchema = z.object({
-  totalPropositionsVerified: z.number().int(),
+  // Counts split so undetermined entries never inflate the "verified" headline.
+  totalEntries: z.number().int().min(0),
+  totalAssessed: z.number().int().min(0),
+  totalUndetermined: z.number().int().min(0),
+  totalRetracted: z.number().int().min(0),
   measuredErrorRate: z.object({
     value: z.number().nullable(),
     unit: z.literal("ratio"),
@@ -230,6 +237,19 @@ export const InstitutionalMetricsSchema = z.object({
     periodEnd: isoStringSchema,
     method: z.string(),
     status: z.enum(["measured", "unmeasured_insufficient_sample"])
+  }),
+  // Correction health — turns the "we correct errors / claims are falsifiable"
+  // promise into a measurement. staleCorrectionRequests>0 is a broken-promise signal.
+  // medianCorrectionLatencyDays is null + latencyStatus "no_requests_yet" until there
+  // is a real sample (distinguishing "fast" from "never measured").
+  correctionMetrics: z.object({
+    openCorrectionRequests: z.number().int().min(0),
+    acceptedCorrections: z.number().int().min(0),
+    rejectedCorrections: z.number().int().min(0),
+    staleCorrectionRequests: z.number().int().min(0),
+    medianCorrectionLatencyDays: z.number().nullable(),
+    latencyStatus: z.enum(["measured", "no_requests_yet"]),
+    staleThresholdDays: z.number().int().min(0)
   }),
   externalAudits: z.array(
     z.object({
