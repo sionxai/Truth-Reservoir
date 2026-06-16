@@ -1,19 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
-  "versionId": "ver:b0dae368d5cf0bfc",
-  "certHash": "sha256:69e06a0319b9d51e8e74c8acd19d9518d94e4084d98ae9fecb0428134c533330",
+  "versionId": "ver:2d469443d2fd00f6",
+  "certHash": "sha256:26b632e2869ac4570950607cc5d91ef9610e52c7a5eaf2955d8de754da82818d",
   "canonicalProposition": "1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다",
   "claimNature": "event_occurrence",
   "classification": "F",
   "language": "ko",
-  "asOfDate": "2026-06-15",
+  "asOfDate": "2026-06-16",
   "status": "active",
   "reviewMode": "human_reviewed",
   "assessment": {
     "factualGrade": "fully_reliable",
     "status": "assessed",
-    "gradeRationale": "복수의 독립 1차 출처(NASA NSSDCA, 미국 국립문서기록청)가 착륙 시각·좌표·주체를 정밀하게 일치 보고. 좌표는 후대 달 정찰 궤도선(LRO) 이미지로 독립 재확인됨. 시각은 출처에 따라 20:17 또는 20:17:40 UTC로 초 단위만 차이나며, 가장 정밀한 1차 출처(NSSDCA) 기준 20:17:40을 채택.",
+    "gradeRationale": "복수의 독립 1차 출처(NASA NSSDCA, 미국 국립문서기록청)가 착륙 시각·주체를 정밀하게 일치 보고. 좌표는 LROC Featured Sites의 Apollo 11 좌표 원문과 일치하며, 후대 달 정찰 궤도선(LRO) 이미지로 독립 재확인됨. 시각은 출처에 따라 20:17 또는 20:17:40 UTC로 초 단위만 차이나며, 가장 정밀한 1차 출처(NSSDCA) 기준 20:17:40을 채택.",
     "rubricVersion": "rubric-3.0",
     "pipelineVersion": "pipeline-3.0"
   },
@@ -93,6 +93,31 @@
         "productionConcerns": [],
         "requiresMethodologyAudit": false
       }
+    },
+    {
+      "url": "https://lroc.im-ldi.com/featured_sites/51",
+      "title": "Apollo 11: Simple Traverse — Lunar Reconnaissance Orbiter Camera",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Apollo 11: Simple Traverse",
+        "heading": "United States"
+      },
+      "shortQuote": "Mare Tranquillitatis [0.67416° N, 23.47314° E]",
+      "quoteHash": "sha256:5aaa6db4df29fb67cf108abd3dc01a8d8cd9f372f41a88cadb6172dd2744cb2a",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "LROC Featured Sites HTML page. Wayback save attempt on 2026-06-16 timed out after 30 seconds; no archive URL was recorded.",
+      "independenceGroupId": "lro-lroc",
+      "independenceLevel": "independent",
+      "independenceNote": "ASU-operated LROC/LRO observation-derived landing-site page cross-checks the NASA mission record rather than merely repeating the Apollo mission log.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "LROC is the domain authority for LRO imagery and Apollo landing-site coordinate products.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
     }
   ],
   "reviewLog": {
@@ -136,7 +161,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "착륙 시각은 출처에 따라 20:17(분 단위)~20:17:40(초 단위) UTC로 표기되며, 본 명제는 가장 정밀한 1차 출처(NASA NSSDCA) 기준 20:17:40을 채택. 좌표는 후대 LRO 이미지 기반 확정값으로, 1969년 당시 추정 좌표와는 정밀도 차이가 있을 수 있음.",
+  "limitations": "착륙 시각은 출처에 따라 20:17(분 단위)~20:17:40(초 단위) UTC로 표기되며, 본 명제는 가장 정밀한 1차 출처(NASA NSSDCA) 기준 20:17:40을 채택. 좌표는 LROC Featured Sites가 제시한 0.67416° N, 23.47314° E와 일치하며, 후대 LRO 이미지 기반 확정값이므로 1969년 당시 추정 좌표와는 정밀도 차이가 있을 수 있음.",
   "tags": [
     "우주",
     "아폴로계획",
