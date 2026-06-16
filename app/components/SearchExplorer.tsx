@@ -30,7 +30,6 @@ export function SearchExplorer({ propositions }: SearchExplorerProps) {
   const [text, setText] = useState("");
   const [classification, setClassification] = useState<FilterValue<Classification>>("all");
   const [factualGrade, setFactualGrade] = useState<FilterValue<Grade>>("all");
-  const [truthfulGrade, setTruthfulGrade] = useState<FilterValue<Grade>>("all");
   const [assessmentStatus, setAssessmentStatus] =
     useState<FilterValue<Assessment["status"]>>("all");
   const [claimNature, setClaimNature] = useState<FilterValue<ClaimNature>>("all");
@@ -43,11 +42,10 @@ export function SearchExplorer({ propositions }: SearchExplorerProps) {
       text,
       classification: classification === "all" ? undefined : classification,
       factualGrade: factualGrade === "all" ? undefined : factualGrade,
-      truthfulGrade: truthfulGrade === "all" ? undefined : truthfulGrade,
       assessmentStatus: assessmentStatus === "all" ? undefined : assessmentStatus,
       claimNature: claimNature === "all" ? undefined : claimNature
     }),
-    [assessmentStatus, claimNature, classification, factualGrade, text, truthfulGrade]
+    [assessmentStatus, claimNature, classification, factualGrade, text]
   );
 
   useEffect(() => {
@@ -112,18 +110,9 @@ export function SearchExplorer({ propositions }: SearchExplorerProps) {
           ]}
         />
         <SelectField
-          label="기초 사실성"
+          label="사실 신뢰도"
           value={factualGrade}
           onChange={(value) => setFactualGrade(value as FilterValue<Grade>)}
-          options={[
-            ["all", "전체"],
-            ...gradeOptions.map((grade) => [grade, gradeLabels[grade]] as const)
-          ]}
-        />
-        <SelectField
-          label="진술 충실성"
-          value={truthfulGrade}
-          onChange={(value) => setTruthfulGrade(value as FilterValue<Grade>)}
           options={[
             ["all", "전체"],
             ...gradeOptions.map((grade) => [grade, gradeLabels[grade]] as const)
@@ -208,13 +197,15 @@ function PropositionList({ propositions }: { propositions: Proposition[] }) {
               {proposition.openCorrectionRequests > 0 ? (
                 <span className="card-flag">이의제기 중 {proposition.openCorrectionRequests}</span>
               ) : null}
+              {proposition.reviewMode === "automated_unreviewed" ? (
+                <span className="card-flag">자동 처리됨 · 인간 검수 미경유</span>
+              ) : null}
             </div>
             <h3>
               <Link href={`/p/${dashId}`}>{proposition.canonicalProposition}</Link>
             </h3>
-            <div className="compact-grades" aria-label="두 축 신뢰 라벨">
-              <GradeBadge prefix="기초 사실성" grade={proposition.assessment.factualGrade} />
-              <GradeBadge prefix="진술 충실성" grade={proposition.assessment.truthfulGrade} />
+            <div className="compact-grades" aria-label="사실 신뢰도 보조 라벨">
+              <GradeBadge prefix="사실 신뢰도" grade={proposition.assessment.factualGrade} />
             </div>
             <p className="card-footnote">현 시점 기준 {proposition.asOfDate}</p>
           </article>

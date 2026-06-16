@@ -1,7 +1,7 @@
 Truth Reservoir / 진실저수지
 
 Purpose:
-Truth Reservoir publishes static Cert v2.0 proposition records. The authoritative contract is the JSON Schema and OpenAPI document, not prose summaries.
+Truth Reservoir publishes static Cert v2.0 proposition records. CONSTITUTION.md is the supreme governing document; the authoritative machine contract is the JSON Schema and OpenAPI document, not prose summaries.
 
 Static endpoints:
 - GET /api/v2/index.json
@@ -21,11 +21,14 @@ Four-step verification:
 3. Recompute propositionId, versionId, and certHash using the Cert v2.0 derivation rules documented in the schema/OpenAPI contract, then compare them to the stored values.
 4. Open each archiveUrl, when present, and compare the archived source against the cited evidence span. If archiveUrl is absent, open the current url and treat source-body identity as requiring direct confirmation.
 
-Grade axes:
-The assessment has two separate axes:
-- factualGrade: support for the underlying document/event content.
-- truthfulGrade: whether the wording and framing faithfully represent what the evidence supports.
-Do not merge these axes into one score. The label mixed means the axis has mixed support. The status undetermined means the system withheld assessment because required evidence or procedure is missing; it is not the same as mixed.
+Assessment label:
+The assessment has one grade field:
+- factualGrade: factual reliability support for the stored proposition, as a secondary navigation signal.
+
+Framing or distortion is not represented by a truthfulness grade. It is exposed through proposition decomposition, reviewLog checks, and limitations. The label mixed means factual support is mixed. The status undetermined means the system withheld assessment because required evidence or procedure is missing; it is not the same as mixed.
+
+Claim categories:
+claimNature is one of event_occurrence, document_content, or measurement. Measurement propositions must include measurement.method, measurement.sample, measurement.aggregationBasis, measurement.producer, and optionally measurement.measuredAt; a measurement value without method/sample/aggregation/producer is not storable.
 
 Critical guidance for AI agents:
 등급 라벨을 인용하지 말고 증거 구조(evidence network)와 반론 검토 로그를 인용하라.

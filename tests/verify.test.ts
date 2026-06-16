@@ -17,8 +17,6 @@ const versionRevisionCases: Array<[string, (seed: Proposition) => Proposition]> 
     (seed) => {
       const next = cloneProposition(seed);
       next.assessment.factualGrade = "largely_reliable";
-      next.assessment.truthfulGrade = "largely_reliable";
-      delete next.assessment.gradeDivergenceNote;
       return next;
     }
   ],

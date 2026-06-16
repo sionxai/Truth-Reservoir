@@ -14,7 +14,7 @@ export function GradePanel({ proposition }: GradePanelProps) {
     <section className="content-panel grade-panel" aria-labelledby="grade-panel-title">
       <div className="section-heading">
         <p className="eyebrow">Secondary Signal</p>
-        <h2 id="grade-panel-title">두 축 신뢰 라벨</h2>
+        <h2 id="grade-panel-title">사실 신뢰도 보조 라벨</h2>
       </div>
 
       {undetermined ? (
@@ -33,21 +33,10 @@ export function GradePanel({ proposition }: GradePanelProps) {
 
       <div className="grade-axis-grid">
         <div className="grade-axis">
-          <span>기초 사실성 축</span>
+          <span>사실 신뢰도</span>
           <GradeBadge grade={assessment.factualGrade} />
         </div>
-        <div className="grade-axis">
-          <span>진술 충실성 축</span>
-          <GradeBadge grade={assessment.truthfulGrade} />
-        </div>
       </div>
-
-      {assessment.gradeDivergenceNote ? (
-        <aside className="framing-alert">
-          <strong>프레이밍 오염 신호</strong>
-          <p>{assessment.gradeDivergenceNote}</p>
-        </aside>
-      ) : null}
 
       <div className="rationale-block">
         <h3>gradeRationale</h3>
@@ -56,4 +45,3 @@ export function GradePanel({ proposition }: GradePanelProps) {
     </section>
   );
 }
-

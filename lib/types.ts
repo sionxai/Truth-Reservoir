@@ -7,6 +7,7 @@ import type {
   EvidenceItemSchema,
   GradeSchema,
   InstitutionalMetricsSchema,
+  MeasurementSchema,
   ProvenanceSchema,
   ReviewLogSchema,
   SensitivePolicySchema
@@ -16,6 +17,7 @@ export type Grade = z.infer<typeof GradeSchema>;
 export type Assessment = z.infer<typeof AssessmentSchema>;
 export type Provenance = z.infer<typeof ProvenanceSchema>;
 export type EvidenceItem = z.infer<typeof EvidenceItemSchema>;
+export type Measurement = z.infer<typeof MeasurementSchema>;
 export type ReviewLog = z.infer<typeof ReviewLogSchema>;
 export type SensitivePolicy = z.infer<typeof SensitivePolicySchema>;
 export type Correction = z.infer<typeof CorrectionSchema>;

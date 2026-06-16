@@ -26,12 +26,18 @@ export const GradeSchema = z.enum([
 
 export const AssessmentSchema = z.object({
   factualGrade: GradeSchema.nullable(),
-  truthfulGrade: GradeSchema.nullable(),
   status: z.enum(["assessed", "undetermined"]),
   gradeRationale: z.string().min(1),
-  gradeDivergenceNote: z.string().optional(),
   rubricVersion: z.string().min(1),
   pipelineVersion: z.string().min(1)
+});
+
+export const MeasurementSchema = z.object({
+  method: z.string().min(1),
+  sample: z.string().min(1),
+  aggregationBasis: z.string().min(1),
+  producer: z.string().min(1),
+  measuredAt: isoStringSchema.optional()
 });
 
 const evidenceSpanSchema = z
@@ -153,11 +159,13 @@ export const CertV2Schema = z
     previousVersionId: versionIdSchema.optional(),
     canonicalProposition: z.string().min(10).max(300),
     originalClaim: z.string().optional(),
-    claimNature: z.enum(["event_occurrence", "document_content"]),
+    claimNature: z.enum(["event_occurrence", "document_content", "measurement"]),
+    measurement: MeasurementSchema.optional(),
     classification: z.enum(["F", "O", "M"]),
     language: z.enum(["ko", "en"]),
     asOfDate: isoStringSchema,
     status: z.enum(["active", "superseded", "retracted", "needs_review"]),
+    reviewMode: z.enum(["human_reviewed", "automated_unreviewed"]).default("human_reviewed"),
     assessment: AssessmentSchema,
     evidence: z.array(EvidenceItemSchema).min(1),
     reviewLog: ReviewLogSchema,
@@ -191,34 +199,39 @@ export const CertV2Schema = z
           message: "factualGrade is required when assessment.status is assessed"
         });
       }
+    }
 
-      if (assessment.truthfulGrade === null) {
+    if (assessment.status === "undetermined") {
+      if (assessment.factualGrade !== null) {
         ctx.addIssue({
           code: "custom",
-          path: ["assessment", "truthfulGrade"],
-          message: "truthfulGrade is required when assessment.status is assessed"
+          path: ["assessment", "factualGrade"],
+          message: "factualGrade must be null when assessment.status is undetermined"
+        });
+      }
+
+      if (cert.undeterminedItems.length === 0) {
+        ctx.addIssue({
+          code: "custom",
+          path: ["undeterminedItems"],
+          message: "undetermined assessments must include at least one undetermined item"
         });
       }
     }
 
-    if (assessment.status === "undetermined" && cert.undeterminedItems.length === 0) {
+    if (cert.claimNature === "measurement" && !cert.measurement) {
       ctx.addIssue({
         code: "custom",
-        path: ["undeterminedItems"],
-        message: "undetermined assessments must include at least one undetermined item"
+        path: ["measurement"],
+        message: "measurement methodology is required when claimNature is measurement"
       });
     }
 
-    if (
-      assessment.factualGrade !== null &&
-      assessment.truthfulGrade !== null &&
-      assessment.factualGrade !== assessment.truthfulGrade &&
-      !assessment.gradeDivergenceNote?.trim()
-    ) {
+    if (cert.claimNature !== "measurement" && cert.measurement) {
       ctx.addIssue({
         code: "custom",
-        path: ["assessment", "gradeDivergenceNote"],
-        message: "gradeDivergenceNote is required when factualGrade and truthfulGrade differ"
+        path: ["measurement"],
+        message: "measurement methodology must be absent unless claimNature is measurement"
       });
     }
   });

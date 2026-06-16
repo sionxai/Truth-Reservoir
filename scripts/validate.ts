@@ -7,7 +7,7 @@ import {
 } from "../schema/cert-v2.ts";
 import { listPropositionFiles, loadPropositions } from "../lib/data.ts";
 
-const allowedClaimNature = new Set(["event_occurrence", "document_content"]);
+const allowedClaimNature = new Set(["event_occurrence", "document_content", "measurement"]);
 
 function formatZodError(error: z.ZodError): string {
   return error.issues

@@ -50,10 +50,8 @@ async function createExamples(propositions: Proposition[]): Promise<Record<strin
   needsReview.assessment = {
     ...needsReview.assessment,
     factualGrade: null,
-    truthfulGrade: null,
     status: "undetermined",
-    gradeRationale: "추가 원문 대조가 필요하다는 예시 상태이다.",
-    gradeDivergenceNote: undefined
+    gradeRationale: "추가 원문 대조가 필요하다는 예시 상태이다."
   };
   needsReview.undeterminedItems = ["원문 대조 범위 확정 필요"];
   needsReview.openCorrectionRequests = 2;

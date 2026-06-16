@@ -24,7 +24,8 @@ export const classificationLabels: Record<Classification, string> = {
 
 export const claimNatureLabels: Record<ClaimNature, string> = {
   event_occurrence: "사건 발생",
-  document_content: "문서 내용"
+  document_content: "문서 내용",
+  measurement: "측정 결과"
 };
 
 export const assessmentStatusLabels: Record<Assessment["status"], string> = {
@@ -63,4 +64,3 @@ export function gradeTone(grade: Grade | null): "success" | "primary" | "warning
 export function formatDateTime(value: string): string {
   return value.replace("T", " ").replace("Z", " UTC");
 }
-

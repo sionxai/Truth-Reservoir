@@ -42,6 +42,24 @@ export default function ApiDocsPage() {
       </section>
 
       <section className="content-panel doc-panel">
+        <h2>주요 필드</h2>
+        <ul>
+          <li>
+            <span className="mono">assessment.factualGrade</span>는 단일 사실 신뢰도 보조 지표입니다. <span className="mono">truthfulGrade</span>와 <span className="mono">gradeDivergenceNote</span>는 계약에서 제거되었습니다.
+          </li>
+          <li>
+            <span className="mono">claimNature</span>는 <span className="mono">event_occurrence</span>, <span className="mono">document_content</span>, <span className="mono">measurement</span> 중 하나입니다.
+          </li>
+          <li>
+            <span className="mono">claimNature</span>가 <span className="mono">measurement</span>이면 <span className="mono">measurement.method</span>, <span className="mono">measurement.sample</span>, <span className="mono">measurement.aggregationBasis</span>, <span className="mono">measurement.producer</span>가 필요합니다. 측정이 아니면 <span className="mono">measurement</span>는 없어야 합니다.
+          </li>
+          <li>
+            <span className="mono">reviewMode</span>는 <span className="mono">human_reviewed</span> 또는 <span className="mono">automated_unreviewed</span>입니다. 생략하면 <span className="mono">human_reviewed</span>로 해석됩니다.
+          </li>
+        </ul>
+      </section>
+
+      <section className="content-panel doc-panel">
         <h2>dash-id 인코딩</h2>
         <p>
           내부 propositionId는 <span className="mono">stmt:840aa7c32d8f6372cd968fb6</span>처럼 콜론을 포함합니다. 정적 파일과 라우트에서는 첫 구분자만 대시로 바꾼 <span className="mono">stmt-840aa7c32d8f6372cd968fb6</span>를 사용합니다.
@@ -50,4 +68,3 @@ export default function ApiDocsPage() {
     </main>
   );
 }
-

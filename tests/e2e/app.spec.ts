@@ -33,15 +33,17 @@ test("E2 detail page exposes evidence, grades, review, corrections, and limitati
   await page.goto(`/p/${predecessorDashId}`);
 
   await expect(page.getByText("Primary Artifact / Evidence Network")).toBeVisible();
-  await expect(page.getByText("기초 사실성 축")).toBeVisible();
-  await expect(page.getByText("진술 충실성 축")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "사실 신뢰도 보조 라벨" })).toBeVisible();
+  await expect(page.getByText("사실 신뢰도").first()).toBeVisible();
+  await expect(page.getByText("완전신뢰가능").first()).toBeVisible();
   await expect(page.getByText("gradeRationale")).toBeVisible();
   await expect(page.getByText(predecessor.assessment.gradeRationale)).toBeVisible();
   await expect(page.getByText("반론 검토 로그")).toBeVisible();
   await expect(page.getByRole("heading", { name: "정정 이력" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "한계" })).toBeVisible();
   await expect(page.getByText(predecessor.limitations)).toBeVisible();
-  await expect(page.getByText("프레이밍 오염 신호")).toBeVisible();
+  await expect(page.getByText("진술 충실성 축")).toHaveCount(0);
+  await expect(page.getByText("프레이밍 오염 신호")).toHaveCount(0);
 });
 
 test("E3 verify page shows matching hash badges and the overclaim notice", async ({ page }) => {

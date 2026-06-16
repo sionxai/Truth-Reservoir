@@ -35,6 +35,13 @@ export default async function PropositionDetailPage({ params }: PageProps) {
 
   return (
     <main className="detail-page">
+      {proposition.reviewMode === "automated_unreviewed" ? (
+        <section className="automated-notice" role="status">
+          <strong>자동 처리됨 · 인간 검수 미경유</strong>
+          <span>이 명제는 사후 인간 감사 대상이며, 자동 판정이 최종 권위가 아닙니다.</span>
+        </section>
+      ) : null}
+
       {proposition.openCorrectionRequests > 0 ? (
         <section className="notice--warning" role="status">
           <strong>이의제기 중</strong> — 현재 열린 정정 요청 {proposition.openCorrectionRequests}건.
@@ -70,4 +77,3 @@ export default async function PropositionDetailPage({ params }: PageProps) {
     </main>
   );
 }
-

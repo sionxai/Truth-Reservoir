@@ -398,7 +398,7 @@ button.secondary,
 
 @media (min-width: 1024px) {
   .search-controls {
-    grid-template-columns: 2fr repeat(5, minmax(130px, 1fr));
+    grid-template-columns: 2fr repeat(4, minmax(130px, 1fr));
   }
 
   .field--wide {
@@ -420,6 +420,7 @@ button.secondary,
 }
 
 .sensitive-notice,
+.automated-notice,
 .overclaim-notice {
   background: rgb(210 153 34 / 10%);
   border: 1px solid var(--color-warning);
@@ -450,6 +451,19 @@ button.secondary,
 .evidence-items {
   display: grid;
   gap: 18px;
+}
+
+.measurement-methodology {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-md);
+  margin-top: 24px;
+  padding: 16px;
+}
+
+.measurement-methodology h2 {
+  font-size: 1rem;
+  margin: 0 0 12px;
 }
 
 .evidence-groups {
@@ -604,7 +618,6 @@ button.secondary,
 }
 
 .undetermined-box,
-.framing-alert,
 .rationale-block {
   border: 1px solid var(--color-border);
   border-radius: var(--tr-radius-md);
@@ -616,18 +629,12 @@ button.secondary,
   border-color: var(--color-warning);
 }
 
-.framing-alert {
-  border-color: var(--color-warning);
-  background: rgb(210 153 34 / 8%);
-}
-
 .rationale-block h3,
 .markdown-block h4 {
   margin: 0 0 8px;
 }
 
 .rationale-block p,
-.framing-alert p,
 .undetermined-box p,
 .limitations-block p,
 .action-card p,

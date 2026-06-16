@@ -3,17 +3,17 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:52e6260a60e04599d809ae61",
-      "versionId": "ver:e5df22b30da92016",
-      "certHash": "sha256:4d9ccd12eadb230fa823713ce230ebce7e4360dfe7be86dd0718a3ade3c06fcd",
+      "versionId": "ver:79d2515ea1ad6cba",
+      "certHash": "sha256:b3a492f6a9e6584aa812b88c5aab5257e154cada743f9ea71ceb2074e6dae6c1",
       "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
       "claimNature": "document_content",
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-15",
       "status": "active",
+      "reviewMode": "human_reviewed",
       "assessment": {
         "factualGrade": "fully_reliable",
-        "truthfulGrade": "fully_reliable",
         "status": "assessed",
         "gradeRationale": "법률 제10465호 부칙 제1조의 시행일 문구가 명제의 인용문과 일치한다.",
         "rubricVersion": "rubric-2.1",
@@ -98,20 +98,19 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-      "versionId": "ver:58ec461aab981eaf",
-      "certHash": "sha256:eb5974188b743b1111b72a0b6d6764523cd94a55c3fb2b5aa27b081c4bcaf17a",
+      "versionId": "ver:49f8486d6b21cc52",
+      "certHash": "sha256:8c625248653e4c731be76efdfae407f5455f38b6b0890b15d304e0bcccda2a08",
       "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
       "claimNature": "document_content",
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-15",
       "status": "active",
+      "reviewMode": "human_reviewed",
       "assessment": {
         "factualGrade": "fully_reliable",
-        "truthfulGrade": "largely_reliable",
         "status": "assessed",
         "gradeRationale": "부칙 제2조는 구 공공기관 개인정보보호 법률의 폐지를 직접 규정한다.",
-        "gradeDivergenceNote": "폐지 사실은 원문으로 완전하게 확인되지만 '후신'이라는 표현은 제도적 대체 관계를 요약하는 해석 요소가 있어 진실성 평가는 한 단계 낮췄다.",
         "rubricVersion": "rubric-2.1",
         "pipelineVersion": "pipeline-2.1"
       },
@@ -146,7 +145,7 @@
       "reviewLog": {
         "redteam": {
           "strongestCounterargument": "'후신'은 법률 문구가 아니라 제도적 평가에 가까울 수 있다.",
-          "response": "폐지 조문은 사실로 채택하되 후신 표현의 해석 여지는 gradeDivergenceNote와 truthfulGrade에 반영했다.",
+          "response": "폐지 조문은 사실로 채택하되 후신 표현의 해석 여지는 limitations에 한계로 공개했다.",
           "errorsFound": 0,
           "framingChecks": "폐지 조문과 제도적 후속 관계를 구분해 표현했다."
         },
@@ -182,7 +181,7 @@
       "undeterminedItems": [],
       "correctionHistory": [],
       "openCorrectionRequests": 0,
-      "limitations": "폐지 조문 확인에 초점을 두며 '후신' 표현은 제도적 연속성을 요약한 제한적 표현이다.",
+      "limitations": "폐지 사실은 원문으로 확인되지만 '후신' 표현은 제도적 대체 관계를 요약하는 해석 요소가 있다. 이 명제는 폐지 조문 확인에 초점을 두며, 법적 동일성이나 제도적 연속성 전체를 확정하지 않는다.",
       "tags": [
         "privacy",
         "law-10465",
@@ -194,17 +193,17 @@
     {
       "certVersion": "2.0",
       "propositionId": "stmt:40340515225f7adf44e242f3",
-      "versionId": "ver:49d94938ca1296f4",
-      "certHash": "sha256:dc1a9d6893b6791b7bb298e9142fd86838fdd948d6bd85dcf2efe89957c7ce4a",
+      "versionId": "ver:3c883a287aa4eb25",
+      "certHash": "sha256:e6f1e354fd1e1988a6c0b470bddd424a2b5070082df186c4b40ddd1b55ee7f01",
       "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
       "claimNature": "event_occurrence",
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-15",
       "status": "active",
+      "reviewMode": "human_reviewed",
       "assessment": {
         "factualGrade": "fully_reliable",
-        "truthfulGrade": "fully_reliable",
         "status": "assessed",
         "gradeRationale": "법령 원문과 정책브리핑 자료가 법률 제10465호의 공포일을 같은 날짜로 지시한다.",
         "rubricVersion": "rubric-2.1",

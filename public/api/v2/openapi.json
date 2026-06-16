@@ -148,8 +148,40 @@
             "type": "string",
             "enum": [
               "event_occurrence",
-              "document_content"
+              "document_content",
+              "measurement"
             ]
+          },
+          "measurement": {
+            "type": "object",
+            "properties": {
+              "method": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sample": {
+                "type": "string",
+                "minLength": 1
+              },
+              "aggregationBasis": {
+                "type": "string",
+                "minLength": 1
+              },
+              "producer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "measuredAt": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "method",
+              "sample",
+              "aggregationBasis",
+              "producer"
+            ],
+            "additionalProperties": false
           },
           "classification": {
             "type": "string",
@@ -178,27 +210,18 @@
               "needs_review"
             ]
           },
+          "reviewMode": {
+            "default": "human_reviewed",
+            "type": "string",
+            "enum": [
+              "human_reviewed",
+              "automated_unreviewed"
+            ]
+          },
           "assessment": {
             "type": "object",
             "properties": {
               "factualGrade": {
-                "anyOf": [
-                  {
-                    "type": "string",
-                    "enum": [
-                      "fully_reliable",
-                      "largely_reliable",
-                      "mixed",
-                      "largely_unreliable",
-                      "not_reliable"
-                    ]
-                  },
-                  {
-                    "type": "null"
-                  }
-                ]
-              },
-              "truthfulGrade": {
                 "anyOf": [
                   {
                     "type": "string",
@@ -226,9 +249,6 @@
                 "type": "string",
                 "minLength": 1
               },
-              "gradeDivergenceNote": {
-                "type": "string"
-              },
               "rubricVersion": {
                 "type": "string",
                 "minLength": 1
@@ -240,7 +260,6 @@
             },
             "required": [
               "factualGrade",
-              "truthfulGrade",
               "status",
               "gradeRationale",
               "rubricVersion",
@@ -657,6 +676,7 @@
           "language",
           "asOfDate",
           "status",
+          "reviewMode",
           "assessment",
           "evidence",
           "reviewLog",

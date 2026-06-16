@@ -26,6 +26,37 @@ export function EvidenceNetwork({ proposition }: EvidenceNetworkProps) {
         </div>
       </header>
 
+      {proposition.measurement ? (
+        <section className="measurement-methodology" aria-labelledby="measurement-methodology-title">
+          <p className="eyebrow">Measurement Methodology</p>
+          <h2 id="measurement-methodology-title">측정 방법론</h2>
+          <dl className="detail-list">
+            <div>
+              <dt>method</dt>
+              <dd>{proposition.measurement.method}</dd>
+            </div>
+            <div>
+              <dt>sample</dt>
+              <dd>{proposition.measurement.sample}</dd>
+            </div>
+            <div>
+              <dt>aggregationBasis</dt>
+              <dd>{proposition.measurement.aggregationBasis}</dd>
+            </div>
+            <div>
+              <dt>producer</dt>
+              <dd>{proposition.measurement.producer}</dd>
+            </div>
+            {proposition.measurement.measuredAt ? (
+              <div>
+                <dt>measuredAt</dt>
+                <dd>{formatDateTime(proposition.measurement.measuredAt)}</dd>
+              </div>
+            ) : null}
+          </dl>
+        </section>
+      ) : null}
+
       <div className="evidence-groups">
         {groups.map((group) => (
           <section className="evidence-group" key={group.independenceGroupId}>
@@ -161,4 +192,3 @@ function groupEvidenceByIndependence(evidence: EvidenceItem[]) {
     items
   }));
 }
-

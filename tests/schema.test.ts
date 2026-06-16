@@ -22,34 +22,15 @@ describe("Cert v2 schema", () => {
     }
   );
 
-  it("requires gradeDivergenceNote when factualGrade and truthfulGrade diverge", async () => {
-    const [seed] = await loadPropositions();
-    const candidate = cloneProposition(seed);
-    candidate.assessment = {
-      ...candidate.assessment,
-      factualGrade: "fully_reliable",
-      truthfulGrade: "largely_reliable"
-    };
-    delete candidate.assessment.gradeDivergenceNote;
-
-    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
-
-    candidate.assessment.gradeDivergenceNote = "기초 사실성과 진술 충실성이 다른 이유를 설명한다.";
-
-    expect(CertV2Schema.safeParse(candidate).success).toBe(true);
-  });
-
   it("requires undeterminedItems for undetermined assessments", async () => {
     const [seed] = await loadPropositions();
     const candidate = cloneProposition(seed);
     candidate.assessment = {
       ...candidate.assessment,
       factualGrade: null,
-      truthfulGrade: null,
       status: "undetermined",
       gradeRationale: "증거 또는 절차가 부족해 현 시점 기준 라벨을 산정하지 않았다."
     };
-    delete candidate.assessment.gradeDivergenceNote;
     candidate.undeterminedItems = [];
 
     expect(CertV2Schema.safeParse(candidate).success).toBe(false);
@@ -57,6 +38,73 @@ describe("Cert v2 schema", () => {
     candidate.undeterminedItems = ["원문 대조 범위 확정 필요"];
 
     expect(CertV2Schema.safeParse(candidate).success).toBe(true);
+  });
+
+  it("requires factualGrade to be null for undetermined assessments", async () => {
+    const [seed] = await loadPropositions();
+    const candidate = cloneProposition(seed);
+    candidate.assessment = {
+      ...candidate.assessment,
+      factualGrade: "fully_reliable",
+      status: "undetermined",
+      gradeRationale: "증거 또는 절차가 부족해 현 시점 기준 라벨을 산정하지 않았다."
+    };
+    candidate.undeterminedItems = ["원문 대조 범위 확정 필요"];
+
+    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
+  });
+
+  it("requires measurement methodology for measurement claimNature only", async () => {
+    const [seed] = await loadPropositions();
+    const candidate = cloneProposition(seed);
+    candidate.claimNature = "measurement";
+
+    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
+
+    candidate.measurement = {
+      method: "원문에 공개된 집계 방법을 재현한다.",
+      sample: "2026-06-15 기준 공개 표본",
+      aggregationBasis: "공개 항목별 단순 합산",
+      producer: "foundation-seed",
+      measuredAt: "2026-06-15"
+    };
+
+    expect(CertV2Schema.safeParse(candidate).success).toBe(true);
+
+    candidate.claimNature = "document_content";
+    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
+  });
+
+  it("defaults reviewMode to human_reviewed", async () => {
+    const [seed] = await loadPropositions();
+    const candidate = cloneProposition(seed) as unknown as Record<string, unknown>;
+    delete candidate.reviewMode;
+
+    const parsed = CertV2Schema.safeParse(candidate);
+    expect(parsed.success).toBe(true);
+    if (parsed.success) {
+      expect(parsed.data.reviewMode).toBe("human_reviewed");
+    }
+  });
+
+  it("strips truthfulGrade from parsed assessments", async () => {
+    const [seed] = await loadPropositions();
+    const candidate = cloneProposition(seed) as unknown as Record<string, unknown>;
+    candidate.assessment = {
+      ...(candidate.assessment as Record<string, unknown>),
+      truthfulGrade: "fully_reliable"
+    };
+
+    const parsed = CertV2Schema.safeParse(candidate);
+    expect(parsed.success).toBe(true);
+    if (parsed.success) {
+      expect(parsed.data.assessment).toEqual(
+        expect.objectContaining({
+          factualGrade: seed.assessment.factualGrade
+        })
+      );
+      expect("truthfulGrade" in parsed.data.assessment).toBe(false);
+    }
   });
 
   it("rejects an empty gradeRationale", async () => {
