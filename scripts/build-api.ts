@@ -1,4 +1,4 @@
-import { mkdir, rm, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, rm, writeFile } from "node:fs/promises";
 import { CertV2Schema } from "../schema/cert-v2.ts";
 import { loadInstitutionalMetrics, loadPropositions } from "../lib/data.ts";
 import { applyDerivedHashes } from "../lib/verify.ts";
@@ -120,6 +120,10 @@ const examples = await createExamples(propositions);
 for (const [name, example] of Object.entries(examples)) {
   await writeFile(`${examplesDir}/${name}.json`, `${JSON.stringify(example, null, 2)}\n`);
 }
+
+// CONSTITUTION.md (repo root) is the single source of truth. Copy it into public/
+// so the served copy can never silently drift from the canonical one (제8).
+await copyFile("CONSTITUTION.md", "public/CONSTITUTION.md");
 
 console.log(
   `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, institutional metrics, and examples.`
