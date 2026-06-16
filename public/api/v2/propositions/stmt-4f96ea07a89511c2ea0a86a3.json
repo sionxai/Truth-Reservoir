@@ -1,0 +1,234 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
+  "versionId": "ver:220d768b0673a4b9",
+  "certHash": "sha256:2c944699e34a8f6d358b18f1336e4bef9de58b7b6f1cf6692b3b466b2b3891b5",
+  "canonicalProposition": "페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대는 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아와 최초의 지구 일주를 완료하였다",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "UNESCO Memory of the World의 항목 제목과 본문은 1519-1522년 마젤란과 후안 세바스티안 엘카노의 최초 지구 일주 항해를 자동 재확인 가능한 페이지에서 직접 제시한다. Britannica의 Juan Sebastián del Cano 항목은 그가 최초의 지구 일주를 완료했고 1519년 마젤란 함대에 탑승했으며 1522년 9월 원정대를 스페인으로 귀환시켰다고 적는다. Ferdinand Magellan 항목은 마젤란이 도중 사망했고 그의 배 한 척이 서쪽으로 스페인에 돌아와 첫 지구 일주를 달성했다고 보조 확인한다. Britannica는 유능한 보조 출처로 유지하되, 자동 재-fetch가 막히므로 UNESCO를 독립·fetchable 앵커로 추가했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.unesco.org/en/memory-world/first-voyage-circumnavigation-fernao-de-magalhaes-and-juan-sebastian-elcano-1519-1522",
+      "title": "First Voyage of Circumnavigation by Fernãõ de Magalhães and Juan Sebastián Elcano (1519-1522) - Memory of the World",
+      "retrievedAt": "2026-06-16T03:51:28Z",
+      "locator": {
+        "section": "Memory of the World",
+        "heading": "First Voyage of Circumnavigation by Fernãõ de Magalhães and Juan Sebastián Elcano (1519-1522)"
+      },
+      "shortQuote": "First Voyage of Circumnavigation by Fernãõ de Magalhães and Juan Sebastián Elcano (1519-1522)",
+      "quoteHash": "sha256:0d9c37728a1c141c42a5e61a99df534e7ccc45995dd458ff5f435b46464683b1",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "UNESCO HTML page was successfully re-fetched by automated web retrieval on 2026-06-16; the live page exposed the quoted text and did not return a 403. Wayback save attempt from this environment failed with TypeError: fetch failed; no archive URL was recorded.",
+      "independenceGroupId": "unesco-mow",
+      "independenceLevel": "independent",
+      "independenceNote": "Britannica blocks automated re-fetch for reviewers, so this UNESCO Memory of the World page is the fetchable independent anchor; it is distinct from the Britannica editorial source group.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "UNESCO Memory of the World is an international heritage register that documents historically significant records and collections.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "UNESCO Memory of the World entry is a register summary, not the original voyage log; it is used as a fetchable independent anchor for the event framing."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.britannica.com/biography/Juan-Sebastian-del-Cano",
+      "title": "Juan Sebastián del Cano - Britannica",
+      "retrievedAt": "2026-06-16T02:25:00Z",
+      "locator": {
+        "section": "Introduction",
+        "heading": "Juan Sebastián del Cano"
+      },
+      "shortQuote": "completed the first circumnavigation of the Earth",
+      "quoteHash": "sha256:3083f1ae2e8efce1cdddf767179b41eb8d5b70076dd1c22a891ccbb2451eea81",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-history",
+      "independenceLevel": "independent",
+      "independenceNote": "NASA·NGA와 다른 독립 편집 백과사전 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica는 전문 편집·검수 절차를 가진 역사·전기 백과사전이다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "2차 백과사전 출처이므로 원자료의 세부 날짜 차이는 추가 역사 문헌으로 재검토 가능하다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.britannica.com/biography/Juan-Sebastian-del-Cano",
+      "title": "Juan Sebastián del Cano - Britannica",
+      "retrievedAt": "2026-06-16T02:25:00Z",
+      "locator": {
+        "section": "Introduction",
+        "heading": "Juan Sebastián del Cano"
+      },
+      "shortQuote": "In 1519 Cano sailed as master",
+      "quoteHash": "sha256:24c75b7c084affa150d974c88bbc21b5b4a8437174b3b9c805fbd6087009438d",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-history",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 Britannica 항목의 출발연도 관련 보조 인용이다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica 전기 항목이 엘카노의 1519년 원정 참여를 설명한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "동일 출처의 보조 인용이다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.britannica.com/biography/Juan-Sebastian-del-Cano",
+      "title": "Juan Sebastián del Cano - Britannica",
+      "retrievedAt": "2026-06-16T02:25:00Z",
+      "locator": {
+        "section": "Introduction",
+        "heading": "Juan Sebastián del Cano"
+      },
+      "shortQuote": "He safely brought the expedition home to Spain in September 1522",
+      "quoteHash": "sha256:dae03d94562039ce53463eebac0543d3095e25dc15444ba2661731e2ff51fb82",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-history",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 Britannica 항목의 귀환연도 관련 보조 인용이다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica 전기 항목이 엘카노의 1522년 귀환을 설명한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "동일 출처의 보조 인용이다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.britannica.com/biography/Ferdinand-Magellan",
+      "title": "Ferdinand Magellan - Britannica",
+      "retrievedAt": "2026-06-16T02:25:00Z",
+      "locator": {
+        "section": "Introduction & Top Questions",
+        "heading": "Ferdinand Magellan"
+      },
+      "shortQuote": "one of his ships continued westward to Spain",
+      "quoteHash": "sha256:d531df3e44ffc4d4844d1f3edfdb160a4c5b94d017491a280b3cf50752685290",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-history",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 Britannica 편집 체계의 별도 전기 항목으로, 마젤란 항목에서 서쪽 항해와 귀환 맥락을 보조 확인한다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica의 Magellan 전기 항목은 원정의 진행과 마젤란 사망 후 귀환을 설명한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "같은 출판사의 별도 항목이므로 완전 독립 원천은 아니다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.britannica.com/biography/Ferdinand-Magellan",
+      "title": "Ferdinand Magellan - Britannica",
+      "retrievedAt": "2026-06-16T02:25:00Z",
+      "locator": {
+        "section": "Top Questions",
+        "heading": "What is Ferdinand Magellan best known for?"
+      },
+      "shortQuote": "He died en route and Juan Sebastián del Cano completed it.",
+      "quoteHash": "sha256:83c6c15d6557336c5a9a008501b38f3af88455884a41be541f3784885364e2be",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-history",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 Britannica 편집 체계의 별도 전기 항목으로, 마젤란 사망과 엘카노 완료 한계를 확인한다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica의 Magellan 전기 항목은 마젤란이 완주하지 않았다는 한계를 직접 설명한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "같은 출판사의 별도 항목이므로 완전 독립 원천은 아니다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "마젤란은 1521년 필리핀에서 사망했으므로 '마젤란의 지구 일주'라고 쓰면 사실관계를 왜곡한다는 반론이 가장 강하다.",
+      "response": "명제는 마젤란이 시작하고 엘카노가 완수한 원정대로 주체를 분리했다. limitations에도 마젤란의 1521년 사망과 엘카노 완료를 명시했다.",
+      "errorsFound": 1,
+      "framingChecks": "'세계 최초의 위업' 같은 평가어는 제외하고, 출발연도·방향·귀환연도·완료 주체만 기술했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "마젤란 개인이 완주했다는 통속 표현과 엘카노가 완료했다는 정정 표현을 같은 출처 기준으로 비교했다.",
+      "result": "Britannica 양 항목 모두 마젤란 도중 사망과 엘카노 완료를 지지하므로, 개인 공적을 단순화하는 표현은 채택하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "UNESCO와 Britannica 권위만으로 의미를 확정하지 않고, 인용문이 실제로 1519-1522년 항해, 엘카노 완료, 최초 일주 완료, 마젤란 사망 한계를 각각 지지하는지 확인했다. UNESCO 항목은 자동 재-fetch가 가능한 독립 앵커이고, Britannica 항목들은 유능하지만 같은 출판사 원천으로 묶어 보조 증거로만 계산한다. 세트 전체에서는 이 역사 항해 증거가 NASA 사진·NGA 측지 표준·고대 측정법과 다른 유형으로 수렴한다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "UNESCO Memory of the World 항목을 자동 재-fetch해 제목과 본문이 노출되는지 확인하고, Juan Sebastián del Cano 항목과 Ferdinand Magellan 항목의 주체·연도·완료 표현을 대조했다. 마젤란 개인 완주로 오해될 표현을 제거했다.",
+      "adoptedReason": "UNESCO가 1519-1522년 최초 지구 일주 항해를 자동 재확인 가능한 페이지에서 제시하고, Britannica가 엘카노의 최초 지구 일주 완료와 1519년 참여·1522년 귀환을 보조한다.",
+      "rejectedAlternatives": "'마젤란이 지구 일주를 했다'는 표현은 도중 사망 사실을 숨겨 제외했다. 정확한 일자까지 포함하는 문장은 이 출처 인용만으로 충분히 직접 확인되지 않아 연도 단위로 제한했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "마젤란은 1521년 필리핀에서 사망했으므로 원정을 직접 완주하지 않았다. 이 명제는 마젤란이 시작한 원정대가 엘카노 지휘 아래 1522년 스페인으로 돌아와 최초의 지구 일주를 완료했다는 사건에 한정한다. 출발·귀환의 월일은 출처별 표기 차이가 있어 연도 단위로만 저장했다.",
+  "tags": [
+    "지구형상",
+    "지구과학",
+    "항해사",
+    "마젤란",
+    "엘카노",
+    "지구일주"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}

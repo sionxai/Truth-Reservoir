@@ -1,0 +1,152 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
+  "versionId": "ver:51c22322a44b18e5",
+  "certHash": "sha256:17a500d196dd54e89ac5e3466ee28e7bf546332266a4b3bfdb645902adceec03",
+  "canonicalProposition": "NGA WGS 84 공식 설명은 WGS 84 측지 좌표가 기준타원체에서 생성되며 그 장반경을 6,378,137.0미터로 제시한다",
+  "claimNature": "document_content",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "NGA Office of Geomatics의 WGS 84 공식 설명이 WGS 84 기준타원체 문맥과 장반경 값을 같은 정의 구역에서 제시한다. 이 명제는 지구의 실제 형상에 대한 판정이 아니라 WGS 84 문서 내용에 한정한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84",
+      "title": "NGA Office of Geomatics - World Geodetic System 1984 (WGS 84)",
+      "retrievedAt": "2026-06-16T02:20:00Z",
+      "locator": {
+        "section": "World Geodetic System 1984 Reference System",
+        "heading": "Coordinate System"
+      },
+      "shortQuote": "generated using its reference ellipsoid",
+      "quoteHash": "sha256:d3b1eb6275d42af5e35ff8f4592c7ac19cf8d80fa191670c137131a26743414d",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NGA HTML page. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+      "independenceGroupId": "nga-wgs84",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 NGA WGS 84 공식 페이지에서 인용한 세 문구 중 하나다. 문서내용 명제에서는 이 공식 문서가 권위 있는 단일 원천이지만, 독립 corroboration으로 세지 않는다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "NGA Office of Geomatics는 WGS 84 기준계와 관련 산출물을 공표하는 주체다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "표준 생산기관의 자기 설명이므로, 실제 지구 형상 일반론이 아니라 문서 내용 명제로만 채택했다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84",
+      "title": "NGA Office of Geomatics - World Geodetic System 1984 (WGS 84)",
+      "retrievedAt": "2026-06-16T02:20:00Z",
+      "locator": {
+        "section": "World Geodetic System 1984 Reference System",
+        "heading": "Defining Parameters"
+      },
+      "shortQuote": "Semi-major Axis a 6378137.0 meters",
+      "quoteHash": "sha256:53394621ddd7522c5b6628e2b79979ac86cedddb1189ae6b717e1283e0956c63",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NGA HTML page의 표 형식 텍스트를 공백 정규화해 인용했다. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+      "independenceGroupId": "nga-wgs84",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 NGA WGS 84 공식 페이지에서 인용한 세 문구 중 하나다. 문서내용 명제에서는 이 공식 문서가 권위 있는 단일 원천이지만, 독립 corroboration으로 세지 않는다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "WGS 84 정의 파라미터를 제시하는 공식 기관 페이지다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "동일 공식 페이지의 표 인용이므로 독립 증거 수를 늘리는 용도로 계산하지 않는다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84",
+      "title": "NGA Office of Geomatics - World Geodetic System 1984 (WGS 84)",
+      "retrievedAt": "2026-06-16T02:20:00Z",
+      "locator": {
+        "section": "World Geodetic System 1984 Reference System",
+        "heading": "Defining Parameters"
+      },
+      "shortQuote": "Flattening Factor of the Earth 1/f 298.257223563",
+      "quoteHash": "sha256:e3cf95fb61cb7c8471c3262234f71ce988ec1ccdf118b4fcb3339fcce945dbf5",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NGA HTML page의 표 형식 텍스트를 공백 정규화해 인용했다. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+      "independenceGroupId": "nga-wgs84",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 NGA WGS 84 공식 페이지에서 인용한 세 문구 중 하나다. 문서내용 명제에서는 이 공식 문서가 권위 있는 단일 원천이지만, 독립 corroboration으로 세지 않는다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "WGS 84 정의 파라미터를 제시하는 공식 기관 페이지다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "동일 공식 페이지의 표 인용이므로 독립 증거 수를 늘리는 용도로 계산하지 않는다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "WGS 84는 편의를 위한 측지 기준계일 뿐이므로, 그것을 지구 실제 형상의 직접 판정처럼 저장하면 제2조 위반이 된다.",
+      "response": "명제를 문서내용으로 제한했다. 저장 대상은 'NGA 공식 설명이 기준타원체와 장반경 값을 제시한다'는 사실이며, 지구 형상에 대한 최종 판정은 저장하지 않는다. 다른 사진·항해·고대 측정 명제와 함께 읽을 때만 독자가 스스로 추론할 수 있다.",
+      "errorsFound": 1,
+      "framingChecks": "초안의 '지구를 회전타원체로 정의한다' 표현은 실제 지구와 표준 모델을 혼동할 수 있어 '측지 좌표가 기준타원체에서 생성된다'는 문서내용으로 좁혔다. 평가어와 이유 설명은 제외했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "평평한 지구 주장과 같은 반대 해석을 WGS 84 공식 문서 내용 명제와 같은 기준으로 점검했다. 이 항목은 반대 주장을 반박하는 결론이 아니라 표준 문서의 기재 여부만 검토한다.",
+      "result": "문서 내용의 존재는 반대 해석의 존재와 별개로 검증 가능하다. 반대 해석을 이 명제 안에 섞지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "NGA 권위를 근거로 지구 형상을 판정하지 않았다. 표준 생산기관의 공식 페이지에서 문구와 수치를 직접 확인했으며, 항목 세트 전체에서는 NASA 사진, 역사 기록, 고대 측정 방법 등 서로 다른 증거 유형이 수렴하도록 구성했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "NGA 페이지의 기준타원체 문구와 장반경·역편평률 표기를 확인했다. 명제가 WGS 84 문서내용에 머무르도록 문장을 조정했다.",
+      "adoptedReason": "공식 WGS 84 설명의 같은 정의 구역이 기준타원체 문맥과 장반경 값을 직접 제시한다.",
+      "rejectedAlternatives": "지구 형상에 관한 결론형 문장은 제2조 위반 소지가 있어 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "WGS 84 기준타원체는 지구 표면 전체의 모든 굴곡을 그대로 말하는 물리적 지구 형상 명제가 아니라 좌표 기준계의 수학적 참조면이다. 본 명제는 NGA 공식 설명의 문서내용과 수치 표기에 한정한다.",
+  "tags": [
+    "지구형상",
+    "지구과학",
+    "측지학",
+    "WGS84",
+    "기준타원체"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}

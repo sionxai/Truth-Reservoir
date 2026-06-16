@@ -1,0 +1,234 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:b18e2813819c4fb0e23830f6",
+  "versionId": "ver:28ee0c54de697aa6",
+  "certHash": "sha256:833b8883f996b8b3fe900e988408f111638ab587bc42c887c0d46f59e2468336",
+  "canonicalProposition": "에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "NOAA National Ocean Service의 History of Geodesy 페이지는 에라토스테네스가 알렉산드리아의 그림자 각도와 시에네-알렉산드리아 거리를 결합한 방법을 자동 재확인 가능한 .gov 페이지에서 설명한다. Britannica가 에라토스테네스의 두 지점 기반 지구 둘레 측정 방법, 시에네와 알렉산드리아의 하지 정오 태양 각도 차이, 두 도시 거리 추정을 설명한다. arXiv 역사·물리교육 논문 초록은 이 역사적 실험이 기원전 약 240년경 시에네와 알렉산드리아에서 수행되었다는 연대와 장소를 보조한다. 원저가 보존되지 않고 Cleomedes를 통한 후대 설명이라는 한계 때문에 숫자값은 명제에서 제외했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.britannica.com/biography/Eratosthenes",
+      "title": "Eratosthenes - Britannica",
+      "retrievedAt": "2026-06-16T02:26:00Z",
+      "locator": {
+        "section": "Top Questions",
+        "heading": "What is Eratosthenes famous for?"
+      },
+      "shortQuote": "Eratosthenes measured Earth’s circumference mathematically using two surface points",
+      "quoteHash": "sha256:06c7764b071e6905fedd7b195980190272427e387439bb40cecc6a959b8d4d5b",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-science-history",
+      "independenceLevel": "independent",
+      "independenceNote": "NASA·NGA 및 arXiv 저장소와 다른 독립 편집 백과사전 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica는 전문 편집·검수 절차를 가진 과학사·전기 백과사전이다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "고대 원저가 보존되지 않아 후대 전승을 요약한 2차 출처다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://oceanservice.noaa.gov/education/tutorial_geodesy/geo02_hist.html",
+      "title": "The History of Geodesy - NOAA National Ocean Service",
+      "retrievedAt": "2026-06-16T03:51:28Z",
+      "locator": {
+        "section": "Global Positioning Tutorial",
+        "heading": "The History of Geodesy"
+      },
+      "shortQuote": "the sun cast a shadow equivalent to about 1/50th of a circle or 7.12°",
+      "quoteHash": "sha256:76dc4c0c7070ea394ac8b3b83391c38fd3737e95f04e6d0e789d87393813c080",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "NOAA HTML page was successfully re-fetched by automated web retrieval on 2026-06-16; the live page exposed the quoted text and did not return a 403. Wayback save attempt from this environment failed with TypeError: fetch failed; no archive URL was recorded.",
+      "independenceGroupId": "noaa-geodesy",
+      "independenceLevel": "independent",
+      "independenceNote": "Britannica blocks automated re-fetch for reviewers, so this NOAA .gov page is the fetchable independent anchor for the shadow-angle method; it is distinct from the Britannica and arXiv source groups.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "NOAA National Ocean Service publishes geodesy education material and identifies NOAA as the page author.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "Government educational summary, not an ancient primary source; used for method and angle, not contested stadion conversion."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.britannica.com/biography/Eratosthenes",
+      "title": "Eratosthenes - Britannica",
+      "retrievedAt": "2026-06-16T02:26:00Z",
+      "locator": {
+        "section": "Biography",
+        "heading": "Eratosthenes"
+      },
+      "shortQuote": "At Syene (now Aswān), some 800 km (500 miles) southeast of Alexandria",
+      "quoteHash": "sha256:e91e5e933e48ab6c93fd32579fa3f4a7f51ecf3e746d43455994736669dddb7d",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-science-history",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 Britannica 항목의 장소 관련 보조 인용이다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica 전기 항목이 시에네와 알렉산드리아의 지리적 관계를 설명한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "동일 출처의 보조 인용이다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.britannica.com/biography/Eratosthenes",
+      "title": "Eratosthenes - Britannica",
+      "retrievedAt": "2026-06-16T02:26:00Z",
+      "locator": {
+        "section": "Biography",
+        "heading": "Eratosthenes"
+      },
+      "shortQuote": "sunlight fell at an angle of about 7.2° from the vertical",
+      "quoteHash": "sha256:a62e4a73c7e0a4c33f4d67f2e613d419b8b91117090afaa17fb9c1ad12882933",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-science-history",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 Britannica 항목의 그림자 각도 관련 보조 인용이다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica 전기 항목이 알렉산드리아에서의 각도 차이를 설명한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "동일 출처의 보조 인용이다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.britannica.com/biography/Eratosthenes",
+      "title": "Eratosthenes - Britannica",
+      "retrievedAt": "2026-06-16T02:26:00Z",
+      "locator": {
+        "section": "Biography",
+        "heading": "Eratosthenes"
+      },
+      "shortQuote": "Given an estimate of the distance between the two cities",
+      "quoteHash": "sha256:e27df73145b92bb414a953f9612a76d5e145a894d4ef27f1255ce53392a69850",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "britannica-science-history",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 Britannica 항목의 두 도시 거리 추정 관련 보조 인용이다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Britannica 전기 항목이 두 도시 거리 추정을 계산 절차의 일부로 설명한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "동일 출처의 보조 인용이다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2110.01610",
+      "title": "Revisitando o Experimento de Eratóstenes: medida do raio de Terra - arXiv",
+      "retrievedAt": "2026-06-16T02:32:00Z",
+      "locator": {
+        "section": "Abstract",
+        "heading": "arXiv:2110.01610"
+      },
+      "shortQuote": "historical experiment of Eratosthenes, carried out around 240 BC",
+      "quoteHash": "sha256:25db139a6cca7624c7deea21d25b2097c3a9f48b51ee7b2b5f8c6e7ec490c26d",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "arXiv HTML abstract page. Wayback save attempt on 2026-06-16 failed with DNS resolution error for web.archive.org; no archive URL was recorded. arXiv is a stable repository but this evidence uses the HTML abstract rather than a separately archived PDF.",
+      "independenceGroupId": "arxiv-history-physics-education",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "Britannica와 다른 저장소·저자군의 학술 원고 초록이지만, 논문은 arXiv 사전공개본으로 동료심사 상태가 확인되지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "물리교육·과학사 주제의 학술 원고로 실험의 역사적 연대와 재현 방법을 보조 설명한다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "arXiv 사전공개본이므로 동료심사 여부가 불명확하다. 연대 보조 증거로만 사용했다."
+        ],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "에라토스테네스의 원저는 보존되지 않았고, stadion의 길이와 수치 환산은 논쟁적이므로 구체적인 지구 둘레 값을 저장하면 과잉 확정이 된다.",
+      "response": "명제는 숫자값을 저장하지 않고, 하지 정오의 두 지점 태양 그림자 각도 차이와 두 도시 거리 추정을 이용한 측정 수행 사실만 저장한다. 원저 미보존과 Cleomedes 전승, stadion 환산 논쟁은 limitations에 명시했다.",
+      "errorsFound": 1,
+      "framingChecks": "'정확하게 증명했다' 같은 평가어와 '왜 측정했는가'는 제외했다. 측정 방법과 장소·시기만 5W 범위로 기술했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "고대 측정 전승 자체에 대한 회의와 평평한 지구 주장을 구분해 검토했다. 전자는 원자료 한계로 limitations에 반영하고, 후자는 이 명제의 저장 대상이 아닌 결론 논쟁으로 분리했다.",
+      "result": "측정 수행·방법 전승은 복수 2차 출처가 지지하지만, 정확한 수치 환산은 논쟁적이므로 채택하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "NOAA, Britannica, arXiv를 권위로만 수용하지 않고, 인용문이 실제로 방법·장소·연대만 지지하는지 확인했다. NOAA 항목은 자동 재-fetch가 가능한 독립 앵커이고, Britannica 항목들은 유능하지만 같은 출판사 원천으로 묶어 보조 증거로만 계산한다. 지구 형상 결론이나 수치 정확도는 이 명제에 넣지 않았고, 세트 전체의 다른 사진·측지·항해 증거와 유형 수렴만 제공한다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "NOAA History of Geodesy 페이지를 자동 재-fetch해 그림자 각도 문구가 노출되는지 확인하고, Britannica의 방법 설명과 arXiv 초록의 around 240 BC 문구를 확인했다. stadion-km 환산과 최종 둘레값은 논쟁적이므로 명제에서 제외했다.",
+      "adoptedReason": "NOAA가 그림자 각도와 시에네-알렉산드리아 거리 결합 방법을 자동 재확인 가능한 페이지에서 제시하고, 장소·방법·대략 연대는 다른 출처도 직접 지지하므로 숫자값 없이 측정 수행 사실을 원자적으로 저장할 수 있다.",
+      "rejectedAlternatives": "'에라토스테네스가 지구 둘레를 정확히 계산했다' 또는 특정 km 값을 담는 문장은 원자료·단위 논쟁 때문에 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "에라토스테네스의 원저는 보존되지 않았고, 방법은 후대 Cleomedes 전승 등으로 알려져 있다. stadion을 km로 환산하는 값과 최종 둘레 수치는 논쟁적이므로 이 명제는 측정 수행과 방법에만 한정한다.",
+  "tags": [
+    "지구형상",
+    "지구과학",
+    "과학사",
+    "에라토스테네스",
+    "측정",
+    "천문학"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}

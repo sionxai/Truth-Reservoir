@@ -173,6 +173,816 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:61efe874787dacf6180ae46b",
+      "versionId": "ver:26812e23cae76703",
+      "certHash": "sha256:8bd9bd193af1bf76f773bffb5cd99718989c1c8d41f8517d37c9355f04f310fa",
+      "canonicalProposition": "1972년 12월 7일 아폴로 17호 승무원은 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영하였다",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "NASA/JSC EOL 카탈로그가 AS17-148-22727 사진 ID, 1972년 12월 7일 촬영일, Apollo 17 승무원이 달로 향하던 중 본 지구 사진이라는 캡션을 제공한다. NASA Earth Observatory도 같은 사진 ID와 날짜·Apollo 17 승무원을 보조 확인한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148",
+          "title": "Astronaut Photo AS17-148-22727 AFRICA - Gateway to Astronaut Photography of Earth, NASA/JSC",
+          "retrievedAt": "2026-06-16T02:22:00Z",
+          "locator": {
+            "section": "Image Caption",
+            "heading": "AS17-148-22727"
+          },
+          "shortQuote": "This classic photograph of the Earth was taken on December 7, 1972.",
+          "quoteHash": "sha256:8d83f8364e5dae36be2f43686eb14fa00475df8ab0a45fd22504a161677bb0c5",
+          "archiveStatus": "archived",
+          "archiveUrl": "https://web.archive.org/web/20260616022936/https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148",
+          "archiveProvider": "internet_archive",
+          "archivedAt": "2026-06-16T02:29:36Z",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NASA/JSC EOL HTML catalog page. Image appearance is verified from the displayed image and caption; the quoted text supports date and subject.",
+          "independenceGroupId": "nasa-jsc-eol-apollo-images",
+          "independenceLevel": "independent",
+          "independenceNote": "NASA Johnson Space Center의 우주비행사 지구사진 카탈로그로, 이미지 ID·날짜·캡션의 1차 보존 카탈로그다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "JSC Earth Science & Remote Sensing Unit이 제공하는 Apollo 사진 카탈로그다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "NASA 임무 기록이므로, 세트 전체에서는 측지 표준·항해 기록·고대 측정법 등 다른 유형의 증거와 함께 수렴시킨다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148",
+          "title": "Astronaut Photo AS17-148-22727 AFRICA - Gateway to Astronaut Photography of Earth, NASA/JSC",
+          "retrievedAt": "2026-06-16T02:22:00Z",
+          "locator": {
+            "section": "Image Caption",
+            "heading": "Original caption"
+          },
+          "shortQuote": "View of the Earth as seen by the Apollo 17 crew traveling toward the moon.",
+          "quoteHash": "sha256:cb54f1fea8b34cf754cce0af6435a45219003e5492ab386b9cb15c44b28becaf",
+          "archiveStatus": "archived",
+          "archiveUrl": "https://web.archive.org/web/20260616022936/https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148",
+          "archiveProvider": "internet_archive",
+          "archivedAt": "2026-06-16T02:29:36Z",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NASA/JSC EOL HTML catalog page. Same archived page as primary image evidence.",
+          "independenceGroupId": "nasa-jsc-eol-apollo-images",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 NASA/JSC EOL 카탈로그 페이지의 원 캡션 인용이며 독립 증거 수를 늘리는 용도로 계산하지 않는다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Apollo 17 사진 원 캡션을 보존하는 공식 사진 카탈로그다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "동일 카탈로그의 보조 인용이다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/history-of-the-blue-marble/",
+          "title": "History of the Blue Marble - NASA Earth Observatory",
+          "retrievedAt": "2026-06-16T02:24:00Z",
+          "locator": {
+            "section": "History of the Blue Marble",
+            "heading": "NASA Earth Observatory"
+          },
+          "shortQuote": "On December 7, 1972, the crew of Apollo 17",
+          "quoteHash": "sha256:294bde94203de575bfaa8afe14f9e95fa26f743ad18db29e2e8abfaaf2cfb06b",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NASA Earth Observatory HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "nasa-earth-observatory-blue-marble",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "NASA Earth Observatory의 후대 설명으로 JSC 사진 카탈로그와 기관은 공유하지만 별도 편집 자료다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "NASA Earth Observatory는 NASA 지구관측 이미지의 공식 설명·교육 자료를 제공한다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "후대 설명 자료이므로 원본 EOL 카탈로그를 주 증거로 사용했다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "사진의 색상·회전·크롭이 후대 처리되었을 수 있으므로 '지구 전체가 원형으로 보인다'는 설명이 원본 촬영 사건과 혼동될 수 있다.",
+          "response": "명제는 사진 촬영 사건과 NASA AS17-148-22727 이미지의 시각적 내용에 한정한다. 후대 색상 조정이나 크롭 가능성은 limitations에 남겼고, 지구 형상 결론은 저장하지 않았다.",
+          "errorsFound": 0,
+          "framingChecks": "'상징적', '위대한', '취약한 지구' 같은 평가어는 제외했다. 사진이 보여주는 원형 시각 요소만 기록하고 그 의미는 독자 추론으로 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "평평한 지구 주장과 사진 조작 주장을 반대 가설로 두고, 공식 사진 ID·원본 캡션·이미지 표시를 같은 증거 기준으로 검토했다.",
+          "result": "공식 카탈로그와 NASA Earth Observatory가 같은 사진 ID·날짜·승무원 맥락을 제시한다. 반대 가설은 이 특정 이미지 기록을 대체하는 검증 가능한 원천을 제시하지 않는다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "NASA 권위만으로 결론을 채택하지 않고 EOL 카탈로그의 이미지 ID·캡션·표시 이미지와 Earth Observatory의 보조 설명을 분리 확인했다. 세트 전체에서는 WGS84, Apollo 8, 항해사, 에라토스테네스 측정법이 서로 다른 증거 유형으로 수렴한다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "AS17-148-22727 EOL 카탈로그의 날짜·캡션·이미지 표시와 NASA Earth Observatory의 날짜·승무원 설명을 확인했다.",
+          "adoptedReason": "원본 사진 카탈로그가 날짜와 사진 ID를 직접 제공하며, 보조 NASA 설명이 같은 사건 맥락을 확인한다.",
+          "rejectedAlternatives": "'지구는 구형이다' 같은 결론형 문장은 제외했다. '완전한 지구 원반' 같은 더 강한 표현은 직접 인용 문구가 부족해 '원형으로 보이는 사진'으로 제한했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "AS17-148-22727의 널리 배포된 버전은 회전·크롭·색상 조정이 있을 수 있다. 본 명제의 '원형으로 보이는' 표현은 EOL 카탈로그의 표시 이미지와 사진 내용에 대한 시각적 기술이며, 물리적 지구 형상에 대한 판정 명제가 아니다.",
+      "tags": [
+        "지구형상",
+        "지구과학",
+        "우주사진",
+        "아폴로17",
+        "BlueMarble",
+        "NASA"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:ae66527bf2aea1b5407a5f78",
+      "versionId": "ver:607de2a74ac759b9",
+      "certHash": "sha256:968b1662fc231204f5ffb8df04b6710e9ea66a6894ca89d59aff63c18b1807b1",
+      "canonicalProposition": "1968년 12월 24일 아폴로 8호 승무원은 달 궤도에서 지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영하였다",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "NASA/JSC EOL 사진 카탈로그가 AS08-14-2383 사진 ID와 달 지평선 위의 지구 설명을 제공하고, NASA SVS가 해당 원본 사진 ID와 Earthrise 촬영 재구성을 제시한다. 촬영일은 NASA APOD의 2018-12-24 페이지 날짜와 '50 years ago today' 설명으로 보강되지만 EOL 카탈로그의 Date taken 필드는 공개 텍스트에서 비어 있어 직접성 한계를 남겼다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=2383&mission=AS08&roll=14",
+          "title": "Astronaut Photo AS08-14-2383 - Gateway to Astronaut Photography of Earth, NASA/JSC",
+          "retrievedAt": "2026-06-16T02:22:00Z",
+          "locator": {
+            "section": "Image Caption",
+            "heading": "AS08-14-2383"
+          },
+          "shortQuote": "The rising Earth is about five degrees above the lunar horizon",
+          "quoteHash": "sha256:1549406f604471627c9361ad49f94ede235ab3674e5248fa6de0cd9d86c79708",
+          "archiveStatus": "archived",
+          "archiveUrl": "https://web.archive.org/web/20260616022910/https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=2383&mission=AS08&roll=14",
+          "archiveProvider": "internet_archive",
+          "archivedAt": "2026-06-16T02:29:10Z",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NASA/JSC EOL HTML catalog page. The visible 'Date taken' field was blank in the retrieved text, so date support is supplied by NASA APOD/SVS evidence below.",
+          "independenceGroupId": "nasa-jsc-eol-apollo-images",
+          "independenceLevel": "independent",
+          "independenceNote": "NASA Johnson Space Center의 우주비행사 지구사진 카탈로그로, 이미지 ID와 사진 캡션의 1차 보존 카탈로그다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "JSC Earth Science & Remote Sensing Unit이 제공하는 Apollo 사진 카탈로그다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "NASA 임무 기록이므로, 세트 전체에서는 NGA 표준·역사 기록·고대 측정 방법 등 다른 유형의 증거와 함께 수렴시킨다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://svs.gsfc.nasa.gov/4129/",
+          "title": "Earthrise: The 45th Anniversary - NASA Scientific Visualization Studio",
+          "retrievedAt": "2026-06-16T02:23:00Z",
+          "locator": {
+            "section": "Description",
+            "heading": "Earthrise: The 45th Anniversary"
+          },
+          "shortQuote": "photographed the Earth rising from behind the Moon",
+          "quoteHash": "sha256:55800a46ba672c3030ce61a6dd27890da099c90032fab259b0c7b25b0304b471",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NASA SVS HTML page. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+          "independenceGroupId": "nasa-gsfc-svs-earthrise",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "NASA GSFC SVS의 후대 재구성 자료로 JSC 사진 카탈로그와 기관은 공유하지만 분석 산출물은 별도다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "NASA SVS는 LRO 지형자료와 Apollo 사진을 대조한 시각화·재구성 자료를 제공한다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "후대 재구성 자료이므로 원본 사진 카탈로그와 함께 사용했다."
+            ],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://svs.gsfc.nasa.gov/4129/",
+          "title": "Earthrise: The 45th Anniversary - NASA Scientific Visualization Studio",
+          "retrievedAt": "2026-06-16T02:23:00Z",
+          "locator": {
+            "section": "Images",
+            "heading": "The three Earthrise photographs"
+          },
+          "shortQuote": "The original photographs are AS08-13-2329, AS08-14-2383, and AS08-14-2384.",
+          "quoteHash": "sha256:f3ebe3de430fae55d63a72b7255a55e4469c87f882b5d72f7dfb124de0672905",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NASA SVS HTML page. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+          "independenceGroupId": "nasa-gsfc-svs-earthrise",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 NASA SVS 자료의 이미지 ID 확인 인용이며 독립 증거 수를 늘리는 용도로 계산하지 않는다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "NASA SVS가 원본 Apollo 사진 ID를 EOL 카탈로그와 연결해 제시한다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "동일 SVS 페이지의 보조 인용이다."
+            ],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://apod.nasa.gov/apod/ap181224.html",
+          "title": "APOD: 2018 December 24 - Earthrise 1: Historic Image Remastered",
+          "retrievedAt": "2026-06-16T02:31:00Z",
+          "locator": {
+            "section": "Explanation",
+            "heading": "2018 December 24"
+          },
+          "shortQuote": "50 years ago today",
+          "quoteHash": "sha256:0880dea440100332865413bd1fda8387e060c5b1b392891bbaa5c1692fa23ae8",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NASA APOD HTML page. Wayback save attempt on 2026-06-16 failed with DNS resolution error for web.archive.org; no archive URL was recorded. The 1968-12-24 date is inferred from the APOD page date '2018 December 24' plus the quoted anniversary phrase.",
+          "independenceGroupId": "nasa-apod-earthrise",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "NASA APOD는 NASA 계열 보조 설명 페이지이며 JSC 사진 카탈로그와 기관은 공유한다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "NASA APOD는 NASA/GSFC가 제공하는 천문 사진 설명 서비스로 날짜 맥락 보조 출처로 적합하다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "정확한 촬영일을 카탈로그 필드가 아니라 기념일 설명에서 도출하므로 한계를 명시했다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "사진이 조작되었거나, EOL 카탈로그의 Date taken 필드가 비어 있으므로 1968년 12월 24일 촬영이라고 단정할 수 없다는 반론이 가능하다.",
+          "response": "사진 ID와 캡션은 NASA/JSC EOL 카탈로그가 직접 제공하고, NASA SVS는 Apollo 8 사진·LRO 지형자료·임무 오디오를 대조해 Earthrise 촬영 순간을 재구성한다. 날짜는 APOD 2018-12-24의 '50 years ago today' 설명으로 보강하되, 카탈로그 필드의 공백은 limitations에 남겼다.",
+          "errorsFound": 1,
+          "framingChecks": "사진의 역사적 영향이나 환경적 의미는 제외했다. '지구가 둥글다'는 결론도 저장하지 않고, 촬영 사건과 사진 ID·시점만 다루었다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "평평한 지구 주장과 NASA 사진 조작 주장을 반대 가설로 두고, 사진 ID·원본 카탈로그·재구성 자료가 제시하는 관측 사실과 동일한 증거 기준으로 검토했다.",
+          "result": "반대 가설은 이 사진 ID와 NASA 내부 원본 카탈로그·SVS 재구성을 대체하는 검증 가능한 원천을 제시하지 못했다. 다만 날짜 직접 필드 공백은 한계로 공개했다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "NASA라는 권위만으로 수용하지 않고, EOL 원본 사진 카탈로그의 이미지 ID·캡션, SVS의 사진 ID 대조, APOD의 기념일 설명을 분리해 확인했다. 세트 전체에서는 WGS84 측지 표준, Apollo 17 전지구 사진, 항해사, 고대 측정법이 서로 다른 유형으로 수렴한다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "AS08-14-2383 카탈로그 페이지와 NASA SVS 사진 ID 대조를 확인했다. EOL의 Date taken 텍스트가 비어 있어 APOD 기념일 문구로 날짜를 보강하고 해당 한계를 명시했다.",
+          "adoptedReason": "사진 ID와 달 지평선 위 지구 캡션은 NASA/JSC 카탈로그가 직접 제시하고, SVS가 원본 사진 ID와 Earthrise 촬영 재구성을 교차 확인한다.",
+          "rejectedAlternatives": "'Earthrise가 인류에게 준 의미' 같은 평가 명제는 제외했다. 'William Anders 단독 촬영'은 일부 출처 간 서술 차이가 있어 이 명제에서는 'Apollo 8 승무원'으로 제한했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "NASA/JSC EOL 사진 카탈로그의 공개 텍스트에서는 AS08-14-2383의 Date taken 필드가 비어 있었다. 1968-12-24 날짜는 NASA APOD의 2018-12-24 기념일 문구와 NASA SVS의 Apollo 8 Earthrise 재구성 문맥으로 보강했다. 촬영자를 특정 개인으로 단정하지 않고 Apollo 8 승무원으로 표현했다.",
+      "tags": [
+        "지구형상",
+        "지구과학",
+        "우주사진",
+        "아폴로8",
+        "Earthrise",
+        "NASA"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:b18e2813819c4fb0e23830f6",
+      "versionId": "ver:28ee0c54de697aa6",
+      "certHash": "sha256:833b8883f996b8b3fe900e988408f111638ab587bc42c887c0d46f59e2468336",
+      "canonicalProposition": "에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "NOAA National Ocean Service의 History of Geodesy 페이지는 에라토스테네스가 알렉산드리아의 그림자 각도와 시에네-알렉산드리아 거리를 결합한 방법을 자동 재확인 가능한 .gov 페이지에서 설명한다. Britannica가 에라토스테네스의 두 지점 기반 지구 둘레 측정 방법, 시에네와 알렉산드리아의 하지 정오 태양 각도 차이, 두 도시 거리 추정을 설명한다. arXiv 역사·물리교육 논문 초록은 이 역사적 실험이 기원전 약 240년경 시에네와 알렉산드리아에서 수행되었다는 연대와 장소를 보조한다. 원저가 보존되지 않고 Cleomedes를 통한 후대 설명이라는 한계 때문에 숫자값은 명제에서 제외했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.britannica.com/biography/Eratosthenes",
+          "title": "Eratosthenes - Britannica",
+          "retrievedAt": "2026-06-16T02:26:00Z",
+          "locator": {
+            "section": "Top Questions",
+            "heading": "What is Eratosthenes famous for?"
+          },
+          "shortQuote": "Eratosthenes measured Earth’s circumference mathematically using two surface points",
+          "quoteHash": "sha256:06c7764b071e6905fedd7b195980190272427e387439bb40cecc6a959b8d4d5b",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-science-history",
+          "independenceLevel": "independent",
+          "independenceNote": "NASA·NGA 및 arXiv 저장소와 다른 독립 편집 백과사전 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica는 전문 편집·검수 절차를 가진 과학사·전기 백과사전이다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "고대 원저가 보존되지 않아 후대 전승을 요약한 2차 출처다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://oceanservice.noaa.gov/education/tutorial_geodesy/geo02_hist.html",
+          "title": "The History of Geodesy - NOAA National Ocean Service",
+          "retrievedAt": "2026-06-16T03:51:28Z",
+          "locator": {
+            "section": "Global Positioning Tutorial",
+            "heading": "The History of Geodesy"
+          },
+          "shortQuote": "the sun cast a shadow equivalent to about 1/50th of a circle or 7.12°",
+          "quoteHash": "sha256:76dc4c0c7070ea394ac8b3b83391c38fd3737e95f04e6d0e789d87393813c080",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "NOAA HTML page was successfully re-fetched by automated web retrieval on 2026-06-16; the live page exposed the quoted text and did not return a 403. Wayback save attempt from this environment failed with TypeError: fetch failed; no archive URL was recorded.",
+          "independenceGroupId": "noaa-geodesy",
+          "independenceLevel": "independent",
+          "independenceNote": "Britannica blocks automated re-fetch for reviewers, so this NOAA .gov page is the fetchable independent anchor for the shadow-angle method; it is distinct from the Britannica and arXiv source groups.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "NOAA National Ocean Service publishes geodesy education material and identifies NOAA as the page author.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "Government educational summary, not an ancient primary source; used for method and angle, not contested stadion conversion."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/biography/Eratosthenes",
+          "title": "Eratosthenes - Britannica",
+          "retrievedAt": "2026-06-16T02:26:00Z",
+          "locator": {
+            "section": "Biography",
+            "heading": "Eratosthenes"
+          },
+          "shortQuote": "At Syene (now Aswān), some 800 km (500 miles) southeast of Alexandria",
+          "quoteHash": "sha256:e91e5e933e48ab6c93fd32579fa3f4a7f51ecf3e746d43455994736669dddb7d",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-science-history",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 Britannica 항목의 장소 관련 보조 인용이다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica 전기 항목이 시에네와 알렉산드리아의 지리적 관계를 설명한다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "동일 출처의 보조 인용이다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/biography/Eratosthenes",
+          "title": "Eratosthenes - Britannica",
+          "retrievedAt": "2026-06-16T02:26:00Z",
+          "locator": {
+            "section": "Biography",
+            "heading": "Eratosthenes"
+          },
+          "shortQuote": "sunlight fell at an angle of about 7.2° from the vertical",
+          "quoteHash": "sha256:a62e4a73c7e0a4c33f4d67f2e613d419b8b91117090afaa17fb9c1ad12882933",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-science-history",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 Britannica 항목의 그림자 각도 관련 보조 인용이다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica 전기 항목이 알렉산드리아에서의 각도 차이를 설명한다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "동일 출처의 보조 인용이다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/biography/Eratosthenes",
+          "title": "Eratosthenes - Britannica",
+          "retrievedAt": "2026-06-16T02:26:00Z",
+          "locator": {
+            "section": "Biography",
+            "heading": "Eratosthenes"
+          },
+          "shortQuote": "Given an estimate of the distance between the two cities",
+          "quoteHash": "sha256:e27df73145b92bb414a953f9612a76d5e145a894d4ef27f1255ce53392a69850",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-science-history",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 Britannica 항목의 두 도시 거리 추정 관련 보조 인용이다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica 전기 항목이 두 도시 거리 추정을 계산 절차의 일부로 설명한다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "동일 출처의 보조 인용이다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://arxiv.org/abs/2110.01610",
+          "title": "Revisitando o Experimento de Eratóstenes: medida do raio de Terra - arXiv",
+          "retrievedAt": "2026-06-16T02:32:00Z",
+          "locator": {
+            "section": "Abstract",
+            "heading": "arXiv:2110.01610"
+          },
+          "shortQuote": "historical experiment of Eratosthenes, carried out around 240 BC",
+          "quoteHash": "sha256:25db139a6cca7624c7deea21d25b2097c3a9f48b51ee7b2b5f8c6e7ec490c26d",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "arXiv HTML abstract page. Wayback save attempt on 2026-06-16 failed with DNS resolution error for web.archive.org; no archive URL was recorded. arXiv is a stable repository but this evidence uses the HTML abstract rather than a separately archived PDF.",
+          "independenceGroupId": "arxiv-history-physics-education",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "Britannica와 다른 저장소·저자군의 학술 원고 초록이지만, 논문은 arXiv 사전공개본으로 동료심사 상태가 확인되지 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "물리교육·과학사 주제의 학술 원고로 실험의 역사적 연대와 재현 방법을 보조 설명한다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "arXiv 사전공개본이므로 동료심사 여부가 불명확하다. 연대 보조 증거로만 사용했다."
+            ],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "에라토스테네스의 원저는 보존되지 않았고, stadion의 길이와 수치 환산은 논쟁적이므로 구체적인 지구 둘레 값을 저장하면 과잉 확정이 된다.",
+          "response": "명제는 숫자값을 저장하지 않고, 하지 정오의 두 지점 태양 그림자 각도 차이와 두 도시 거리 추정을 이용한 측정 수행 사실만 저장한다. 원저 미보존과 Cleomedes 전승, stadion 환산 논쟁은 limitations에 명시했다.",
+          "errorsFound": 1,
+          "framingChecks": "'정확하게 증명했다' 같은 평가어와 '왜 측정했는가'는 제외했다. 측정 방법과 장소·시기만 5W 범위로 기술했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "고대 측정 전승 자체에 대한 회의와 평평한 지구 주장을 구분해 검토했다. 전자는 원자료 한계로 limitations에 반영하고, 후자는 이 명제의 저장 대상이 아닌 결론 논쟁으로 분리했다.",
+          "result": "측정 수행·방법 전승은 복수 2차 출처가 지지하지만, 정확한 수치 환산은 논쟁적이므로 채택하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "NOAA, Britannica, arXiv를 권위로만 수용하지 않고, 인용문이 실제로 방법·장소·연대만 지지하는지 확인했다. NOAA 항목은 자동 재-fetch가 가능한 독립 앵커이고, Britannica 항목들은 유능하지만 같은 출판사 원천으로 묶어 보조 증거로만 계산한다. 지구 형상 결론이나 수치 정확도는 이 명제에 넣지 않았고, 세트 전체의 다른 사진·측지·항해 증거와 유형 수렴만 제공한다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "NOAA History of Geodesy 페이지를 자동 재-fetch해 그림자 각도 문구가 노출되는지 확인하고, Britannica의 방법 설명과 arXiv 초록의 around 240 BC 문구를 확인했다. stadion-km 환산과 최종 둘레값은 논쟁적이므로 명제에서 제외했다.",
+          "adoptedReason": "NOAA가 그림자 각도와 시에네-알렉산드리아 거리 결합 방법을 자동 재확인 가능한 페이지에서 제시하고, 장소·방법·대략 연대는 다른 출처도 직접 지지하므로 숫자값 없이 측정 수행 사실을 원자적으로 저장할 수 있다.",
+          "rejectedAlternatives": "'에라토스테네스가 지구 둘레를 정확히 계산했다' 또는 특정 km 값을 담는 문장은 원자료·단위 논쟁 때문에 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "에라토스테네스의 원저는 보존되지 않았고, 방법은 후대 Cleomedes 전승 등으로 알려져 있다. stadion을 km로 환산하는 값과 최종 둘레 수치는 논쟁적이므로 이 명제는 측정 수행과 방법에만 한정한다.",
+      "tags": [
+        "지구형상",
+        "지구과학",
+        "과학사",
+        "에라토스테네스",
+        "측정",
+        "천문학"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
+      "versionId": "ver:220d768b0673a4b9",
+      "certHash": "sha256:2c944699e34a8f6d358b18f1336e4bef9de58b7b6f1cf6692b3b466b2b3891b5",
+      "canonicalProposition": "페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대는 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아와 최초의 지구 일주를 완료하였다",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "UNESCO Memory of the World의 항목 제목과 본문은 1519-1522년 마젤란과 후안 세바스티안 엘카노의 최초 지구 일주 항해를 자동 재확인 가능한 페이지에서 직접 제시한다. Britannica의 Juan Sebastián del Cano 항목은 그가 최초의 지구 일주를 완료했고 1519년 마젤란 함대에 탑승했으며 1522년 9월 원정대를 스페인으로 귀환시켰다고 적는다. Ferdinand Magellan 항목은 마젤란이 도중 사망했고 그의 배 한 척이 서쪽으로 스페인에 돌아와 첫 지구 일주를 달성했다고 보조 확인한다. Britannica는 유능한 보조 출처로 유지하되, 자동 재-fetch가 막히므로 UNESCO를 독립·fetchable 앵커로 추가했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.unesco.org/en/memory-world/first-voyage-circumnavigation-fernao-de-magalhaes-and-juan-sebastian-elcano-1519-1522",
+          "title": "First Voyage of Circumnavigation by Fernãõ de Magalhães and Juan Sebastián Elcano (1519-1522) - Memory of the World",
+          "retrievedAt": "2026-06-16T03:51:28Z",
+          "locator": {
+            "section": "Memory of the World",
+            "heading": "First Voyage of Circumnavigation by Fernãõ de Magalhães and Juan Sebastián Elcano (1519-1522)"
+          },
+          "shortQuote": "First Voyage of Circumnavigation by Fernãõ de Magalhães and Juan Sebastián Elcano (1519-1522)",
+          "quoteHash": "sha256:0d9c37728a1c141c42a5e61a99df534e7ccc45995dd458ff5f435b46464683b1",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "UNESCO HTML page was successfully re-fetched by automated web retrieval on 2026-06-16; the live page exposed the quoted text and did not return a 403. Wayback save attempt from this environment failed with TypeError: fetch failed; no archive URL was recorded.",
+          "independenceGroupId": "unesco-mow",
+          "independenceLevel": "independent",
+          "independenceNote": "Britannica blocks automated re-fetch for reviewers, so this UNESCO Memory of the World page is the fetchable independent anchor; it is distinct from the Britannica editorial source group.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "UNESCO Memory of the World is an international heritage register that documents historically significant records and collections.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "UNESCO Memory of the World entry is a register summary, not the original voyage log; it is used as a fetchable independent anchor for the event framing."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/biography/Juan-Sebastian-del-Cano",
+          "title": "Juan Sebastián del Cano - Britannica",
+          "retrievedAt": "2026-06-16T02:25:00Z",
+          "locator": {
+            "section": "Introduction",
+            "heading": "Juan Sebastián del Cano"
+          },
+          "shortQuote": "completed the first circumnavigation of the Earth",
+          "quoteHash": "sha256:3083f1ae2e8efce1cdddf767179b41eb8d5b70076dd1c22a891ccbb2451eea81",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-history",
+          "independenceLevel": "independent",
+          "independenceNote": "NASA·NGA와 다른 독립 편집 백과사전 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica는 전문 편집·검수 절차를 가진 역사·전기 백과사전이다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "2차 백과사전 출처이므로 원자료의 세부 날짜 차이는 추가 역사 문헌으로 재검토 가능하다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/biography/Juan-Sebastian-del-Cano",
+          "title": "Juan Sebastián del Cano - Britannica",
+          "retrievedAt": "2026-06-16T02:25:00Z",
+          "locator": {
+            "section": "Introduction",
+            "heading": "Juan Sebastián del Cano"
+          },
+          "shortQuote": "In 1519 Cano sailed as master",
+          "quoteHash": "sha256:24c75b7c084affa150d974c88bbc21b5b4a8437174b3b9c805fbd6087009438d",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-history",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 Britannica 항목의 출발연도 관련 보조 인용이다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica 전기 항목이 엘카노의 1519년 원정 참여를 설명한다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "동일 출처의 보조 인용이다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/biography/Juan-Sebastian-del-Cano",
+          "title": "Juan Sebastián del Cano - Britannica",
+          "retrievedAt": "2026-06-16T02:25:00Z",
+          "locator": {
+            "section": "Introduction",
+            "heading": "Juan Sebastián del Cano"
+          },
+          "shortQuote": "He safely brought the expedition home to Spain in September 1522",
+          "quoteHash": "sha256:dae03d94562039ce53463eebac0543d3095e25dc15444ba2661731e2ff51fb82",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-history",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 Britannica 항목의 귀환연도 관련 보조 인용이다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica 전기 항목이 엘카노의 1522년 귀환을 설명한다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "동일 출처의 보조 인용이다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/biography/Ferdinand-Magellan",
+          "title": "Ferdinand Magellan - Britannica",
+          "retrievedAt": "2026-06-16T02:25:00Z",
+          "locator": {
+            "section": "Introduction & Top Questions",
+            "heading": "Ferdinand Magellan"
+          },
+          "shortQuote": "one of his ships continued westward to Spain",
+          "quoteHash": "sha256:d531df3e44ffc4d4844d1f3edfdb160a4c5b94d017491a280b3cf50752685290",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-history",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 Britannica 편집 체계의 별도 전기 항목으로, 마젤란 항목에서 서쪽 항해와 귀환 맥락을 보조 확인한다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica의 Magellan 전기 항목은 원정의 진행과 마젤란 사망 후 귀환을 설명한다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "같은 출판사의 별도 항목이므로 완전 독립 원천은 아니다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/biography/Ferdinand-Magellan",
+          "title": "Ferdinand Magellan - Britannica",
+          "retrievedAt": "2026-06-16T02:25:00Z",
+          "locator": {
+            "section": "Top Questions",
+            "heading": "What is Ferdinand Magellan best known for?"
+          },
+          "shortQuote": "He died en route and Juan Sebastián del Cano completed it.",
+          "quoteHash": "sha256:83c6c15d6557336c5a9a008501b38f3af88455884a41be541f3784885364e2be",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Britannica HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+          "independenceGroupId": "britannica-history",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 Britannica 편집 체계의 별도 전기 항목으로, 마젤란 사망과 엘카노 완료 한계를 확인한다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Britannica의 Magellan 전기 항목은 마젤란이 완주하지 않았다는 한계를 직접 설명한다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "같은 출판사의 별도 항목이므로 완전 독립 원천은 아니다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "마젤란은 1521년 필리핀에서 사망했으므로 '마젤란의 지구 일주'라고 쓰면 사실관계를 왜곡한다는 반론이 가장 강하다.",
+          "response": "명제는 마젤란이 시작하고 엘카노가 완수한 원정대로 주체를 분리했다. limitations에도 마젤란의 1521년 사망과 엘카노 완료를 명시했다.",
+          "errorsFound": 1,
+          "framingChecks": "'세계 최초의 위업' 같은 평가어는 제외하고, 출발연도·방향·귀환연도·완료 주체만 기술했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "마젤란 개인이 완주했다는 통속 표현과 엘카노가 완료했다는 정정 표현을 같은 출처 기준으로 비교했다.",
+          "result": "Britannica 양 항목 모두 마젤란 도중 사망과 엘카노 완료를 지지하므로, 개인 공적을 단순화하는 표현은 채택하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "UNESCO와 Britannica 권위만으로 의미를 확정하지 않고, 인용문이 실제로 1519-1522년 항해, 엘카노 완료, 최초 일주 완료, 마젤란 사망 한계를 각각 지지하는지 확인했다. UNESCO 항목은 자동 재-fetch가 가능한 독립 앵커이고, Britannica 항목들은 유능하지만 같은 출판사 원천으로 묶어 보조 증거로만 계산한다. 세트 전체에서는 이 역사 항해 증거가 NASA 사진·NGA 측지 표준·고대 측정법과 다른 유형으로 수렴한다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "UNESCO Memory of the World 항목을 자동 재-fetch해 제목과 본문이 노출되는지 확인하고, Juan Sebastián del Cano 항목과 Ferdinand Magellan 항목의 주체·연도·완료 표현을 대조했다. 마젤란 개인 완주로 오해될 표현을 제거했다.",
+          "adoptedReason": "UNESCO가 1519-1522년 최초 지구 일주 항해를 자동 재확인 가능한 페이지에서 제시하고, Britannica가 엘카노의 최초 지구 일주 완료와 1519년 참여·1522년 귀환을 보조한다.",
+          "rejectedAlternatives": "'마젤란이 지구 일주를 했다'는 표현은 도중 사망 사실을 숨겨 제외했다. 정확한 일자까지 포함하는 문장은 이 출처 인용만으로 충분히 직접 확인되지 않아 연도 단위로 제한했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "마젤란은 1521년 필리핀에서 사망했으므로 원정을 직접 완주하지 않았다. 이 명제는 마젤란이 시작한 원정대가 엘카노 지휘 아래 1522년 스페인으로 돌아와 최초의 지구 일주를 완료했다는 사건에 한정한다. 출발·귀환의 월일은 출처별 표기 차이가 있어 연도 단위로만 저장했다.",
+      "tags": [
+        "지구형상",
+        "지구과학",
+        "항해사",
+        "마젤란",
+        "엘카노",
+        "지구일주"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:52e6260a60e04599d809ae61",
       "versionId": "ver:0f9dc0903863d9a4",
       "certHash": "sha256:163007180cf2e211beab99a0d99fdafa45ecc2b6a06b647519178df375d0218d",
@@ -474,24 +1284,192 @@
       ],
       "createdAt": "2026-06-15T00:00:00Z",
       "updatedAt": "2026-06-15T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
+      "versionId": "ver:51c22322a44b18e5",
+      "certHash": "sha256:17a500d196dd54e89ac5e3466ee28e7bf546332266a4b3bfdb645902adceec03",
+      "canonicalProposition": "NGA WGS 84 공식 설명은 WGS 84 측지 좌표가 기준타원체에서 생성되며 그 장반경을 6,378,137.0미터로 제시한다",
+      "claimNature": "document_content",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "NGA Office of Geomatics의 WGS 84 공식 설명이 WGS 84 기준타원체 문맥과 장반경 값을 같은 정의 구역에서 제시한다. 이 명제는 지구의 실제 형상에 대한 판정이 아니라 WGS 84 문서 내용에 한정한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84",
+          "title": "NGA Office of Geomatics - World Geodetic System 1984 (WGS 84)",
+          "retrievedAt": "2026-06-16T02:20:00Z",
+          "locator": {
+            "section": "World Geodetic System 1984 Reference System",
+            "heading": "Coordinate System"
+          },
+          "shortQuote": "generated using its reference ellipsoid",
+          "quoteHash": "sha256:d3b1eb6275d42af5e35ff8f4592c7ac19cf8d80fa191670c137131a26743414d",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NGA HTML page. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+          "independenceGroupId": "nga-wgs84",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 NGA WGS 84 공식 페이지에서 인용한 세 문구 중 하나다. 문서내용 명제에서는 이 공식 문서가 권위 있는 단일 원천이지만, 독립 corroboration으로 세지 않는다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "NGA Office of Geomatics는 WGS 84 기준계와 관련 산출물을 공표하는 주체다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "표준 생산기관의 자기 설명이므로, 실제 지구 형상 일반론이 아니라 문서 내용 명제로만 채택했다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84",
+          "title": "NGA Office of Geomatics - World Geodetic System 1984 (WGS 84)",
+          "retrievedAt": "2026-06-16T02:20:00Z",
+          "locator": {
+            "section": "World Geodetic System 1984 Reference System",
+            "heading": "Defining Parameters"
+          },
+          "shortQuote": "Semi-major Axis a 6378137.0 meters",
+          "quoteHash": "sha256:53394621ddd7522c5b6628e2b79979ac86cedddb1189ae6b717e1283e0956c63",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NGA HTML page의 표 형식 텍스트를 공백 정규화해 인용했다. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+          "independenceGroupId": "nga-wgs84",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 NGA WGS 84 공식 페이지에서 인용한 세 문구 중 하나다. 문서내용 명제에서는 이 공식 문서가 권위 있는 단일 원천이지만, 독립 corroboration으로 세지 않는다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "WGS 84 정의 파라미터를 제시하는 공식 기관 페이지다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "동일 공식 페이지의 표 인용이므로 독립 증거 수를 늘리는 용도로 계산하지 않는다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84",
+          "title": "NGA Office of Geomatics - World Geodetic System 1984 (WGS 84)",
+          "retrievedAt": "2026-06-16T02:20:00Z",
+          "locator": {
+            "section": "World Geodetic System 1984 Reference System",
+            "heading": "Defining Parameters"
+          },
+          "shortQuote": "Flattening Factor of the Earth 1/f 298.257223563",
+          "quoteHash": "sha256:e3cf95fb61cb7c8471c3262234f71ce988ec1ccdf118b4fcb3339fcce945dbf5",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NGA HTML page의 표 형식 텍스트를 공백 정규화해 인용했다. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+          "independenceGroupId": "nga-wgs84",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 NGA WGS 84 공식 페이지에서 인용한 세 문구 중 하나다. 문서내용 명제에서는 이 공식 문서가 권위 있는 단일 원천이지만, 독립 corroboration으로 세지 않는다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "WGS 84 정의 파라미터를 제시하는 공식 기관 페이지다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "동일 공식 페이지의 표 인용이므로 독립 증거 수를 늘리는 용도로 계산하지 않는다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "WGS 84는 편의를 위한 측지 기준계일 뿐이므로, 그것을 지구 실제 형상의 직접 판정처럼 저장하면 제2조 위반이 된다.",
+          "response": "명제를 문서내용으로 제한했다. 저장 대상은 'NGA 공식 설명이 기준타원체와 장반경 값을 제시한다'는 사실이며, 지구 형상에 대한 최종 판정은 저장하지 않는다. 다른 사진·항해·고대 측정 명제와 함께 읽을 때만 독자가 스스로 추론할 수 있다.",
+          "errorsFound": 1,
+          "framingChecks": "초안의 '지구를 회전타원체로 정의한다' 표현은 실제 지구와 표준 모델을 혼동할 수 있어 '측지 좌표가 기준타원체에서 생성된다'는 문서내용으로 좁혔다. 평가어와 이유 설명은 제외했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "평평한 지구 주장과 같은 반대 해석을 WGS 84 공식 문서 내용 명제와 같은 기준으로 점검했다. 이 항목은 반대 주장을 반박하는 결론이 아니라 표준 문서의 기재 여부만 검토한다.",
+          "result": "문서 내용의 존재는 반대 해석의 존재와 별개로 검증 가능하다. 반대 해석을 이 명제 안에 섞지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "NGA 권위를 근거로 지구 형상을 판정하지 않았다. 표준 생산기관의 공식 페이지에서 문구와 수치를 직접 확인했으며, 항목 세트 전체에서는 NASA 사진, 역사 기록, 고대 측정 방법 등 서로 다른 증거 유형이 수렴하도록 구성했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "NGA 페이지의 기준타원체 문구와 장반경·역편평률 표기를 확인했다. 명제가 WGS 84 문서내용에 머무르도록 문장을 조정했다.",
+          "adoptedReason": "공식 WGS 84 설명의 같은 정의 구역이 기준타원체 문맥과 장반경 값을 직접 제시한다.",
+          "rejectedAlternatives": "지구 형상에 관한 결론형 문장은 제2조 위반 소지가 있어 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "WGS 84 기준타원체는 지구 표면 전체의 모든 굴곡을 그대로 말하는 물리적 지구 형상 명제가 아니라 좌표 기준계의 수학적 참조면이다. 본 명제는 NGA 공식 설명의 문서내용과 수치 표기에 한정한다.",
+      "tags": [
+        "지구형상",
+        "지구과학",
+        "측지학",
+        "WGS84",
+        "기준타원체"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
     }
   ],
   "meta": {
-    "total": 4,
+    "total": 9,
     "dataVersion": "2026.06.16",
     "certVersion": "2.1",
     "generatedAt": "2026-06-16T00:00:00Z",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalEntries": 4,
-      "totalAssessed": 4,
+      "totalEntries": 9,
+      "totalAssessed": 9,
       "openCorrectionRequests": 0
     },
     "propositions": [
       {
         "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
         "path": "/api/v2/propositions/stmt-4ae4c94174dc3aaf651102d2.json"
+      },
+      {
+        "propositionId": "stmt:61efe874787dacf6180ae46b",
+        "path": "/api/v2/propositions/stmt-61efe874787dacf6180ae46b.json"
+      },
+      {
+        "propositionId": "stmt:ae66527bf2aea1b5407a5f78",
+        "path": "/api/v2/propositions/stmt-ae66527bf2aea1b5407a5f78.json"
+      },
+      {
+        "propositionId": "stmt:b18e2813819c4fb0e23830f6",
+        "path": "/api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json"
+      },
+      {
+        "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
+        "path": "/api/v2/propositions/stmt-4f96ea07a89511c2ea0a86a3.json"
       },
       {
         "propositionId": "stmt:52e6260a60e04599d809ae61",
@@ -504,6 +1482,10 @@
       {
         "propositionId": "stmt:40340515225f7adf44e242f3",
         "path": "/api/v2/propositions/stmt-40340515225f7adf44e242f3.json"
+      },
+      {
+        "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
+        "path": "/api/v2/propositions/stmt-b9a4dcf237affc17c1a51fe6.json"
       }
     ]
   }

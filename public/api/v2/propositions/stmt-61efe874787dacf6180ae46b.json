@@ -1,0 +1,159 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:61efe874787dacf6180ae46b",
+  "versionId": "ver:26812e23cae76703",
+  "certHash": "sha256:8bd9bd193af1bf76f773bffb5cd99718989c1c8d41f8517d37c9355f04f310fa",
+  "canonicalProposition": "1972년 12월 7일 아폴로 17호 승무원은 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영하였다",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "NASA/JSC EOL 카탈로그가 AS17-148-22727 사진 ID, 1972년 12월 7일 촬영일, Apollo 17 승무원이 달로 향하던 중 본 지구 사진이라는 캡션을 제공한다. NASA Earth Observatory도 같은 사진 ID와 날짜·Apollo 17 승무원을 보조 확인한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148",
+      "title": "Astronaut Photo AS17-148-22727 AFRICA - Gateway to Astronaut Photography of Earth, NASA/JSC",
+      "retrievedAt": "2026-06-16T02:22:00Z",
+      "locator": {
+        "section": "Image Caption",
+        "heading": "AS17-148-22727"
+      },
+      "shortQuote": "This classic photograph of the Earth was taken on December 7, 1972.",
+      "quoteHash": "sha256:8d83f8364e5dae36be2f43686eb14fa00475df8ab0a45fd22504a161677bb0c5",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20260616022936/https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148",
+      "archiveProvider": "internet_archive",
+      "archivedAt": "2026-06-16T02:29:36Z",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NASA/JSC EOL HTML catalog page. Image appearance is verified from the displayed image and caption; the quoted text supports date and subject.",
+      "independenceGroupId": "nasa-jsc-eol-apollo-images",
+      "independenceLevel": "independent",
+      "independenceNote": "NASA Johnson Space Center의 우주비행사 지구사진 카탈로그로, 이미지 ID·날짜·캡션의 1차 보존 카탈로그다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "JSC Earth Science & Remote Sensing Unit이 제공하는 Apollo 사진 카탈로그다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "NASA 임무 기록이므로, 세트 전체에서는 측지 표준·항해 기록·고대 측정법 등 다른 유형의 증거와 함께 수렴시킨다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148",
+      "title": "Astronaut Photo AS17-148-22727 AFRICA - Gateway to Astronaut Photography of Earth, NASA/JSC",
+      "retrievedAt": "2026-06-16T02:22:00Z",
+      "locator": {
+        "section": "Image Caption",
+        "heading": "Original caption"
+      },
+      "shortQuote": "View of the Earth as seen by the Apollo 17 crew traveling toward the moon.",
+      "quoteHash": "sha256:cb54f1fea8b34cf754cce0af6435a45219003e5492ab386b9cb15c44b28becaf",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20260616022936/https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148",
+      "archiveProvider": "internet_archive",
+      "archivedAt": "2026-06-16T02:29:36Z",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NASA/JSC EOL HTML catalog page. Same archived page as primary image evidence.",
+      "independenceGroupId": "nasa-jsc-eol-apollo-images",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 NASA/JSC EOL 카탈로그 페이지의 원 캡션 인용이며 독립 증거 수를 늘리는 용도로 계산하지 않는다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Apollo 17 사진 원 캡션을 보존하는 공식 사진 카탈로그다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "동일 카탈로그의 보조 인용이다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://science.nasa.gov/earth/earth-observatory/history-of-the-blue-marble/",
+      "title": "History of the Blue Marble - NASA Earth Observatory",
+      "retrievedAt": "2026-06-16T02:24:00Z",
+      "locator": {
+        "section": "History of the Blue Marble",
+        "heading": "NASA Earth Observatory"
+      },
+      "shortQuote": "On December 7, 1972, the crew of Apollo 17",
+      "quoteHash": "sha256:294bde94203de575bfaa8afe14f9e95fa26f743ad18db29e2e8abfaaf2cfb06b",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NASA Earth Observatory HTML page. Wayback save attempt on 2026-06-16 returned no archive Location header in the captured output; no archive URL was recorded.",
+      "independenceGroupId": "nasa-earth-observatory-blue-marble",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "NASA Earth Observatory의 후대 설명으로 JSC 사진 카탈로그와 기관은 공유하지만 별도 편집 자료다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "NASA Earth Observatory는 NASA 지구관측 이미지의 공식 설명·교육 자료를 제공한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "후대 설명 자료이므로 원본 EOL 카탈로그를 주 증거로 사용했다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "사진의 색상·회전·크롭이 후대 처리되었을 수 있으므로 '지구 전체가 원형으로 보인다'는 설명이 원본 촬영 사건과 혼동될 수 있다.",
+      "response": "명제는 사진 촬영 사건과 NASA AS17-148-22727 이미지의 시각적 내용에 한정한다. 후대 색상 조정이나 크롭 가능성은 limitations에 남겼고, 지구 형상 결론은 저장하지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "'상징적', '위대한', '취약한 지구' 같은 평가어는 제외했다. 사진이 보여주는 원형 시각 요소만 기록하고 그 의미는 독자 추론으로 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "평평한 지구 주장과 사진 조작 주장을 반대 가설로 두고, 공식 사진 ID·원본 캡션·이미지 표시를 같은 증거 기준으로 검토했다.",
+      "result": "공식 카탈로그와 NASA Earth Observatory가 같은 사진 ID·날짜·승무원 맥락을 제시한다. 반대 가설은 이 특정 이미지 기록을 대체하는 검증 가능한 원천을 제시하지 않는다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "NASA 권위만으로 결론을 채택하지 않고 EOL 카탈로그의 이미지 ID·캡션·표시 이미지와 Earth Observatory의 보조 설명을 분리 확인했다. 세트 전체에서는 WGS84, Apollo 8, 항해사, 에라토스테네스 측정법이 서로 다른 증거 유형으로 수렴한다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "AS17-148-22727 EOL 카탈로그의 날짜·캡션·이미지 표시와 NASA Earth Observatory의 날짜·승무원 설명을 확인했다.",
+      "adoptedReason": "원본 사진 카탈로그가 날짜와 사진 ID를 직접 제공하며, 보조 NASA 설명이 같은 사건 맥락을 확인한다.",
+      "rejectedAlternatives": "'지구는 구형이다' 같은 결론형 문장은 제외했다. '완전한 지구 원반' 같은 더 강한 표현은 직접 인용 문구가 부족해 '원형으로 보이는 사진'으로 제한했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "AS17-148-22727의 널리 배포된 버전은 회전·크롭·색상 조정이 있을 수 있다. 본 명제의 '원형으로 보이는' 표현은 EOL 카탈로그의 표시 이미지와 사진 내용에 대한 시각적 기술이며, 물리적 지구 형상에 대한 판정 명제가 아니다.",
+  "tags": [
+    "지구형상",
+    "지구과학",
+    "우주사진",
+    "아폴로17",
+    "BlueMarble",
+    "NASA"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}

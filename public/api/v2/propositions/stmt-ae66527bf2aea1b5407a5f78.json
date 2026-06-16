@@ -1,0 +1,183 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:ae66527bf2aea1b5407a5f78",
+  "versionId": "ver:607de2a74ac759b9",
+  "certHash": "sha256:968b1662fc231204f5ffb8df04b6710e9ea66a6894ca89d59aff63c18b1807b1",
+  "canonicalProposition": "1968년 12월 24일 아폴로 8호 승무원은 달 궤도에서 지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영하였다",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "NASA/JSC EOL 사진 카탈로그가 AS08-14-2383 사진 ID와 달 지평선 위의 지구 설명을 제공하고, NASA SVS가 해당 원본 사진 ID와 Earthrise 촬영 재구성을 제시한다. 촬영일은 NASA APOD의 2018-12-24 페이지 날짜와 '50 years ago today' 설명으로 보강되지만 EOL 카탈로그의 Date taken 필드는 공개 텍스트에서 비어 있어 직접성 한계를 남겼다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=2383&mission=AS08&roll=14",
+      "title": "Astronaut Photo AS08-14-2383 - Gateway to Astronaut Photography of Earth, NASA/JSC",
+      "retrievedAt": "2026-06-16T02:22:00Z",
+      "locator": {
+        "section": "Image Caption",
+        "heading": "AS08-14-2383"
+      },
+      "shortQuote": "The rising Earth is about five degrees above the lunar horizon",
+      "quoteHash": "sha256:1549406f604471627c9361ad49f94ede235ab3674e5248fa6de0cd9d86c79708",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20260616022910/https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=2383&mission=AS08&roll=14",
+      "archiveProvider": "internet_archive",
+      "archivedAt": "2026-06-16T02:29:10Z",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NASA/JSC EOL HTML catalog page. The visible 'Date taken' field was blank in the retrieved text, so date support is supplied by NASA APOD/SVS evidence below.",
+      "independenceGroupId": "nasa-jsc-eol-apollo-images",
+      "independenceLevel": "independent",
+      "independenceNote": "NASA Johnson Space Center의 우주비행사 지구사진 카탈로그로, 이미지 ID와 사진 캡션의 1차 보존 카탈로그다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "JSC Earth Science & Remote Sensing Unit이 제공하는 Apollo 사진 카탈로그다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "NASA 임무 기록이므로, 세트 전체에서는 NGA 표준·역사 기록·고대 측정 방법 등 다른 유형의 증거와 함께 수렴시킨다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://svs.gsfc.nasa.gov/4129/",
+      "title": "Earthrise: The 45th Anniversary - NASA Scientific Visualization Studio",
+      "retrievedAt": "2026-06-16T02:23:00Z",
+      "locator": {
+        "section": "Description",
+        "heading": "Earthrise: The 45th Anniversary"
+      },
+      "shortQuote": "photographed the Earth rising from behind the Moon",
+      "quoteHash": "sha256:55800a46ba672c3030ce61a6dd27890da099c90032fab259b0c7b25b0304b471",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NASA SVS HTML page. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+      "independenceGroupId": "nasa-gsfc-svs-earthrise",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "NASA GSFC SVS의 후대 재구성 자료로 JSC 사진 카탈로그와 기관은 공유하지만 분석 산출물은 별도다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "NASA SVS는 LRO 지형자료와 Apollo 사진을 대조한 시각화·재구성 자료를 제공한다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "후대 재구성 자료이므로 원본 사진 카탈로그와 함께 사용했다."
+        ],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://svs.gsfc.nasa.gov/4129/",
+      "title": "Earthrise: The 45th Anniversary - NASA Scientific Visualization Studio",
+      "retrievedAt": "2026-06-16T02:23:00Z",
+      "locator": {
+        "section": "Images",
+        "heading": "The three Earthrise photographs"
+      },
+      "shortQuote": "The original photographs are AS08-13-2329, AS08-14-2383, and AS08-14-2384.",
+      "quoteHash": "sha256:f3ebe3de430fae55d63a72b7255a55e4469c87f882b5d72f7dfb124de0672905",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NASA SVS HTML page. Wayback save attempt on 2026-06-16 timed out after 15 seconds; no archive URL was recorded.",
+      "independenceGroupId": "nasa-gsfc-svs-earthrise",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 NASA SVS 자료의 이미지 ID 확인 인용이며 독립 증거 수를 늘리는 용도로 계산하지 않는다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "NASA SVS가 원본 Apollo 사진 ID를 EOL 카탈로그와 연결해 제시한다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "동일 SVS 페이지의 보조 인용이다."
+        ],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://apod.nasa.gov/apod/ap181224.html",
+      "title": "APOD: 2018 December 24 - Earthrise 1: Historic Image Remastered",
+      "retrievedAt": "2026-06-16T02:31:00Z",
+      "locator": {
+        "section": "Explanation",
+        "heading": "2018 December 24"
+      },
+      "shortQuote": "50 years ago today",
+      "quoteHash": "sha256:0880dea440100332865413bd1fda8387e060c5b1b392891bbaa5c1692fa23ae8",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NASA APOD HTML page. Wayback save attempt on 2026-06-16 failed with DNS resolution error for web.archive.org; no archive URL was recorded. The 1968-12-24 date is inferred from the APOD page date '2018 December 24' plus the quoted anniversary phrase.",
+      "independenceGroupId": "nasa-apod-earthrise",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "NASA APOD는 NASA 계열 보조 설명 페이지이며 JSC 사진 카탈로그와 기관은 공유한다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "NASA APOD는 NASA/GSFC가 제공하는 천문 사진 설명 서비스로 날짜 맥락 보조 출처로 적합하다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "정확한 촬영일을 카탈로그 필드가 아니라 기념일 설명에서 도출하므로 한계를 명시했다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "사진이 조작되었거나, EOL 카탈로그의 Date taken 필드가 비어 있으므로 1968년 12월 24일 촬영이라고 단정할 수 없다는 반론이 가능하다.",
+      "response": "사진 ID와 캡션은 NASA/JSC EOL 카탈로그가 직접 제공하고, NASA SVS는 Apollo 8 사진·LRO 지형자료·임무 오디오를 대조해 Earthrise 촬영 순간을 재구성한다. 날짜는 APOD 2018-12-24의 '50 years ago today' 설명으로 보강하되, 카탈로그 필드의 공백은 limitations에 남겼다.",
+      "errorsFound": 1,
+      "framingChecks": "사진의 역사적 영향이나 환경적 의미는 제외했다. '지구가 둥글다'는 결론도 저장하지 않고, 촬영 사건과 사진 ID·시점만 다루었다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "평평한 지구 주장과 NASA 사진 조작 주장을 반대 가설로 두고, 사진 ID·원본 카탈로그·재구성 자료가 제시하는 관측 사실과 동일한 증거 기준으로 검토했다.",
+      "result": "반대 가설은 이 사진 ID와 NASA 내부 원본 카탈로그·SVS 재구성을 대체하는 검증 가능한 원천을 제시하지 못했다. 다만 날짜 직접 필드 공백은 한계로 공개했다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "NASA라는 권위만으로 수용하지 않고, EOL 원본 사진 카탈로그의 이미지 ID·캡션, SVS의 사진 ID 대조, APOD의 기념일 설명을 분리해 확인했다. 세트 전체에서는 WGS84 측지 표준, Apollo 17 전지구 사진, 항해사, 고대 측정법이 서로 다른 유형으로 수렴한다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "AS08-14-2383 카탈로그 페이지와 NASA SVS 사진 ID 대조를 확인했다. EOL의 Date taken 텍스트가 비어 있어 APOD 기념일 문구로 날짜를 보강하고 해당 한계를 명시했다.",
+      "adoptedReason": "사진 ID와 달 지평선 위 지구 캡션은 NASA/JSC 카탈로그가 직접 제시하고, SVS가 원본 사진 ID와 Earthrise 촬영 재구성을 교차 확인한다.",
+      "rejectedAlternatives": "'Earthrise가 인류에게 준 의미' 같은 평가 명제는 제외했다. 'William Anders 단독 촬영'은 일부 출처 간 서술 차이가 있어 이 명제에서는 'Apollo 8 승무원'으로 제한했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "NASA/JSC EOL 사진 카탈로그의 공개 텍스트에서는 AS08-14-2383의 Date taken 필드가 비어 있었다. 1968-12-24 날짜는 NASA APOD의 2018-12-24 기념일 문구와 NASA SVS의 Apollo 8 Earthrise 재구성 문맥으로 보강했다. 촬영자를 특정 개인으로 단정하지 않고 Apollo 8 승무원으로 표현했다.",
+  "tags": [
+    "지구형상",
+    "지구과학",
+    "우주사진",
+    "아폴로8",
+    "Earthrise",
+    "NASA"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}
