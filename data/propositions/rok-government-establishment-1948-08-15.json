@@ -1,0 +1,152 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:a39e2dc6072bbda67817ead7",
+  "versionId": "ver:cd785da0c0d389ce",
+  "certHash": "sha256:7bdac4d8ec8d09e04f5621326b0ae750cee2e848bec5c7cf532c1d53ca15fa5f",
+  "canonicalProposition": "이승만은 1948년 8월 15일 대한민국 수립을 선포하였다",
+  "originalClaim": "1948년 8월 15일 대한민국 정부 수립이 공식 선포되었다.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "1948년 8월 15일 이승만이 대한민국을 선포했다는 사실은 Country Studies와 Wikipedia의 fetch 가능한 역사 출처에서 날짜와 행위가 직접 확인된다. 분단·정부 정통성 해석과 분리하여 선포 행위만 저장했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://countrystudies.us/south-korea/9.htm",
+      "title": "South Korea - South Korea Under United States Occupation, 1945-48",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "South Korea Under United States Occupation, 1945-48"
+      },
+      "shortQuote": "when on August 15, 1948, the Republic of Korea (South Korea) was proclaimed",
+      "quoteHash": "sha256:f794009d9d86c11c769cfb61bf882ebb8bf0182593fb79522b05642c14714eec",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Fetch 가능한 Country Studies HTML 페이지에서 선포 날짜와 대상만 확인했다. 사이트는 Library of Congress Country Study 계열 텍스트의 공개 HTML 미러이므로 공식 관보 원문은 아니다.",
+      "independenceGroupId": "country-studies-south-korea-occupation-1948",
+      "independenceLevel": "independent",
+      "independenceNote": "Wikipedia와 별도 출판 체계의 한국 현대사 개요 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "대한민국 정부 수립 전후 경과를 다루는 국가 연구 개요로 선포 일자 확인에 직접 관련된다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "공식 도메인의 원문이 아니라 공개 HTML 미러이므로 조약·관보 원문 수준의 1차 출처로 보지 않는다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/History_of_South_Korea",
+      "title": "History of South Korea",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "U.S. military administration (1945-1948)",
+        "heading": "History of South Korea"
+      },
+      "shortQuote": "proclaimed the Republic of Korea (South Korea) on 15 August 1948",
+      "quoteHash": "sha256:82614a423f3d37cfffdad8b765bad0b6c55c9358f15f03912b84653ed5132a16",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 공식 관보 원문이 아니라 선포 사건의 보조 앵커로 사용했다.",
+      "independenceGroupId": "wikipedia-history-of-south-korea",
+      "independenceLevel": "independent",
+      "independenceNote": "대한민국 정부 공식 기록 생산 주체와 독립된 공개 편집 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "한국 현대사 개요 확인에는 관련성이 있으나 1차 관보는 아니다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이므로 관보·국가기록원 원문 보강이 권장된다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/History_of_South_Korea",
+      "title": "History of South Korea",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "First Republic (1948-1960)",
+        "heading": "History of South Korea"
+      },
+      "shortQuote": "On 15 August 1948, the Republic of Korea was formally established",
+      "quoteHash": "sha256:20a2a92a46b5d85f51969fc894169c8cb9c365126504bddf6dafdb10802cb86d",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "동일 fetch 페이지의 수립 일자 문구를 별도 확인했다.",
+      "independenceGroupId": "wikipedia-history-of-south-korea",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 페이지의 별도 문장으로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "정부 수립 일자 확인에 직접 관련된다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이므로 공식 원문 사료 보강 여지가 있다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "1948년 8월 15일의 성격은 '정부 수립', '건국', '분단정부 수립' 등 명칭 자체가 정치적 논쟁을 낳는다는 반론이 가능하다.",
+      "response": "명제는 '건국' 또는 정통성 판단을 저장하지 않고, 이승만이 대한민국 수립을 선포했다는 관찰 가능한 행위만 저장한다.",
+      "errorsFound": 0,
+      "framingChecks": "'건국', '유일 합법 정부', '분단정부' 같은 해석어를 canonicalProposition에서 제외했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "남측 정부 수립 사실과 북측 정부 수립 사실을 같은 입자도와 같은 중립 동사('선포')로 분리해 기록하는지 점검했다.",
+      "result": "대칭 통과 — 남측 수립 선포와 북측 수립 선포를 별도 명제로 분리했다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "공식성과 정통성 판단을 권위 출처로 대체하지 않고, 날짜·행위 문장만 확인했다. 분단 관련 프레이밍 위험으로 인간 검수 레인에 배치했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "선포 행위만 저장하고 정통성·건국 논쟁은 저장하지 않았다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+      "adoptedReason": "날짜, 행위자, 선포 행위가 fetch 가능한 독립 출처에서 확인된다.",
+      "rejectedAlternatives": "'대한민국이 건국되었다', '유일 합법 정부가 수립되었다'는 표현은 평가·법적 해석이 섞여 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 1948년 8월 15일의 선포 행위만 저장한다. 대한민국 정부의 법적 정통성, 유엔 승인 의미, 분단 책임 또는 '건국' 명칭 논쟁은 포함하지 않는다.",
+  "tags": [
+    "한국근현대사",
+    "1948",
+    "대한민국정부수립",
+    "정부수립선포",
+    "분단"
+  ],
+  "createdAt": "2026-06-16",
+  "updatedAt": "2026-06-16"
+}

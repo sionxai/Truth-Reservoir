@@ -1,0 +1,100 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
+  "versionId": "ver:c0fd584c637931b0",
+  "certHash": "sha256:74b517b2a056922ff6d9179b86335b8b808495870f46784ad7f5ef463de08279",
+  "canonicalProposition": "국제사법재판소는 2025년 7월 23일 '기후변화에 관한 국가의 의무' 권고의견을 발령하였다",
+  "originalClaim": "The International Court of Justice issued the Advisory Opinion on Obligations of States in respect of Climate Change on 23 July 2025.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "automated_unreviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "국제사법재판소의 공식 사건 문서 페이지가 2025년 7월 23일 권고의견을 제시한다. 명제는 권고의견 발령 사건에 한정하며, 권고의견의 법적 효과나 정책적 평가는 저장하지 않는다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://icj-cij.org/case/187/advisory-opinions",
+      "title": "Obligations of States in respect of Climate Change - Advisory opinions",
+      "retrievedAt": "2026-06-16T00:00:00Z",
+      "locator": {
+        "section": "Advisory opinions",
+        "heading": "Advisory Opinion of 23 July 2025"
+      },
+      "shortQuote": "Advisory Opinion of 23 July 2025",
+      "quoteHash": "sha256:345ce68b1950f31eeef0433ecbd65a66b368e7321038dcef8fe7fdaee21890a0",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "ICJ 공식 HTML 사건 문서 목록은 페이지 구조가 바뀔 수 있어 locator를 함께 기록했다. PDF URL은 일부 fetcher에서 간헐적으로 403을 반환해 증거로 사용하지 않았다.",
+      "independenceGroupId": "icj-case-187-document-list",
+      "independenceLevel": "independent",
+      "independenceNote": "국제사법재판소 공식 사건 문서 목록으로 권고의견 발령 사실의 1차 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "ICJ 공식 사건 페이지는 권고의견 문서 목록 확인에 적합하다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "PDF와 같은 기관 출처이므로 독립 원천 수를 늘리는 용도로 계산하지 않는다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "권고의견의 법적 구속력이나 국가 책임 판단으로 확장하면 사실 명제를 넘어 해석이 된다.",
+      "response": "명제는 2025년 7월 23일 권고의견 발령이라는 사건만 저장한다. 권고의견의 법적 효과, 기후정책 의미, 국가별 책임은 제외했다.",
+      "errorsFound": 0,
+      "framingChecks": "'역사적 판결', '구속력 있는 명령' 같은 평가·해석 표현을 제외했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "ICJ 공식 사건 문서 목록에서 날짜와 문서 유형이 제시되는지 확인했다.",
+      "result": "공식 사건 문서 목록이 2025년 7월 23일 권고의견을 지지한다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "ICJ 권위 자체가 아니라 공식 사건 문서 목록의 문서명을 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "automated-ingest-no-human-review",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "자동 처리된 저위험 공식 문서 발령 사건 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+      "adoptedReason": "ICJ 공식 사건 문서 목록이 권고의견 일자를 직접 지지한다.",
+      "rejectedAlternatives": "권고의견의 법적 효과나 기후정책 결론을 포함하는 명제는 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 권고의견 발령 일자와 사건명에만 한정한다. 권고의견의 법적 구속력, 개별 국가 책임, 배상 가능성은 별도 법률 해석 영역이다.",
+  "tags": [
+    "최근1년",
+    "국제사건",
+    "ICJ",
+    "기후변화",
+    "권고의견",
+    "2025"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}

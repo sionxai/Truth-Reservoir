@@ -1,0 +1,180 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:7536cb937fa5897848d6ecf4",
+  "versionId": "ver:0d3115f96564c828",
+  "certHash": "sha256:45292167132711bc4c85685727de77646ef07cc7494f47811efd0e2143e3e829",
+  "canonicalProposition": "1953년 7월 27일 유엔군사령부·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다",
+  "originalClaim": "1953년 7월 27일 국제연합군·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "1953년 7월 27일 유엔군사령부, 조선인민군, 중국인민지원군 측 대표가 한국 정전협정에 서명했다는 사실은 Wikisource의 정전협정 본문과 Wikipedia의 fetch 가능한 출처에서 날짜·당사자가 확인된다. 정전협정의 법적 효과나 평화협정 부재 해석은 저장하지 않았다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://en.wikisource.org/wiki/Korean_Armistice_Agreement",
+      "title": "Korean Armistice Agreement - Wikisource",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Article V Miscellaneous"
+      },
+      "shortQuote": "Done at Panmunjom, Korea at 10:00 hours on the 27th day of July 1953",
+      "quoteHash": "sha256:94489aa04a3f339d19f038cca68ce0250cd5f0d37bb708674b32a6dccc4a36d6",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Wikisource의 공개 정전협정 본문에서 작성 장소·시각·일자를 확인했다. 자동 에이전트 재대조 시 403을 반환한 기존 후보 출처들은 증거로 쓰지 않았다.",
+      "independenceGroupId": "wikisource-armistice-text",
+      "independenceLevel": "independent",
+      "independenceNote": "Wikipedia 항목과 별도 문서 페이지의 정전협정 본문 전사다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "정전협정 본문 자체의 작성 장소·시각·일자 문구로 서명 사실 확인에 직접 적합하다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "Wikisource 전사본이므로 협정 의미 해석이 아니라 본문에 적힌 작성 장소·시각·일자 확인에만 사용했다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/United_Nations_Command",
+      "title": "United Nations Command",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Lead",
+        "heading": "United Nations Command"
+      },
+      "shortQuote": "United Nations Command, the Korean People's Army, and the Chinese People's Volunteers signed",
+      "quoteHash": "sha256:cfc75012e0a140ac97d24583c1e5f771ccf9cc6d8556e6eecfc8e1ca06dda51b",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 정전협정 당사자 표기를 확인하는 보조 앵커로 사용했다.",
+      "independenceGroupId": "wikipedia-united-nations-command",
+      "independenceLevel": "independent",
+      "independenceNote": "협정 당사자 공식 원문 생산 주체와 독립된 공개 편집 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "유엔군사령부와 정전협정 개요 확인에는 관련성이 있으나 1차 협정문은 아니다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이므로 협정문 원문 보강이 권장된다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Korean_Armistice_Agreement",
+      "title": "Korean Armistice Agreement",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Negotiations",
+        "heading": "Korean Armistice Agreement"
+      },
+      "shortQuote": "On 27 July 1953, at 10:00 a.m., the Armistice was signed",
+      "quoteHash": "sha256:bca06c0fab96fed6e2c1a3a6016f64cf30b56220eb013fc6bbcfdbbc187e9bcb",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 서명 일자와 시각을 확인했다.",
+      "independenceGroupId": "wikipedia-korean-armistice",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "동일 공개 백과 생태계이나 별도 항목으로 날짜·행위를 교차 확인했다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "정전협정 체결일 확인에 직접 관련된다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이므로 원 협정문과 병행 확인이 권장된다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Korean_Armistice_Agreement",
+      "title": "Korean Armistice Agreement",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Lead",
+        "heading": "Korean Armistice Agreement"
+      },
+      "shortQuote": "South Korea never signed the Armistice Agreement",
+      "quoteHash": "sha256:d972150c9abd5f3d67550dd0b187b24298e07f0cd9b227330485668a95539000",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "동일 fetch 페이지에서 대한민국 미서명 한계 사항을 확인했다.",
+      "independenceGroupId": "wikipedia-korean-armistice",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 페이지의 별도 문장으로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "대한민국 미서명 한계 기재에 직접 관련된다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이므로 협정 서명란 원문 대조가 향후 보강에 적합하다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "정전협정을 '한국전쟁 종료'로 표현하면 평화협정 체결이나 법적 전쟁 종료로 오해될 수 있다는 반론이 가능하다.",
+      "response": "본 명제는 정전협정 서명 행위만 저장한다. 전쟁의 법적 종료, 평화협정 부재, 정전 체제의 의미는 저장하지 않는다.",
+      "errorsFound": 0,
+      "framingChecks": "'종전', '휴전 성공', '평화 정착' 같은 평가·효과 표현을 제외하고 서명 행위만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "서명 당사자와 비서명 당사자를 구분해 대한민국 미서명 사실을 limitations에 별도로 기록했다.",
+      "result": "대칭 통과 — 협정 서명자와 비서명자를 혼합하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "유엔군사령부나 특정 참전국의 권위로 협정의 의미를 판단하지 않고, 서명 사실과 당사자 표기만 확인했다. 전쟁·정전체제 프레이밍 위험으로 인간 검수 레인에 배치했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "서명 사실만 저장하고 대한민국 미서명 사실은 limitations에 분리했다. Wikisource 정전협정 본문과 Wikipedia 출처는 자동 에이전트로 fetch 가능했으며 403이 아니었다.",
+      "adoptedReason": "서명 일자와 당사자가 fetch 가능한 정전협정 본문과 보조 출처에서 확인된다.",
+      "rejectedAlternatives": "'한국전쟁이 끝났다', '평화가 성립했다'는 표현은 법적·정치적 해석을 포함할 수 있어 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 정전협정 서명 행위에 한정한다. 대한민국은 협정 서명자로 기재되지 않았다는 사실을 함께 유의해야 한다. 정전협정의 법적 효과, 평화협정 부재, 전쟁의 종료 여부에 관한 해석은 포함하지 않는다.",
+  "tags": [
+    "한국근현대사",
+    "1953",
+    "한국정전협정",
+    "유엔군사령부",
+    "조선인민군",
+    "중국인민지원군"
+  ],
+  "createdAt": "2026-06-16",
+  "updatedAt": "2026-06-16"
+}

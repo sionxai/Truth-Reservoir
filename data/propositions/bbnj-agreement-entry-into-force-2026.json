@@ -1,0 +1,97 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:38c8e4c00c63fa0fc9b00eb3",
+  "versionId": "ver:6831b772dcc24cce",
+  "certHash": "sha256:b00b72f9eff70ca152393bb2b144c4476e862472986334f509ec82f1643b1087",
+  "canonicalProposition": "BBNJ 협정은 2026년 1월 17일 발효되었다",
+  "originalClaim": "The BBNJ Agreement entered into force on 17 January 2026.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "automated_unreviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "UN Treaty Collection의 조약 상태 페이지가 BBNJ 협정의 발효일을 2026년 1월 17일로 제시한다. 명제는 조약 발효 사건에 한정하며, 협정의 정책 효과나 이행 평가는 저장하지 않는다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=21&clang=_en&mtdsg_no=XXI-10&src=TREATY",
+      "title": "United Nations Treaty Collection - BBNJ Agreement",
+      "retrievedAt": "2026-06-16T00:00:00Z",
+      "locator": {
+        "section": "Entry into force"
+      },
+      "shortQuote": "17 January 2026, in accordance with article 68(1) of the Agreement",
+      "quoteHash": "sha256:c3a836a11d45bfdb8e32877206d49aef281a29cea12b7bbb21667ea9c7de804f",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "UN Treaty Collection의 조약 상태 페이지에서 entry into force 항목을 확인했다.",
+      "independenceGroupId": "un-treaty-collection-bbnj",
+      "independenceLevel": "independent",
+      "independenceNote": "UN Treaty Collection의 조약 수탁/상태 관리 페이지로 협정 발효일의 공식 상태 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "UN Treaty Collection은 조약 발효일과 당사자 상태 확인에 직접 적합하다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "발효일과 60번째 비준서 기탁일을 혼동하거나, 개별 국가별 발효일과 협정 일반 발효일을 혼동할 수 있다.",
+      "response": "명제는 협정 자체의 일반 발효일인 2026년 1월 17일에 한정한다. 개별 국가별 발효일·비준일·이행 효과는 포함하지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "해양보전 효과, 국제정치 의미, 이행 성과 평가는 제외하고 조약 발효 사건만 저장했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "UN Treaty Collection의 entry into force 항목을 확인했다.",
+      "result": "UN Treaty Collection이 2026년 1월 17일을 발효일로 제시한다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "UN Treaty Collection의 조약 상태 항목을 확인했고, 조약 발효 이상의 평가로 확장하지 않았다."
+    },
+    "humanReview": {
+      "reviewer": "automated-ingest-no-human-review",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "자동 처리된 저위험 조약 발효일 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+      "adoptedReason": "UN Treaty Collection이 발효일을 직접 제시한다.",
+      "rejectedAlternatives": "60번째 비준 기탁일, 각국별 발효일, 협정 이행 성과를 포함하는 명제는 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 BBNJ 협정 자체의 일반 발효일만 다룬다. 개별 국가별 당사자 지위, 비준일, 협정 이행 효과는 포함하지 않는다.",
+  "tags": [
+    "최근1년",
+    "국제사건",
+    "BBNJ",
+    "유엔조약",
+    "해양생물다양성",
+    "2026"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}

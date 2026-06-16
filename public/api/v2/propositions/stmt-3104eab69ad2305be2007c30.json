@@ -1,0 +1,125 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:3104eab69ad2305be2007c30",
+  "versionId": "ver:aea4077c73652522",
+  "certHash": "sha256:0f701f0af53531f4a5846438c87339b554748908cfb7aae425286391a97da260",
+  "canonicalProposition": "1965년 6월 22일 대한민국과 일본은 도쿄에서 한일기본조약에 서명하였다",
+  "originalClaim": "1965년 6월 22일 대한민국과 일본은 한일기본조약에 서명하였다.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "유엔 조약집 원문 PDF가 일본과 대한민국 사이의 기본관계 조약이 1965년 6월 22일 도쿄에서 서명되었음을 직접 제시한다. 청구권·배상·식민지배 해석은 본 명제에 포함하지 않았다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%20583/volume-583-I-8471-English.pdf",
+      "title": "United Nations Treaty Series No. 8471: Treaty on Basic Relations between Japan and the Republic of Korea",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Header",
+        "page": "1"
+      },
+      "shortQuote": "JAPAN AND THE REPUBLIC OF KOREA",
+      "quoteHash": "sha256:21f2fae22718c0f35d7a67aea9c4fde07bb990a29d668733a9d36e65787bd636",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "pdf_extract",
+      "retrievalLimitations": "유엔 조약집 PDF 원문. PDF 텍스트 추출에서 줄바꿈이 포함될 수 있어 locator와 함께 확인했다.",
+      "independenceGroupId": "unts-8471",
+      "independenceLevel": "independent",
+      "independenceNote": "유엔 조약집 등록 원문으로, 당사국 정부 발표와 별개의 국제 조약 보관 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "유엔 조약집은 조약 등록 원문 확인에 적합한 권위 출처다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%20583/volume-583-I-8471-English.pdf",
+      "title": "United Nations Treaty Series No. 8471: Treaty on Basic Relations between Japan and the Republic of Korea",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Header",
+        "page": "1"
+      },
+      "shortQuote": "TOKYO, ON 22 JUNE 1965",
+      "quoteHash": "sha256:5a4ed3c71f735dffcb538ba1fd6c7a9c217dc045113fb60e94da6b32de26911b",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "pdf_extract",
+      "retrievalLimitations": "유엔 조약집 PDF 원문. 대문자 표기는 원문 헤더의 텍스트 추출 그대로 보존했다.",
+      "independenceGroupId": "unts-8471",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 유엔 조약집 PDF의 별도 헤더 문구로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "서명 장소와 일자 확인에 직접 관련되는 조약집 원문 표기다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "한일기본조약은 식민지배 불법성, 청구권, 배상, 개인청구권 해석과 연결되어 서명 사실만 기록하면 핵심 쟁점을 누락한다는 반론이 가능하다.",
+      "response": "저장 대상은 조약 서명이라는 원자 사실이다. 청구권·배상 해석은 문서 내용 또는 당사자 주장 명제로 별도 분해해야 하며, 본 명제에는 포함하지 않는다.",
+      "errorsFound": 0,
+      "framingChecks": "'국교 정상화의 성과', '굴욕 외교', '배상 완료' 같은 평가·해석 표현을 제외하고 서명 일자·당사자·장소만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "한국과 일본 양측을 같은 문장 구조의 조약 당사자로 표기하고, 어느 한쪽의 해석을 사실로 포함하지 않는지 점검했다.",
+      "result": "대칭 통과 — 서명 사실 외의 청구권·배상 해석을 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "유엔 조약집 원문을 날짜·당사자 확인에만 사용했고, 조약 해석의 최종 권위로 사용하지 않았다. 식민 배상 해석의 정치적 쟁점 때문에 인간 검수 레인으로 분류했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "유엔 조약집 PDF 원문이 fetch 가능했고 403이 아니었다. 서명 사실만 저장하고 청구권·배상 해석은 limitations에 제외했다.",
+      "adoptedReason": "당사자, 장소, 서명일이 조약집 원문에서 확인된다.",
+      "rejectedAlternatives": "'한일관계가 정상화되었다', '청구권 문제가 해결되었다'는 표현은 조약 내용·해석 판단이 섞여 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 한일기본조약의 서명 사실만 기록하며, 식민지배 불법성·청구권·배상·개인청구권 해석에 관한 판단을 포함하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 1965년 6월 22일 조약 서명 사실에 한정한다. 청구권·배상·개인청구권·식민지배 불법성 해석은 별개 쟁점이며 본 명제에 저장하지 않았다.",
+  "tags": [
+    "한국근현대사",
+    "1965",
+    "한일기본조약",
+    "대한민국",
+    "일본",
+    "조약서명"
+  ],
+  "createdAt": "2026-06-16",
+  "updatedAt": "2026-06-16"
+}

@@ -1,0 +1,152 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:8b798d52af5df4ea214ecead",
+  "versionId": "ver:85d0f5768f421e51",
+  "certHash": "sha256:3726e4eef7f1c972e1a6bf2ce3df2e793965b8ff333cb6d833bd5226055af67c",
+  "canonicalProposition": "1948년 9월 9일 조선민주주의인민공화국 정부가 선포되었다",
+  "originalClaim": "1948년 9월 9일 조선민주주의인민공화국 정부 수립이 선포되었다.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "1948년 9월 9일 조선민주주의인민공화국 정부가 수립·선포되었다는 사실은 Country Studies와 Wikipedia의 fetch 가능한 역사 출처에서 직접 확인된다. 남북 정부 수립을 같은 중립 동사로 분리해 기록하고, 정통성·체제 평가를 포함하지 않았다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://countrystudies.us/north-korea/14.htm",
+      "title": "North Korea - Origins of the DPRK",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Origins of the DPRK"
+      },
+      "shortQuote": "The Democratic People's Republic of Korea was established on September 9, 1948",
+      "quoteHash": "sha256:0f375642bba323cba126124ebb2747b25db8a25030be6c5f2a18a24d55114962",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Fetch 가능한 Country Studies HTML 페이지에서 조선민주주의인민공화국 수립 날짜를 확인했다. 사이트는 Library of Congress Country Study 계열 텍스트의 공개 HTML 미러이므로 북한 공식 원문은 아니다.",
+      "independenceGroupId": "country-studies-north-korea-origins-dprk",
+      "independenceLevel": "independent",
+      "independenceNote": "Wikipedia와 별도 출판 체계의 북한 현대사 개요 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "조선민주주의인민공화국 수립 경과를 다루는 국가 연구 개요로 수립 일자 확인에 직접 관련된다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "공식 도메인의 원문이 아니라 공개 HTML 미러이므로 북한 공식 선포문 원문 수준의 1차 출처로 보지 않는다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/History_of_South_Korea",
+      "title": "History of South Korea",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "First Republic (1948-1960)",
+        "heading": "History of South Korea"
+      },
+      "shortQuote": "Democratic People's Republic of Korea (North Korea), was proclaimed",
+      "quoteHash": "sha256:60483fe3017180c1e45d77b49cba3f019a76308beea30db7d163b3108a7672f1",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 조선민주주의인민공화국 공식 원문이 아니라 선포 사실의 보조 앵커로 사용했다.",
+      "independenceGroupId": "wikipedia-history-of-south-korea",
+      "independenceLevel": "independent",
+      "independenceNote": "북한 공식 기록 생산 주체와 독립된 공개 편집 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "한반도 현대사 개요 확인에는 관련성이 있으나 1차 사료는 아니다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이므로 공식 원문 사료 보강이 권장된다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Day_of_the_Foundation_of_the_Republic",
+      "title": "Day of the Foundation of the Republic",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "History",
+        "heading": "Day of the Foundation of the Republic"
+      },
+      "shortQuote": "formally recognized the DPRK",
+      "quoteHash": "sha256:1686966fe71e4841011b0654f3d021baf4f16bb001b434a65b1100303fd1e8f4",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 날짜와 기념일 맥락을 보조 확인했다.",
+      "independenceGroupId": "wikipedia-dprk-foundation-day",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "동일 공개 백과 생태계이나 별도 항목으로 교차 확인했다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "조선민주주의인민공화국 창건일 맥락 확인에 직접 관련된다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이므로 공식 원문 사료 보강 여지가 있다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "북측 정부 수립을 '선포'라고 쓰면 국가 성립의 법적 정통성까지 인정하는 표현으로 오해될 수 있다는 반론이 가능하다.",
+      "response": "명제는 법적 승인이나 정통성 판단을 하지 않고, 1948년 9월 9일 정부 수립 선포라는 사건만 저장한다.",
+      "errorsFound": 0,
+      "framingChecks": "'정권 수립', '괴뢰', '합법 정부' 같은 평가·정통성 프레이밍을 제외하고 남측 명제와 같은 입자도·동사를 사용했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "남측 1948년 8월 15일 선포 명제와 같은 형식으로 북측 1948년 9월 9일 선포 명제를 분리했다.",
+      "result": "대칭 통과 — 어느 한쪽의 법적 정통성 또는 책임 서술을 포함하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "북한 공식 권위나 남한 공식 권위 어느 쪽도 면제하지 않고, fetch 가능한 공개 출처의 문장만 확인했다. 분단 프레이밍 위험으로 인간 검수 레인에 배치했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정부 수립 선포 사실만 저장하고 정통성·체제 평가를 제외했다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+      "adoptedReason": "날짜와 수립·선포 사실이 fetch 가능한 독립 출처에서 확인된다.",
+      "rejectedAlternatives": "'북한 정권이 수립되었다', '공산정권이 들어섰다'는 표현은 평가·체제 프레이밍이 강해 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 1948년 9월 9일의 선포 사건만 저장한다. 조선민주주의인민공화국의 법적 승인, 한반도 대표성, 분단 책임, 체제 평가는 포함하지 않는다.",
+  "tags": [
+    "한국근현대사",
+    "1948",
+    "조선민주주의인민공화국",
+    "정부수립선포",
+    "분단"
+  ],
+  "createdAt": "2026-06-16",
+  "updatedAt": "2026-06-16"
+}

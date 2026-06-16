@@ -1,0 +1,126 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:c44501dcb97869b23fbe8942",
+  "versionId": "ver:040b4c629945879d",
+  "certHash": "sha256:6235b2a6c1107402369c4d9afdc0b2a6ab39ee65d0c3a9cb536ace7b3e76d089",
+  "canonicalProposition": "2025년 6월 24일부터 25일까지 NATO 정상회의가 네덜란드 헤이그에서 열렸다",
+  "originalClaim": "2025 NATO Summit was held in The Hague, the Netherlands, on 24-25 June 2025.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "automated_unreviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "NATO 공식 정상회의 개요가 회의 장소를 네덜란드 헤이그로, 일자를 2025년 6월 24-25일로 직접 제시한다. 명제는 회의 개최 사실과 일자·장소에 한정하며, 정상회의 결정의 정책 평가를 포함하지 않는다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.nato.int/en/news-and-events/events/2025/6/overview---2025-nato-summit-in-the-hague",
+      "title": "Overview - 2025 NATO Summit in The Hague",
+      "retrievedAt": "2026-06-16T00:00:00Z",
+      "locator": {
+        "section": "Overview",
+        "heading": "When"
+      },
+      "shortQuote": "24-25 June 2025",
+      "quoteHash": "sha256:7db7809f607eacf745b58dd1926c6323bdb15cf587d5226a4322b1dd3a317780",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "NATO 공식 HTML 이벤트 개요 페이지의 일자 항목을 확인했다. 페이지 구조는 바뀔 수 있어 locator를 함께 기록했다.",
+      "independenceGroupId": "nato-hague-summit-overview",
+      "independenceLevel": "independent",
+      "independenceNote": "정상회의 주최 기구의 공식 이벤트 개요로, 일자·장소 확인의 1차 운영 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "NATO 공식 사이트는 NATO 정상회의 일정·장소 확인에 직접 적합하다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "NATO가 자기 행사 정보를 게시한 공식 출처이므로 정책 평가에는 사용하지 않고 일자·장소 확인에 한정했다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.nato.int/en/news-and-events/events/2025/6/overview---2025-nato-summit-in-the-hague",
+      "title": "Overview - 2025 NATO Summit in The Hague",
+      "retrievedAt": "2026-06-16T00:00:00Z",
+      "locator": {
+        "section": "Overview",
+        "heading": "Where"
+      },
+      "shortQuote": "The Hague, the Netherlands",
+      "quoteHash": "sha256:831e25800a5808c8367ebba0f0f7706fa7ed8a30af9e7eb7454e70bec81d37b5",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "동일 NATO 공식 이벤트 개요 페이지의 장소 항목이다. 독립 증거 수를 늘리는 용도로 계산하지 않는다.",
+      "independenceGroupId": "nato-hague-summit-overview",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 NATO 공식 이벤트 개요 페이지에서 장소 항목만 분리 인용했다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "NATO 공식 사이트는 NATO 정상회의 일정·장소 확인에 직접 적합하다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "동일 공식 페이지의 보조 인용이다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "NATO 공식 출처만 사용하면 정상회의 결정의 정당성 평가로 확장될 위험이 있다.",
+      "response": "명제는 정상회의 개최 일자와 장소만 저장하고, 국방비 결정·우크라이나 지원·동맹 평가 등 정책적 내용은 제외했다.",
+      "errorsFound": 0,
+      "framingChecks": "'역사적', '위협', '방위 강화' 같은 평가어를 제외하고 날짜·장소·행사 개최 사실만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "반대 명제인 '해당 일자와 장소에서 열리지 않았다'를 공식 이벤트 개요의 일자·장소 항목과 대조했다.",
+      "result": "공식 이벤트 개요가 일자와 장소를 직접 제시하므로 반대 명제는 지지되지 않는다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "NATO 권위를 정책 결론으로 쓰지 않고, 행사 일정·장소라는 공식 운영 기록 확인에 한정했다."
+    },
+    "humanReview": {
+      "reviewer": "automated-ingest-no-human-review",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "자동 처리된 저위험 행사 일자·장소 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+      "adoptedReason": "공식 이벤트 개요가 날짜와 장소를 직접 지지한다.",
+      "rejectedAlternatives": "정상회의 결정의 내용이나 정책 평가를 포함하는 넓은 명제는 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 NATO 정상회의의 개최 일자와 장소에만 한정한다. 정상회의 선언의 정책적 의미, 국방비 공약의 이행 여부, 각국의 정치적 평가는 다루지 않는다.",
+  "tags": [
+    "최근1년",
+    "국제사건",
+    "NATO",
+    "헤이그정상회의",
+    "2025"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}

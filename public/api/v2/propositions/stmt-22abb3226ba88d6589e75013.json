@@ -1,0 +1,126 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:22abb3226ba88d6589e75013",
+  "versionId": "ver:ff31a3421522911c",
+  "certHash": "sha256:46694e5fbe09049b0339e52fb9691cda5f6b13665cbacc6d9102de3f5fb339c4",
+  "canonicalProposition": "UNFCCC의 COP30 사후 문서 목록은 제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다",
+  "originalClaim": "UNFCCC post-session documents state that COP 30 was held in Belem from 10 to 25 November 2025.",
+  "claimNature": "document_content",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "automated_unreviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "UNFCCC COP30 공식 이벤트 페이지의 사후 문서 목록은 회의 보고서 제목에서 제30차 당사국총회가 벨렝에서 2025년 11월 10일부터 25일까지 열렸다고 표시한다. 명제는 이 공식 문서 목록의 내용에 한정한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://unfccc.int/event/cop-30",
+      "title": "COP 30 - UNFCCC",
+      "retrievedAt": "2026-06-16T00:00:00Z",
+      "locator": {
+        "section": "Latest COP 30 documents",
+        "heading": "FCCC/CP/2025/12"
+      },
+      "shortQuote": "held in Belém from 10 to 25 November 2025",
+      "quoteHash": "sha256:e3577436e6da279be7956b230979a49f6529a054624922603fea57701e557d9e",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "UNFCCC 공식 이벤트 페이지의 사후 문서 목록 제목을 확인했다. 본 명제는 실제 회의 운영 전체가 아니라 문서 목록의 표시 내용에 한정한다.",
+      "independenceGroupId": "unfccc-cop30-event-documents",
+      "independenceLevel": "independent",
+      "independenceNote": "UNFCCC 공식 COP30 이벤트 페이지의 문서 목록으로, 회의 문서 표시 내용의 1차 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "UNFCCC는 COP 회의 문서 목록과 공식 회의 보고서를 게시하는 직접 출처다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "UNFCCC 공식 문서 목록이며, 회의 운영 평가나 합의 평가에는 사용하지 않는다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://unfccc.int/cop30/ifp",
+      "title": "Information for COP 30 participants (A-Z) - UNFCCC",
+      "retrievedAt": "2026-06-16T00:00:00Z",
+      "locator": {
+        "section": "Location"
+      },
+      "shortQuote": "Hangar Convention and Fair Centre of the Amazon",
+      "quoteHash": "sha256:6d6739d58e1177f93950d20d86c9ab612481d0b43d19a2c02af5bc40eba84a42",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "UNFCCC 참가자 안내 페이지는 회의 장소를 확인하는 보조 출처다. 원문은 venue 뒤에 Belém, Brazil도 표시하지만, 비분리 공백 문자 차이를 피하기 위해 venue 명칭만 인용했다.",
+      "independenceGroupId": "unfccc-cop30-participant-info",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "같은 UNFCCC 체계의 참가자 안내 페이지로, 사후 문서 목록과 생산기관은 같지만 별도 페이지다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "UNFCCC 공식 참가자 안내는 COP30 장소 확인에 직접 관련된다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "참가자 안내는 업데이트될 수 있으므로 사후 문서 목록을 주 증거로 사용했다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "참가자 안내 페이지의 예정 날짜는 2025년 11월 10-21일로 표시되어 사후 문서 목록의 10-25일과 다르다.",
+      "response": "그래서 명제를 실제 회의 전체에 대한 단정이 아니라 'UNFCCC 사후 문서 목록이 그렇게 적고 있다'는 문서 내용 명제로 제한했다. 참가자 안내 날짜와 사후 보고서 제목의 차이는 limitations에 남겼다.",
+      "errorsFound": 0,
+      "framingChecks": "COP30의 성과, 실패, 기후정책 의미 같은 평가를 제외하고 공식 문서 목록의 표시 내용만 저장했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "참가자 안내 페이지의 예정 기간과 사후 문서 목록 제목을 구분해 확인했다.",
+      "result": "사후 문서 목록의 문구는 확인되지만, 예정 안내 페이지와 날짜 범위가 다르므로 event_occurrence가 아니라 document_content로 저장했다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "UNFCCC 권위를 회의 성과 판단으로 쓰지 않고, 공식 문서 목록의 표시 내용에만 사용했다."
+    },
+    "humanReview": {
+      "reviewer": "automated-ingest-no-human-review",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "자동 처리된 공식 문서 내용 명제다. 예정 일정과 사후 문서 기간 차이를 발견해 명제를 document_content로 좁혔다.",
+      "adoptedReason": "UNFCCC 공식 문서 목록의 제목이 명제를 직접 지지한다.",
+      "rejectedAlternatives": "'COP30은 10-25일 동안 개최되었다'라는 직접 사건 명제는 예정 일정과의 차이 때문에 이번 배치에서 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": false,
+    "sensitivityReason": [],
+    "legalStatus": "official_record",
+    "presumptionNotice": ""
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "UNFCCC 참가자 안내 페이지는 회의 예정 날짜를 2025년 11월 10-21일로 표시하지만, 사후 문서 목록의 회의 보고서 제목은 10-25일을 표시한다. 이 명제는 그 사후 문서 목록의 문구를 저장하는 문서 내용 명제다.",
+  "tags": [
+    "최근1년",
+    "국제사건",
+    "UNFCCC",
+    "COP30",
+    "벨렝",
+    "2025"
+  ],
+  "createdAt": "2026-06-16T00:00:00Z",
+  "updatedAt": "2026-06-16T00:00:00Z"
+}

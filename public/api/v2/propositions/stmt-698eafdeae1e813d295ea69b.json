@@ -1,0 +1,156 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:698eafdeae1e813d295ea69b",
+  "versionId": "ver:7559e0620955453b",
+  "certHash": "sha256:193a5b9602b10381c54e43d0dae85b30ee722849b4c0292b7df129a2fb8be1ee",
+  "canonicalProposition": "1950년 6월 25일 04시 40분경 조선인민군은 38선을 넘어 대한민국 영역으로 진입하였다",
+  "originalClaim": "1950년 6월 25일 새벽 조선인민군이 38선을 넘어 대한민국 영역으로 진격하였다.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-16",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "1950년 6월 25일 새벽 조선인민군(KPA)이 38선을 넘고 남쪽 영역으로 진입했다는 사실은 Wikipedia의 자동 재현 가능한 역사 출처에서 직접 확인되고, Britannica의 사람 접근 가능한 전문 백과 문구가 보조로 일치한다. 전쟁의 원인·책임·동기 또는 '누가 전쟁을 일으켰는가'라는 해석은 명제에서 제외했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.britannica.com/event/Korean-War/Invasion-and-counterinvasion-1950-51",
+      "title": "Korean War - Invasion, Counterinvasion, 1950-51",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "South to Pusan",
+        "heading": "Invasion and counterinvasion, 1950-51"
+      },
+      "shortQuote": "North Koreans struck across the 38th parallel",
+      "quoteHash": "sha256:51344daf3ff3ec9050d06665be6cefce21480d8cf16923382b0346315e7cd208",
+      "archiveStatus": "unavailable",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "자동 에이전트 재대조 시 HTTP 403(사람만 접근 가능); 본 명제의 자동 재현 앵커는 위키백과 항목이다.",
+      "independenceGroupId": "britannica-korean-war-invasion",
+      "independenceLevel": "independent",
+      "independenceNote": "Wikipedia와 별도 편집·출판 체계의 전문 백과 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "전쟁 개요와 주요 군사 경과를 전문적으로 정리한 출처로 38선 통과 사실 확인에 적합하다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "2차 백과 출처이므로 책임·원인 프레이밍에는 사용하지 않았다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Korean_War",
+      "title": "Korean War",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Course of the war",
+        "heading": "North Korean invasion (June 1950)"
+      },
+      "shortQuote": "At 4:40 a.m. on 25 June 1950, the KPA crossed the 38th parallel",
+      "quoteHash": "sha256:6b00750fdd539a585cad4fb8f5799f85af213f122e1b5e60bbf45ae4078951d0",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 전쟁 책임 해석이 아니라 시간·행위·경계선 통과 확인에만 사용했다.",
+      "independenceGroupId": "wikipedia-korean-war",
+      "independenceLevel": "independent",
+      "independenceNote": "남북한 정부나 참전국 공식 기록 생산 주체와 독립된 공개 편집 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "전쟁 경과의 기본 사실 확인에는 관련성이 있으나 1차 작전 기록은 아니다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이며 전쟁 책임 프레이밍 위험이 큰 주제다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Korean_War",
+      "title": "Korean War",
+      "retrievedAt": "2026-06-16",
+      "locator": {
+        "section": "Course of the war",
+        "heading": "North Korean invasion (June 1950)"
+      },
+      "shortQuote": "individual KPA units had advanced 3 to 5 kilometers into South Korean territory",
+      "quoteHash": "sha256:a9f76613e5b321981a5227f6437868be561ad59a2764a4b3c364f707eedf0b4e",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "동일 fetch 페이지에서 대한민국 영역 진입 표현을 별도 확인했다.",
+      "independenceGroupId": "wikipedia-korean-war",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 페이지의 별도 문장으로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "경계선 통과 후 남쪽 영역 진입 사실 확인에 직접 관련된다.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 편집 백과이며 책임·원인 해석은 별도로 검토해야 한다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "북한 측은 남한 측이 먼저 공격했다고 주장해 왔으므로 '진입' 표현 자체가 책임 판단을 숨긴 편향이라는 반론이 가능하다.",
+      "response": "본 명제는 책임·원인 판단을 하지 않고, 특정 시각에 조선인민군 부대가 38선을 넘었다는 관찰 가능한 군사 이동 사실만 저장한다. 상반된 책임 주장은 별도 'A측은 ... 주장했다' 명제로 다루어야 한다.",
+      "errorsFound": 0,
+      "framingChecks": "'남침', '도발', '전쟁을 일으켰다', '기습' 같은 책임·동기 함축 표현을 제거하고 '38선을 넘어 대한민국 영역으로 진입하였다'로 썼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "북한 측 선제공격 주장과 남한/유엔 측 침공 서술을 모두 책임 판단 없이 분리 가능한 주장 명제로만 다룰 수 있는지 점검했다.",
+      "result": "대칭 통과 — 본 명제는 군사 이동 사실만 채택하고 양측의 원인·책임 주장은 채택하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "유엔·남한·미국 공식 권위를 이유로 책임 판단을 통과시키지 않았다. 정치적으로 다투어지는 전쟁 책임 프레이밍 주제이므로 인간 검수 레인으로 분류했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-16",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "경계선 통과와 남쪽 영역 진입 사실만 저장했다. 전쟁 책임·원인·동기 프레이밍은 limitations에 제외 사유를 남겼다. 자동 재현 앵커는 Wikipedia이며, Britannica는 자동 에이전트 재대조 시 403인 사람 접근 가능 보조 출처로만 남겼다.",
+      "adoptedReason": "시간, 행위자, 경계선 통과, 남쪽 영역 진입이 자동 재현 가능한 Wikipedia 문장과 사람 접근 가능한 Britannica 보조 문구에 일치한다.",
+      "rejectedAlternatives": "'남침', '도발', '6·25를 일으켰다'는 표현은 책임·의도 판단을 함축해 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 전쟁 책임·동기·원인 판단을 하지 않고, 1950년 6월 25일 새벽 조선인민군 부대의 38선 통과와 대한민국 영역 진입 사실만 기록한다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "38선 통과와 대한민국 영역 진입이라는 기초 사실은 잘 문서화되어 있으나, 전쟁의 원인·책임·동기·정당성 프레이밍은 헌법 제2조에 따라 본 명제에서 제외했다. 북한 측 또는 다른 행위자의 책임 주장 자체를 기록하려면 별도 주장 명제로 분리해야 한다.",
+  "tags": [
+    "한국근현대사",
+    "1950",
+    "한국전쟁",
+    "38선",
+    "조선인민군",
+    "전쟁개시"
+  ],
+  "createdAt": "2026-06-16",
+  "updatedAt": "2026-06-16"
+}

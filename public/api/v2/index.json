@@ -515,6 +515,381 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "versionId": "ver:6831b772dcc24cce",
+      "certHash": "sha256:b00b72f9eff70ca152393bb2b144c4476e862472986334f509ec82f1643b1087",
+      "canonicalProposition": "BBNJ 협정은 2026년 1월 17일 발효되었다",
+      "originalClaim": "The BBNJ Agreement entered into force on 17 January 2026.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "automated_unreviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "UN Treaty Collection의 조약 상태 페이지가 BBNJ 협정의 발효일을 2026년 1월 17일로 제시한다. 명제는 조약 발효 사건에 한정하며, 협정의 정책 효과나 이행 평가는 저장하지 않는다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=21&clang=_en&mtdsg_no=XXI-10&src=TREATY",
+          "title": "United Nations Treaty Collection - BBNJ Agreement",
+          "retrievedAt": "2026-06-16T00:00:00Z",
+          "locator": {
+            "section": "Entry into force"
+          },
+          "shortQuote": "17 January 2026, in accordance with article 68(1) of the Agreement",
+          "quoteHash": "sha256:c3a836a11d45bfdb8e32877206d49aef281a29cea12b7bbb21667ea9c7de804f",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "UN Treaty Collection의 조약 상태 페이지에서 entry into force 항목을 확인했다.",
+          "independenceGroupId": "un-treaty-collection-bbnj",
+          "independenceLevel": "independent",
+          "independenceNote": "UN Treaty Collection의 조약 수탁/상태 관리 페이지로 협정 발효일의 공식 상태 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "UN Treaty Collection은 조약 발효일과 당사자 상태 확인에 직접 적합하다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "발효일과 60번째 비준서 기탁일을 혼동하거나, 개별 국가별 발효일과 협정 일반 발효일을 혼동할 수 있다.",
+          "response": "명제는 협정 자체의 일반 발효일인 2026년 1월 17일에 한정한다. 개별 국가별 발효일·비준일·이행 효과는 포함하지 않았다.",
+          "errorsFound": 0,
+          "framingChecks": "해양보전 효과, 국제정치 의미, 이행 성과 평가는 제외하고 조약 발효 사건만 저장했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "UN Treaty Collection의 entry into force 항목을 확인했다.",
+          "result": "UN Treaty Collection이 2026년 1월 17일을 발효일로 제시한다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "UN Treaty Collection의 조약 상태 항목을 확인했고, 조약 발효 이상의 평가로 확장하지 않았다."
+        },
+        "humanReview": {
+          "reviewer": "automated-ingest-no-human-review",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "자동 처리된 저위험 조약 발효일 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+          "adoptedReason": "UN Treaty Collection이 발효일을 직접 제시한다.",
+          "rejectedAlternatives": "60번째 비준 기탁일, 각국별 발효일, 협정 이행 성과를 포함하는 명제는 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 BBNJ 협정 자체의 일반 발효일만 다룬다. 개별 국가별 당사자 지위, 비준일, 협정 이행 효과는 포함하지 않는다.",
+      "tags": [
+        "최근1년",
+        "국제사건",
+        "BBNJ",
+        "유엔조약",
+        "해양생물다양성",
+        "2026"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:22abb3226ba88d6589e75013",
+      "versionId": "ver:ff31a3421522911c",
+      "certHash": "sha256:46694e5fbe09049b0339e52fb9691cda5f6b13665cbacc6d9102de3f5fb339c4",
+      "canonicalProposition": "UNFCCC의 COP30 사후 문서 목록은 제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다",
+      "originalClaim": "UNFCCC post-session documents state that COP 30 was held in Belem from 10 to 25 November 2025.",
+      "claimNature": "document_content",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "automated_unreviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "UNFCCC COP30 공식 이벤트 페이지의 사후 문서 목록은 회의 보고서 제목에서 제30차 당사국총회가 벨렝에서 2025년 11월 10일부터 25일까지 열렸다고 표시한다. 명제는 이 공식 문서 목록의 내용에 한정한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://unfccc.int/event/cop-30",
+          "title": "COP 30 - UNFCCC",
+          "retrievedAt": "2026-06-16T00:00:00Z",
+          "locator": {
+            "section": "Latest COP 30 documents",
+            "heading": "FCCC/CP/2025/12"
+          },
+          "shortQuote": "held in Belém from 10 to 25 November 2025",
+          "quoteHash": "sha256:e3577436e6da279be7956b230979a49f6529a054624922603fea57701e557d9e",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "UNFCCC 공식 이벤트 페이지의 사후 문서 목록 제목을 확인했다. 본 명제는 실제 회의 운영 전체가 아니라 문서 목록의 표시 내용에 한정한다.",
+          "independenceGroupId": "unfccc-cop30-event-documents",
+          "independenceLevel": "independent",
+          "independenceNote": "UNFCCC 공식 COP30 이벤트 페이지의 문서 목록으로, 회의 문서 표시 내용의 1차 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "UNFCCC는 COP 회의 문서 목록과 공식 회의 보고서를 게시하는 직접 출처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "UNFCCC 공식 문서 목록이며, 회의 운영 평가나 합의 평가에는 사용하지 않는다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://unfccc.int/cop30/ifp",
+          "title": "Information for COP 30 participants (A-Z) - UNFCCC",
+          "retrievedAt": "2026-06-16T00:00:00Z",
+          "locator": {
+            "section": "Location"
+          },
+          "shortQuote": "Hangar Convention and Fair Centre of the Amazon",
+          "quoteHash": "sha256:6d6739d58e1177f93950d20d86c9ab612481d0b43d19a2c02af5bc40eba84a42",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "UNFCCC 참가자 안내 페이지는 회의 장소를 확인하는 보조 출처다. 원문은 venue 뒤에 Belém, Brazil도 표시하지만, 비분리 공백 문자 차이를 피하기 위해 venue 명칭만 인용했다.",
+          "independenceGroupId": "unfccc-cop30-participant-info",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "같은 UNFCCC 체계의 참가자 안내 페이지로, 사후 문서 목록과 생산기관은 같지만 별도 페이지다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "UNFCCC 공식 참가자 안내는 COP30 장소 확인에 직접 관련된다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "참가자 안내는 업데이트될 수 있으므로 사후 문서 목록을 주 증거로 사용했다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "참가자 안내 페이지의 예정 날짜는 2025년 11월 10-21일로 표시되어 사후 문서 목록의 10-25일과 다르다.",
+          "response": "그래서 명제를 실제 회의 전체에 대한 단정이 아니라 'UNFCCC 사후 문서 목록이 그렇게 적고 있다'는 문서 내용 명제로 제한했다. 참가자 안내 날짜와 사후 보고서 제목의 차이는 limitations에 남겼다.",
+          "errorsFound": 0,
+          "framingChecks": "COP30의 성과, 실패, 기후정책 의미 같은 평가를 제외하고 공식 문서 목록의 표시 내용만 저장했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "참가자 안내 페이지의 예정 기간과 사후 문서 목록 제목을 구분해 확인했다.",
+          "result": "사후 문서 목록의 문구는 확인되지만, 예정 안내 페이지와 날짜 범위가 다르므로 event_occurrence가 아니라 document_content로 저장했다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "UNFCCC 권위를 회의 성과 판단으로 쓰지 않고, 공식 문서 목록의 표시 내용에만 사용했다."
+        },
+        "humanReview": {
+          "reviewer": "automated-ingest-no-human-review",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "자동 처리된 공식 문서 내용 명제다. 예정 일정과 사후 문서 기간 차이를 발견해 명제를 document_content로 좁혔다.",
+          "adoptedReason": "UNFCCC 공식 문서 목록의 제목이 명제를 직접 지지한다.",
+          "rejectedAlternatives": "'COP30은 10-25일 동안 개최되었다'라는 직접 사건 명제는 예정 일정과의 차이 때문에 이번 배치에서 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "UNFCCC 참가자 안내 페이지는 회의 예정 날짜를 2025년 11월 10-21일로 표시하지만, 사후 문서 목록의 회의 보고서 제목은 10-25일을 표시한다. 이 명제는 그 사후 문서 목록의 문구를 저장하는 문서 내용 명제다.",
+      "tags": [
+        "최근1년",
+        "국제사건",
+        "UNFCCC",
+        "COP30",
+        "벨렝",
+        "2025"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:8b798d52af5df4ea214ecead",
+      "versionId": "ver:85d0f5768f421e51",
+      "certHash": "sha256:3726e4eef7f1c972e1a6bf2ce3df2e793965b8ff333cb6d833bd5226055af67c",
+      "canonicalProposition": "1948년 9월 9일 조선민주주의인민공화국 정부가 선포되었다",
+      "originalClaim": "1948년 9월 9일 조선민주주의인민공화국 정부 수립이 선포되었다.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "1948년 9월 9일 조선민주주의인민공화국 정부가 수립·선포되었다는 사실은 Country Studies와 Wikipedia의 fetch 가능한 역사 출처에서 직접 확인된다. 남북 정부 수립을 같은 중립 동사로 분리해 기록하고, 정통성·체제 평가를 포함하지 않았다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://countrystudies.us/north-korea/14.htm",
+          "title": "North Korea - Origins of the DPRK",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Origins of the DPRK"
+          },
+          "shortQuote": "The Democratic People's Republic of Korea was established on September 9, 1948",
+          "quoteHash": "sha256:0f375642bba323cba126124ebb2747b25db8a25030be6c5f2a18a24d55114962",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 Country Studies HTML 페이지에서 조선민주주의인민공화국 수립 날짜를 확인했다. 사이트는 Library of Congress Country Study 계열 텍스트의 공개 HTML 미러이므로 북한 공식 원문은 아니다.",
+          "independenceGroupId": "country-studies-north-korea-origins-dprk",
+          "independenceLevel": "independent",
+          "independenceNote": "Wikipedia와 별도 출판 체계의 북한 현대사 개요 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "조선민주주의인민공화국 수립 경과를 다루는 국가 연구 개요로 수립 일자 확인에 직접 관련된다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "공식 도메인의 원문이 아니라 공개 HTML 미러이므로 북한 공식 선포문 원문 수준의 1차 출처로 보지 않는다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/History_of_South_Korea",
+          "title": "History of South Korea",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "First Republic (1948-1960)",
+            "heading": "History of South Korea"
+          },
+          "shortQuote": "Democratic People's Republic of Korea (North Korea), was proclaimed",
+          "quoteHash": "sha256:60483fe3017180c1e45d77b49cba3f019a76308beea30db7d163b3108a7672f1",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 조선민주주의인민공화국 공식 원문이 아니라 선포 사실의 보조 앵커로 사용했다.",
+          "independenceGroupId": "wikipedia-history-of-south-korea",
+          "independenceLevel": "independent",
+          "independenceNote": "북한 공식 기록 생산 주체와 독립된 공개 편집 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "한반도 현대사 개요 확인에는 관련성이 있으나 1차 사료는 아니다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 공식 원문 사료 보강이 권장된다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Day_of_the_Foundation_of_the_Republic",
+          "title": "Day of the Foundation of the Republic",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "History",
+            "heading": "Day of the Foundation of the Republic"
+          },
+          "shortQuote": "formally recognized the DPRK",
+          "quoteHash": "sha256:1686966fe71e4841011b0654f3d021baf4f16bb001b434a65b1100303fd1e8f4",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 날짜와 기념일 맥락을 보조 확인했다.",
+          "independenceGroupId": "wikipedia-dprk-foundation-day",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "동일 공개 백과 생태계이나 별도 항목으로 교차 확인했다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "조선민주주의인민공화국 창건일 맥락 확인에 직접 관련된다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 공식 원문 사료 보강 여지가 있다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "북측 정부 수립을 '선포'라고 쓰면 국가 성립의 법적 정통성까지 인정하는 표현으로 오해될 수 있다는 반론이 가능하다.",
+          "response": "명제는 법적 승인이나 정통성 판단을 하지 않고, 1948년 9월 9일 정부 수립 선포라는 사건만 저장한다.",
+          "errorsFound": 0,
+          "framingChecks": "'정권 수립', '괴뢰', '합법 정부' 같은 평가·정통성 프레이밍을 제외하고 남측 명제와 같은 입자도·동사를 사용했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "남측 1948년 8월 15일 선포 명제와 같은 형식으로 북측 1948년 9월 9일 선포 명제를 분리했다.",
+          "result": "대칭 통과 — 어느 한쪽의 법적 정통성 또는 책임 서술을 포함하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "북한 공식 권위나 남한 공식 권위 어느 쪽도 면제하지 않고, fetch 가능한 공개 출처의 문장만 확인했다. 분단 프레이밍 위험으로 인간 검수 레인에 배치했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "정부 수립 선포 사실만 저장하고 정통성·체제 평가를 제외했다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+          "adoptedReason": "날짜와 수립·선포 사실이 fetch 가능한 독립 출처에서 확인된다.",
+          "rejectedAlternatives": "'북한 정권이 수립되었다', '공산정권이 들어섰다'는 표현은 평가·체제 프레이밍이 강해 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 1948년 9월 9일의 선포 사건만 저장한다. 조선민주주의인민공화국의 법적 승인, 한반도 대표성, 분단 책임, 체제 평가는 포함하지 않는다.",
+      "tags": [
+        "한국근현대사",
+        "1948",
+        "조선민주주의인민공화국",
+        "정부수립선포",
+        "분단"
+      ],
+      "createdAt": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:b18e2813819c4fb0e23830f6",
       "versionId": "ver:28ee0c54de697aa6",
       "certHash": "sha256:833b8883f996b8b3fe900e988408f111638ab587bc42c887c0d46f59e2468336",
@@ -749,6 +1124,719 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
+      "versionId": "ver:c0fd584c637931b0",
+      "certHash": "sha256:74b517b2a056922ff6d9179b86335b8b808495870f46784ad7f5ef463de08279",
+      "canonicalProposition": "국제사법재판소는 2025년 7월 23일 '기후변화에 관한 국가의 의무' 권고의견을 발령하였다",
+      "originalClaim": "The International Court of Justice issued the Advisory Opinion on Obligations of States in respect of Climate Change on 23 July 2025.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "automated_unreviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "국제사법재판소의 공식 사건 문서 페이지가 2025년 7월 23일 권고의견을 제시한다. 명제는 권고의견 발령 사건에 한정하며, 권고의견의 법적 효과나 정책적 평가는 저장하지 않는다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://icj-cij.org/case/187/advisory-opinions",
+          "title": "Obligations of States in respect of Climate Change - Advisory opinions",
+          "retrievedAt": "2026-06-16T00:00:00Z",
+          "locator": {
+            "section": "Advisory opinions",
+            "heading": "Advisory Opinion of 23 July 2025"
+          },
+          "shortQuote": "Advisory Opinion of 23 July 2025",
+          "quoteHash": "sha256:345ce68b1950f31eeef0433ecbd65a66b368e7321038dcef8fe7fdaee21890a0",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "ICJ 공식 HTML 사건 문서 목록은 페이지 구조가 바뀔 수 있어 locator를 함께 기록했다. PDF URL은 일부 fetcher에서 간헐적으로 403을 반환해 증거로 사용하지 않았다.",
+          "independenceGroupId": "icj-case-187-document-list",
+          "independenceLevel": "independent",
+          "independenceNote": "국제사법재판소 공식 사건 문서 목록으로 권고의견 발령 사실의 1차 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "ICJ 공식 사건 페이지는 권고의견 문서 목록 확인에 적합하다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "PDF와 같은 기관 출처이므로 독립 원천 수를 늘리는 용도로 계산하지 않는다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "권고의견의 법적 구속력이나 국가 책임 판단으로 확장하면 사실 명제를 넘어 해석이 된다.",
+          "response": "명제는 2025년 7월 23일 권고의견 발령이라는 사건만 저장한다. 권고의견의 법적 효과, 기후정책 의미, 국가별 책임은 제외했다.",
+          "errorsFound": 0,
+          "framingChecks": "'역사적 판결', '구속력 있는 명령' 같은 평가·해석 표현을 제외했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "ICJ 공식 사건 문서 목록에서 날짜와 문서 유형이 제시되는지 확인했다.",
+          "result": "공식 사건 문서 목록이 2025년 7월 23일 권고의견을 지지한다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "ICJ 권위 자체가 아니라 공식 사건 문서 목록의 문서명을 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "automated-ingest-no-human-review",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "자동 처리된 저위험 공식 문서 발령 사건 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+          "adoptedReason": "ICJ 공식 사건 문서 목록이 권고의견 일자를 직접 지지한다.",
+          "rejectedAlternatives": "권고의견의 법적 효과나 기후정책 결론을 포함하는 명제는 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 권고의견 발령 일자와 사건명에만 한정한다. 권고의견의 법적 구속력, 개별 국가 책임, 배상 가능성은 별도 법률 해석 영역이다.",
+      "tags": [
+        "최근1년",
+        "국제사건",
+        "ICJ",
+        "기후변화",
+        "권고의견",
+        "2025"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:3104eab69ad2305be2007c30",
+      "versionId": "ver:aea4077c73652522",
+      "certHash": "sha256:0f701f0af53531f4a5846438c87339b554748908cfb7aae425286391a97da260",
+      "canonicalProposition": "1965년 6월 22일 대한민국과 일본은 도쿄에서 한일기본조약에 서명하였다",
+      "originalClaim": "1965년 6월 22일 대한민국과 일본은 한일기본조약에 서명하였다.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "유엔 조약집 원문 PDF가 일본과 대한민국 사이의 기본관계 조약이 1965년 6월 22일 도쿄에서 서명되었음을 직접 제시한다. 청구권·배상·식민지배 해석은 본 명제에 포함하지 않았다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%20583/volume-583-I-8471-English.pdf",
+          "title": "United Nations Treaty Series No. 8471: Treaty on Basic Relations between Japan and the Republic of Korea",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Header",
+            "page": "1"
+          },
+          "shortQuote": "JAPAN AND THE REPUBLIC OF KOREA",
+          "quoteHash": "sha256:21f2fae22718c0f35d7a67aea9c4fde07bb990a29d668733a9d36e65787bd636",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "pdf_extract",
+          "retrievalLimitations": "유엔 조약집 PDF 원문. PDF 텍스트 추출에서 줄바꿈이 포함될 수 있어 locator와 함께 확인했다.",
+          "independenceGroupId": "unts-8471",
+          "independenceLevel": "independent",
+          "independenceNote": "유엔 조약집 등록 원문으로, 당사국 정부 발표와 별개의 국제 조약 보관 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "유엔 조약집은 조약 등록 원문 확인에 적합한 권위 출처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%20583/volume-583-I-8471-English.pdf",
+          "title": "United Nations Treaty Series No. 8471: Treaty on Basic Relations between Japan and the Republic of Korea",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Header",
+            "page": "1"
+          },
+          "shortQuote": "TOKYO, ON 22 JUNE 1965",
+          "quoteHash": "sha256:5a4ed3c71f735dffcb538ba1fd6c7a9c217dc045113fb60e94da6b32de26911b",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "pdf_extract",
+          "retrievalLimitations": "유엔 조약집 PDF 원문. 대문자 표기는 원문 헤더의 텍스트 추출 그대로 보존했다.",
+          "independenceGroupId": "unts-8471",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 유엔 조약집 PDF의 별도 헤더 문구로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "서명 장소와 일자 확인에 직접 관련되는 조약집 원문 표기다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "한일기본조약은 식민지배 불법성, 청구권, 배상, 개인청구권 해석과 연결되어 서명 사실만 기록하면 핵심 쟁점을 누락한다는 반론이 가능하다.",
+          "response": "저장 대상은 조약 서명이라는 원자 사실이다. 청구권·배상 해석은 문서 내용 또는 당사자 주장 명제로 별도 분해해야 하며, 본 명제에는 포함하지 않는다.",
+          "errorsFound": 0,
+          "framingChecks": "'국교 정상화의 성과', '굴욕 외교', '배상 완료' 같은 평가·해석 표현을 제외하고 서명 일자·당사자·장소만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "한국과 일본 양측을 같은 문장 구조의 조약 당사자로 표기하고, 어느 한쪽의 해석을 사실로 포함하지 않는지 점검했다.",
+          "result": "대칭 통과 — 서명 사실 외의 청구권·배상 해석을 저장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "유엔 조약집 원문을 날짜·당사자 확인에만 사용했고, 조약 해석의 최종 권위로 사용하지 않았다. 식민 배상 해석의 정치적 쟁점 때문에 인간 검수 레인으로 분류했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "유엔 조약집 PDF 원문이 fetch 가능했고 403이 아니었다. 서명 사실만 저장하고 청구권·배상 해석은 limitations에 제외했다.",
+          "adoptedReason": "당사자, 장소, 서명일이 조약집 원문에서 확인된다.",
+          "rejectedAlternatives": "'한일관계가 정상화되었다', '청구권 문제가 해결되었다'는 표현은 조약 내용·해석 판단이 섞여 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 한일기본조약의 서명 사실만 기록하며, 식민지배 불법성·청구권·배상·개인청구권 해석에 관한 판단을 포함하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 1965년 6월 22일 조약 서명 사실에 한정한다. 청구권·배상·개인청구권·식민지배 불법성 해석은 별개 쟁점이며 본 명제에 저장하지 않았다.",
+      "tags": [
+        "한국근현대사",
+        "1965",
+        "한일기본조약",
+        "대한민국",
+        "일본",
+        "조약서명"
+      ],
+      "createdAt": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:b3deef8189d7937fc1e97ab2",
+      "versionId": "ver:8a03b2e8af8f5c3e",
+      "certHash": "sha256:9dac870c52796944e716f0dd55bc2cdd4aa0899794d87b111628f3561bd4e903",
+      "canonicalProposition": "쇼와 천황은 1945년 8월 15일 녹음 라디오 연설로 일본의 연합국에 대한 항복을 공표하였다",
+      "originalClaim": "1945년 8월 15일 일본 정부는 연합국에 대한 항복 의사를 공표하였다.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "1945년 8월 15일 쇼와 천황의 녹음 라디오 연설이 일본의 연합국 상대 항복을 공표했다는 핵심 사실은 일본 국립국회도서관 연표와 Wikipedia의 fetch 가능한 역사 출처에서 직접 확인된다. 다만 한국 근현대사 맥락에서는 '광복'이라는 결과적 평가·기념 명칭 대신 항복 공표 행위만 저장했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.ndl.go.jp/constitution/e/etc/history.html",
+          "title": "Chronological Table - Birth of the Constitution of Japan",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Chronological Table: Major Events 1945"
+          },
+          "shortQuote": "Imperial Rescript declaring the end of the war is broadcast at noon.",
+          "quoteHash": "sha256:3b9358f943ce22efb7df8d36d4815c06db1d662d244233c130b107e7cf19a7ca",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "일본 국립국회도서관의 공개 연표에서 1945년 8월 15일 정오 방송 사실을 확인했다. 항복의 법적 효력 범위는 별도 조약·문서 명제로 다루어야 한다.",
+          "independenceGroupId": "ndl-constitution-chronology-1945",
+          "independenceLevel": "independent",
+          "independenceNote": "Wikipedia와 별도인 일본 공공기관 연표 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "전후 일본 헌정사 연표로 항복 공표 방송 일자 확인에 직접 관련된다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "공식 연표이지만 항복문서 원문 자체는 아니므로 방송 사실 확인에 한정했다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
+          "title": "Surrender of Japan",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Lead",
+            "heading": "Surrender of Japan"
+          },
+          "shortQuote": "was announced by Emperor Hirohito on 15 August",
+          "quoteHash": "sha256:b9f2a348b47a3f10c7bc07d257930e1092aadb955cb78cb24cd2c86f6a806b76",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 원문 1차 문서가 아니라 항복 공표 사실의 보조 앵커로 사용했다.",
+          "independenceGroupId": "wikipedia-surrender-of-japan",
+          "independenceLevel": "independent",
+          "independenceNote": "일본 정부나 연합국 공식 문서 생산 주체와 독립된 공개 편집 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "항복 공표 사건의 개요 확인에는 관련성이 있으나 1차 사료는 아니다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 원문 사료 검토가 향후 보강에 권장된다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
+          "title": "Surrender of Japan",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Lead",
+            "heading": "Surrender of Japan"
+          },
+          "shortQuote": "on 15 August announcing the surrender",
+          "quoteHash": "sha256:f117e466104d3c66aafa4d261dd9d3735afa32a103d8ee4c21a72917e9a109e7",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "동일 fetch 페이지의 날짜·공표 행위 문구를 별도 확인했다.",
+          "independenceGroupId": "wikipedia-surrender-of-japan",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 페이지의 별도 문장으로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "항복 공표 날짜와 행위 확인에 직접 관련된다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 공식 원문 사료 보강 여지가 있다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "1945년 8월 15일은 한국에서 '광복'으로 기억되므로 일본의 항복 공표만 쓰면 한국인의 해방 경험을 누락한다는 반론이 가능하다.",
+          "response": "본 명제는 광복의 의미나 식민지 지배 종료의 역사적 평가를 저장하지 않고, 그 하위의 검증 가능한 항복 공표 사건만 저장한다. 해방·점령 종료·주권 회복 등은 별도 원자 명제로 다루어야 한다.",
+          "errorsFound": 0,
+          "framingChecks": "'광복', '해방의 감격', '패망' 같은 평가·기념 프레이밍을 제거하고, 누가·언제·어떻게 항복을 공표했는지만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "일본 측 공식 행위, 연합국 수신 사실, 한국 사회의 결과를 한 문장에 묶지 않는지 점검했다.",
+          "result": "대칭 통과 — 항복 공표 사건만 채택하고 결과·의미 평가는 제외했다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "권위 있는 공식 사료가 아니라 fetch 가능한 공개 출처를 앵커로 삼았기 때문에 자동 레인으로 두지 않고 인간 검수 레인에 배치했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "항복 공표 사실만 저장하고 광복의 역사적 의미는 저장하지 않았다. 일본 국립국회도서관과 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+          "adoptedReason": "날짜와 공표 행위가 독립 출처에서 직접 확인되고, 평가적 사건명 없이 원자 사건으로 표현 가능하다.",
+          "rejectedAlternatives": "'광복이 이루어졌다', '일제가 패망했다'는 표현은 결과·평가 프레이밍이 섞일 수 있어 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 1945년 8월 15일 항복 공표 행위에 한정한다. 한국의 식민지 지배 종료, 해방의 의미, 1945년 9월 2일 항복문서 서명, 전후 점령 절차는 별도 명제로 분리해야 한다.",
+      "tags": [
+        "한국근현대사",
+        "1945",
+        "일본항복공표",
+        "옥음방송",
+        "제2차세계대전"
+      ],
+      "createdAt": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:7536cb937fa5897848d6ecf4",
+      "versionId": "ver:0d3115f96564c828",
+      "certHash": "sha256:45292167132711bc4c85685727de77646ef07cc7494f47811efd0e2143e3e829",
+      "canonicalProposition": "1953년 7월 27일 유엔군사령부·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다",
+      "originalClaim": "1953년 7월 27일 국제연합군·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "1953년 7월 27일 유엔군사령부, 조선인민군, 중국인민지원군 측 대표가 한국 정전협정에 서명했다는 사실은 Wikisource의 정전협정 본문과 Wikipedia의 fetch 가능한 출처에서 날짜·당사자가 확인된다. 정전협정의 법적 효과나 평화협정 부재 해석은 저장하지 않았다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikisource.org/wiki/Korean_Armistice_Agreement",
+          "title": "Korean Armistice Agreement - Wikisource",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Article V Miscellaneous"
+          },
+          "shortQuote": "Done at Panmunjom, Korea at 10:00 hours on the 27th day of July 1953",
+          "quoteHash": "sha256:94489aa04a3f339d19f038cca68ce0250cd5f0d37bb708674b32a6dccc4a36d6",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Wikisource의 공개 정전협정 본문에서 작성 장소·시각·일자를 확인했다. 자동 에이전트 재대조 시 403을 반환한 기존 후보 출처들은 증거로 쓰지 않았다.",
+          "independenceGroupId": "wikisource-armistice-text",
+          "independenceLevel": "independent",
+          "independenceNote": "Wikipedia 항목과 별도 문서 페이지의 정전협정 본문 전사다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "정전협정 본문 자체의 작성 장소·시각·일자 문구로 서명 사실 확인에 직접 적합하다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "Wikisource 전사본이므로 협정 의미 해석이 아니라 본문에 적힌 작성 장소·시각·일자 확인에만 사용했다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_Nations_Command",
+          "title": "United Nations Command",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Lead",
+            "heading": "United Nations Command"
+          },
+          "shortQuote": "United Nations Command, the Korean People's Army, and the Chinese People's Volunteers signed",
+          "quoteHash": "sha256:cfc75012e0a140ac97d24583c1e5f771ccf9cc6d8556e6eecfc8e1ca06dda51b",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 정전협정 당사자 표기를 확인하는 보조 앵커로 사용했다.",
+          "independenceGroupId": "wikipedia-united-nations-command",
+          "independenceLevel": "independent",
+          "independenceNote": "협정 당사자 공식 원문 생산 주체와 독립된 공개 편집 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "유엔군사령부와 정전협정 개요 확인에는 관련성이 있으나 1차 협정문은 아니다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 협정문 원문 보강이 권장된다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Korean_Armistice_Agreement",
+          "title": "Korean Armistice Agreement",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Negotiations",
+            "heading": "Korean Armistice Agreement"
+          },
+          "shortQuote": "On 27 July 1953, at 10:00 a.m., the Armistice was signed",
+          "quoteHash": "sha256:bca06c0fab96fed6e2c1a3a6016f64cf30b56220eb013fc6bbcfdbbc187e9bcb",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 서명 일자와 시각을 확인했다.",
+          "independenceGroupId": "wikipedia-korean-armistice",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "동일 공개 백과 생태계이나 별도 항목으로 날짜·행위를 교차 확인했다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "정전협정 체결일 확인에 직접 관련된다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 원 협정문과 병행 확인이 권장된다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Korean_Armistice_Agreement",
+          "title": "Korean Armistice Agreement",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Lead",
+            "heading": "Korean Armistice Agreement"
+          },
+          "shortQuote": "South Korea never signed the Armistice Agreement",
+          "quoteHash": "sha256:d972150c9abd5f3d67550dd0b187b24298e07f0cd9b227330485668a95539000",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "동일 fetch 페이지에서 대한민국 미서명 한계 사항을 확인했다.",
+          "independenceGroupId": "wikipedia-korean-armistice",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 페이지의 별도 문장으로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "대한민국 미서명 한계 기재에 직접 관련된다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 협정 서명란 원문 대조가 향후 보강에 적합하다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "정전협정을 '한국전쟁 종료'로 표현하면 평화협정 체결이나 법적 전쟁 종료로 오해될 수 있다는 반론이 가능하다.",
+          "response": "본 명제는 정전협정 서명 행위만 저장한다. 전쟁의 법적 종료, 평화협정 부재, 정전 체제의 의미는 저장하지 않는다.",
+          "errorsFound": 0,
+          "framingChecks": "'종전', '휴전 성공', '평화 정착' 같은 평가·효과 표현을 제외하고 서명 행위만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "서명 당사자와 비서명 당사자를 구분해 대한민국 미서명 사실을 limitations에 별도로 기록했다.",
+          "result": "대칭 통과 — 협정 서명자와 비서명자를 혼합하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "유엔군사령부나 특정 참전국의 권위로 협정의 의미를 판단하지 않고, 서명 사실과 당사자 표기만 확인했다. 전쟁·정전체제 프레이밍 위험으로 인간 검수 레인에 배치했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "서명 사실만 저장하고 대한민국 미서명 사실은 limitations에 분리했다. Wikisource 정전협정 본문과 Wikipedia 출처는 자동 에이전트로 fetch 가능했으며 403이 아니었다.",
+          "adoptedReason": "서명 일자와 당사자가 fetch 가능한 정전협정 본문과 보조 출처에서 확인된다.",
+          "rejectedAlternatives": "'한국전쟁이 끝났다', '평화가 성립했다'는 표현은 법적·정치적 해석을 포함할 수 있어 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 정전협정 서명 행위에 한정한다. 대한민국은 협정 서명자로 기재되지 않았다는 사실을 함께 유의해야 한다. 정전협정의 법적 효과, 평화협정 부재, 전쟁의 종료 여부에 관한 해석은 포함하지 않는다.",
+      "tags": [
+        "한국근현대사",
+        "1953",
+        "한국정전협정",
+        "유엔군사령부",
+        "조선인민군",
+        "중국인민지원군"
+      ],
+      "createdAt": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:698eafdeae1e813d295ea69b",
+      "versionId": "ver:7559e0620955453b",
+      "certHash": "sha256:193a5b9602b10381c54e43d0dae85b30ee722849b4c0292b7df129a2fb8be1ee",
+      "canonicalProposition": "1950년 6월 25일 04시 40분경 조선인민군은 38선을 넘어 대한민국 영역으로 진입하였다",
+      "originalClaim": "1950년 6월 25일 새벽 조선인민군이 38선을 넘어 대한민국 영역으로 진격하였다.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "1950년 6월 25일 새벽 조선인민군(KPA)이 38선을 넘고 남쪽 영역으로 진입했다는 사실은 Wikipedia의 자동 재현 가능한 역사 출처에서 직접 확인되고, Britannica의 사람 접근 가능한 전문 백과 문구가 보조로 일치한다. 전쟁의 원인·책임·동기 또는 '누가 전쟁을 일으켰는가'라는 해석은 명제에서 제외했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.britannica.com/event/Korean-War/Invasion-and-counterinvasion-1950-51",
+          "title": "Korean War - Invasion, Counterinvasion, 1950-51",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "South to Pusan",
+            "heading": "Invasion and counterinvasion, 1950-51"
+          },
+          "shortQuote": "North Koreans struck across the 38th parallel",
+          "quoteHash": "sha256:51344daf3ff3ec9050d06665be6cefce21480d8cf16923382b0346315e7cd208",
+          "archiveStatus": "unavailable",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "자동 에이전트 재대조 시 HTTP 403(사람만 접근 가능); 본 명제의 자동 재현 앵커는 위키백과 항목이다.",
+          "independenceGroupId": "britannica-korean-war-invasion",
+          "independenceLevel": "independent",
+          "independenceNote": "Wikipedia와 별도 편집·출판 체계의 전문 백과 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "전쟁 개요와 주요 군사 경과를 전문적으로 정리한 출처로 38선 통과 사실 확인에 적합하다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "2차 백과 출처이므로 책임·원인 프레이밍에는 사용하지 않았다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Korean_War",
+          "title": "Korean War",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Course of the war",
+            "heading": "North Korean invasion (June 1950)"
+          },
+          "shortQuote": "At 4:40 a.m. on 25 June 1950, the KPA crossed the 38th parallel",
+          "quoteHash": "sha256:6b00750fdd539a585cad4fb8f5799f85af213f122e1b5e60bbf45ae4078951d0",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 전쟁 책임 해석이 아니라 시간·행위·경계선 통과 확인에만 사용했다.",
+          "independenceGroupId": "wikipedia-korean-war",
+          "independenceLevel": "independent",
+          "independenceNote": "남북한 정부나 참전국 공식 기록 생산 주체와 독립된 공개 편집 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "전쟁 경과의 기본 사실 확인에는 관련성이 있으나 1차 작전 기록은 아니다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이며 전쟁 책임 프레이밍 위험이 큰 주제다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Korean_War",
+          "title": "Korean War",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "Course of the war",
+            "heading": "North Korean invasion (June 1950)"
+          },
+          "shortQuote": "individual KPA units had advanced 3 to 5 kilometers into South Korean territory",
+          "quoteHash": "sha256:a9f76613e5b321981a5227f6437868be561ad59a2764a4b3c364f707eedf0b4e",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "동일 fetch 페이지에서 대한민국 영역 진입 표현을 별도 확인했다.",
+          "independenceGroupId": "wikipedia-korean-war",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 페이지의 별도 문장으로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "경계선 통과 후 남쪽 영역 진입 사실 확인에 직접 관련된다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이며 책임·원인 해석은 별도로 검토해야 한다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "북한 측은 남한 측이 먼저 공격했다고 주장해 왔으므로 '진입' 표현 자체가 책임 판단을 숨긴 편향이라는 반론이 가능하다.",
+          "response": "본 명제는 책임·원인 판단을 하지 않고, 특정 시각에 조선인민군 부대가 38선을 넘었다는 관찰 가능한 군사 이동 사실만 저장한다. 상반된 책임 주장은 별도 'A측은 ... 주장했다' 명제로 다루어야 한다.",
+          "errorsFound": 0,
+          "framingChecks": "'남침', '도발', '전쟁을 일으켰다', '기습' 같은 책임·동기 함축 표현을 제거하고 '38선을 넘어 대한민국 영역으로 진입하였다'로 썼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "북한 측 선제공격 주장과 남한/유엔 측 침공 서술을 모두 책임 판단 없이 분리 가능한 주장 명제로만 다룰 수 있는지 점검했다.",
+          "result": "대칭 통과 — 본 명제는 군사 이동 사실만 채택하고 양측의 원인·책임 주장은 채택하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "유엔·남한·미국 공식 권위를 이유로 책임 판단을 통과시키지 않았다. 정치적으로 다투어지는 전쟁 책임 프레이밍 주제이므로 인간 검수 레인으로 분류했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "경계선 통과와 남쪽 영역 진입 사실만 저장했다. 전쟁 책임·원인·동기 프레이밍은 limitations에 제외 사유를 남겼다. 자동 재현 앵커는 Wikipedia이며, Britannica는 자동 에이전트 재대조 시 403인 사람 접근 가능 보조 출처로만 남겼다.",
+          "adoptedReason": "시간, 행위자, 경계선 통과, 남쪽 영역 진입이 자동 재현 가능한 Wikipedia 문장과 사람 접근 가능한 Britannica 보조 문구에 일치한다.",
+          "rejectedAlternatives": "'남침', '도발', '6·25를 일으켰다'는 표현은 책임·의도 판단을 함축해 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "unknown",
+        "presumptionNotice": "이 명제는 전쟁 책임·동기·원인 판단을 하지 않고, 1950년 6월 25일 새벽 조선인민군 부대의 38선 통과와 대한민국 영역 진입 사실만 기록한다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "38선 통과와 대한민국 영역 진입이라는 기초 사실은 잘 문서화되어 있으나, 전쟁의 원인·책임·동기·정당성 프레이밍은 헌법 제2조에 따라 본 명제에서 제외했다. 북한 측 또는 다른 행위자의 책임 주장 자체를 기록하려면 별도 주장 명제로 분리해야 한다.",
+      "tags": [
+        "한국근현대사",
+        "1950",
+        "한국전쟁",
+        "38선",
+        "조선인민군",
+        "전쟁개시"
+      ],
+      "createdAt": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
       "versionId": "ver:220d768b0673a4b9",
       "certHash": "sha256:2c944699e34a8f6d358b18f1336e4bef9de58b7b6f1cf6692b3b466b2b3891b5",
@@ -977,6 +2065,132 @@
         "마젤란",
         "엘카노",
         "지구일주"
+      ],
+      "createdAt": "2026-06-16T00:00:00Z",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:c44501dcb97869b23fbe8942",
+      "versionId": "ver:040b4c629945879d",
+      "certHash": "sha256:6235b2a6c1107402369c4d9afdc0b2a6ab39ee65d0c3a9cb536ace7b3e76d089",
+      "canonicalProposition": "2025년 6월 24일부터 25일까지 NATO 정상회의가 네덜란드 헤이그에서 열렸다",
+      "originalClaim": "2025 NATO Summit was held in The Hague, the Netherlands, on 24-25 June 2025.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "automated_unreviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "NATO 공식 정상회의 개요가 회의 장소를 네덜란드 헤이그로, 일자를 2025년 6월 24-25일로 직접 제시한다. 명제는 회의 개최 사실과 일자·장소에 한정하며, 정상회의 결정의 정책 평가를 포함하지 않는다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.nato.int/en/news-and-events/events/2025/6/overview---2025-nato-summit-in-the-hague",
+          "title": "Overview - 2025 NATO Summit in The Hague",
+          "retrievedAt": "2026-06-16T00:00:00Z",
+          "locator": {
+            "section": "Overview",
+            "heading": "When"
+          },
+          "shortQuote": "24-25 June 2025",
+          "quoteHash": "sha256:7db7809f607eacf745b58dd1926c6323bdb15cf587d5226a4322b1dd3a317780",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "NATO 공식 HTML 이벤트 개요 페이지의 일자 항목을 확인했다. 페이지 구조는 바뀔 수 있어 locator를 함께 기록했다.",
+          "independenceGroupId": "nato-hague-summit-overview",
+          "independenceLevel": "independent",
+          "independenceNote": "정상회의 주최 기구의 공식 이벤트 개요로, 일자·장소 확인의 1차 운영 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "NATO 공식 사이트는 NATO 정상회의 일정·장소 확인에 직접 적합하다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "NATO가 자기 행사 정보를 게시한 공식 출처이므로 정책 평가에는 사용하지 않고 일자·장소 확인에 한정했다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.nato.int/en/news-and-events/events/2025/6/overview---2025-nato-summit-in-the-hague",
+          "title": "Overview - 2025 NATO Summit in The Hague",
+          "retrievedAt": "2026-06-16T00:00:00Z",
+          "locator": {
+            "section": "Overview",
+            "heading": "Where"
+          },
+          "shortQuote": "The Hague, the Netherlands",
+          "quoteHash": "sha256:831e25800a5808c8367ebba0f0f7706fa7ed8a30af9e7eb7454e70bec81d37b5",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "동일 NATO 공식 이벤트 개요 페이지의 장소 항목이다. 독립 증거 수를 늘리는 용도로 계산하지 않는다.",
+          "independenceGroupId": "nato-hague-summit-overview",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 NATO 공식 이벤트 개요 페이지에서 장소 항목만 분리 인용했다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "NATO 공식 사이트는 NATO 정상회의 일정·장소 확인에 직접 적합하다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "동일 공식 페이지의 보조 인용이다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "NATO 공식 출처만 사용하면 정상회의 결정의 정당성 평가로 확장될 위험이 있다.",
+          "response": "명제는 정상회의 개최 일자와 장소만 저장하고, 국방비 결정·우크라이나 지원·동맹 평가 등 정책적 내용은 제외했다.",
+          "errorsFound": 0,
+          "framingChecks": "'역사적', '위협', '방위 강화' 같은 평가어를 제외하고 날짜·장소·행사 개최 사실만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "반대 명제인 '해당 일자와 장소에서 열리지 않았다'를 공식 이벤트 개요의 일자·장소 항목과 대조했다.",
+          "result": "공식 이벤트 개요가 일자와 장소를 직접 제시하므로 반대 명제는 지지되지 않는다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "NATO 권위를 정책 결론으로 쓰지 않고, 행사 일정·장소라는 공식 운영 기록 확인에 한정했다."
+        },
+        "humanReview": {
+          "reviewer": "automated-ingest-no-human-review",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "자동 처리된 저위험 행사 일자·장소 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+          "adoptedReason": "공식 이벤트 개요가 날짜와 장소를 직접 지지한다.",
+          "rejectedAlternatives": "정상회의 결정의 내용이나 정책 평가를 포함하는 넓은 명제는 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 NATO 정상회의의 개최 일자와 장소에만 한정한다. 정상회의 선언의 정책적 의미, 국방비 공약의 이행 여부, 각국의 정치적 평가는 다루지 않는다.",
+      "tags": [
+        "최근1년",
+        "국제사건",
+        "NATO",
+        "헤이그정상회의",
+        "2025"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
       "updatedAt": "2026-06-16T00:00:00Z"
@@ -1287,6 +2501,158 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:a39e2dc6072bbda67817ead7",
+      "versionId": "ver:cd785da0c0d389ce",
+      "certHash": "sha256:7bdac4d8ec8d09e04f5621326b0ae750cee2e848bec5c7cf532c1d53ca15fa5f",
+      "canonicalProposition": "이승만은 1948년 8월 15일 대한민국 수립을 선포하였다",
+      "originalClaim": "1948년 8월 15일 대한민국 정부 수립이 공식 선포되었다.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-16",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "1948년 8월 15일 이승만이 대한민국을 선포했다는 사실은 Country Studies와 Wikipedia의 fetch 가능한 역사 출처에서 날짜와 행위가 직접 확인된다. 분단·정부 정통성 해석과 분리하여 선포 행위만 저장했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://countrystudies.us/south-korea/9.htm",
+          "title": "South Korea - South Korea Under United States Occupation, 1945-48",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "South Korea Under United States Occupation, 1945-48"
+          },
+          "shortQuote": "when on August 15, 1948, the Republic of Korea (South Korea) was proclaimed",
+          "quoteHash": "sha256:f794009d9d86c11c769cfb61bf882ebb8bf0182593fb79522b05642c14714eec",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 Country Studies HTML 페이지에서 선포 날짜와 대상만 확인했다. 사이트는 Library of Congress Country Study 계열 텍스트의 공개 HTML 미러이므로 공식 관보 원문은 아니다.",
+          "independenceGroupId": "country-studies-south-korea-occupation-1948",
+          "independenceLevel": "independent",
+          "independenceNote": "Wikipedia와 별도 출판 체계의 한국 현대사 개요 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "대한민국 정부 수립 전후 경과를 다루는 국가 연구 개요로 선포 일자 확인에 직접 관련된다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "공식 도메인의 원문이 아니라 공개 HTML 미러이므로 조약·관보 원문 수준의 1차 출처로 보지 않는다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/History_of_South_Korea",
+          "title": "History of South Korea",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "U.S. military administration (1945-1948)",
+            "heading": "History of South Korea"
+          },
+          "shortQuote": "proclaimed the Republic of Korea (South Korea) on 15 August 1948",
+          "quoteHash": "sha256:82614a423f3d37cfffdad8b765bad0b6c55c9358f15f03912b84653ed5132a16",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "Fetch 가능한 공개 백과 페이지. 공식 관보 원문이 아니라 선포 사건의 보조 앵커로 사용했다.",
+          "independenceGroupId": "wikipedia-history-of-south-korea",
+          "independenceLevel": "independent",
+          "independenceNote": "대한민국 정부 공식 기록 생산 주체와 독립된 공개 편집 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "한국 현대사 개요 확인에는 관련성이 있으나 1차 관보는 아니다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 관보·국가기록원 원문 보강이 권장된다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/History_of_South_Korea",
+          "title": "History of South Korea",
+          "retrievedAt": "2026-06-16",
+          "locator": {
+            "section": "First Republic (1948-1960)",
+            "heading": "History of South Korea"
+          },
+          "shortQuote": "On 15 August 1948, the Republic of Korea was formally established",
+          "quoteHash": "sha256:20a2a92a46b5d85f51969fc894169c8cb9c365126504bddf6dafdb10802cb86d",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "동일 fetch 페이지의 수립 일자 문구를 별도 확인했다.",
+          "independenceGroupId": "wikipedia-history-of-south-korea",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 페이지의 별도 문장으로, 독립 출처 수를 늘리기 위한 증거로 계산하지 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "정부 수립 일자 확인에 직접 관련된다.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "공개 편집 백과이므로 공식 원문 사료 보강 여지가 있다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "1948년 8월 15일의 성격은 '정부 수립', '건국', '분단정부 수립' 등 명칭 자체가 정치적 논쟁을 낳는다는 반론이 가능하다.",
+          "response": "명제는 '건국' 또는 정통성 판단을 저장하지 않고, 이승만이 대한민국 수립을 선포했다는 관찰 가능한 행위만 저장한다.",
+          "errorsFound": 0,
+          "framingChecks": "'건국', '유일 합법 정부', '분단정부' 같은 해석어를 canonicalProposition에서 제외했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "남측 정부 수립 사실과 북측 정부 수립 사실을 같은 입자도와 같은 중립 동사('선포')로 분리해 기록하는지 점검했다.",
+          "result": "대칭 통과 — 남측 수립 선포와 북측 수립 선포를 별도 명제로 분리했다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "공식성과 정통성 판단을 권위 출처로 대체하지 않고, 날짜·행위 문장만 확인했다. 분단 관련 프레이밍 위험으로 인간 검수 레인에 배치했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-16",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "선포 행위만 저장하고 정통성·건국 논쟁은 저장하지 않았다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+          "adoptedReason": "날짜, 행위자, 선포 행위가 fetch 가능한 독립 출처에서 확인된다.",
+          "rejectedAlternatives": "'대한민국이 건국되었다', '유일 합법 정부가 수립되었다'는 표현은 평가·법적 해석이 섞여 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 1948년 8월 15일의 선포 행위만 저장한다. 대한민국 정부의 법적 정통성, 유엔 승인 의미, 분단 책임 또는 '건국' 명칭 논쟁은 포함하지 않는다.",
+      "tags": [
+        "한국근현대사",
+        "1948",
+        "대한민국정부수립",
+        "정부수립선포",
+        "분단"
+      ],
+      "createdAt": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
       "versionId": "ver:51c22322a44b18e5",
       "certHash": "sha256:17a500d196dd54e89ac5e3466ee28e7bf546332266a4b3bfdb645902adceec03",
@@ -1439,15 +2805,15 @@
     }
   ],
   "meta": {
-    "total": 9,
+    "total": 19,
     "dataVersion": "2026.06.16",
     "certVersion": "2.1",
     "generatedAt": "2026-06-16T00:00:00Z",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalEntries": 9,
-      "totalAssessed": 9,
+      "totalEntries": 19,
+      "totalAssessed": 19,
       "openCorrectionRequests": 0
     },
     "propositions": [
@@ -1464,12 +2830,48 @@
         "path": "/api/v2/propositions/stmt-ae66527bf2aea1b5407a5f78.json"
       },
       {
+        "propositionId": "stmt:38c8e4c00c63fa0fc9b00eb3",
+        "path": "/api/v2/propositions/stmt-38c8e4c00c63fa0fc9b00eb3.json"
+      },
+      {
+        "propositionId": "stmt:22abb3226ba88d6589e75013",
+        "path": "/api/v2/propositions/stmt-22abb3226ba88d6589e75013.json"
+      },
+      {
+        "propositionId": "stmt:8b798d52af5df4ea214ecead",
+        "path": "/api/v2/propositions/stmt-8b798d52af5df4ea214ecead.json"
+      },
+      {
         "propositionId": "stmt:b18e2813819c4fb0e23830f6",
         "path": "/api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json"
       },
       {
+        "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
+        "path": "/api/v2/propositions/stmt-9fa1e13fbdeb497fdee35c15.json"
+      },
+      {
+        "propositionId": "stmt:3104eab69ad2305be2007c30",
+        "path": "/api/v2/propositions/stmt-3104eab69ad2305be2007c30.json"
+      },
+      {
+        "propositionId": "stmt:b3deef8189d7937fc1e97ab2",
+        "path": "/api/v2/propositions/stmt-b3deef8189d7937fc1e97ab2.json"
+      },
+      {
+        "propositionId": "stmt:7536cb937fa5897848d6ecf4",
+        "path": "/api/v2/propositions/stmt-7536cb937fa5897848d6ecf4.json"
+      },
+      {
+        "propositionId": "stmt:698eafdeae1e813d295ea69b",
+        "path": "/api/v2/propositions/stmt-698eafdeae1e813d295ea69b.json"
+      },
+      {
         "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
         "path": "/api/v2/propositions/stmt-4f96ea07a89511c2ea0a86a3.json"
+      },
+      {
+        "propositionId": "stmt:c44501dcb97869b23fbe8942",
+        "path": "/api/v2/propositions/stmt-c44501dcb97869b23fbe8942.json"
       },
       {
         "propositionId": "stmt:52e6260a60e04599d809ae61",
@@ -1482,6 +2884,10 @@
       {
         "propositionId": "stmt:40340515225f7adf44e242f3",
         "path": "/api/v2/propositions/stmt-40340515225f7adf44e242f3.json"
+      },
+      {
+        "propositionId": "stmt:a39e2dc6072bbda67817ead7",
+        "path": "/api/v2/propositions/stmt-a39e2dc6072bbda67817ead7.json"
       },
       {
         "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
