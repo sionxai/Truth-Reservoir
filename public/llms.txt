@@ -9,7 +9,14 @@ Static endpoints:
 - GET /api/v2/institutional-metrics.json
 - GET /api/v2/schema/cert-v2.schema.json
 - GET /api/v2/openapi.json
+- GET /.well-known/ai-plugin.json
 - GET /llms.txt
+
+Live base URL:
+https://truth-reservoir.vercel.app
+
+MCP access:
+An isolated stdio MCP server is available in the repository under mcp/. It fetches the public static API by default from https://truth-reservoir.vercel.app, or from TRUTH_RESERVOIR_BASE_URL when set. Use it when an MCP client should search propositions, fetch full Cert JSON, list tags, read institutional metrics, or independently recompute propositionId/versionId/certHash and evidence quoteHash values.
 
 ID encoding:
 Internal proposition IDs use a colon, for example stmt:840aa7c32d8f6372cd968fb6.

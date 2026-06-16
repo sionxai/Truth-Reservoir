@@ -1,4 +1,5 @@
 import { existsSync } from "node:fs";
+import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { CertV2Schema } from "../schema/cert-v2.ts";
@@ -90,5 +91,35 @@ describe("data integration", () => {
     expect(existsSync(certSchemaPath)).toBe(true);
     expect(openapi.openapi).toBe("3.1.0");
     await expect(readJsonFile(certSchemaPath)).resolves.toEqual(expect.any(Object));
+  });
+
+  it("publishes discovery files for crawlers and machine clients", async () => {
+    const propositions = await loadPropositions();
+    const publicRoot = join(process.cwd(), "public");
+    const sitemap = await readFile(join(publicRoot, "sitemap.xml"), "utf8");
+    const robots = await readFile(join(publicRoot, "robots.txt"), "utf8");
+
+    expect(robots).toContain("User-agent: *");
+    expect(robots).toContain("Allow: /");
+    expect(robots).toContain("Sitemap: https://truth-reservoir.vercel.app/sitemap.xml");
+    expect(robots).toContain("/llms.txt");
+    expect(robots).toContain("/api/v2/openapi.json");
+
+    expect(sitemap).toContain("<loc>https://truth-reservoir.vercel.app/</loc>");
+    expect(sitemap).toContain(
+      "<loc>https://truth-reservoir.vercel.app/api/v2/index.json</loc>"
+    );
+    expect(sitemap).toContain(
+      "<loc>https://truth-reservoir.vercel.app/api/v2/openapi.json</loc>"
+    );
+
+    for (const proposition of propositions) {
+      const dashId = encodePropositionId(proposition.propositionId);
+
+      expect(sitemap).toContain(`<loc>https://truth-reservoir.vercel.app/p/${dashId}</loc>`);
+      expect(sitemap).toContain(
+        `<loc>https://truth-reservoir.vercel.app/verify/${dashId}</loc>`
+      );
+    }
   });
 });

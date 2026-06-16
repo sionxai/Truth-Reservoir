@@ -1,0 +1,25 @@
+{
+  "name": "truth-reservoir-mcp",
+  "version": "0.1.0",
+  "description": "Public stdio MCP server for querying Truth Reservoir Cert v2.1 records.",
+  "type": "module",
+  "bin": {
+    "truth-reservoir-mcp": "./bin/truth-reservoir-mcp.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "smoke": "tsx src/smoke.ts",
+    "smoke:local": "TRUTH_RESERVOIR_SMOKE_LOCAL=1 tsx src/smoke.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}

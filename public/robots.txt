@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# AI agents: see https://truth-reservoir.vercel.app/llms.txt and https://truth-reservoir.vercel.app/api/v2/openapi.json
+Sitemap: https://truth-reservoir.vercel.app/sitemap.xml

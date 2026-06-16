@@ -1,0 +1,7 @@
+{
+  "name": "Truth Reservoir / 진실저수지",
+  "description": "Public static Cert v2.1 proposition records for evidence-network citation and reproducible hash checks.",
+  "llms": "https://truth-reservoir.vercel.app/llms.txt",
+  "openapi": "https://truth-reservoir.vercel.app/api/v2/openapi.json",
+  "certV2Schema": "https://truth-reservoir.vercel.app/api/v2/schema/cert-v2.schema.json"
+}

@@ -29,6 +29,9 @@ export default function ApiDocsPage() {
             <a href="/api/v2/openapi.json">GET /api/v2/openapi.json</a>
           </li>
           <li>
+            <a href="/.well-known/ai-plugin.json">GET /.well-known/ai-plugin.json</a>
+          </li>
+          <li>
             <a href="/llms.txt">GET /llms.txt</a>
           </li>
         </ul>
@@ -73,6 +76,44 @@ export default function ApiDocsPage() {
         <p>
           내부 propositionId는 <span className="mono">stmt:840aa7c32d8f6372cd968fb6</span>처럼 콜론을 포함합니다. 정적 파일과 라우트에서는 첫 구분자만 대시로 바꾼 <span className="mono">stmt-840aa7c32d8f6372cd968fb6</span>를 사용합니다.
         </p>
+      </section>
+
+      <section className="content-panel doc-panel">
+        <h2>AI 에이전트 접근</h2>
+        <p>
+          라이브 기준 URL은 <span className="mono">https://truth-reservoir.vercel.app</span>입니다. 에이전트는 등급 라벨을 결론처럼 인용하지 말고, 증거 네트워크·출처 provenance·<span className="mono">quoteHash</span> 대조·<span className="mono">reviewLog</span>를 인용해야 합니다. <span className="mono">assessment.factualGrade</span>는 탐색을 돕는 보조 신호입니다.
+        </p>
+        <ol>
+          <li>
+            <span className="mono">/api/v2/index.json</span>을 가져와 <span className="mono">canonicalProposition</span>, <span className="mono">claimNature</span>, <span className="mono">tags</span>로 후보를 좁힙니다.
+          </li>
+          <li>
+            후보의 <span className="mono">path</span> 또는 <span className="mono">/api/v2/propositions/{"{dash-id}"}.json</span>에서 전체 Cert v2.1 JSON을 가져옵니다.
+          </li>
+          <li>
+            각 <span className="mono">evidence[].shortQuote</span>의 SHA-256을 계산해 <span className="mono">evidence[].quoteHash</span>와 비교하고, locator·archiveStatus·archiveUrl을 함께 확인합니다.
+          </li>
+          <li>
+            최종 요약에는 사실 판정 문구보다 evidence network, independenceGroupId, source provenance, reviewLog의 redteam·symmetry·authorityCheck를 먼저 남깁니다.
+          </li>
+        </ol>
+        <p>MCP 클라이언트는 별도 패키지를 stdio 서버로 실행할 수 있습니다.</p>
+        <pre>
+          <code>{`{
+  "mcpServers": {
+    "truth-reservoir": {
+      "command": "npx",
+      "args": [
+        "tsx",
+        "/absolute/path/to/truthreservoir/mcp/src/server.ts"
+      ],
+      "env": {
+        "TRUTH_RESERVOIR_BASE_URL": "https://truth-reservoir.vercel.app"
+      }
+    }
+  }
+}`}</code>
+        </pre>
       </section>
     </main>
   );

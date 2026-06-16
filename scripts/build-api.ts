@@ -1,6 +1,8 @@
 import { copyFile, mkdir, rm, writeFile } from "node:fs/promises";
 import { CertV2Schema } from "../schema/cert-v2.ts";
 import { loadInstitutionalMetrics, loadPropositions } from "../lib/data.ts";
+import { encodePropositionId } from "../lib/ids.ts";
+import { absoluteSiteUrl } from "../lib/site.ts";
 import { applyDerivedHashes } from "../lib/verify.ts";
 import type { Proposition } from "../lib/types.ts";
 
@@ -25,6 +27,58 @@ function dataVersion(generatedAt: string): string {
   // Snapshot version (PRD env NEXT_PUBLIC_DATA_VERSION, e.g. "2026.06.15").
   // Falls back to a dotted date derived from the newest updatedAt.
   return process.env.NEXT_PUBLIC_DATA_VERSION ?? generatedAt.slice(0, 10).replace(/-/g, ".");
+}
+
+function xmlEscape(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+function sitemapUrl(path: string, lastmod: string): string {
+  return [
+    "  <url>",
+    `    <loc>${xmlEscape(absoluteSiteUrl(path))}</loc>`,
+    `    <lastmod>${xmlEscape(lastmod)}</lastmod>`,
+    "  </url>"
+  ].join("\n");
+}
+
+function createSitemap(propositions: Proposition[], generatedAt: string): string {
+  const staticPaths = [
+    "/",
+    "/about",
+    "/api-docs",
+    "/llms.txt",
+    "/api/v2/index.json",
+    "/api/v2/openapi.json",
+    "/api/v2/schema/cert-v2.schema.json"
+  ];
+
+  const propositionPaths = propositions.flatMap((proposition) => {
+    const dashId = encodePropositionId(proposition.propositionId);
+
+    return [
+      { path: `/p/${dashId}`, lastmod: proposition.updatedAt },
+      { path: `/verify/${dashId}`, lastmod: proposition.updatedAt }
+    ];
+  });
+
+  const entries = [
+    ...staticPaths.map((path) => ({ path, lastmod: generatedAt })),
+    ...propositionPaths
+  ];
+
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...entries.map((entry) => sitemapUrl(entry.path, entry.lastmod)),
+    "</urlset>",
+    ""
+  ].join("\n");
 }
 
 async function createExamples(propositions: Proposition[]): Promise<Record<string, Proposition>> {
@@ -115,6 +169,7 @@ const index = {
 
 await writeFile(`${apiDir}/index.json`, `${JSON.stringify(index, null, 2)}\n`);
 await writeFile(`${apiDir}/institutional-metrics.json`, `${JSON.stringify(metrics, null, 2)}\n`);
+await writeFile("public/sitemap.xml", createSitemap(propositions, generatedAt));
 
 const examples = await createExamples(propositions);
 for (const [name, example] of Object.entries(examples)) {
