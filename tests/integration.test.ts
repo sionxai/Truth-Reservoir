@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { CertV2Schema } from "../schema/cert-v2.ts";
 import { loadPropositionFile, loadPropositions, listPropositionFiles } from "../lib/data.ts";
 import { encodePropositionId } from "../lib/ids.ts";
-import { verifyPropositionHashes } from "../lib/verify.ts";
+import { applyDerivedHashes, verifyPropositionHashes } from "../lib/verify.ts";
 import { readJsonFile } from "./test-utils.ts";
 
 describe("data integration", () => {
@@ -38,6 +38,27 @@ describe("data integration", () => {
     }
 
     expect(mismatches).toEqual([]);
+  });
+
+  it("parses Apollo 11 and round-trips through hash derivation", async () => {
+    const propositions = await loadPropositions();
+    const apollo = propositions.find((proposition) =>
+      proposition.canonicalProposition.includes("아폴로 11호 달 착륙선")
+    );
+
+    expect(apollo).toBeDefined();
+    expect(CertV2Schema.safeParse(apollo).success).toBe(true);
+
+    if (!apollo) {
+      return;
+    }
+
+    const roundTripped = await applyDerivedHashes(apollo);
+    expect(roundTripped).toMatchObject({
+      propositionId: apollo.propositionId,
+      versionId: apollo.versionId,
+      certHash: apollo.certHash
+    });
   });
 
   it("validates built public API outputs", async () => {

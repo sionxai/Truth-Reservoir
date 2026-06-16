@@ -3,7 +3,7 @@ import type { EvidenceItem, Proposition, PropositionLanguage } from "./types.ts"
 
 type JsonObject = Record<string, unknown>;
 
-export interface EvidenceSpanHashResult {
+export interface EvidenceQuoteHashResult {
   evidenceIndex: number;
   expected: string;
   actual: string;
@@ -13,7 +13,7 @@ export interface DerivedHashes {
   propositionId: string;
   versionId: string;
   certHash: string;
-  evidenceSpanHashes: EvidenceSpanHashResult[];
+  evidenceQuoteHashes: EvidenceQuoteHashResult[];
 }
 
 export interface HashMismatch {
@@ -88,13 +88,7 @@ export async function deriveVersionId(cert: Proposition): Promise<string> {
   return `ver:${digest.slice(0, 16)}`;
 }
 
-export async function deriveEvidenceSpanHash(evidence: EvidenceItem): Promise<string> {
-  if (!evidence.shortQuote) {
-    throw new Error(
-      "Cannot recompute spanHash without shortQuote. Cert v2 stores snippet hashes, not remote source bodies."
-    );
-  }
-
+export async function deriveQuoteHash(evidence: EvidenceItem): Promise<string> {
   return sha256Prefixed(evidence.shortQuote);
 }
 
@@ -110,7 +104,7 @@ export async function deriveHashes(cert: Proposition): Promise<DerivedHashes> {
   nextCert.evidence = await Promise.all(
     nextCert.evidence.map(async (evidence) => ({
       ...evidence,
-      spanHash: await deriveEvidenceSpanHash(evidence)
+      quoteHash: await deriveQuoteHash(evidence)
     }))
   );
 
@@ -118,17 +112,17 @@ export async function deriveHashes(cert: Proposition): Promise<DerivedHashes> {
   nextCert.versionId = versionId;
 
   const certHash = await deriveCertHash(nextCert);
-  const evidenceSpanHashes = nextCert.evidence.map((evidence, evidenceIndex) => ({
+  const evidenceQuoteHashes = nextCert.evidence.map((evidence, evidenceIndex) => ({
     evidenceIndex,
-    expected: evidence.spanHash,
-    actual: cert.evidence[evidenceIndex]?.spanHash ?? ""
+    expected: evidence.quoteHash,
+    actual: cert.evidence[evidenceIndex]?.quoteHash ?? ""
   }));
 
   return {
     propositionId,
     versionId,
     certHash,
-    evidenceSpanHashes
+    evidenceQuoteHashes
   };
 }
 
@@ -143,7 +137,7 @@ export async function applyDerivedHashes(cert: Proposition): Promise<Proposition
   nextCert.evidence = await Promise.all(
     nextCert.evidence.map(async (evidence) => ({
       ...evidence,
-      spanHash: await deriveEvidenceSpanHash(evidence)
+      quoteHash: await deriveQuoteHash(evidence)
     }))
   );
 
@@ -181,12 +175,12 @@ export async function verifyPropositionHashes(cert: Proposition): Promise<HashMi
     });
   }
 
-  for (const spanHash of derived.evidenceSpanHashes) {
-    if (spanHash.actual !== spanHash.expected) {
+  for (const quoteHash of derived.evidenceQuoteHashes) {
+    if (quoteHash.actual !== quoteHash.expected) {
       mismatches.push({
-        path: `evidence[${spanHash.evidenceIndex}].spanHash`,
-        expected: spanHash.expected,
-        actual: spanHash.actual
+        path: `evidence[${quoteHash.evidenceIndex}].quoteHash`,
+        expected: quoteHash.expected,
+        actual: quoteHash.actual
       });
     }
   }
@@ -195,15 +189,15 @@ export async function verifyPropositionHashes(cert: Proposition): Promise<HashMi
 }
 
 /*
- * Cert v2 identity derivation:
+ * Cert v2.1 identity derivation:
  * - propositionId = "stmt:" + sha256hex(normalizeProposition(canonicalProposition) + "\n" + language).slice(0, 24)
  * - versionId = "ver:" + sha256hex(canonicalJson(cert without versionId & certHash)).slice(0, 16)
  * - certHash = "sha256:" + sha256hex(canonicalJson(certWithoutCertHash))
- * - spanHash = "sha256:" + sha256hex(shortQuote)
+ * - quoteHash = "sha256:" + sha256hex(shortQuote)
  *
  * PRD sample IDs are illustrative and not reverse-engineerable. Seed IDs are
  * computed from this algorithm. Because full source bodies are not stored for
- * copyright reasons, spanHash verifies the integrity of the stored snippet
- * (`shortQuote`) rather than the remote body. Evidence offsets still describe
- * the quote location in the cited source.
+ * copyright reasons, quoteHash verifies the integrity of the stored snippet
+ * (`shortQuote`) rather than the remote body. Evidence locators describe the
+ * quote location in the cited source.
  */

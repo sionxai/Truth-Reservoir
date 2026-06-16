@@ -5,6 +5,7 @@ import {
   deriveCertHash,
   deriveHashes,
   derivePropositionId,
+  deriveQuoteHash,
   normalizeProposition,
   verifyPropositionHashes
 } from "../lib/verify.ts";
@@ -89,7 +90,7 @@ describe("verify helpers", () => {
         "sha256:0000000000000000000000000000000000000000000000000000000000000000";
       withPlaceholders.evidence = withPlaceholders.evidence.map((evidence) => ({
         ...evidence,
-        spanHash: "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+        quoteHash: "sha256:0000000000000000000000000000000000000000000000000000000000000000"
       }));
 
       const derived = await applyDerivedHashes(withPlaceholders);
@@ -111,7 +112,17 @@ describe("verify helpers", () => {
     }
   });
 
-  it("reports mismatches for corrupted certHash, versionId, and spanHash paths", async () => {
+  it("quoteHash is the sha256 of shortQuote", async () => {
+    const propositions = await loadPropositions();
+
+    for (const proposition of propositions) {
+      for (const evidence of proposition.evidence) {
+        await expect(deriveQuoteHash(evidence)).resolves.toBe(evidence.quoteHash);
+      }
+    }
+  });
+
+  it("reports mismatches for corrupted certHash, versionId, and quoteHash paths", async () => {
     const [seed] = await loadPropositions();
 
     const corruptedCertHash = cloneProposition(seed);
@@ -121,10 +132,10 @@ describe("verify helpers", () => {
     const corruptedVersionId = cloneProposition(seed);
     corruptedVersionId.versionId = "ver:ffffffffffffffff";
 
-    const corruptedSpanHash = cloneProposition(seed);
-    corruptedSpanHash.evidence[0] = {
-      ...corruptedSpanHash.evidence[0],
-      spanHash: "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    const corruptedQuoteHash = cloneProposition(seed);
+    corruptedQuoteHash.evidence[0] = {
+      ...corruptedQuoteHash.evidence[0],
+      quoteHash: "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
     };
 
     await expect(verifyPropositionHashes(corruptedCertHash)).resolves.toEqual(
@@ -133,8 +144,8 @@ describe("verify helpers", () => {
     await expect(verifyPropositionHashes(corruptedVersionId)).resolves.toEqual(
       expect.arrayContaining([expect.objectContaining({ path: "versionId" })])
     );
-    await expect(verifyPropositionHashes(corruptedSpanHash)).resolves.toEqual(
-      expect.arrayContaining([expect.objectContaining({ path: "evidence[0].spanHash" })])
+    await expect(verifyPropositionHashes(corruptedQuoteHash)).resolves.toEqual(
+      expect.arrayContaining([expect.objectContaining({ path: "evidence[0].quoteHash" })])
     );
   });
 

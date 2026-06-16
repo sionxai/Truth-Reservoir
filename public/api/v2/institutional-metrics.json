@@ -1,12 +1,12 @@
 {
-  "totalEntries": 3,
-  "totalAssessed": 3,
+  "totalEntries": 4,
+  "totalAssessed": 4,
   "totalUndetermined": 0,
   "totalRetracted": 0,
   "measuredErrorRate": {
     "value": null,
     "unit": "ratio",
-    "sampleSize": 0,
+    "sampleSize": 4,
     "periodStart": "2026-06-15",
     "periodEnd": "2026-06-15",
     "method": "미측정(표본 부족)",
@@ -19,7 +19,7 @@
     "staleCorrectionRequests": 0,
     "medianCorrectionLatencyDays": null,
     "latencyStatus": "no_requests_yet",
-    "staleThresholdDays": 14
+    "staleThresholdDays": 30
   },
   "externalAudits": [],
   "status": "unestablished"

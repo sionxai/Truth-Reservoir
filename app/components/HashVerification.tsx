@@ -23,7 +23,7 @@ interface HashCheck {
 
 interface VerificationState {
   running: boolean;
-  spanChecks: HashCheck[];
+  quoteChecks: HashCheck[];
   versionChecks: HashCheck[];
   error?: string;
 }
@@ -32,7 +32,7 @@ export function HashVerification({ proposition }: HashVerificationProps) {
   const [retryToken, setRetryToken] = useState(0);
   const [state, setState] = useState<VerificationState>({
     running: true,
-    spanChecks: [],
+    quoteChecks: [],
     versionChecks: []
   });
 
@@ -40,28 +40,18 @@ export function HashVerification({ proposition }: HashVerificationProps) {
     let cancelled = false;
 
     async function runVerification() {
-      setState({ running: true, spanChecks: [], versionChecks: [] });
+      setState({ running: true, quoteChecks: [], versionChecks: [] });
 
       try {
-        const spanChecks = await Promise.all(
+        const quoteChecks = await Promise.all(
           proposition.evidence.map(async (evidence, index): Promise<HashCheck> => {
-            if (!evidence.shortQuote) {
-              return {
-                label: `E${index + 1} spanHash`,
-                expected: evidence.spanHash,
-                actual: "shortQuote 없음",
-                status: "unavailable",
-                note: "shortQuote가 없어 브라우저에서 재계산할 수 없습니다."
-              };
-            }
-
             const actual = await sha256Prefixed(evidence.shortQuote);
 
             return {
-              label: `E${index + 1} spanHash`,
-              expected: evidence.spanHash,
+              label: `E${index + 1} quoteHash`,
+              expected: evidence.quoteHash,
               actual,
-              status: actual === evidence.spanHash ? "match" : "mismatch"
+              status: actual === evidence.quoteHash ? "match" : "mismatch"
             };
           })
         );
@@ -73,13 +63,13 @@ export function HashVerification({ proposition }: HashVerificationProps) {
         const reconstructed = structuredClone(proposition);
         reconstructed.propositionId = propositionId;
         reconstructed.evidence = reconstructed.evidence.map((evidence, index) => {
-          const spanCheck = spanChecks[index];
-          return spanCheck?.status === "match" || spanCheck?.status === "mismatch"
-            ? { ...evidence, spanHash: spanCheck.actual }
+          const quoteCheck = quoteChecks[index];
+          return quoteCheck?.status === "match" || quoteCheck?.status === "mismatch"
+            ? { ...evidence, quoteHash: quoteCheck.actual }
             : evidence;
         });
         // versionId is derived from the full reconstructed cert (minus versionId/certHash),
-        // matching applyDerivedHashes ordering: propositionId + spanHashes set first.
+        // matching applyDerivedHashes ordering: propositionId + quoteHashes set first.
         const versionId = await deriveVersionId(reconstructed);
         reconstructed.versionId = versionId;
         const certHash = await deriveCertHash(reconstructed);
@@ -106,13 +96,13 @@ export function HashVerification({ proposition }: HashVerificationProps) {
         ];
 
         if (!cancelled) {
-          setState({ running: false, spanChecks, versionChecks });
+          setState({ running: false, quoteChecks, versionChecks });
         }
       } catch (error) {
         if (!cancelled) {
           setState({
             running: false,
-            spanChecks: [],
+            quoteChecks: [],
             versionChecks: [],
             error: error instanceof Error ? error.message : "해시 계산 중 오류가 발생했습니다."
           });
@@ -134,9 +124,9 @@ export function HashVerification({ proposition }: HashVerificationProps) {
       </div>
 
       <div className="verify-grid">
-        <section className="content-panel verifier-panel" aria-labelledby="span-title">
-          <h2 id="span-title">HashVerifier</h2>
-          {state.running ? <p>브라우저에서 spanHash를 계산하는 중입니다.</p> : null}
+        <section className="content-panel verifier-panel" aria-labelledby="quote-title">
+          <h2 id="quote-title">HashVerifier</h2>
+          {state.running ? <p>브라우저에서 quoteHash를 계산하는 중입니다.</p> : null}
           {state.error ? (
             <div className="state-panel state-panel--error" role="alert">
               <p>{state.error}</p>
@@ -146,7 +136,7 @@ export function HashVerification({ proposition }: HashVerificationProps) {
             </div>
           ) : null}
           <div className="check-list">
-            {state.spanChecks.map((check) => (
+            {state.quoteChecks.map((check) => (
               <HashCheckRow check={check} key={check.label} snapshotText />
             ))}
           </div>
@@ -258,7 +248,7 @@ function SourceOpener({ proposition }: { proposition: Proposition }) {
                   archiveUrl 열기
                 </a>
               ) : (
-                <span className="warning-text">원문 보존본 없음, 원문 직접 확인 필요</span>
+                <span className="warning-text">archiveStatus: {evidence.archiveStatus}</span>
               )}
             </div>
           </article>
@@ -270,4 +260,3 @@ function SourceOpener({ proposition }: { proposition: Proposition }) {
     </section>
   );
 }
-

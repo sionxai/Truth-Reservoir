@@ -33,7 +33,7 @@ const openapi = {
   openapi: "3.1.0",
   info: {
     title: "Truth Reservoir Cert API",
-    version: "2.0.0"
+    version: "2.1.0"
   },
   paths: {
     "/api/v2/index.json": {

@@ -1,8 +1,8 @@
 {
-  "certVersion": "2.0",
+  "certVersion": "2.1",
   "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-  "versionId": "ver:49f8486d6b21cc52",
-  "certHash": "sha256:8c625248653e4c731be76efdfae407f5455f38b6b0890b15d304e0bcccda2a08",
+  "versionId": "ver:30aff496215f21db",
+  "certHash": "sha256:846164cfd21d87e5e420945af78d4df0b85c34182b9a8d8e248f8e841453fbd8",
   "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
   "claimNature": "document_content",
   "classification": "F",
@@ -14,22 +14,20 @@
     "factualGrade": "fully_reliable",
     "status": "assessed",
     "gradeRationale": "부칙 제2조는 구 공공기관 개인정보보호 법률의 폐지를 직접 규정한다.",
-    "rubricVersion": "rubric-2.1",
-    "pipelineVersion": "pipeline-2.1"
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
   },
   "evidence": [
     {
       "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
       "title": "개인정보 보호법 법률 제10465호 부칙 제2조",
       "retrievedAt": "2026-06-15T00:00:00Z",
-      "evidenceSpans": [
-        {
-          "start": 210,
-          "end": 238
-        }
-      ],
-      "spanHash": "sha256:0fc648fc50957f215003060b59fd3a124505e040a94a9098df421a7cb1578b3d",
+      "locator": {
+        "section": "부칙 제2조"
+      },
       "shortQuote": "공공기관의 개인정보보호에 관한 법률은 폐지한다",
+      "quoteHash": "sha256:0fc648fc50957f215003060b59fd3a124505e040a94a9098df421a7cb1578b3d",
+      "archiveStatus": "not_required_stable_artifact",
       "retrievalMethod": "official_gazette",
       "retrievalLimitations": "부칙 제2조의 폐지 조문은 확인되지만 후신이라는 요약 표현은 별도 제도사 설명이 필요할 수 있다.",
       "independenceGroupId": "law-go-kr-act-10465",

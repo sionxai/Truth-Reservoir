@@ -97,7 +97,7 @@ const index = {
   meta: {
     total: propositions.length,
     dataVersion: dataVersion(generatedAt),
-    certVersion: "2.0",
+    certVersion: "2.1",
     generatedAt,
     institutionalMetrics: {
       path: "/api/v2/institutional-metrics.json",

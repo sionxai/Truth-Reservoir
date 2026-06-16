@@ -4,11 +4,19 @@ import { CertV2Schema, InstitutionalMetricsSchema } from "../schema/cert-v2.ts";
 import { loadPropositions } from "../lib/data.ts";
 import { cloneProposition, readJsonFile } from "./test-utils.ts";
 
-describe("Cert v2 schema", () => {
+describe("Cert v2.1 schema", () => {
   it("parses a valid seed", async () => {
     const [seed] = await loadPropositions();
 
     expect(CertV2Schema.safeParse(seed).success).toBe(true);
+  });
+
+  it("requires certVersion 2.1", async () => {
+    const [seed] = await loadPropositions();
+    const candidate = cloneProposition(seed) as unknown as Record<string, unknown>;
+    candidate.certVersion = "2.0";
+
+    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
   });
 
   it.each(["evaluation", "interpretation", "normative"])(
@@ -137,6 +145,23 @@ describe("Cert v2 schema", () => {
         "one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen"
     };
 
+    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
+  });
+
+  it("requires shortQuote, quoteHash, and archiveStatus on evidence", async () => {
+    const [seed] = await loadPropositions();
+    const candidate = cloneProposition(seed) as unknown as Record<string, unknown>;
+    const [evidence] = candidate.evidence as Array<Record<string, unknown>>;
+
+    delete evidence.shortQuote;
+    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
+
+    evidence.shortQuote = seed.evidence[0].shortQuote;
+    delete evidence.quoteHash;
+    expect(CertV2Schema.safeParse(candidate).success).toBe(false);
+
+    evidence.quoteHash = seed.evidence[0].quoteHash;
+    delete evidence.archiveStatus;
     expect(CertV2Schema.safeParse(candidate).success).toBe(false);
   });
 

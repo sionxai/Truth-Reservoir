@@ -40,22 +40,13 @@ export const MeasurementSchema = z.object({
   measuredAt: isoStringSchema.optional()
 });
 
-const evidenceSpanSchema = z
-  .object({
-    start: z.number().int().min(0),
-    end: z.number().int()
-  })
-  .superRefine((span, ctx) => {
-    if (span.end <= span.start) {
-      ctx.addIssue({
-        code: "custom",
-        path: ["end"],
-        message: "end must be greater than start"
-      });
-    }
-  });
-
 const maxFifteenWords = (value: string) => value.trim().split(/\s+/).filter(Boolean).length <= 15;
+
+const EvidenceLocatorSchema = z.object({
+  section: z.string().optional(),
+  heading: z.string().optional(),
+  page: z.string().optional()
+});
 
 export const ProvenanceSchema = z.object({
   productionIndependence: z.enum(["independent", "govt_produced", "party_interested", "contested"]),
@@ -67,9 +58,15 @@ export const EvidenceItemSchema = z.object({
   url: z.string().url(),
   title: z.string().min(1),
   retrievedAt: isoStringSchema,
-  evidenceSpans: z.array(evidenceSpanSchema).min(1),
-  spanHash: sha256Schema,
-  shortQuote: z.string().min(1).refine(maxFifteenWords, "shortQuote must be 15 words or fewer").optional(),
+  locator: EvidenceLocatorSchema.optional(),
+  shortQuote: z.string().min(1).refine(maxFifteenWords, "shortQuote must be 15 words or fewer"),
+  quoteHash: sha256Schema,
+  archiveStatus: z.enum([
+    "archived",
+    "archive_attempt_recommended",
+    "not_required_stable_artifact",
+    "unavailable"
+  ]),
   archiveUrl: z.string().url().optional(),
   archiveProvider: z.enum(["internet_archive", "perma", "manual_pdf", "repository", "other"]).optional(),
   archivedAt: isoStringSchema.optional(),
@@ -152,7 +149,7 @@ export const CorrectionSchema = z.object({
 
 export const CertV2Schema = z
   .object({
-    certVersion: z.literal("2.0"),
+    certVersion: z.literal("2.1"),
     propositionId: statementIdSchema,
     versionId: versionIdSchema,
     certHash: sha256Schema,

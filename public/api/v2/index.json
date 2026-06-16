@@ -1,10 +1,156 @@
 {
   "data": [
     {
-      "certVersion": "2.0",
+      "certVersion": "2.1",
+      "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
+      "versionId": "ver:2e2edca39a61297e",
+      "certHash": "sha256:645cc8686124a88c8b1cd6bee179768312b91a5144b9246d9efeb730f16d5526",
+      "canonicalProposition": "1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-15",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "복수의 독립 1차 출처(NASA NSSDCA, 미국 국립문서기록청)가 착륙 시각·좌표·주체를 정밀하게 일치 보고. 좌표는 후대 달 정찰 궤도선(LRO) 이미지로 독립 재확인됨. 시각은 출처에 따라 20:17 또는 20:17:40 UTC로 초 단위만 차이나며, 가장 정밀한 1차 출처(NSSDCA) 기준 20:17:40을 채택.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
+          "title": "Apollo 11 Lunar Module / EASEP — NSSDCA, NASA",
+          "retrievedAt": "2026-06-15",
+          "locator": {
+            "section": "Spacecraft detail / landing",
+            "heading": "LM landing"
+          },
+          "shortQuote": "The LM landed at 20:17:40 UT on 20 July 1969",
+          "quoteHash": "sha256:d1afff791024d760e8d2ef1acf7cfeeed7898b09ed50db28a1000fb8472130a9",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "NASA 공식 데이터센터 페이지. 좌표는 LRO 이미지 기반 후대 확정값.",
+          "independenceGroupId": "nasa-primary",
+          "independenceLevel": "independent",
+          "independenceNote": "임무 수행 주체(NASA)의 1차 기록. 그러나 좌표는 외부 관측(LRO)으로 교차 확인됨.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "임무 수행 기관의 공식 우주선 데이터 — 착륙 시각·좌표의 1차 출처.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "임무 당사자 기록이므로, 착륙 사실 자체는 비-NASA 독립 증거로 교차검증 필요(아래 evidence 2·3 및 보고서 참조)"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://prologue.blogs.archives.gov/2019/07/19/apollo-11-50th-anniversary/",
+          "title": "The Eagle Has Landed — U.S. National Archives",
+          "retrievedAt": "2026-06-15",
+          "locator": {
+            "section": "Pieces of History blog",
+            "heading": "Apollo 11 50th Anniversary"
+          },
+          "shortQuote": "Eagle landed on the lunar surface at 20:17:40 GMT on July 20, 1969",
+          "quoteHash": "sha256:acfc6d24d70d1981cf903e4e0e7d558192f3fc9a4ddfa904c810458fdf5795e9",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "정부 기록 보존기관. NASA와 별개 기관이나 동일 정부 산하.",
+          "independenceGroupId": "us-gov-archives",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "NASA와 다른 기관이지만 동일 미국 정부 산하 — 완전 독립은 아님.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "국가 기록 보존기관의 역사 기록.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.britannica.com/topic/Apollo-11",
+          "title": "Apollo 11 — Encyclopædia Britannica",
+          "retrievedAt": "2026-06-15",
+          "locator": {
+            "section": "Landing"
+          },
+          "shortQuote": "Eagle had touched down in the Sea of Tranquility",
+          "quoteHash": "sha256:9a37f8bd37366680f91e1ed15f8c88184ff7eca584a763d8e0d05b1ff35729dd",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "백과사전(2차 출처)이나 편집 검증을 거친 권위 레퍼런스.",
+          "independenceGroupId": "britannica",
+          "independenceLevel": "independent",
+          "independenceNote": "정부·NASA와 무관한 독립 편집 기관.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "검증된 백과사전의 역사 항목.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "달 착륙이 지구 스튜디오에서 조작되었다는 음모론이 존재한다. NASA는 임무 당사자이므로 그 기록만으로는 자기 증언에 불과하다는 반론.",
+          "response": "당사자 기록(NASA)에만 의존하지 않는다. ①착륙 지점에 남긴 레이저 역반사경으로 비-NASA 관측소들이 현재도 거리를 측정한다(재현 가능 물리 실험). ②냉전 적국 소련이 당시 미국의 성공을 추적·인정했다(적대적 독립 검증). ③중국·인도·일본 탐사선이 착륙지를 촬영했다(NASA 밖 교차검증). ④전 세계 연구자가 분석한 월석 시료가 존재한다. 따라서 착륙 사실은 당사자 권위가 아니라 독립 증거로 성립한다(헌법 제4조·제10조).",
+          "errorsFound": 0,
+          "framingChecks": "명제에서 '인류의 위대한 도약' 같은 평가어를 배제하고 시각·좌표·주체의 사실만 기술. 동기('왜 갔는가')도 배제. 프레이밍 오염 없음."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "음모론(반대 목소리)의 증거 수준을 사실 주장과 동일 기준으로 평가. 반대 가설로 검토하되, 재현 가능한 반증 증거가 제시되지 않아 기각. false balance 차단(반대의 존재 ≠ 반대의 타당성).",
+          "result": "대칭 통과 — 양측을 같은 증거 기준으로 평가한 결과 비대칭한 증거력 확인."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "두 독립 자동 검토자가 모두 1차 출처를 수용했으나, 인간 검수자가 'NASA라는 권위 때문에 통과시킨 것 아닌가'를 재검토함. 결론: 착륙 사실은 NASA 권위가 아니라 비-NASA 독립 증거(역반사경·소련 추적·타국 촬영·월석)로 성립함을 확인. 권위 기반 면제 아님."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-15",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "시각이 출처 간 20:17~20:17:40으로 초 단위 차이. 가장 정밀한 1차 출처(NSSDCA) 기준 채택하고, 좌표는 LRO 독립 확인값 사용. 음모론은 반대 가설로 검토 후 증거 부재로 기각.",
+          "adoptedReason": "복수 독립 출처 수렴 + 재현 가능한 물리 증거(역반사경) 존재.",
+          "rejectedAlternatives": "'20:17 UTC'(초 생략) 표기 기각 — 더 정밀한 1차 값 존재. '인류가 달에 갔다'는 포괄 표현 기각 — 원자성 위해 특정 임무·시각·좌표로 한정."
+        }
+      },
+      "sensitive": {
+        "sensitive": false,
+        "sensitivityReason": [],
+        "legalStatus": "official_record",
+        "presumptionNotice": ""
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "착륙 시각은 출처에 따라 20:17(분 단위)~20:17:40(초 단위) UTC로 표기되며, 본 명제는 가장 정밀한 1차 출처(NASA NSSDCA) 기준 20:17:40을 채택. 좌표는 후대 LRO 이미지 기반 확정값으로, 1969년 당시 추정 좌표와는 정밀도 차이가 있을 수 있음.",
+      "tags": [
+        "우주",
+        "아폴로계획",
+        "역사적사건",
+        "1969"
+      ],
+      "createdAt": "2026-06-15T00:00:00Z",
+      "updatedAt": "2026-06-15T00:00:00Z"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:52e6260a60e04599d809ae61",
-      "versionId": "ver:79d2515ea1ad6cba",
-      "certHash": "sha256:b3a492f6a9e6584aa812b88c5aab5257e154cada743f9ea71ceb2074e6dae6c1",
+      "versionId": "ver:0f9dc0903863d9a4",
+      "certHash": "sha256:163007180cf2e211beab99a0d99fdafa45ecc2b6a06b647519178df375d0218d",
       "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
       "claimNature": "document_content",
       "classification": "F",
@@ -16,22 +162,20 @@
         "factualGrade": "fully_reliable",
         "status": "assessed",
         "gradeRationale": "법률 제10465호 부칙 제1조의 시행일 문구가 명제의 인용문과 일치한다.",
-        "rubricVersion": "rubric-2.1",
-        "pipelineVersion": "pipeline-2.1"
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
       },
       "evidence": [
         {
           "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
           "title": "개인정보 보호법 법률 제10465호 부칙 제1조",
           "retrievedAt": "2026-06-15T00:00:00Z",
-          "evidenceSpans": [
-            {
-              "start": 120,
-              "end": 145
-            }
-          ],
-          "spanHash": "sha256:4b0e56522eb80a38250462e01cdb3644b3c41d4df3a7c1f75ace48639162297c",
+          "locator": {
+            "section": "부칙 제1조"
+          },
           "shortQuote": "공포 후 6개월이 경과한 날부터 시행한다",
+          "quoteHash": "sha256:4b0e56522eb80a38250462e01cdb3644b3c41d4df3a7c1f75ace48639162297c",
+          "archiveStatus": "not_required_stable_artifact",
           "retrievalMethod": "official_gazette",
           "retrievalLimitations": "연혁 법령 표시에서 부칙 접힘 여부에 따라 수동 펼침이 필요할 수 있다.",
           "independenceGroupId": "law-go-kr-act-10465",
@@ -96,10 +240,10 @@
       "updatedAt": "2026-06-15T00:00:00Z"
     },
     {
-      "certVersion": "2.0",
+      "certVersion": "2.1",
       "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-      "versionId": "ver:49f8486d6b21cc52",
-      "certHash": "sha256:8c625248653e4c731be76efdfae407f5455f38b6b0890b15d304e0bcccda2a08",
+      "versionId": "ver:30aff496215f21db",
+      "certHash": "sha256:846164cfd21d87e5e420945af78d4df0b85c34182b9a8d8e248f8e841453fbd8",
       "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
       "claimNature": "document_content",
       "classification": "F",
@@ -111,22 +255,20 @@
         "factualGrade": "fully_reliable",
         "status": "assessed",
         "gradeRationale": "부칙 제2조는 구 공공기관 개인정보보호 법률의 폐지를 직접 규정한다.",
-        "rubricVersion": "rubric-2.1",
-        "pipelineVersion": "pipeline-2.1"
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
       },
       "evidence": [
         {
           "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
           "title": "개인정보 보호법 법률 제10465호 부칙 제2조",
           "retrievedAt": "2026-06-15T00:00:00Z",
-          "evidenceSpans": [
-            {
-              "start": 210,
-              "end": 238
-            }
-          ],
-          "spanHash": "sha256:0fc648fc50957f215003060b59fd3a124505e040a94a9098df421a7cb1578b3d",
+          "locator": {
+            "section": "부칙 제2조"
+          },
           "shortQuote": "공공기관의 개인정보보호에 관한 법률은 폐지한다",
+          "quoteHash": "sha256:0fc648fc50957f215003060b59fd3a124505e040a94a9098df421a7cb1578b3d",
+          "archiveStatus": "not_required_stable_artifact",
           "retrievalMethod": "official_gazette",
           "retrievalLimitations": "부칙 제2조의 폐지 조문은 확인되지만 후신이라는 요약 표현은 별도 제도사 설명이 필요할 수 있다.",
           "independenceGroupId": "law-go-kr-act-10465",
@@ -191,10 +333,10 @@
       "updatedAt": "2026-06-15T00:00:00Z"
     },
     {
-      "certVersion": "2.0",
+      "certVersion": "2.1",
       "propositionId": "stmt:40340515225f7adf44e242f3",
-      "versionId": "ver:3c883a287aa4eb25",
-      "certHash": "sha256:e6f1e354fd1e1988a6c0b470bddd424a2b5070082df186c4b40ddd1b55ee7f01",
+      "versionId": "ver:0a147d57a3f3baa1",
+      "certHash": "sha256:84e02ba2a7cede19b5ab20641748739204672a1ceb0befa713be56347e31e71e",
       "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
       "claimNature": "event_occurrence",
       "classification": "F",
@@ -206,22 +348,20 @@
         "factualGrade": "fully_reliable",
         "status": "assessed",
         "gradeRationale": "법령 원문과 정책브리핑 자료가 법률 제10465호의 공포일을 같은 날짜로 지시한다.",
-        "rubricVersion": "rubric-2.1",
-        "pipelineVersion": "pipeline-2.1"
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
       },
       "evidence": [
         {
           "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
           "title": "개인정보 보호법 법률 제10465호 공포문 및 부칙",
           "retrievedAt": "2026-06-15T00:00:00Z",
-          "evidenceSpans": [
-            {
-              "start": 0,
-              "end": 15
-            }
-          ],
-          "spanHash": "sha256:e0fdf97afec5f67f46dc8bf9e9292386346a4178be2211d7c0538be4fd35fc25",
+          "locator": {
+            "section": "공포문 및 부칙"
+          },
           "shortQuote": "2011년 3월 29일 공포",
+          "quoteHash": "sha256:e0fdf97afec5f67f46dc8bf9e9292386346a4178be2211d7c0538be4fd35fc25",
+          "archiveStatus": "not_required_stable_artifact",
           "retrievalMethod": "official_gazette",
           "retrievalLimitations": "법령정보 페이지의 현행/연혁 전환에 따라 표시 형식이 달라질 수 있다.",
           "independenceGroupId": "law-go-kr-act-10465",
@@ -240,14 +380,13 @@
           "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=155749843",
           "title": "정책브리핑 개인정보 보호법 공포 관련 자료",
           "retrievedAt": "2026-06-15T00:00:00Z",
-          "evidenceSpans": [
-            {
-              "start": 48,
-              "end": 60
-            }
-          ],
-          "spanHash": "sha256:5b5b5ffc102dfb59a3c5e168d9ffbe99c9eaa93b2f3c8dc4d4e9e799d5e96d5c",
+          "locator": {
+            "section": "보도자료",
+            "heading": "개인정보 보호법 공포 관련 자료"
+          },
           "shortQuote": "개인정보 보호법 공포",
+          "quoteHash": "sha256:5b5b5ffc102dfb59a3c5e168d9ffbe99c9eaa93b2f3c8dc4d4e9e799d5e96d5c",
+          "archiveStatus": "archive_attempt_recommended",
           "retrievalMethod": "manual",
           "retrievalLimitations": "정책브리핑 자료는 2차 설명 성격이므로 원문 법령과 함께 대조했다.",
           "independenceGroupId": "korea-kr-policy-briefing",
@@ -313,18 +452,22 @@
     }
   ],
   "meta": {
-    "total": 3,
+    "total": 4,
     "dataVersion": "2026.06.15",
-    "certVersion": "2.0",
+    "certVersion": "2.1",
     "generatedAt": "2026-06-15T00:00:00Z",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalEntries": 3,
-      "totalAssessed": 3,
+      "totalEntries": 4,
+      "totalAssessed": 4,
       "openCorrectionRequests": 0
     },
     "propositions": [
+      {
+        "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
+        "path": "/api/v2/propositions/stmt-4ae4c94174dc3aaf651102d2.json"
+      },
       {
         "propositionId": "stmt:52e6260a60e04599d809ae61",
         "path": "/api/v2/propositions/stmt-52e6260a60e04599d809ae61.json"

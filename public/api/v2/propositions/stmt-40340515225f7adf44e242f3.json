@@ -1,8 +1,8 @@
 {
-  "certVersion": "2.0",
+  "certVersion": "2.1",
   "propositionId": "stmt:40340515225f7adf44e242f3",
-  "versionId": "ver:3c883a287aa4eb25",
-  "certHash": "sha256:e6f1e354fd1e1988a6c0b470bddd424a2b5070082df186c4b40ddd1b55ee7f01",
+  "versionId": "ver:0a147d57a3f3baa1",
+  "certHash": "sha256:84e02ba2a7cede19b5ab20641748739204672a1ceb0befa713be56347e31e71e",
   "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
   "claimNature": "event_occurrence",
   "classification": "F",
@@ -14,22 +14,20 @@
     "factualGrade": "fully_reliable",
     "status": "assessed",
     "gradeRationale": "법령 원문과 정책브리핑 자료가 법률 제10465호의 공포일을 같은 날짜로 지시한다.",
-    "rubricVersion": "rubric-2.1",
-    "pipelineVersion": "pipeline-2.1"
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
   },
   "evidence": [
     {
       "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
       "title": "개인정보 보호법 법률 제10465호 공포문 및 부칙",
       "retrievedAt": "2026-06-15T00:00:00Z",
-      "evidenceSpans": [
-        {
-          "start": 0,
-          "end": 15
-        }
-      ],
-      "spanHash": "sha256:e0fdf97afec5f67f46dc8bf9e9292386346a4178be2211d7c0538be4fd35fc25",
+      "locator": {
+        "section": "공포문 및 부칙"
+      },
       "shortQuote": "2011년 3월 29일 공포",
+      "quoteHash": "sha256:e0fdf97afec5f67f46dc8bf9e9292386346a4178be2211d7c0538be4fd35fc25",
+      "archiveStatus": "not_required_stable_artifact",
       "retrievalMethod": "official_gazette",
       "retrievalLimitations": "법령정보 페이지의 현행/연혁 전환에 따라 표시 형식이 달라질 수 있다.",
       "independenceGroupId": "law-go-kr-act-10465",
@@ -48,14 +46,13 @@
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=155749843",
       "title": "정책브리핑 개인정보 보호법 공포 관련 자료",
       "retrievedAt": "2026-06-15T00:00:00Z",
-      "evidenceSpans": [
-        {
-          "start": 48,
-          "end": 60
-        }
-      ],
-      "spanHash": "sha256:5b5b5ffc102dfb59a3c5e168d9ffbe99c9eaa93b2f3c8dc4d4e9e799d5e96d5c",
+      "locator": {
+        "section": "보도자료",
+        "heading": "개인정보 보호법 공포 관련 자료"
+      },
       "shortQuote": "개인정보 보호법 공포",
+      "quoteHash": "sha256:5b5b5ffc102dfb59a3c5e168d9ffbe99c9eaa93b2f3c8dc4d4e9e799d5e96d5c",
+      "archiveStatus": "archive_attempt_recommended",
       "retrievalMethod": "manual",
       "retrievalLimitations": "정책브리핑 자료는 2차 설명 성격이므로 원문 법령과 함께 대조했다.",
       "independenceGroupId": "korea-kr-policy-briefing",

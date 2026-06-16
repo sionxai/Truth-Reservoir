@@ -1,8 +1,8 @@
 {
-  "certVersion": "2.0",
+  "certVersion": "2.1",
   "propositionId": "stmt:52e6260a60e04599d809ae61",
-  "versionId": "ver:79d2515ea1ad6cba",
-  "certHash": "sha256:b3a492f6a9e6584aa812b88c5aab5257e154cada743f9ea71ceb2074e6dae6c1",
+  "versionId": "ver:0f9dc0903863d9a4",
+  "certHash": "sha256:163007180cf2e211beab99a0d99fdafa45ecc2b6a06b647519178df375d0218d",
   "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
   "claimNature": "document_content",
   "classification": "F",
@@ -14,22 +14,20 @@
     "factualGrade": "fully_reliable",
     "status": "assessed",
     "gradeRationale": "법률 제10465호 부칙 제1조의 시행일 문구가 명제의 인용문과 일치한다.",
-    "rubricVersion": "rubric-2.1",
-    "pipelineVersion": "pipeline-2.1"
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
   },
   "evidence": [
     {
       "url": "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385",
       "title": "개인정보 보호법 법률 제10465호 부칙 제1조",
       "retrievedAt": "2026-06-15T00:00:00Z",
-      "evidenceSpans": [
-        {
-          "start": 120,
-          "end": 145
-        }
-      ],
-      "spanHash": "sha256:4b0e56522eb80a38250462e01cdb3644b3c41d4df3a7c1f75ace48639162297c",
+      "locator": {
+        "section": "부칙 제1조"
+      },
       "shortQuote": "공포 후 6개월이 경과한 날부터 시행한다",
+      "quoteHash": "sha256:4b0e56522eb80a38250462e01cdb3644b3c41d4df3a7c1f75ace48639162297c",
+      "archiveStatus": "not_required_stable_artifact",
       "retrievalMethod": "official_gazette",
       "retrievalLimitations": "연혁 법령 표시에서 부칙 접힘 여부에 따라 수동 펼침이 필요할 수 있다.",
       "independenceGroupId": "law-go-kr-act-10465",

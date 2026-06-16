@@ -94,9 +94,7 @@ function EvidenceCard({ evidence, index }: { evidence: EvidenceItem; index: numb
         </div>
       </div>
 
-      {evidence.shortQuote ? (
-        <blockquote className="short-quote">“{evidence.shortQuote}”</blockquote>
-      ) : null}
+      <blockquote className="short-quote">“{evidence.shortQuote}”</blockquote>
 
       <dl className="evidence-details">
         <div>
@@ -108,18 +106,22 @@ function EvidenceCard({ evidence, index }: { evidence: EvidenceItem; index: numb
           </dd>
         </div>
         <div>
-          <dt>evidenceSpans</dt>
+          <dt>locator</dt>
           <dd>
-            {evidence.evidenceSpans.map((span) => (
-              <span className="mono" key={`${span.start}-${span.end}`}>
-                {span.start}-{span.end}
-              </span>
-            ))}
+            {evidence.locator ? (
+              <span className="mono">{formatLocator(evidence.locator)}</span>
+            ) : (
+              "기록된 locator 없음"
+            )}
           </dd>
         </div>
         <div>
-          <dt>spanHash</dt>
-          <dd className="mono breakable">{evidence.spanHash}</dd>
+          <dt>quoteHash</dt>
+          <dd className="mono breakable">{evidence.quoteHash}</dd>
+        </div>
+        <div>
+          <dt>archiveStatus</dt>
+          <dd>{evidence.archiveStatus}</dd>
         </div>
         <div>
           <dt>archiveUrl</dt>
@@ -191,4 +193,14 @@ function groupEvidenceByIndependence(evidence: EvidenceItem[]) {
     independenceGroupId,
     items
   }));
+}
+
+function formatLocator(locator: NonNullable<EvidenceItem["locator"]>): string {
+  return [
+    locator.section ? `section: ${locator.section}` : null,
+    locator.heading ? `heading: ${locator.heading}` : null,
+    locator.page ? `page: ${locator.page}` : null
+  ]
+    .filter(Boolean)
+    .join(" / ");
 }

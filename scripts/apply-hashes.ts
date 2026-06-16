@@ -7,7 +7,7 @@ import type { Proposition } from "../lib/types.ts";
  * Deterministic hash-stamping for a single draft proposition.
  *
  * This is mechanical, reproducible tooling (like build-api / hash-verify): it
- * computes the canonical propositionId/versionId/certHash/spanHash from content
+ * computes the canonical propositionId/versionId/certHash/quoteHash from content
  * the verification process already decided. It makes NO verification judgement —
  * grades, red-team conclusions and source assessments are filled in beforehand
  * (by the private ingest skill + human reviewer). Keeping this in the public repo
@@ -31,7 +31,7 @@ raw.propositionId ??= "stmt:000000000000000000000000";
 raw.versionId ??= "ver:0000000000000000";
 raw.certHash ??= PLACEHOLDER_SHA;
 for (const evidence of (raw.evidence as Array<Record<string, unknown>>) ?? []) {
-  evidence.spanHash ??= PLACEHOLDER_SHA;
+  evidence.quoteHash ??= PLACEHOLDER_SHA;
 }
 
 // Schema-parse FIRST so Zod defaults (e.g. openCorrectionRequests, tags) are

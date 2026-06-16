@@ -5,7 +5,7 @@ export default function ApiDocsPage() {
         <p className="eyebrow">Static API</p>
         <h1>API 문서</h1>
         <p>
-          진실저수지는 정적 파일로 Cert v2.0 데이터를 배포합니다. CORS는 <span className="mono">*</span>로 공개하는 것을 전제로 하며, 실제 계약은 JSON Schema와 OpenAPI 문서입니다.
+          진실저수지는 정적 파일로 Cert v2.1 데이터를 배포합니다. CORS는 <span className="mono">*</span>로 공개하는 것을 전제로 하며, 실제 계약은 JSON Schema와 OpenAPI 문서입니다.
         </p>
       </section>
 
@@ -37,7 +37,7 @@ export default function ApiDocsPage() {
       <section className="content-panel doc-panel">
         <h2>인덱스 형태</h2>
         <p>
-          <span className="mono">/api/v2/index.json</span>은 <span className="mono">{"{ data, meta }"}</span> 형태입니다. <span className="mono">data</span>는 Cert v2.0 proposition 배열이고, <span className="mono">meta</span>는 총량, 데이터 버전, 생성 시각, 기관 메트릭 경로, 개별 proposition 경로 목록을 담습니다.
+          <span className="mono">/api/v2/index.json</span>은 <span className="mono">{"{ data, meta }"}</span> 형태입니다. <span className="mono">data</span>는 Cert v2.1 proposition 배열이고, <span className="mono">meta</span>는 총량, 데이터 버전, 생성 시각, 기관 메트릭 경로, 개별 proposition 경로 목록을 담습니다.
         </p>
       </section>
 
@@ -55,6 +55,15 @@ export default function ApiDocsPage() {
           </li>
           <li>
             <span className="mono">reviewMode</span>는 <span className="mono">human_reviewed</span> 또는 <span className="mono">automated_unreviewed</span>입니다. 생략하면 <span className="mono">human_reviewed</span>로 해석됩니다.
+          </li>
+          <li>
+            <span className="mono">evidence[].shortQuote</span>는 필수 무결성 앵커이며 15단어 이하여야 합니다. <span className="mono">evidence[].quoteHash</span>는 이 짧은 인용문에 대한 <span className="mono">sha256:</span> 접두 해시입니다.
+          </li>
+          <li>
+            <span className="mono">evidence[].locator</span>는 선택 필드이며 <span className="mono">section</span>, <span className="mono">heading</span>, <span className="mono">page</span>로 출처 내 위치를 표현합니다. 이전 <span className="mono">evidenceSpans</span> 문자 오프셋은 계약에서 제거되었습니다.
+          </li>
+          <li>
+            <span className="mono">evidence[].archiveStatus</span>는 <span className="mono">archived</span>, <span className="mono">archive_attempt_recommended</span>, <span className="mono">not_required_stable_artifact</span>, <span className="mono">unavailable</span> 중 하나입니다.
           </li>
         </ul>
       </section>
