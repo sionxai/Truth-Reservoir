@@ -79,12 +79,16 @@ function apiUrl(repo: string, path: string): string {
 }
 
 async function fetchGithubJson<T>(url: string): Promise<T> {
+  // Authenticated when GITHUB_TOKEN is present (e.g. the sync-requests Action),
+  // which lifts the unauthenticated 60/hr rate limit to 5000/hr.
+  const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
   const response = await fetch(url, {
     signal: AbortSignal.timeout(10_000),
     headers: {
       accept: "application/vnd.github+json",
       "x-github-api-version": "2022-11-28",
-      "user-agent": "truth-reservoir-static-request-mirror"
+      "user-agent": "truth-reservoir-static-request-mirror",
+      ...(token ? { authorization: `Bearer ${token}` } : {})
     }
   });
 

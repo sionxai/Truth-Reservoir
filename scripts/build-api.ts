@@ -5,7 +5,6 @@ import { encodePropositionId } from "../lib/ids.ts";
 import { absoluteSiteUrl } from "../lib/site.ts";
 import { applyDerivedHashes } from "../lib/verify.ts";
 import type { Proposition } from "../lib/types.ts";
-import { buildRequestsMirror } from "./build-requests.ts";
 
 const apiDir = "public/api/v2";
 const propositionsDir = `${apiDir}/propositions`;
@@ -171,7 +170,12 @@ const index = {
 
 await writeFile(`${apiDir}/index.json`, `${JSON.stringify(index, null, 2)}\n`);
 await writeFile(`${apiDir}/institutional-metrics.json`, `${JSON.stringify(metrics, null, 2)}\n`);
-await buildRequestsMirror();
+// NOTE: requests.json is NOT regenerated here. The deploy build must stay
+// network-free/deterministic — a GitHub API call in the critical build path made
+// Vercel deploys flaky and could wipe the live queue to empty on a transient
+// failure. requests.json is a committed static file, refreshed by
+// `npm run build-requests` (run locally or by the sync-requests GitHub Action on
+// issue events, which commits the update and triggers a redeploy).
 await writeFile("public/sitemap.xml", createSitemap(propositions, generatedAt));
 
 const examples = await createExamples(propositions);

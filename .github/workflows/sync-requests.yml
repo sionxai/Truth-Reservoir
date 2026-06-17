@@ -1,0 +1,43 @@
+name: Sync request queue
+
+# Keeps public/api/v2/requests.json in sync with the fact-request issue queue.
+# Runs OUTSIDE the deploy build (the Vercel build stays network-free/deterministic).
+# On any fact-request issue change, regenerate the mirror and commit it if changed;
+# the commit triggers a Vercel redeploy serving the fresh queue.
+on:
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-requests
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Regenerate requests.json from the issue queue
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run build-requests
+      - name: Commit if the queue changed
+        run: |
+          if [[ -n "$(git status --porcelain public/api/v2/requests.json)" ]]; then
+            git config user.name "truth-reservoir-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add public/api/v2/requests.json
+            git commit -m "chore: sync request queue (requests.json) [skip ci]"
+            git push
+          else
+            echo "requests.json unchanged."
+          fi
