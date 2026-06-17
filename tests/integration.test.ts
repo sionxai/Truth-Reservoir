@@ -69,6 +69,10 @@ describe("data integration", () => {
       data?: unknown;
       meta?: { total?: unknown; dataVersion?: unknown };
     }>(join(apiRoot, "index.json"));
+    const requests = await readJsonFile<{
+      meta?: { repo?: unknown; total?: unknown; note?: unknown };
+      requests?: unknown;
+    }>(join(apiRoot, "requests.json"));
 
     expect(Array.isArray(index.data)).toBe(true);
     expect(index.meta).toMatchObject({
@@ -91,6 +95,13 @@ describe("data integration", () => {
     expect(existsSync(certSchemaPath)).toBe(true);
     expect(openapi.openapi).toBe("3.1.0");
     await expect(readJsonFile(certSchemaPath)).resolves.toEqual(expect.any(Object));
+
+    expect(Array.isArray(requests.requests)).toBe(true);
+    expect(requests.meta).toMatchObject({
+      repo: "sionxai/Truth-Reservoir",
+      total: Array.isArray(requests.requests) ? requests.requests.length : 0,
+      note: expect.stringContaining("DEMAND")
+    });
   });
 
   it("publishes discovery files for crawlers and machine clients", async () => {
@@ -108,6 +119,9 @@ describe("data integration", () => {
     expect(sitemap).toContain("<loc>https://truth-reservoir.vercel.app/</loc>");
     expect(sitemap).toContain(
       "<loc>https://truth-reservoir.vercel.app/api/v2/index.json</loc>"
+    );
+    expect(sitemap).toContain(
+      "<loc>https://truth-reservoir.vercel.app/api/v2/requests.json</loc>"
     );
     expect(sitemap).toContain(
       "<loc>https://truth-reservoir.vercel.app/api/v2/openapi.json</loc>"

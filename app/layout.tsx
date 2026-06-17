@@ -12,6 +12,12 @@ const machineDiscoveryLinks = [
     href: absoluteSiteUrl("/api/v2/index.json")
   },
   {
+    rel: "alternate",
+    type: "application/json",
+    title: "Truth Reservoir public request queue",
+    href: absoluteSiteUrl("/api/v2/requests.json")
+  },
+  {
     rel: "service-desc",
     type: "application/json",
     title: "OpenAPI",

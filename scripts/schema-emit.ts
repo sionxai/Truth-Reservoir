@@ -28,6 +28,8 @@ const metricsJsonSchema = withSchemaMetadata(
   z.toJSONSchema(InstitutionalMetricsSchema) as Record<string, unknown>,
   "https://truthreservoir.example/api/v2/schema/institutional-metrics.schema.json"
 );
+const requestLaneDescription =
+  "Each request is a DEMAND, NOT a fact; requests are public, append-only demands via GitHub, not stored facts (제2, 제8). Fulfillment requires normal verification and human sign-off (제11). Unverifiable requests are recorded honestly as declined or undetermined (제7). Demand is one public, transparent input to selection (제14).";
 
 const openapi = {
   openapi: "3.1.0",
@@ -105,6 +107,24 @@ const openapi = {
         }
       }
     },
+    "/api/v2/requests.json": {
+      get: {
+        summary: "List public fact-data requests",
+        description: requestLaneDescription,
+        responses: {
+          "200": {
+            description: "Static request queue mirror",
+            content: {
+              "application/json": {
+                schema: {
+                  $ref: "#/components/schemas/RequestsMirror"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v2/schema/cert-v2.schema.json": {
       get: {
         summary: "JSON Schema (2020-12) for a Cert v2 proposition",
@@ -122,6 +142,62 @@ const openapi = {
     schemas: {
       CertV2: certJsonSchema,
       InstitutionalMetrics: metricsJsonSchema,
+      RequestsMirror: {
+        type: "object",
+        required: ["meta", "requests"],
+        properties: {
+          meta: {
+            type: "object",
+            required: ["generatedAt", "repo", "total", "note"],
+            properties: {
+              generatedAt: { type: "string", format: "date-time" },
+              repo: { type: "string" },
+              total: { type: "integer", minimum: 0 },
+              note: { type: "string" }
+            }
+          },
+          requests: {
+            type: "array",
+            items: {
+              type: "object",
+              required: [
+                "id",
+                "title",
+                "topic",
+                "why",
+                "claimNatureGuess",
+                "candidateSources",
+                "state",
+                "fulfilledPropositionId",
+                "url",
+                "createdAt",
+                "updatedAt"
+              ],
+              properties: {
+                id: { type: "integer" },
+                title: { type: "string" },
+                topic: { type: "string" },
+                why: { type: "string" },
+                claimNatureGuess: {
+                  type: "string",
+                  enum: ["event_occurrence", "document_content", "measurement", "unknown"]
+                },
+                candidateSources: {
+                  type: "array",
+                  items: { type: "string" }
+                },
+                state: { type: "string", enum: ["open", "closed"] },
+                fulfilledPropositionId: {
+                  anyOf: [{ type: "string" }, { type: "null" }]
+                },
+                url: { type: "string", format: "uri" },
+                createdAt: { type: "string", format: "date-time" },
+                updatedAt: { type: "string", format: "date-time" }
+              }
+            }
+          }
+        }
+      },
       ApiError: {
         type: "object",
         required: ["error"],

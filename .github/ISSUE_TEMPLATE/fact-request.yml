@@ -1,0 +1,56 @@
+name: Fact request
+description: Request verification for fact-data missing from the reservoir. A request is a demand, not a fact.
+title: "[Fact request] "
+labels: ["fact-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Constitutional notice:** A request is a DEMAND, NOT a fact. It is never stored as a verified proposition (제2). Fulfillment goes through the normal verification pipeline and human sign-off (제11). Unverifiable requests are recorded honestly as declined or undetermined (제7). The request queue is public and append-only via GitHub (제8). Demand is one public, transparent input to selection (제14).
+  - type: input
+    id: topic
+    attributes:
+      label: Requested fact/topic
+      description: State the missing fact-data as concretely as possible.
+      placeholder: "Example: exact publication date of a named public document"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it's needed
+      description: Explain the downstream use or verification gap. Do not state the request as if it were already a fact.
+      placeholder: "This would help compare existing verified propositions against a missing source..."
+    validations:
+      required: false
+  - type: dropdown
+    id: claimNatureGuess
+    attributes:
+      label: ClaimNature guess
+      description: Best-effort guess only; verification may classify it differently.
+      options:
+        - event_occurrence
+        - document_content
+        - measurement
+        - unknown
+      default: 3
+    validations:
+      required: true
+  - type: textarea
+    id: candidateSources
+    attributes:
+      label: Candidate sources
+      description: Optional URLs, document names, page references, or archives to inspect.
+      placeholder: |
+        https://example.org/source
+        Document title, section, page
+    validations:
+      required: false
+  - type: input
+    id: requesterId
+    attributes:
+      label: Requester id
+      description: Optional stable identifier for follow-up or attribution.
+      placeholder: "organization/team/agent id"
+    validations:
+      required: false

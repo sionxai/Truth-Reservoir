@@ -4,6 +4,7 @@ import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { CallToolRequestSchema, ListToolsRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 import { sha256Prefixed } from "../../lib/hash.ts";
+import { getRepoUrl } from "../../lib/site.ts";
 import { deriveHashes } from "../../lib/verify.ts";
 import type { InstitutionalMetrics, Proposition } from "../../lib/types.ts";
 
@@ -11,6 +12,8 @@ export const defaultBaseUrl = "https://truth-reservoir.vercel.app";
 
 const evidenceGuidance =
   "Cite the evidence network, provenance, quoteHash comparisons, locators/archiveStatus, and reviewLog. Do not cite the grade label as the conclusion; factualGrade is only a secondary navigation signal. Truth Reservoir stores facts, not verdicts.";
+const requestLaneGuidance =
+  "A request is a DEMAND, NOT a fact. It is never stored as a verified proposition (제2). Fulfillment goes through the normal verification pipeline and human sign-off (제11). Unverifiable requests are recorded honestly as declined or undetermined (제7). The request queue is public and append-only via GitHub (제8). Demand is one public, transparent input to selection (제14).";
 
 type JsonRecord = Record<string, unknown>;
 
@@ -22,6 +25,11 @@ type ApiIndex = {
       path: string;
     }>;
   };
+};
+
+type RequestsMirror = {
+  meta?: JsonRecord;
+  requests?: JsonRecord[];
 };
 
 type ToolDefinition = {
@@ -103,6 +111,36 @@ const tagInputSchema = {
   additionalProperties: false
 };
 
+const requestFactInputSchema = {
+  type: "object",
+  properties: {
+    topic: {
+      type: "string",
+      description:
+        "Missing fact-data to request for verification. This is demand, not a stored fact."
+    },
+    why: {
+      type: "string",
+      description: "Optional reason this fact-data is needed."
+    },
+    claimNatureGuess: {
+      type: "string",
+      enum: ["event_occurrence", "document_content", "measurement", "unknown"],
+      default: "unknown",
+      description: "Best-effort classification guess only; verification may classify it differently."
+    },
+    candidateSources: {
+      type: "array",
+      items: {
+        type: "string"
+      },
+      description: "Optional candidate URLs, document names, page references, or archives."
+    }
+  },
+  required: ["topic"],
+  additionalProperties: false
+};
+
 function baseUrlFromEnv(): string {
   return (process.env.TRUTH_RESERVOIR_BASE_URL ?? defaultBaseUrl).replace(/\/+$/, "");
 }
@@ -137,6 +175,19 @@ function optionalString(args: JsonRecord, key: string): string | undefined {
   const value = args[key];
 
   return typeof value === "string" && value.trim() ? value.trim() : undefined;
+}
+
+function optionalStringArray(args: JsonRecord, key: string): string[] {
+  const value = args[key];
+
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return value
+    .filter((item): item is string => typeof item === "string")
+    .map((item) => item.trim())
+    .filter(Boolean);
 }
 
 function requiredString(args: JsonRecord, key: string): string {
@@ -358,6 +409,108 @@ export async function getInstitutionalMetrics(_args: JsonRecord, baseUrl = baseU
   };
 }
 
+function requestClaimNatureGuess(args: JsonRecord): string {
+  const value = optionalString(args, "claimNatureGuess");
+
+  if (
+    value === "event_occurrence" ||
+    value === "document_content" ||
+    value === "measurement" ||
+    value === "unknown"
+  ) {
+    return value;
+  }
+
+  return "unknown";
+}
+
+function issueTitle(topic: string): string {
+  const compactTopic = topic.replace(/\s+/g, " ").trim();
+
+  return `[Fact request] ${compactTopic.slice(0, 180)}`;
+}
+
+function noResponse(value: string | undefined): string {
+  return value?.trim() ? value.trim() : "_No response_";
+}
+
+function candidateSourcesBody(sources: string[]): string {
+  return sources.length ? sources.map((source) => `- ${source}`).join("\n") : "_No response_";
+}
+
+function buildFactRequestBody(
+  topic: string,
+  why: string | undefined,
+  claimNatureGuess: string,
+  candidateSources: string[]
+): string {
+  return [
+    "### Constitutional notice",
+    "",
+    requestLaneGuidance,
+    "",
+    "### Requested fact/topic",
+    "",
+    topic,
+    "",
+    "### Why it's needed",
+    "",
+    noResponse(why),
+    "",
+    "### ClaimNature guess",
+    "",
+    claimNatureGuess,
+    "",
+    "### Candidate sources",
+    "",
+    candidateSourcesBody(candidateSources),
+    "",
+    "### Requester id",
+    "",
+    "_No response_",
+    ""
+  ].join("\n");
+}
+
+export function buildFactRequestIssueUrl(args: JsonRecord): string {
+  const topic = requiredString(args, "topic");
+  const why = optionalString(args, "why");
+  const claimNatureGuess = requestClaimNatureGuess(args);
+  const candidateSources = optionalStringArray(args, "candidateSources");
+  const params = new URLSearchParams({
+    template: "fact-request.yml",
+    title: issueTitle(topic),
+    labels: "fact-request",
+    body: buildFactRequestBody(topic, why, claimNatureGuess, candidateSources)
+  });
+
+  return `${getRepoUrl()}/issues/new?${params.toString()}`;
+}
+
+export async function requestFact(args: JsonRecord) {
+  return {
+    guidance: requestLaneGuidance,
+    url: buildFactRequestIssueUrl(args),
+    template: "fact-request.yml",
+    labels: ["fact-request"],
+    note: "Open the URL to file the public request; this requests verification and does not inject or store a fact."
+  };
+}
+
+export async function listOpenRequests(_args: JsonRecord, baseUrl = baseUrlFromEnv()) {
+  const mirror = await fetchJson<RequestsMirror>("/api/v2/requests.json", baseUrl);
+  const requests = Array.isArray(mirror.requests)
+    ? mirror.requests.filter((request) => request.state === "open")
+    : [];
+
+  return {
+    guidance: requestLaneGuidance,
+    meta: mirror.meta,
+    totalOpen: requests.length,
+    requests
+  };
+}
+
 export const toolDefinitions: ToolDefinition[] = [
   {
     name: "search_propositions",
@@ -395,6 +548,18 @@ export const toolDefinitions: ToolDefinition[] = [
       "Fetch public institutional metrics and explain when correction latency is null versus measured. Cite proposition-level evidence network and reviewLog for factual use; metrics are accountability context.",
     inputSchema: emptyInputSchema,
     handler: getInstitutionalMetrics
+  },
+  {
+    name: "request_fact",
+    description: `Build a prefilled public GitHub fact-request Issue URL. This requests verification; it does not inject or store a fact. ${requestLaneGuidance}`,
+    inputSchema: requestFactInputSchema,
+    handler: requestFact
+  },
+  {
+    name: "list_open_requests",
+    description: `List open public fact-data requests from /api/v2/requests.json. Requests are demands, not verified facts; use them only as transparent demand signals. ${requestLaneGuidance}`,
+    inputSchema: emptyInputSchema,
+    handler: listOpenRequests
   }
 ];
 

@@ -5,6 +5,7 @@ import { encodePropositionId } from "../lib/ids.ts";
 import { absoluteSiteUrl } from "../lib/site.ts";
 import { applyDerivedHashes } from "../lib/verify.ts";
 import type { Proposition } from "../lib/types.ts";
+import { buildRequestsMirror } from "./build-requests.ts";
 
 const apiDir = "public/api/v2";
 const propositionsDir = `${apiDir}/propositions`;
@@ -54,6 +55,7 @@ function createSitemap(propositions: Proposition[], generatedAt: string): string
     "/api-docs",
     "/llms.txt",
     "/api/v2/index.json",
+    "/api/v2/requests.json",
     "/api/v2/openapi.json",
     "/api/v2/schema/cert-v2.schema.json"
   ];
@@ -169,6 +171,7 @@ const index = {
 
 await writeFile(`${apiDir}/index.json`, `${JSON.stringify(index, null, 2)}\n`);
 await writeFile(`${apiDir}/institutional-metrics.json`, `${JSON.stringify(metrics, null, 2)}\n`);
+await buildRequestsMirror();
 await writeFile("public/sitemap.xml", createSitemap(propositions, generatedAt));
 
 const examples = await createExamples(propositions);

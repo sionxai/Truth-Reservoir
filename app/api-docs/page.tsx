@@ -20,6 +20,9 @@ export default function ApiDocsPage() {
             <a href="/api/v2/index.json">GET /api/v2/index.json</a>
           </li>
           <li>
+            <a href="/api/v2/requests.json">GET /api/v2/requests.json</a>
+          </li>
+          <li>
             <a href="/api/v2/propositions/stmt-840aa7c32d8f6372cd968fb6.json">
               GET /api/v2/propositions/{"{id}"}.json
             </a>
@@ -37,6 +40,27 @@ export default function ApiDocsPage() {
           </li>
           <li>
             <a href="/llms.txt">GET /llms.txt</a>
+          </li>
+        </ul>
+      </section>
+
+      <section className="content-panel doc-panel">
+        <h2>요청 레인 (Request lane)</h2>
+        <p>
+          RETRIEVE 레인은 <span className="mono">GET /api/v2/*</span>로 검증 기록을 읽는 경로입니다. REQUEST 레인은 저수지에 아직 없는 fact-data를 GitHub 공개 큐에 요청하는 경로입니다.
+        </p>
+        <p>
+          요청은 DEMAND, NOT a fact입니다. 요청은 검증된 명제로 저장되지 않으며(제2), 등재 여부는 정상 검증 파이프라인과 인간 승인(제11)을 거친 뒤 결정됩니다. 검증 불가 요청은 declined 또는 undetermined로 정직하게 기록됩니다(제7). 큐는 GitHub를 통한 공개 append-only 기록입니다(제8). 수요는 선택의 투명한 입력 중 하나입니다(제14).
+        </p>
+        <ul>
+          <li>
+            제출: <span className="mono">.github/ISSUE_TEMPLATE/fact-request.yml</span> Issue Form은 요청 주제, 필요 이유, <span className="mono">claimNature</span> 추정값, 후보 출처, 선택적 requester id를 받습니다. 자동 라벨은 <span className="mono">fact-request</span>입니다.
+          </li>
+          <li>
+            읽기: <a href="/api/v2/requests.json">GET /api/v2/requests.json</a>은 열린 <span className="mono">fact-request</span> 이슈를 정적 JSON으로 미러링합니다. GitHub 공개 API가 빌드 중 실패하면 빈 큐와 사유 note를 발행하고 빌드는 계속됩니다.
+          </li>
+          <li>
+            MCP: <span className="mono">request_fact(topic, why?, claimNatureGuess?, candidateSources?)</span>는 사전 채워진 GitHub Issue 생성 URL을 반환합니다. 이 도구는 검증을 요청할 뿐 사실을 주입하거나 저장하지 않습니다. <span className="mono">list_open_requests()</span>는 공개 <span className="mono">requests.json</span>에서 열린 요청을 읽습니다.
           </li>
         </ul>
       </section>

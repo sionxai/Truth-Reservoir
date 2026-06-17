@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { encodePropositionId } from "../../lib/ids.ts";
+import { getRepoUrl } from "../../lib/site.ts";
 import type { Proposition } from "../../lib/types.ts";
-
-const fallbackRepoUrl = "https://github.com/your-org/truth-reservoir-data";
 
 interface DetailActionsProps {
   proposition: Proposition;
@@ -10,7 +9,7 @@ interface DetailActionsProps {
 
 export function DetailActions({ proposition }: DetailActionsProps) {
   const dashId = encodePropositionId(proposition.propositionId);
-  const repoUrl = (process.env.NEXT_PUBLIC_REPO_URL ?? fallbackRepoUrl).replace(/\/$/, "");
+  const repoUrl = getRepoUrl();
   const rawPath = `/api/v2/propositions/${dashId}.json`;
   const issueUrl = buildCorrectionIssueUrl(repoUrl, proposition);
   const editUrl = `${repoUrl}/edit/main/public/api/v2/propositions/${dashId}.json`;
@@ -64,4 +63,3 @@ function buildCorrectionIssueUrl(repoUrl: string, proposition: Proposition): str
 
   return `${repoUrl}/issues/new?${params.toString()}`;
 }
-

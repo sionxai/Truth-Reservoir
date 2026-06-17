@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "generatedAt": "2026-06-17T10:40:58.089Z",
+    "repo": "sionxai/Truth-Reservoir",
+    "total": 1,
+    "note": "Each request is a DEMAND, NOT a fact; requests are public, append-only demands via GitHub, not stored facts (제2, 제8). Fulfillment requires normal verification and human sign-off (제11). Unverifiable requests are recorded honestly as declined or undetermined (제7). Demand is one public, transparent input to selection (제14)."
+  },
+  "requests": [
+    {
+      "id": 1,
+      "title": "[fact-request] 대한민국 2024년 합계출산율 공식 측정값",
+      "topic": "[fact-request] 대한민국 2024년 합계출산율 공식 측정값",
+      "why": "",
+      "claimNatureGuess": "unknown",
+      "candidateSources": [],
+      "state": "open",
+      "fulfilledPropositionId": null,
+      "url": "https://github.com/sionxai/Truth-Reservoir/issues/1",
+      "createdAt": "2026-06-17T10:40:41Z",
+      "updatedAt": "2026-06-17T10:40:41Z"
+    }
+  ]
+}

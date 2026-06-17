@@ -7,6 +7,7 @@
     "dev": "node node_modules/next/dist/bin/next dev",
     "build": "node node_modules/tsx/dist/cli.mjs scripts/schema-emit.ts && node node_modules/tsx/dist/cli.mjs scripts/build-api.ts && node node_modules/next/dist/bin/next build",
     "build-api": "node node_modules/tsx/dist/cli.mjs scripts/build-api.ts",
+    "build-requests": "node node_modules/tsx/dist/cli.mjs scripts/build-requests.ts",
     "start": "node --input-type=module -e \"console.log('Truth Reservoir is static-export only. Run npm run build, then serve the out/ directory with any static file server.')\"",
     "validate": "node node_modules/tsx/dist/cli.mjs scripts/validate.ts",
     "hash:verify": "node node_modules/tsx/dist/cli.mjs scripts/hash-verify.ts",

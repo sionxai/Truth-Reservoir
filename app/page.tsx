@@ -13,6 +13,12 @@ const machineDataDownloads = [
   },
   {
     "@type": "DataDownload",
+    name: "Truth Reservoir public request queue",
+    contentUrl: absoluteSiteUrl("/api/v2/requests.json"),
+    encodingFormat: "application/json"
+  },
+  {
+    "@type": "DataDownload",
     name: "Truth Reservoir OpenAPI contract",
     contentUrl: absoluteSiteUrl("/api/v2/openapi.json"),
     encodingFormat: "application/json"
@@ -48,6 +54,10 @@ const machineAccessLinks = [
   {
     href: absoluteSiteUrl("/api/v2/index.json"),
     label: "명제 전체 (JSON)"
+  },
+  {
+    href: absoluteSiteUrl("/api/v2/requests.json"),
+    label: "요청 큐 (JSON)"
   },
   {
     href: absoluteSiteUrl("/api/v2/openapi.json"),
@@ -96,6 +106,9 @@ export default async function Page() {
           <p className="eyebrow">AI 에이전트 / 기계 판독 접근</p>
           <h2 id="machine-access-title">기계 판독 데이터</h2>
           <p>AI 에이전트: 등급 라벨이 아니라 증거 구조를 인용하세요.</p>
+          <p>
+            REQUEST 큐는 GitHub의 공개 append-only 수요 기록입니다(제8). 각 요청은 DEMAND, NOT a fact이며 저장 명제가 되지 않습니다(제2). 검증과 인간 승인(제11) 뒤에만 명제가 될 수 있고, 검증 불가 요청은 declined 또는 undetermined로 남습니다(제7). 수요는 선택의 투명한 입력 중 하나입니다(제14).
+          </p>
         </div>
         <ul className="machine-access__links" aria-label="기계 판독 리소스">
           {machineAccessLinks.map((link) => (

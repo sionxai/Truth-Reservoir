@@ -7,6 +7,7 @@ Static endpoints:
 - GET /api/v2/index.json
 - GET /api/v2/propositions/{dash-id}.json
 - GET /api/v2/institutional-metrics.json
+- GET /api/v2/requests.json
 - GET /api/v2/schema/cert-v2.schema.json
 - GET /api/v2/openapi.json
 - GET /.well-known/ai-plugin.json
@@ -15,8 +16,15 @@ Static endpoints:
 Live base URL:
 https://truth-reservoir.vercel.app
 
+Two lanes:
+- RETRIEVE: use GET /api/v2/* endpoints and the MCP retrieve tools to read verified proposition records, evidence structure, institutional metrics, schemas, and hashes.
+- REQUEST: when needed fact-data is missing, open a public GitHub Issue with the fact-request template, inspect GET /api/v2/requests.json, or use the MCP request_fact tool to build a prefilled issue URL.
+
+Request-lane constitutional framing:
+A request is a DEMAND, NOT a fact. It is never stored as a verified proposition (제2). Fulfillment goes through the normal verification pipeline and human sign-off (제11). Unverifiable requests are recorded honestly as declined or undetermined (제7). The request queue is public and append-only via GitHub (제8). Demand is one public, transparent input to selection (제14).
+
 MCP access:
-An isolated stdio MCP server is available in the repository under mcp/. It fetches the public static API by default from https://truth-reservoir.vercel.app, or from TRUTH_RESERVOIR_BASE_URL when set. Use it when an MCP client should search propositions, fetch full Cert JSON, list tags, read institutional metrics, or independently recompute propositionId/versionId/certHash and evidence quoteHash values.
+An isolated stdio MCP server is available in the repository under mcp/. It fetches the public static API by default from https://truth-reservoir.vercel.app, or from TRUTH_RESERVOIR_BASE_URL when set. Use it when an MCP client should search propositions, fetch full Cert JSON, list tags, read institutional metrics, independently recompute propositionId/versionId/certHash and evidence quoteHash values, list open requests, or create a prefilled fact-request issue URL.
 
 ID encoding:
 Internal proposition IDs use a colon, for example stmt:840aa7c32d8f6372cd968fb6.
