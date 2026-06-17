@@ -593,6 +593,46 @@ button.secondary,
   padding: 18px;
 }
 
+.machine-access {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.machine-access h2,
+.machine-access p {
+  margin: 0;
+}
+
+.machine-access p:not(.eyebrow) {
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.machine-access__links {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.machine-access__links a {
+  align-items: center;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-md);
+  display: flex;
+  min-height: 44px;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.machine-access__links a:hover {
+  border-color: var(--color-primary);
+}
+
 .grade-panel {
   border-color: rgb(31 111 235 / 70%);
 }

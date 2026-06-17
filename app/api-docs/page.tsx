@@ -1,4 +1,8 @@
+import { getSiteUrl } from "../../lib/site.ts";
+
 export default function ApiDocsPage() {
+  const siteUrl = getSiteUrl();
+
   return (
     <main className="page readable-page">
       <section className="content-panel doc-panel">
@@ -81,7 +85,7 @@ export default function ApiDocsPage() {
       <section className="content-panel doc-panel">
         <h2>AI 에이전트 접근</h2>
         <p>
-          라이브 기준 URL은 <span className="mono">https://truth-reservoir.vercel.app</span>입니다. 에이전트는 등급 라벨을 결론처럼 인용하지 말고, 증거 네트워크·출처 provenance·<span className="mono">quoteHash</span> 대조·<span className="mono">reviewLog</span>를 인용해야 합니다. <span className="mono">assessment.factualGrade</span>는 탐색을 돕는 보조 신호입니다.
+          라이브 기준 URL은 <span className="mono">{siteUrl}</span>입니다. 에이전트는 등급 라벨을 결론처럼 인용하지 말고, 증거 네트워크·출처 provenance·<span className="mono">quoteHash</span> 대조·<span className="mono">reviewLog</span>를 인용해야 합니다. <span className="mono">assessment.factualGrade</span>는 탐색을 돕는 보조 신호입니다.
         </p>
         <ol>
           <li>
@@ -108,7 +112,7 @@ export default function ApiDocsPage() {
         "/absolute/path/to/truthreservoir/mcp/src/server.ts"
       ],
       "env": {
-        "TRUTH_RESERVOIR_BASE_URL": "https://truth-reservoir.vercel.app"
+        "TRUTH_RESERVOIR_BASE_URL": "${siteUrl}"
       }
     }
   }

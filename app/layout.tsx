@@ -1,9 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getSiteUrl } from "../lib/site.ts";
+import { absoluteSiteUrl, getSiteUrl } from "../lib/site.ts";
 import "./globals.css";
 
 const siteUrl = getSiteUrl();
+const machineDiscoveryLinks = [
+  {
+    rel: "alternate",
+    type: "application/json",
+    title: "Truth Reservoir proposition index",
+    href: absoluteSiteUrl("/api/v2/index.json")
+  },
+  {
+    rel: "service-desc",
+    type: "application/json",
+    title: "OpenAPI",
+    href: absoluteSiteUrl("/api/v2/openapi.json")
+  },
+  {
+    rel: "describedby",
+    type: "application/schema+json",
+    href: absoluteSiteUrl("/api/v2/schema/cert-v2.schema.json")
+  },
+  {
+    rel: "alternate",
+    type: "text/plain",
+    title: "LLM usage guide",
+    href: absoluteSiteUrl("/llms.txt")
+  }
+] as const;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -21,6 +46,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        {machineDiscoveryLinks.map((link) => (
+          <link key={`${link.rel}:${link.href}`} {...link} />
+        ))}
+      </head>
       <body>
         <header className="site-header">
           <nav className="site-nav" aria-label="주요 이동">
