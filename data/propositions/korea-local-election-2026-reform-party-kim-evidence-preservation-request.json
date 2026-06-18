@@ -1,0 +1,102 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:c890b5f8ca77961c84b58268",
+  "versionId": "ver:3644fcef725c3c57",
+  "certHash": "sha256:7d67a842955a18f4c442cdcc0857d16b4e2568c0262d5536b1a256dd300a94dc",
+  "canonicalProposition": "김정철 개혁신당 최고위원은 2026년 6월 3일 지방선거 투표용지 부족과 관련해 서울동부지방법원에 증거보전 신청을 제출했다",
+  "originalClaim": "개혁신당의 증거보전 신청.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "KBS World 보도에서 서울동부지방법원이 김정철 개혁신당 최고위원이 제출한 증거보전 신청 일부를 받아들였다는 문구가 확인된다. 신청서 원문과 정확한 제출일은 직접 확인하지 못해 등급을 제한했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202050&lang=e",
+      "title": "Court Orders Preservation of Evidence Related to Election Day Ballot Shortages",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "requests submitted by the Reform Party’s Supreme Council member Kim Jeong-cheol",
+      "quoteHash": "sha256:0c3c673be57414f4782f8381cc3d9e28b10866d75d974e8276a544ce96ce0e3b",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "KBS World 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "kbs-20260609-evidence-preservation",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "법원 결정 내용을 보도한 fetch 가능 2차 출처다. 신청서·결정문 원문은 직접 확보하지 못했다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "법원 절차와 신청 주체를 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "KBS World 보도는 신청서 원문, 사건번호, 정확한 제출일을 제공하지 않는다.",
+      "response": "신청 주체와 신청 제출 사실만 저장하고 제출일·인용 범위·법적 의미는 별도 명제나 한계로 남겼다.",
+      "errorsFound": 0,
+      "framingChecks": "증거보전 신청을 부정선거 증거 또는 선거무효 판단으로 해석하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "법원 증거보전 명령 명제와 분리해 신청 행위만 별도 기록했다.",
+      "result": "대칭 점검 완료 — 신청, 일부 인용, 현장검증, 정치 주장과 법적 결론을 분리했다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "개혁신당 직함은 신청 주체 식별에만 사용했고 신청 내용의 타당성은 판단하지 않았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 법원 절차 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다.",
+      "adoptedReason": "KBS World 본문에서 김정철 개혁신당 최고위원이 제출한 증거보전 신청이라는 점이 확인된다.",
+      "rejectedAlternatives": "정확한 제출일, 신청서 전문, 신청 인용 범위 전체, 부정선거 또는 선거무효 판단은 직접 검증하지 못했거나 판단 영역이라 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "ongoing_litigation",
+      "living_person"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 법원 절차의 신청 행위만 기록하며, 부정선거 여부나 선거무효 여부에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "증거보전 신청서 원문, 사건번호, 정확한 제출일은 직접 확인하지 못했다. 현재는 KBS World가 보도한 신청 주체와 제출 사실에 한정한다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "개혁신당",
+    "김정철",
+    "정치주장",
+    "법원",
+    "증거보전"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}

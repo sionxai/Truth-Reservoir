@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:828953a5de09837e6af2795a",
-  "versionId": "ver:142930ac67076513",
-  "certHash": "sha256:44d55273c2edd7b6488aad87f60fc0ff69e4bb5ecfd23178dbc7a412916b975e",
+  "versionId": "ver:3a43b8f7ec2c26a3",
+  "certHash": "sha256:e52ddafffd8e7351e23706ff1d175d209ea62f8468ffe308d22eaa02cb7956b5",
   "canonicalProposition": "중앙선거관리위원회는 투표용지가 선거인수보다 부족했던 투표소가 전국 50곳이었다고 발표했다",
   "originalClaim": "6-3 일부 투표소 투표용지 소진 및 부족 수치.",
   "claimNature": "measurement",
@@ -21,7 +21,7 @@
   "assessment": {
     "factualGrade": "largely_reliable",
     "status": "assessed",
-    "gradeRationale": "한겨레 본문이 중앙선관위 발표를 인용해 50곳 수치를 제시한다. 직접 1차 발표문 fetch는 실패했으므로 측정 생산 과정 감사가 남아 있다.",
+    "gradeRationale": "한겨레 본문이 중앙선관위 발표를 인용해 50곳 수치를 제시하고, KBS World는 뒤이은 정정 보도에서 금요일 발표의 50곳 수치를 확인한다. 직접 1차 발표문 fetch는 실패했으므로 측정 생산 과정 감사가 남아 있다.",
     "rubricVersion": "rubric-3.0",
     "pipelineVersion": "pipeline-3.0"
   },
@@ -48,6 +48,30 @@
         "productionIndependence": "independent",
         "productionConcerns": [],
         "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202026&lang=e",
+      "title": "NEC Raises Tally of Voting Centers Short on June 3 Ballots from 50 to 91",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "following Friday’s announcement that placed the number of affected voting centers at 50",
+      "quoteHash": "sha256:e3baa75c4a321dda0a08ca9ca6f01a2176a579a5260b0725dffc4fb74f906452",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "KBS World 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 이 출처는 후속 정정 보도라 최초 50곳 발표 사실을 보조 확인하는 용도로만 사용했다.",
+      "independenceGroupId": "kbs-20260609-nec-50-to-91",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "후속 정정 보도에서 이전 50곳 발표를 확인한다. 최종 집계가 아니라 최초 발표 사실의 보조 증거로만 계산한다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "중앙선관위의 후속 집계 보도이며 최초 50곳 발표를 명시한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
       }
     }
   ],
@@ -76,7 +100,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. 2차 재검수에서 KBS World의 curl HTTP 200 후속 보도를 추가했다.",
       "adoptedReason": "한겨레 본문에서 중앙선관위 발표와 50곳 수치가 직접 확인된다.",
       "rejectedAlternatives": "50곳이 부정선거 증거라는 결론은 헌법 제2조 위반으로 제외했다."
     }
@@ -92,7 +116,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "1차 발표자료 직접 fetch 실패. 같은 사안의 다른 수치와 기준 차이는 별도 판단유보 명제로 분리했다. 중앙선관위의 50곳 발표를 같은 수치로 확인할 수 있는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.",
+  "limitations": "1차 발표자료 직접 fetch 실패. KBS World 추가 출처는 이후 선관위가 91곳으로 집계를 올렸다고 보도하므로, 이 명제는 최초 50곳 발표 사실에만 한정된다. 같은 사안의 다른 수치와 기준 차이는 별도 판단유보 명제로 분리했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",
