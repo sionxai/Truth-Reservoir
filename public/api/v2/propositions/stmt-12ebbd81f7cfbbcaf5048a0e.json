@@ -1,0 +1,304 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:12ebbd81f7cfbbcaf5048a0e",
+  "versionId": "ver:f5d40fbd46bdac86",
+  "certHash": "sha256:e3a5123c1695b165c429839161fbdce1ae814544d0a1ab4a0d38de16f993a17b",
+  "canonicalProposition": "국민의힘은 6·3 지방선거 투표용지 부족 의혹의 근거로 2022년 오세훈 후보 득표율 수치가 적힌 투표소 사례를 제시했다: 송파구 잠실7동 제2투표소는 81.08%였고 투표가 밤 10시까지 연장됐으며, 서초구 반포4동 제3투표소(81.25%)와 강남구 청담동 제4투표소(79.48%)도 포함됐다",
+  "originalClaim": "국민의힘이 투표용지 부족 의혹의 근거로 제시한 과거 보수 강세 투표소 사례와 2022년 오세훈 후보 득표율 수치.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "명제는 국민의힘 의혹 제기 보도에서 제시된 투표소 사례와 수치의 존재만 기록한다. 파이낸셜뉴스와 한국경제 본문에서 해당 투표소명, 2022년 오세훈 후보 득표율, 잠실7동 제2투표소의 밤 10시 연장 언급이 curl HTTP 200으로 확인된다. 이 명제는 2022년 득표율과 2026년 부족 사이의 인과나 표적 여부를 주장하지 않는다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.fnnews.com/news/202606040629007170",
+      "title": "보수 강세에 집중된 투표용지 부족 지역…국민의힘 \"참정권 침해\" 공세",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "국민의힘이 주목하고 있다고 전했다",
+      "quoteHash": "sha256:4be3b9ece39c29c0da908f853bb73cd5599891db1bfe7559b0fa60492031fb16",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "fnnews-hankyung-20260604-ppp-cited-precinct-examples",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "파이낸셜뉴스가 한국경제 보도를 인용해 국민의힘의 주목 지점을 전한 문장이라 독립 출처 수를 과대계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표용지 부족 사태와 국민의힘 의혹 제기 보도를 다룬 관련 언론 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "국민의힘 귀속 문장은 한국경제 보도를 인용한 대목이다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.fnnews.com/news/202606040629007170",
+      "title": "보수 강세에 집중된 투표용지 부족 지역…국민의힘 \"참정권 침해\" 공세",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "밤 10시까지 연장됐던 잠실7동 제2투표소는 81.08%",
+      "quoteHash": "sha256:431a7626e5324030f6ced1338e77542d660972eb7b26986e65e88fd8ff354470",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "fnnews-hankyung-20260604-ppp-cited-precinct-examples",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 파이낸셜뉴스 기사에서 잠실7동 제2투표소 사례와 수치를 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "잠실7동 제2투표소의 밤 10시 연장과 81.08% 수치를 직접 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "기사의 수치 분석은 한국경제 보도를 인용한 맥락에 놓여 있다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.fnnews.com/news/202606040629007170",
+      "title": "보수 강세에 집중된 투표용지 부족 지역…국민의힘 \"참정권 침해\" 공세",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "서초구 반포4동 제3투표소(81.25%), 강남구 청담동 제4투표소(79.48%)",
+      "quoteHash": "sha256:b19421c77034b39e344a7a2dc2bba188573e0728b5a1bd66957ad905948c0eac",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "fnnews-hankyung-20260604-ppp-cited-precinct-examples",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 파이낸셜뉴스 기사에서 반포4동 제3투표소와 청담동 제4투표소 수치를 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "반포4동 제3투표소 81.25%와 청담동 제4투표소 79.48%를 직접 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "기사의 수치 분석은 한국경제 보도를 인용한 맥락에 놓여 있다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.hankyung.com/article/2026060456627",
+      "title": "\"하필…\" 용지 부족 투표소, 알고 보니 '오세훈 초강세 지역'",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다",
+      "quoteHash": "sha256:63b76c70753792c021b40e93bcde5f8826bec8ff3c4a42f8d1529da2327a0e35",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "hankyung-20260604-ppp-cited-precinct-examples",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "파이낸셜뉴스가 인용한 한국경제 원문 후보로, 국민의힘 의혹 제기를 직접 보도한다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표용지 부족 사태와 국민의힘 의혹 제기를 보도한 관련 언론 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "기사에는 분석적 표현이 포함되어 있어 의혹 제기와 사례 제시의 존재 확인에만 사용한다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.hankyung.com/article/2026060456627",
+      "title": "\"하필…\" 용지 부족 투표소, 알고 보니 '오세훈 초강세 지역'",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "송파구 잠실7동 제2투표소 역시 당시 81.08%",
+      "quoteHash": "sha256:08b1afb0beef75eaf3f03611bfff1867c3f1860c4ed787420dbfd0f2889f4be1",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "hankyung-20260604-ppp-cited-precinct-examples",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 한국경제 기사에서 잠실7동 제2투표소 수치를 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "잠실7동 제2투표소 81.08% 수치를 직접 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "기사에는 분석적 표현이 포함되어 있어 수치 존재 확인에만 사용한다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.hankyung.com/article/2026060456627",
+      "title": "\"하필…\" 용지 부족 투표소, 알고 보니 '오세훈 초강세 지역'",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "서초구 반포4동 제3투표소(81.25%)나 강남구 청담동 제4투표소(79.48%)",
+      "quoteHash": "sha256:b8d60917a6257be419083d215bbb5855365bce72daf9413f51c9c81471ac7767",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "hankyung-20260604-ppp-cited-precinct-examples",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 한국경제 기사에서 반포4동 제3투표소와 청담동 제4투표소 수치를 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "반포4동 제3투표소 81.25%와 청담동 제4투표소 79.48%를 직접 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "기사에는 분석적 표현이 포함되어 있어 수치 존재 확인에만 사용한다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202606082110001",
+      "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "투표용지가 부족했던 투표소 91곳은",
+      "quoteHash": "sha256:3f2fe7087c15e851df348d44b04943f1589753360c57125b20bc8c55dd077c22",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "khan-20260608-nec-91-region-balance",
+      "independenceLevel": "independent",
+      "independenceNote": "선관위 91곳 지역별 집계를 보도한 fetch 가능 언론 출처로, 이 명제의 대표성 한계 확인에 사용한다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표용지 부족 투표소 91곳 집계를 직접 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202606082110001",
+      "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "경기 23곳, 인천 11곳",
+      "quoteHash": "sha256:c631c90247c54b7761a03b6fb0f1108a30788a6188c02624d8759e594ca622f4",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "khan-20260608-nec-91-region-balance",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 경향신문 기사에서 경기·인천 수치를 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "경기 23곳과 인천 11곳 수치를 직접 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202606082110001",
+      "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "전북 1곳, 전남 2곳",
+      "quoteHash": "sha256:55cb317fb6268f575eb9a821fc51736a0a726ad98e2cca39f33f3da64e5c16cb",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 403이 아니었다.",
+      "independenceGroupId": "khan-20260608-nec-91-region-balance",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 경향신문 기사에서 전북·전남 수치를 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "전북 1곳과 전남 2곳 수치를 직접 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "보수 득표율이 높은 투표소만 나열하면 저수지가 독자적으로 사례를 선별해 한쪽 정치 프레임을 증폭할 수 있다.",
+      "response": "명제 주어를 국민의힘으로 한정하고, 저수지의 독자 선별이나 인과 판단이 아니라 의혹 제기 보도에서 제시된 사례의 존재만 기록했다.",
+      "errorsFound": 0,
+      "framingChecks": "투표소 선별을 저수지가 아닌 국민의힘 귀속으로 한정, 인과·표적·부정선거 표현 배제"
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "기존 국민의힘 보수 강세 집중 주장 명제와 선관위 91곳 지역분포 명제(shortage-region-list-91)를 함께 대조했다.",
+      "pairedPropositionId": "stmt:e0ac4a45ea6e4e93c3862d58",
+      "result": "대칭 점검 완료. 이 사례 선별은 대표성을 의미하지 않으며 경기 23곳·인천 11곳·전남 2곳·전북 1곳 등 다른 지역 분포를 limitations에 명시했다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "정당의 의혹 제기와 언론의 분석적 보도를 권위로 삼아 인과·표적·부정선거 판단으로 전환하지 않았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스, 한국경제, 경향신문 원문을 curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 경향신문은 사례 근거가 아니라 제14 균형 한계의 지역분포 확인에만 사용했다.",
+      "adoptedReason": "파이낸셜뉴스와 한국경제 본문에서 국민의힘 의혹 제기 보도와 잠실7동 제2투표소 81.08%·밤 10시 연장, 반포4동 제3투표소 81.25%, 청담동 제4투표소 79.48%가 확인된다.",
+      "rejectedAlternatives": "저수지가 직접 고득표 투표소를 선별했다는 표현, 2022년 득표율과 2026년 부족 사이의 인과, 표적, 부정선거 판단 표현은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 국민의힘 의혹 제기 보도에서 제시된 사례의 존재와 수치만 기록하며, 2022년 득표율과 2026년 투표용지 부족 사이의 인과, 표적 여부, 부정선거 여부는 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "국민의힘이 '제시한 사례'와 수치만 기록한다. 이 선별은 대표성을 의미하지 않으며, 부족은 보수 강세 외 지역(경기 23·인천 11·전남 2·전북 1 등)에도 분포했다(shortage-region-list-91). 2022년 득표율과 2026년 부족 간 인과는 미확정이고, 표적·부정선거 판단은 저장하지 않는다(제2).",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "국민의힘",
+    "정치주장",
+    "투표소사례",
+    "주장"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}
