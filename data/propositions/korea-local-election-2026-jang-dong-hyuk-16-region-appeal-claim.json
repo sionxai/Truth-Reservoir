@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:e4c08b2a7d9d61d419ceeda8",
-  "versionId": "ver:ad567c8dad04d044",
-  "certHash": "sha256:95a454f23337e44eb961a2ab15a6ded0f0974ea3f8a2cd91b91ee86f5f569179",
-  "canonicalProposition": "한겨레는 2026년 6월 18일 장동혁 국민의힘 대표가 16개 광역단체 모두 중앙선관위에 선거소청을 제기하자고 주장했다고 보도했다",
+  "propositionId": "stmt:e2b37f73256b9885410a5c01",
+  "versionId": "ver:20dad2e350ca26a8",
+  "certHash": "sha256:feb184e142b76f78974d45e9909010d043d16f5314d4814b56ca0faee151b0c5",
+  "canonicalProposition": "장동혁 국민의힘 대표는 2026년 6월 18일 16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다",
   "originalClaim": "장동혁 국민의힘 대표 전국 재선거 주장.",
   "claimNature": "event_occurrence",
   "classification": "F",
@@ -69,7 +69,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
       "adoptedReason": "한겨레 본문에서 주장 내용이 확인된다.",
       "rejectedAlternatives": "장동혁 대표가 부정선거를 확정했다고 표현하거나 전국 재선거가 필요하다는 판단은 제외했다."
     }
@@ -87,7 +87,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "같은 기사에 정점식 원내대표 등은 7곳 한정 소청 의견을 냈다고 보도되어 국민의힘 내부 입장은 단일하지 않았다.",
+  "limitations": "같은 기사에 정점식 원내대표 등은 7곳 한정 소청 의견을 냈다고 보도되어 국민의힘 내부 입장은 단일하지 않았다. 장동혁 대표의 16개 광역단체 소청 주장 자체를 같은 문장으로 확인할 수 있는 fetch 가능한 독립 2차 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

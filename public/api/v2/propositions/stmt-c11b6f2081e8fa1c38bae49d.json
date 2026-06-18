@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:7225ddad5f8e66d58a1291fa",
-  "versionId": "ver:1e55d9aa7fdf3c49",
-  "certHash": "sha256:3d3b5ee8bf535efebeb5117f3018739edea89901feaa0eade602c2169b1d657f",
-  "canonicalProposition": "코리아중앙데일리는 2026년 6월 7일 이재명 대통령이 6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다고 보도했다",
+  "propositionId": "stmt:c11b6f2081e8fa1c38bae49d",
+  "versionId": "ver:b5fdd7681c3d96e9",
+  "certHash": "sha256:86a300f7312a8aeb2ad06c4c47fcaa53ab06cc9c2ec395dba8df5afb2d5b7bee",
+  "canonicalProposition": "이재명 대통령은 2026년 6월 7일 6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다",
   "originalClaim": "공식 대응 및 균형 명제.",
   "claimNature": "event_occurrence",
   "classification": "F",
@@ -66,6 +66,30 @@
         "productionConcerns": [],
         "requiresMethodologyAudit": false
       }
+    },
+    {
+      "url": "https://en.yna.co.kr/view/AEN20260607005453320",
+      "title": "(2nd LD) Lee expresses deep regret over ballot shortage, orders thorough investigation",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "joint investigation by prosecutors and police",
+      "quoteHash": "sha256:6ffe360cd2e9fd027093074e56f8e7e344c84881480e5f0b1e222eaa5107301a",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "연합뉴스 영문 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "yonhap-20260607-lee-probe",
+      "independenceLevel": "independent",
+      "independenceNote": "대통령의 합동조사 지시를 보도한 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "대통령 지시와 합동조사 착수 사실을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
     }
   ],
   "reviewLog": {
@@ -93,7 +117,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전, 원출처 귀속으로 재구성, 복수출처를 추가했다.",
       "adoptedReason": "복수 fetch 가능 보도가 합동조사 지시를 확인한다.",
       "rejectedAlternatives": "조사 지시가 부정선거를 인정했다거나 반대로 부정선거가 없다는 결론은 제외했다."
     }

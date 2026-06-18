@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:4c6a770381b4b9e172cae5a3",
-  "versionId": "ver:5278dcb7a7e7c661",
-  "certHash": "sha256:ad389fcb1fc6cad709923a662cbeb0fc181267663616235b573423f923b77c1b",
-  "canonicalProposition": "한겨레는 2026년 6월 5일 윤재수 중앙선관위 선거정책실장이 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50% 기준으로 인쇄했다고 설명했다고 보도했다",
+  "propositionId": "stmt:5bf64ededa100f82163dcab1",
+  "versionId": "ver:cec528b4d62c0a01",
+  "certHash": "sha256:bb1f16fa93cd7a39de638d6508194f1e9cde9c887e908c2d5b540b87c7a4a507",
+  "canonicalProposition": "윤재수 중앙선거관리위원회 선거정책실장은 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다",
   "originalClaim": "선관위 “예상보다 높은 투표율로 준비분(50%) 초과” 해명.",
   "claimNature": "event_occurrence",
   "classification": "F",
@@ -69,7 +69,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
       "adoptedReason": "한겨레 본문에서 발화자와 설명 내용이 확인된다.",
       "rejectedAlternatives": "선관위 설명이 참이라는 결론이나 의도 해석은 제외했다."
     }
@@ -86,7 +86,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "발언의 정확한 원문 전체와 브리핑 전문은 직접 확인하지 못했다.",
+  "limitations": "발언의 정확한 원문 전체와 브리핑 전문은 직접 확인하지 못했다. 윤재수 실장의 사전투표율 증가 및 전체 선거인 수 50% 인쇄 설명을 같은 취지로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:3cf1d5276ef033046add17fb",
-  "versionId": "ver:faebcd24ba81fcfd",
-  "certHash": "sha256:f0e8f8451cb8ecfb1790a882133d456c2b4839abe90346c63d070f0b0fc9dd35",
-  "canonicalProposition": "한겨레는 2026년 6월 5일 이상능 중앙선관위 선거1국장이 투표용지 인쇄 경비의 1.1배 기준은 인쇄 경비 산출 기준일 뿐이라고 설명했다고 보도했다",
+  "propositionId": "stmt:d180b65d5e8f431a52ed1eec",
+  "versionId": "ver:2a16808b3a1d48b9",
+  "certHash": "sha256:b79aff6dc0d6a533bfb71017dfdb934c7993b8135b90ffa14697ac421406dbc8",
+  "canonicalProposition": "이상능 중앙선거관리위원회 선거1국장은 투표용지 인쇄 경비의 ‘1.1배’ 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다",
   "originalClaim": "선관위 인쇄 예산 관련 해명.",
   "claimNature": "event_occurrence",
   "classification": "F",
@@ -69,7 +69,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
       "adoptedReason": "한겨레 본문에 해당 설명 문구가 직접 확인된다.",
       "rejectedAlternatives": "145억1957만원, 82억498만원, 지역별 집행률은 fetch 가능한 출처 미확인으로 제외했다."
     }
@@ -86,7 +86,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "예산 편성액·집행액·집행률 원자료는 확인하지 못했다.",
+  "limitations": "예산 편성액·집행액·집행률 원자료는 확인하지 못했다. 이상능 국장의 1.1배 경비 기준 발언을 같은 취지로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

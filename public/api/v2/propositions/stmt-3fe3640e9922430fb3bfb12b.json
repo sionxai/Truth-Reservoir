@@ -1,15 +1,15 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:7bfc9b6fb9f6626de2c9224d",
-  "versionId": "ver:7203ea078c3a90c5",
-  "certHash": "sha256:0ab5acceccc10fdc22657c307aab8b54239c51e9476b86ef86910d313f67f9d1",
-  "canonicalProposition": "한겨레는 2026년 6월 5일 중앙선관위 설명을 인용해 투표용지 부족으로 투표가 일시 중단됐던 투표소가 전국 22곳이었다고 보도했다",
-  "originalClaim": "중단 투표소 수 22곳 보도.",
+  "propositionId": "stmt:3fe3640e9922430fb3bfb12b",
+  "versionId": "ver:304262744c2a5031",
+  "certHash": "sha256:0e27c7bf44813daebc4dbf168451407e507db610f2c73c1caf52ec8ad5128021",
+  "canonicalProposition": "중앙선거관리위원회는 투표용지 부족 투표소 50곳의 지역별 집계를 서울 33곳, 인천 6곳, 대구 4곳, 부산 3곳, 울산·경남 각 2곳으로 밝혔다",
+  "originalClaim": "부족 확인 지역의 구체 목록.",
   "claimNature": "measurement",
   "measurement": {
-    "method": "중앙선관위 설명을 인용한 한겨레 기사에서 일시 중단 투표소 수를 전사했다.",
-    "sample": "2026-06-05까지 중앙선관위가 파악했다고 보도된 투표 일시 중단 투표소",
-    "aggregationBasis": "투표용지 부족으로 잠시라도 투표가 중단된 투표소의 전국 단순 집계",
+    "method": "중앙선관위 설명을 인용한 한겨레 기사에서 지역별 부족 투표소 수를 전사했다.",
+    "sample": "선거인수보다 투표용지가 부족해 추가 송부된 용지를 사용한 투표소 50곳",
+    "aggregationBasis": "광역 시도별 투표소 수 합계",
     "producer": "중앙선거관리위원회 설명(한겨레 보도 인용)",
     "measuredAt": "2026-06-05"
   },
@@ -19,9 +19,9 @@
   "status": "active",
   "reviewMode": "human_reviewed",
   "assessment": {
-    "factualGrade": "mixed",
+    "factualGrade": "largely_reliable",
     "status": "assessed",
-    "gradeRationale": "한겨레 본문이 전국 22곳 수치를 직접 제시한다. 이후 26곳 보도가 있어 최종 실체 수치는 별도 판단유보로 남겼다.",
+    "gradeRationale": "한겨레가 선관위 설명을 바탕으로 지역별 목록을 제시한다. 정치적 특징짓기는 제외했고, 1차 자료 직접 fetch 실패 때문에 등급을 제한했다.",
     "rubricVersion": "rubric-3.0",
     "pipelineVersion": "pipeline-3.0"
   },
@@ -33,8 +33,8 @@
       "locator": {
         "section": "본문"
       },
-      "shortQuote": "투표를 멈췄다가 다시 시작한 투표소는 전국 22곳이었다",
-      "quoteHash": "sha256:d06f20b681d48187ec996d84d5d8262784b0b32e5f5cb35adf1cc4d9ef6c2e1b",
+      "shortQuote": "서울이 33곳으로 가장 많았고",
+      "quoteHash": "sha256:8dcea1c28d79da95cdb82daee3de4ddc4841ba95700ac34f5a55273c36dae25b",
       "archiveStatus": "archive_attempt_recommended",
       "retrievalMethod": "crawler",
       "retrievalLimitations": "한겨레 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
@@ -53,19 +53,19 @@
   ],
   "reviewLog": {
     "redteam": {
-      "strongestCounterargument": "코리아타임스는 2026년 6월 10일 26곳이라고 보도해 수치가 분기된다.",
-      "response": "본 명제는 6월 5일 한겨레가 인용한 선관위 설명 수치로만 한정하고 최종값은 별도 판단유보로 둔다.",
+      "strongestCounterargument": "보도는 서울 내부 구별 세부 목록도 담지만, 모든 투표소 명칭까지 검증한 것은 아니다.",
+      "response": "검증 가능한 시도별 집계만 저장하고 정당 지지 성향 같은 해석은 제외했다.",
       "errorsFound": 0,
-      "framingChecks": "수치 분기를 숨기지 않고 limitations에 공개했다."
+      "framingChecks": "국민의힘 지역 등 정치적 특징짓기를 금지하고 중립 집계만 남겼다."
     },
     "symmetry": {
       "checked": true,
-      "method": "불리한 수치 차이를 삭제하지 않고 별도 undetermined 명제로 분리했다.",
+      "method": "부족 지역 목록을 선거 결과·지지 성향과 연결하지 않았다.",
       "result": "대칭 점검 완료 — 주장·해명·법적 미확정성을 분리하고 결론 명제를 저장하지 않았다."
     },
     "authorityCheck": {
       "checked": true,
-      "note": "선관위 설명과 언론 보도를 최종값으로 확정하지 않았다."
+      "note": "선관위 설명 인용 보도를 지역 집계 확인에만 사용했다."
     },
     "humanReview": {
       "reviewer": "(인간 검수자 식별자)",
@@ -76,9 +76,9 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
-      "adoptedReason": "한겨레 본문에서 22곳 수치가 직접 확인된다.",
-      "rejectedAlternatives": "22곳이 최종 확정값이라는 표현은 이후 보도 분기 때문에 제외했다."
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+      "adoptedReason": "한겨레 본문에서 시도별 집계가 확인된다.",
+      "rejectedAlternatives": "특정 정당 지지 지역을 겨냥했다는 표현은 출처가 뒷받침하지 않아 제외했다."
     }
   },
   "sensitive": {
@@ -92,14 +92,13 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "2026-06-10 코리아타임스 보도에는 26곳 수치가 있어 집계 기준 또는 갱신 시점 차이 확인이 필요하다.",
+  "limitations": "투표소별 원자료와 전체 명칭 목록은 직접 확인하지 못했다. 시도별 집계만 저장했다. 50곳의 지역별 집계 전체를 같은 수치 조합으로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",
     "중앙선거관리위원회",
     "정치주장",
-    "측정",
-    "투표중단"
+    "지역집계"
   ],
   "createdAt": "2026-06-18",
   "updatedAt": "2026-06-18"

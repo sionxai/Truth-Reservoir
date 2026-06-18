@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:8ea97763714bdfa32c365bff",
-  "versionId": "ver:e76a84a17b34fafa",
-  "certHash": "sha256:3406f10667cfc17f7183dd7a612a64aac450bcfadd82c732e4a38f0bef80b24b",
-  "canonicalProposition": "한겨레는 2026년 6월 5일 중앙선관위 발표를 인용해 투표용지가 선거인수보다 부족했던 투표소가 전국 50곳이었다고 보도했다",
+  "propositionId": "stmt:828953a5de09837e6af2795a",
+  "versionId": "ver:142930ac67076513",
+  "certHash": "sha256:44d55273c2edd7b6488aad87f60fc0ff69e4bb5ecfd23178dbc7a412916b975e",
+  "canonicalProposition": "중앙선거관리위원회는 투표용지가 선거인수보다 부족했던 투표소가 전국 50곳이었다고 발표했다",
   "originalClaim": "6-3 일부 투표소 투표용지 소진 및 부족 수치.",
   "claimNature": "measurement",
   "measurement": {
@@ -76,7 +76,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
       "adoptedReason": "한겨레 본문에서 중앙선관위 발표와 50곳 수치가 직접 확인된다.",
       "rejectedAlternatives": "50곳이 부정선거 증거라는 결론은 헌법 제2조 위반으로 제외했다."
     }
@@ -92,7 +92,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "1차 발표자료 직접 fetch 실패. 같은 사안의 다른 수치와 기준 차이는 별도 판단유보 명제로 분리했다.",
+  "limitations": "1차 발표자료 직접 fetch 실패. 같은 사안의 다른 수치와 기준 차이는 별도 판단유보 명제로 분리했다. 중앙선관위의 50곳 발표를 같은 수치로 확인할 수 있는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

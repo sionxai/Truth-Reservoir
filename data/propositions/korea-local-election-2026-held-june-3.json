@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:2e87b3750aadd61ef8e2b6c0",
-  "versionId": "ver:be3dc4f25657720e",
-  "certHash": "sha256:2292cb7a7c9e1baa9a40042716272026c4ce31832aa52563843432a1c82451c8",
+  "versionId": "ver:6c5db73b54bf1298",
+  "certHash": "sha256:933cae69e7fe97ed0686034ad01e7d68fe09c84926a3cbdc7242f3c8ca72cc4c",
   "canonicalProposition": "2026년 6월 3일 대한민국에서 제9회 전국동시지방선거 본투표가 실시되었다",
   "originalClaim": "제9회 지방선거는 2026-06-03 전국 실시.",
   "claimNature": "event_occurrence",
@@ -66,6 +66,30 @@
         "productionConcerns": [],
         "requiresMethodologyAudit": false
       }
+    },
+    {
+      "url": "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=201993&lang=e",
+      "title": "Lee Orders Joint Probe on June 3 Ballot Paper Shortages",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "June 3 local elections",
+      "quoteHash": "sha256:ad946bcc0d30d17864f65c5376df5cb0f06de27c2e5a784cbb1db616c4796aa3",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "KBS World 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "kbs-20260607-lee-probe",
+      "independenceLevel": "independent",
+      "independenceNote": "동일 사실을 확인하는 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거일과 투표용지 부족 사태를 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
     }
   ],
   "reviewLog": {
@@ -93,7 +117,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: canonicalProposition은 유지하고, fetch 확인된 추가 독립출처를 evidence로 보강했다.",
       "adoptedReason": "복수 fetch 가능 보도가 2026년 6월 3일 지방선거 실시 사실을 직접 언급한다.",
       "rejectedAlternatives": "민주당 승리, 서울시장 패배, 부정선거 여부는 별도 검증 전 제외했다."
     }

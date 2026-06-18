@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:5d092d8e7bbbcf02b1ca1270",
-  "versionId": "ver:bdc83c15f4120281",
-  "certHash": "sha256:a474b9dd5d5e10387dd0e1dc896b2d30d4aada334e1893afaa3815a7116d0374",
-  "canonicalProposition": "코리아타임스는 서울동부지방법원이 2026년 6월 9일 서울 송파구 잠실 투표소의 투표용지 부족 관련 증거보전을 명령했다고 보도했다",
+  "propositionId": "stmt:a2c80ef637dd92021cbbd92b",
+  "versionId": "ver:e9dc057fd437ecb7",
+  "certHash": "sha256:7e2a5418bd323ccc283ad60c69fafd8f578ea6f9b80494aaf14e937bea35647a",
+  "canonicalProposition": "서울동부지방법원은 2026년 6월 9일 서울 송파구 잠실 투표소의 투표용지 부족과 관련해 증거보전을 명령했다",
   "originalClaim": "증거보전 신청→일부 인용→6-10 현장검증 중 검증 가능한 부분.",
   "claimNature": "event_occurrence",
   "classification": "F",
@@ -69,7 +69,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
       "adoptedReason": "코리아타임스 본문에서 명령 일자와 대상이 확인된다.",
       "rejectedAlternatives": "개혁신당이 6월 8일 신청했다거나 일부 인용됐다는 내용은 fetch 가능한 출처에서 확인하지 못해 제외했다."
     }
@@ -86,7 +86,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "법원 결정문 원문, 신청인, 인용 범위는 직접 확인하지 못했다.",
+  "limitations": "법원 결정문 원문, 신청인, 인용 범위는 직접 확인하지 못했다. 법원 결정문 원문이나 같은 증거보전 명령을 싣는 fetch 가능한 독립 2차 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

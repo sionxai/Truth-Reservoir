@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:f3a3f031997f81be582909f5",
-  "versionId": "ver:58b82864596f89f9",
-  "certHash": "sha256:b58e8cec0e376d4f1939f5b026b5abb4229d7e16f52ca470e1ed8fc0ca835b88",
-  "canonicalProposition": "한겨레는 2026년 6월 5일 중앙선관위 설명을 인용해 부족 투표소 50곳의 지역별 집계를 서울 33곳, 인천 6곳, 대구 4곳, 부산 3곳, 울산·경남 각 2곳으로 보도했다",
+  "propositionId": "stmt:3fe3640e9922430fb3bfb12b",
+  "versionId": "ver:304262744c2a5031",
+  "certHash": "sha256:0e27c7bf44813daebc4dbf168451407e507db610f2c73c1caf52ec8ad5128021",
+  "canonicalProposition": "중앙선거관리위원회는 투표용지 부족 투표소 50곳의 지역별 집계를 서울 33곳, 인천 6곳, 대구 4곳, 부산 3곳, 울산·경남 각 2곳으로 밝혔다",
   "originalClaim": "부족 확인 지역의 구체 목록.",
   "claimNature": "measurement",
   "measurement": {
@@ -76,7 +76,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
       "adoptedReason": "한겨레 본문에서 시도별 집계가 확인된다.",
       "rejectedAlternatives": "특정 정당 지지 지역을 겨냥했다는 표현은 출처가 뒷받침하지 않아 제외했다."
     }
@@ -92,7 +92,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "투표소별 원자료와 전체 명칭 목록은 직접 확인하지 못했다. 시도별 집계만 저장했다.",
+  "limitations": "투표소별 원자료와 전체 명칭 목록은 직접 확인하지 못했다. 시도별 집계만 저장했다. 50곳의 지역별 집계 전체를 같은 수치 조합으로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

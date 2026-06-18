@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:bb41247ba60323c32e668187",
-  "versionId": "ver:3e366bfe6c3fda86",
-  "certHash": "sha256:867cd0d1564f35c38f715859745f58d0cc833625c21604244105171c302fe3d2",
-  "canonicalProposition": "동아일보는 2026년 6월 3일 오후 4시께 서울 송파구 잠실4동 제5투표소에서 투표용지 부족으로 투표가 일시 중단됐다고 보도했다",
+  "propositionId": "stmt:921a9dc8a1b5b268e0f4c807",
+  "versionId": "ver:87866a627ed905ac",
+  "certHash": "sha256:104651a15ebeb954f9f759c47e3da8ca8e742c03bb1cda26c2935b01f458e933",
+  "canonicalProposition": "2026년 6월 3일 오후 4시께 서울 송파구 잠실4동 제5투표소에서 투표용지 부족으로 투표가 일시 중단됐다",
   "originalClaim": "6-3 일부 투표소 투표용지 소진→투표 중단·지연.",
   "claimNature": "event_occurrence",
   "classification": "F",
@@ -69,7 +69,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거 사안이라 human_reviewed 레인으로 분류했고, shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거 사안이라 human_reviewed 레인으로 분류했고, shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
       "adoptedReason": "장소, 날짜, 대략 시각, 일시 중단 사실이 fetch 가능한 보도에서 확인된다.",
       "rejectedAlternatives": "투표가 불가능했다, 선거 결과에 영향을 미쳤다, 부정선거 증거라는 표현은 제외했다."
     }
@@ -85,7 +85,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "선관위 투표록 원문과 법적 판단은 직접 확인하지 못했다. 투표 재개 및 대기 유권자 후속 사실은 별도 명제가 필요하다.",
+  "limitations": "선관위 투표록 원문과 법적 판단은 직접 확인하지 못했다. 투표 재개 및 대기 유권자 후속 사실은 별도 명제가 필요하다. 같은 특정 장소·시각(잠실4동 제5투표소, 오후 4시께)을 모두 담은 fetch 가능한 독립 2차 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

@@ -1,9 +1,9 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:9bb0f9e49c9c7a567c68610d",
-  "versionId": "ver:ab93526651249d1b",
-  "certHash": "sha256:b477bf43aac003cb4ac28f18920d570bfa04ac8e7d21a96e0383ef9f1e8ad2d1",
-  "canonicalProposition": "연합뉴스는 2026년 6월 8일 서울 송파구 개표시설 밖 일부 시위자들이 6·3 지방선거 투표용지 부족과 관련해 선거 부정을 주장했다고 보도했다",
+  "propositionId": "stmt:fafb5a05023e9541b3e07f1f",
+  "versionId": "ver:12c190e70ac4cad0",
+  "certHash": "sha256:23f8451e52235248a6925e4d0396fd663269626df35644d6ec4e2043be3461cb",
+  "canonicalProposition": "2026년 6월 8일 서울 송파구 개표시설 밖에서 일부 시위자들이 6·3 지방선거 투표용지 부족과 관련해 선거 부정을 주장했다",
   "originalClaim": "부정선거 의혹 제기 주체·근거·출처 검증되면만 저장.",
   "claimNature": "event_occurrence",
   "classification": "F",
@@ -69,7 +69,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
       "adoptedReason": "연합뉴스 본문에서 일부 시위자의 electoral fraud 주장 문구가 확인된다.",
       "rejectedAlternatives": "부정 투표·개표가 있었다는 결론, 특정 정당 지역을 노렸다는 주장은 제외했다."
     }
@@ -86,7 +86,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "연합뉴스는 일부 시위자의 구체 신원과 근거를 이 문장에 제시하지 않는다. 그래서 개별 claimant 명제는 만들지 않았다.",
+  "limitations": "연합뉴스는 일부 시위자의 구체 신원과 근거를 이 문장에 제시하지 않는다. 그래서 개별 claimant 명제는 만들지 않았다. 2026년 6월 8일 일부 시위자의 선거 부정 주장이라는 동일 사실을 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:9f64eb00d5dbf1c2d9805a43",
-  "versionId": "ver:6a3cc8487f1c722f",
-  "certHash": "sha256:2b8f393b07640451953dd16fd455d5256d264d6b64cd1ea4af47ab8d104b68cc",
+  "versionId": "ver:f96c42579e6b4152",
+  "certHash": "sha256:924cb852e03150277e553a08f73b0da8fddafb662bf52859ee490f48351046d6",
   "canonicalProposition": "2026년 6월 18일 기준 6·3 지방선거 투표용지 부족으로 투표가 일시 중단된 투표소 수는 공개 보도에서 22곳과 26곳으로 갈려 최종값이 확정되지 않았다",
   "originalClaim": "중단 투표소 수 출처별 분기(14~22곳).",
   "claimNature": "measurement",
@@ -100,7 +100,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: source-divergence 명제의 canonicalProposition은 유지하고, 기존 양쪽 출처가 fetch되는 것을 재확인했다.",
       "adoptedReason": "두 fetch 가능 보도에서 서로 다른 수치가 확인된다.",
       "rejectedAlternatives": "14곳 수치는 이번 fetch 가능한 출처에서 확인하지 못해 저장하지 않았다."
     }
