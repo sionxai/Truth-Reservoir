@@ -1648,6 +1648,224 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:5697abe486cdf727eafca8e1",
+      "versionId": "ver:dca1044d52f53a72",
+      "certHash": "sha256:0444b3b711d393c9c038d0ede87216566e69b895aff15647f04963b22aeca393",
+      "canonicalProposition": "2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다",
+      "originalClaim": "6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 집중됐는지에 대한 경험적 상태.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "2026-06-18 현재 fetch 가능한 보도와 기존 91곳 지역분포 명제를 대조해 보수 강세 집중 여부를 판단하기 위한 필요 데이터 공개 여부를 점검했다.",
+        "sample": "6·3 지방선거 투표용지 부족 투표소 91곳 및 국민의힘이 보도에서 제시한 일부 보수 강세 투표소 사례",
+        "aggregationBasis": "부족 투표소 전체의 정파 성향, 전국 투표소 정파 분포 기준선, 재현 가능한 통계 분석의 공개 여부",
+        "producer": "진실저수지 검수 기록",
+        "measuredAt": "2026-06-18"
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-18",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": null,
+        "status": "undetermined",
+        "gradeRationale": "편중 주장은 극단 사례 일부에 의존하며 91곳 전수 정파성향·전국 기준선 대조 분석이 부재하다. 경합하는 비표적(인쇄기준·투표율) 설명도 정량 검증되지 않았다. 따라서 편중 여부는 현재 재현 가능한 증거로 확정·반증 모두 불가하다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.fnnews.com/news/202606040629007170",
+          "title": "보수 강세에 집중된 투표용지 부족 지역…국민의힘 \"참정권 침해\" 공세",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "전통적인 보수 강세 지역이라는 점에 국민의힘이 주목",
+          "quoteHash": "sha256:b1bddd616db1e68f46555fa06c053821bf0a98303a19ddb8f084027881a71fae",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 이 문장은 보수 강세 귀속을 저수지의 사실판정이 아니라 국민의힘의 주목 지점으로 귀속한다.",
+          "independenceGroupId": "fnnews-20260604-ppp-conservative-attribution",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "파이낸셜뉴스가 한국경제 보도를 인용한 보수 강세 지역 귀속 문장이라 독립 출처 수를 과대계산하지 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "투표용지 부족 사태와 정치권 반응을 보도한 관련 언론 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "보수 강세 지역 귀속은 기사 안에서 한국경제 보도를 인용한다.",
+              "이 증거는 주장 존재 확인에만 사용하고 집중 여부의 분석 증거로 사용하지 않는다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.fnnews.com/news/202606040629007170",
+          "title": "보수 강세에 집중된 투표용지 부족 지역…국민의힘 \"참정권 침해\" 공세",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "잠실7동 제2투표소는 81.08%의 득표율을 보였다",
+          "quoteHash": "sha256:0216fb0a786c94c790050638177cfcd46ee3cac7d6c0751dee0ff6f9f631f763",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 이 문장은 국민의힘 의혹 보도에서 제시된 일부 사례의 수치 확인에만 사용한다.",
+          "independenceGroupId": "fnnews-20260604-ppp-precinct-example",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 파이낸셜뉴스 기사에서 국민의힘 보수 강세 의혹의 예시 수치를 확인한다. 독립 출처 수를 늘리지는 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "투표용지 부족 사태와 일부 투표소 사례를 보도한 관련 언론 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "일부 사례는 대표성 있는 전수 분석이 아니므로 편중 결론의 근거로 사용하지 않는다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.hankyung.com/article/2026060456627",
+          "title": "\"하필…\" 용지 부족 투표소, 알고 보니 '오세훈 초강세 지역'",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다",
+          "quoteHash": "sha256:63b76c70753792c021b40e93bcde5f8826bec8ff3c4a42f8d1529da2327a0e35",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 한국경제는 이 대목을 송언석 국민의힘 원내대표의 의혹 제기로 귀속한다.",
+          "independenceGroupId": "hankyung-20260604-ppp-conservative-concentration-claim",
+          "independenceLevel": "independent",
+          "independenceNote": "국민의힘 강세 지역 집중 의혹 제기를 직접 보도한 fetch 가능 언론 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "투표용지 부족 사태와 국민의힘 주장을 보도한 관련 언론 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "기사에는 분석적 표현이 포함되어 있어 주장 존재 확인에만 사용한다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.khan.co.kr/article/202606082110001",
+          "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "투표용지가 부족했던 투표소 91곳은",
+          "quoteHash": "sha256:3f2fe7087c15e851df348d44b04943f1589753360c57125b20bc8c55dd077c22",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 이 문장은 전수 분석 필요 모집단의 규모 확인에 사용한다.",
+          "independenceGroupId": "khan-20260608-nec-91-region",
+          "independenceLevel": "independent",
+          "independenceNote": "선관위 2026-06-08 지역별 집계를 보도한 fetch 가능 언론 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "투표용지 부족 투표소 91곳 집계와 지역별 분포를 보도했다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "선관위 원자료 직접 fetch가 아니라 언론 전재에 의존한다."
+            ],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://www.khan.co.kr/article/202606082110001",
+          "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "경기 23곳, 인천 11곳, 대구 4곳",
+          "quoteHash": "sha256:0e48850f0cc506878476c8812e80fb8e648d3f68fd133231a7157da6cd8e5c51",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 지역분포가 서울 일부 사례로만 환원되지 않음을 확인하는 보조 증거다.",
+          "independenceGroupId": "khan-20260608-nec-91-region",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 경향신문 기사에서 지역별 세부 수치를 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "경기·인천·대구 수치를 직접 보도했다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "선관위 원자료 직접 fetch가 아니라 언론 전재에 의존한다."
+            ],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "공개된 통계분석을 찾지 못했다는 사실만으로 실제 편중이 없다고 결론낼 수 없고, 일부 보수 강세 사례는 실제로 존재한다.",
+          "response": "일부 사례와 91곳 지역분포는 각각 별도 사실로 보존하되, 전체 91곳 정파성향과 전국 기준선 대조 분석이 없으므로 편중 여부를 undetermined로 저장했다.",
+          "errorsFound": 0,
+          "framingChecks": "집중됐다, 집중되지 않았다, 표적이었다, 부정선거였다는 verdict 표현을 모두 배제했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "국민의힘 주장 명제, 국민의힘 예시 투표소 명제, 선관위 91곳 지역분포 명제를 함께 대조했다.",
+          "pairedPropositionId": "stmt:6ec9cbff53f71a505b22823f",
+          "result": "대칭 점검 완료 — 주장 존재와 분포 사실은 보존하되 보수 강세 집중 여부는 판단유보로 기록했다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "정당의 의혹 제기나 언론의 분석적 제목을 전수 통계 분석으로 간주하지 않았다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-18",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "정치·선거·측정 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스·한국경제·경향신문 본문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 91곳 전체 정파성향과 전국 기준선 대조 통계분석은 fetch 가능한 출처에서 확인하지 못했다.",
+          "adoptedReason": "편중 여부 자체는 재현 가능한 전수 분석이 없어 판단유보로 저장하는 것이 제6조와 제7조에 부합한다.",
+          "rejectedAlternatives": "보수 강세 지역에 집중됐다는 결론, 보수 강세 지역에 집중되지 않았다는 반대 결론, 투표율 기반 기계적 설명, 표적·인과·부정선거 판단은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "unknown",
+        "presumptionNotice": "이 명제는 2026-06-18 기준 보수 강세 지역 편중 여부의 경험적 상태가 판단유보임을 기록하며, 특정 정당 지역 표적 여부·고의성·부정선거 여부에 관한 사실 또는 법적 판단은 미확정이다."
+      },
+      "undeterminedItems": [
+        "91곳(또는 140곳) 전체 투표소의 정파 성향 데이터",
+        "전국 투표소 정파 분포 기준선(base rate)",
+        "편중에 대한 재현 가능한 통계 분석"
+      ],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "본 저수지는 편중을 사실로도, 비편중을 사실로도 저장하지 않는다. 검증된 분포(shortage-region-list-91)와 국민의힘 주장(ppp-conservative-concentration-claim)은 별도 보관한다. 표적·인과·부정선거 판단은 저장하지 않는다(제2).",
+      "tags": [
+        "2026지방선거",
+        "투표용지부족",
+        "보수강세",
+        "판단유보",
+        "측정",
+        "정치주장"
+      ],
+      "createdAt": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:a2c80ef637dd92021cbbd92b",
       "versionId": "ver:304211e403be8350",
       "certHash": "sha256:329bb856fa0bcaeb574d856872e63ae75499b305909109d568387cfd3e60090d",
@@ -1766,6 +1984,187 @@
         "정치주장",
         "법원",
         "증거보전"
+      ],
+      "createdAt": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:1426e28acba929903bbe8736",
+      "versionId": "ver:dcf30b9c9c58b78f",
+      "certHash": "sha256:b56923adcae514fec6bc0b1c13336271dbf89d57a34a1aed7d265b782546aaba",
+      "canonicalProposition": "더불어민주당은 2026년 6월 7일 강준현 수석대변인을 통해 장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다",
+      "originalClaim": "장동혁 국민의힘 대표의 재선거 주장에 대한 더불어민주당의 반박 입장.",
+      "claimNature": "event_occurrence",
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-06-18",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "SBS 본문에서 강준현 더불어민주당 수석대변인이 장동혁 대표의 재선거 주장에 관해 민주당 논의 부재, 장 대표 개인 요구 취지, 선관위 독립 지위와 개혁기구 검토를 언급했다는 문장이 curl HTTP 200으로 확인된다. 명제는 민주당 입장 표명의 존재만 기록한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330",
+          "title": "민주당, 장동혁 '재선거'에 \"본질 흐리지 말라…선관위 개혁기구 검토\"",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "관련해서 민주당에서는 논의한 적이 없다",
+          "quoteHash": "sha256:15c1603f8915f9bc585db7cd05f156b94a05abdb61438efb11c4f6c182328634",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 민주당 입장 표명의 존재 확인에만 사용한다.",
+          "independenceGroupId": "sbs-20260607-dpk-response",
+          "independenceLevel": "independent",
+          "independenceNote": "강준현 수석대변인의 기자간담회 발언을 보도한 fetch 가능 언론 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "투표용지 부족 사태와 재선거 주장에 대한 민주당 반응을 보도했다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "발언 전문이 아닌 보도 전재이므로 민주당 입장 존재 확인에만 사용한다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330",
+          "title": "민주당, 장동혁 '재선거'에 \"본질 흐리지 말라…선관위 개혁기구 검토\"",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "국민의힘 의원들 전반이 아니라 장 대표 혼자 요구한 것이 아닌가",
+          "quoteHash": "sha256:4c018c61461e9cc58f2ea8bb93b12930618dda132f6448a8f4d97d626753654c",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 민주당이 장동혁 대표 개인 요구 취지로 선을 그은 대목이다.",
+          "independenceGroupId": "sbs-20260607-dpk-response",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 SBS 기사에서 재선거 주장의 주체를 장 대표 개인 요구 취지로 언급한 부분을 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "투표용지 부족 사태와 재선거 주장에 대한 민주당 반응을 보도했다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "발언 전문이 아닌 보도 전재이므로 민주당 입장 존재 확인에만 사용한다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330",
+          "title": "민주당, 장동혁 '재선거'에 \"본질 흐리지 말라…선관위 개혁기구 검토\"",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "선관위는 헌법상 독립적 지위를 가지고 있지만",
+          "quoteHash": "sha256:46bf5b1199a9b2869db16f987b60efaa756d810d4bc5fc097aad70d98b02ca03",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 선관위의 권한·지위 문제를 언급한 대목으로만 사용한다.",
+          "independenceGroupId": "sbs-20260607-dpk-response",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 SBS 기사에서 선관위 독립 지위 언급을 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "투표용지 부족 사태와 재선거 주장에 대한 민주당 반응을 보도했다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "발언 전문이 아닌 보도 전재이므로 민주당 입장 존재 확인에만 사용한다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330",
+          "title": "민주당, 장동혁 '재선거'에 \"본질 흐리지 말라…선관위 개혁기구 검토\"",
+          "retrievedAt": "2026-06-18",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "선관위 개혁 기구도 검토하고 있다",
+          "quoteHash": "sha256:d77bee2d0c093a8b47703f6edae207a877514da9e3cf1de5829b1700ab94f964",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 민주당의 선관위 관련 대응 입장 확인에만 사용한다.",
+          "independenceGroupId": "sbs-20260607-dpk-response",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 SBS 기사에서 선관위 개혁기구 검토 언급을 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "투표용지 부족 사태와 재선거 주장에 대한 민주당 반응을 보도했다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "발언 전문이 아닌 보도 전재이므로 민주당 입장 존재 확인에만 사용한다."
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "민주당의 반박을 저장하면 국민의힘 주장에 대한 반대 평가처럼 읽힐 수 있다.",
+          "response": "명제는 민주당이 그렇게 밝혔다는 입장 표명 사실만 저장하고, 재선거 필요성이나 장동혁 대표 주장의 타당성 판단은 제외했다.",
+          "errorsFound": 0,
+          "framingChecks": "민주당 주장의 옳고 그름, 선관위 책임, 선거 무효 여부를 사실로 단정하지 않았다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "국민의힘 보수 강세 집중 주장 및 장동혁 대표 선거소청 주장 명제와 함께 대조했다.",
+          "pairedPropositionId": "stmt:e2b37f73256b9885410a5c01",
+          "result": "대칭 점검 완료 — 제14조 균형을 위해 민주당의 공개 반박 입장도 claimed-by-X 형식으로 보존했다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "정당 대변인 발언을 권위 있는 사실판정으로 사용하지 않고 입장 표명의 존재로만 기록했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-18",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 SBS 원문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다.",
+          "adoptedReason": "SBS 본문에서 강준현 수석대변인의 민주당 논의 부재, 장동혁 대표 개인 요구 취지, 선관위 독립 지위와 개혁기구 검토 언급이 확인된다.",
+          "rejectedAlternatives": "민주당 반박을 근거로 보수 강세 집중 의혹이 거짓이라고 판정하거나, 장동혁 대표의 주장을 부정선거 주장으로 확장하는 표현은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "unknown",
+        "presumptionNotice": "이 명제는 더불어민주당의 입장 표명 존재만 기록하며, 재선거 필요성·선관위 책임·선거 효력에 관한 사실 또는 법적 판단은 미확정이다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 제14조 균형을 위해 더불어민주당이 밝힌 입장 자체만 기록한다. 재선거 필요성, 선관위 책임, 국민의힘 또는 장동혁 대표 주장의 타당성은 판단하지 않는다.",
+      "tags": [
+        "2026지방선거",
+        "투표용지부족",
+        "더불어민주당",
+        "강준현",
+        "장동혁",
+        "정치주장",
+        "주장"
       ],
       "createdAt": "2026-06-18",
       "updatedAt": "2026-06-18"
@@ -5584,15 +5983,15 @@
     }
   ],
   "meta": {
-    "total": 38,
+    "total": 40,
     "dataVersion": "2026.06.18",
     "certVersion": "2.1",
     "generatedAt": "2026-06-18",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalEntries": 38,
-      "totalAssessed": 38,
+      "totalEntries": 40,
+      "totalAssessed": 39,
       "openCorrectionRequests": 0
     },
     "propositions": [
@@ -5641,8 +6040,16 @@
         "path": "/api/v2/propositions/stmt-0f10895abcff81a55ff783d6.json"
       },
       {
+        "propositionId": "stmt:5697abe486cdf727eafca8e1",
+        "path": "/api/v2/propositions/stmt-5697abe486cdf727eafca8e1.json"
+      },
+      {
         "propositionId": "stmt:a2c80ef637dd92021cbbd92b",
         "path": "/api/v2/propositions/stmt-a2c80ef637dd92021cbbd92b.json"
+      },
+      {
+        "propositionId": "stmt:1426e28acba929903bbe8736",
+        "path": "/api/v2/propositions/stmt-1426e28acba929903bbe8736.json"
       },
       {
         "propositionId": "stmt:2e87b3750aadd61ef8e2b6c0",

@@ -1,0 +1,181 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:1426e28acba929903bbe8736",
+  "versionId": "ver:dcf30b9c9c58b78f",
+  "certHash": "sha256:b56923adcae514fec6bc0b1c13336271dbf89d57a34a1aed7d265b782546aaba",
+  "canonicalProposition": "더불어민주당은 2026년 6월 7일 강준현 수석대변인을 통해 장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다",
+  "originalClaim": "장동혁 국민의힘 대표의 재선거 주장에 대한 더불어민주당의 반박 입장.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "SBS 본문에서 강준현 더불어민주당 수석대변인이 장동혁 대표의 재선거 주장에 관해 민주당 논의 부재, 장 대표 개인 요구 취지, 선관위 독립 지위와 개혁기구 검토를 언급했다는 문장이 curl HTTP 200으로 확인된다. 명제는 민주당 입장 표명의 존재만 기록한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330",
+      "title": "민주당, 장동혁 '재선거'에 \"본질 흐리지 말라…선관위 개혁기구 검토\"",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "관련해서 민주당에서는 논의한 적이 없다",
+      "quoteHash": "sha256:15c1603f8915f9bc585db7cd05f156b94a05abdb61438efb11c4f6c182328634",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 민주당 입장 표명의 존재 확인에만 사용한다.",
+      "independenceGroupId": "sbs-20260607-dpk-response",
+      "independenceLevel": "independent",
+      "independenceNote": "강준현 수석대변인의 기자간담회 발언을 보도한 fetch 가능 언론 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표용지 부족 사태와 재선거 주장에 대한 민주당 반응을 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "발언 전문이 아닌 보도 전재이므로 민주당 입장 존재 확인에만 사용한다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330",
+      "title": "민주당, 장동혁 '재선거'에 \"본질 흐리지 말라…선관위 개혁기구 검토\"",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "국민의힘 의원들 전반이 아니라 장 대표 혼자 요구한 것이 아닌가",
+      "quoteHash": "sha256:4c018c61461e9cc58f2ea8bb93b12930618dda132f6448a8f4d97d626753654c",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 민주당이 장동혁 대표 개인 요구 취지로 선을 그은 대목이다.",
+      "independenceGroupId": "sbs-20260607-dpk-response",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 SBS 기사에서 재선거 주장의 주체를 장 대표 개인 요구 취지로 언급한 부분을 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표용지 부족 사태와 재선거 주장에 대한 민주당 반응을 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "발언 전문이 아닌 보도 전재이므로 민주당 입장 존재 확인에만 사용한다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330",
+      "title": "민주당, 장동혁 '재선거'에 \"본질 흐리지 말라…선관위 개혁기구 검토\"",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "선관위는 헌법상 독립적 지위를 가지고 있지만",
+      "quoteHash": "sha256:46bf5b1199a9b2869db16f987b60efaa756d810d4bc5fc097aad70d98b02ca03",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 선관위의 권한·지위 문제를 언급한 대목으로만 사용한다.",
+      "independenceGroupId": "sbs-20260607-dpk-response",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 SBS 기사에서 선관위 독립 지위 언급을 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표용지 부족 사태와 재선거 주장에 대한 민주당 반응을 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "발언 전문이 아닌 보도 전재이므로 민주당 입장 존재 확인에만 사용한다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330",
+      "title": "민주당, 장동혁 '재선거'에 \"본질 흐리지 말라…선관위 개혁기구 검토\"",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "선관위 개혁 기구도 검토하고 있다",
+      "quoteHash": "sha256:d77bee2d0c093a8b47703f6edae207a877514da9e3cf1de5829b1700ab94f964",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 민주당의 선관위 관련 대응 입장 확인에만 사용한다.",
+      "independenceGroupId": "sbs-20260607-dpk-response",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 SBS 기사에서 선관위 개혁기구 검토 언급을 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표용지 부족 사태와 재선거 주장에 대한 민주당 반응을 보도했다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "발언 전문이 아닌 보도 전재이므로 민주당 입장 존재 확인에만 사용한다."
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "민주당의 반박을 저장하면 국민의힘 주장에 대한 반대 평가처럼 읽힐 수 있다.",
+      "response": "명제는 민주당이 그렇게 밝혔다는 입장 표명 사실만 저장하고, 재선거 필요성이나 장동혁 대표 주장의 타당성 판단은 제외했다.",
+      "errorsFound": 0,
+      "framingChecks": "민주당 주장의 옳고 그름, 선관위 책임, 선거 무효 여부를 사실로 단정하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "국민의힘 보수 강세 집중 주장 및 장동혁 대표 선거소청 주장 명제와 함께 대조했다.",
+      "pairedPropositionId": "stmt:e2b37f73256b9885410a5c01",
+      "result": "대칭 점검 완료 — 제14조 균형을 위해 민주당의 공개 반박 입장도 claimed-by-X 형식으로 보존했다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "정당 대변인 발언을 권위 있는 사실판정으로 사용하지 않고 입장 표명의 존재로만 기록했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 SBS 원문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다.",
+      "adoptedReason": "SBS 본문에서 강준현 수석대변인의 민주당 논의 부재, 장동혁 대표 개인 요구 취지, 선관위 독립 지위와 개혁기구 검토 언급이 확인된다.",
+      "rejectedAlternatives": "민주당 반박을 근거로 보수 강세 집중 의혹이 거짓이라고 판정하거나, 장동혁 대표의 주장을 부정선거 주장으로 확장하는 표현은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 더불어민주당의 입장 표명 존재만 기록하며, 재선거 필요성·선관위 책임·선거 효력에 관한 사실 또는 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 제14조 균형을 위해 더불어민주당이 밝힌 입장 자체만 기록한다. 재선거 필요성, 선관위 책임, 국민의힘 또는 장동혁 대표 주장의 타당성은 판단하지 않는다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "더불어민주당",
+    "강준현",
+    "장동혁",
+    "정치주장",
+    "주장"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}
