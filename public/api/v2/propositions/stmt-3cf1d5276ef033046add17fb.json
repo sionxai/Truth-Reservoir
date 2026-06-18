@@ -1,0 +1,99 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:3cf1d5276ef033046add17fb",
+  "versionId": "ver:faebcd24ba81fcfd",
+  "certHash": "sha256:f0e8f8451cb8ecfb1790a882133d456c2b4839abe90346c63d070f0b0fc9dd35",
+  "canonicalProposition": "한겨레는 2026년 6월 5일 이상능 중앙선관위 선거1국장이 투표용지 인쇄 경비의 1.1배 기준은 인쇄 경비 산출 기준일 뿐이라고 설명했다고 보도했다",
+  "originalClaim": "선관위 인쇄 예산 관련 해명.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "한겨레 본문에서 이상능 선관위 선거1국장의 예산 산출 기준 설명이 확인된다. 예산 총액과 집행률 수치는 별도 출처가 없어 제외했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.hani.co.kr/arti/politics/election/1262187.html",
+      "title": "‘투표용지 부족’ 투표소, 50곳이나 됐다…22곳선 투표 일시 중단",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "‘1.1배’는 인쇄 경비 산출을 위한 기준일 뿐",
+      "quoteHash": "sha256:07175a5e9ca7c0e3d6f7debf7f3789a55affc3e5b15329fb5fb63e2c226859a0",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "한겨레 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "hani-20260605-ballot-shortage",
+      "independenceLevel": "independent",
+      "independenceNote": "해당 사실을 보도한 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 상황, 선관위 설명, 법원 절차 또는 정치권 발언을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "예산 산출 기준 설명은 실제 예산 편성·집행액 검증을 대체하지 못한다.",
+      "response": "예산 총액이나 집행률을 저장하지 않고 선관위 관계자의 설명 발화만 저장했다.",
+      "errorsFound": 0,
+      "framingChecks": "예산 미집행을 고의 또는 부정으로 연결하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "예산 관련 의혹을 다룰 때 공식 해명도 같이 기록했다.",
+      "result": "대칭 점검 완료 — 주장·해명·법적 미확정성을 분리하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "발화자 직책은 식별 정보이며 설명의 진실성을 보증하지 않는다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "adoptedReason": "한겨레 본문에 해당 설명 문구가 직접 확인된다.",
+      "rejectedAlternatives": "145억1957만원, 82억498만원, 지역별 집행률은 fetch 가능한 출처 미확인으로 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 선거 관리·정치 주장·법적 절차의 관찰 가능한 사실만 기록하며, 부정선거 여부나 책임 소재에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "예산 편성액·집행액·집행률 원자료는 확인하지 못했다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "정치주장",
+    "예산해명"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}

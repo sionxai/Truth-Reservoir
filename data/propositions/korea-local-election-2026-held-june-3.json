@@ -1,0 +1,122 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:2e87b3750aadd61ef8e2b6c0",
+  "versionId": "ver:be3dc4f25657720e",
+  "certHash": "sha256:2292cb7a7c9e1baa9a40042716272026c4ce31832aa52563843432a1c82451c8",
+  "canonicalProposition": "2026년 6월 3일 대한민국에서 제9회 전국동시지방선거 본투표가 실시되었다",
+  "originalClaim": "제9회 지방선거는 2026-06-03 전국 실시.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "동아일보와 연합뉴스가 2026년 6월 3일 지방선거 실시 사실을 각각 보도했다. 공식 선관위 원문 fetch는 실패했으므로 2차 출처 기반으로 등급을 제한했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.donga.com/news/Politics/article/all/20260603/134042934/1",
+      "title": "서울 강남권 투표용지 부족 초유의 사태…국힘 “책임 묻겠다”",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "제9회 전국동시지방선거 본투표가 실시된 3일",
+      "quoteHash": "sha256:663c69f1387afa7ad0ed1bcf82bcb89a20576f8d1af0c33be51d59f69f99c3c0",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "동아일보 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "donga-20260603-ballot-shortage",
+      "independenceLevel": "independent",
+      "independenceNote": "해당 사실을 보도한 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 상황, 선관위 설명, 법원 절차 또는 정치권 발언을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://en.yna.co.kr/view/AEN20260608005900315",
+      "title": "Protest over ballot shortage in local elections enters 4th day",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "the June 3 local elections",
+      "quoteHash": "sha256:8ac1cb6d98b132de081607ec7bc957d381b34d264c9510b7e12a4543af36dd3d",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "연합뉴스 영문 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "yonhap-20260608-protest",
+      "independenceLevel": "independent",
+      "independenceNote": "해당 사실을 보도한 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 상황, 선관위 설명, 법원 절차 또는 정치권 발언을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "공식 선관위 일정 페이지가 직접 fetch되지 않아 전국 실시 사실의 1차 출처 확인이 부족하다는 반론이 있다.",
+      "response": "fetch 가능한 복수 2차 보도에 한정해 실시 사실만 저장하고 결과·정당 평가를 포함하지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "선거 결과, 승패 평가, 부정 여부를 제외했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "정당명이나 유불리 판단 없이 선거 실시 일자만 남겼다.",
+      "result": "대칭 점검 완료 — 주장·해명·법적 미확정성을 분리하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "언론 보도를 실시 사실 확인에만 사용했고 선거의 적법성 판단 권위로 사용하지 않았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "adoptedReason": "복수 fetch 가능 보도가 2026년 6월 3일 지방선거 실시 사실을 직접 언급한다.",
+      "rejectedAlternatives": "민주당 승리, 서울시장 패배, 부정선거 여부는 별도 검증 전 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 선거 관리·정치 주장·법적 절차의 관찰 가능한 사실만 기록하며, 부정선거 여부나 책임 소재에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "선관위 공식 일정 또는 결과 페이지는 이번 fetch에서 본문 확인이 되지 않아 2차 보도에 의존했다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "정치주장",
+    "선거일"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}

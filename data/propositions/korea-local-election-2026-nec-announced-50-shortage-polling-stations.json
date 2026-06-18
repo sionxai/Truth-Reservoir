@@ -1,0 +1,106 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:8ea97763714bdfa32c365bff",
+  "versionId": "ver:e76a84a17b34fafa",
+  "certHash": "sha256:3406f10667cfc17f7183dd7a612a64aac450bcfadd82c732e4a38f0bef80b24b",
+  "canonicalProposition": "한겨레는 2026년 6월 5일 중앙선관위 발표를 인용해 투표용지가 선거인수보다 부족했던 투표소가 전국 50곳이었다고 보도했다",
+  "originalClaim": "6-3 일부 투표소 투표용지 소진 및 부족 수치.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "중앙선관위 발표를 인용한 한겨레 기사에서 전국 부족 투표소 수를 전사했다.",
+    "sample": "2026-06-05까지 중앙선관위가 파악했다고 보도된 투표용지 부족 투표소",
+    "aggregationBasis": "선거인수보다 투표용지가 부족했던 투표소의 전국 단순 집계",
+    "producer": "중앙선거관리위원회 발표(한겨레 보도 인용)",
+    "measuredAt": "2026-06-05"
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "한겨레 본문이 중앙선관위 발표를 인용해 50곳 수치를 제시한다. 직접 1차 발표문 fetch는 실패했으므로 측정 생산 과정 감사가 남아 있다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.hani.co.kr/arti/politics/election/1262187.html",
+      "title": "‘투표용지 부족’ 투표소, 50곳이나 됐다…22곳선 투표 일시 중단",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "투표소가 전국 50곳이었다고 밝혔다",
+      "quoteHash": "sha256:f6a2d02caf45ebd3c5ac7f09d91831a69f12e3cd387ec6697f7d01a00efdd258",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "한겨레 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "hani-20260605-ballot-shortage",
+      "independenceLevel": "independent",
+      "independenceNote": "해당 사실을 보도한 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 상황, 선관위 설명, 법원 절차 또는 정치권 발언을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "선관위 원문 발표자료가 직접 확인되지 않아 한겨레의 전재 정확성에 의존한다.",
+      "response": "수치를 현실 자체가 아니라 한겨레가 인용한 선관위 발표 측정값으로 제한했다.",
+      "errorsFound": 0,
+      "framingChecks": "50곳 수치만 저장하고 고의성·부정선거 해석을 붙이지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "부족 수치와 별도로 선관위 해명·법적 미확정 명제를 함께 수집했다.",
+      "result": "대칭 점검 완료 — 주장·해명·법적 미확정성을 분리하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "선관위 발표라는 권위에 기대지 않고 fetch 가능한 기사 문구만 증거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "adoptedReason": "한겨레 본문에서 중앙선관위 발표와 50곳 수치가 직접 확인된다.",
+      "rejectedAlternatives": "50곳이 부정선거 증거라는 결론은 헌법 제2조 위반으로 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 선거 관리·정치 주장·법적 절차의 관찰 가능한 사실만 기록하며, 부정선거 여부나 책임 소재에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "1차 발표자료 직접 fetch 실패. 같은 사안의 다른 수치와 기준 차이는 별도 판단유보 명제로 분리했다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "정치주장",
+    "측정",
+    "투표소수"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}

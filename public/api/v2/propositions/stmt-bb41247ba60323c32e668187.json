@@ -1,0 +1,98 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:bb41247ba60323c32e668187",
+  "versionId": "ver:3e366bfe6c3fda86",
+  "certHash": "sha256:867cd0d1564f35c38f715859745f58d0cc833625c21604244105171c302fe3d2",
+  "canonicalProposition": "동아일보는 2026년 6월 3일 오후 4시께 서울 송파구 잠실4동 제5투표소에서 투표용지 부족으로 투표가 일시 중단됐다고 보도했다",
+  "originalClaim": "6-3 일부 투표소 투표용지 소진→투표 중단·지연.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "동아일보 본문과 사진설명에서 잠실4동 제5투표소, 오후 4시께, 투표 일시 중단이 확인된다. 투표 재개 시각은 별도 사실이라 본 명제에는 포함하지 않았다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.donga.com/news/Politics/article/all/20260603/134042934/1",
+      "title": "서울 강남권 투표용지 부족 초유의 사태…국힘 “책임 묻겠다”",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문 사진설명"
+      },
+      "shortQuote": "오후 4시께 투표가 일시 중단됐다",
+      "quoteHash": "sha256:ff6d48f0b1c4e9ec90cbb359953bdd41bf3a2f7ee743cb6004266991e5f4f66e",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "동아일보 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "donga-20260603-ballot-shortage",
+      "independenceLevel": "independent",
+      "independenceNote": "자동 fetch 가능 언론 출처이며 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 투표소 상황을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "해당 보도는 언론 현장 보도이며 선관위 투표록 원문은 직접 확인하지 못했다.",
+      "response": "명제를 동아일보가 보도한 장소·시각·중단 사실에 한정하고 원인·책임·부정 여부는 포함하지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "투표 중단 사실만 기록하고 고의성·부정선거 결론을 배제했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "개별 중단 사례와 별도로 선관위 설명·수치 분기·공식 조사 지시를 함께 기록했다.",
+      "result": "대칭 점검 완료 — 사건 사실과 해석 결론을 분리했다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "동아일보 보도를 현장 사건 확인에만 사용하고 법적 책임 판단 권위로 사용하지 않았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거 사안이라 human_reviewed 레인으로 분류했고, shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "adoptedReason": "장소, 날짜, 대략 시각, 일시 중단 사실이 fetch 가능한 보도에서 확인된다.",
+      "rejectedAlternatives": "투표가 불가능했다, 선거 결과에 영향을 미쳤다, 부정선거 증거라는 표현은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 투표소에서 보도된 일시 중단 사실만 기록하며, 부정선거 여부나 책임 소재에 관한 판단은 포함하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "선관위 투표록 원문과 법적 판단은 직접 확인하지 못했다. 투표 재개 및 대기 유권자 후속 사실은 별도 명제가 필요하다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "잠실4동",
+    "투표중단",
+    "정치주장"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}

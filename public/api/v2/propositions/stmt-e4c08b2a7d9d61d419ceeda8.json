@@ -1,0 +1,102 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:e4c08b2a7d9d61d419ceeda8",
+  "versionId": "ver:ad567c8dad04d044",
+  "certHash": "sha256:95a454f23337e44eb961a2ab15a6ded0f0974ea3f8a2cd91b91ee86f5f569179",
+  "canonicalProposition": "한겨레는 2026년 6월 18일 장동혁 국민의힘 대표가 16개 광역단체 모두 중앙선관위에 선거소청을 제기하자고 주장했다고 보도했다",
+  "originalClaim": "장동혁 국민의힘 대표 전국 재선거 주장.",
+  "claimNature": "event_occurrence",
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "한겨레 본문에 장동혁 대표의 16개 지역 선거소청 주장 내용이 보도되어 있다. “전국 재선거”라는 결과 요구로 확장하지 않고 소청 제기 주장으로 제한했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.hani.co.kr/arti/politics/politics_general/1264064.html",
+      "title": "장동혁 향해 “찌질이” 사퇴론 분출…국힘, 7곳 재선거 소청",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자",
+      "quoteHash": "sha256:981fb239fa4242ed75fc5ceed82cdb7a9bdfcdc65bfa11b020eed3c0d6ce2d1b",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "한겨레 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "hani-20260618-ppp-appeal",
+      "independenceLevel": "independent",
+      "independenceNote": "해당 사실을 보도한 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 상황, 선관위 설명, 법원 절차 또는 정치권 발언을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "보도는 의총 내부 발언으로 전해진 것이어서 발언의 전문과 맥락은 제한적이다.",
+      "response": "보도 문구가 확인되는 범위인 16개 광역단체 선거소청 주장만 저장했다.",
+      "errorsFound": 0,
+      "framingChecks": "장동혁 주장의 타당성이나 정치적 의도를 판단하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "국민의힘 내부에서 7곳 제한 소청 의견도 있었음을 limitations에 남겼다.",
+      "result": "대칭 점검 완료 — 주장·해명·법적 미확정성을 분리하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "정당 대표의 주장을 사실 판정으로 전환하지 않았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "adoptedReason": "한겨레 본문에서 주장 내용이 확인된다.",
+      "rejectedAlternatives": "장동혁 대표가 부정선거를 확정했다고 표현하거나 전국 재선거가 필요하다는 판단은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 선거 관리·정치 주장·법적 절차의 관찰 가능한 사실만 기록하며, 부정선거 여부나 책임 소재에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "같은 기사에 정점식 원내대표 등은 7곳 한정 소청 의견을 냈다고 보도되어 국민의힘 내부 입장은 단일하지 않았다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "정치주장",
+    "국민의힘",
+    "선거소청",
+    "주장"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}

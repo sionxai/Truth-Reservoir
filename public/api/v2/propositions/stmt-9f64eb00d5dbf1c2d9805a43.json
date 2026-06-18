@@ -1,0 +1,134 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:9f64eb00d5dbf1c2d9805a43",
+  "versionId": "ver:6a3cc8487f1c722f",
+  "certHash": "sha256:2b8f393b07640451953dd16fd455d5256d264d6b64cd1ea4af47ab8d104b68cc",
+  "canonicalProposition": "2026년 6월 18일 기준 6·3 지방선거 투표용지 부족으로 투표가 일시 중단된 투표소 수는 공개 보도에서 22곳과 26곳으로 갈려 최종값이 확정되지 않았다",
+  "originalClaim": "중단 투표소 수 출처별 분기(14~22곳).",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "fetch 가능한 보도 두 건의 일시 중단 투표소 수를 대조했다.",
+    "sample": "한겨레 2026-06-05 보도와 코리아타임스 2026-06-10 보도",
+    "aggregationBasis": "각 보도가 제시한 전국 일시 중단 투표소 수의 비교",
+    "producer": "진실저수지 수동 대조 기록",
+    "measuredAt": "2026-06-18"
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": null,
+    "status": "undetermined",
+    "gradeRationale": "한겨레는 22곳, 코리아타임스는 26곳을 제시한다. 두 수치의 기준·갱신 시점·포함 범위 차이를 확인할 1차 자료가 없어 최종값을 확정하지 않았다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.hani.co.kr/arti/politics/election/1262187.html",
+      "title": "‘투표용지 부족’ 투표소, 50곳이나 됐다…22곳선 투표 일시 중단",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "전국 22곳이었다",
+      "quoteHash": "sha256:4827948f40916e97fa01640d024c608fc9d67d1e7f2ccb3094fdc2857b38bc40",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "한겨레 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "hani-20260605-ballot-shortage",
+      "independenceLevel": "independent",
+      "independenceNote": "해당 사실을 보도한 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 상황, 선관위 설명, 법원 절차 또는 정치권 발언을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.koreatimes.co.kr/southkorea/law-crime/20260610/court-officials-fail-to-secure-key-evidence-at-polling-station-over-ballot-shortage",
+      "title": "Court officials fail to secure key evidence at polling station over ballot shortage",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "26 polling stations nationwide",
+      "quoteHash": "sha256:bc888e7a8321f6e9ba266c238e98d00eb7b94d7df7c57fe6334427024b43c073",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "코리아타임스 기사 본문이 웹 fetch로 로드되었고 403이 아니었다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "koreatimes-20260610-evidence",
+      "independenceLevel": "independent",
+      "independenceNote": "해당 사실을 보도한 자동 fetch 가능 언론 출처다. 동일 원천을 반복 증거로 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 상황, 선관위 설명, 법원 절차 또는 정치권 발언을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "수치 차이는 단순 갱신일 수 있어 “갈림” 자체가 실체 모순이라고 단정할 수 없다.",
+      "response": "최종값을 확정하지 않고 출처별 수치 분기를 판단유보 상태로 저장했다.",
+      "errorsFound": 0,
+      "framingChecks": "분기를 은폐하거나 한쪽 수치를 선택하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "22곳과 26곳 양쪽 수치를 같은 명제에 함께 제시했다.",
+      "result": "대칭 점검 완료 — 주장·해명·법적 미확정성을 분리하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "언론 보도 수치를 최종 권위로 삼지 않았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다.",
+      "adoptedReason": "두 fetch 가능 보도에서 서로 다른 수치가 확인된다.",
+      "rejectedAlternatives": "14곳 수치는 이번 fetch 가능한 출처에서 확인하지 못해 저장하지 않았다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 선거 관리·정치 주장·법적 절차의 관찰 가능한 사실만 기록하며, 부정선거 여부나 책임 소재에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [
+    "일시 중단 투표소 최종 수",
+    "22곳과 26곳의 기준·갱신 시점 차이",
+    "14곳 수치의 fetch 가능한 출처"
+  ],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "사용자 후보의 14~22곳 범위 중 14곳 출처는 확인하지 못했다. 확인된 분기는 22곳과 26곳이다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "정치주장",
+    "판단유보",
+    "측정분기"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}
