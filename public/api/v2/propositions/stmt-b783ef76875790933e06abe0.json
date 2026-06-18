@@ -1,9 +1,10 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:3fe3640e9922430fb3bfb12b",
-  "versionId": "ver:304262744c2a5031",
-  "certHash": "sha256:0e27c7bf44813daebc4dbf168451407e507db610f2c73c1caf52ec8ad5128021",
-  "canonicalProposition": "중앙선거관리위원회는 투표용지 부족 투표소 50곳의 지역별 집계를 서울 33곳, 인천 6곳, 대구 4곳, 부산 3곳, 울산·경남 각 2곳으로 밝혔다",
+  "propositionId": "stmt:b783ef76875790933e06abe0",
+  "versionId": "ver:8b4e3874292a71ad",
+  "certHash": "sha256:084504b301e31c7b48826419aed5e427c644b1f061b9132cf9d5f2f61a1561ee",
+  "previousVersionId": "ver:304262744c2a5031",
+  "canonicalProposition": "중앙선거관리위원회는 2026년 6월 5일 투표용지 부족 투표소 50곳의 지역별 집계를 서울 33곳, 인천 6곳, 대구 4곳, 부산 3곳, 울산·경남 각 2곳으로 밝혔다",
   "originalClaim": "부족 확인 지역의 구체 목록.",
   "claimNature": "measurement",
   "measurement": {
@@ -16,7 +17,7 @@
   "classification": "M",
   "language": "ko",
   "asOfDate": "2026-06-18",
-  "status": "active",
+  "status": "superseded",
   "reviewMode": "human_reviewed",
   "assessment": {
     "factualGrade": "largely_reliable",
@@ -53,8 +54,8 @@
   ],
   "reviewLog": {
     "redteam": {
-      "strongestCounterargument": "보도는 서울 내부 구별 세부 목록도 담지만, 모든 투표소 명칭까지 검증한 것은 아니다.",
-      "response": "검증 가능한 시도별 집계만 저장하고 정당 지지 성향 같은 해석은 제외했다.",
+      "strongestCounterargument": "보도는 서울 내부 구별 세부 목록도 담지만, 모든 투표소 명칭까지 검증한 것은 아니며 이후 선관위가 91곳 지역 집계로 갱신했다.",
+      "response": "검증 가능한 2026-06-05 시도별 집계만 저장하고 status를 superseded로 바꿨다.",
       "errorsFound": 0,
       "framingChecks": "국민의힘 지역 등 정치적 특징짓기를 금지하고 중립 집계만 남겼다."
     },
@@ -76,7 +77,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다. 이후 91곳 지역 집계가 확인되어 이 명제는 superseded로 전환했다.",
       "adoptedReason": "한겨레 본문에서 시도별 집계가 확인된다.",
       "rejectedAlternatives": "특정 정당 지지 지역을 겨냥했다는 표현은 출처가 뒷받침하지 않아 제외했다."
     }
@@ -92,7 +93,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "투표소별 원자료와 전체 명칭 목록은 직접 확인하지 못했다. 시도별 집계만 저장했다. 50곳의 지역별 집계 전체를 같은 수치 조합으로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.",
+  "limitations": "투표소별 원자료와 전체 명칭 목록은 직접 확인하지 못했다. 시도별 집계만 저장했다. 50곳의 지역별 집계 전체를 같은 수치 조합으로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다. 이 2026-06-05 지역 집계는 이후 선관위의 2026-06-08 기준 91곳 지역별 집계로 superseded 되었다.",
   "tags": [
     "2026지방선거",
     "투표용지부족",

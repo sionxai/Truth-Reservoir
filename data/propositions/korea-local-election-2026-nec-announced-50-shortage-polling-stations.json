@@ -1,9 +1,10 @@
 {
   "certVersion": "2.1",
-  "propositionId": "stmt:828953a5de09837e6af2795a",
-  "versionId": "ver:3a43b8f7ec2c26a3",
-  "certHash": "sha256:e52ddafffd8e7351e23706ff1d175d209ea62f8468ffe308d22eaa02cb7956b5",
-  "canonicalProposition": "중앙선거관리위원회는 투표용지가 선거인수보다 부족했던 투표소가 전국 50곳이었다고 발표했다",
+  "propositionId": "stmt:c124eec338cc84af306aae8a",
+  "versionId": "ver:999e3793bbeaa035",
+  "certHash": "sha256:a888d8490924bd02f0d7844efd113494b3d3dd20ca913ca0f81e4dc51d04250f",
+  "previousVersionId": "ver:3a43b8f7ec2c26a3",
+  "canonicalProposition": "중앙선거관리위원회는 2026년 6월 5일 6·3 지방선거에서 투표용지가 선거인수보다 부족했던 투표소를 전국 50곳으로 발표했다",
   "originalClaim": "6-3 일부 투표소 투표용지 소진 및 부족 수치.",
   "claimNature": "measurement",
   "measurement": {
@@ -16,7 +17,7 @@
   "classification": "M",
   "language": "ko",
   "asOfDate": "2026-06-18",
-  "status": "active",
+  "status": "superseded",
   "reviewMode": "human_reviewed",
   "assessment": {
     "factualGrade": "largely_reliable",
@@ -77,10 +78,10 @@
   ],
   "reviewLog": {
     "redteam": {
-      "strongestCounterargument": "선관위 원문 발표자료가 직접 확인되지 않아 한겨레의 전재 정확성에 의존한다.",
-      "response": "수치를 현실 자체가 아니라 한겨레가 인용한 선관위 발표 측정값으로 제한했다.",
+      "strongestCounterargument": "선관위 원문 발표자료가 직접 확인되지 않아 한겨레의 전재 정확성에 의존하고, 이후 선관위가 91곳으로 갱신했다.",
+      "response": "수치를 2026-06-05 발표 기준 측정값으로 제한하고 status를 superseded로 바꿨다.",
       "errorsFound": 0,
-      "framingChecks": "50곳 수치만 저장하고 고의성·부정선거 해석을 붙이지 않았다."
+      "framingChecks": "50곳 수치의 발표 시점만 저장하고 고의성·부정선거 해석을 붙이지 않았다."
     },
     "symmetry": {
       "checked": true,
@@ -100,7 +101,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. 2차 재검수에서 KBS World의 curl HTTP 200 후속 보도를 추가했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. 2차 재검수에서 KBS World의 curl HTTP 200 후속 보도를 추가했다. 이후 91곳 최신 집계가 확인되어 이 명제는 superseded로 전환했다.",
       "adoptedReason": "한겨레 본문에서 중앙선관위 발표와 50곳 수치가 직접 확인된다.",
       "rejectedAlternatives": "50곳이 부정선거 증거라는 결론은 헌법 제2조 위반으로 제외했다."
     }
@@ -116,7 +117,7 @@
   "undeterminedItems": [],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
-  "limitations": "1차 발표자료 직접 fetch 실패. KBS World 추가 출처는 이후 선관위가 91곳으로 집계를 올렸다고 보도하므로, 이 명제는 최초 50곳 발표 사실에만 한정된다. 같은 사안의 다른 수치와 기준 차이는 별도 판단유보 명제로 분리했다.",
+  "limitations": "1차 발표자료 직접 fetch 실패. KBS World 추가 출처는 이후 선관위가 91곳으로 집계를 올렸다고 보도하므로, 이 명제는 2026-06-05 발표 기준 최초 50곳 발표 사실에만 한정된다. 이 수치는 2026-06-05 발표 기준이며, 선관위가 이후 2026-06-08 91곳으로 정정했다(현재 집계는 nec-shortage-count-current 명제).",
   "tags": [
     "2026지방선거",
     "투표용지부족",
