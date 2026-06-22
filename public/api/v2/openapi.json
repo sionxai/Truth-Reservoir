@@ -201,6 +201,62 @@
             ],
             "additionalProperties": false
           },
+          "sixW": {
+            "type": "object",
+            "properties": {
+              "who": {
+                "type": "string",
+                "minLength": 1
+              },
+              "when": {
+                "type": "string",
+                "minLength": 1
+              },
+              "where": {
+                "type": "string",
+                "minLength": 1
+              },
+              "what": {
+                "type": "string",
+                "minLength": 1
+              },
+              "how": {
+                "type": "string",
+                "minLength": 1
+              },
+              "why": {
+                "default": [],
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "statedBy": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "reason",
+                    "statedBy"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "who",
+              "when",
+              "where",
+              "what",
+              "how",
+              "why"
+            ],
+            "additionalProperties": false
+          },
           "classification": {
             "type": "string",
             "enum": [
@@ -587,7 +643,9 @@
                     "criminal_allegation",
                     "ongoing_litigation",
                     "political_claim",
-                    "medical_or_financial_harm"
+                    "medical_or_financial_harm",
+                    "demographic_identity",
+                    "scientific_contested"
                   ]
                 }
               },
@@ -598,7 +656,8 @@
                   "pending",
                   "allegation",
                   "official_record",
-                  "unknown"
+                  "unknown",
+                  "not_applicable"
                 ]
               },
               "presumptionNotice": {

@@ -1,0 +1,277 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:cb0719e9aac6e4c86677d2e5",
+  "versionId": "ver:4eff3e9ed829a9f9",
+  "certHash": "sha256:ab695e095ea86e7627ff2ea70c34034e6ea438585903950aed84a5e7e61e42e6",
+  "canonicalProposition": "중앙선거관리위원회는 2026년 6·3 지방선거에서 선거일 투표용지가 부족했던 투표소를 2026년 6월 8일 기준 전국 91곳(부족 용지 7,194장)으로, 투표가 일시 중단된 투표소를 26곳으로 집계했다",
+  "originalClaim": "6·3 지방선거 투표용지 부족 사태의 규모(부족 투표소 수·부족 용지 매수·중단 투표소 수).",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "중앙선관위 발표 및 국회 제출자료를 인용한 언론 보도(경향·디지털타임스·MBC·KBS)를 전사해 부족 투표소·부족 용지·중단 투표소를 각각 집계했다.",
+    "sample": "선거일 현장 점검을 거쳐 재집계된 투표용지 부족·중단 투표소",
+    "aggregationBasis": "최초 발표 이후 현장 점검을 거친 전국 단순 집계",
+    "producer": "중앙선거관리위원회 발표(언론 보도 인용)",
+    "measuredAt": "2026-06-08"
+  },
+  "sixW": {
+    "who": "중앙선거관리위원회",
+    "when": "2026년 6월 3일(사태 발생), 6월 5~9일(집계 정정)",
+    "where": "전국 91곳 — 서울 42곳(송파 20·성북 7·강남 5·광진 4·서초 2·강서 2), 경기 23곳, 인천 11곳, 대구 4곳, 부산 3곳, 울산 2곳, 전남 2곳, 경남 2곳, 충북 1곳, 전북 1곳",
+    "what": "선거일 투표용지가 선거인수보다 부족(전국 7,194장 부족), 26곳에서 투표 일시 중단(최소 4분~최대 105분)",
+    "how": "선거일 투표용지를 선거인 수의 50% 기준으로 인쇄했고, 예상보다 높은 당일 투표율로 인쇄분이 소진되며 부족이 발생",
+    "why": [
+      {
+        "reason": "사전투표율 증가에 따라 잔여 투표용지를 최소화하기 위해 선거일 인쇄분을 전체 선거인 수의 50% 기준으로 산정했다",
+        "statedBy": "중앙선거관리위원회"
+      }
+    ]
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-18",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "부족 투표소 91곳·부족 용지 7,194장·중단 26곳·지역별 분포가 경향·디지털타임스·MBC·KBS의 curl HTTP 200 본문에서 verbatim 확인된다. 모두 선관위 발표·국회 제출자료를 인용한 2차 보도이며, 1차 발표 원문 직접 fetch는 실패해 측정 생산 과정 감사가 남아 있다. 수치는 현장 점검에 따라 추가 갱신될 수 있다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.khan.co.kr/article/202606082110001",
+      "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "투표용지가 부족한 투표소는 총 91곳",
+      "quoteHash": "sha256:7f3837947573a8edb054fb4f44bd67ed4f138425655a8449cbd6b2b81da3847d",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "경향신문 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 15단어 이하 shortQuote와 locator로 확인.",
+      "independenceGroupId": "khan-20260608-shortage-91",
+      "independenceLevel": "independent",
+      "independenceNote": "선관위 집계를 보도한 자동 fetch 가능 언론 출처.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선거 당일 상황과 선관위 집계를 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.dt.co.kr/article/12066735",
+      "title": "6·3 지선 투표지, 전국 91곳 7194장 부족…선관위 발표보다 1.5배 증가",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "전국 투표소 91곳에서 투표용지 7194장이 부족",
+      "quoteHash": "sha256:134c47940bb790efd0303f865692b561ca1ecf6275116cd285e2df57e25bb033",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "디지털타임스 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다.",
+      "independenceGroupId": "dt-20260609-shortage-7194",
+      "independenceLevel": "independent",
+      "independenceNote": "부족 용지 매수를 보도한 별개 언론 출처.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "부족 용지 규모를 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202606082110001",
+      "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "서울 송파구 투표소 20곳을 포함해 서울 42곳",
+      "quoteHash": "sha256:14744222e3c68470c894498b9277f41f43d3cd7efb484616488a7d45bc94cadf",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "지역별 분포 문구를 같은 기사 본문에서 verbatim 확인.",
+      "independenceGroupId": "khan-20260608-shortage-91",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "위 91곳과 동일 기사의 별도 문구(지역 분포). 독립 출처로 중복 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "지역별 부족 분포를 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.khan.co.kr/article/202606082110001",
+      "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "투표소는 총 26곳이라고 밝혔다",
+      "quoteHash": "sha256:eae17402fc7551b6347991717be3d8176a1b725787bbd4dd6d6df448b2f9e86e",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "투표 일시 중단 26곳 문구를 같은 기사 본문에서 verbatim 확인.",
+      "independenceGroupId": "khan-20260608-shortage-91",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 기사의 별도 문구(중단 26곳).",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표 중단 규모를 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.dt.co.kr/article/12066735",
+      "title": "6·3 지선 투표지, 전국 91곳 7194장 부족…선관위 발표보다 1.5배 증가",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "최소 4분에서 최대 105분에 달한",
+      "quoteHash": "sha256:d34b798327c35fc62a62bbdc46d564c148e9a7660d372395f25c1fd3cd8e7131",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "투표 중단 시간 범위를 디지털타임스 본문에서 verbatim 확인.",
+      "independenceGroupId": "dt-20260609-shortage-7194",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "위 7194장과 동일 기사의 별도 문구(중단 시간).",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표 중단 시간을 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202026&lang=e",
+      "title": "NEC Raises Tally of Voting Centers Short on June 3 Ballots from 50 to 91",
+      "retrievedAt": "2026-06-18",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "from the previously reported 50 to 91",
+      "quoteHash": "sha256:a7ebfd1dabe59a2ff0110dd692575f9234b9ff65a134eeb5f2a960d001762188",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "50→91 정정 사실을 KBS World 본문에서 verbatim 확인. 정정이력 근거.",
+      "independenceGroupId": "kbs-20260609-nec-50-to-91",
+      "independenceLevel": "independent",
+      "independenceNote": "집계 정정 경위를 보도한 별개 언론 출처(영문).",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선관위 집계 정정을 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "선관위 1차 발표 원문이 직접 확인되지 않아 언론 전재 정확성에 의존하며, 91곳·7,194장도 현장 점검에 따라 더 바뀔 수 있다.",
+      "response": "수치를 현실 자체가 아니라 선관위가 발표한 측정값으로 제한하고, 변동분은 정정이력으로, 추가 변동 가능성은 한계로 명시했다.",
+      "errorsFound": 0,
+      "framingChecks": "부족 규모·중단·분포라는 관찰 사실만 기록하고 고의성·은폐·부정선거·표적 해석은 배제했다. '왜'는 선관위가 밝힌 사유로만 귀속했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "부족 규모(사건)와 별도로 선관위 해명·정파 주장·법적 미확정 명제를 함께 보관한다.",
+      "result": "대칭 점검 완료 — 사실·주장·미확정을 분리하고 인과·결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "선관위 발표라는 권위에 기대지 않고 fetch 가능한 기사 문구만 증거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-18",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "헌법 v0.7 사건단위 모델의 대표 예시. 종전 분할 명제(현재집계 91·지역분포 91·중단 26 및 superseded 50/지역33/중단22 스냅샷)를 한 사건으로 통합하고, 값 변동은 정정이력으로, '왜'는 선관위 귀속 사유로 sixW에 담았다. 모든 shortQuote는 curl HTTP 200에서 verbatim 확인.",
+      "adoptedReason": "선관위 집계가 다수 언론 본문에서 직접 확인된다.",
+      "rejectedAlternatives": "부족이 특정 정당 지역을 표적했다거나 부정선거 증거라는 결론은 헌법 제2조 위반으로 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 선거 관리상의 관찰 가능한 집계 사실만 기록하며, 부정선거 여부·고의성·책임 소재에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [
+    {
+      "date": "2026-06-05",
+      "error": "선관위 초기 집계(14곳)에서 누락분 반영",
+      "detectedBy": "중앙선거관리위원회 정정 발표",
+      "before": "투표용지 부족 투표소 14곳",
+      "after": "투표용지 부족 투표소 50곳, 부족 용지 4,726장",
+      "scoreChange": "해당 없음(외부 집계 정정)",
+      "newVersionId": "ver:0000000000000000"
+    },
+    {
+      "date": "2026-06-08",
+      "error": "현장 점검으로 부족 투표소 수 상향 정정",
+      "detectedBy": "중앙선거관리위원회 정정 발표",
+      "before": "투표용지 부족 투표소 50곳",
+      "after": "투표용지 부족 투표소 91곳",
+      "scoreChange": "해당 없음(외부 집계 정정)",
+      "newVersionId": "ver:0000000000000000"
+    },
+    {
+      "date": "2026-06-08",
+      "error": "투표 중단 투표소 수 정정",
+      "detectedBy": "중앙선거관리위원회 정정 발표",
+      "before": "투표 일시 중단 22곳",
+      "after": "투표 일시 중단 26곳",
+      "scoreChange": "해당 없음(외부 집계 정정)",
+      "newVersionId": "ver:0000000000000000"
+    },
+    {
+      "date": "2026-06-09",
+      "error": "부족 용지 매수 상향 정정",
+      "detectedBy": "중앙선거관리위원회 제출자료",
+      "before": "부족 용지 4,726장",
+      "after": "부족 용지 7,194장",
+      "scoreChange": "해당 없음(외부 집계 정정)",
+      "newVersionId": "ver:0000000000000000"
+    }
+  ],
+  "openCorrectionRequests": 0,
+  "limitations": "1차 발표 원문 직접 fetch 실패로 언론 전재에 의존한다. 91곳·7,194장·26곳은 2026-06-08~09 기준 선관위 집계이며 현장 점검에 따라 추가 갱신될 수 있다. 별개 지표인 140곳(추가 송부 대상)·1,371곳(인쇄 50% 미만)은 본 사건의 수치가 아니다. correctionHistory의 newVersionId는 이 변동을 기록한 버전을 가리키며, 외부 기관(선관위)의 집계 정정 경과를 문서화한 것이다(우리 측 오류 정정 아님). 분포가 특정 정당 지역을 표적했는지 여부는 미확정이며 별개 명제로 분리한다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "측정",
+    "사건단위",
+    "투표소수"
+  ],
+  "createdAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}

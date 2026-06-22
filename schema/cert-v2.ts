@@ -120,11 +120,20 @@ export const SensitivePolicySchema = z
           "criminal_allegation",
           "ongoing_litigation",
           "political_claim",
-          "medical_or_financial_harm"
+          "medical_or_financial_harm",
+          "demographic_identity",
+          "scientific_contested"
         ])
       )
       .default([]),
-    legalStatus: z.enum(["final_judgment", "pending", "allegation", "official_record", "unknown"]),
+    legalStatus: z.enum([
+      "final_judgment",
+      "pending",
+      "allegation",
+      "official_record",
+      "unknown",
+      "not_applicable"
+    ]),
     presumptionNotice: z.string()
   })
   .superRefine((policy, ctx) => {
@@ -158,6 +167,24 @@ export const CertV2Schema = z
     originalClaim: z.string().optional(),
     claimNature: z.enum(["event_occurrence", "document_content", "measurement"]),
     measurement: MeasurementSchema.optional(),
+    // 제3조의2: 저장 단위는 사건이며, why는 귀속 주체(statedBy) 없이 저장하지 않는다.
+    sixW: z
+      .object({
+        who: z.string().min(1),
+        when: z.string().min(1),
+        where: z.string().min(1),
+        what: z.string().min(1),
+        how: z.string().min(1),
+        why: z
+          .array(
+            z.object({
+              reason: z.string().min(1),
+              statedBy: z.string().min(1)
+            })
+          )
+          .default([])
+      })
+      .optional(),
     classification: z.enum(["F", "O", "M"]),
     language: z.enum(["ko", "en"]),
     asOfDate: isoStringSchema,

@@ -1,12 +1,12 @@
 {
-  "totalEntries": 40,
-  "totalAssessed": 39,
+  "totalEntries": 36,
+  "totalAssessed": 35,
   "totalUndetermined": 1,
   "totalRetracted": 0,
   "measuredErrorRate": {
     "value": null,
     "unit": "ratio",
-    "sampleSize": 40,
+    "sampleSize": 36,
     "periodStart": "2026-06-15",
     "periodEnd": "2026-06-18",
     "method": "미측정(표본 부족)",
