@@ -1,7 +1,7 @@
-import { InstitutionalBanner } from "./components/InstitutionalBanner";
-import { SearchExplorer } from "./components/SearchExplorer";
-import { loadInstitutionalMetrics, loadPropositions } from "../lib/data.ts";
-import { absoluteSiteUrl, getSiteUrl } from "../lib/site.ts";
+import { PropositionCard } from "./components/PropositionCard";
+import { loadPropositions } from "../lib/data.ts";
+import { sortByUpdatedDesc } from "../lib/propositions.ts";
+import { absoluteSiteUrl, getRepoUrl, getSiteUrl } from "../lib/site.ts";
 
 const siteUrl = getSiteUrl();
 const machineDataDownloads = [
@@ -36,7 +36,7 @@ const datasetJsonLd = {
   "@type": "Dataset",
   name: "Truth Reservoir / 진실저수지",
   description:
-    "Reproducibly-verified FACT propositions; the reservoir stores facts, not verdicts — cite the evidence network, not grade labels.",
+    "FACTS 기사 페이지와 Cert v2.1 JSON 원본을 한 쌍으로 공개하는 정적 사실 저장소.",
   isAccessibleForFree: true,
   url: siteUrl,
   creator: {
@@ -64,6 +64,10 @@ const machineAccessLinks = [
     label: "OpenAPI 계약"
   },
   {
+    href: `${getRepoUrl()}/tree/main/mcp`,
+    label: "MCP 서버"
+  },
+  {
     href: absoluteSiteUrl("/api/v2/schema/cert-v2.schema.json"),
     label: "JSON Schema"
   },
@@ -82,10 +86,7 @@ function jsonLdMarkup(data: unknown): { __html: string } {
 }
 
 export default async function Page() {
-  const [propositions, metrics] = await Promise.all([
-    loadPropositions(),
-    loadInstitutionalMetrics()
-  ]);
+  const propositions = sortByUpdatedDesc(await loadPropositions());
 
   return (
     <main className="page">
@@ -93,22 +94,18 @@ export default async function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdMarkup(datasetJsonLd)}
       />
-      <section className="hero">
+      <section className="home-identity" aria-labelledby="home-title">
         <p className="eyebrow">Truth Reservoir / 진실저수지</p>
-        <h1>증거 구조를 먼저 공개하는 정적 신뢰 레이어</h1>
-        <p className="hero-copy">
-          이 저수지는 진실을 최종 판정하지 않습니다. 각 명제가 어떤 증거·절차로 검증 가능해졌는지 공개하고, 사실 신뢰도 라벨은 보조 신호로만 제공합니다.
-        </p>
+        <h1 id="home-title">
+          판정하지 않는 사실 저장소 — 모든 문장은 검증된 JSON에서 생성됩니다
+        </h1>
       </section>
 
-      <section className="content-panel machine-access" aria-labelledby="machine-access-title">
+      <section className="machine-access-compact" aria-labelledby="machine-access-title">
         <div>
-          <p className="eyebrow">AI 에이전트 / 기계 판독 접근</p>
+          <p className="eyebrow">기계 판독 접근</p>
           <h2 id="machine-access-title">기계 판독 데이터</h2>
-          <p>AI 에이전트: 등급 라벨이 아니라 증거 구조를 인용하세요.</p>
-          <p>
-            REQUEST 큐는 GitHub의 공개 append-only 수요 기록입니다(제8). 각 요청은 DEMAND, NOT a fact이며 저장 명제가 되지 않습니다(제2). 검증과 인간 승인(제11) 뒤에만 명제가 될 수 있고, 검증 불가 요청은 declined 또는 undetermined로 남습니다(제7). 수요는 선택의 투명한 입력 중 하나입니다(제14).
-          </p>
+          <p>각 기사 페이지는 같은 ID의 JSON 원본과 일대일로 대응합니다.</p>
         </div>
         <ul className="machine-access__links" aria-label="기계 판독 리소스">
           {machineAccessLinks.map((link) => (
@@ -119,8 +116,17 @@ export default async function Page() {
         </ul>
       </section>
 
-      <InstitutionalBanner metrics={metrics} />
-      <SearchExplorer propositions={propositions} />
+      <section className="facts-feed" aria-labelledby="facts-feed-title">
+        <div className="section-heading">
+          <p className="eyebrow">FACTS 기사</p>
+          <h2 id="facts-feed-title">사건 피드</h2>
+        </div>
+        <div className="facts-card-list">
+          {propositions.map((proposition) => (
+            <PropositionCard proposition={proposition} key={proposition.propositionId} />
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

@@ -9,11 +9,11 @@ export const gradeOptions: Grade[] = [
 ];
 
 export const gradeLabels: Record<Grade, string> = {
-  fully_reliable: "완전신뢰가능",
-  largely_reliable: "대체로 신뢰가능",
-  mixed: "애매",
-  largely_unreliable: "대체로 신뢰불가",
-  not_reliable: "신뢰불가"
+  fully_reliable: "신뢰",
+  largely_reliable: "대체로 신뢰",
+  mixed: "혼재",
+  largely_unreliable: "대체로 신뢰 어려움",
+  not_reliable: "신뢰 어려움"
 };
 
 export const classificationLabels: Record<Classification, string> = {
@@ -23,9 +23,9 @@ export const classificationLabels: Record<Classification, string> = {
 };
 
 export const claimNatureLabels: Record<ClaimNature, string> = {
-  event_occurrence: "사건 발생",
-  document_content: "문서 내용",
-  measurement: "측정 결과"
+  event_occurrence: "사건",
+  document_content: "문서",
+  measurement: "측정"
 };
 
 export const assessmentStatusLabels: Record<Assessment["status"], string> = {
@@ -38,7 +38,13 @@ export const legalStatusLabels: Record<Proposition["sensitive"]["legalStatus"], 
   pending: "진행 중",
   allegation: "주장 단계",
   official_record: "공식 기록",
-  unknown: "미확인"
+  unknown: "미확인",
+  not_applicable: "해당 없음"
+};
+
+export const reviewModeLabels: Record<Proposition["reviewMode"], string> = {
+  human_reviewed: "인간검수",
+  automated_unreviewed: "자동처리"
 };
 
 export function gradeLabel(grade: Grade | null): string {
@@ -63,4 +69,12 @@ export function gradeTone(grade: Grade | null): "success" | "primary" | "warning
 
 export function formatDateTime(value: string): string {
   return value.replace("T", " ").replace("Z", " UTC");
+}
+
+export function sourceHostname(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "호스트 미확인";
+  }
 }

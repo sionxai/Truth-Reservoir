@@ -10,11 +10,9 @@ export function GradeBadge({ grade, prefix }: GradeBadgeProps) {
   const tone = gradeTone(grade);
 
   return (
-    <span className={`grade-badge grade-badge--${tone}`}>
+    <span className={`grade-badge grade-badge--${tone}`} data-grade={grade ?? "undetermined"}>
       {prefix ? <span className="grade-badge__prefix">{prefix}</span> : null}
       <span>{gradeLabel(grade)}</span>
-      {grade ? <span className="grade-badge__code">{grade}</span> : null}
     </span>
   );
 }
-

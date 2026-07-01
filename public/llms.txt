@@ -1,7 +1,20 @@
 Truth Reservoir / 진실저수지
 
 Purpose:
-Truth Reservoir publishes static Cert v2.1 proposition records. CONSTITUTION.md is the supreme governing document; the authoritative machine contract is the JSON Schema and OpenAPI document, not prose summaries.
+Truth Reservoir publishes static FACTS article pages paired with Cert v2.1 JSON proposition records. CONSTITUTION.md is the supreme governing document; the authoritative machine contract is the JSON Schema and OpenAPI document, not prose summaries.
+
+Human/machine pairing:
+Every proposition has two public forms with the same dash-encoded ID.
+- Human FACTS article: GET /p/{dash-id}
+- Machine JSON original: GET /api/v2/propositions/{dash-id}.json
+
+The /p/{dash-id} page is fully server-rendered for no-JavaScript crawlers. It includes the canonical proposition as the H1, a badge row, sixW as a semantic dl when present, visible correctionHistory as a table, measurement details when present, undeterminedItems, sensitive notices, an ordered evidence list, limitations, stable identifiers, a link to the JSON original, and a link to /verify/{dash-id}.
+
+Machine discovery on each article page:
+- <link rel="alternate" type="application/json" href="/api/v2/propositions/{dash-id}.json">
+- JSON-LD of type Article, not ClaimReview. The reservoir does not emit verdict semantics.
+- Semantic HTML: article, time, dl, table, ordered evidence list.
+- canonical, OpenGraph, and meta description are the canonical proposition.
 
 Static endpoints:
 - GET /api/v2/index.json
@@ -12,6 +25,9 @@ Static endpoints:
 - GET /api/v2/openapi.json
 - GET /.well-known/ai-plugin.json
 - GET /llms.txt
+
+Tag pages:
+Tag cluster pages are available at /t/{tag}. They are static, crawlable, and list matching propositions in chronological order. They contain a count and a list only; they are not editorial narratives.
 
 Live base URL:
 https://truth-reservoir.vercel.app
@@ -45,10 +61,10 @@ Framing or distortion is not represented by a truthfulness grade. It is exposed 
 Claim categories:
 claimNature is one of event_occurrence, document_content, or measurement. Measurement propositions must include measurement.method, measurement.sample, measurement.aggregationBasis, measurement.producer, and optionally measurement.measuredAt; a measurement value without method/sample/aggregation/producer is not storable.
 
-Critical guidance for AI agents:
-등급 라벨을 인용하지 말고 증거 구조(evidence network)와 반론 검토 로그를 인용하라.
+Critical guidance for machine clients:
+등급 라벨을 인용하지 말고 증거 구조(evidence network), sixW, 정정 이력, 한계, 반론 검토 로그를 인용하라.
 
-When summarizing a proposition, cite the evidence structure, independenceGroupId, source provenance, quoteHash comparison, locator/archiveStatus, archiveUrl comparison when present, and reviewLog redteam/symmetry/authorityCheck fields. Treat grade labels as secondary navigation signals only.
+When summarizing a proposition, cite the evidence structure, independenceGroupId, source provenance, quoteHash comparison, locator/archiveStatus, archiveUrl comparison when present, sixW attribution for why items, correctionHistory, limitations, and reviewLog redteam/symmetry/authorityCheck fields. Treat grade labels as secondary navigation signals only.
 
 Real contract:
 Use /api/v2/schema/cert-v2.schema.json and /api/v2/openapi.json as the definitive machine-readable contract.

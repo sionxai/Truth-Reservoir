@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 import { CertV2Schema } from "../schema/cert-v2.ts";
 import { loadPropositionFile, loadPropositions, listPropositionFiles } from "../lib/data.ts";
 import { encodePropositionId } from "../lib/ids.ts";
+import { tagRoute, uniqueTags } from "../lib/propositions.ts";
 import { applyDerivedHashes, verifyPropositionHashes } from "../lib/verify.ts";
 import { readJsonFile } from "./test-utils.ts";
 
@@ -133,6 +134,12 @@ describe("data integration", () => {
       expect(sitemap).toContain(`<loc>https://truth-reservoir.vercel.app/p/${dashId}</loc>`);
       expect(sitemap).toContain(
         `<loc>https://truth-reservoir.vercel.app/verify/${dashId}</loc>`
+      );
+    }
+
+    for (const tag of uniqueTags(propositions)) {
+      expect(sitemap).toContain(
+        `<loc>https://truth-reservoir.vercel.app${tagRoute(tag)}</loc>`
       );
     }
   });

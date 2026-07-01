@@ -20,3 +20,15 @@ export function findPredecessorSeed(propositions: Proposition[]): Proposition {
 
   return proposition;
 }
+
+export function findBallotShortageSeed(propositions: Proposition[]): Proposition {
+  const proposition = propositions.find(
+    (item) => item.propositionId === "stmt:cb0719e9aac6e4c86677d2e5"
+  );
+
+  if (!proposition) {
+    throw new Error("Expected ballot-shortage seed proposition to exist");
+  }
+
+  return proposition;
+}

@@ -1,49 +1,67 @@
 import { expect, test } from "@playwright/test";
 import { loadPropositions } from "../../lib/data.ts";
 import { encodePropositionId } from "../../lib/ids.ts";
+import { sortByUpdatedDesc } from "../../lib/propositions.ts";
 import type { Proposition } from "../../lib/types.ts";
-import { findPredecessorSeed } from "../test-utils.ts";
+import { findBallotShortageSeed, findPredecessorSeed } from "../test-utils.ts";
 
 let propositions: Proposition[];
 let predecessor: Proposition;
 let predecessorDashId: string;
+let ballotShortage: Proposition;
+let ballotShortageDashId: string;
 
 test.beforeAll(async () => {
   propositions = await loadPropositions();
   predecessor = findPredecessorSeed(propositions);
   predecessorDashId = encodePropositionId(predecessor.propositionId);
+  ballotShortage = findBallotShortageSeed(propositions);
+  ballotShortageDashId = encodePropositionId(ballotShortage.propositionId);
 });
 
-test("E1 home search shows matching cards and empty state", async ({ page }) => {
+test("E1 home shows the server-rendered FACTS feed and machine links", async ({ page }) => {
   await page.goto("/");
+  const [newest] = sortByUpdatedDesc(propositions);
 
-  const search = page.getByLabel("검색어");
-  await search.fill("개인정보");
-
-  await expect(page.locator(".proposition-card").first()).toBeVisible();
-
-  await search.fill("zzzzzz-no-matching-proposition");
-
-  await expect(page.getByText("일치하는 검증 명제가 없습니다.")).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      name: "판정하지 않는 사실 저장소 — 모든 문장은 검증된 JSON에서 생성됩니다"
+    })
+  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "사건 피드" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "OpenAPI 계약" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "MCP 서버" })).toBeVisible();
+  await expect(page.locator(".facts-card").first()).toContainText(newest.canonicalProposition);
 });
 
-test("E2 detail page exposes evidence, grades, review, corrections, and limitations", async ({
+test("E2 detail page exposes a FACTS article for humans and crawlers", async ({
   page
 }) => {
-  await page.goto(`/p/${predecessorDashId}`);
+  await page.goto(`/p/${ballotShortageDashId}`);
 
-  await expect(page.getByText("Primary Artifact / Evidence Network")).toBeVisible();
-  await expect(page.getByRole("heading", { name: "사실 신뢰도 보조 라벨" })).toBeVisible();
-  await expect(page.getByText("사실 신뢰도").first()).toBeVisible();
-  await expect(page.getByText("완전신뢰가능").first()).toBeVisible();
-  await expect(page.getByText("gradeRationale")).toBeVisible();
-  await expect(page.getByText(predecessor.assessment.gradeRationale)).toBeVisible();
-  await expect(page.getByText("반론 검토 로그")).toBeVisible();
-  await expect(page.getByRole("heading", { name: "정정 이력" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: ballotShortage.canonicalProposition })).toBeVisible();
+  await expect(page.getByText("대체로 신뢰").first()).toBeVisible();
+  await expect(page.getByText("측정").first()).toBeVisible();
+  await expect(page.getByText("인간검수").first()).toBeVisible();
+  await expect(page.getByRole("heading", { name: "육하원칙" })).toBeVisible();
+  await expect(page.getByText("누가")).toBeVisible();
+  await expect(page.getByText("중앙선거관리위원회가 밝힌 사유")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "집계·정정 이력" })).toBeVisible();
+  await expect(page.getByText("투표용지 부족 투표소 50곳", { exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "측정 정보" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "민감 사안 고지" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "증거" })).toBeVisible();
+  await expect(page.getByText(ballotShortage.evidence[0].shortQuote)).toBeVisible();
   await expect(page.getByRole("heading", { name: "한계" })).toBeVisible();
-  await expect(page.getByText(predecessor.limitations)).toBeVisible();
-  await expect(page.getByText("진술 충실성 축")).toHaveCount(0);
-  await expect(page.getByText("프레이밍 오염 신호")).toHaveCount(0);
+  await expect(page.getByText(ballotShortage.limitations)).toBeVisible();
+  await expect(page.getByRole("link", { name: "이 사건의 JSON 원본" })).toHaveAttribute(
+    "href",
+    `/api/v2/propositions/${ballotShortageDashId}.json`
+  );
+  await expect(page.getByRole("link", { name: "검증 페이지" })).toHaveAttribute(
+    "href",
+    `/verify/${ballotShortageDashId}/`
+  );
 });
 
 test("E3 verify page shows matching hash badges and the overclaim notice", async ({ page }) => {

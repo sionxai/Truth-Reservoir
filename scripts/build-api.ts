@@ -2,6 +2,7 @@ import { copyFile, mkdir, rm, writeFile } from "node:fs/promises";
 import { CertV2Schema } from "../schema/cert-v2.ts";
 import { loadInstitutionalMetrics, loadPropositions } from "../lib/data.ts";
 import { encodePropositionId } from "../lib/ids.ts";
+import { propositionsWithTag, tagRoute, uniqueTags } from "../lib/propositions.ts";
 import { absoluteSiteUrl } from "../lib/site.ts";
 import { applyDerivedHashes } from "../lib/verify.ts";
 import type { Proposition } from "../lib/types.ts";
@@ -68,9 +69,18 @@ function createSitemap(propositions: Proposition[], generatedAt: string): string
     ];
   });
 
+  const tagPaths = uniqueTags(propositions).map((tag) => {
+    const lastmod = propositionsWithTag(propositions, tag)
+      .map((proposition) => proposition.updatedAt)
+      .sort((left, right) => right.localeCompare(left))[0];
+
+    return { path: tagRoute(tag), lastmod: lastmod ?? generatedAt };
+  });
+
   const entries = [
     ...staticPaths.map((path) => ({ path, lastmod: generatedAt })),
-    ...propositionPaths
+    ...propositionPaths,
+    ...tagPaths
   ];
 
   return [
