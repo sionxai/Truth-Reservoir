@@ -1,7 +1,9 @@
 import { PropositionCard } from "./components/PropositionCard";
 import { loadPropositions } from "../lib/data.ts";
-import { sortByUpdatedDesc } from "../lib/propositions.ts";
+import { claimNatureLabels, gradeLabels } from "../lib/display.ts";
+import { sortByUpdatedDesc, tagRoute, uniqueTags } from "../lib/propositions.ts";
 import { absoluteSiteUrl, getRepoUrl, getSiteUrl } from "../lib/site.ts";
+import type { Proposition } from "../lib/types.ts";
 
 const siteUrl = getSiteUrl();
 const machineDataDownloads = [
@@ -87,6 +89,7 @@ function jsonLdMarkup(data: unknown): { __html: string } {
 
 export default async function Page() {
   const propositions = sortByUpdatedDesc(await loadPropositions());
+  const tags = uniqueTags(propositions);
 
   return (
     <main className="page">
@@ -117,16 +120,154 @@ export default async function Page() {
       </section>
 
       <section className="facts-feed" aria-labelledby="facts-feed-title">
+        <section className="feed-search" aria-labelledby="feed-search-title">
+          <div className="section-heading">
+            <p className="eyebrow">찾기</p>
+            <h2 id="feed-search-title">사건 찾기</h2>
+            <p>
+              검색어는 명제 문장과 태그에만 적용됩니다. 필터는 이미 렌더링된 사건 카드를
+              화면에서만 숨기거나 다시 보여줍니다.
+            </p>
+          </div>
+
+          <form className="feed-search__controls" data-feed-search-form>
+            <label className="field field--wide">
+              <span>검색어</span>
+              <input
+                autoComplete="off"
+                data-feed-query
+                placeholder="명제 또는 태그"
+                type="search"
+              />
+            </label>
+
+            <label className="field">
+              <span>성격</span>
+              <select data-feed-claim-nature defaultValue="all">
+                <option value="all">전체</option>
+                {Object.entries(claimNatureLabels).map(([value, label]) => (
+                  <option key={value} value={value}>
+                    {label}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="field">
+              <span>라벨</span>
+              <select data-feed-grade defaultValue="all">
+                <option value="all">전체</option>
+                {Object.entries(gradeLabels).map(([value, label]) => (
+                  <option key={value} value={value}>
+                    {label}
+                  </option>
+                ))}
+                <option value="undetermined">판단유보</option>
+              </select>
+            </label>
+
+            <div className="feed-search__actions">
+              <button className="secondary" type="reset">
+                초기화
+              </button>
+            </div>
+          </form>
+
+          <p className="feed-search__status" data-feed-status aria-live="polite">
+            전체 {propositions.length}건
+          </p>
+
+          {tags.length ? (
+            <nav className="tag-index" aria-labelledby="tag-index-title">
+              <h3 id="tag-index-title">태그</h3>
+              <ul className="tag-list">
+                {tags.map((tag) => (
+                  <li key={tag}>
+                    <a href={tagRoute(tag)}>{tag}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ) : null}
+        </section>
+
         <div className="section-heading">
           <p className="eyebrow">FACTS 기사</p>
           <h2 id="facts-feed-title">사건 피드</h2>
         </div>
         <div className="facts-card-list">
           {propositions.map((proposition) => (
-            <PropositionCard proposition={proposition} key={proposition.propositionId} />
+            <div
+              className="facts-card-shell"
+              data-claim-nature={proposition.claimNature}
+              data-feed-item
+              data-grade={proposition.assessment.factualGrade ?? "undetermined"}
+              data-search-text={searchTextFor(proposition)}
+              key={proposition.propositionId}
+            >
+              <PropositionCard proposition={proposition} />
+            </div>
           ))}
         </div>
+        <script dangerouslySetInnerHTML={{ __html: feedSearchScript(propositions.length) }} />
       </section>
     </main>
   );
+}
+
+function searchTextFor(proposition: Proposition): string {
+  return [proposition.canonicalProposition, ...proposition.tags]
+    .join(" ")
+    .toLocaleLowerCase("ko")
+    .normalize("NFC");
+}
+
+function feedSearchScript(totalCount: number): string {
+  return `
+(() => {
+  const form = document.querySelector("[data-feed-search-form]");
+  const items = Array.from(document.querySelectorAll("[data-feed-item]"));
+  const queryInput = document.querySelector("[data-feed-query]");
+  const claimNatureSelect = document.querySelector("[data-feed-claim-nature]");
+  const gradeSelect = document.querySelector("[data-feed-grade]");
+  const status = document.querySelector("[data-feed-status]");
+
+  if (!form || !queryInput || !claimNatureSelect || !gradeSelect || items.length === 0) {
+    return;
+  }
+
+  const normalize = (value) => String(value || "").toLocaleLowerCase("ko").normalize("NFC").trim();
+
+  const applyFilters = () => {
+    const query = normalize(queryInput.value);
+    const claimNature = claimNatureSelect.value;
+    const grade = gradeSelect.value;
+    let visibleCount = 0;
+
+    for (const item of items) {
+      const matchesText = !query || normalize(item.dataset.searchText).includes(query);
+      const matchesClaimNature = claimNature === "all" || item.dataset.claimNature === claimNature;
+      const matchesGrade = grade === "all" || item.dataset.grade === grade;
+      const visible = matchesText && matchesClaimNature && matchesGrade;
+
+      item.hidden = !visible;
+      if (visible) {
+        visibleCount += 1;
+      }
+    }
+
+    if (status) {
+      status.textContent =
+        visibleCount === ${totalCount} && !query && claimNature === "all" && grade === "all"
+          ? "전체 ${totalCount}건"
+          : visibleCount + "건 표시 · 전체 ${totalCount}건";
+    }
+  };
+
+  form.addEventListener("input", applyFilters);
+  form.addEventListener("change", applyFilters);
+  form.addEventListener("reset", () => window.setTimeout(applyFilters, 0));
+  applyFilters();
+})();
+`;
 }

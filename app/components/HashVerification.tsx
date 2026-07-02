@@ -118,14 +118,19 @@ export function HashVerification({ proposition }: HashVerificationProps) {
   }, [proposition, retryToken]);
 
   return (
-    <section className="verify-workspace">
+    <section className="facts-section verify-workspace" aria-labelledby="browser-verify-title">
+      <div className="section-heading">
+        <p className="eyebrow">브라우저 재계산</p>
+        <h2 id="browser-verify-title">해시 대조 결과</h2>
+      </div>
+
       <div className="overclaim-notice" role="note">
         이 해시 검증은 저장된 증거 스냅샷의 무결성만 확인합니다. 출처 URL의 현재 본문이 수집 당시와 동일함을 보장하지 않습니다. 원문 동일성은 archiveUrl 또는 직접 대조로 확인하세요.
       </div>
 
       <div className="verify-grid">
-        <section className="content-panel verifier-panel" aria-labelledby="quote-title">
-          <h2 id="quote-title">HashVerifier</h2>
+        <section className="verifier-panel" aria-labelledby="quote-title">
+          <h3 id="quote-title">증거 스냅샷 해시</h3>
           {state.running ? <p>브라우저에서 quoteHash를 계산하는 중입니다.</p> : null}
           {state.error ? (
             <div className="state-panel state-panel--error" role="alert">
@@ -142,8 +147,8 @@ export function HashVerification({ proposition }: HashVerificationProps) {
           </div>
         </section>
 
-        <section className="content-panel verifier-panel" aria-labelledby="version-title">
-          <h2 id="version-title">VersionVerifier</h2>
+        <section className="verifier-panel" aria-labelledby="version-title">
+          <h3 id="version-title">식별자 재계산</h3>
           {state.running ? <p>propositionId, versionId, certHash를 계산하는 중입니다.</p> : null}
           <div className="check-list">
             {state.versionChecks.map((check) => (
@@ -223,9 +228,9 @@ function SourceOpener({ proposition }: { proposition: Proposition }) {
   const dashId = encodePropositionId(proposition.propositionId);
 
   return (
-    <section className="content-panel source-opener" aria-labelledby="source-opener-title">
+    <section className="source-opener" aria-labelledby="source-opener-title">
       <div className="section-heading">
-        <p className="eyebrow">SourceOpener</p>
+        <p className="eyebrow">원문 대조</p>
         <h2 id="source-opener-title">원문 직접 대조</h2>
       </div>
       <div className="source-list">
