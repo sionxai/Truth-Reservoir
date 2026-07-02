@@ -14,6 +14,12 @@ const machineDiscoveryLinks = [
   {
     rel: "alternate",
     type: "application/json",
+    title: "Truth Reservoir derived relation graph",
+    href: absoluteSiteUrl("/api/v2/graph.json")
+  },
+  {
+    rel: "alternate",
+    type: "application/json",
     title: "Truth Reservoir public request queue",
     href: absoluteSiteUrl("/api/v2/requests.json")
   },

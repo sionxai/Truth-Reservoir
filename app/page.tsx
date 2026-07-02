@@ -15,6 +15,12 @@ const machineDataDownloads = [
   },
   {
     "@type": "DataDownload",
+    name: "Truth Reservoir derived relation graph",
+    contentUrl: absoluteSiteUrl("/api/v2/graph.json"),
+    encodingFormat: "application/json"
+  },
+  {
+    "@type": "DataDownload",
     name: "Truth Reservoir public request queue",
     contentUrl: absoluteSiteUrl("/api/v2/requests.json"),
     encodingFormat: "application/json"
@@ -56,6 +62,10 @@ const machineAccessLinks = [
   {
     href: absoluteSiteUrl("/api/v2/index.json"),
     label: "명제 전체 (JSON)"
+  },
+  {
+    href: absoluteSiteUrl("/api/v2/graph.json"),
+    label: "관계 그래프 (JSON)"
   },
   {
     href: absoluteSiteUrl("/api/v2/requests.json"),

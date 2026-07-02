@@ -23,6 +23,9 @@ export default function ApiDocsPage() {
               <a href="/api/v2/index.json">GET /api/v2/index.json</a>
             </li>
             <li>
+              <a href="/api/v2/graph.json">GET /api/v2/graph.json</a>
+            </li>
+            <li>
               <a href="/api/v2/requests.json">GET /api/v2/requests.json</a>
             </li>
             <li>
@@ -50,6 +53,21 @@ export default function ApiDocsPage() {
               <a href="/llms.txt">GET /llms.txt</a>
             </li>
           </ul>
+        </section>
+
+        <section className="facts-section doc-section" aria-labelledby="graph-shape-title">
+          <h2 id="graph-shape-title">관계 그래프</h2>
+          <p>
+            <span className="mono">/api/v2/graph.json</span>은 태그 교집합으로 빌드 시점에
+            결정론적으로 파생한 관계만 담습니다. 이 관계는 탐색용 레이어이며 Cert 원본에는
+            저장되지 않습니다.
+          </p>
+          <p>
+            형태는 <span className="mono">{"{ meta, nodes, edges }"}</span>입니다.{" "}
+            <span className="mono">nodes</span>는 propositionId, 페이지 경로, 태그를 담고,{" "}
+            <span className="mono">edges</span>는 공유 태그가 하나 이상인 두 명제를{" "}
+            <span className="mono">from &lt; to</span> 순서의 무방향 간선으로 한 번만 담습니다.
+          </p>
         </section>
 
         <section className="facts-section doc-section" aria-labelledby="request-lane-title">

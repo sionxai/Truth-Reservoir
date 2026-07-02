@@ -10,6 +10,7 @@ import {
 } from "../../../lib/display.ts";
 import { loadPropositions } from "../../../lib/data.ts";
 import { decodePropositionId, encodePropositionId } from "../../../lib/ids.ts";
+import { relatedPropositions, type RelatedProposition } from "../../../lib/relations.ts";
 import { absoluteSiteUrl, getRepoUrl } from "../../../lib/site.ts";
 import type { Correction, EvidenceItem, Proposition } from "../../../lib/types.ts";
 
@@ -61,7 +62,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function PropositionDetailPage({ params }: PageProps) {
   const { propositionId } = await params;
-  const proposition = await findProposition(propositionId);
+  const propositions = await loadPropositions();
+  const proposition = findPropositionInList(propositionId, propositions);
 
   if (!proposition) {
     notFound();
@@ -70,7 +72,11 @@ export default async function PropositionDetailPage({ params }: PageProps) {
   const dashId = encodePropositionId(proposition.propositionId);
   const jsonPath = propositionJsonPath(dashId);
   const jsonUrl = absoluteSiteUrl(jsonPath);
-  const articleJsonLd = buildArticleJsonLd(proposition, dashId, jsonUrl);
+  const related = relatedPropositions(proposition, propositions);
+  const relatedLinks = related.map((item) =>
+    absoluteSiteUrl(`/p/${encodePropositionId(item.proposition.propositionId)}/`)
+  );
+  const articleJsonLd = buildArticleJsonLd(proposition, dashId, jsonUrl, relatedLinks);
   const issueUrl = buildCorrectionIssueUrl(getRepoUrl(), proposition);
   const whyItems =
     proposition.sixW?.why.filter((item) => item.statedBy.trim() && item.reason.trim()) ?? [];
@@ -237,8 +243,49 @@ export default async function PropositionDetailPage({ params }: PageProps) {
             </a>
           </nav>
         </footer>
+
+        <RelatedFactsSection related={related} />
       </article>
     </main>
+  );
+}
+
+function RelatedFactsSection({ related }: { related: RelatedProposition[] }) {
+  if (!related.length) {
+    return null;
+  }
+
+  return (
+    <section className="facts-section related-facts" aria-labelledby="related-facts-title">
+      <div>
+        <h2 id="related-facts-title">관련 FACTS</h2>
+        <p className="relation-note">
+          태그 교집합으로 자동 선정됩니다 — 편집자가 고르지 않습니다
+        </p>
+      </div>
+      <ul className="related-facts-list">
+        {related.map((item) => {
+          const relatedDashId = encodePropositionId(item.proposition.propositionId);
+
+          return (
+            <li key={item.proposition.propositionId}>
+              <a className="related-facts-card" href={`/p/${relatedDashId}/`}>
+                <span className="related-facts-card__top">
+                  <GradeBadge grade={item.proposition.assessment.factualGrade} />
+                  <span className="mini-badge">
+                    <time dateTime={item.proposition.asOfDate}>{item.proposition.asOfDate}</time>{" "}
+                    기준
+                  </span>
+                </span>
+                <span className="related-facts-card__title" title={item.proposition.canonicalProposition}>
+                  {item.proposition.canonicalProposition}
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 }
 
@@ -315,8 +362,13 @@ function EvidenceListItem({ evidence, index }: { evidence: EvidenceItem; index: 
 }
 
 async function findProposition(dashId: string): Promise<Proposition | null> {
-  const decodedId = decodePropositionId(dashId);
   const propositions = await loadPropositions();
+
+  return findPropositionInList(dashId, propositions);
+}
+
+function findPropositionInList(dashId: string, propositions: Proposition[]): Proposition | null {
+  const decodedId = decodePropositionId(dashId);
 
   return propositions.find((item) => item.propositionId === decodedId) ?? null;
 }
@@ -325,7 +377,12 @@ function propositionJsonPath(dashId: string): string {
   return `/api/v2/propositions/${dashId}.json`;
 }
 
-function buildArticleJsonLd(proposition: Proposition, dashId: string, jsonUrl: string) {
+function buildArticleJsonLd(
+  proposition: Proposition,
+  dashId: string,
+  jsonUrl: string,
+  relatedLinks: string[]
+) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -337,6 +394,7 @@ function buildArticleJsonLd(proposition: Proposition, dashId: string, jsonUrl: s
     citation: proposition.evidence.map((evidence) => evidence.url),
     isBasedOn: jsonUrl,
     mainEntityOfPage: absoluteSiteUrl(`/p/${dashId}`),
+    relatedLink: relatedLinks,
     publisher: {
       "@type": "Organization",
       name: "진실저수지"

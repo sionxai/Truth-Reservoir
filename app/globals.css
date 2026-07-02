@@ -879,6 +879,50 @@ button.secondary,
   margin: 0;
 }
 
+.relation-note {
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  margin: 6px 0 0;
+}
+
+.related-facts-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.related-facts-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-lg);
+  color: var(--color-text);
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.related-facts-card:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.related-facts-card__top {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.related-facts-card__title {
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .evidence-list {
   display: grid;
   gap: 14px;

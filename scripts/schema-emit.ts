@@ -107,6 +107,25 @@ const openapi = {
         }
       }
     },
+    "/api/v2/graph.json": {
+      get: {
+        summary: "Fetch the deterministic proposition relation graph",
+        description:
+          "Derived from tag intersections at build time. Relations are not stored in Cert originals.",
+        responses: {
+          "200": {
+            description: "Static derived relation graph",
+            content: {
+              "application/json": {
+                schema: {
+                  $ref: "#/components/schemas/RelationGraph"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v2/requests.json": {
       get: {
         summary: "List public fact-data requests",
@@ -193,6 +212,52 @@ const openapi = {
                 url: { type: "string", format: "uri" },
                 createdAt: { type: "string", format: "date-time" },
                 updatedAt: { type: "string", format: "date-time" }
+              }
+            }
+          }
+        }
+      },
+      RelationGraph: {
+        type: "object",
+        required: ["meta", "nodes", "edges"],
+        properties: {
+          meta: {
+            type: "object",
+            required: ["generatedAt", "total", "note"],
+            properties: {
+              generatedAt: { type: "string" },
+              total: { type: "integer", minimum: 0 },
+              note: { type: "string" }
+            }
+          },
+          nodes: {
+            type: "array",
+            items: {
+              type: "object",
+              required: ["propositionId", "path", "tags"],
+              properties: {
+                propositionId: { type: "string", pattern: "^stmt:[a-f0-9]{24}$" },
+                path: { type: "string" },
+                tags: {
+                  type: "array",
+                  items: { type: "string" }
+                }
+              }
+            }
+          },
+          edges: {
+            type: "array",
+            items: {
+              type: "object",
+              required: ["from", "to", "sharedTags"],
+              properties: {
+                from: { type: "string", pattern: "^stmt:[a-f0-9]{24}$" },
+                to: { type: "string", pattern: "^stmt:[a-f0-9]{24}$" },
+                sharedTags: {
+                  type: "array",
+                  minItems: 1,
+                  items: { type: "string" }
+                }
               }
             }
           }

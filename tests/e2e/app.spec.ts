@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import { loadPropositions } from "../../lib/data.ts";
 import { encodePropositionId } from "../../lib/ids.ts";
 import { sortByUpdatedDesc } from "../../lib/propositions.ts";
+import { relatedPropositions } from "../../lib/relations.ts";
 import type { Proposition } from "../../lib/types.ts";
 import { findBallotShortageSeed, findPredecessorSeed } from "../test-utils.ts";
 
@@ -54,6 +55,17 @@ test("E2 detail page exposes a FACTS article for humans and crawlers", async ({
   await expect(page.getByText(ballotShortage.evidence[0].shortQuote)).toBeVisible();
   await expect(page.getByRole("heading", { name: "한계" })).toBeVisible();
   await expect(page.getByText(ballotShortage.limitations)).toBeVisible();
+  await expect(page.getByRole("heading", { name: "관련 FACTS" })).toBeVisible();
+  await expect(
+    page.getByText("태그 교집합으로 자동 선정됩니다 — 편집자가 고르지 않습니다")
+  ).toBeVisible();
+  for (const related of relatedPropositions(ballotShortage, propositions)) {
+    const relatedDashId = encodePropositionId(related.proposition.propositionId);
+
+    await expect(
+      page.getByRole("link", { name: related.proposition.canonicalProposition })
+    ).toHaveAttribute("href", `/p/${relatedDashId}/`);
+  }
   await expect(page.getByRole("link", { name: "이 사건의 JSON 원본" })).toHaveAttribute(
     "href",
     `/api/v2/propositions/${ballotShortageDashId}.json`

@@ -70,6 +70,11 @@ describe("data integration", () => {
       data?: unknown;
       meta?: { total?: unknown; dataVersion?: unknown };
     }>(join(apiRoot, "index.json"));
+    const graph = await readJsonFile<{
+      meta?: { total?: unknown; note?: unknown };
+      nodes?: Array<{ propositionId?: string; path?: string; tags?: unknown }>;
+      edges?: Array<{ from?: string; to?: string; sharedTags?: unknown }>;
+    }>(join(apiRoot, "graph.json"));
     const requests = await readJsonFile<{
       meta?: { repo?: unknown; total?: unknown; note?: unknown };
       requests?: unknown;
@@ -80,6 +85,22 @@ describe("data integration", () => {
       total: propositions.length,
       dataVersion: expect.any(String)
     });
+
+    expect(graph.meta).toMatchObject({
+      total: propositions.length,
+      note: expect.stringContaining("태그 교집합")
+    });
+    expect(graph.nodes).toHaveLength(propositions.length);
+    expect(graph.nodes?.[0]).toMatchObject({
+      propositionId: expect.stringMatching(/^stmt:[a-f0-9]{24}$/),
+      path: expect.stringMatching(/^\/p\/stmt-[a-f0-9]{24}\/$/)
+    });
+    expect(Array.isArray(graph.edges)).toBe(true);
+    for (const edge of graph.edges ?? []) {
+      expect(edge.from && edge.to ? edge.from < edge.to : false).toBe(true);
+      expect(Array.isArray(edge.sharedTags)).toBe(true);
+      expect((edge.sharedTags as unknown[]).length).toBeGreaterThan(0);
+    }
 
     for (const proposition of propositions) {
       const dashId = encodePropositionId(proposition.propositionId);
@@ -120,6 +141,9 @@ describe("data integration", () => {
     expect(sitemap).toContain("<loc>https://truth-reservoir.vercel.app/</loc>");
     expect(sitemap).toContain(
       "<loc>https://truth-reservoir.vercel.app/api/v2/index.json</loc>"
+    );
+    expect(sitemap).toContain(
+      "<loc>https://truth-reservoir.vercel.app/api/v2/graph.json</loc>"
     );
     expect(sitemap).toContain(
       "<loc>https://truth-reservoir.vercel.app/api/v2/requests.json</loc>"

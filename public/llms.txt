@@ -18,6 +18,7 @@ Machine discovery on each article page:
 
 Static endpoints:
 - GET /api/v2/index.json
+- GET /api/v2/graph.json
 - GET /api/v2/propositions/{dash-id}.json
 - GET /api/v2/institutional-metrics.json
 - GET /api/v2/requests.json
@@ -28,6 +29,9 @@ Static endpoints:
 
 Tag pages:
 Tag cluster pages are available at /t/{tag}. They are static, crawlable, and list matching propositions in chronological order. They contain a count and a list only; they are not editorial narratives.
+
+Derived relation graph:
+GET /api/v2/graph.json publishes deterministic cross-links derived at build time from tag intersections. Nodes expose propositionId, human page path, and tags. Edges are undirected, deduped by propositionId order, and include sharedTags. This graph is a derived navigation layer only; it is not stored in Cert originals and is not editorial selection.
 
 Live base URL:
 https://truth-reservoir.vercel.app

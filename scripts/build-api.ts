@@ -3,6 +3,7 @@ import { CertV2Schema } from "../schema/cert-v2.ts";
 import { loadInstitutionalMetrics, loadPropositions } from "../lib/data.ts";
 import { encodePropositionId } from "../lib/ids.ts";
 import { propositionsWithTag, tagRoute, uniqueTags } from "../lib/propositions.ts";
+import { sharedTags } from "../lib/relations.ts";
 import { absoluteSiteUrl } from "../lib/site.ts";
 import { applyDerivedHashes } from "../lib/verify.ts";
 import type { Proposition } from "../lib/types.ts";
@@ -55,6 +56,7 @@ function createSitemap(propositions: Proposition[], generatedAt: string): string
     "/api-docs",
     "/llms.txt",
     "/api/v2/index.json",
+    "/api/v2/graph.json",
     "/api/v2/requests.json",
     "/api/v2/openapi.json",
     "/api/v2/schema/cert-v2.schema.json"
@@ -138,6 +140,43 @@ async function createExamples(propositions: Proposition[]): Promise<Record<strin
   };
 }
 
+function createGraph(propositions: Proposition[], generatedAt: string) {
+  const sorted = [...propositions].sort((left, right) =>
+    left.propositionId.localeCompare(right.propositionId)
+  );
+  const edges: Array<{ from: string; to: string; sharedTags: string[] }> = [];
+
+  for (let leftIndex = 0; leftIndex < sorted.length; leftIndex += 1) {
+    for (let rightIndex = leftIndex + 1; rightIndex < sorted.length; rightIndex += 1) {
+      const left = sorted[leftIndex];
+      const right = sorted[rightIndex];
+      const tags = sharedTags(left, right);
+
+      if (tags.length) {
+        edges.push({
+          from: left.propositionId,
+          to: right.propositionId,
+          sharedTags: tags
+        });
+      }
+    }
+  }
+
+  return {
+    meta: {
+      generatedAt,
+      total: sorted.length,
+      note: "태그 교집합 기반 결정론적 파생 관계; cert 원본에는 저장되지 않음"
+    },
+    nodes: sorted.map((proposition) => ({
+      propositionId: proposition.propositionId,
+      path: `/p/${encodePropositionId(proposition.propositionId)}/`,
+      tags: [...proposition.tags].sort((left, right) => left.localeCompare(right, "ko"))
+    })),
+    edges
+  };
+}
+
 const propositions = await loadPropositions();
 const metrics = await loadInstitutionalMetrics();
 
@@ -179,6 +218,10 @@ const index = {
 };
 
 await writeFile(`${apiDir}/index.json`, `${JSON.stringify(index, null, 2)}\n`);
+await writeFile(
+  `${apiDir}/graph.json`,
+  `${JSON.stringify(createGraph(propositions, generatedAt), null, 2)}\n`
+);
 await writeFile(`${apiDir}/institutional-metrics.json`, `${JSON.stringify(metrics, null, 2)}\n`);
 // NOTE: requests.json is NOT regenerated here. The deploy build must stay
 // network-free/deterministic — a GitHub API call in the critical build path made
@@ -198,5 +241,5 @@ for (const [name, example] of Object.entries(examples)) {
 await copyFile("CONSTITUTION.md", "public/CONSTITUTION.md");
 
 console.log(
-  `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, institutional metrics, and examples.`
+  `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, graph.json, institutional metrics, and examples.`
 );

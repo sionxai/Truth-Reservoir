@@ -1,7 +1,8 @@
 import { defineConfig, devices } from "@playwright/test";
 
 const baseURL = process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3000";
-const webServerCommand = process.env.PLAYWRIGHT_WEB_SERVER_COMMAND ?? "npm run dev";
+const webServerCommand =
+  process.env.PLAYWRIGHT_WEB_SERVER_COMMAND ?? "node node_modules/next/dist/bin/next dev";
 
 export default defineConfig({
   testDir: "./tests/e2e",
