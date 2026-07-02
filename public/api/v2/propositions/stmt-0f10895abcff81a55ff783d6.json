@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:0f10895abcff81a55ff783d6",
-  "versionId": "ver:f4ae342854da8af2",
-  "certHash": "sha256:0558bb88a0a69a4294269c30c2867c5e8ec65a36ed60bbe487ebfdce0ed15c6c",
+  "versionId": "ver:506f8ad7230a5600",
+  "certHash": "sha256:dcc11af84b926273bcea98891ed11bc664a2031c2bc9a99d4d6f5b11cdac599c",
   "canonicalProposition": "김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료에는 2025년 12월 투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다",
   "originalClaim": "선관위가 투표용지 인쇄 하한 기준을 기존 60%에서 50%로 변경했다.",
   "claimNature": "document_content",
+  "sixW": {
+    "who": "중앙선거관리위원회",
+    "when": "2025년 12월",
+    "where": "김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료 및 사무편람",
+    "what": "투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다",
+    "how": "중앙선거관리위원회 자료의 기준 변경과 사무편람 반영 문구로 기재되었다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-18",
@@ -117,7 +125,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 모든 shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 모든 shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "KBS World 본문에 60%에서 50%로 낮춘 결정과 사무편람 반영 문구가 함께 확인된다.",
       "rejectedAlternatives": "사무편람 원문 전체, 변경의 적법성, 부정선거 또는 선거무효 결론은 직접 검증하지 못했거나 판단 영역이라 제외했다."
     }
@@ -143,5 +151,5 @@
     "문서내용"
   ],
   "createdAt": "2026-06-18",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-07-02"
 }

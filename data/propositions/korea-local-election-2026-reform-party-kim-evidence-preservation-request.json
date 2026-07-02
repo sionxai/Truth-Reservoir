@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:c890b5f8ca77961c84b58268",
-  "versionId": "ver:3644fcef725c3c57",
-  "certHash": "sha256:7d67a842955a18f4c442cdcc0857d16b4e2568c0262d5536b1a256dd300a94dc",
+  "versionId": "ver:199837373a5ec465",
+  "certHash": "sha256:0d40e04804744c244ba5171f62b4a8de83cb7af1d000758055020c49e5d94045",
   "canonicalProposition": "김정철 개혁신당 최고위원은 2026년 6월 3일 지방선거 투표용지 부족과 관련해 서울동부지방법원에 증거보전 신청을 제출했다",
   "originalClaim": "개혁신당의 증거보전 신청.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "김정철 개혁신당 최고위원",
+    "when": "2026년 6월 3일",
+    "where": "서울동부지방법원",
+    "what": "지방선거 투표용지 부족 관련 증거보전 신청을 제출했다",
+    "how": "증거보전 신청서를 법원에 제출했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-18",
@@ -69,7 +77,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 법원 절차 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다.",
+      "reviewMemo": "정치·선거·진행 중 법원 절차 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "KBS World 본문에서 김정철 개혁신당 최고위원이 제출한 증거보전 신청이라는 점이 확인된다.",
       "rejectedAlternatives": "정확한 제출일, 신청서 전문, 신청 인용 범위 전체, 부정선거 또는 선거무효 판단은 직접 검증하지 못했거나 판단 영역이라 제외했다."
     }
@@ -98,5 +106,5 @@
     "증거보전"
   ],
   "createdAt": "2026-06-18",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-07-02"
 }

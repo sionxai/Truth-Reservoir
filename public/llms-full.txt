@@ -14,9 +14,852 @@ Agent workflow: fetch /api/v2/search-index.json, filter locally by canonical/tag
 Verification: recompute evidence quoteHash as sha256(shortQuote), propositionId from canonicalProposition plus language, then versionId and certHash from the Cert v2.1 derivation documented in /api/v2/schema/cert-v2.schema.json and /api/v2/openapi.json.
 Storage boundary: the reservoir stores verified propositions and evidence structures, not verdicts or interpretations (제2). Grade labels are secondary navigation signals.
 
-generatedAt: 2026-06-19
+generatedAt: 2026-07-02
 total: 36
 recordOrder: updatedAt desc, then propositionId asc
+
+=== stmt:0f10895abcff81a55ff783d6 ===
+propositionId: stmt:0f10895abcff81a55ff783d6
+humanUrl: /p/stmt-0f10895abcff81a55ff783d6/
+jsonUrl: /api/v2/propositions/stmt-0f10895abcff81a55ff783d6.json
+canonicalProposition: 김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료에는 2025년 12월 투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 중앙선거관리위원회
+  when: 2025년 12월
+  where: 김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료 및 사무편람
+  what: 투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다
+  how: 중앙선거관리위원회 자료의 기준 변경과 사무편람 반영 문구로 기재되었다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202058&lang=e; shortQuote: "lower the threshold from 60 percent of the eligible voter population to 50 percent"
+  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202058&lang=e; shortQuote: "revised the manual on election procedures to reflect that change"
+  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202100&lang=e; shortQuote: "at least 50 percent of all eligible voters instead of 60 percent"
+limitations: 선관위 자료 원문과 사무편람 개정 전후 원문은 직접 fetch하지 못했다. KBS World의 보도 문구가 확인되는 범위에서만 채택했다. 기사에는 결정 시점이 '12월'로만 적시돼 있어 연도(2025년)는 6·3 선거 일정에 근거한 판단이며 원문에 명시되지 않았다.
+tags: 2026지방선거, 문서내용, 선관위지침, 정치주장, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:12ebbd81f7cfbbcaf5048a0e ===
+propositionId: stmt:12ebbd81f7cfbbcaf5048a0e
+humanUrl: /p/stmt-12ebbd81f7cfbbcaf5048a0e/
+jsonUrl: /api/v2/propositions/stmt-12ebbd81f7cfbbcaf5048a0e.json
+canonicalProposition: 국민의힘은 6·3 지방선거 투표용지 부족 의혹의 근거로 2022년 오세훈 후보 득표율 수치가 적힌 투표소 사례를 제시했다: 송파구 잠실7동 제2투표소는 81.08%였고 투표가 밤 10시까지 연장됐으며, 서초구 반포4동 제3투표소(81.25%)와 강남구 청담동 제4투표소(79.48%)도 포함됐다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 국민의힘
+  when: 불명(사례 제시일은 기록에 없음)
+  where: 6·3 지방선거 투표용지 부족 의혹 관련 보도 문맥
+  what: 투표용지 부족 의혹의 근거로 2022년 오세훈 후보 득표율 수치가 적힌 잠실7동 제2투표소, 반포4동 제3투표소, 청담동 제4투표소 사례를 제시했다
+  how: 보도에서 제시된 투표소 사례와 2022년 득표율 수치를 근거로 들었다
+  why: 2022년 오세훈 후보 득표율이 높은 투표소 사례와 투표 연장 사례를 투표용지 부족 의혹의 근거로 제시했다 (statedBy: 국민의힘)
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "국민의힘이 주목하고 있다고 전했다"
+  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "밤 10시까지 연장됐던 잠실7동 제2투표소는 81.08%"
+  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "서초구 반포4동 제3투표소(81.25%), 강남구 청담동 제4투표소(79.48%)"
+  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다"
+  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "송파구 잠실7동 제2투표소 역시 당시 81.08%"
+  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "서초구 반포4동 제3투표소(81.25%)나 강남구 청담동 제4투표소(79.48%)"
+  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "투표용지가 부족했던 투표소 91곳은"
+  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "경기 23곳, 인천 11곳"
+  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "전북 1곳, 전남 2곳"
+limitations: 국민의힘이 '제시한 사례'와 수치만 기록한다. 이 선별은 대표성을 의미하지 않으며, 부족은 보수 강세 외 지역(경기 23·인천 11·전남 2·전북 1 등)에도 분포했다(shortage-region-list-91). 2022년 득표율과 2026년 부족 간 인과는 미확정이고, 표적·부정선거 판단은 저장하지 않는다(제2).
+tags: 2026지방선거, 국민의힘, 정치주장, 주장, 투표소사례, 투표용지부족
+
+=== stmt:1426e28acba929903bbe8736 ===
+propositionId: stmt:1426e28acba929903bbe8736
+humanUrl: /p/stmt-1426e28acba929903bbe8736/
+jsonUrl: /api/v2/propositions/stmt-1426e28acba929903bbe8736.json
+canonicalProposition: 더불어민주당은 2026년 6월 7일 강준현 수석대변인을 통해 장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 더불어민주당(강준현 수석대변인)
+  when: 2026년 6월 7일
+  where: 더불어민주당 입장 발표
+  what: 장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다
+  how: 강준현 수석대변인을 통한 공개 입장으로 밝혔다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330; shortQuote: "관련해서 민주당에서는 논의한 적이 없다"
+  - url: https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330; shortQuote: "국민의힘 의원들 전반이 아니라 장 대표 혼자 요구한 것이 아닌가"
+  - url: https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330; shortQuote: "선관위는 헌법상 독립적 지위를 가지고 있지만"
+  - url: https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330; shortQuote: "선관위 개혁 기구도 검토하고 있다"
+limitations: 이 명제는 제14조 균형을 위해 더불어민주당이 밝힌 입장 자체만 기록한다. 재선거 필요성, 선관위 책임, 국민의힘 또는 장동혁 대표 주장의 타당성은 판단하지 않는다.
+tags: 2026지방선거, 강준현, 더불어민주당, 장동혁, 정치주장, 주장, 투표용지부족
+
+=== stmt:22abb3226ba88d6589e75013 ===
+propositionId: stmt:22abb3226ba88d6589e75013
+humanUrl: /p/stmt-22abb3226ba88d6589e75013/
+jsonUrl: /api/v2/propositions/stmt-22abb3226ba88d6589e75013.json
+canonicalProposition: UNFCCC의 COP30 사후 문서 목록은 제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: UNFCCC
+  when: 불명(사후 문서 목록의 게시·작성일은 기록에 없음; 문서가 적은 회의 기간은 2025년 11월 10~25일)
+  where: UNFCCC COP30 사후 문서 목록
+  what: 제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다
+  how: 사후 문서 목록의 회의 보고서 제목·문구로 해당 기간과 장소를 기재했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://unfccc.int/event/cop-30; shortQuote: "held in Belém from 10 to 25 November 2025"
+  - url: https://unfccc.int/cop30/ifp; shortQuote: "Hangar Convention and Fair Centre of the Amazon"
+limitations: UNFCCC 참가자 안내 페이지는 회의 예정 날짜를 2025년 11월 10-21일로 표시하지만, 사후 문서 목록의 회의 보고서 제목은 10-25일을 표시한다. 이 명제는 그 사후 문서 목록의 문구를 저장하는 문서 내용 명제다.
+tags: 2025, 국제사건, 벨렝, 최근1년, COP30, UNFCCC
+
+=== stmt:2e87b3750aadd61ef8e2b6c0 ===
+propositionId: stmt:2e87b3750aadd61ef8e2b6c0
+humanUrl: /p/stmt-2e87b3750aadd61ef8e2b6c0/
+jsonUrl: /api/v2/propositions/stmt-2e87b3750aadd61ef8e2b6c0.json
+canonicalProposition: 2026년 6월 3일 대한민국에서 제9회 전국동시지방선거 본투표가 실시되었다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 대한민국 선거관리 체계
+  when: 2026년 6월 3일
+  where: 대한민국
+  what: 제9회 전국동시지방선거 본투표가 실시되었다
+  how: 전국동시지방선거 본투표 절차로 실시되었다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.donga.com/news/Politics/article/all/20260603/134042934/1; shortQuote: "제9회 전국동시지방선거 본투표가 실시된 3일"
+  - url: https://en.yna.co.kr/view/AEN20260608005900315; shortQuote: "the June 3 local elections"
+  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=201993&lang=e; shortQuote: "June 3 local elections"
+limitations: 선관위 공식 일정 또는 결과 페이지는 이번 fetch에서 본문 확인이 되지 않아 2차 보도에 의존했다.
+tags: 2026지방선거, 선거일, 정치주장, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:3104eab69ad2305be2007c30 ===
+propositionId: stmt:3104eab69ad2305be2007c30
+humanUrl: /p/stmt-3104eab69ad2305be2007c30/
+jsonUrl: /api/v2/propositions/stmt-3104eab69ad2305be2007c30.json
+canonicalProposition: 1965년 6월 22일 대한민국과 일본은 도쿄에서 한일기본조약에 서명하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 대한민국과 일본
+  when: 1965년 6월 22일
+  where: 도쿄
+  what: 한일기본조약에 서명했다
+  how: 양국이 조약문에 서명했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://treaties.un.org/doc/Publication/UNTS/Volume%20583/volume-583-I-8471-English.pdf; shortQuote: "JAPAN AND THE REPUBLIC OF KOREA"
+  - url: https://treaties.un.org/doc/Publication/UNTS/Volume%20583/volume-583-I-8471-English.pdf; shortQuote: "TOKYO, ON 22 JUNE 1965"
+limitations: 이 명제는 1965년 6월 22일 조약 서명 사실에 한정한다. 청구권·배상·개인청구권·식민지배 불법성 해석은 별개 쟁점이며 본 명제에 저장하지 않았다.
+tags: 1965, 대한민국, 일본, 조약서명, 한국근현대사, 한일기본조약
+
+=== stmt:38c8e4c00c63fa0fc9b00eb3 ===
+propositionId: stmt:38c8e4c00c63fa0fc9b00eb3
+humanUrl: /p/stmt-38c8e4c00c63fa0fc9b00eb3/
+jsonUrl: /api/v2/propositions/stmt-38c8e4c00c63fa0fc9b00eb3.json
+canonicalProposition: BBNJ 협정은 2026년 1월 17일 발효되었다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: BBNJ 협정
+  when: 2026년 1월 17일
+  where: 유엔 조약 체계
+  what: 협정이 발효되었다
+  how: 협정 제68조(1)에 따른 발효일 도달로 발효되었다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://treaties.un.org/Pages/ViewDetails.aspx?chapter=21&clang=_en&mtdsg_no=XXI-10&src=TREATY; shortQuote: "17 January 2026, in accordance with article 68(1) of the Agreement"
+limitations: 이 명제는 BBNJ 협정 자체의 일반 발효일만 다룬다. 개별 국가별 당사자 지위, 비준일, 협정 이행 효과는 포함하지 않는다.
+tags: 2026, 국제사건, 유엔조약, 최근1년, 해양생물다양성, BBNJ
+
+=== stmt:40340515225f7adf44e242f3 ===
+propositionId: stmt:40340515225f7adf44e242f3
+humanUrl: /p/stmt-40340515225f7adf44e242f3/
+jsonUrl: /api/v2/propositions/stmt-40340515225f7adf44e242f3.json
+canonicalProposition: 개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-15
+updatedAt: 2026-07-02
+sixW:
+  who: 대한민국 정부
+  when: 2011년 3월 29일
+  where: 개인정보 보호법(법률 제10465호) 공포문
+  what: 개인정보 보호법(법률 제10465호)을 공포했다
+  how: 법률 공포 절차로 공포했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385; shortQuote: "2011년 3월 29일 공포"
+  - url: https://www.korea.kr/briefing/pressReleaseView.do?newsId=155749843; shortQuote: "개인정보 보호법 공포"
+limitations: 공포일 확인에 한정하며 법률의 시행 효과나 사회적 평가는 판단하지 않는다.
+tags: 개인정보보호, 공포, 법률제10465호
+
+=== stmt:4ae4c94174dc3aaf651102d2 ===
+propositionId: stmt:4ae4c94174dc3aaf651102d2
+humanUrl: /p/stmt-4ae4c94174dc3aaf651102d2/
+jsonUrl: /api/v2/propositions/stmt-4ae4c94174dc3aaf651102d2.json
+canonicalProposition: 1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 닐 암스트롱과 버즈 올드린
+  when: 1969년 7월 20일 20:17:40 UTC
+  where: 달 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)
+  what: 아폴로 11호 달 착륙선 이글(Eagle)을 착륙시켰다
+  how: 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달 표면에 착륙했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C; shortQuote: "The LM landed at 20:17:40 UT on 20 July 1969"
+  - url: https://prologue.blogs.archives.gov/2019/07/19/apollo-11-50th-anniversary/; shortQuote: "Eagle landed on the lunar surface at 20:17:40 GMT on July 20, 1969"
+  - url: https://www.britannica.com/topic/Apollo-11; shortQuote: "Eagle had touched down in the Sea of Tranquility"
+  - url: https://lroc.im-ldi.com/featured_sites/51; shortQuote: "Mare Tranquillitatis [0.67416° N, 23.47314° E]"
+limitations: 착륙 시각은 출처에 따라 20:17(분 단위)~20:17:40(초 단위) UTC로 표기되며, 본 명제는 가장 정밀한 1차 출처(NASA NSSDCA) 기준 20:17:40을 채택. 좌표는 LROC Featured Sites가 제시한 0.67416° N, 23.47314° E와 일치하며, 후대 LRO 이미지 기반 확정값이므로 1969년 당시 추정 좌표와는 정밀도 차이가 있을 수 있음.
+tags: 1969, 아폴로계획, 역사적사건, 우주
+
+=== stmt:4f96ea07a89511c2ea0a86a3 ===
+propositionId: stmt:4f96ea07a89511c2ea0a86a3
+humanUrl: /p/stmt-4f96ea07a89511c2ea0a86a3/
+jsonUrl: /api/v2/propositions/stmt-4f96ea07a89511c2ea0a86a3.json
+canonicalProposition: 페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대는 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아와 최초의 지구 일주를 완료하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대
+  when: 1519년부터 1522년까지
+  where: 스페인에서 출발해 서쪽 항로로 항해한 전 세계 항로 및 스페인 귀환
+  what: 최초의 지구 일주를 완료하였다
+  how: 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아왔다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.unesco.org/en/memory-world/first-voyage-circumnavigation-fernao-de-magalhaes-and-juan-sebastian-elcano-1519-1522; shortQuote: "First Voyage of Circumnavigation by Fernãõ de Magalhães and Juan Sebastián Elcano (1519-1522)"
+  - url: https://www.britannica.com/biography/Juan-Sebastian-del-Cano; shortQuote: "completed the first circumnavigation of the Earth"
+  - url: https://www.britannica.com/biography/Juan-Sebastian-del-Cano; shortQuote: "In 1519 Cano sailed as master"
+  - url: https://www.britannica.com/biography/Juan-Sebastian-del-Cano; shortQuote: "He safely brought the expedition home to Spain in September 1522"
+  - url: https://www.britannica.com/biography/Ferdinand-Magellan; shortQuote: "one of his ships continued westward to Spain"
+  - url: https://www.britannica.com/biography/Ferdinand-Magellan; shortQuote: "He died en route and Juan Sebastián del Cano completed it."
+limitations: 마젤란은 1521년 필리핀에서 사망했으므로 원정을 직접 완주하지 않았다. 이 명제는 마젤란이 시작한 원정대가 엘카노 지휘 아래 1522년 스페인으로 돌아와 최초의 지구 일주를 완료했다는 사건에 한정한다. 출발·귀환의 월일은 출처별 표기 차이가 있어 연도 단위로만 저장했다.
+tags: 마젤란, 엘카노, 지구과학, 지구일주, 지구형상, 항해사
+
+=== stmt:52e6260a60e04599d809ae61 ===
+propositionId: stmt:52e6260a60e04599d809ae61
+humanUrl: /p/stmt-52e6260a60e04599d809ae61/
+jsonUrl: /api/v2/propositions/stmt-52e6260a60e04599d809ae61.json
+canonicalProposition: 개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-06-15
+updatedAt: 2026-07-02
+sixW:
+  who: 대한민국
+  when: 2011년 3월 29일 공포된 법률 제10465호
+  where: 개인정보 보호법(법률 제10465호) 부칙 제1조
+  what: '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다
+  how: 법률 제10465호 부칙 제1조로 제정·공포되었다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385; shortQuote: "공포 후 6개월이 경과한 날부터 시행한다"
+limitations: '시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.
+tags: 개인정보보호, 법률제10465호, 부칙
+
+=== stmt:5697abe486cdf727eafca8e1 ===
+propositionId: stmt:5697abe486cdf727eafca8e1
+humanUrl: /p/stmt-5697abe486cdf727eafca8e1/
+jsonUrl: /api/v2/propositions/stmt-5697abe486cdf727eafca8e1.json
+canonicalProposition: 2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다
+factualGrade/status: undetermined / active
+assessmentStatus: undetermined
+claimNature: measurement
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 진실저수지 검수 기록
+  when: 2026년 6월 18일 기준
+  where: 6·3 지방선거 투표용지 부족 투표소 91곳 및 fetch 가능한 공개 보도 범위
+  what: 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 사실로 확정되지 않았다고 기록했다
+  how: fetch 가능한 보도와 기존 91곳 지역분포 명제를 대조해 필요한 데이터 공개 여부를 점검했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "전통적인 보수 강세 지역이라는 점에 국민의힘이 주목"
+  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "잠실7동 제2투표소는 81.08%의 득표율을 보였다"
+  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다"
+  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "투표용지가 부족했던 투표소 91곳은"
+  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "경기 23곳, 인천 11곳, 대구 4곳"
+limitations: 본 저수지는 편중을 사실로도, 비편중을 사실로도 저장하지 않는다. 검증된 분포(shortage-region-list-91)와 국민의힘 주장(ppp-conservative-concentration-claim)은 별도 보관한다. 표적·인과·부정선거 판단은 저장하지 않는다(제2).
+tags: 2026지방선거, 보수강세, 정치주장, 측정, 투표용지부족, 판단유보
+
+=== stmt:5bf64ededa100f82163dcab1 ===
+propositionId: stmt:5bf64ededa100f82163dcab1
+humanUrl: /p/stmt-5bf64ededa100f82163dcab1/
+jsonUrl: /api/v2/propositions/stmt-5bf64ededa100f82163dcab1.json
+canonicalProposition: 윤재수 중앙선거관리위원회 선거정책실장은 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 윤재수 중앙선거관리위원회 선거정책실장
+  when: 불명(윤재수 실장의 설명 발언일은 기록에 없음)
+  where: 중앙선거관리위원회 관련 해명 보도 문맥
+  what: 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다
+  how: 선관위 선거정책실장 설명 발언으로 해명했다
+  why: 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50% 기준으로 인쇄했다 (statedBy: 중앙선거관리위원회(윤재수 선거정책실장))
+correctionHistory: none
+evidence:
+  - url: https://www.hani.co.kr/arti/politics/election/1262187.html; shortQuote: "선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다"
+limitations: 발언의 정확한 원문 전체와 브리핑 전문은 직접 확인하지 못했다. 윤재수 실장의 사전투표율 증가 및 전체 선거인 수 50% 인쇄 설명을 같은 취지로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.
+tags: 2026지방선거, 선관위해명, 정치주장, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:61efe874787dacf6180ae46b ===
+propositionId: stmt:61efe874787dacf6180ae46b
+humanUrl: /p/stmt-61efe874787dacf6180ae46b/
+jsonUrl: /api/v2/propositions/stmt-61efe874787dacf6180ae46b.json
+canonicalProposition: 1972년 12월 7일 아폴로 17호 승무원은 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 아폴로 17호 승무원
+  when: 1972년 12월 7일
+  where: 아폴로 17호의 달 비행 경로에서 본 지구
+  what: 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영했다
+  how: 승무원이 지구를 촬영한 사진으로 기록했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148; shortQuote: "This classic photograph of the Earth was taken on December 7, 1972."
+  - url: https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148; shortQuote: "View of the Earth as seen by the Apollo 17 crew traveling toward the moon."
+  - url: https://science.nasa.gov/earth/earth-observatory/history-of-the-blue-marble/; shortQuote: "On December 7, 1972, the crew of Apollo 17"
+limitations: AS17-148-22727의 널리 배포된 버전은 회전·크롭·색상 조정이 있을 수 있다. 본 명제의 '원형으로 보이는' 표현은 EOL 카탈로그의 표시 이미지와 사진 내용에 대한 시각적 기술이며, 물리적 지구 형상에 대한 판정 명제가 아니다.
+tags: 아폴로17, 우주사진, 지구과학, 지구형상, BlueMarble, NASA
+
+=== stmt:698eafdeae1e813d295ea69b ===
+propositionId: stmt:698eafdeae1e813d295ea69b
+humanUrl: /p/stmt-698eafdeae1e813d295ea69b/
+jsonUrl: /api/v2/propositions/stmt-698eafdeae1e813d295ea69b.json
+canonicalProposition: 1950년 6월 25일 04시 40분경 조선인민군은 38선을 넘어 대한민국 영역으로 진입하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 조선인민군
+  when: 1950년 6월 25일 04시 40분경
+  where: 38선 및 대한민국 영역
+  what: 38선을 넘어 대한민국 영역으로 진입했다
+  how: 조선인민군 부대가 38선을 넘어 남쪽으로 3~5km 진격했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.britannica.com/event/Korean-War/Invasion-and-counterinvasion-1950-51; shortQuote: "North Koreans struck across the 38th parallel"
+  - url: https://en.wikipedia.org/wiki/Korean_War; shortQuote: "At 4:40 a.m. on 25 June 1950, the KPA crossed the 38th parallel"
+  - url: https://en.wikipedia.org/wiki/Korean_War; shortQuote: "individual KPA units had advanced 3 to 5 kilometers into South Korean territory"
+limitations: 38선 통과와 대한민국 영역 진입이라는 기초 사실은 잘 문서화되어 있으나, 전쟁의 원인·책임·동기·정당성 프레이밍은 헌법 제2조에 따라 본 명제에서 제외했다. 북한 측 또는 다른 행위자의 책임 주장 자체를 기록하려면 별도 주장 명제로 분리해야 한다.
+tags: 1950, 38선, 전쟁개시, 조선인민군, 한국근현대사, 한국전쟁
+
+=== stmt:6ec9cbff53f71a505b22823f ===
+propositionId: stmt:6ec9cbff53f71a505b22823f
+humanUrl: /p/stmt-6ec9cbff53f71a505b22823f/
+jsonUrl: /api/v2/propositions/stmt-6ec9cbff53f71a505b22823f.json
+canonicalProposition: 국민의힘은 2026년 6월 4일 6·3 지방선거 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며, 실제 투표를 포기한 유권자가 발생했다면 중대한 참정권 침해에 해당할 수 있다고 주장했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 국민의힘
+  when: 2026년 6월 4일
+  where: 6·3 지방선거 투표용지 부족 관련 공개 문제제기 문맥
+  what: 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며 실제 투표 포기 유권자가 발생했다면 중대한 참정권 침해일 수 있다고 주장했다
+  how: 공개 문제제기와 보도 인용을 통해 주장했다
+  why: 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점과 투표 포기 유권자 발생 가능성을 근거로 들었다 (statedBy: 국민의힘)
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "전통적인 보수 강세 지역이라는 점에 국민의힘이 주목"
+  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "중대한 참정권 침해에 해당할 수 있다고 보고 있다"
+  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다"
+  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "투표를 포기하고 발길을 돌린 유권자의 참정권 침해"
+limitations: 이 명제는 국민의힘 '주장의 존재'만 기록한다. 선관위 검증 분포(91곳)는 보수 강세 지역에 국한되지 않으며 경기 23곳·인천 11곳·전남 2곳·전북 1곳 등에도 분포한다(shortage-region-list-91 참조). 송파구 20곳이 최다인 것은 사실이나, 분포가 특정 정당 지역을 표적했는지 여부는 미확정이며 본 저수지는 인과·표적·부정선거 판단을 저장하지 않는다(제2).
+tags: 2026지방선거, 국민의힘, 정치주장, 주장, 참정권, 투표용지부족
+
+=== stmt:7536cb937fa5897848d6ecf4 ===
+propositionId: stmt:7536cb937fa5897848d6ecf4
+humanUrl: /p/stmt-7536cb937fa5897848d6ecf4/
+jsonUrl: /api/v2/propositions/stmt-7536cb937fa5897848d6ecf4.json
+canonicalProposition: 1953년 7월 27일 유엔군사령부·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 유엔군사령부·조선인민군·중국인민지원군 대표
+  when: 1953년 7월 27일 10:00
+  where: 판문점, 한국
+  what: 한국 정전협정에 서명했다
+  how: 정전협정 문서에 각 대표가 서명했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://en.wikisource.org/wiki/Korean_Armistice_Agreement; shortQuote: "Done at Panmunjom, Korea at 10:00 hours on the 27th day of July 1953"
+  - url: https://en.wikipedia.org/wiki/United_Nations_Command; shortQuote: "United Nations Command, the Korean People's Army, and the Chinese People's Volunteers signed"
+  - url: https://en.wikipedia.org/wiki/Korean_Armistice_Agreement; shortQuote: "On 27 July 1953, at 10:00 a.m., the Armistice was signed"
+  - url: https://en.wikipedia.org/wiki/Korean_Armistice_Agreement; shortQuote: "South Korea never signed the Armistice Agreement"
+limitations: 이 명제는 정전협정 서명 행위에 한정한다. 대한민국은 협정 서명자로 기재되지 않았다는 사실을 함께 유의해야 한다. 정전협정의 법적 효과, 평화협정 부재, 전쟁의 종료 여부에 관한 해석은 포함하지 않는다.
+tags: 1953, 유엔군사령부, 조선인민군, 중국인민지원군, 한국근현대사, 한국정전협정
+
+=== stmt:83702707422e50c0a56fb565 ===
+propositionId: stmt:83702707422e50c0a56fb565
+humanUrl: /p/stmt-83702707422e50c0a56fb565/
+jsonUrl: /api/v2/propositions/stmt-83702707422e50c0a56fb565.json
+canonicalProposition: 중앙선거관리위원회 개정 사무편람에는 지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다는 내용이 담겼다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 중앙선거관리위원회
+  when: 불명(개정 사무편람의 정확한 개정일은 기록에 없음)
+  where: 중앙선거관리위원회 개정 사무편람
+  what: 지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다고 적고 있다
+  how: 개정 사무편람의 인쇄 하한 산정 기준 문구로 기재되었다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.hani.co.kr/arti/politics/election/1262187.html; shortQuote: "지방선거는 50%를 ‘하한’으로 산정"
+  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202100&lang=e; shortQuote: "at least 50 percent of all eligible voters"
+limitations: 원문 지침·사무편람을 직접 fetch하지 못해 “60%→50% 변경” 전체 이력은 저장하지 않았다.
+tags: 2026지방선거, 문서내용, 선관위지침, 정치주장, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:840aa7c32d8f6372cd968fb6 ===
+propositionId: stmt:840aa7c32d8f6372cd968fb6
+humanUrl: /p/stmt-840aa7c32d8f6372cd968fb6/
+jsonUrl: /api/v2/propositions/stmt-840aa7c32d8f6372cd968fb6.json
+canonicalProposition: 개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-06-15
+updatedAt: 2026-07-02
+sixW:
+  who: 대한민국
+  when: 2011년 3월 29일 공포된 법률 제10465호
+  where: 개인정보 보호법(법률 제10465호) 폐지 관련 조문
+  what: 구 '공공기관의 개인정보보호에 관한 법률'을 폐지한다고 규정하며, 기록은 그 후신 제정으로 제한적으로 요약한다
+  how: 법률 제10465호 제정·공포 과정에서 폐지 조문을 두었다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385; shortQuote: "공공기관의 개인정보보호에 관한 법률은 폐지한다"
+limitations: 폐지 사실은 원문으로 확인되지만 '후신' 표현은 제도적 대체 관계를 요약하는 해석 요소가 있다. 이 명제는 폐지 조문 확인에 초점을 두며, 법적 동일성이나 제도적 연속성 전체를 확정하지 않는다.
+tags: 개인정보보호, 법률제10465호, 폐지
+
+=== stmt:8b798d52af5df4ea214ecead ===
+propositionId: stmt:8b798d52af5df4ea214ecead
+humanUrl: /p/stmt-8b798d52af5df4ea214ecead/
+jsonUrl: /api/v2/propositions/stmt-8b798d52af5df4ea214ecead.json
+canonicalProposition: 1948년 9월 9일 조선민주주의인민공화국 정부가 선포되었다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 조선민주주의인민공화국 정부
+  when: 1948년 9월 9일
+  where: 조선민주주의인민공화국(북한)
+  what: 정부 수립이 선포되었다
+  how: 정부 수립 선포로 발표되었다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://countrystudies.us/north-korea/14.htm; shortQuote: "The Democratic People's Republic of Korea was established on September 9, 1948"
+  - url: https://en.wikipedia.org/wiki/History_of_South_Korea; shortQuote: "Democratic People's Republic of Korea (North Korea), was proclaimed"
+  - url: https://en.wikipedia.org/wiki/Day_of_the_Foundation_of_the_Republic; shortQuote: "formally recognized the DPRK"
+limitations: 이 명제는 1948년 9월 9일의 선포 사건만 저장한다. 조선민주주의인민공화국의 법적 승인, 한반도 대표성, 분단 책임, 체제 평가는 포함하지 않는다.
+tags: 1948, 분단, 정부수립선포, 조선민주주의인민공화국, 한국근현대사
+
+=== stmt:921a9dc8a1b5b268e0f4c807 ===
+propositionId: stmt:921a9dc8a1b5b268e0f4c807
+humanUrl: /p/stmt-921a9dc8a1b5b268e0f4c807/
+jsonUrl: /api/v2/propositions/stmt-921a9dc8a1b5b268e0f4c807.json
+canonicalProposition: 2026년 6월 3일 오후 4시께 서울 송파구 잠실4동 제5투표소에서 투표용지 부족으로 투표가 일시 중단됐다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 서울 송파구 잠실4동 제5투표소
+  when: 2026년 6월 3일 오후 4시께
+  where: 서울 송파구 잠실4동 제5투표소
+  what: 투표가 일시 중단됐다
+  how: 투표용지 부족으로 투표가 일시 중단됐다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.donga.com/news/Politics/article/all/20260603/134042934/1; shortQuote: "오후 4시께 투표가 일시 중단됐다"
+limitations: 선관위 투표록 원문과 법적 판단은 직접 확인하지 못했다. 투표 재개 및 대기 유권자 후속 사실은 별도 명제가 필요하다. 같은 특정 장소·시각(잠실4동 제5투표소, 오후 4시께)을 모두 담은 fetch 가능한 독립 2차 출처는 이번 재검수에서 확인하지 못했다.
+tags: 2026지방선거, 잠실4동, 정치주장, 투표용지부족, 투표중단
+
+=== stmt:9fa1e13fbdeb497fdee35c15 ===
+propositionId: stmt:9fa1e13fbdeb497fdee35c15
+humanUrl: /p/stmt-9fa1e13fbdeb497fdee35c15/
+jsonUrl: /api/v2/propositions/stmt-9fa1e13fbdeb497fdee35c15.json
+canonicalProposition: 국제사법재판소는 2025년 7월 23일 '기후변화에 관한 국가의 의무' 권고의견을 발령하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 국제사법재판소
+  when: 2025년 7월 23일
+  where: 국제사법재판소 권고의견 문서
+  what: '기후변화에 관한 국가의 의무' 권고의견을 발령했다
+  how: 권고의견 문서(Advisory Opinion of 23 July 2025)로 발령했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://icj-cij.org/case/187/advisory-opinions; shortQuote: "Advisory Opinion of 23 July 2025"
+limitations: 이 명제는 권고의견 발령 일자와 사건명에만 한정한다. 권고의견의 법적 구속력, 개별 국가 책임, 배상 가능성은 별도 법률 해석 영역이다.
+tags: 2025, 국제사건, 권고의견, 기후변화, 최근1년, ICJ
+
+=== stmt:a2c80ef637dd92021cbbd92b ===
+propositionId: stmt:a2c80ef637dd92021cbbd92b
+humanUrl: /p/stmt-a2c80ef637dd92021cbbd92b/
+jsonUrl: /api/v2/propositions/stmt-a2c80ef637dd92021cbbd92b.json
+canonicalProposition: 서울동부지방법원은 2026년 6월 9일 서울 송파구 잠실 투표소의 투표용지 부족과 관련해 증거보전을 명령했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 서울동부지방법원
+  when: 2026년 6월 9일
+  where: 서울 송파구 잠실 투표소 관련 법원 절차
+  what: 투표용지 부족 관련 증거보전을 명령했다
+  how: 법원이 증거보전 명령을 내렸다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.koreatimes.co.kr/southkorea/law-crime/20260610/court-officials-fail-to-secure-key-evidence-at-polling-station-over-ballot-shortage; shortQuote: "ordered the preservation of evidence"
+  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202050&lang=e; shortQuote: "ordered the preservation of four pieces of evidence"
+limitations: 법원 결정문 원문과 인용 범위 전문은 직접 확인하지 못했다. 추가한 KBS World 보도는 법원 명령 사실을 보강하지만 결정문 원문을 대체하지 않는다.
+tags: 2026지방선거, 법원, 정치주장, 중앙선거관리위원회, 증거보전, 투표용지부족
+
+=== stmt:a39e2dc6072bbda67817ead7 ===
+propositionId: stmt:a39e2dc6072bbda67817ead7
+humanUrl: /p/stmt-a39e2dc6072bbda67817ead7/
+jsonUrl: /api/v2/propositions/stmt-a39e2dc6072bbda67817ead7.json
+canonicalProposition: 이승만은 1948년 8월 15일 대한민국 수립을 선포하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 이승만
+  when: 1948년 8월 15일
+  where: 대한민국(남한)
+  what: 대한민국 수립을 선포하였다
+  how: 대한민국 수립을 공식 선포했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://countrystudies.us/south-korea/9.htm; shortQuote: "when on August 15, 1948, the Republic of Korea (South Korea) was proclaimed"
+  - url: https://en.wikipedia.org/wiki/History_of_South_Korea; shortQuote: "proclaimed the Republic of Korea (South Korea) on 15 August 1948"
+  - url: https://en.wikipedia.org/wiki/History_of_South_Korea; shortQuote: "On 15 August 1948, the Republic of Korea was formally established"
+limitations: 이 명제는 1948년 8월 15일의 선포 행위만 저장한다. 대한민국 정부의 법적 정통성, 유엔 승인 의미, 분단 책임 또는 '건국' 명칭 논쟁은 포함하지 않는다.
+tags: 1948, 대한민국정부수립, 분단, 정부수립선포, 한국근현대사
+
+=== stmt:ae66527bf2aea1b5407a5f78 ===
+propositionId: stmt:ae66527bf2aea1b5407a5f78
+humanUrl: /p/stmt-ae66527bf2aea1b5407a5f78/
+jsonUrl: /api/v2/propositions/stmt-ae66527bf2aea1b5407a5f78.json
+canonicalProposition: 1968년 12월 24일 아폴로 8호 승무원은 달 궤도에서 지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영하였다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 아폴로 8호 승무원
+  when: 1968년 12월 24일
+  where: 달 궤도에서 본 달 지평선 위
+  what: 지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영했다
+  how: 달 궤도에서 지구가 떠오르는 장면을 사진으로 촬영했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=2383&mission=AS08&roll=14; shortQuote: "The rising Earth is about five degrees above the lunar horizon"
+  - url: https://svs.gsfc.nasa.gov/4129/; shortQuote: "photographed the Earth rising from behind the Moon"
+  - url: https://svs.gsfc.nasa.gov/4129/; shortQuote: "The original photographs are AS08-13-2329, AS08-14-2383, and AS08-14-2384."
+  - url: https://apod.nasa.gov/apod/ap181224.html; shortQuote: "50 years ago today"
+limitations: NASA/JSC EOL 사진 카탈로그의 공개 텍스트에서는 AS08-14-2383의 Date taken 필드가 비어 있었다. 1968-12-24 날짜는 NASA APOD의 2018-12-24 기념일 문구와 NASA SVS의 Apollo 8 Earthrise 재구성 문맥으로 보강했다. 촬영자를 특정 개인으로 단정하지 않고 Apollo 8 승무원으로 표현했다.
+tags: 아폴로8, 우주사진, 지구과학, 지구형상, Earthrise, NASA
+
+=== stmt:b18e2813819c4fb0e23830f6 ===
+propositionId: stmt:b18e2813819c4fb0e23830f6
+humanUrl: /p/stmt-b18e2813819c4fb0e23830f6/
+jsonUrl: /api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json
+canonicalProposition: 에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 에라토스테네스
+  when: 기원전 약 240년경
+  where: 시에네와 알렉산드리아
+  what: 지구 둘레를 추정하는 측정을 수행하였다
+  how: 하지 정오의 태양 그림자 각도 차이를 이용했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.britannica.com/biography/Eratosthenes; shortQuote: "Eratosthenes measured Earth’s circumference mathematically using two surface points"
+  - url: https://oceanservice.noaa.gov/education/tutorial_geodesy/geo02_hist.html; shortQuote: "the sun cast a shadow equivalent to about 1/50th of a circle or 7.12°"
+  - url: https://www.britannica.com/biography/Eratosthenes; shortQuote: "At Syene (now Aswān), some 800 km (500 miles) southeast of Alexandria"
+  - url: https://www.britannica.com/biography/Eratosthenes; shortQuote: "sunlight fell at an angle of about 7.2° from the vertical"
+  - url: https://www.britannica.com/biography/Eratosthenes; shortQuote: "Given an estimate of the distance between the two cities"
+  - url: https://arxiv.org/abs/2110.01610; shortQuote: "historical experiment of Eratosthenes, carried out around 240 BC"
+limitations: 에라토스테네스의 원저는 보존되지 않았고, 방법은 후대 Cleomedes 전승 등으로 알려져 있다. stadion을 km로 환산하는 값과 최종 둘레 수치는 논쟁적이므로 이 명제는 측정 수행과 방법에만 한정한다.
+tags: 과학사, 에라토스테네스, 지구과학, 지구형상, 천문학, 측정
+
+=== stmt:b3deef8189d7937fc1e97ab2 ===
+propositionId: stmt:b3deef8189d7937fc1e97ab2
+humanUrl: /p/stmt-b3deef8189d7937fc1e97ab2/
+jsonUrl: /api/v2/propositions/stmt-b3deef8189d7937fc1e97ab2.json
+canonicalProposition: 쇼와 천황은 1945년 8월 15일 녹음 라디오 연설로 일본의 연합국에 대한 항복을 공표하였다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: 쇼와 천황
+  when: 1945년 8월 15일
+  where: 라디오 방송
+  what: 일본의 연합국에 대한 항복을 공표하였다
+  how: 녹음 라디오 연설로 공표하였다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.ndl.go.jp/constitution/e/etc/history.html; shortQuote: "Imperial Rescript declaring the end of the war is broadcast at noon."
+  - url: https://en.wikipedia.org/wiki/Surrender_of_Japan; shortQuote: "was announced by Emperor Hirohito on 15 August"
+  - url: https://en.wikipedia.org/wiki/Surrender_of_Japan; shortQuote: "on 15 August announcing the surrender"
+limitations: 이 명제는 1945년 8월 15일 항복 공표 행위에 한정한다. 한국의 식민지 지배 종료, 해방의 의미, 1945년 9월 2일 항복문서 서명, 전후 점령 절차는 별도 명제로 분리해야 한다.
+tags: 1945, 옥음방송, 일본항복공표, 제2차세계대전, 한국근현대사
+
+=== stmt:b9a4dcf237affc17c1a51fe6 ===
+propositionId: stmt:b9a4dcf237affc17c1a51fe6
+humanUrl: /p/stmt-b9a4dcf237affc17c1a51fe6/
+jsonUrl: /api/v2/propositions/stmt-b9a4dcf237affc17c1a51fe6.json
+canonicalProposition: NGA WGS 84 공식 설명은 WGS 84 측지 좌표가 기준타원체에서 생성되며 그 장반경을 6,378,137.0미터로 제시한다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: NGA
+  when: 불명(WGS 84 공식 설명의 게시·개정일은 기록에 없음)
+  where: NGA WGS 84 공식 설명 문서
+  what: WGS 84 측지 좌표가 기준타원체에서 생성되며 장반경을 6,378,137.0미터로 제시한다고 적고 있다
+  how: 공식 설명 문서의 기준타원체 설명과 수치 표로 기재했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84; shortQuote: "generated using its reference ellipsoid"
+  - url: https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84; shortQuote: "Semi-major Axis a 6378137.0 meters"
+  - url: https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84; shortQuote: "Flattening Factor of the Earth 1/f 298.257223563"
+limitations: WGS 84 기준타원체는 지구 표면 전체의 모든 굴곡을 그대로 말하는 물리적 지구 형상 명제가 아니라 좌표 기준계의 수학적 참조면이다. 본 명제는 NGA 공식 설명의 문서내용과 수치 표기에 한정한다.
+tags: 기준타원체, 지구과학, 지구형상, 측지학, WGS84
+
+=== stmt:c11b6f2081e8fa1c38bae49d ===
+propositionId: stmt:c11b6f2081e8fa1c38bae49d
+humanUrl: /p/stmt-c11b6f2081e8fa1c38bae49d/
+jsonUrl: /api/v2/propositions/stmt-c11b6f2081e8fa1c38bae49d.json
+canonicalProposition: 이재명 대통령은 2026년 6월 7일 6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 이재명 대통령
+  when: 2026년 6월 7일
+  where: 대한민국 대통령 지시·공식 대응 문맥
+  what: 6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다
+  how: 검찰과 경찰에 합동조사를 지시했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.koreajoongangdaily.com/korea/lee-orders-thorough-investigation-into-ballot-shortage/12622980; shortQuote: "ordered the launch of a thorough joint investigation"
+  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=201994&lang=e; shortQuote: "instructed the prosecutor's office and the police"
+  - url: https://en.yna.co.kr/view/AEN20260607005453320; shortQuote: "joint investigation by prosecutors and police"
+limitations: 합동조사의 최종 결과와 수사 판단은 확인되지 않았다.
+tags: 2026지방선거, 공식대응, 수사, 정치주장, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:c44501dcb97869b23fbe8942 ===
+propositionId: stmt:c44501dcb97869b23fbe8942
+humanUrl: /p/stmt-c44501dcb97869b23fbe8942/
+jsonUrl: /api/v2/propositions/stmt-c44501dcb97869b23fbe8942.json
+canonicalProposition: 2025년 6월 24일부터 25일까지 NATO 정상회의가 네덜란드 헤이그에서 열렸다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-16
+updatedAt: 2026-07-02
+sixW:
+  who: NATO
+  when: 2025년 6월 24일부터 25일까지
+  where: 네덜란드 헤이그
+  what: NATO 정상회의가 열렸다
+  how: 정상회의 행사로 개최되었다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.nato.int/en/news-and-events/events/2025/6/overview---2025-nato-summit-in-the-hague; shortQuote: "24-25 June 2025"
+  - url: https://www.nato.int/en/news-and-events/events/2025/6/overview---2025-nato-summit-in-the-hague; shortQuote: "The Hague, the Netherlands"
+limitations: 이 명제는 NATO 정상회의의 개최 일자와 장소에만 한정한다. 정상회의 선언의 정책적 의미, 국방비 공약의 이행 여부, 각국의 정치적 평가는 다루지 않는다.
+tags: 2025, 국제사건, 최근1년, 헤이그정상회의, NATO
+
+=== stmt:c890b5f8ca77961c84b58268 ===
+propositionId: stmt:c890b5f8ca77961c84b58268
+humanUrl: /p/stmt-c890b5f8ca77961c84b58268/
+jsonUrl: /api/v2/propositions/stmt-c890b5f8ca77961c84b58268.json
+canonicalProposition: 김정철 개혁신당 최고위원은 2026년 6월 3일 지방선거 투표용지 부족과 관련해 서울동부지방법원에 증거보전 신청을 제출했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 김정철 개혁신당 최고위원
+  when: 2026년 6월 3일
+  where: 서울동부지방법원
+  what: 지방선거 투표용지 부족 관련 증거보전 신청을 제출했다
+  how: 증거보전 신청서를 법원에 제출했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202050&lang=e; shortQuote: "requests submitted by the Reform Party’s Supreme Council member Kim Jeong-cheol"
+limitations: 증거보전 신청서 원문, 사건번호, 정확한 제출일은 직접 확인하지 못했다. 현재는 KBS World가 보도한 신청 주체와 제출 사실에 한정한다.
+tags: 2026지방선거, 개혁신당, 김정철, 법원, 정치주장, 증거보전, 투표용지부족
+
+=== stmt:d180b65d5e8f431a52ed1eec ===
+propositionId: stmt:d180b65d5e8f431a52ed1eec
+humanUrl: /p/stmt-d180b65d5e8f431a52ed1eec/
+jsonUrl: /api/v2/propositions/stmt-d180b65d5e8f431a52ed1eec.json
+canonicalProposition: 이상능 중앙선거관리위원회 선거1국장은 투표용지 인쇄 경비의 ‘1.1배’ 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 이상능 중앙선거관리위원회 선거1국장
+  when: 불명(이상능 국장의 설명 발언일은 기록에 없음)
+  where: 중앙선거관리위원회 관련 해명 보도 문맥
+  what: 투표용지 인쇄 경비의 '1.1배' 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다
+  how: 선관위 선거1국장 설명 발언으로 해명했다
+  why: '1.1배'는 인쇄 경비 산출을 위한 기준일 뿐 (statedBy: 중앙선거관리위원회(이상능 선거1국장))
+correctionHistory: none
+evidence:
+  - url: https://www.hani.co.kr/arti/politics/election/1262187.html; shortQuote: "‘1.1배’는 인쇄 경비 산출을 위한 기준일 뿐"
+limitations: 예산 편성액·집행액·집행률 원자료는 확인하지 못했다. 이상능 국장의 1.1배 경비 기준 발언을 같은 취지로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.
+tags: 2026지방선거, 예산해명, 정치주장, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:e2b37f73256b9885410a5c01 ===
+propositionId: stmt:e2b37f73256b9885410a5c01
+humanUrl: /p/stmt-e2b37f73256b9885410a5c01/
+jsonUrl: /api/v2/propositions/stmt-e2b37f73256b9885410a5c01.json
+canonicalProposition: 장동혁 국민의힘 대표는 2026년 6월 18일 16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 장동혁 국민의힘 대표
+  when: 2026년 6월 18일
+  where: 국민의힘 관련 공개 발언·보도 문맥
+  what: 16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다
+  how: 공개 발언으로 선거소청 제기를 주장했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.hani.co.kr/arti/politics/politics_general/1264064.html; shortQuote: "16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자"
+limitations: 같은 기사에 정점식 원내대표 등은 7곳 한정 소청 의견을 냈다고 보도되어 국민의힘 내부 입장은 단일하지 않았다. 장동혁 대표의 16개 광역단체 소청 주장 자체를 같은 문장으로 확인할 수 있는 fetch 가능한 독립 2차 출처는 이번 재검수에서 확인하지 못했다.
+tags: 2026지방선거, 국민의힘, 선거소청, 정치주장, 주장, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:fafb5a05023e9541b3e07f1f ===
+propositionId: stmt:fafb5a05023e9541b3e07f1f
+humanUrl: /p/stmt-fafb5a05023e9541b3e07f1f/
+jsonUrl: /api/v2/propositions/stmt-fafb5a05023e9541b3e07f1f.json
+canonicalProposition: 2026년 6월 8일 서울 송파구 개표시설 밖에서 일부 시위자들이 6·3 지방선거 투표용지 부족과 관련해 선거 부정을 주장했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-06-18
+updatedAt: 2026-07-02
+sixW:
+  who: 일부 시위자들
+  when: 2026년 6월 8일
+  where: 서울 송파구 개표시설 밖
+  what: 6·3 지방선거 투표용지 부족과 관련해 선거 부정을 주장했다
+  how: 개표시설 밖 시위 현장에서 주장했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://en.yna.co.kr/view/AEN20260608005900315; shortQuote: "with some claiming electoral fraud"
+limitations: 연합뉴스는 일부 시위자의 구체 신원과 근거를 이 문장에 제시하지 않는다. 그래서 개별 claimant 명제는 만들지 않았다. 2026년 6월 8일 일부 시위자의 선거 부정 주장이라는 동일 사실을 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.
+tags: 2026지방선거, 부정선거의혹, 정치주장, 주장, 중앙선거관리위원회, 투표용지부족
 
 === stmt:5525ea7692e7f4eea17971f5 ===
 propositionId: stmt:5525ea7692e7f4eea17971f5
@@ -42,236 +885,6 @@ evidence:
   - url: https://www.asiae.co.kr/article/2026061816204217852; shortQuote: "9063.84"
 limitations: 사용자 제공 영상 대본을 단서로 삼아 1차 검증함. 현재 명제에는 curl로 verbatim 확인된 3개 수치(신용융자 37조8005억·6월 9일 반대매매 1,698억·코스피 종가 9,063.84)만 담았다. 그 외 영상의 수치(삼성·SK 신용잔고 9조, 마이너스통장 43조, 반대매매 월별 추이)는 미확인이라 undetermined로 분리했고 검증 후 정정이력으로 보강한다. 영상의 '빚투 폭탄'·'위험' 등 평가·경고는 의견이라 저장하지 않는다.
 tags: 반대매매, 빚투, 신용거래융자, 증시지표, 측정, 코스피
-
-=== stmt:0f10895abcff81a55ff783d6 ===
-propositionId: stmt:0f10895abcff81a55ff783d6
-humanUrl: /p/stmt-0f10895abcff81a55ff783d6/
-jsonUrl: /api/v2/propositions/stmt-0f10895abcff81a55ff783d6.json
-canonicalProposition: 김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료에는 2025년 12월 투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: document_content
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202058&lang=e; shortQuote: "lower the threshold from 60 percent of the eligible voter population to 50 percent"
-  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202058&lang=e; shortQuote: "revised the manual on election procedures to reflect that change"
-  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202100&lang=e; shortQuote: "at least 50 percent of all eligible voters instead of 60 percent"
-limitations: 선관위 자료 원문과 사무편람 개정 전후 원문은 직접 fetch하지 못했다. KBS World의 보도 문구가 확인되는 범위에서만 채택했다. 기사에는 결정 시점이 '12월'로만 적시돼 있어 연도(2025년)는 6·3 선거 일정에 근거한 판단이며 원문에 명시되지 않았다.
-tags: 2026지방선거, 문서내용, 선관위지침, 정치주장, 중앙선거관리위원회, 투표용지부족
-
-=== stmt:12ebbd81f7cfbbcaf5048a0e ===
-propositionId: stmt:12ebbd81f7cfbbcaf5048a0e
-humanUrl: /p/stmt-12ebbd81f7cfbbcaf5048a0e/
-jsonUrl: /api/v2/propositions/stmt-12ebbd81f7cfbbcaf5048a0e.json
-canonicalProposition: 국민의힘은 6·3 지방선거 투표용지 부족 의혹의 근거로 2022년 오세훈 후보 득표율 수치가 적힌 투표소 사례를 제시했다: 송파구 잠실7동 제2투표소는 81.08%였고 투표가 밤 10시까지 연장됐으며, 서초구 반포4동 제3투표소(81.25%)와 강남구 청담동 제4투표소(79.48%)도 포함됐다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "국민의힘이 주목하고 있다고 전했다"
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "밤 10시까지 연장됐던 잠실7동 제2투표소는 81.08%"
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "서초구 반포4동 제3투표소(81.25%), 강남구 청담동 제4투표소(79.48%)"
-  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다"
-  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "송파구 잠실7동 제2투표소 역시 당시 81.08%"
-  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "서초구 반포4동 제3투표소(81.25%)나 강남구 청담동 제4투표소(79.48%)"
-  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "투표용지가 부족했던 투표소 91곳은"
-  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "경기 23곳, 인천 11곳"
-  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "전북 1곳, 전남 2곳"
-limitations: 국민의힘이 '제시한 사례'와 수치만 기록한다. 이 선별은 대표성을 의미하지 않으며, 부족은 보수 강세 외 지역(경기 23·인천 11·전남 2·전북 1 등)에도 분포했다(shortage-region-list-91). 2022년 득표율과 2026년 부족 간 인과는 미확정이고, 표적·부정선거 판단은 저장하지 않는다(제2).
-tags: 2026지방선거, 국민의힘, 정치주장, 주장, 투표소사례, 투표용지부족
-
-=== stmt:1426e28acba929903bbe8736 ===
-propositionId: stmt:1426e28acba929903bbe8736
-humanUrl: /p/stmt-1426e28acba929903bbe8736/
-jsonUrl: /api/v2/propositions/stmt-1426e28acba929903bbe8736.json
-canonicalProposition: 더불어민주당은 2026년 6월 7일 강준현 수석대변인을 통해 장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330; shortQuote: "관련해서 민주당에서는 논의한 적이 없다"
-  - url: https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330; shortQuote: "국민의힘 의원들 전반이 아니라 장 대표 혼자 요구한 것이 아닌가"
-  - url: https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330; shortQuote: "선관위는 헌법상 독립적 지위를 가지고 있지만"
-  - url: https://news.sbs.co.kr/news/endPage.do?news_id=N1008598330; shortQuote: "선관위 개혁 기구도 검토하고 있다"
-limitations: 이 명제는 제14조 균형을 위해 더불어민주당이 밝힌 입장 자체만 기록한다. 재선거 필요성, 선관위 책임, 국민의힘 또는 장동혁 대표 주장의 타당성은 판단하지 않는다.
-tags: 2026지방선거, 강준현, 더불어민주당, 장동혁, 정치주장, 주장, 투표용지부족
-
-=== stmt:2e87b3750aadd61ef8e2b6c0 ===
-propositionId: stmt:2e87b3750aadd61ef8e2b6c0
-humanUrl: /p/stmt-2e87b3750aadd61ef8e2b6c0/
-jsonUrl: /api/v2/propositions/stmt-2e87b3750aadd61ef8e2b6c0.json
-canonicalProposition: 2026년 6월 3일 대한민국에서 제9회 전국동시지방선거 본투표가 실시되었다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.donga.com/news/Politics/article/all/20260603/134042934/1; shortQuote: "제9회 전국동시지방선거 본투표가 실시된 3일"
-  - url: https://en.yna.co.kr/view/AEN20260608005900315; shortQuote: "the June 3 local elections"
-  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=201993&lang=e; shortQuote: "June 3 local elections"
-limitations: 선관위 공식 일정 또는 결과 페이지는 이번 fetch에서 본문 확인이 되지 않아 2차 보도에 의존했다.
-tags: 2026지방선거, 선거일, 정치주장, 중앙선거관리위원회, 투표용지부족
-
-=== stmt:5697abe486cdf727eafca8e1 ===
-propositionId: stmt:5697abe486cdf727eafca8e1
-humanUrl: /p/stmt-5697abe486cdf727eafca8e1/
-jsonUrl: /api/v2/propositions/stmt-5697abe486cdf727eafca8e1.json
-canonicalProposition: 2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다
-factualGrade/status: undetermined / active
-assessmentStatus: undetermined
-claimNature: measurement
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "전통적인 보수 강세 지역이라는 점에 국민의힘이 주목"
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "잠실7동 제2투표소는 81.08%의 득표율을 보였다"
-  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다"
-  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "투표용지가 부족했던 투표소 91곳은"
-  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "경기 23곳, 인천 11곳, 대구 4곳"
-limitations: 본 저수지는 편중을 사실로도, 비편중을 사실로도 저장하지 않는다. 검증된 분포(shortage-region-list-91)와 국민의힘 주장(ppp-conservative-concentration-claim)은 별도 보관한다. 표적·인과·부정선거 판단은 저장하지 않는다(제2).
-tags: 2026지방선거, 보수강세, 정치주장, 측정, 투표용지부족, 판단유보
-
-=== stmt:5bf64ededa100f82163dcab1 ===
-propositionId: stmt:5bf64ededa100f82163dcab1
-humanUrl: /p/stmt-5bf64ededa100f82163dcab1/
-jsonUrl: /api/v2/propositions/stmt-5bf64ededa100f82163dcab1.json
-canonicalProposition: 윤재수 중앙선거관리위원회 선거정책실장은 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.hani.co.kr/arti/politics/election/1262187.html; shortQuote: "선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다"
-limitations: 발언의 정확한 원문 전체와 브리핑 전문은 직접 확인하지 못했다. 윤재수 실장의 사전투표율 증가 및 전체 선거인 수 50% 인쇄 설명을 같은 취지로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.
-tags: 2026지방선거, 선관위해명, 정치주장, 중앙선거관리위원회, 투표용지부족
-
-=== stmt:6ec9cbff53f71a505b22823f ===
-propositionId: stmt:6ec9cbff53f71a505b22823f
-humanUrl: /p/stmt-6ec9cbff53f71a505b22823f/
-jsonUrl: /api/v2/propositions/stmt-6ec9cbff53f71a505b22823f.json
-canonicalProposition: 국민의힘은 2026년 6월 4일 6·3 지방선거 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며, 실제 투표를 포기한 유권자가 발생했다면 중대한 참정권 침해에 해당할 수 있다고 주장했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "전통적인 보수 강세 지역이라는 점에 국민의힘이 주목"
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "중대한 참정권 침해에 해당할 수 있다고 보고 있다"
-  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다"
-  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "투표를 포기하고 발길을 돌린 유권자의 참정권 침해"
-limitations: 이 명제는 국민의힘 '주장의 존재'만 기록한다. 선관위 검증 분포(91곳)는 보수 강세 지역에 국한되지 않으며 경기 23곳·인천 11곳·전남 2곳·전북 1곳 등에도 분포한다(shortage-region-list-91 참조). 송파구 20곳이 최다인 것은 사실이나, 분포가 특정 정당 지역을 표적했는지 여부는 미확정이며 본 저수지는 인과·표적·부정선거 판단을 저장하지 않는다(제2).
-tags: 2026지방선거, 국민의힘, 정치주장, 주장, 참정권, 투표용지부족
-
-=== stmt:83702707422e50c0a56fb565 ===
-propositionId: stmt:83702707422e50c0a56fb565
-humanUrl: /p/stmt-83702707422e50c0a56fb565/
-jsonUrl: /api/v2/propositions/stmt-83702707422e50c0a56fb565.json
-canonicalProposition: 중앙선거관리위원회 개정 사무편람에는 지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다는 내용이 담겼다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: document_content
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.hani.co.kr/arti/politics/election/1262187.html; shortQuote: "지방선거는 50%를 ‘하한’으로 산정"
-  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202100&lang=e; shortQuote: "at least 50 percent of all eligible voters"
-limitations: 원문 지침·사무편람을 직접 fetch하지 못해 “60%→50% 변경” 전체 이력은 저장하지 않았다.
-tags: 2026지방선거, 문서내용, 선관위지침, 정치주장, 중앙선거관리위원회, 투표용지부족
-
-=== stmt:921a9dc8a1b5b268e0f4c807 ===
-propositionId: stmt:921a9dc8a1b5b268e0f4c807
-humanUrl: /p/stmt-921a9dc8a1b5b268e0f4c807/
-jsonUrl: /api/v2/propositions/stmt-921a9dc8a1b5b268e0f4c807.json
-canonicalProposition: 2026년 6월 3일 오후 4시께 서울 송파구 잠실4동 제5투표소에서 투표용지 부족으로 투표가 일시 중단됐다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.donga.com/news/Politics/article/all/20260603/134042934/1; shortQuote: "오후 4시께 투표가 일시 중단됐다"
-limitations: 선관위 투표록 원문과 법적 판단은 직접 확인하지 못했다. 투표 재개 및 대기 유권자 후속 사실은 별도 명제가 필요하다. 같은 특정 장소·시각(잠실4동 제5투표소, 오후 4시께)을 모두 담은 fetch 가능한 독립 2차 출처는 이번 재검수에서 확인하지 못했다.
-tags: 2026지방선거, 잠실4동, 정치주장, 투표용지부족, 투표중단
-
-=== stmt:a2c80ef637dd92021cbbd92b ===
-propositionId: stmt:a2c80ef637dd92021cbbd92b
-humanUrl: /p/stmt-a2c80ef637dd92021cbbd92b/
-jsonUrl: /api/v2/propositions/stmt-a2c80ef637dd92021cbbd92b.json
-canonicalProposition: 서울동부지방법원은 2026년 6월 9일 서울 송파구 잠실 투표소의 투표용지 부족과 관련해 증거보전을 명령했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.koreatimes.co.kr/southkorea/law-crime/20260610/court-officials-fail-to-secure-key-evidence-at-polling-station-over-ballot-shortage; shortQuote: "ordered the preservation of evidence"
-  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202050&lang=e; shortQuote: "ordered the preservation of four pieces of evidence"
-limitations: 법원 결정문 원문과 인용 범위 전문은 직접 확인하지 못했다. 추가한 KBS World 보도는 법원 명령 사실을 보강하지만 결정문 원문을 대체하지 않는다.
-tags: 2026지방선거, 법원, 정치주장, 중앙선거관리위원회, 증거보전, 투표용지부족
-
-=== stmt:c11b6f2081e8fa1c38bae49d ===
-propositionId: stmt:c11b6f2081e8fa1c38bae49d
-humanUrl: /p/stmt-c11b6f2081e8fa1c38bae49d/
-jsonUrl: /api/v2/propositions/stmt-c11b6f2081e8fa1c38bae49d.json
-canonicalProposition: 이재명 대통령은 2026년 6월 7일 6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.koreajoongangdaily.com/korea/lee-orders-thorough-investigation-into-ballot-shortage/12622980; shortQuote: "ordered the launch of a thorough joint investigation"
-  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=201994&lang=e; shortQuote: "instructed the prosecutor's office and the police"
-  - url: https://en.yna.co.kr/view/AEN20260607005453320; shortQuote: "joint investigation by prosecutors and police"
-limitations: 합동조사의 최종 결과와 수사 판단은 확인되지 않았다.
-tags: 2026지방선거, 공식대응, 수사, 정치주장, 중앙선거관리위원회, 투표용지부족
-
-=== stmt:c890b5f8ca77961c84b58268 ===
-propositionId: stmt:c890b5f8ca77961c84b58268
-humanUrl: /p/stmt-c890b5f8ca77961c84b58268/
-jsonUrl: /api/v2/propositions/stmt-c890b5f8ca77961c84b58268.json
-canonicalProposition: 김정철 개혁신당 최고위원은 2026년 6월 3일 지방선거 투표용지 부족과 관련해 서울동부지방법원에 증거보전 신청을 제출했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202050&lang=e; shortQuote: "requests submitted by the Reform Party’s Supreme Council member Kim Jeong-cheol"
-limitations: 증거보전 신청서 원문, 사건번호, 정확한 제출일은 직접 확인하지 못했다. 현재는 KBS World가 보도한 신청 주체와 제출 사실에 한정한다.
-tags: 2026지방선거, 개혁신당, 김정철, 법원, 정치주장, 증거보전, 투표용지부족
 
 === stmt:cb0719e9aac6e4c86677d2e5 ===
 propositionId: stmt:cb0719e9aac6e4c86677d2e5
@@ -304,413 +917,4 @@ evidence:
   - url: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=202026&lang=e; shortQuote: "from the previously reported 50 to 91"
 limitations: 1차 발표 원문 직접 fetch 실패로 언론 전재에 의존한다. 91곳·7,194장·26곳은 2026-06-08~09 기준 선관위 집계이며 현장 점검에 따라 추가 갱신될 수 있다. 별개 지표인 140곳(추가 송부 대상)·1,371곳(인쇄 50% 미만)은 본 사건의 수치가 아니다. correctionHistory의 newVersionId는 이 변동을 기록한 버전을 가리키며, 외부 기관(선관위)의 집계 정정 경과를 문서화한 것이다(우리 측 오류 정정 아님). 분포가 특정 정당 지역을 표적했는지 여부는 미확정이며 별개 명제로 분리한다.
 tags: 2026지방선거, 사건단위, 중앙선거관리위원회, 측정, 투표소수, 투표용지부족
-
-=== stmt:d180b65d5e8f431a52ed1eec ===
-propositionId: stmt:d180b65d5e8f431a52ed1eec
-humanUrl: /p/stmt-d180b65d5e8f431a52ed1eec/
-jsonUrl: /api/v2/propositions/stmt-d180b65d5e8f431a52ed1eec.json
-canonicalProposition: 이상능 중앙선거관리위원회 선거1국장은 투표용지 인쇄 경비의 ‘1.1배’ 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.hani.co.kr/arti/politics/election/1262187.html; shortQuote: "‘1.1배’는 인쇄 경비 산출을 위한 기준일 뿐"
-limitations: 예산 편성액·집행액·집행률 원자료는 확인하지 못했다. 이상능 국장의 1.1배 경비 기준 발언을 같은 취지로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.
-tags: 2026지방선거, 예산해명, 정치주장, 중앙선거관리위원회, 투표용지부족
-
-=== stmt:e2b37f73256b9885410a5c01 ===
-propositionId: stmt:e2b37f73256b9885410a5c01
-humanUrl: /p/stmt-e2b37f73256b9885410a5c01/
-jsonUrl: /api/v2/propositions/stmt-e2b37f73256b9885410a5c01.json
-canonicalProposition: 장동혁 국민의힘 대표는 2026년 6월 18일 16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.hani.co.kr/arti/politics/politics_general/1264064.html; shortQuote: "16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자"
-limitations: 같은 기사에 정점식 원내대표 등은 7곳 한정 소청 의견을 냈다고 보도되어 국민의힘 내부 입장은 단일하지 않았다. 장동혁 대표의 16개 광역단체 소청 주장 자체를 같은 문장으로 확인할 수 있는 fetch 가능한 독립 2차 출처는 이번 재검수에서 확인하지 못했다.
-tags: 2026지방선거, 국민의힘, 선거소청, 정치주장, 주장, 중앙선거관리위원회, 투표용지부족
-
-=== stmt:fafb5a05023e9541b3e07f1f ===
-propositionId: stmt:fafb5a05023e9541b3e07f1f
-humanUrl: /p/stmt-fafb5a05023e9541b3e07f1f/
-jsonUrl: /api/v2/propositions/stmt-fafb5a05023e9541b3e07f1f.json
-canonicalProposition: 2026년 6월 8일 서울 송파구 개표시설 밖에서 일부 시위자들이 6·3 지방선거 투표용지 부족과 관련해 선거 부정을 주장했다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-18
-updatedAt: 2026-06-18
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://en.yna.co.kr/view/AEN20260608005900315; shortQuote: "with some claiming electoral fraud"
-limitations: 연합뉴스는 일부 시위자의 구체 신원과 근거를 이 문장에 제시하지 않는다. 그래서 개별 claimant 명제는 만들지 않았다. 2026년 6월 8일 일부 시위자의 선거 부정 주장이라는 동일 사실을 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.
-tags: 2026지방선거, 부정선거의혹, 정치주장, 주장, 중앙선거관리위원회, 투표용지부족
-
-=== stmt:22abb3226ba88d6589e75013 ===
-propositionId: stmt:22abb3226ba88d6589e75013
-humanUrl: /p/stmt-22abb3226ba88d6589e75013/
-jsonUrl: /api/v2/propositions/stmt-22abb3226ba88d6589e75013.json
-canonicalProposition: UNFCCC의 COP30 사후 문서 목록은 제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: document_content
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://unfccc.int/event/cop-30; shortQuote: "held in Belém from 10 to 25 November 2025"
-  - url: https://unfccc.int/cop30/ifp; shortQuote: "Hangar Convention and Fair Centre of the Amazon"
-limitations: UNFCCC 참가자 안내 페이지는 회의 예정 날짜를 2025년 11월 10-21일로 표시하지만, 사후 문서 목록의 회의 보고서 제목은 10-25일을 표시한다. 이 명제는 그 사후 문서 목록의 문구를 저장하는 문서 내용 명제다.
-tags: 2025, 국제사건, 벨렝, 최근1년, COP30, UNFCCC
-
-=== stmt:38c8e4c00c63fa0fc9b00eb3 ===
-propositionId: stmt:38c8e4c00c63fa0fc9b00eb3
-humanUrl: /p/stmt-38c8e4c00c63fa0fc9b00eb3/
-jsonUrl: /api/v2/propositions/stmt-38c8e4c00c63fa0fc9b00eb3.json
-canonicalProposition: BBNJ 협정은 2026년 1월 17일 발효되었다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://treaties.un.org/Pages/ViewDetails.aspx?chapter=21&clang=_en&mtdsg_no=XXI-10&src=TREATY; shortQuote: "17 January 2026, in accordance with article 68(1) of the Agreement"
-limitations: 이 명제는 BBNJ 협정 자체의 일반 발효일만 다룬다. 개별 국가별 당사자 지위, 비준일, 협정 이행 효과는 포함하지 않는다.
-tags: 2026, 국제사건, 유엔조약, 최근1년, 해양생물다양성, BBNJ
-
-=== stmt:4ae4c94174dc3aaf651102d2 ===
-propositionId: stmt:4ae4c94174dc3aaf651102d2
-humanUrl: /p/stmt-4ae4c94174dc3aaf651102d2/
-jsonUrl: /api/v2/propositions/stmt-4ae4c94174dc3aaf651102d2.json
-canonicalProposition: 1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C; shortQuote: "The LM landed at 20:17:40 UT on 20 July 1969"
-  - url: https://prologue.blogs.archives.gov/2019/07/19/apollo-11-50th-anniversary/; shortQuote: "Eagle landed on the lunar surface at 20:17:40 GMT on July 20, 1969"
-  - url: https://www.britannica.com/topic/Apollo-11; shortQuote: "Eagle had touched down in the Sea of Tranquility"
-  - url: https://lroc.im-ldi.com/featured_sites/51; shortQuote: "Mare Tranquillitatis [0.67416° N, 23.47314° E]"
-limitations: 착륙 시각은 출처에 따라 20:17(분 단위)~20:17:40(초 단위) UTC로 표기되며, 본 명제는 가장 정밀한 1차 출처(NASA NSSDCA) 기준 20:17:40을 채택. 좌표는 LROC Featured Sites가 제시한 0.67416° N, 23.47314° E와 일치하며, 후대 LRO 이미지 기반 확정값이므로 1969년 당시 추정 좌표와는 정밀도 차이가 있을 수 있음.
-tags: 1969, 아폴로계획, 역사적사건, 우주
-
-=== stmt:4f96ea07a89511c2ea0a86a3 ===
-propositionId: stmt:4f96ea07a89511c2ea0a86a3
-humanUrl: /p/stmt-4f96ea07a89511c2ea0a86a3/
-jsonUrl: /api/v2/propositions/stmt-4f96ea07a89511c2ea0a86a3.json
-canonicalProposition: 페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대는 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아와 최초의 지구 일주를 완료하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.unesco.org/en/memory-world/first-voyage-circumnavigation-fernao-de-magalhaes-and-juan-sebastian-elcano-1519-1522; shortQuote: "First Voyage of Circumnavigation by Fernãõ de Magalhães and Juan Sebastián Elcano (1519-1522)"
-  - url: https://www.britannica.com/biography/Juan-Sebastian-del-Cano; shortQuote: "completed the first circumnavigation of the Earth"
-  - url: https://www.britannica.com/biography/Juan-Sebastian-del-Cano; shortQuote: "In 1519 Cano sailed as master"
-  - url: https://www.britannica.com/biography/Juan-Sebastian-del-Cano; shortQuote: "He safely brought the expedition home to Spain in September 1522"
-  - url: https://www.britannica.com/biography/Ferdinand-Magellan; shortQuote: "one of his ships continued westward to Spain"
-  - url: https://www.britannica.com/biography/Ferdinand-Magellan; shortQuote: "He died en route and Juan Sebastián del Cano completed it."
-limitations: 마젤란은 1521년 필리핀에서 사망했으므로 원정을 직접 완주하지 않았다. 이 명제는 마젤란이 시작한 원정대가 엘카노 지휘 아래 1522년 스페인으로 돌아와 최초의 지구 일주를 완료했다는 사건에 한정한다. 출발·귀환의 월일은 출처별 표기 차이가 있어 연도 단위로만 저장했다.
-tags: 마젤란, 엘카노, 지구과학, 지구일주, 지구형상, 항해사
-
-=== stmt:61efe874787dacf6180ae46b ===
-propositionId: stmt:61efe874787dacf6180ae46b
-humanUrl: /p/stmt-61efe874787dacf6180ae46b/
-jsonUrl: /api/v2/propositions/stmt-61efe874787dacf6180ae46b.json
-canonicalProposition: 1972년 12월 7일 아폴로 17호 승무원은 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148; shortQuote: "This classic photograph of the Earth was taken on December 7, 1972."
-  - url: https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22727&mission=AS17&roll=148; shortQuote: "View of the Earth as seen by the Apollo 17 crew traveling toward the moon."
-  - url: https://science.nasa.gov/earth/earth-observatory/history-of-the-blue-marble/; shortQuote: "On December 7, 1972, the crew of Apollo 17"
-limitations: AS17-148-22727의 널리 배포된 버전은 회전·크롭·색상 조정이 있을 수 있다. 본 명제의 '원형으로 보이는' 표현은 EOL 카탈로그의 표시 이미지와 사진 내용에 대한 시각적 기술이며, 물리적 지구 형상에 대한 판정 명제가 아니다.
-tags: 아폴로17, 우주사진, 지구과학, 지구형상, BlueMarble, NASA
-
-=== stmt:9fa1e13fbdeb497fdee35c15 ===
-propositionId: stmt:9fa1e13fbdeb497fdee35c15
-humanUrl: /p/stmt-9fa1e13fbdeb497fdee35c15/
-jsonUrl: /api/v2/propositions/stmt-9fa1e13fbdeb497fdee35c15.json
-canonicalProposition: 국제사법재판소는 2025년 7월 23일 '기후변화에 관한 국가의 의무' 권고의견을 발령하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://icj-cij.org/case/187/advisory-opinions; shortQuote: "Advisory Opinion of 23 July 2025"
-limitations: 이 명제는 권고의견 발령 일자와 사건명에만 한정한다. 권고의견의 법적 구속력, 개별 국가 책임, 배상 가능성은 별도 법률 해석 영역이다.
-tags: 2025, 국제사건, 권고의견, 기후변화, 최근1년, ICJ
-
-=== stmt:ae66527bf2aea1b5407a5f78 ===
-propositionId: stmt:ae66527bf2aea1b5407a5f78
-humanUrl: /p/stmt-ae66527bf2aea1b5407a5f78/
-jsonUrl: /api/v2/propositions/stmt-ae66527bf2aea1b5407a5f78.json
-canonicalProposition: 1968년 12월 24일 아폴로 8호 승무원은 달 궤도에서 지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영하였다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=2383&mission=AS08&roll=14; shortQuote: "The rising Earth is about five degrees above the lunar horizon"
-  - url: https://svs.gsfc.nasa.gov/4129/; shortQuote: "photographed the Earth rising from behind the Moon"
-  - url: https://svs.gsfc.nasa.gov/4129/; shortQuote: "The original photographs are AS08-13-2329, AS08-14-2383, and AS08-14-2384."
-  - url: https://apod.nasa.gov/apod/ap181224.html; shortQuote: "50 years ago today"
-limitations: NASA/JSC EOL 사진 카탈로그의 공개 텍스트에서는 AS08-14-2383의 Date taken 필드가 비어 있었다. 1968-12-24 날짜는 NASA APOD의 2018-12-24 기념일 문구와 NASA SVS의 Apollo 8 Earthrise 재구성 문맥으로 보강했다. 촬영자를 특정 개인으로 단정하지 않고 Apollo 8 승무원으로 표현했다.
-tags: 아폴로8, 우주사진, 지구과학, 지구형상, Earthrise, NASA
-
-=== stmt:b18e2813819c4fb0e23830f6 ===
-propositionId: stmt:b18e2813819c4fb0e23830f6
-humanUrl: /p/stmt-b18e2813819c4fb0e23830f6/
-jsonUrl: /api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json
-canonicalProposition: 에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다
-factualGrade/status: largely_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.britannica.com/biography/Eratosthenes; shortQuote: "Eratosthenes measured Earth’s circumference mathematically using two surface points"
-  - url: https://oceanservice.noaa.gov/education/tutorial_geodesy/geo02_hist.html; shortQuote: "the sun cast a shadow equivalent to about 1/50th of a circle or 7.12°"
-  - url: https://www.britannica.com/biography/Eratosthenes; shortQuote: "At Syene (now Aswān), some 800 km (500 miles) southeast of Alexandria"
-  - url: https://www.britannica.com/biography/Eratosthenes; shortQuote: "sunlight fell at an angle of about 7.2° from the vertical"
-  - url: https://www.britannica.com/biography/Eratosthenes; shortQuote: "Given an estimate of the distance between the two cities"
-  - url: https://arxiv.org/abs/2110.01610; shortQuote: "historical experiment of Eratosthenes, carried out around 240 BC"
-limitations: 에라토스테네스의 원저는 보존되지 않았고, 방법은 후대 Cleomedes 전승 등으로 알려져 있다. stadion을 km로 환산하는 값과 최종 둘레 수치는 논쟁적이므로 이 명제는 측정 수행과 방법에만 한정한다.
-tags: 과학사, 에라토스테네스, 지구과학, 지구형상, 천문학, 측정
-
-=== stmt:b9a4dcf237affc17c1a51fe6 ===
-propositionId: stmt:b9a4dcf237affc17c1a51fe6
-humanUrl: /p/stmt-b9a4dcf237affc17c1a51fe6/
-jsonUrl: /api/v2/propositions/stmt-b9a4dcf237affc17c1a51fe6.json
-canonicalProposition: NGA WGS 84 공식 설명은 WGS 84 측지 좌표가 기준타원체에서 생성되며 그 장반경을 6,378,137.0미터로 제시한다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: document_content
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84; shortQuote: "generated using its reference ellipsoid"
-  - url: https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84; shortQuote: "Semi-major Axis a 6378137.0 meters"
-  - url: https://earth-info.nga.mil/index.php?action=wgs84&dir=wgs84; shortQuote: "Flattening Factor of the Earth 1/f 298.257223563"
-limitations: WGS 84 기준타원체는 지구 표면 전체의 모든 굴곡을 그대로 말하는 물리적 지구 형상 명제가 아니라 좌표 기준계의 수학적 참조면이다. 본 명제는 NGA 공식 설명의 문서내용과 수치 표기에 한정한다.
-tags: 기준타원체, 지구과학, 지구형상, 측지학, WGS84
-
-=== stmt:c44501dcb97869b23fbe8942 ===
-propositionId: stmt:c44501dcb97869b23fbe8942
-humanUrl: /p/stmt-c44501dcb97869b23fbe8942/
-jsonUrl: /api/v2/propositions/stmt-c44501dcb97869b23fbe8942.json
-canonicalProposition: 2025년 6월 24일부터 25일까지 NATO 정상회의가 네덜란드 헤이그에서 열렸다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.nato.int/en/news-and-events/events/2025/6/overview---2025-nato-summit-in-the-hague; shortQuote: "24-25 June 2025"
-  - url: https://www.nato.int/en/news-and-events/events/2025/6/overview---2025-nato-summit-in-the-hague; shortQuote: "The Hague, the Netherlands"
-limitations: 이 명제는 NATO 정상회의의 개최 일자와 장소에만 한정한다. 정상회의 선언의 정책적 의미, 국방비 공약의 이행 여부, 각국의 정치적 평가는 다루지 않는다.
-tags: 2025, 국제사건, 최근1년, 헤이그정상회의, NATO
-
-=== stmt:3104eab69ad2305be2007c30 ===
-propositionId: stmt:3104eab69ad2305be2007c30
-humanUrl: /p/stmt-3104eab69ad2305be2007c30/
-jsonUrl: /api/v2/propositions/stmt-3104eab69ad2305be2007c30.json
-canonicalProposition: 1965년 6월 22일 대한민국과 일본은 도쿄에서 한일기본조약에 서명하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://treaties.un.org/doc/Publication/UNTS/Volume%20583/volume-583-I-8471-English.pdf; shortQuote: "JAPAN AND THE REPUBLIC OF KOREA"
-  - url: https://treaties.un.org/doc/Publication/UNTS/Volume%20583/volume-583-I-8471-English.pdf; shortQuote: "TOKYO, ON 22 JUNE 1965"
-limitations: 이 명제는 1965년 6월 22일 조약 서명 사실에 한정한다. 청구권·배상·개인청구권·식민지배 불법성 해석은 별개 쟁점이며 본 명제에 저장하지 않았다.
-tags: 1965, 대한민국, 일본, 조약서명, 한국근현대사, 한일기본조약
-
-=== stmt:698eafdeae1e813d295ea69b ===
-propositionId: stmt:698eafdeae1e813d295ea69b
-humanUrl: /p/stmt-698eafdeae1e813d295ea69b/
-jsonUrl: /api/v2/propositions/stmt-698eafdeae1e813d295ea69b.json
-canonicalProposition: 1950년 6월 25일 04시 40분경 조선인민군은 38선을 넘어 대한민국 영역으로 진입하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.britannica.com/event/Korean-War/Invasion-and-counterinvasion-1950-51; shortQuote: "North Koreans struck across the 38th parallel"
-  - url: https://en.wikipedia.org/wiki/Korean_War; shortQuote: "At 4:40 a.m. on 25 June 1950, the KPA crossed the 38th parallel"
-  - url: https://en.wikipedia.org/wiki/Korean_War; shortQuote: "individual KPA units had advanced 3 to 5 kilometers into South Korean territory"
-limitations: 38선 통과와 대한민국 영역 진입이라는 기초 사실은 잘 문서화되어 있으나, 전쟁의 원인·책임·동기·정당성 프레이밍은 헌법 제2조에 따라 본 명제에서 제외했다. 북한 측 또는 다른 행위자의 책임 주장 자체를 기록하려면 별도 주장 명제로 분리해야 한다.
-tags: 1950, 38선, 전쟁개시, 조선인민군, 한국근현대사, 한국전쟁
-
-=== stmt:7536cb937fa5897848d6ecf4 ===
-propositionId: stmt:7536cb937fa5897848d6ecf4
-humanUrl: /p/stmt-7536cb937fa5897848d6ecf4/
-jsonUrl: /api/v2/propositions/stmt-7536cb937fa5897848d6ecf4.json
-canonicalProposition: 1953년 7월 27일 유엔군사령부·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://en.wikisource.org/wiki/Korean_Armistice_Agreement; shortQuote: "Done at Panmunjom, Korea at 10:00 hours on the 27th day of July 1953"
-  - url: https://en.wikipedia.org/wiki/United_Nations_Command; shortQuote: "United Nations Command, the Korean People's Army, and the Chinese People's Volunteers signed"
-  - url: https://en.wikipedia.org/wiki/Korean_Armistice_Agreement; shortQuote: "On 27 July 1953, at 10:00 a.m., the Armistice was signed"
-  - url: https://en.wikipedia.org/wiki/Korean_Armistice_Agreement; shortQuote: "South Korea never signed the Armistice Agreement"
-limitations: 이 명제는 정전협정 서명 행위에 한정한다. 대한민국은 협정 서명자로 기재되지 않았다는 사실을 함께 유의해야 한다. 정전협정의 법적 효과, 평화협정 부재, 전쟁의 종료 여부에 관한 해석은 포함하지 않는다.
-tags: 1953, 유엔군사령부, 조선인민군, 중국인민지원군, 한국근현대사, 한국정전협정
-
-=== stmt:8b798d52af5df4ea214ecead ===
-propositionId: stmt:8b798d52af5df4ea214ecead
-humanUrl: /p/stmt-8b798d52af5df4ea214ecead/
-jsonUrl: /api/v2/propositions/stmt-8b798d52af5df4ea214ecead.json
-canonicalProposition: 1948년 9월 9일 조선민주주의인민공화국 정부가 선포되었다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://countrystudies.us/north-korea/14.htm; shortQuote: "The Democratic People's Republic of Korea was established on September 9, 1948"
-  - url: https://en.wikipedia.org/wiki/History_of_South_Korea; shortQuote: "Democratic People's Republic of Korea (North Korea), was proclaimed"
-  - url: https://en.wikipedia.org/wiki/Day_of_the_Foundation_of_the_Republic; shortQuote: "formally recognized the DPRK"
-limitations: 이 명제는 1948년 9월 9일의 선포 사건만 저장한다. 조선민주주의인민공화국의 법적 승인, 한반도 대표성, 분단 책임, 체제 평가는 포함하지 않는다.
-tags: 1948, 분단, 정부수립선포, 조선민주주의인민공화국, 한국근현대사
-
-=== stmt:a39e2dc6072bbda67817ead7 ===
-propositionId: stmt:a39e2dc6072bbda67817ead7
-humanUrl: /p/stmt-a39e2dc6072bbda67817ead7/
-jsonUrl: /api/v2/propositions/stmt-a39e2dc6072bbda67817ead7.json
-canonicalProposition: 이승만은 1948년 8월 15일 대한민국 수립을 선포하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://countrystudies.us/south-korea/9.htm; shortQuote: "when on August 15, 1948, the Republic of Korea (South Korea) was proclaimed"
-  - url: https://en.wikipedia.org/wiki/History_of_South_Korea; shortQuote: "proclaimed the Republic of Korea (South Korea) on 15 August 1948"
-  - url: https://en.wikipedia.org/wiki/History_of_South_Korea; shortQuote: "On 15 August 1948, the Republic of Korea was formally established"
-limitations: 이 명제는 1948년 8월 15일의 선포 행위만 저장한다. 대한민국 정부의 법적 정통성, 유엔 승인 의미, 분단 책임 또는 '건국' 명칭 논쟁은 포함하지 않는다.
-tags: 1948, 대한민국정부수립, 분단, 정부수립선포, 한국근현대사
-
-=== stmt:b3deef8189d7937fc1e97ab2 ===
-propositionId: stmt:b3deef8189d7937fc1e97ab2
-humanUrl: /p/stmt-b3deef8189d7937fc1e97ab2/
-jsonUrl: /api/v2/propositions/stmt-b3deef8189d7937fc1e97ab2.json
-canonicalProposition: 쇼와 천황은 1945년 8월 15일 녹음 라디오 연설로 일본의 연합국에 대한 항복을 공표하였다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-16
-updatedAt: 2026-06-16
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.ndl.go.jp/constitution/e/etc/history.html; shortQuote: "Imperial Rescript declaring the end of the war is broadcast at noon."
-  - url: https://en.wikipedia.org/wiki/Surrender_of_Japan; shortQuote: "was announced by Emperor Hirohito on 15 August"
-  - url: https://en.wikipedia.org/wiki/Surrender_of_Japan; shortQuote: "on 15 August announcing the surrender"
-limitations: 이 명제는 1945년 8월 15일 항복 공표 행위에 한정한다. 한국의 식민지 지배 종료, 해방의 의미, 1945년 9월 2일 항복문서 서명, 전후 점령 절차는 별도 명제로 분리해야 한다.
-tags: 1945, 옥음방송, 일본항복공표, 제2차세계대전, 한국근현대사
-
-=== stmt:40340515225f7adf44e242f3 ===
-propositionId: stmt:40340515225f7adf44e242f3
-humanUrl: /p/stmt-40340515225f7adf44e242f3/
-jsonUrl: /api/v2/propositions/stmt-40340515225f7adf44e242f3.json
-canonicalProposition: 개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: event_occurrence
-asOfDate: 2026-06-15
-updatedAt: 2026-06-15T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385; shortQuote: "2011년 3월 29일 공포"
-  - url: https://www.korea.kr/briefing/pressReleaseView.do?newsId=155749843; shortQuote: "개인정보 보호법 공포"
-limitations: 공포일 확인에 한정하며 법률의 시행 효과나 사회적 평가는 판단하지 않는다.
-tags: law-10465, privacy, promulgation
-
-=== stmt:52e6260a60e04599d809ae61 ===
-propositionId: stmt:52e6260a60e04599d809ae61
-humanUrl: /p/stmt-52e6260a60e04599d809ae61/
-jsonUrl: /api/v2/propositions/stmt-52e6260a60e04599d809ae61.json
-canonicalProposition: 개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: document_content
-asOfDate: 2026-06-15
-updatedAt: 2026-06-15T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385; shortQuote: "공포 후 6개월이 경과한 날부터 시행한다"
-limitations: '시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.
-tags: addendum, law-10465, privacy
-
-=== stmt:840aa7c32d8f6372cd968fb6 ===
-propositionId: stmt:840aa7c32d8f6372cd968fb6
-humanUrl: /p/stmt-840aa7c32d8f6372cd968fb6/
-jsonUrl: /api/v2/propositions/stmt-840aa7c32d8f6372cd968fb6.json
-canonicalProposition: 개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다
-factualGrade/status: fully_reliable / active
-assessmentStatus: assessed
-claimNature: document_content
-asOfDate: 2026-06-15
-updatedAt: 2026-06-15T00:00:00Z
-sixW: none
-correctionHistory: none
-evidence:
-  - url: https://www.law.go.kr/LSW/lsInfoP.do?efYd=20110329&lsiSeq=111385; shortQuote: "공공기관의 개인정보보호에 관한 법률은 폐지한다"
-limitations: 폐지 사실은 원문으로 확인되지만 '후신' 표현은 제도적 대체 관계를 요약하는 해석 요소가 있다. 이 명제는 폐지 조문 확인에 초점을 두며, 법적 동일성이나 제도적 연속성 전체를 확정하지 않는다.
-tags: law-10465, privacy, repeal
 

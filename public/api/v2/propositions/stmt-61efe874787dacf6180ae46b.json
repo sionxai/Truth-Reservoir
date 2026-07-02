@@ -1,10 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:61efe874787dacf6180ae46b",
-  "versionId": "ver:26812e23cae76703",
-  "certHash": "sha256:8bd9bd193af1bf76f773bffb5cd99718989c1c8d41f8517d37c9355f04f310fa",
+  "versionId": "ver:e9284aedce9de196",
+  "certHash": "sha256:cfed29b844361726c933e1b713dfa2dd114dab726a48b337180581304e8bd7f9",
   "canonicalProposition": "1972년 12월 7일 아폴로 17호 승무원은 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영하였다",
+  "originalClaim": "아폴로 17호 승무원이 1972년 12월 7일 지구 전체가 원형으로 보이는 'The Blue Marble' 사진을 촬영했다는 요약.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "아폴로 17호 승무원",
+    "when": "1972년 12월 7일",
+    "where": "아폴로 17호의 달 비행 경로에서 본 지구",
+    "what": "지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영했다",
+    "how": "승무원이 지구를 촬영한 사진으로 기록했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -131,7 +140,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "AS17-148-22727 EOL 카탈로그의 날짜·캡션·이미지 표시와 NASA Earth Observatory의 날짜·승무원 설명을 확인했다.",
+      "reviewMemo": "AS17-148-22727 EOL 카탈로그의 날짜·캡션·이미지 표시와 NASA Earth Observatory의 날짜·승무원 설명을 확인했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "원본 사진 카탈로그가 날짜와 사진 ID를 직접 제공하며, 보조 NASA 설명이 같은 사건 맥락을 확인한다.",
       "rejectedAlternatives": "'지구는 구형이다' 같은 결론형 문장은 제외했다. '완전한 지구 원반' 같은 더 강한 표현은 직접 인용 문구가 부족해 '원형으로 보이는 사진'으로 제한했다."
     }
@@ -155,5 +164,5 @@
     "NASA"
   ],
   "createdAt": "2026-06-16T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

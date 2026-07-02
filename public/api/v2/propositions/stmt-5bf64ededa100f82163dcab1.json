@@ -1,11 +1,24 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:5bf64ededa100f82163dcab1",
-  "versionId": "ver:cec528b4d62c0a01",
-  "certHash": "sha256:bb1f16fa93cd7a39de638d6508194f1e9cde9c887e908c2d5b540b87c7a4a507",
+  "versionId": "ver:9d9f9d781a9446e6",
+  "certHash": "sha256:53291669b1e957d20e2cfff3b5e4c2e28ab9d4cb91138c8c7d5cf3feefc3938d",
   "canonicalProposition": "윤재수 중앙선거관리위원회 선거정책실장은 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다",
   "originalClaim": "선관위 “예상보다 높은 투표율로 준비분(50%) 초과” 해명.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "윤재수 중앙선거관리위원회 선거정책실장",
+    "when": "불명(윤재수 실장의 설명 발언일은 기록에 없음)",
+    "where": "중앙선거관리위원회 관련 해명 보도 문맥",
+    "what": "사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다",
+    "how": "선관위 선거정책실장 설명 발언으로 해명했다",
+    "why": [
+      {
+        "reason": "사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50% 기준으로 인쇄했다",
+        "statedBy": "중앙선거관리위원회(윤재수 선거정책실장)"
+      }
+    ]
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-18",
@@ -69,7 +82,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "한겨레 본문에서 발화자와 설명 내용이 확인된다.",
       "rejectedAlternatives": "선관위 설명이 참이라는 결론이나 의도 해석은 제외했다."
     }
@@ -95,5 +108,5 @@
     "선관위해명"
   ],
   "createdAt": "2026-06-18",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-07-02"
 }

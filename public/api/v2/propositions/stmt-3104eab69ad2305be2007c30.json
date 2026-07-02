@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:3104eab69ad2305be2007c30",
-  "versionId": "ver:aea4077c73652522",
-  "certHash": "sha256:0f701f0af53531f4a5846438c87339b554748908cfb7aae425286391a97da260",
+  "versionId": "ver:7faf5d2bb1274398",
+  "certHash": "sha256:d7015b0a0ca4d33a1f6025b3aa177a0228d1e173cd8a6ed7be0e1b5719727ee6",
   "canonicalProposition": "1965년 6월 22일 대한민국과 일본은 도쿄에서 한일기본조약에 서명하였다",
   "originalClaim": "1965년 6월 22일 대한민국과 일본은 한일기본조약에 서명하였다.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "대한민국과 일본",
+    "when": "1965년 6월 22일",
+    "where": "도쿄",
+    "what": "한일기본조약에 서명했다",
+    "how": "양국이 조약문에 서명했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -95,7 +103,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "유엔 조약집 PDF 원문이 fetch 가능했고 403이 아니었다. 서명 사실만 저장하고 청구권·배상 해석은 limitations에 제외했다.",
+      "reviewMemo": "유엔 조약집 PDF 원문이 fetch 가능했고 403이 아니었다. 서명 사실만 저장하고 청구권·배상 해석은 limitations에 제외했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "당사자, 장소, 서명일이 조약집 원문에서 확인된다.",
       "rejectedAlternatives": "'한일관계가 정상화되었다', '청구권 문제가 해결되었다'는 표현은 조약 내용·해석 판단이 섞여 제외했다."
     }
@@ -121,5 +129,5 @@
     "조약서명"
   ],
   "createdAt": "2026-06-16",
-  "updatedAt": "2026-06-16"
+  "updatedAt": "2026-07-02"
 }

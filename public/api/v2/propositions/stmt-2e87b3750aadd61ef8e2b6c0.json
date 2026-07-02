@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:2e87b3750aadd61ef8e2b6c0",
-  "versionId": "ver:6c5db73b54bf1298",
-  "certHash": "sha256:933cae69e7fe97ed0686034ad01e7d68fe09c84926a3cbdc7242f3c8ca72cc4c",
+  "versionId": "ver:3c1bc0e7c97d2bdb",
+  "certHash": "sha256:bcbb10a8046ae5a2957c38152a96d6920b60d11ea466f771676fbdec6d6e51f5",
   "canonicalProposition": "2026년 6월 3일 대한민국에서 제9회 전국동시지방선거 본투표가 실시되었다",
   "originalClaim": "제9회 지방선거는 2026-06-03 전국 실시.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "대한민국 선거관리 체계",
+    "when": "2026년 6월 3일",
+    "where": "대한민국",
+    "what": "제9회 전국동시지방선거 본투표가 실시되었다",
+    "how": "전국동시지방선거 본투표 절차로 실시되었다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-18",
@@ -117,7 +125,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: canonicalProposition은 유지하고, fetch 확인된 추가 독립출처를 evidence로 보강했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: canonicalProposition은 유지하고, fetch 확인된 추가 독립출처를 evidence로 보강했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "복수 fetch 가능 보도가 2026년 6월 3일 지방선거 실시 사실을 직접 언급한다.",
       "rejectedAlternatives": "민주당 승리, 서울시장 패배, 부정선거 여부는 별도 검증 전 제외했다."
     }
@@ -142,5 +150,5 @@
     "선거일"
   ],
   "createdAt": "2026-06-18",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-07-02"
 }

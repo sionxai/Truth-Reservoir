@@ -1,10 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
-  "versionId": "ver:51c22322a44b18e5",
-  "certHash": "sha256:17a500d196dd54e89ac5e3466ee28e7bf546332266a4b3bfdb645902adceec03",
+  "versionId": "ver:6756472340086cc2",
+  "certHash": "sha256:539a989b5020159854e380d7de38cb5abd702fd873b06e736e5ae16ab79845c8",
   "canonicalProposition": "NGA WGS 84 공식 설명은 WGS 84 측지 좌표가 기준타원체에서 생성되며 그 장반경을 6,378,137.0미터로 제시한다",
+  "originalClaim": "NGA WGS 84 공식 설명이 기준타원체와 장반경 6,378,137.0미터를 제시한다는 요약.",
   "claimNature": "document_content",
+  "sixW": {
+    "who": "NGA",
+    "when": "불명(WGS 84 공식 설명의 게시·개정일은 기록에 없음)",
+    "where": "NGA WGS 84 공식 설명 문서",
+    "what": "WGS 84 측지 좌표가 기준타원체에서 생성되며 장반경을 6,378,137.0미터로 제시한다고 적고 있다",
+    "how": "공식 설명 문서의 기준타원체 설명과 수치 표로 기재했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -125,7 +134,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "NGA 페이지의 기준타원체 문구와 장반경·역편평률 표기를 확인했다. 명제가 WGS 84 문서내용에 머무르도록 문장을 조정했다.",
+      "reviewMemo": "NGA 페이지의 기준타원체 문구와 장반경·역편평률 표기를 확인했다. 명제가 WGS 84 문서내용에 머무르도록 문장을 조정했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "공식 WGS 84 설명의 같은 정의 구역이 기준타원체 문맥과 장반경 값을 직접 제시한다.",
       "rejectedAlternatives": "지구 형상에 관한 결론형 문장은 제2조 위반 소지가 있어 제외했다."
     }
@@ -148,5 +157,5 @@
     "기준타원체"
   ],
   "createdAt": "2026-06-16T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

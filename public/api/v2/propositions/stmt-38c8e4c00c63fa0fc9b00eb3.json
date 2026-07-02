@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:38c8e4c00c63fa0fc9b00eb3",
-  "versionId": "ver:6831b772dcc24cce",
-  "certHash": "sha256:b00b72f9eff70ca152393bb2b144c4476e862472986334f509ec82f1643b1087",
+  "versionId": "ver:0104cfd2365981d8",
+  "certHash": "sha256:56033ee0d062eed0a8a779feb077b48b19ed45ee116485fffa2709d39e3276f0",
   "canonicalProposition": "BBNJ 협정은 2026년 1월 17일 발효되었다",
   "originalClaim": "The BBNJ Agreement entered into force on 17 January 2026.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "BBNJ 협정",
+    "when": "2026년 1월 17일",
+    "where": "유엔 조약 체계",
+    "what": "협정이 발효되었다",
+    "how": "협정 제68조(1)에 따른 발효일 도달로 발효되었다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -69,7 +77,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "자동 처리된 저위험 조약 발효일 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+      "reviewMemo": "자동 처리된 저위험 조약 발효일 명제다. 인간 검수 미경유 상태로 공개 라벨링한다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "UN Treaty Collection이 발효일을 직접 제시한다.",
       "rejectedAlternatives": "60번째 비준 기탁일, 각국별 발효일, 협정 이행 성과를 포함하는 명제는 제외했다."
     }
@@ -93,5 +101,5 @@
     "2026"
   ],
   "createdAt": "2026-06-16T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

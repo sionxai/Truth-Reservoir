@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:83702707422e50c0a56fb565",
-  "versionId": "ver:5ea128422df82358",
-  "certHash": "sha256:52432eaf6d60c4a66588f08c0637c6bcdcd4c645eae13311afa31d1d08bbe71c",
+  "versionId": "ver:1f711a468eb69774",
+  "certHash": "sha256:1372855b328f8ceefca9ed9f54f9018dc3e06e8f605ae0667e4e740f50047804",
   "canonicalProposition": "중앙선거관리위원회 개정 사무편람에는 지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다는 내용이 담겼다",
   "originalClaim": "인쇄 하한 기준 60%→50% 내부지침 변경.",
   "claimNature": "document_content",
+  "sixW": {
+    "who": "중앙선거관리위원회",
+    "when": "불명(개정 사무편람의 정확한 개정일은 기록에 없음)",
+    "where": "중앙선거관리위원회 개정 사무편람",
+    "what": "지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다고 적고 있다",
+    "how": "개정 사무편람의 인쇄 하한 산정 기준 문구로 기재되었다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-18",
@@ -93,7 +101,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전, 원출처 귀속으로 재구성, 복수출처를 추가했다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전, 원출처 귀속으로 재구성, 복수출처를 추가했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "한겨레 본문에 지방선거 50% 하한 문구가 확인된다.",
       "rejectedAlternatives": "내부지침 변경의 전체 연혁과 변경 전 기준은 원문 미확인으로 제외했다."
     }
@@ -119,5 +127,5 @@
     "문서내용"
   ],
   "createdAt": "2026-06-18",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-07-02"
 }

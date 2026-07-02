@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:7536cb937fa5897848d6ecf4",
-  "versionId": "ver:0d3115f96564c828",
-  "certHash": "sha256:45292167132711bc4c85685727de77646ef07cc7494f47811efd0e2143e3e829",
+  "versionId": "ver:6f7ff8736e49a3e1",
+  "certHash": "sha256:f79a4557bd356c0224f4f6a4a903384fe137ea172ab9e1efafb9173c7216c97d",
   "canonicalProposition": "1953년 7월 27일 유엔군사령부·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다",
   "originalClaim": "1953년 7월 27일 국제연합군·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "유엔군사령부·조선인민군·중국인민지원군 대표",
+    "when": "1953년 7월 27일 10:00",
+    "where": "판문점, 한국",
+    "what": "한국 정전협정에 서명했다",
+    "how": "정전협정 문서에 각 대표가 서명했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -152,7 +160,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "서명 사실만 저장하고 대한민국 미서명 사실은 limitations에 분리했다. Wikisource 정전협정 본문과 Wikipedia 출처는 자동 에이전트로 fetch 가능했으며 403이 아니었다.",
+      "reviewMemo": "서명 사실만 저장하고 대한민국 미서명 사실은 limitations에 분리했다. Wikisource 정전협정 본문과 Wikipedia 출처는 자동 에이전트로 fetch 가능했으며 403이 아니었다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "서명 일자와 당사자가 fetch 가능한 정전협정 본문과 보조 출처에서 확인된다.",
       "rejectedAlternatives": "'한국전쟁이 끝났다', '평화가 성립했다'는 표현은 법적·정치적 해석을 포함할 수 있어 제외했다."
     }
@@ -176,5 +184,5 @@
     "중국인민지원군"
   ],
   "createdAt": "2026-06-16",
-  "updatedAt": "2026-06-16"
+  "updatedAt": "2026-07-02"
 }

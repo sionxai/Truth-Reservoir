@@ -1,10 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:40340515225f7adf44e242f3",
-  "versionId": "ver:0a147d57a3f3baa1",
-  "certHash": "sha256:84e02ba2a7cede19b5ab20641748739204672a1ceb0befa713be56347e31e71e",
+  "versionId": "ver:43d44884fd744c4e",
+  "certHash": "sha256:93c33d498964cc38ea5faa6e9527dbb5e579c1909c8d83038c8b11640925e706",
   "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
+  "originalClaim": "개인정보 보호법(법률 제10465호)이 2011년 3월 29일 공포되었다는 요약.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "대한민국 정부",
+    "when": "2011년 3월 29일",
+    "where": "개인정보 보호법(법률 제10465호) 공포문",
+    "what": "개인정보 보호법(법률 제10465호)을 공포했다",
+    "how": "법률 공포 절차로 공포했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-15",
@@ -85,7 +94,7 @@
       "note": "권위 출처를 이유로 결론을 대체하지 않고 원문 표시와 날짜를 직접 대조했다."
     },
     "humanReview": {
-      "reviewer": "foundation-seed",
+      "reviewer": "(인간 검수자 식별자)",
       "date": "2026-06-15",
       "checksPerformed": [
         "omission",
@@ -93,7 +102,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "법령 원문과 보조 자료의 날짜 일치를 확인했다.",
+      "reviewMemo": "법령 원문과 보조 자료의 날짜 일치를 확인했다. 기존 reviewer 표기 foundation-seed는 초기 시드 검수 기록으로 보존함. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "원문 법령의 공포일 표기가 명제를 직접 지지한다.",
       "rejectedAlternatives": "정책 효과나 시행 이후 평가까지 포함하는 넓은 명제는 제외했다."
     }
@@ -109,10 +118,10 @@
   "openCorrectionRequests": 0,
   "limitations": "공포일 확인에 한정하며 법률의 시행 효과나 사회적 평가는 판단하지 않는다.",
   "tags": [
-    "privacy",
-    "law-10465",
-    "promulgation"
+    "개인정보보호",
+    "법률제10465호",
+    "공포"
   ],
   "createdAt": "2026-06-15T00:00:00Z",
-  "updatedAt": "2026-06-15T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

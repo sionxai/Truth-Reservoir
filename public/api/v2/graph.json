@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-19",
+    "generatedAt": "2026-07-02",
     "total": 36,
     "note": "태그 교집합 기반 결정론적 파생 관계; cert 원본에는 저장되지 않음"
   },
@@ -93,9 +93,9 @@
       "propositionId": "stmt:40340515225f7adf44e242f3",
       "path": "/p/stmt-40340515225f7adf44e242f3/",
       "tags": [
-        "law-10465",
-        "privacy",
-        "promulgation"
+        "개인정보보호",
+        "공포",
+        "법률제10465호"
       ]
     },
     {
@@ -124,9 +124,9 @@
       "propositionId": "stmt:52e6260a60e04599d809ae61",
       "path": "/p/stmt-52e6260a60e04599d809ae61/",
       "tags": [
-        "addendum",
-        "law-10465",
-        "privacy"
+        "개인정보보호",
+        "법률제10465호",
+        "부칙"
       ]
     },
     {
@@ -228,9 +228,9 @@
       "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
       "path": "/p/stmt-840aa7c32d8f6372cd968fb6/",
       "tags": [
-        "law-10465",
-        "privacy",
-        "repeal"
+        "개인정보보호",
+        "법률제10465호",
+        "폐지"
       ]
     },
     {
@@ -1013,16 +1013,16 @@
       "from": "stmt:40340515225f7adf44e242f3",
       "to": "stmt:52e6260a60e04599d809ae61",
       "sharedTags": [
-        "law-10465",
-        "privacy"
+        "개인정보보호",
+        "법률제10465호"
       ]
     },
     {
       "from": "stmt:40340515225f7adf44e242f3",
       "to": "stmt:840aa7c32d8f6372cd968fb6",
       "sharedTags": [
-        "law-10465",
-        "privacy"
+        "개인정보보호",
+        "법률제10465호"
       ]
     },
     {
@@ -1061,8 +1061,8 @@
       "from": "stmt:52e6260a60e04599d809ae61",
       "to": "stmt:840aa7c32d8f6372cd968fb6",
       "sharedTags": [
-        "law-10465",
-        "privacy"
+        "개인정보보호",
+        "법률제10465호"
       ]
     },
     {

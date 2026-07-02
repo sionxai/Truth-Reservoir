@@ -1,10 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-  "versionId": "ver:30aff496215f21db",
-  "certHash": "sha256:846164cfd21d87e5e420945af78d4df0b85c34182b9a8d8e248f8e841453fbd8",
+  "versionId": "ver:b8da1e3ee6ceeb53",
+  "certHash": "sha256:11c6e6d12819efabeea2796959c2c2989b47fd7ae85c6ee98bb882f660dba420",
   "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
+  "originalClaim": "개인정보 보호법이 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다는 요약.",
   "claimNature": "document_content",
+  "sixW": {
+    "who": "대한민국",
+    "when": "2011년 3월 29일 공포된 법률 제10465호",
+    "where": "개인정보 보호법(법률 제10465호) 폐지 관련 조문",
+    "what": "구 '공공기관의 개인정보보호에 관한 법률'을 폐지한다고 규정하며, 기록은 그 후신 제정으로 제한적으로 요약한다",
+    "how": "법률 제10465호 제정·공포 과정에서 폐지 조문을 두었다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-15",
@@ -60,7 +69,7 @@
       "note": "공식 법령 출처를 사용하되 후신 표현의 해석 요소를 별도로 제한했다."
     },
     "humanReview": {
-      "reviewer": "foundation-seed",
+      "reviewer": "(인간 검수자 식별자)",
       "date": "2026-06-15",
       "checksPerformed": [
         "omission",
@@ -68,7 +77,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "폐지 조문은 직접 확인했고 후신 표현은 제한적으로 수용했다.",
+      "reviewMemo": "폐지 조문은 직접 확인했고 후신 표현은 제한적으로 수용했다. 기존 reviewer 표기 foundation-seed는 초기 시드 검수 기록으로 보존함. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "부칙 제2조의 폐지 문구가 명제의 핵심 사실을 뒷받침한다.",
       "rejectedAlternatives": "후신 표현을 완전한 법적 동일성 주장으로 확대하는 해석은 제외했다."
     }
@@ -84,10 +93,10 @@
   "openCorrectionRequests": 0,
   "limitations": "폐지 사실은 원문으로 확인되지만 '후신' 표현은 제도적 대체 관계를 요약하는 해석 요소가 있다. 이 명제는 폐지 조문 확인에 초점을 두며, 법적 동일성이나 제도적 연속성 전체를 확정하지 않는다.",
   "tags": [
-    "privacy",
-    "law-10465",
-    "repeal"
+    "개인정보보호",
+    "법률제10465호",
+    "폐지"
   ],
   "createdAt": "2026-06-15T00:00:00Z",
-  "updatedAt": "2026-06-15T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
-  "versionId": "ver:c0fd584c637931b0",
-  "certHash": "sha256:74b517b2a056922ff6d9179b86335b8b808495870f46784ad7f5ef463de08279",
+  "versionId": "ver:ff45eff6b590a73d",
+  "certHash": "sha256:b6a413aaa803665d3d2d7fff66bd897b9c7e9c67a21135aec15d476dc02a387f",
   "canonicalProposition": "국제사법재판소는 2025년 7월 23일 '기후변화에 관한 국가의 의무' 권고의견을 발령하였다",
   "originalClaim": "The International Court of Justice issued the Advisory Opinion on Obligations of States in respect of Climate Change on 23 July 2025.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "국제사법재판소",
+    "when": "2025년 7월 23일",
+    "where": "국제사법재판소 권고의견 문서",
+    "what": "'기후변화에 관한 국가의 의무' 권고의견을 발령했다",
+    "how": "권고의견 문서(Advisory Opinion of 23 July 2025)로 발령했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -72,7 +80,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "자동 처리된 저위험 공식 문서 발령 사건 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+      "reviewMemo": "자동 처리된 저위험 공식 문서 발령 사건 명제다. 인간 검수 미경유 상태로 공개 라벨링한다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "ICJ 공식 사건 문서 목록이 권고의견 일자를 직접 지지한다.",
       "rejectedAlternatives": "권고의견의 법적 효과나 기후정책 결론을 포함하는 명제는 제외했다."
     }
@@ -96,5 +104,5 @@
     "2025"
   ],
   "createdAt": "2026-06-16T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

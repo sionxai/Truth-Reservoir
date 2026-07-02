@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:22abb3226ba88d6589e75013",
-  "versionId": "ver:ff31a3421522911c",
-  "certHash": "sha256:46694e5fbe09049b0339e52fb9691cda5f6b13665cbacc6d9102de3f5fb339c4",
+  "versionId": "ver:8d0a10e0a02fe94a",
+  "certHash": "sha256:bd1c9e2ad3633625d680a7382c825174aea0a9fd9872c41c44e1fe8668cc5ac4",
   "canonicalProposition": "UNFCCC의 COP30 사후 문서 목록은 제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다",
   "originalClaim": "UNFCCC post-session documents state that COP 30 was held in Belem from 10 to 25 November 2025.",
   "claimNature": "document_content",
+  "sixW": {
+    "who": "UNFCCC",
+    "when": "불명(사후 문서 목록의 게시·작성일은 기록에 없음; 문서가 적은 회의 기간은 2025년 11월 10~25일)",
+    "where": "UNFCCC COP30 사후 문서 목록",
+    "what": "제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다",
+    "how": "사후 문서 목록의 회의 보고서 제목·문구로 해당 기간과 장소를 기재했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -98,7 +106,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "자동 처리된 공식 문서 내용 명제다. 예정 일정과 사후 문서 기간 차이를 발견해 명제를 document_content로 좁혔다.",
+      "reviewMemo": "자동 처리된 공식 문서 내용 명제다. 예정 일정과 사후 문서 기간 차이를 발견해 명제를 document_content로 좁혔다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "UNFCCC 공식 문서 목록의 제목이 명제를 직접 지지한다.",
       "rejectedAlternatives": "'COP30은 10-25일 동안 개최되었다'라는 직접 사건 명제는 예정 일정과의 차이 때문에 이번 배치에서 제외했다."
     }
@@ -122,5 +130,5 @@
     "2025"
   ],
   "createdAt": "2026-06-16T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

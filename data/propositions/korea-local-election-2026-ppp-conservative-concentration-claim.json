@@ -1,11 +1,24 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:6ec9cbff53f71a505b22823f",
-  "versionId": "ver:2827e77a3a38e253",
-  "certHash": "sha256:2df8366e5b289f41dd4306677613d8fe2c848b2f5a2bd3d468803138386a59af",
+  "versionId": "ver:0293836ef71f8d4a",
+  "certHash": "sha256:6827128d65dd23249bdd4e0a45b4041a327d63a2a7e6b823413559080a6d5fdd",
   "canonicalProposition": "국민의힘은 2026년 6월 4일 6·3 지방선거 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며, 실제 투표를 포기한 유권자가 발생했다면 중대한 참정권 침해에 해당할 수 있다고 주장했다",
   "originalClaim": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 국민의힘의 정치적 문제 제기와 참정권 침해 주장.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "국민의힘",
+    "when": "2026년 6월 4일",
+    "where": "6·3 지방선거 투표용지 부족 관련 공개 문제제기 문맥",
+    "what": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며 실제 투표 포기 유권자가 발생했다면 중대한 참정권 침해일 수 있다고 주장했다",
+    "how": "공개 문제제기와 보도 인용을 통해 주장했다",
+    "why": [
+      {
+        "reason": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점과 투표 포기 유권자 발생 가능성을 근거로 들었다",
+        "statedBy": "국민의힘"
+      }
+    ]
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-18",
@@ -148,7 +161,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스와 한국경제 원문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 보수 강세 귀속은 한국경제의 분석과 국민의힘 의혹 제기 보도이지 저수지의 판단이 아니다.",
+      "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스와 한국경제 원문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 보수 강세 귀속은 한국경제의 분석과 국민의힘 의혹 제기 보도이지 저수지의 판단이 아니다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "파이낸셜뉴스와 한국경제 본문에서 국민의힘이 보수 강세 지역 집중 의혹과 참정권 침해 가능성을 제기했다는 보도 문장이 확인된다.",
       "rejectedAlternatives": "보수 지역 표적, 고의, 국민의힘 지역에서만 부족, 부정선거였다는 결론 표현은 제외했다."
     }
@@ -174,5 +187,5 @@
     "주장"
   ],
   "createdAt": "2026-06-18",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-07-02"
 }

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:5697abe486cdf727eafca8e1",
-  "versionId": "ver:dca1044d52f53a72",
-  "certHash": "sha256:0444b3b711d393c9c038d0ede87216566e69b895aff15647f04963b22aeca393",
+  "versionId": "ver:843e4caa4b5ad206",
+  "certHash": "sha256:ef6f1069abffefd6c72c26c1ca53099d4bd2f1d94c22e1cada8381ba93f96e94",
   "canonicalProposition": "2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다",
   "originalClaim": "6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 집중됐는지에 대한 경험적 상태.",
   "claimNature": "measurement",
@@ -12,6 +12,14 @@
     "aggregationBasis": "부족 투표소 전체의 정파 성향, 전국 투표소 정파 분포 기준선, 재현 가능한 통계 분석의 공개 여부",
     "producer": "진실저수지 검수 기록",
     "measuredAt": "2026-06-18"
+  },
+  "sixW": {
+    "who": "진실저수지 검수 기록",
+    "when": "2026년 6월 18일 기준",
+    "where": "6·3 지방선거 투표용지 부족 투표소 91곳 및 fetch 가능한 공개 보도 범위",
+    "what": "투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 사실로 확정되지 않았다고 기록했다",
+    "how": "fetch 가능한 보도와 기존 91곳 지역분포 명제를 대조해 필요한 데이터 공개 여부를 점검했다",
+    "why": []
   },
   "classification": "M",
   "language": "ko",
@@ -184,7 +192,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·측정 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스·한국경제·경향신문 본문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 91곳 전체 정파성향과 전국 기준선 대조 통계분석은 fetch 가능한 출처에서 확인하지 못했다.",
+      "reviewMemo": "정치·선거·측정 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스·한국경제·경향신문 본문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 91곳 전체 정파성향과 전국 기준선 대조 통계분석은 fetch 가능한 출처에서 확인하지 못했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "편중 여부 자체는 재현 가능한 전수 분석이 없어 판단유보로 저장하는 것이 제6조와 제7조에 부합한다.",
       "rejectedAlternatives": "보수 강세 지역에 집중됐다는 결론, 보수 강세 지역에 집중되지 않았다는 반대 결론, 투표율 기반 기계적 설명, 표적·인과·부정선거 판단은 제외했다."
     }
@@ -214,5 +222,5 @@
     "정치주장"
   ],
   "createdAt": "2026-06-18",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-07-02"
 }

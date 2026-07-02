@@ -1,11 +1,24 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:d180b65d5e8f431a52ed1eec",
-  "versionId": "ver:2a16808b3a1d48b9",
-  "certHash": "sha256:b79aff6dc0d6a533bfb71017dfdb934c7993b8135b90ffa14697ac421406dbc8",
+  "versionId": "ver:77fb3a60b6409238",
+  "certHash": "sha256:a7831da8470d64db7dc21ed078ff52c08abed459d38a8f3fcff1abe1b4d847a8",
   "canonicalProposition": "이상능 중앙선거관리위원회 선거1국장은 투표용지 인쇄 경비의 ‘1.1배’ 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다",
   "originalClaim": "선관위 인쇄 예산 관련 해명.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "이상능 중앙선거관리위원회 선거1국장",
+    "when": "불명(이상능 국장의 설명 발언일은 기록에 없음)",
+    "where": "중앙선거관리위원회 관련 해명 보도 문맥",
+    "what": "투표용지 인쇄 경비의 '1.1배' 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다",
+    "how": "선관위 선거1국장 설명 발언으로 해명했다",
+    "why": [
+      {
+        "reason": "'1.1배'는 인쇄 경비 산출을 위한 기준일 뿐",
+        "statedBy": "중앙선거관리위원회(이상능 선거1국장)"
+      }
+    ]
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-18",
@@ -69,7 +82,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "한겨레 본문에 해당 설명 문구가 직접 확인된다.",
       "rejectedAlternatives": "145억1957만원, 82억498만원, 지역별 집행률은 fetch 가능한 출처 미확인으로 제외했다."
     }
@@ -95,5 +108,5 @@
     "예산해명"
   ],
   "createdAt": "2026-06-18",
-  "updatedAt": "2026-06-18"
+  "updatedAt": "2026-07-02"
 }

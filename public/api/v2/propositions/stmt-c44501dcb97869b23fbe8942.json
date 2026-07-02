@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:c44501dcb97869b23fbe8942",
-  "versionId": "ver:040b4c629945879d",
-  "certHash": "sha256:6235b2a6c1107402369c4d9afdc0b2a6ab39ee65d0c3a9cb536ace7b3e76d089",
+  "versionId": "ver:0f0c8babffeb975c",
+  "certHash": "sha256:5cd5bb4bdb4e78ea0f3c7ce77e40ae0af2a25efe2f7a60dcc62a61ebc4c37852",
   "canonicalProposition": "2025년 6월 24일부터 25일까지 NATO 정상회의가 네덜란드 헤이그에서 열렸다",
   "originalClaim": "2025 NATO Summit was held in The Hague, the Netherlands, on 24-25 June 2025.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "NATO",
+    "when": "2025년 6월 24일부터 25일까지",
+    "where": "네덜란드 헤이그",
+    "what": "NATO 정상회의가 열렸다",
+    "how": "정상회의 행사로 개최되었다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -99,7 +107,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "자동 처리된 저위험 행사 일자·장소 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+      "reviewMemo": "자동 처리된 저위험 행사 일자·장소 명제다. 인간 검수 미경유 상태로 공개 라벨링한다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "공식 이벤트 개요가 날짜와 장소를 직접 지지한다.",
       "rejectedAlternatives": "정상회의 결정의 내용이나 정책 평가를 포함하는 넓은 명제는 제외했다."
     }
@@ -122,5 +130,5 @@
     "2025"
   ],
   "createdAt": "2026-06-16T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

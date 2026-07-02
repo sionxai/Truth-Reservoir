@@ -3,10 +3,19 @@
     {
       "certVersion": "2.1",
       "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
-      "versionId": "ver:5e0a6976bd82d30a",
-      "certHash": "sha256:6489fb70772684a9973f47501fa239eaa8bc40d128a3f667e7e29176e0aa7c18",
+      "versionId": "ver:da58f11aaf98631e",
+      "certHash": "sha256:6a57f9c20d8719beef693d5cf008b7dc1b5b506a05243c5845d55ec3a524c08d",
       "canonicalProposition": "1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다",
+      "originalClaim": "닐 암스트롱과 버즈 올드린이 1969년 7월 20일 아폴로 11호 이글을 달 고요의 바다에 착륙시켰다는 요약.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "닐 암스트롱과 버즈 올드린",
+        "when": "1969년 7월 20일 20:17:40 UTC",
+        "where": "달 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)",
+        "what": "아폴로 11호 달 착륙선 이글(Eagle)을 착륙시켰다",
+        "how": "아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달 표면에 착륙했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -147,7 +156,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "시각이 출처 간 20:17~20:17:40으로 초 단위 차이. 가장 정밀한 1차 출처(NSSDCA) 기준 채택하고, 좌표는 LRO 독립 확인값 사용. 음모론은 반대 가설로 검토 후 증거 부재로 기각.",
+          "reviewMemo": "시각이 출처 간 20:17~20:17:40으로 초 단위 차이. 가장 정밀한 1차 출처(NSSDCA) 기준 채택하고, 좌표는 LRO 독립 확인값 사용. 음모론은 반대 가설로 검토 후 증거 부재로 기각. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "복수 독립 출처 수렴 + 재현 가능한 물리 증거(역반사경) 존재.",
           "rejectedAlternatives": "'20:17 UTC'(초 생략) 표기 기각 — 더 정밀한 1차 값 존재. '인류가 달에 갔다'는 포괄 표현 기각 — 원자성 위해 특정 임무·시각·좌표로 한정."
         }
@@ -169,15 +178,24 @@
         "1969"
       ],
       "createdAt": "2026-06-15T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:61efe874787dacf6180ae46b",
-      "versionId": "ver:26812e23cae76703",
-      "certHash": "sha256:8bd9bd193af1bf76f773bffb5cd99718989c1c8d41f8517d37c9355f04f310fa",
+      "versionId": "ver:e9284aedce9de196",
+      "certHash": "sha256:cfed29b844361726c933e1b713dfa2dd114dab726a48b337180581304e8bd7f9",
       "canonicalProposition": "1972년 12월 7일 아폴로 17호 승무원은 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영하였다",
+      "originalClaim": "아폴로 17호 승무원이 1972년 12월 7일 지구 전체가 원형으로 보이는 'The Blue Marble' 사진을 촬영했다는 요약.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "아폴로 17호 승무원",
+        "when": "1972년 12월 7일",
+        "where": "아폴로 17호의 달 비행 경로에서 본 지구",
+        "what": "지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영했다",
+        "how": "승무원이 지구를 촬영한 사진으로 기록했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -304,7 +322,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "AS17-148-22727 EOL 카탈로그의 날짜·캡션·이미지 표시와 NASA Earth Observatory의 날짜·승무원 설명을 확인했다.",
+          "reviewMemo": "AS17-148-22727 EOL 카탈로그의 날짜·캡션·이미지 표시와 NASA Earth Observatory의 날짜·승무원 설명을 확인했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "원본 사진 카탈로그가 날짜와 사진 ID를 직접 제공하며, 보조 NASA 설명이 같은 사건 맥락을 확인한다.",
           "rejectedAlternatives": "'지구는 구형이다' 같은 결론형 문장은 제외했다. '완전한 지구 원반' 같은 더 강한 표현은 직접 인용 문구가 부족해 '원형으로 보이는 사진'으로 제한했다."
         }
@@ -328,15 +346,24 @@
         "NASA"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:ae66527bf2aea1b5407a5f78",
-      "versionId": "ver:607de2a74ac759b9",
-      "certHash": "sha256:968b1662fc231204f5ffb8df04b6710e9ea66a6894ca89d59aff63c18b1807b1",
+      "versionId": "ver:ee530131b876b9c1",
+      "certHash": "sha256:0d06f11d5b1c645189cc765dcff31289365c405aaa896f926f3cabba09dacdec",
       "canonicalProposition": "1968년 12월 24일 아폴로 8호 승무원은 달 궤도에서 지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영하였다",
+      "originalClaim": "아폴로 8호 승무원이 1968년 12월 24일 달 궤도에서 Earthrise 사진을 촬영했다는 요약.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "아폴로 8호 승무원",
+        "when": "1968년 12월 24일",
+        "where": "달 궤도에서 본 달 지평선 위",
+        "what": "지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영했다",
+        "how": "달 궤도에서 지구가 떠오르는 장면을 사진으로 촬영했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -487,7 +514,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "AS08-14-2383 카탈로그 페이지와 NASA SVS 사진 ID 대조를 확인했다. EOL의 Date taken 텍스트가 비어 있어 APOD 기념일 문구로 날짜를 보강하고 해당 한계를 명시했다.",
+          "reviewMemo": "AS08-14-2383 카탈로그 페이지와 NASA SVS 사진 ID 대조를 확인했다. EOL의 Date taken 텍스트가 비어 있어 APOD 기념일 문구로 날짜를 보강하고 해당 한계를 명시했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "사진 ID와 달 지평선 위 지구 캡션은 NASA/JSC 카탈로그가 직접 제시하고, SVS가 원본 사진 ID와 Earthrise 촬영 재구성을 교차 확인한다.",
           "rejectedAlternatives": "'Earthrise가 인류에게 준 의미' 같은 평가 명제는 제외했다. 'William Anders 단독 촬영'은 일부 출처 간 서술 차이가 있어 이 명제에서는 'Apollo 8 승무원'으로 제한했다."
         }
@@ -511,16 +538,24 @@
         "NASA"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:38c8e4c00c63fa0fc9b00eb3",
-      "versionId": "ver:6831b772dcc24cce",
-      "certHash": "sha256:b00b72f9eff70ca152393bb2b144c4476e862472986334f509ec82f1643b1087",
+      "versionId": "ver:0104cfd2365981d8",
+      "certHash": "sha256:56033ee0d062eed0a8a779feb077b48b19ed45ee116485fffa2709d39e3276f0",
       "canonicalProposition": "BBNJ 협정은 2026년 1월 17일 발효되었다",
       "originalClaim": "The BBNJ Agreement entered into force on 17 January 2026.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "BBNJ 협정",
+        "when": "2026년 1월 17일",
+        "where": "유엔 조약 체계",
+        "what": "협정이 발효되었다",
+        "how": "협정 제68조(1)에 따른 발효일 도달로 발효되었다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -584,7 +619,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "자동 처리된 저위험 조약 발효일 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+          "reviewMemo": "자동 처리된 저위험 조약 발효일 명제다. 인간 검수 미경유 상태로 공개 라벨링한다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "UN Treaty Collection이 발효일을 직접 제시한다.",
           "rejectedAlternatives": "60번째 비준 기탁일, 각국별 발효일, 협정 이행 성과를 포함하는 명제는 제외했다."
         }
@@ -608,16 +643,24 @@
         "2026"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:22abb3226ba88d6589e75013",
-      "versionId": "ver:ff31a3421522911c",
-      "certHash": "sha256:46694e5fbe09049b0339e52fb9691cda5f6b13665cbacc6d9102de3f5fb339c4",
+      "versionId": "ver:8d0a10e0a02fe94a",
+      "certHash": "sha256:bd1c9e2ad3633625d680a7382c825174aea0a9fd9872c41c44e1fe8668cc5ac4",
       "canonicalProposition": "UNFCCC의 COP30 사후 문서 목록은 제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다",
       "originalClaim": "UNFCCC post-session documents state that COP 30 was held in Belem from 10 to 25 November 2025.",
       "claimNature": "document_content",
+      "sixW": {
+        "who": "UNFCCC",
+        "when": "불명(사후 문서 목록의 게시·작성일은 기록에 없음; 문서가 적은 회의 기간은 2025년 11월 10~25일)",
+        "where": "UNFCCC COP30 사후 문서 목록",
+        "what": "제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다",
+        "how": "사후 문서 목록의 회의 보고서 제목·문구로 해당 기간과 장소를 기재했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -710,7 +753,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "자동 처리된 공식 문서 내용 명제다. 예정 일정과 사후 문서 기간 차이를 발견해 명제를 document_content로 좁혔다.",
+          "reviewMemo": "자동 처리된 공식 문서 내용 명제다. 예정 일정과 사후 문서 기간 차이를 발견해 명제를 document_content로 좁혔다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "UNFCCC 공식 문서 목록의 제목이 명제를 직접 지지한다.",
           "rejectedAlternatives": "'COP30은 10-25일 동안 개최되었다'라는 직접 사건 명제는 예정 일정과의 차이 때문에 이번 배치에서 제외했다."
         }
@@ -734,16 +777,24 @@
         "2025"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:8b798d52af5df4ea214ecead",
-      "versionId": "ver:85d0f5768f421e51",
-      "certHash": "sha256:3726e4eef7f1c972e1a6bf2ce3df2e793965b8ff333cb6d833bd5226055af67c",
+      "versionId": "ver:7d4e461acc163dc9",
+      "certHash": "sha256:dc4c628d07a8f0862b9fbae6b895e4791af9f46e95b100a2b5ad31639c1f393f",
       "canonicalProposition": "1948년 9월 9일 조선민주주의인민공화국 정부가 선포되었다",
       "originalClaim": "1948년 9월 9일 조선민주주의인민공화국 정부 수립이 선포되었다.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "조선민주주의인민공화국 정부",
+        "when": "1948년 9월 9일",
+        "where": "조선민주주의인민공화국(북한)",
+        "what": "정부 수립이 선포되었다",
+        "how": "정부 수립 선포로 발표되었다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -863,7 +914,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정부 수립 선포 사실만 저장하고 정통성·체제 평가를 제외했다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+          "reviewMemo": "정부 수립 선포 사실만 저장하고 정통성·체제 평가를 제외했다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "날짜와 수립·선포 사실이 fetch 가능한 독립 출처에서 확인된다.",
           "rejectedAlternatives": "'북한 정권이 수립되었다', '공산정권이 들어섰다'는 표현은 평가·체제 프레이밍이 강해 제외했다."
         }
@@ -886,15 +937,24 @@
         "분단"
       ],
       "createdAt": "2026-06-16",
-      "updatedAt": "2026-06-16"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:b18e2813819c4fb0e23830f6",
-      "versionId": "ver:28ee0c54de697aa6",
-      "certHash": "sha256:833b8883f996b8b3fe900e988408f111638ab587bc42c887c0d46f59e2468336",
+      "versionId": "ver:f40b4e55702acc99",
+      "certHash": "sha256:8374479950c46337d13088c3d5f24bc2388de32c5b47971d2232b5a901acdb22",
       "canonicalProposition": "에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다",
+      "originalClaim": "에라토스테네스가 기원전 약 240년경 그림자 각도 차이로 지구 둘레를 추정하는 측정을 수행했다는 요약.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "에라토스테네스",
+        "when": "기원전 약 240년경",
+        "where": "시에네와 알렉산드리아",
+        "what": "지구 둘레를 추정하는 측정을 수행하였다",
+        "how": "하지 정오의 태양 그림자 각도 차이를 이용했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -1096,7 +1156,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "NOAA History of Geodesy 페이지를 자동 재-fetch해 그림자 각도 문구가 노출되는지 확인하고, Britannica의 방법 설명과 arXiv 초록의 around 240 BC 문구를 확인했다. stadion-km 환산과 최종 둘레값은 논쟁적이므로 명제에서 제외했다.",
+          "reviewMemo": "NOAA History of Geodesy 페이지를 자동 재-fetch해 그림자 각도 문구가 노출되는지 확인하고, Britannica의 방법 설명과 arXiv 초록의 around 240 BC 문구를 확인했다. stadion-km 환산과 최종 둘레값은 논쟁적이므로 명제에서 제외했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "NOAA가 그림자 각도와 시에네-알렉산드리아 거리 결합 방법을 자동 재확인 가능한 페이지에서 제시하고, 장소·방법·대략 연대는 다른 출처도 직접 지지하므로 숫자값 없이 측정 수행 사실을 원자적으로 저장할 수 있다.",
           "rejectedAlternatives": "'에라토스테네스가 지구 둘레를 정확히 계산했다' 또는 특정 km 값을 담는 문장은 원자료·단위 논쟁 때문에 제외했다."
         }
@@ -1120,16 +1180,24 @@
         "천문학"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
-      "versionId": "ver:c0fd584c637931b0",
-      "certHash": "sha256:74b517b2a056922ff6d9179b86335b8b808495870f46784ad7f5ef463de08279",
+      "versionId": "ver:ff45eff6b590a73d",
+      "certHash": "sha256:b6a413aaa803665d3d2d7fff66bd897b9c7e9c67a21135aec15d476dc02a387f",
       "canonicalProposition": "국제사법재판소는 2025년 7월 23일 '기후변화에 관한 국가의 의무' 권고의견을 발령하였다",
       "originalClaim": "The International Court of Justice issued the Advisory Opinion on Obligations of States in respect of Climate Change on 23 July 2025.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "국제사법재판소",
+        "when": "2025년 7월 23일",
+        "where": "국제사법재판소 권고의견 문서",
+        "what": "'기후변화에 관한 국가의 의무' 권고의견을 발령했다",
+        "how": "권고의견 문서(Advisory Opinion of 23 July 2025)로 발령했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -1196,7 +1264,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "자동 처리된 저위험 공식 문서 발령 사건 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+          "reviewMemo": "자동 처리된 저위험 공식 문서 발령 사건 명제다. 인간 검수 미경유 상태로 공개 라벨링한다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "ICJ 공식 사건 문서 목록이 권고의견 일자를 직접 지지한다.",
           "rejectedAlternatives": "권고의견의 법적 효과나 기후정책 결론을 포함하는 명제는 제외했다."
         }
@@ -1220,16 +1288,24 @@
         "2025"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:3104eab69ad2305be2007c30",
-      "versionId": "ver:aea4077c73652522",
-      "certHash": "sha256:0f701f0af53531f4a5846438c87339b554748908cfb7aae425286391a97da260",
+      "versionId": "ver:7faf5d2bb1274398",
+      "certHash": "sha256:d7015b0a0ca4d33a1f6025b3aa177a0228d1e173cd8a6ed7be0e1b5719727ee6",
       "canonicalProposition": "1965년 6월 22일 대한민국과 일본은 도쿄에서 한일기본조약에 서명하였다",
       "originalClaim": "1965년 6월 22일 대한민국과 일본은 한일기본조약에 서명하였다.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "대한민국과 일본",
+        "when": "1965년 6월 22일",
+        "where": "도쿄",
+        "what": "한일기본조약에 서명했다",
+        "how": "양국이 조약문에 서명했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -1319,7 +1395,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "유엔 조약집 PDF 원문이 fetch 가능했고 403이 아니었다. 서명 사실만 저장하고 청구권·배상 해석은 limitations에 제외했다.",
+          "reviewMemo": "유엔 조약집 PDF 원문이 fetch 가능했고 403이 아니었다. 서명 사실만 저장하고 청구권·배상 해석은 limitations에 제외했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "당사자, 장소, 서명일이 조약집 원문에서 확인된다.",
           "rejectedAlternatives": "'한일관계가 정상화되었다', '청구권 문제가 해결되었다'는 표현은 조약 내용·해석 판단이 섞여 제외했다."
         }
@@ -1345,16 +1421,24 @@
         "조약서명"
       ],
       "createdAt": "2026-06-16",
-      "updatedAt": "2026-06-16"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:b3deef8189d7937fc1e97ab2",
-      "versionId": "ver:8a03b2e8af8f5c3e",
-      "certHash": "sha256:9dac870c52796944e716f0dd55bc2cdd4aa0899794d87b111628f3561bd4e903",
+      "versionId": "ver:4dd5d8d7f10e2dde",
+      "certHash": "sha256:2c2b8aa649c0754d0e1475cf9e65fde9b21230c8591a22bda2d02ab26a7da599",
       "canonicalProposition": "쇼와 천황은 1945년 8월 15일 녹음 라디오 연설로 일본의 연합국에 대한 항복을 공표하였다",
       "originalClaim": "1945년 8월 15일 일본 정부는 연합국에 대한 항복 의사를 공표하였다.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "쇼와 천황",
+        "when": "1945년 8월 15일",
+        "where": "라디오 방송",
+        "what": "일본의 연합국에 대한 항복을 공표하였다",
+        "how": "녹음 라디오 연설로 공표하였다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -1474,7 +1558,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "항복 공표 사실만 저장하고 광복의 역사적 의미는 저장하지 않았다. 일본 국립국회도서관과 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+          "reviewMemo": "항복 공표 사실만 저장하고 광복의 역사적 의미는 저장하지 않았다. 일본 국립국회도서관과 Wikipedia 출처는 fetch 가능했으며 403이 아니었다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "날짜와 공표 행위가 독립 출처에서 직접 확인되고, 평가적 사건명 없이 원자 사건으로 표현 가능하다.",
           "rejectedAlternatives": "'광복이 이루어졌다', '일제가 패망했다'는 표현은 결과·평가 프레이밍이 섞일 수 있어 제외했다."
         }
@@ -1497,16 +1581,24 @@
         "제2차세계대전"
       ],
       "createdAt": "2026-06-16",
-      "updatedAt": "2026-06-16"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:0f10895abcff81a55ff783d6",
-      "versionId": "ver:f4ae342854da8af2",
-      "certHash": "sha256:0558bb88a0a69a4294269c30c2867c5e8ec65a36ed60bbe487ebfdce0ed15c6c",
+      "versionId": "ver:506f8ad7230a5600",
+      "certHash": "sha256:dcc11af84b926273bcea98891ed11bc664a2031c2bc9a99d4d6f5b11cdac599c",
       "canonicalProposition": "김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료에는 2025년 12월 투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다",
       "originalClaim": "선관위가 투표용지 인쇄 하한 기준을 기존 60%에서 50%로 변경했다.",
       "claimNature": "document_content",
+      "sixW": {
+        "who": "중앙선거관리위원회",
+        "when": "2025년 12월",
+        "where": "김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료 및 사무편람",
+        "what": "투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다",
+        "how": "중앙선거관리위원회 자료의 기준 변경과 사무편람 반영 문구로 기재되었다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -1618,7 +1710,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 모든 shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 모든 shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "KBS World 본문에 60%에서 50%로 낮춘 결정과 사무편람 반영 문구가 함께 확인된다.",
           "rejectedAlternatives": "사무편람 원문 전체, 변경의 적법성, 부정선거 또는 선거무효 결론은 직접 검증하지 못했거나 판단 영역이라 제외했다."
         }
@@ -1644,7 +1736,7 @@
         "문서내용"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
@@ -1926,8 +2018,8 @@
     {
       "certVersion": "2.1",
       "propositionId": "stmt:5697abe486cdf727eafca8e1",
-      "versionId": "ver:dca1044d52f53a72",
-      "certHash": "sha256:0444b3b711d393c9c038d0ede87216566e69b895aff15647f04963b22aeca393",
+      "versionId": "ver:843e4caa4b5ad206",
+      "certHash": "sha256:ef6f1069abffefd6c72c26c1ca53099d4bd2f1d94c22e1cada8381ba93f96e94",
       "canonicalProposition": "2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다",
       "originalClaim": "6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 집중됐는지에 대한 경험적 상태.",
       "claimNature": "measurement",
@@ -1937,6 +2029,14 @@
         "aggregationBasis": "부족 투표소 전체의 정파 성향, 전국 투표소 정파 분포 기준선, 재현 가능한 통계 분석의 공개 여부",
         "producer": "진실저수지 검수 기록",
         "measuredAt": "2026-06-18"
+      },
+      "sixW": {
+        "who": "진실저수지 검수 기록",
+        "when": "2026년 6월 18일 기준",
+        "where": "6·3 지방선거 투표용지 부족 투표소 91곳 및 fetch 가능한 공개 보도 범위",
+        "what": "투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 사실로 확정되지 않았다고 기록했다",
+        "how": "fetch 가능한 보도와 기존 91곳 지역분포 명제를 대조해 필요한 데이터 공개 여부를 점검했다",
+        "why": []
       },
       "classification": "M",
       "language": "ko",
@@ -2109,7 +2209,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·측정 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스·한국경제·경향신문 본문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 91곳 전체 정파성향과 전국 기준선 대조 통계분석은 fetch 가능한 출처에서 확인하지 못했다.",
+          "reviewMemo": "정치·선거·측정 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스·한국경제·경향신문 본문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 91곳 전체 정파성향과 전국 기준선 대조 통계분석은 fetch 가능한 출처에서 확인하지 못했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "편중 여부 자체는 재현 가능한 전수 분석이 없어 판단유보로 저장하는 것이 제6조와 제7조에 부합한다.",
           "rejectedAlternatives": "보수 강세 지역에 집중됐다는 결론, 보수 강세 지역에 집중되지 않았다는 반대 결론, 투표율 기반 기계적 설명, 표적·인과·부정선거 판단은 제외했다."
         }
@@ -2139,16 +2239,24 @@
         "정치주장"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:a2c80ef637dd92021cbbd92b",
-      "versionId": "ver:304211e403be8350",
-      "certHash": "sha256:329bb856fa0bcaeb574d856872e63ae75499b305909109d568387cfd3e60090d",
+      "versionId": "ver:71568d6f1e4d921c",
+      "certHash": "sha256:7b05bf60306532b19d7c8c09f5432a7002a01a4bef2e4e8c94cb265ec5c6de0a",
       "canonicalProposition": "서울동부지방법원은 2026년 6월 9일 서울 송파구 잠실 투표소의 투표용지 부족과 관련해 증거보전을 명령했다",
       "originalClaim": "증거보전 신청→일부 인용→6-10 현장검증 중 검증 가능한 부분.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "서울동부지방법원",
+        "when": "2026년 6월 9일",
+        "where": "서울 송파구 잠실 투표소 관련 법원 절차",
+        "what": "투표용지 부족 관련 증거보전을 명령했다",
+        "how": "법원이 증거보전 명령을 내렸다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -2236,7 +2344,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. 2차 재검수에서 KBS World의 curl HTTP 200 본문을 추가했다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. 2차 재검수에서 KBS World의 curl HTTP 200 본문을 추가했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "코리아타임스 본문에서 명령 일자와 대상이 확인된다.",
           "rejectedAlternatives": "개혁신당이 6월 8일 신청했다거나 일부 인용됐다는 내용은 fetch 가능한 출처에서 확인하지 못해 제외했다."
         }
@@ -2263,16 +2371,24 @@
         "증거보전"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:1426e28acba929903bbe8736",
-      "versionId": "ver:dcf30b9c9c58b78f",
-      "certHash": "sha256:b56923adcae514fec6bc0b1c13336271dbf89d57a34a1aed7d265b782546aaba",
+      "versionId": "ver:a1578f0b77f0507c",
+      "certHash": "sha256:dfcb5f425de8fb9b21b91cfcf77dbffb3a50cc2bffd6b676472e9fbc8d037743",
       "canonicalProposition": "더불어민주당은 2026년 6월 7일 강준현 수석대변인을 통해 장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다",
       "originalClaim": "장동혁 국민의힘 대표의 재선거 주장에 대한 더불어민주당의 반박 입장.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "더불어민주당(강준현 수석대변인)",
+        "when": "2026년 6월 7일",
+        "where": "더불어민주당 입장 발표",
+        "what": "장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다",
+        "how": "강준현 수석대변인을 통한 공개 입장으로 밝혔다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -2417,7 +2533,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 SBS 원문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다.",
+          "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 SBS 원문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "SBS 본문에서 강준현 수석대변인의 민주당 논의 부재, 장동혁 대표 개인 요구 취지, 선관위 독립 지위와 개혁기구 검토 언급이 확인된다.",
           "rejectedAlternatives": "민주당 반박을 근거로 보수 강세 집중 의혹이 거짓이라고 판정하거나, 장동혁 대표의 주장을 부정선거 주장으로 확장하는 표현은 제외했다."
         }
@@ -2444,16 +2560,24 @@
         "주장"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:2e87b3750aadd61ef8e2b6c0",
-      "versionId": "ver:6c5db73b54bf1298",
-      "certHash": "sha256:933cae69e7fe97ed0686034ad01e7d68fe09c84926a3cbdc7242f3c8ca72cc4c",
+      "versionId": "ver:3c1bc0e7c97d2bdb",
+      "certHash": "sha256:bcbb10a8046ae5a2957c38152a96d6920b60d11ea466f771676fbdec6d6e51f5",
       "canonicalProposition": "2026년 6월 3일 대한민국에서 제9회 전국동시지방선거 본투표가 실시되었다",
       "originalClaim": "제9회 지방선거는 2026-06-03 전국 실시.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "대한민국 선거관리 체계",
+        "when": "2026년 6월 3일",
+        "where": "대한민국",
+        "what": "제9회 전국동시지방선거 본투표가 실시되었다",
+        "how": "전국동시지방선거 본투표 절차로 실시되었다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -2565,7 +2689,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: canonicalProposition은 유지하고, fetch 확인된 추가 독립출처를 evidence로 보강했다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: canonicalProposition은 유지하고, fetch 확인된 추가 독립출처를 evidence로 보강했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "복수 fetch 가능 보도가 2026년 6월 3일 지방선거 실시 사실을 직접 언급한다.",
           "rejectedAlternatives": "민주당 승리, 서울시장 패배, 부정선거 여부는 별도 검증 전 제외했다."
         }
@@ -2590,16 +2714,24 @@
         "선거일"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:921a9dc8a1b5b268e0f4c807",
-      "versionId": "ver:87866a627ed905ac",
-      "certHash": "sha256:104651a15ebeb954f9f759c47e3da8ca8e742c03bb1cda26c2935b01f458e933",
+      "versionId": "ver:b3ca5fbe49506f6f",
+      "certHash": "sha256:eb1df938a1f20cd27702c221f6ada62d4a7981cb1bc9ccf1c742c0aacb18b2ed",
       "canonicalProposition": "2026년 6월 3일 오후 4시께 서울 송파구 잠실4동 제5투표소에서 투표용지 부족으로 투표가 일시 중단됐다",
       "originalClaim": "6-3 일부 투표소 투표용지 소진→투표 중단·지연.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "서울 송파구 잠실4동 제5투표소",
+        "when": "2026년 6월 3일 오후 4시께",
+        "where": "서울 송파구 잠실4동 제5투표소",
+        "what": "투표가 일시 중단됐다",
+        "how": "투표용지 부족으로 투표가 일시 중단됐다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -2663,7 +2795,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거 사안이라 human_reviewed 레인으로 분류했고, shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+          "reviewMemo": "정치·선거 사안이라 human_reviewed 레인으로 분류했고, shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "장소, 날짜, 대략 시각, 일시 중단 사실이 fetch 가능한 보도에서 확인된다.",
           "rejectedAlternatives": "투표가 불가능했다, 선거 결과에 영향을 미쳤다, 부정선거 증거라는 표현은 제외했다."
         }
@@ -2688,16 +2820,24 @@
         "정치주장"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:e2b37f73256b9885410a5c01",
-      "versionId": "ver:20dad2e350ca26a8",
-      "certHash": "sha256:feb184e142b76f78974d45e9909010d043d16f5314d4814b56ca0faee151b0c5",
+      "versionId": "ver:89378ad1981d4aa1",
+      "certHash": "sha256:3972a324c8b447d664ca8dad05cd5d04e9054a668fb58dc9b0a090db5dfb7c99",
       "canonicalProposition": "장동혁 국민의힘 대표는 2026년 6월 18일 16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다",
       "originalClaim": "장동혁 국민의힘 대표 전국 재선거 주장.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "장동혁 국민의힘 대표",
+        "when": "2026년 6월 18일",
+        "where": "국민의힘 관련 공개 발언·보도 문맥",
+        "what": "16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다",
+        "how": "공개 발언으로 선거소청 제기를 주장했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -2761,7 +2901,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "한겨레 본문에서 주장 내용이 확인된다.",
           "rejectedAlternatives": "장동혁 대표가 부정선거를 확정했다고 표현하거나 전국 재선거가 필요하다는 판단은 제외했다."
         }
@@ -2790,16 +2930,24 @@
         "주장"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:83702707422e50c0a56fb565",
-      "versionId": "ver:5ea128422df82358",
-      "certHash": "sha256:52432eaf6d60c4a66588f08c0637c6bcdcd4c645eae13311afa31d1d08bbe71c",
+      "versionId": "ver:1f711a468eb69774",
+      "certHash": "sha256:1372855b328f8ceefca9ed9f54f9018dc3e06e8f605ae0667e4e740f50047804",
       "canonicalProposition": "중앙선거관리위원회 개정 사무편람에는 지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다는 내용이 담겼다",
       "originalClaim": "인쇄 하한 기준 60%→50% 내부지침 변경.",
       "claimNature": "document_content",
+      "sixW": {
+        "who": "중앙선거관리위원회",
+        "when": "불명(개정 사무편람의 정확한 개정일은 기록에 없음)",
+        "where": "중앙선거관리위원회 개정 사무편람",
+        "what": "지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다고 적고 있다",
+        "how": "개정 사무편람의 인쇄 하한 산정 기준 문구로 기재되었다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -2887,7 +3035,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전, 원출처 귀속으로 재구성, 복수출처를 추가했다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전, 원출처 귀속으로 재구성, 복수출처를 추가했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "한겨레 본문에 지방선거 50% 하한 문구가 확인된다.",
           "rejectedAlternatives": "내부지침 변경의 전체 연혁과 변경 전 기준은 원문 미확인으로 제외했다."
         }
@@ -2913,16 +3061,29 @@
         "문서내용"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:d180b65d5e8f431a52ed1eec",
-      "versionId": "ver:2a16808b3a1d48b9",
-      "certHash": "sha256:b79aff6dc0d6a533bfb71017dfdb934c7993b8135b90ffa14697ac421406dbc8",
+      "versionId": "ver:77fb3a60b6409238",
+      "certHash": "sha256:a7831da8470d64db7dc21ed078ff52c08abed459d38a8f3fcff1abe1b4d847a8",
       "canonicalProposition": "이상능 중앙선거관리위원회 선거1국장은 투표용지 인쇄 경비의 ‘1.1배’ 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다",
       "originalClaim": "선관위 인쇄 예산 관련 해명.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "이상능 중앙선거관리위원회 선거1국장",
+        "when": "불명(이상능 국장의 설명 발언일은 기록에 없음)",
+        "where": "중앙선거관리위원회 관련 해명 보도 문맥",
+        "what": "투표용지 인쇄 경비의 '1.1배' 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다",
+        "how": "선관위 선거1국장 설명 발언으로 해명했다",
+        "why": [
+          {
+            "reason": "'1.1배'는 인쇄 경비 산출을 위한 기준일 뿐",
+            "statedBy": "중앙선거관리위원회(이상능 선거1국장)"
+          }
+        ]
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -2986,7 +3147,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "한겨레 본문에 해당 설명 문구가 직접 확인된다.",
           "rejectedAlternatives": "145억1957만원, 82억498만원, 지역별 집행률은 fetch 가능한 출처 미확인으로 제외했다."
         }
@@ -3012,16 +3173,29 @@
         "예산해명"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:5bf64ededa100f82163dcab1",
-      "versionId": "ver:cec528b4d62c0a01",
-      "certHash": "sha256:bb1f16fa93cd7a39de638d6508194f1e9cde9c887e908c2d5b540b87c7a4a507",
+      "versionId": "ver:9d9f9d781a9446e6",
+      "certHash": "sha256:53291669b1e957d20e2cfff3b5e4c2e28ab9d4cb91138c8c7d5cf3feefc3938d",
       "canonicalProposition": "윤재수 중앙선거관리위원회 선거정책실장은 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다",
       "originalClaim": "선관위 “예상보다 높은 투표율로 준비분(50%) 초과” 해명.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "윤재수 중앙선거관리위원회 선거정책실장",
+        "when": "불명(윤재수 실장의 설명 발언일은 기록에 없음)",
+        "where": "중앙선거관리위원회 관련 해명 보도 문맥",
+        "what": "사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다",
+        "how": "선관위 선거정책실장 설명 발언으로 해명했다",
+        "why": [
+          {
+            "reason": "사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50% 기준으로 인쇄했다",
+            "statedBy": "중앙선거관리위원회(윤재수 선거정책실장)"
+          }
+        ]
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -3085,7 +3259,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "한겨레 본문에서 발화자와 설명 내용이 확인된다.",
           "rejectedAlternatives": "선관위 설명이 참이라는 결론이나 의도 해석은 제외했다."
         }
@@ -3111,16 +3285,29 @@
         "선관위해명"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:12ebbd81f7cfbbcaf5048a0e",
-      "versionId": "ver:f5d40fbd46bdac86",
-      "certHash": "sha256:e3a5123c1695b165c429839161fbdce1ae814544d0a1ab4a0d38de16f993a17b",
+      "versionId": "ver:55c386690f4debcf",
+      "certHash": "sha256:317b832d304263d27eecbab47fd8dd7362691d6cee10ce655c3f925160bfde74",
       "canonicalProposition": "국민의힘은 6·3 지방선거 투표용지 부족 의혹의 근거로 2022년 오세훈 후보 득표율 수치가 적힌 투표소 사례를 제시했다: 송파구 잠실7동 제2투표소는 81.08%였고 투표가 밤 10시까지 연장됐으며, 서초구 반포4동 제3투표소(81.25%)와 강남구 청담동 제4투표소(79.48%)도 포함됐다",
       "originalClaim": "국민의힘이 투표용지 부족 의혹의 근거로 제시한 과거 보수 강세 투표소 사례와 2022년 오세훈 후보 득표율 수치.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "국민의힘",
+        "when": "불명(사례 제시일은 기록에 없음)",
+        "where": "6·3 지방선거 투표용지 부족 의혹 관련 보도 문맥",
+        "what": "투표용지 부족 의혹의 근거로 2022년 오세훈 후보 득표율 수치가 적힌 잠실7동 제2투표소, 반포4동 제3투표소, 청담동 제4투표소 사례를 제시했다",
+        "how": "보도에서 제시된 투표소 사례와 2022년 득표율 수치를 근거로 들었다",
+        "why": [
+          {
+            "reason": "2022년 오세훈 후보 득표율이 높은 투표소 사례와 투표 연장 사례를 투표용지 부족 의혹의 근거로 제시했다",
+            "statedBy": "국민의힘"
+          }
+        ]
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -3389,7 +3576,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스, 한국경제, 경향신문 원문을 curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 경향신문은 사례 근거가 아니라 제14 균형 한계의 지역분포 확인에만 사용했다.",
+          "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스, 한국경제, 경향신문 원문을 curl -L --compressed -A 'Mozilla/5.0' HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 경향신문은 사례 근거가 아니라 제14 균형 한계의 지역분포 확인에만 사용했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "파이낸셜뉴스와 한국경제 본문에서 국민의힘 의혹 제기 보도와 잠실7동 제2투표소 81.08%·밤 10시 연장, 반포4동 제3투표소 81.25%, 청담동 제4투표소 79.48%가 확인된다.",
           "rejectedAlternatives": "저수지가 직접 고득표 투표소를 선별했다는 표현, 2022년 득표율과 2026년 부족 사이의 인과, 표적, 부정선거 판단 표현은 제외했다."
         }
@@ -3415,16 +3602,29 @@
         "주장"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:6ec9cbff53f71a505b22823f",
-      "versionId": "ver:2827e77a3a38e253",
-      "certHash": "sha256:2df8366e5b289f41dd4306677613d8fe2c848b2f5a2bd3d468803138386a59af",
+      "versionId": "ver:0293836ef71f8d4a",
+      "certHash": "sha256:6827128d65dd23249bdd4e0a45b4041a327d63a2a7e6b823413559080a6d5fdd",
       "canonicalProposition": "국민의힘은 2026년 6월 4일 6·3 지방선거 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며, 실제 투표를 포기한 유권자가 발생했다면 중대한 참정권 침해에 해당할 수 있다고 주장했다",
       "originalClaim": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 국민의힘의 정치적 문제 제기와 참정권 침해 주장.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "국민의힘",
+        "when": "2026년 6월 4일",
+        "where": "6·3 지방선거 투표용지 부족 관련 공개 문제제기 문맥",
+        "what": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며 실제 투표 포기 유권자가 발생했다면 중대한 참정권 침해일 수 있다고 주장했다",
+        "how": "공개 문제제기와 보도 인용을 통해 주장했다",
+        "why": [
+          {
+            "reason": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점과 투표 포기 유권자 발생 가능성을 근거로 들었다",
+            "statedBy": "국민의힘"
+          }
+        ]
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -3567,7 +3767,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스와 한국경제 원문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 보수 강세 귀속은 한국경제의 분석과 국민의힘 의혹 제기 보도이지 저수지의 판단이 아니다.",
+          "reviewMemo": "정치·선거 주장 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스와 한국경제 원문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 보수 강세 귀속은 한국경제의 분석과 국민의힘 의혹 제기 보도이지 저수지의 판단이 아니다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "파이낸셜뉴스와 한국경제 본문에서 국민의힘이 보수 강세 지역 집중 의혹과 참정권 침해 가능성을 제기했다는 보도 문장이 확인된다.",
           "rejectedAlternatives": "보수 지역 표적, 고의, 국민의힘 지역에서만 부족, 부정선거였다는 결론 표현은 제외했다."
         }
@@ -3593,16 +3793,24 @@
         "주장"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:c11b6f2081e8fa1c38bae49d",
-      "versionId": "ver:b5fdd7681c3d96e9",
-      "certHash": "sha256:86a300f7312a8aeb2ad06c4c47fcaa53ab06cc9c2ec395dba8df5afb2d5b7bee",
+      "versionId": "ver:504522bdc3f36714",
+      "certHash": "sha256:1d0ec6dd5f74c5ded35490930b2695ff75294e1a7e7ee7b5930d351185264cef",
       "canonicalProposition": "이재명 대통령은 2026년 6월 7일 6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다",
       "originalClaim": "공식 대응 및 균형 명제.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "이재명 대통령",
+        "when": "2026년 6월 7일",
+        "where": "대한민국 대통령 지시·공식 대응 문맥",
+        "what": "6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다",
+        "how": "검찰과 경찰에 합동조사를 지시했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -3714,7 +3922,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전, 원출처 귀속으로 재구성, 복수출처를 추가했다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전, 원출처 귀속으로 재구성, 복수출처를 추가했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "복수 fetch 가능 보도가 합동조사 지시를 확인한다.",
           "rejectedAlternatives": "조사 지시가 부정선거를 인정했다거나 반대로 부정선거가 없다는 결론은 제외했다."
         }
@@ -3742,16 +3950,24 @@
         "수사"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:fafb5a05023e9541b3e07f1f",
-      "versionId": "ver:12c190e70ac4cad0",
-      "certHash": "sha256:23f8451e52235248a6925e4d0396fd663269626df35644d6ec4e2043be3461cb",
+      "versionId": "ver:da770d9eaa3cb5ed",
+      "certHash": "sha256:05b76a7d823c656cfe414acb013e62f68db34e6796b752a3f99720bd2b405050",
       "canonicalProposition": "2026년 6월 8일 서울 송파구 개표시설 밖에서 일부 시위자들이 6·3 지방선거 투표용지 부족과 관련해 선거 부정을 주장했다",
       "originalClaim": "부정선거 의혹 제기 주체·근거·출처 검증되면만 저장.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "일부 시위자들",
+        "when": "2026년 6월 8일",
+        "where": "서울 송파구 개표시설 밖",
+        "what": "6·3 지방선거 투표용지 부족과 관련해 선거 부정을 주장했다",
+        "how": "개표시설 밖 시위 현장에서 주장했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -3815,7 +4031,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다.",
+          "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 fetch 가능한 페이지에서 확인했다. 2026-06-18 재검수: 출처를 명제 본문에서 evidence로 이전하고 원출처 귀속으로 재구성했다. fetch 가능한 추가 독립출처는 확인하지 못해 limitations에 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "연합뉴스 본문에서 일부 시위자의 electoral fraud 주장 문구가 확인된다.",
           "rejectedAlternatives": "부정 투표·개표가 있었다는 결론, 특정 정당 지역을 노렸다는 주장은 제외했다."
         }
@@ -3842,16 +4058,24 @@
         "부정선거의혹"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:c890b5f8ca77961c84b58268",
-      "versionId": "ver:3644fcef725c3c57",
-      "certHash": "sha256:7d67a842955a18f4c442cdcc0857d16b4e2568c0262d5536b1a256dd300a94dc",
+      "versionId": "ver:199837373a5ec465",
+      "certHash": "sha256:0d40e04804744c244ba5171f62b4a8de83cb7af1d000758055020c49e5d94045",
       "canonicalProposition": "김정철 개혁신당 최고위원은 2026년 6월 3일 지방선거 투표용지 부족과 관련해 서울동부지방법원에 증거보전 신청을 제출했다",
       "originalClaim": "개혁신당의 증거보전 신청.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "김정철 개혁신당 최고위원",
+        "when": "2026년 6월 3일",
+        "where": "서울동부지방법원",
+        "what": "지방선거 투표용지 부족 관련 증거보전 신청을 제출했다",
+        "how": "증거보전 신청서를 법원에 제출했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-18",
@@ -3915,7 +4139,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "정치·선거·진행 중 법원 절차 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다.",
+          "reviewMemo": "정치·선거·진행 중 법원 절차 사안이라 human_reviewed 레인으로 분류했다. shortQuote는 curl HTTP 200 본문에서 verbatim 확인했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "KBS World 본문에서 김정철 개혁신당 최고위원이 제출한 증거보전 신청이라는 점이 확인된다.",
           "rejectedAlternatives": "정확한 제출일, 신청서 전문, 신청 인용 범위 전체, 부정선거 또는 선거무효 판단은 직접 검증하지 못했거나 판단 영역이라 제외했다."
         }
@@ -3944,16 +4168,24 @@
         "증거보전"
       ],
       "createdAt": "2026-06-18",
-      "updatedAt": "2026-06-18"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:7536cb937fa5897848d6ecf4",
-      "versionId": "ver:0d3115f96564c828",
-      "certHash": "sha256:45292167132711bc4c85685727de77646ef07cc7494f47811efd0e2143e3e829",
+      "versionId": "ver:6f7ff8736e49a3e1",
+      "certHash": "sha256:f79a4557bd356c0224f4f6a4a903384fe137ea172ab9e1efafb9173c7216c97d",
       "canonicalProposition": "1953년 7월 27일 유엔군사령부·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다",
       "originalClaim": "1953년 7월 27일 국제연합군·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "유엔군사령부·조선인민군·중국인민지원군 대표",
+        "when": "1953년 7월 27일 10:00",
+        "where": "판문점, 한국",
+        "what": "한국 정전협정에 서명했다",
+        "how": "정전협정 문서에 각 대표가 서명했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -4100,7 +4332,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "서명 사실만 저장하고 대한민국 미서명 사실은 limitations에 분리했다. Wikisource 정전협정 본문과 Wikipedia 출처는 자동 에이전트로 fetch 가능했으며 403이 아니었다.",
+          "reviewMemo": "서명 사실만 저장하고 대한민국 미서명 사실은 limitations에 분리했다. Wikisource 정전협정 본문과 Wikipedia 출처는 자동 에이전트로 fetch 가능했으며 403이 아니었다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "서명 일자와 당사자가 fetch 가능한 정전협정 본문과 보조 출처에서 확인된다.",
           "rejectedAlternatives": "'한국전쟁이 끝났다', '평화가 성립했다'는 표현은 법적·정치적 해석을 포함할 수 있어 제외했다."
         }
@@ -4124,16 +4356,24 @@
         "중국인민지원군"
       ],
       "createdAt": "2026-06-16",
-      "updatedAt": "2026-06-16"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:698eafdeae1e813d295ea69b",
-      "versionId": "ver:7559e0620955453b",
-      "certHash": "sha256:193a5b9602b10381c54e43d0dae85b30ee722849b4c0292b7df129a2fb8be1ee",
+      "versionId": "ver:21c984f4bda2e25a",
+      "certHash": "sha256:19846147debad98a6d9b51cf3e82bf5de415ec817541c96e35fe06dc7c3eae60",
       "canonicalProposition": "1950년 6월 25일 04시 40분경 조선인민군은 38선을 넘어 대한민국 영역으로 진입하였다",
       "originalClaim": "1950년 6월 25일 새벽 조선인민군이 38선을 넘어 대한민국 영역으로 진격하였다.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "조선인민군",
+        "when": "1950년 6월 25일 04시 40분경",
+        "where": "38선 및 대한민국 영역",
+        "what": "38선을 넘어 대한민국 영역으로 진입했다",
+        "how": "조선인민군 부대가 38선을 넘어 남쪽으로 3~5km 진격했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -4254,7 +4494,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "경계선 통과와 남쪽 영역 진입 사실만 저장했다. 전쟁 책임·원인·동기 프레이밍은 limitations에 제외 사유를 남겼다. 자동 재현 앵커는 Wikipedia이며, Britannica는 자동 에이전트 재대조 시 403인 사람 접근 가능 보조 출처로만 남겼다.",
+          "reviewMemo": "경계선 통과와 남쪽 영역 진입 사실만 저장했다. 전쟁 책임·원인·동기 프레이밍은 limitations에 제외 사유를 남겼다. 자동 재현 앵커는 Wikipedia이며, Britannica는 자동 에이전트 재대조 시 403인 사람 접근 가능 보조 출처로만 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "시간, 행위자, 경계선 통과, 남쪽 영역 진입이 자동 재현 가능한 Wikipedia 문장과 사람 접근 가능한 Britannica 보조 문구에 일치한다.",
           "rejectedAlternatives": "'남침', '도발', '6·25를 일으켰다'는 표현은 책임·의도 판단을 함축해 제외했다."
         }
@@ -4280,7 +4520,7 @@
         "전쟁개시"
       ],
       "createdAt": "2026-06-16",
-      "updatedAt": "2026-06-16"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
@@ -4450,10 +4690,19 @@
     {
       "certVersion": "2.1",
       "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
-      "versionId": "ver:220d768b0673a4b9",
-      "certHash": "sha256:2c944699e34a8f6d358b18f1336e4bef9de58b7b6f1cf6692b3b466b2b3891b5",
+      "versionId": "ver:665020fbc261a02c",
+      "certHash": "sha256:5bca190d6a96becc15d270559821c495ed5ee8fa5af6e2c214f4e185e4e3b714",
       "canonicalProposition": "페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대는 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아와 최초의 지구 일주를 완료하였다",
+      "originalClaim": "마젤란이 시작하고 엘카노가 완수한 원정대가 1519~1522년 최초의 지구 일주를 완료했다는 요약.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대",
+        "when": "1519년부터 1522년까지",
+        "where": "스페인에서 출발해 서쪽 항로로 항해한 전 세계 항로 및 스페인 귀환",
+        "what": "최초의 지구 일주를 완료하였다",
+        "how": "1519년 서쪽으로 출발하여 1522년 스페인으로 돌아왔다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -4655,7 +4904,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "UNESCO Memory of the World 항목을 자동 재-fetch해 제목과 본문이 노출되는지 확인하고, Juan Sebastián del Cano 항목과 Ferdinand Magellan 항목의 주체·연도·완료 표현을 대조했다. 마젤란 개인 완주로 오해될 표현을 제거했다.",
+          "reviewMemo": "UNESCO Memory of the World 항목을 자동 재-fetch해 제목과 본문이 노출되는지 확인하고, Juan Sebastián del Cano 항목과 Ferdinand Magellan 항목의 주체·연도·완료 표현을 대조했다. 마젤란 개인 완주로 오해될 표현을 제거했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "UNESCO가 1519-1522년 최초 지구 일주 항해를 자동 재확인 가능한 페이지에서 제시하고, Britannica가 엘카노의 최초 지구 일주 완료와 1519년 참여·1522년 귀환을 보조한다.",
           "rejectedAlternatives": "'마젤란이 지구 일주를 했다'는 표현은 도중 사망 사실을 숨겨 제외했다. 정확한 일자까지 포함하는 문장은 이 출처 인용만으로 충분히 직접 확인되지 않아 연도 단위로 제한했다."
         }
@@ -4679,16 +4928,24 @@
         "지구일주"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:c44501dcb97869b23fbe8942",
-      "versionId": "ver:040b4c629945879d",
-      "certHash": "sha256:6235b2a6c1107402369c4d9afdc0b2a6ab39ee65d0c3a9cb536ace7b3e76d089",
+      "versionId": "ver:0f0c8babffeb975c",
+      "certHash": "sha256:5cd5bb4bdb4e78ea0f3c7ce77e40ae0af2a25efe2f7a60dcc62a61ebc4c37852",
       "canonicalProposition": "2025년 6월 24일부터 25일까지 NATO 정상회의가 네덜란드 헤이그에서 열렸다",
       "originalClaim": "2025 NATO Summit was held in The Hague, the Netherlands, on 24-25 June 2025.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "NATO",
+        "when": "2025년 6월 24일부터 25일까지",
+        "where": "네덜란드 헤이그",
+        "what": "NATO 정상회의가 열렸다",
+        "how": "정상회의 행사로 개최되었다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -4782,7 +5039,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "자동 처리된 저위험 행사 일자·장소 명제다. 인간 검수 미경유 상태로 공개 라벨링한다.",
+          "reviewMemo": "자동 처리된 저위험 행사 일자·장소 명제다. 인간 검수 미경유 상태로 공개 라벨링한다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "공식 이벤트 개요가 날짜와 장소를 직접 지지한다.",
           "rejectedAlternatives": "정상회의 결정의 내용이나 정책 평가를 포함하는 넓은 명제는 제외했다."
         }
@@ -4805,15 +5062,24 @@
         "2025"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:52e6260a60e04599d809ae61",
-      "versionId": "ver:0f9dc0903863d9a4",
-      "certHash": "sha256:163007180cf2e211beab99a0d99fdafa45ecc2b6a06b647519178df375d0218d",
+      "versionId": "ver:1f3f854d55f32ad2",
+      "certHash": "sha256:c514263e16e67c1ac177c6ab1dfa5a50c405306f857941b5bfaaee33763476eb",
       "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
+      "originalClaim": "개인정보 보호법 부칙 제1조가 시행 시점을 공포 후 6개월 경과일로 규정한다는 요약.",
       "claimNature": "document_content",
+      "sixW": {
+        "who": "대한민국",
+        "when": "2011년 3월 29일 공포된 법률 제10465호",
+        "where": "개인정보 보호법(법률 제10465호) 부칙 제1조",
+        "what": "'이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
+        "how": "법률 제10465호 부칙 제1조로 제정·공포되었다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-15",
@@ -4869,7 +5135,7 @@
           "note": "출처 권위보다 조문 문구 자체의 일치 여부를 확인했다."
         },
         "humanReview": {
-          "reviewer": "foundation-seed",
+          "reviewer": "(인간 검수자 식별자)",
           "date": "2026-06-15",
           "checksPerformed": [
             "omission",
@@ -4877,7 +5143,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "부칙 제1조의 원문 인용 범위를 확인했다.",
+          "reviewMemo": "부칙 제1조의 원문 인용 범위를 확인했다. 기존 reviewer 표기 foundation-seed는 초기 시드 검수 기록으로 보존함. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "원문 문구가 명제의 따옴표 문장과 실질적으로 일치한다.",
           "rejectedAlternatives": "시행일을 2011년 9월 30일로 계산하는 별도 명제는 제외했다."
         }
@@ -4893,20 +5159,29 @@
       "openCorrectionRequests": 0,
       "limitations": "'시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.",
       "tags": [
-        "privacy",
-        "law-10465",
-        "addendum"
+        "개인정보보호",
+        "법률제10465호",
+        "부칙"
       ],
       "createdAt": "2026-06-15T00:00:00Z",
-      "updatedAt": "2026-06-15T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-      "versionId": "ver:30aff496215f21db",
-      "certHash": "sha256:846164cfd21d87e5e420945af78d4df0b85c34182b9a8d8e248f8e841453fbd8",
+      "versionId": "ver:b8da1e3ee6ceeb53",
+      "certHash": "sha256:11c6e6d12819efabeea2796959c2c2989b47fd7ae85c6ee98bb882f660dba420",
       "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
+      "originalClaim": "개인정보 보호법이 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다는 요약.",
       "claimNature": "document_content",
+      "sixW": {
+        "who": "대한민국",
+        "when": "2011년 3월 29일 공포된 법률 제10465호",
+        "where": "개인정보 보호법(법률 제10465호) 폐지 관련 조문",
+        "what": "구 '공공기관의 개인정보보호에 관한 법률'을 폐지한다고 규정하며, 기록은 그 후신 제정으로 제한적으로 요약한다",
+        "how": "법률 제10465호 제정·공포 과정에서 폐지 조문을 두었다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-15",
@@ -4962,7 +5237,7 @@
           "note": "공식 법령 출처를 사용하되 후신 표현의 해석 요소를 별도로 제한했다."
         },
         "humanReview": {
-          "reviewer": "foundation-seed",
+          "reviewer": "(인간 검수자 식별자)",
           "date": "2026-06-15",
           "checksPerformed": [
             "omission",
@@ -4970,7 +5245,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "폐지 조문은 직접 확인했고 후신 표현은 제한적으로 수용했다.",
+          "reviewMemo": "폐지 조문은 직접 확인했고 후신 표현은 제한적으로 수용했다. 기존 reviewer 표기 foundation-seed는 초기 시드 검수 기록으로 보존함. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "부칙 제2조의 폐지 문구가 명제의 핵심 사실을 뒷받침한다.",
           "rejectedAlternatives": "후신 표현을 완전한 법적 동일성 주장으로 확대하는 해석은 제외했다."
         }
@@ -4986,20 +5261,29 @@
       "openCorrectionRequests": 0,
       "limitations": "폐지 사실은 원문으로 확인되지만 '후신' 표현은 제도적 대체 관계를 요약하는 해석 요소가 있다. 이 명제는 폐지 조문 확인에 초점을 두며, 법적 동일성이나 제도적 연속성 전체를 확정하지 않는다.",
       "tags": [
-        "privacy",
-        "law-10465",
-        "repeal"
+        "개인정보보호",
+        "법률제10465호",
+        "폐지"
       ],
       "createdAt": "2026-06-15T00:00:00Z",
-      "updatedAt": "2026-06-15T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:40340515225f7adf44e242f3",
-      "versionId": "ver:0a147d57a3f3baa1",
-      "certHash": "sha256:84e02ba2a7cede19b5ab20641748739204672a1ceb0befa713be56347e31e71e",
+      "versionId": "ver:43d44884fd744c4e",
+      "certHash": "sha256:93c33d498964cc38ea5faa6e9527dbb5e579c1909c8d83038c8b11640925e706",
       "canonicalProposition": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
+      "originalClaim": "개인정보 보호법(법률 제10465호)이 2011년 3월 29일 공포되었다는 요약.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "대한민국 정부",
+        "when": "2011년 3월 29일",
+        "where": "개인정보 보호법(법률 제10465호) 공포문",
+        "what": "개인정보 보호법(법률 제10465호)을 공포했다",
+        "how": "법률 공포 절차로 공포했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-15",
@@ -5080,7 +5364,7 @@
           "note": "권위 출처를 이유로 결론을 대체하지 않고 원문 표시와 날짜를 직접 대조했다."
         },
         "humanReview": {
-          "reviewer": "foundation-seed",
+          "reviewer": "(인간 검수자 식별자)",
           "date": "2026-06-15",
           "checksPerformed": [
             "omission",
@@ -5088,7 +5372,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "법령 원문과 보조 자료의 날짜 일치를 확인했다.",
+          "reviewMemo": "법령 원문과 보조 자료의 날짜 일치를 확인했다. 기존 reviewer 표기 foundation-seed는 초기 시드 검수 기록으로 보존함. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "원문 법령의 공포일 표기가 명제를 직접 지지한다.",
           "rejectedAlternatives": "정책 효과나 시행 이후 평가까지 포함하는 넓은 명제는 제외했다."
         }
@@ -5104,21 +5388,29 @@
       "openCorrectionRequests": 0,
       "limitations": "공포일 확인에 한정하며 법률의 시행 효과나 사회적 평가는 판단하지 않는다.",
       "tags": [
-        "privacy",
-        "law-10465",
-        "promulgation"
+        "개인정보보호",
+        "법률제10465호",
+        "공포"
       ],
       "createdAt": "2026-06-15T00:00:00Z",
-      "updatedAt": "2026-06-15T00:00:00Z"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:a39e2dc6072bbda67817ead7",
-      "versionId": "ver:cd785da0c0d389ce",
-      "certHash": "sha256:7bdac4d8ec8d09e04f5621326b0ae750cee2e848bec5c7cf532c1d53ca15fa5f",
+      "versionId": "ver:d2c8b826bd96a024",
+      "certHash": "sha256:5814de050149ecffeaa999a10d0f51b21fd6e107df341c1dd4123fa30198dde7",
       "canonicalProposition": "이승만은 1948년 8월 15일 대한민국 수립을 선포하였다",
       "originalClaim": "1948년 8월 15일 대한민국 정부 수립이 공식 선포되었다.",
       "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "이승만",
+        "when": "1948년 8월 15일",
+        "where": "대한민국(남한)",
+        "what": "대한민국 수립을 선포하였다",
+        "how": "대한민국 수립을 공식 선포했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -5238,7 +5530,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "선포 행위만 저장하고 정통성·건국 논쟁은 저장하지 않았다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+          "reviewMemo": "선포 행위만 저장하고 정통성·건국 논쟁은 저장하지 않았다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "날짜, 행위자, 선포 행위가 fetch 가능한 독립 출처에서 확인된다.",
           "rejectedAlternatives": "'대한민국이 건국되었다', '유일 합법 정부가 수립되었다'는 표현은 평가·법적 해석이 섞여 제외했다."
         }
@@ -5261,15 +5553,24 @@
         "분단"
       ],
       "createdAt": "2026-06-16",
-      "updatedAt": "2026-06-16"
+      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
       "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
-      "versionId": "ver:51c22322a44b18e5",
-      "certHash": "sha256:17a500d196dd54e89ac5e3466ee28e7bf546332266a4b3bfdb645902adceec03",
+      "versionId": "ver:6756472340086cc2",
+      "certHash": "sha256:539a989b5020159854e380d7de38cb5abd702fd873b06e736e5ae16ab79845c8",
       "canonicalProposition": "NGA WGS 84 공식 설명은 WGS 84 측지 좌표가 기준타원체에서 생성되며 그 장반경을 6,378,137.0미터로 제시한다",
+      "originalClaim": "NGA WGS 84 공식 설명이 기준타원체와 장반경 6,378,137.0미터를 제시한다는 요약.",
       "claimNature": "document_content",
+      "sixW": {
+        "who": "NGA",
+        "when": "불명(WGS 84 공식 설명의 게시·개정일은 기록에 없음)",
+        "where": "NGA WGS 84 공식 설명 문서",
+        "what": "WGS 84 측지 좌표가 기준타원체에서 생성되며 장반경을 6,378,137.0미터로 제시한다고 적고 있다",
+        "how": "공식 설명 문서의 기준타원체 설명과 수치 표로 기재했다",
+        "why": []
+      },
       "classification": "F",
       "language": "ko",
       "asOfDate": "2026-06-16",
@@ -5390,7 +5691,7 @@
             "framing",
             "authority_assumption"
           ],
-          "reviewMemo": "NGA 페이지의 기준타원체 문구와 장반경·역편평률 표기를 확인했다. 명제가 WGS 84 문서내용에 머무르도록 문장을 조정했다.",
+          "reviewMemo": "NGA 페이지의 기준타원체 문구와 장반경·역편평률 표기를 확인했다. 명제가 WGS 84 문서내용에 머무르도록 문장을 조정했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
           "adoptedReason": "공식 WGS 84 설명의 같은 정의 구역이 기준타원체 문맥과 장반경 값을 직접 제시한다.",
           "rejectedAlternatives": "지구 형상에 관한 결론형 문장은 제2조 위반 소지가 있어 제외했다."
         }
@@ -5413,14 +5714,14 @@
         "기준타원체"
       ],
       "createdAt": "2026-06-16T00:00:00Z",
-      "updatedAt": "2026-06-16T00:00:00Z"
+      "updatedAt": "2026-07-02"
     }
   ],
   "meta": {
     "total": 36,
-    "dataVersion": "2026.06.19",
+    "dataVersion": "2026.07.02",
     "certVersion": "2.1",
-    "generatedAt": "2026-06-19",
+    "generatedAt": "2026-07-02",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",

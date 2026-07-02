@@ -1,10 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:b18e2813819c4fb0e23830f6",
-  "versionId": "ver:28ee0c54de697aa6",
-  "certHash": "sha256:833b8883f996b8b3fe900e988408f111638ab587bc42c887c0d46f59e2468336",
+  "versionId": "ver:f40b4e55702acc99",
+  "certHash": "sha256:8374479950c46337d13088c3d5f24bc2388de32c5b47971d2232b5a901acdb22",
   "canonicalProposition": "에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다",
+  "originalClaim": "에라토스테네스가 기원전 약 240년경 그림자 각도 차이로 지구 둘레를 추정하는 측정을 수행했다는 요약.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "에라토스테네스",
+    "when": "기원전 약 240년경",
+    "where": "시에네와 알렉산드리아",
+    "what": "지구 둘레를 추정하는 측정을 수행하였다",
+    "how": "하지 정오의 태양 그림자 각도 차이를 이용했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -206,7 +215,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "NOAA History of Geodesy 페이지를 자동 재-fetch해 그림자 각도 문구가 노출되는지 확인하고, Britannica의 방법 설명과 arXiv 초록의 around 240 BC 문구를 확인했다. stadion-km 환산과 최종 둘레값은 논쟁적이므로 명제에서 제외했다.",
+      "reviewMemo": "NOAA History of Geodesy 페이지를 자동 재-fetch해 그림자 각도 문구가 노출되는지 확인하고, Britannica의 방법 설명과 arXiv 초록의 around 240 BC 문구를 확인했다. stadion-km 환산과 최종 둘레값은 논쟁적이므로 명제에서 제외했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "NOAA가 그림자 각도와 시에네-알렉산드리아 거리 결합 방법을 자동 재확인 가능한 페이지에서 제시하고, 장소·방법·대략 연대는 다른 출처도 직접 지지하므로 숫자값 없이 측정 수행 사실을 원자적으로 저장할 수 있다.",
       "rejectedAlternatives": "'에라토스테네스가 지구 둘레를 정확히 계산했다' 또는 특정 km 값을 담는 문장은 원자료·단위 논쟁 때문에 제외했다."
     }
@@ -230,5 +239,5 @@
     "천문학"
   ],
   "createdAt": "2026-06-16T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

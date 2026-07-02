@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:698eafdeae1e813d295ea69b",
-  "versionId": "ver:7559e0620955453b",
-  "certHash": "sha256:193a5b9602b10381c54e43d0dae85b30ee722849b4c0292b7df129a2fb8be1ee",
+  "versionId": "ver:21c984f4bda2e25a",
+  "certHash": "sha256:19846147debad98a6d9b51cf3e82bf5de415ec817541c96e35fe06dc7c3eae60",
   "canonicalProposition": "1950년 6월 25일 04시 40분경 조선인민군은 38선을 넘어 대한민국 영역으로 진입하였다",
   "originalClaim": "1950년 6월 25일 새벽 조선인민군이 38선을 넘어 대한민국 영역으로 진격하였다.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "조선인민군",
+    "when": "1950년 6월 25일 04시 40분경",
+    "where": "38선 및 대한민국 영역",
+    "what": "38선을 넘어 대한민국 영역으로 진입했다",
+    "how": "조선인민군 부대가 38선을 넘어 남쪽으로 3~5km 진격했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -126,7 +134,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "경계선 통과와 남쪽 영역 진입 사실만 저장했다. 전쟁 책임·원인·동기 프레이밍은 limitations에 제외 사유를 남겼다. 자동 재현 앵커는 Wikipedia이며, Britannica는 자동 에이전트 재대조 시 403인 사람 접근 가능 보조 출처로만 남겼다.",
+      "reviewMemo": "경계선 통과와 남쪽 영역 진입 사실만 저장했다. 전쟁 책임·원인·동기 프레이밍은 limitations에 제외 사유를 남겼다. 자동 재현 앵커는 Wikipedia이며, Britannica는 자동 에이전트 재대조 시 403인 사람 접근 가능 보조 출처로만 남겼다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "시간, 행위자, 경계선 통과, 남쪽 영역 진입이 자동 재현 가능한 Wikipedia 문장과 사람 접근 가능한 Britannica 보조 문구에 일치한다.",
       "rejectedAlternatives": "'남침', '도발', '6·25를 일으켰다'는 표현은 책임·의도 판단을 함축해 제외했다."
     }
@@ -152,5 +160,5 @@
     "전쟁개시"
   ],
   "createdAt": "2026-06-16",
-  "updatedAt": "2026-06-16"
+  "updatedAt": "2026-07-02"
 }

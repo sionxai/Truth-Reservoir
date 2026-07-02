@@ -1,10 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
-  "versionId": "ver:5e0a6976bd82d30a",
-  "certHash": "sha256:6489fb70772684a9973f47501fa239eaa8bc40d128a3f667e7e29176e0aa7c18",
+  "versionId": "ver:da58f11aaf98631e",
+  "certHash": "sha256:6a57f9c20d8719beef693d5cf008b7dc1b5b506a05243c5845d55ec3a524c08d",
   "canonicalProposition": "1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다",
+  "originalClaim": "닐 암스트롱과 버즈 올드린이 1969년 7월 20일 아폴로 11호 이글을 달 고요의 바다에 착륙시켰다는 요약.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "닐 암스트롱과 버즈 올드린",
+    "when": "1969년 7월 20일 20:17:40 UTC",
+    "where": "달 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)",
+    "what": "아폴로 11호 달 착륙선 이글(Eagle)을 착륙시켰다",
+    "how": "아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달 표면에 착륙했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -145,7 +154,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "시각이 출처 간 20:17~20:17:40으로 초 단위 차이. 가장 정밀한 1차 출처(NSSDCA) 기준 채택하고, 좌표는 LRO 독립 확인값 사용. 음모론은 반대 가설로 검토 후 증거 부재로 기각.",
+      "reviewMemo": "시각이 출처 간 20:17~20:17:40으로 초 단위 차이. 가장 정밀한 1차 출처(NSSDCA) 기준 채택하고, 좌표는 LRO 독립 확인값 사용. 음모론은 반대 가설로 검토 후 증거 부재로 기각. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "복수 독립 출처 수렴 + 재현 가능한 물리 증거(역반사경) 존재.",
       "rejectedAlternatives": "'20:17 UTC'(초 생략) 표기 기각 — 더 정밀한 1차 값 존재. '인류가 달에 갔다'는 포괄 표현 기각 — 원자성 위해 특정 임무·시각·좌표로 한정."
     }
@@ -167,5 +176,5 @@
     "1969"
   ],
   "createdAt": "2026-06-15T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

@@ -1,11 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:a39e2dc6072bbda67817ead7",
-  "versionId": "ver:cd785da0c0d389ce",
-  "certHash": "sha256:7bdac4d8ec8d09e04f5621326b0ae750cee2e848bec5c7cf532c1d53ca15fa5f",
+  "versionId": "ver:d2c8b826bd96a024",
+  "certHash": "sha256:5814de050149ecffeaa999a10d0f51b21fd6e107df341c1dd4123fa30198dde7",
   "canonicalProposition": "이승만은 1948년 8월 15일 대한민국 수립을 선포하였다",
   "originalClaim": "1948년 8월 15일 대한민국 정부 수립이 공식 선포되었다.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "이승만",
+    "when": "1948년 8월 15일",
+    "where": "대한민국(남한)",
+    "what": "대한민국 수립을 선포하였다",
+    "how": "대한민국 수립을 공식 선포했다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -125,7 +133,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "선포 행위만 저장하고 정통성·건국 논쟁은 저장하지 않았다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다.",
+      "reviewMemo": "선포 행위만 저장하고 정통성·건국 논쟁은 저장하지 않았다. Country Studies와 Wikipedia 출처는 fetch 가능했으며 403이 아니었다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "날짜, 행위자, 선포 행위가 fetch 가능한 독립 출처에서 확인된다.",
       "rejectedAlternatives": "'대한민국이 건국되었다', '유일 합법 정부가 수립되었다'는 표현은 평가·법적 해석이 섞여 제외했다."
     }
@@ -148,5 +156,5 @@
     "분단"
   ],
   "createdAt": "2026-06-16",
-  "updatedAt": "2026-06-16"
+  "updatedAt": "2026-07-02"
 }

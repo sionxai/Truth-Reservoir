@@ -1,10 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:52e6260a60e04599d809ae61",
-  "versionId": "ver:0f9dc0903863d9a4",
-  "certHash": "sha256:163007180cf2e211beab99a0d99fdafa45ecc2b6a06b647519178df375d0218d",
+  "versionId": "ver:1f3f854d55f32ad2",
+  "certHash": "sha256:c514263e16e67c1ac177c6ab1dfa5a50c405306f857941b5bfaaee33763476eb",
   "canonicalProposition": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
+  "originalClaim": "개인정보 보호법 부칙 제1조가 시행 시점을 공포 후 6개월 경과일로 규정한다는 요약.",
   "claimNature": "document_content",
+  "sixW": {
+    "who": "대한민국",
+    "when": "2011년 3월 29일 공포된 법률 제10465호",
+    "where": "개인정보 보호법(법률 제10465호) 부칙 제1조",
+    "what": "'이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
+    "how": "법률 제10465호 부칙 제1조로 제정·공포되었다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-15",
@@ -60,7 +69,7 @@
       "note": "출처 권위보다 조문 문구 자체의 일치 여부를 확인했다."
     },
     "humanReview": {
-      "reviewer": "foundation-seed",
+      "reviewer": "(인간 검수자 식별자)",
       "date": "2026-06-15",
       "checksPerformed": [
         "omission",
@@ -68,7 +77,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "부칙 제1조의 원문 인용 범위를 확인했다.",
+      "reviewMemo": "부칙 제1조의 원문 인용 범위를 확인했다. 기존 reviewer 표기 foundation-seed는 초기 시드 검수 기록으로 보존함. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "원문 문구가 명제의 따옴표 문장과 실질적으로 일치한다.",
       "rejectedAlternatives": "시행일을 2011년 9월 30일로 계산하는 별도 명제는 제외했다."
     }
@@ -84,10 +93,10 @@
   "openCorrectionRequests": 0,
   "limitations": "'시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.",
   "tags": [
-    "privacy",
-    "law-10465",
-    "addendum"
+    "개인정보보호",
+    "법률제10465호",
+    "부칙"
   ],
   "createdAt": "2026-06-15T00:00:00Z",
-  "updatedAt": "2026-06-15T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }

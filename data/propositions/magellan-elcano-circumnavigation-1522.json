@@ -1,10 +1,19 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
-  "versionId": "ver:220d768b0673a4b9",
-  "certHash": "sha256:2c944699e34a8f6d358b18f1336e4bef9de58b7b6f1cf6692b3b466b2b3891b5",
+  "versionId": "ver:665020fbc261a02c",
+  "certHash": "sha256:5bca190d6a96becc15d270559821c495ed5ee8fa5af6e2c214f4e185e4e3b714",
   "canonicalProposition": "페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대는 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아와 최초의 지구 일주를 완료하였다",
+  "originalClaim": "마젤란이 시작하고 엘카노가 완수한 원정대가 1519~1522년 최초의 지구 일주를 완료했다는 요약.",
   "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대",
+    "when": "1519년부터 1522년까지",
+    "where": "스페인에서 출발해 서쪽 항로로 항해한 전 세계 항로 및 스페인 귀환",
+    "what": "최초의 지구 일주를 완료하였다",
+    "how": "1519년 서쪽으로 출발하여 1522년 스페인으로 돌아왔다",
+    "why": []
+  },
   "classification": "F",
   "language": "ko",
   "asOfDate": "2026-06-16",
@@ -206,7 +215,7 @@
         "framing",
         "authority_assumption"
       ],
-      "reviewMemo": "UNESCO Memory of the World 항목을 자동 재-fetch해 제목과 본문이 노출되는지 확인하고, Juan Sebastián del Cano 항목과 Ferdinand Magellan 항목의 주체·연도·완료 표현을 대조했다. 마젤란 개인 완주로 오해될 표현을 제거했다.",
+      "reviewMemo": "UNESCO Memory of the World 항목을 자동 재-fetch해 제목과 본문이 노출되는지 확인하고, Juan Sebastián del Cano 항목과 Ferdinand Magellan 항목의 주체·연도·완료 표현을 대조했다. 마젤란 개인 완주로 오해될 표현을 제거했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
       "adoptedReason": "UNESCO가 1519-1522년 최초 지구 일주 항해를 자동 재확인 가능한 페이지에서 제시하고, Britannica가 엘카노의 최초 지구 일주 완료와 1519년 참여·1522년 귀환을 보조한다.",
       "rejectedAlternatives": "'마젤란이 지구 일주를 했다'는 표현은 도중 사망 사실을 숨겨 제외했다. 정확한 일자까지 포함하는 문장은 이 출처 인용만으로 충분히 직접 확인되지 않아 연도 단위로 제한했다."
     }
@@ -230,5 +239,5 @@
     "지구일주"
   ],
   "createdAt": "2026-06-16T00:00:00Z",
-  "updatedAt": "2026-06-16T00:00:00Z"
+  "updatedAt": "2026-07-02"
 }
