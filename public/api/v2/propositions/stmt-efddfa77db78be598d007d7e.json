@@ -1,0 +1,137 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:efddfa77db78be598d007d7e",
+  "versionId": "ver:ef8a21b927148cce",
+  "certHash": "sha256:fe5baf64fc345652e47617fcecb1f210329973965c6608a77de67dbd26a57d8f",
+  "canonicalProposition": "CDC HIV Nexus는 처방대로 사용할 때 경구·주사 PrEP가 성관계 HIV 감염 위험을 약 99% 낮추고, 경구 PrEP가 주사 약물 사용 관련 HIV 감염 위험을 최소 74% 낮춘다고 설명했다",
+  "originalClaim": "PrEP HIV 예방효과 수치.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "CDC HIV Nexus PrEP clinical guidance page를 curl로 가져와 성관계 및 주사 약물 사용 관련 효과 추정치를 전사.",
+    "sample": "CDC HIV Nexus가 안내하는 처방대로 복용 또는 투여되는 PrEP 사용 상황",
+    "aggregationBasis": "CDC 안내문에 제시된 위험 감소 추정치",
+    "producer": "U.S. Centers for Disease Control and Prevention"
+  },
+  "sixW": {
+    "who": "처방대로 경구 또는 주사 PrEP를 사용하는 사람",
+    "when": "CDC HIV Nexus PrEP 안내 페이지의 2026-06-19 확인 시점",
+    "where": "CDC HIV Nexus Clinical Guidance for PrEP",
+    "what": "성관계 HIV 위험 약 99% 감소, 주사 약물 사용 관련 HIV 위험 최소 74% 감소",
+    "how": "CDC가 PrEP 약제 사용을 조건으로 예방효과 추정치를 안내",
+    "why": []
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "CDC HIV Nexus page HTTP 200 본문에서 about 99%와 at least 74%를 verbatim 확인했다. 처방대로 사용할 때라는 조건을 canonical에 포함했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.cdc.gov/hivnexus/hcp/prep/index.html",
+      "title": "Clinical Guidance for PrEP",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Effectiveness"
+      },
+      "shortQuote": "reduce the risk of getting HIV from sex by about 99%",
+      "quoteHash": "sha256:f5aab3a37ca6b0563529fcc81623de1770cd9094e0a9f35eaf87098421c7de36",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HIV Nexus HTML HTTP 200, 성관계 관련 PrEP 효과 수치 확인.",
+      "independenceGroupId": "cdc-prep-guidance",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC HIV Nexus 지침의 성관계 관련 효과 추정치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC 임상 지침.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/hivnexus/hcp/prep/index.html",
+      "title": "Clinical Guidance for PrEP",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Effectiveness"
+      },
+      "shortQuote": "by at least 74%",
+      "quoteHash": "sha256:589150729f03c0399afac1369db58ab9223172f177603e35658adc14dfc97344",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HIV Nexus HTML HTTP 200, 주사 약물 사용 관련 PrEP 효과 수치 확인.",
+      "independenceGroupId": "cdc-prep-guidance",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC HIV Nexus 지침의 주사 약물 사용 관련 효과 추정치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC 임상 지침.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "PrEP 효과는 처방대로 사용한다는 조건과 노출 유형에 따라 달라지며, 모든 HIV 노출 상황의 보편 수치가 아니다.",
+      "response": "canonical에 처방대로 사용 조건과 노출 유형별 수치를 함께 적었다.",
+      "errorsFound": 0,
+      "framingChecks": "예방효과 수치를 행동 평가나 논쟁 반박 없이 임상 안내 범위로만 표현했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "성관계와 주사 약물 사용 관련 수치를 둘 다 기록해 선택적 과장을 줄였다.",
+      "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "CDC 지침 권위가 아니라 HTTP 200 본문 수치 확인에 근거했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "기존 404 CDC URL은 사용하지 않고 fetch 가능한 HIV Nexus clinical guidance로 대체했다.",
+      "adoptedReason": "CDC HIV Nexus page가 99%와 74% 수치를 같은 문단에서 직접 제시한다.",
+      "rejectedAlternatives": "PrEP가 모든 상황에서 완전 보호한다는 문구, 복용자 평가, 차별적 프레이밍은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity",
+      "medical_or_financial_harm"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "수치는 CDC가 “처방대로 사용할 때”라고 제한한 예방효과 추정치다. 복용·투여 지속성, 노출 유형, 약제별 적응증 차이는 별도 평가가 필요하다.",
+  "tags": [
+    "PrEP",
+    "HIV",
+    "CDC",
+    "예방효과",
+    "측정"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}

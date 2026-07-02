@@ -1,0 +1,161 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:4b794b8163eb2161d4a9b949",
+  "versionId": "ver:c30e8a6cb0b9466c",
+  "certHash": "sha256:d631168809593f03b96d54e305ea7661dc10f52191e25e0c4a3fc68536ec6029",
+  "canonicalProposition": "CDC는 HIV 치료로 바이러스 부하가 검출불가 상태가 되면 성관계를 통한 HIV 전파가 발생하지 않는다고 설명하며, 이를 Undetectable = Untransmittable로 표기했다",
+  "originalClaim": "HIV 치료와 U=U에 관한 CDC 설명.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "CDC HIV treatment page를 curl로 가져와 undetectable viral load와 성관계 전파 관련 문장을 전사.",
+    "sample": "HIV 치료로 검출불가 바이러스 부하를 달성한 사람에 관한 CDC 치료 안내",
+    "aggregationBasis": "CDC가 안내문에 제시한 전파 가능성 문장",
+    "producer": "U.S. Centers for Disease Control and Prevention"
+  },
+  "sixW": {
+    "who": "HIV 치료를 통해 검출불가 바이러스 부하를 달성한 사람",
+    "when": "CDC 치료 안내 페이지의 2026-06-19 확인 시점",
+    "where": "CDC HIV Treatment page",
+    "what": "검출불가 바이러스 부하 상태에서는 성관계를 통한 HIV 전파가 발생하지 않는다고 CDC가 설명",
+    "how": "HIV 치료가 체내 바이러스 양을 줄여 검출불가 상태를 만들 수 있다는 안내와 함께 제시",
+    "why": []
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "CDC 치료 페이지 HTTP 200 본문에서 “undetectable viral load”와 “will not transmit HIV through sex” 및 “Undetectable = Untransmittable” 문구를 확인했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.cdc.gov/hiv/treatment/index.html",
+      "title": "HIV Treatment",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Treatment"
+      },
+      "shortQuote": "undetectable viral load",
+      "quoteHash": "sha256:4b1689933e14d69c930d05b4d5ebfd8318e798e87888fb2a8e653be55e2f2100",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, 치료로 검출불가 바이러스 부하 가능 문구 확인.",
+      "independenceGroupId": "cdc-hiv-treatment-u-u",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC 치료 안내의 바이러스 부하 문구.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC HIV 치료 안내.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/hiv/treatment/index.html",
+      "title": "HIV Treatment",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Treatment"
+      },
+      "shortQuote": "will not transmit HIV through sex",
+      "quoteHash": "sha256:2f9759198ae1a41030327a4e19232f78626a66a2f770214997ac95f55738633d",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, 성관계 전파 문구 확인.",
+      "independenceGroupId": "cdc-hiv-treatment-u-u",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC 치료 안내의 U=U 문구.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC HIV 치료 안내.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/hiv/treatment/index.html",
+      "title": "HIV Treatment",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Treatment"
+      },
+      "shortQuote": "Undetectable = Untransmittable",
+      "quoteHash": "sha256:1b770b7d84443e1a2cb59699f6bd9f49acae12d71d0d87b5a07882e3207b7791",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, U=U 표기 확인.",
+      "independenceGroupId": "cdc-hiv-treatment-u-u",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC 치료 안내의 약어 표기.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC HIV 치료 안내.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "CDC 문구는 성관계 전파에 관한 설명이며, 주사기 공유 등 다른 전파경로나 치료 접근성을 포함하지 않는다.",
+      "response": "canonical에 “성관계” 범위를 명시하고 다른 경로·정책 결론은 저장하지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "낙인 완화나 반박 구도를 쓰지 않고 CDC가 제시한 조건부 전파 문장만 기록했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "조건(검출불가 바이러스 부하)과 범위(성관계 전파)를 함께 기록했다.",
+      "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "CDC의 기관 지위가 아니라 HTTP 200 본문 문구를 근거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "U=U 문구를 성관계 전파 범위에 한정하고, 주사기 공유나 임신 관련 추가 설명은 제외했다.",
+      "adoptedReason": "CDC 치료 페이지가 조건과 전파 범위를 직접 명시한다.",
+      "rejectedAlternatives": "HIV 일반 전파위험 전체, 개인 치료순응도 평가, 낙인 반박 문구는 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity",
+      "medical_or_financial_harm"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "CDC 문구는 검출불가 바이러스 부하 상태와 성관계 전파에 한정한다. 주사기 공유 등 다른 경로의 위험 감소 정도는 이 명제에 포함하지 않는다.",
+  "tags": [
+    "HIV",
+    "UU",
+    "CDC",
+    "치료",
+    "측정"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}

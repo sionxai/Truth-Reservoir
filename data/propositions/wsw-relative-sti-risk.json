@@ -1,0 +1,186 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:3a2ae5d9219c9be87de14ae7",
+  "versionId": "ver:f9926fe061667e6a",
+  "certHash": "sha256:5aace2078e01858469c62a649db72c60236263c7648a92cfc20105b514677950",
+  "canonicalProposition": "CDC 2021 STI Treatment Guidelines는 검토 연구들에서 WSWM의 STI 비율이 WSW보다 높고 WSM과 비슷했으며, WSW의 53%~97%가 과거 남성 성파트너, 5%~28%가 전년도 남성 성파트너를 보고했다고 정리했다",
+  "originalClaim": "WSW·WSWM·WSM 관련 STI 상대위험과 파트너 이력 수치.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "CDC STI Treatment Guidelines WSW 섹션을 curl로 가져와 검토 연구 요약 문장과 범위 수치를 전사.",
+    "sample": "CDC가 2021 STI Treatment Guidelines에서 인용한 WSW, WSWM, WSM 관련 연구들",
+    "aggregationBasis": "지침 내 문헌검토 요약 및 보고 범위",
+    "producer": "U.S. Centers for Disease Control and Prevention"
+  },
+  "sixW": {
+    "who": "CDC STI Treatment Guidelines가 검토한 WSW, WSWM, WSM 연구 대상자",
+    "when": "2021년 CDC STI Treatment Guidelines",
+    "where": "CDC Sexually Transmitted Infections Treatment Guidelines WSW 섹션",
+    "what": "WSWM은 WSW보다 STI 비율이 높고 WSM과 비슷하며, WSW 중 53%~97%는 과거 남성 파트너, 5%~28%는 전년도 남성 파트너를 보고",
+    "how": "CDC가 기존 연구 결과를 지침 섹션에서 요약",
+    "why": []
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "CDC 지침 HTML HTTP 200 본문에서 WSWM 상대 STI 비율 및 53%~97%, 5%~28% 범위를 확인했다. 지침의 문헌요약이므로 원 연구별 세부 추정은 이 기록에 포함하지 않았다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.cdc.gov/std/treatment-guidelines/wsw.htm",
+      "title": "Women Who Have Sex with Women (WSW)",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "STI Treatment Guidelines"
+      },
+      "shortQuote": "WSWM experience higher rates of STIs",
+      "quoteHash": "sha256:00c48577c16eddd60c863dd8beb8886cb0b9a686e99e5bd99a0883407927227a",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, WSWM 상대 STI 비율 문구 확인.",
+      "independenceGroupId": "cdc-wsw-guidelines",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC 지침의 상대 비율 요약.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC STI 진료지침.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/std/treatment-guidelines/wsw.htm",
+      "title": "Women Who Have Sex with Women (WSW)",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "STI Treatment Guidelines"
+      },
+      "shortQuote": "rates comparable with women who have sex with men",
+      "quoteHash": "sha256:766a7f46e157beec4dfc5486af826a929f0a6c85b1d8d6ba4fdd2a75eecc767b",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, WSM 비교 문구 확인.",
+      "independenceGroupId": "cdc-wsw-guidelines",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC 지침의 비교 집단 요약.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC STI 진료지침.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/std/treatment-guidelines/wsw.htm",
+      "title": "Women Who Have Sex with Women (WSW)",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "STI Treatment Guidelines"
+      },
+      "shortQuote": "53%–97%",
+      "quoteHash": "sha256:0540790160d3096a0f151c489ac233337a34532e2d6289fe805b9c49610c13be",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, 과거 남성 파트너 범위 확인.",
+      "independenceGroupId": "cdc-wsw-guidelines",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC 지침의 과거 남성 파트너 범위.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC STI 진료지침.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/std/treatment-guidelines/wsw.htm",
+      "title": "Women Who Have Sex with Women (WSW)",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "STI Treatment Guidelines"
+      },
+      "shortQuote": "5%–28%",
+      "quoteHash": "sha256:9f84c278ab9ea792a6f2256c8a3b5bc4dec59092389fe88bc1f4c1e6dc34fab4",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, 전년도 남성 파트너 범위 확인.",
+      "independenceGroupId": "cdc-wsw-guidelines",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC 지침의 전년도 남성 파트너 범위.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "CDC STI 진료지침.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "WSW/WSWM 용어와 STI 비율은 연구 설계·파트너 이력·검사 접근성에 영향을 받으므로 정체성 자체의 위험으로 해석하면 부정확하다.",
+      "response": "CDC 지침의 문헌요약과 파트너 이력 범위만 기록하고 원인·정체성 평가를 배제했다.",
+      "errorsFound": 0,
+      "framingChecks": "행동·파트너 이력 기반 역학 문장을 유지하고 반박 프레이밍 없이 상대 비율과 범위만 적었다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "WSW, WSWM, WSM 비교를 지침 표현 범위 안에서 함께 기록했다.",
+      "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "CDC 지침 권위가 아니라 fetch 가능한 본문 문구와 수치를 근거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "CDC WSW 섹션의 상대 STI 비율과 파트너 이력 수치를 전사했다. 개인 또는 정체성 위험으로 확장하지 않았다.",
+      "adoptedReason": "CDC 지침 본문이 비교 문장과 범위 수치를 직접 제공한다.",
+      "rejectedAlternatives": "“성적 지향이 원인이 아니다”식 반박 구도와 집단 평가 표현은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity",
+      "medical_or_financial_harm"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "CDC 지침의 문헌요약이며 원 연구별 표본, STI 종류, 검사 방식 차이는 이 기록에 포함하지 않는다. WSW·WSWM·WSM 범주는 행동과 파트너 이력에 관한 연구 범주로만 사용된다.",
+  "tags": [
+    "STI",
+    "WSW",
+    "WSWM",
+    "CDC",
+    "진료지침",
+    "측정"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}

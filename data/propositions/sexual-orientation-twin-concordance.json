@@ -1,0 +1,165 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:3e54ea51d8411beb551b399c",
+  "versionId": "ver:359e75664c834789",
+  "certHash": "sha256:1408e35b1b5601b7e8cb8afcc5ad573075baad610f2a1afc812872cf20223805",
+  "canonicalProposition": "Bailey와 Pillard는 1991년 남성 동성애 프로밴드 친족 표본에서 평가 가능한 친족 중 일란성 공동쌍생아 52%(29/56), 이란성 공동쌍생아 22%(12/54), 입양 형제 11%(6/57)가 동성애자로 평가됐다고 보고했다",
+  "originalClaim": "성적 지향 쌍생아 일치율에 관한 측정값.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "PubMed E-utilities로 가져온 Bailey·Pillard 1991 논문 초록의 친족별 평가 결과를 전사.",
+    "sample": "동성애 남성 프로밴드의 평가 가능한 일란성 공동쌍생아 56명, 이란성 공동쌍생아 54명, 입양 형제 57명",
+    "aggregationBasis": "친족 유형별 동성애자로 평가된 수/평가 가능 수 및 비율",
+    "producer": "Bailey JM, Pillard RC"
+  },
+  "sixW": {
+    "who": "Bailey JM, Pillard RC 및 동성애 남성 프로밴드의 친족 표본",
+    "when": "1991년 논문 초록에 보고된 측정",
+    "where": "PubMed 수록 Archives of General Psychiatry 논문 초록",
+    "what": "일란성 공동쌍생아 52%(29/56), 이란성 공동쌍생아 22%(12/54), 입양 형제 11%(6/57)의 동성애자 평가 비율",
+    "how": "homophile publications를 통해 프로밴드를 모집하고 친족의 성적 지향을 직접 또는 프로밴드 보고로 평가",
+    "why": [
+      {
+        "reason": "남성 성적 지향의 유전 연구라고 논문 제목과 초록이 제시했다.",
+        "statedBy": "Bailey JM, Pillard RC"
+      }
+    ]
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "PubMed E-utilities HTTP 200 응답에서 52%(29/56), 22%(12/54), 11%(6/57)를 verbatim 확인했다. 단, 초록 기반이고 모집 방식이 대표표본이 아니므로 일반화는 제한했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=1845227&retmode=xml",
+      "title": "A genetic study of male sexual orientation",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Abstract"
+      },
+      "shortQuote": "52% (29/56) of monozygotic cotwins",
+      "quoteHash": "sha256:d4e327a835f0214154637ef667f8bc250d567bdc3fd1d65041599233634d5e5e",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L PubMed E-utilities HTTP 200, abstract XML에서 수치 확인.",
+      "independenceGroupId": "pubmed-1845227",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 논문 초록의 일란성 공동쌍생아 수치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "PubMed 수록 정신의학 논문 초록.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=1845227&retmode=xml",
+      "title": "A genetic study of male sexual orientation",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Abstract"
+      },
+      "shortQuote": "22% (12/54) of dizygotic cotwins",
+      "quoteHash": "sha256:de84fed44c56e0573bc45fee09354742d6a2c42d2d9d962074ae6cfb38021fc5",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L PubMed E-utilities HTTP 200, abstract XML에서 수치 확인.",
+      "independenceGroupId": "pubmed-1845227",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 논문 초록의 이란성 공동쌍생아 수치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "PubMed 수록 정신의학 논문 초록.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=1845227&retmode=xml",
+      "title": "A genetic study of male sexual orientation",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Abstract"
+      },
+      "shortQuote": "11% (6/57) of adoptive brothers",
+      "quoteHash": "sha256:83860828eda89ac073da3691fbb0b3de0b337628254fcab216e7f3ce709335c0",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L PubMed E-utilities HTTP 200, abstract XML에서 수치 확인.",
+      "independenceGroupId": "pubmed-1845227",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 논문 초록의 입양 형제 수치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "PubMed 수록 정신의학 논문 초록.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "쌍생아 표본은 homophile publications를 통한 모집이라 모집 편향이 있을 수 있고, 일치율은 성적 지향의 원인을 단정하지 않는다.",
+      "response": "명제를 친족 유형별 보고 비율로 제한하고 유전·환경 원인 결론을 저장하지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "유전 결정론, 정체성 평가, 사회적 의미 부여 문구를 제거하고 표본·분모·분자를 함께 표기했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "쌍생아 일치율을 원인론으로 확대하지 않고 표본 제한을 limitations에 명시했다.",
+      "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "PubMed 색인 권위가 아니라 HTTP 200으로 받은 초록의 수치 문자열을 근거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "제2조에 따라 성적 지향에 대한 해석이나 논쟁적 결론을 배제하고 논문 초록의 측정값만 남겼다.",
+      "adoptedReason": "세 친족 유형의 분모·분자가 동일 초록에서 직접 확인된다.",
+      "rejectedAlternatives": "성적 지향의 원인이 유전이라는 결론, 집단 일반화, 정체성 가치판단은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity",
+      "scientific_contested"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "Bailey·Pillard 1991 초록의 평가 가능 친족에 대한 비율만 기록한다. 모집은 homophile publications 기반이며 대표표본이 아니고, 측정값은 유전·환경 원인 또는 개인 예측으로 확장되지 않는다.",
+  "tags": [
+    "성적지향",
+    "쌍생아연구",
+    "측정",
+    "민감주제"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}

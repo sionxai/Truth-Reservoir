@@ -1,0 +1,186 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:24094c14f92b5c8fb482e57d",
+  "versionId": "ver:5da547549f83ee8a",
+  "certHash": "sha256:a5c1c9a303cd77fb6b18d4d827860c08fbd9d3da528da5bc7bb27de9a8b4acce",
+  "canonicalProposition": "CDC는 미국 2022년 신규 HIV 감염 추정치 31,800건 중 71%(22,500건), 미국 및 6개 영토·자유연합주 2022년 HIV 진단 37,981명 중 70%(26,749명)가 gay and bisexual men 범주였다고 보고했다",
+  "originalClaim": "미국 MSM/gay and bisexual men HIV 부담 수치.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "CDC HIV Data and Research fact page를 curl로 가져와 2022년 신규 감염 추정치와 진단 수치를 전사.",
+    "sample": "2022년 미국 신규 HIV 감염 추정치 및 미국·6개 영토·자유연합주의 HIV 진단자",
+    "aggregationBasis": "CDC가 제시한 범주별 수와 전체 대비 비율",
+    "producer": "U.S. Centers for Disease Control and Prevention"
+  },
+  "sixW": {
+    "who": "CDC가 분류한 gay and bisexual men 범주의 사람들",
+    "when": "2022년",
+    "where": "미국 및 CDC가 명시한 6개 영토·자유연합주",
+    "what": "신규 HIV 감염 추정치 31,800건 중 71%(22,500건), HIV 진단 37,981명 중 70%(26,749명)",
+    "how": "CDC HIV 감시·추정 자료를 범주별로 집계하여 fact page에 게시",
+    "why": []
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "CDC 페이지 curl HTTP 200 본문에서 31,800·71%·22,500 및 37,981·70%·26,749를 verbatim 확인했다. CDC가 생산한 공중보건 통계로 기록한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.cdc.gov/hiv/data-research/facts-stats/gay-bisexual-men.html",
+      "title": "HIV and Gay and Bisexual Men",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "New HIV infections"
+      },
+      "shortQuote": "31,800 estimated new HIV infections",
+      "quoteHash": "sha256:8188660ff5742eb2714fc7c291db58eaec2573a81b78a3776e67f1c6124ad740",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, 본문에서 신규 감염 전체 추정치 확인.",
+      "independenceGroupId": "cdc-msm-2022",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC fact page의 2022년 신규 감염 수치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "미국 CDC HIV 감시 통계.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/hiv/data-research/facts-stats/gay-bisexual-men.html",
+      "title": "HIV and Gay and Bisexual Men",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "New HIV infections"
+      },
+      "shortQuote": "71% (22,500) were among gay",
+      "quoteHash": "sha256:24135083caaee2ca2d79f74a37341df1a68e3c94fedabfd105a8b0636e71b9f1",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, 본문에서 신규 감염 범주 수치 확인.",
+      "independenceGroupId": "cdc-msm-2022",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC fact page의 2022년 신규 감염 범주 비율.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "미국 CDC HIV 감시 통계.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/hiv/data-research/facts-stats/gay-bisexual-men.html",
+      "title": "HIV and Gay and Bisexual Men",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "HIV diagnoses"
+      },
+      "shortQuote": "37,981 people who received an HIV diagnosis",
+      "quoteHash": "sha256:b36cff003d04b03af07298bcd05212d6a52d563e6653457e585df33819c9cb74",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, 본문에서 진단 전체 수치 확인.",
+      "independenceGroupId": "cdc-msm-2022",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC fact page의 2022년 진단 수치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "미국 CDC HIV 감시 통계.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.cdc.gov/hiv/data-research/facts-stats/gay-bisexual-men.html",
+      "title": "HIV and Gay and Bisexual Men",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "HIV diagnoses"
+      },
+      "shortQuote": "70% (26,749) were among gay",
+      "quoteHash": "sha256:7189a36cbc35cb65d8528a8b5117a97034ef389e07741e156ef52468297a0307",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L CDC HTML HTTP 200, 본문에서 진단 범주 수치 확인.",
+      "independenceGroupId": "cdc-msm-2022",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 CDC fact page의 2022년 진단 범주 비율.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "미국 CDC HIV 감시 통계.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "CDC의 gay and bisexual men 범주는 감염경로·성행동·정체성 요소가 섞여 있을 수 있어 개인 수준 위험으로 해석하면 과잉 일반화가 된다.",
+      "response": "명제를 CDC 범주·연도·지역의 집계치로 제한하고 개인 또는 정체성의 원인 주장으로 확장하지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "행동 기반 역학 사실을 그대로 적고 정체성 비난, 반박 프레이밍, 다른 명제와의 연결을 제거했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "감염·진단 수치를 같은 출처에서 함께 기록하고 평가 문구를 넣지 않았다.",
+      "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "CDC 생산 통계이지만 권위 호소가 아니라 페이지 본문 HTTP 200 확인 수치에 의존했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "CDC fact page 본문에서 load-bearing 수치를 모두 확인했다. footnote의 주입약물 동시 보고 범위는 limitations에만 적었다.",
+      "adoptedReason": "CDC 페이지가 전체수·비율·범주별 수를 모두 직접 제공한다.",
+      "rejectedAlternatives": "성적 지향 자체가 원인이라는 문구, 위험성 논쟁 반박 문구, 인구학적 위협 해석은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity",
+      "medical_or_financial_harm"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "CDC 범주형 감시 통계로, 개인의 원인·위험을 말하지 않는다. CDC footnote는 남성 간 성접촉 및 주입약물 사용을 함께 보고한 사례가 범주에 포함될 수 있음을 밝힌다.",
+  "tags": [
+    "HIV",
+    "CDC",
+    "MSM",
+    "미국",
+    "역학",
+    "측정"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}

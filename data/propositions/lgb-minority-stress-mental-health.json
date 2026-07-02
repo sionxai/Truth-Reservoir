@@ -1,0 +1,167 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:3ae444edbb297bea65e9cd78",
+  "versionId": "ver:723a90e7542f5ec3",
+  "certHash": "sha256:8cd1cc3f9195278ebf0d06b1770bec838edcdff1f805fe625184faed338c816a",
+  "canonicalProposition": "King 등은 2008년 LGB 정신건강 체계적 문헌고찰·메타분석에서 28편(25개 연구), 이성애자 214,344명과 비이성애자 11,971명의 자료를 추출했고, LGB의 lifetime suicide attempt pooled RR을 2.47(CI 1.87, 3.28)로 보고했다",
+  "originalClaim": "LGB 정신건강 격차에 관한 메타분석 측정값.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "NCBI E-utilities PMC XML로 BMC Psychiatry systematic review/meta-analysis 원문을 가져와 연구 수, 표본 수, pooled risk ratio를 전사.",
+    "sample": "1966년 1월부터 2005년 4월까지 검색된 문헌 중 포함 기준을 충족한 28편(25개 연구), 이성애자 214,344명, 비이성애자 11,971명",
+    "aggregationBasis": "체계적 문헌고찰과 메타분석의 포함 연구 수, 추출 표본 수, lifetime suicide attempt pooled risk ratio",
+    "producer": "King M 등"
+  },
+  "sixW": {
+    "who": "King 등 연구진이 검토한 LGB 및 이성애자 비교 연구 대상자",
+    "when": "2008년 BMC Psychiatry 논문",
+    "where": "NCBI PMC full-text XML에 수록된 BMC Psychiatry 논문",
+    "what": "28편(25개 연구), 이성애자 214,344명, 비이성애자 11,971명, lifetime suicide attempt pooled RR 2.47(CI 1.87, 3.28)",
+    "how": "여러 데이터베이스와 회색문헌을 검색해 포함 연구를 선정하고 메타분석을 수행",
+    "why": [
+      {
+        "reason": "LGB 사람들이 정신질환·물질남용·자살·자살사고·고의적 자해 위험이 더 높은지 정량화하려는 목적이라고 논문이 밝혔다.",
+        "statedBy": "King 등"
+      }
+    ]
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "NCBI E-utilities PubMed 및 PMC XML HTTP 200에서 28(25 studies), 214,344, 11,971, pooled RR 2.47(CI 1.87, 3.28)를 verbatim 확인했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2533652",
+      "title": "A systematic review of mental disorder, suicide, and deliberate self harm in lesbian, gay and bisexual people",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Results"
+      },
+      "shortQuote": "28 (25 studies) met inclusion criteria",
+      "quoteHash": "sha256:a59c75e5b892445fad0a01387bfee714e49c356204132197ecd04a52050de147",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 포함 연구 수 확인.",
+      "independenceGroupId": "pmc2533652-king-lgb",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 King 등 메타분석의 포함 연구 수.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "BMC Psychiatry 체계적 문헌고찰·메타분석 원문 XML.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2533652",
+      "title": "A systematic review of mental disorder, suicide, and deliberate self harm in lesbian, gay and bisexual people",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Results"
+      },
+      "shortQuote": "214,344 heterosexual and 11,971 non heterosexual people",
+      "quoteHash": "sha256:2c4ea1e117aa23cfe9b8d43869bf2cabc650e02f11f96e479fddcc2ab351456a",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 추출 표본 수 확인.",
+      "independenceGroupId": "pmc2533652-king-lgb",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 King 등 메타분석의 추출 표본 수.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "BMC Psychiatry 체계적 문헌고찰·메타분석 원문 XML.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2533652",
+      "title": "A systematic review of mental disorder, suicide, and deliberate self harm in lesbian, gay and bisexual people",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Results"
+      },
+      "shortQuote": "2.47 (CI 1.87, 3.28)",
+      "quoteHash": "sha256:9f99d7f6ab0f733659c3aa4c7c2797aa5077ea7dbce2cd57cf4f6f103bd65cc1",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, lifetime suicide attempt pooled RR 확인.",
+      "independenceGroupId": "pmc2533652-king-lgb",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 King 등 메타분석의 pooled risk ratio.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "BMC Psychiatry 체계적 문헌고찰·메타분석 원문 XML.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "메타분석은 관찰연구들을 종합하므로 minority stress가 모든 정신건강 격차의 직접 원인이라는 결론을 단독으로 입증하지 않는다.",
+      "response": "canonical을 포함 연구 수, 표본 수, pooled RR 측정값으로 제한하고 원인론은 sixW.why의 논문 목적 진술에만 귀속했다.",
+      "errorsFound": 0,
+      "framingChecks": "LGB 집단 평가나 원인 단정을 제거하고 메타분석의 표본·위험비만 기록했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "비교군과 LGB/비이성애자 표본 수를 함께 제시해 상대 수치의 범위를 명확히 했다.",
+      "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "BMC Psychiatry 게재 사실보다 NCBI HTTP 200 원문 수치 확인을 기준으로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "minority stress 관련 해석은 독립 결론으로 쓰지 않고, 정신건강 격차 메타분석의 측정 결과만 저장했다.",
+      "adoptedReason": "King 등 원문이 포함 연구 수, 표본 수, pooled RR과 CI를 직접 제시한다.",
+      "rejectedAlternatives": "정체성이 정신건강 문제의 원인이라는 표현, 사회정책 논증, 다른 명제와의 연결은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity",
+      "medical_or_financial_harm",
+      "scientific_contested"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "King 등 2008 메타분석의 포함 연구와 기간(1966년 1월~2005년 4월)에 한정한다. 관찰연구 종합 결과이며 minority stress 또는 성적 지향 자체의 인과효과를 별도로 식별한 기록이 아니다.",
+  "tags": [
+    "LGB",
+    "정신건강",
+    "메타분석",
+    "자살시도",
+    "측정"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}

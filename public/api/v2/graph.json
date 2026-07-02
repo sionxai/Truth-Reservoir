@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-02",
-    "total": 36,
+    "total": 44,
     "note": "태그 교집합 기반 결정론적 파생 관계; cert 원본에는 저장되지 않음"
   },
   "nodes": [
@@ -55,6 +55,18 @@
       ]
     },
     {
+      "propositionId": "stmt:24094c14f92b5c8fb482e57d",
+      "path": "/p/stmt-24094c14f92b5c8fb482e57d/",
+      "tags": [
+        "미국",
+        "역학",
+        "측정",
+        "CDC",
+        "HIV",
+        "MSM"
+      ]
+    },
+    {
       "propositionId": "stmt:2e87b3750aadd61ef8e2b6c0",
       "path": "/p/stmt-2e87b3750aadd61ef8e2b6c0/",
       "tags": [
@@ -90,6 +102,50 @@
       ]
     },
     {
+      "propositionId": "stmt:3a2ae5d9219c9be87de14ae7",
+      "path": "/p/stmt-3a2ae5d9219c9be87de14ae7/",
+      "tags": [
+        "진료지침",
+        "측정",
+        "CDC",
+        "STI",
+        "WSW",
+        "WSWM"
+      ]
+    },
+    {
+      "propositionId": "stmt:3ae444edbb297bea65e9cd78",
+      "path": "/p/stmt-3ae444edbb297bea65e9cd78/",
+      "tags": [
+        "메타분석",
+        "자살시도",
+        "정신건강",
+        "측정",
+        "LGB"
+      ]
+    },
+    {
+      "propositionId": "stmt:3e54ea51d8411beb551b399c",
+      "path": "/p/stmt-3e54ea51d8411beb551b399c/",
+      "tags": [
+        "민감주제",
+        "성적지향",
+        "쌍생아연구",
+        "측정"
+      ]
+    },
+    {
+      "propositionId": "stmt:3f30934e8dae7bc3452ab43a",
+      "path": "/p/stmt-3f30934e8dae7bc3452ab43a/",
+      "tags": [
+        "전파확률",
+        "직장점막",
+        "측정",
+        "HIV",
+        "MSM"
+      ]
+    },
+    {
       "propositionId": "stmt:40340515225f7adf44e242f3",
       "path": "/p/stmt-40340515225f7adf44e242f3/",
       "tags": [
@@ -106,6 +162,17 @@
         "아폴로계획",
         "역사적사건",
         "우주"
+      ]
+    },
+    {
+      "propositionId": "stmt:4b794b8163eb2161d4a9b949",
+      "path": "/p/stmt-4b794b8163eb2161d4a9b949/",
+      "tags": [
+        "측정",
+        "치료",
+        "CDC",
+        "HIV",
+        "UU"
       ]
     },
     {
@@ -151,6 +218,17 @@
         "측정",
         "투표용지부족",
         "판단유보"
+      ]
+    },
+    {
+      "propositionId": "stmt:5985381793fd401f7fc3052c",
+      "path": "/p/stmt-5985381793fd401f7fc3052c/",
+      "tags": [
+        "자살시도",
+        "전환치료",
+        "정신건강",
+        "측정",
+        "SOCE"
       ]
     },
     {
@@ -406,6 +484,17 @@
         "주장",
         "중앙선거관리위원회",
         "투표용지부족"
+      ]
+    },
+    {
+      "propositionId": "stmt:efddfa77db78be598d007d7e",
+      "path": "/p/stmt-efddfa77db78be598d007d7e/",
+      "tags": [
+        "예방효과",
+        "측정",
+        "CDC",
+        "HIV",
+        "PrEP"
       ]
     },
     {
@@ -844,6 +933,90 @@
       ]
     },
     {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:3a2ae5d9219c9be87de14ae7",
+      "sharedTags": [
+        "측정",
+        "CDC"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:3ae444edbb297bea65e9cd78",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:3e54ea51d8411beb551b399c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:3f30934e8dae7bc3452ab43a",
+      "sharedTags": [
+        "측정",
+        "HIV",
+        "MSM"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:4b794b8163eb2161d4a9b949",
+      "sharedTags": [
+        "측정",
+        "CDC",
+        "HIV"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:5525ea7692e7f4eea17971f5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:5697abe486cdf727eafca8e1",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:5985381793fd401f7fc3052c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정",
+        "CDC",
+        "HIV"
+      ]
+    },
+    {
       "from": "stmt:2e87b3750aadd61ef8e2b6c0",
       "to": "stmt:5697abe486cdf727eafca8e1",
       "sharedTags": [
@@ -1010,6 +1183,250 @@
       ]
     },
     {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:3ae444edbb297bea65e9cd78",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:3e54ea51d8411beb551b399c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:3f30934e8dae7bc3452ab43a",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:4b794b8163eb2161d4a9b949",
+      "sharedTags": [
+        "측정",
+        "CDC"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:5525ea7692e7f4eea17971f5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:5697abe486cdf727eafca8e1",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:5985381793fd401f7fc3052c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정",
+        "CDC"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:3e54ea51d8411beb551b399c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:3f30934e8dae7bc3452ab43a",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:4b794b8163eb2161d4a9b949",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:5525ea7692e7f4eea17971f5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:5697abe486cdf727eafca8e1",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:5985381793fd401f7fc3052c",
+      "sharedTags": [
+        "자살시도",
+        "정신건강",
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:3f30934e8dae7bc3452ab43a",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:4b794b8163eb2161d4a9b949",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:5525ea7692e7f4eea17971f5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:5697abe486cdf727eafca8e1",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:5985381793fd401f7fc3052c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3f30934e8dae7bc3452ab43a",
+      "to": "stmt:4b794b8163eb2161d4a9b949",
+      "sharedTags": [
+        "측정",
+        "HIV"
+      ]
+    },
+    {
+      "from": "stmt:3f30934e8dae7bc3452ab43a",
+      "to": "stmt:5525ea7692e7f4eea17971f5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3f30934e8dae7bc3452ab43a",
+      "to": "stmt:5697abe486cdf727eafca8e1",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3f30934e8dae7bc3452ab43a",
+      "to": "stmt:5985381793fd401f7fc3052c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3f30934e8dae7bc3452ab43a",
+      "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3f30934e8dae7bc3452ab43a",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3f30934e8dae7bc3452ab43a",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정",
+        "HIV"
+      ]
+    },
+    {
       "from": "stmt:40340515225f7adf44e242f3",
       "to": "stmt:52e6260a60e04599d809ae61",
       "sharedTags": [
@@ -1023,6 +1440,50 @@
       "sharedTags": [
         "개인정보보호",
         "법률제10465호"
+      ]
+    },
+    {
+      "from": "stmt:4b794b8163eb2161d4a9b949",
+      "to": "stmt:5525ea7692e7f4eea17971f5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:4b794b8163eb2161d4a9b949",
+      "to": "stmt:5697abe486cdf727eafca8e1",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:4b794b8163eb2161d4a9b949",
+      "to": "stmt:5985381793fd401f7fc3052c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:4b794b8163eb2161d4a9b949",
+      "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:4b794b8163eb2161d4a9b949",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:4b794b8163eb2161d4a9b949",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정",
+        "CDC",
+        "HIV"
       ]
     },
     {
@@ -1074,6 +1535,13 @@
     },
     {
       "from": "stmt:5525ea7692e7f4eea17971f5",
+      "to": "stmt:5985381793fd401f7fc3052c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:5525ea7692e7f4eea17971f5",
       "to": "stmt:b18e2813819c4fb0e23830f6",
       "sharedTags": [
         "측정"
@@ -1082,6 +1550,20 @@
     {
       "from": "stmt:5525ea7692e7f4eea17971f5",
       "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:5525ea7692e7f4eea17971f5",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:5697abe486cdf727eafca8e1",
+      "to": "stmt:5985381793fd401f7fc3052c",
       "sharedTags": [
         "측정"
       ]
@@ -1185,11 +1667,39 @@
     },
     {
       "from": "stmt:5697abe486cdf727eafca8e1",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:5697abe486cdf727eafca8e1",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
         "정치주장",
         "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:5985381793fd401f7fc3052c",
+      "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:5985381793fd401f7fc3052c",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:5985381793fd401f7fc3052c",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
       ]
     },
     {
@@ -1711,6 +2221,13 @@
       ]
     },
     {
+      "from": "stmt:b18e2813819c4fb0e23830f6",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
       "from": "stmt:c11b6f2081e8fa1c38bae49d",
       "to": "stmt:c890b5f8ca77961c84b58268",
       "sharedTags": [
@@ -1809,6 +2326,13 @@
         "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:cb0719e9aac6e4c86677d2e5",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
       ]
     },
     {

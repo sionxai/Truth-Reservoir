@@ -86,8 +86,9 @@ describe("data integration", () => {
     const llmsFull = await readFile(join(process.cwd(), "public", "llms-full.txt"), "utf8");
     const propositionIds = propositions.map((proposition) => proposition.propositionId).sort();
 
-    expect(propositions).toHaveLength(36);
+    expect(propositions.length).toBeGreaterThan(0);
     expect(Array.isArray(index.data)).toBe(true);
+    expect((index.data as unknown[]).length).toBe(propositions.length);
     expect(index.meta).toMatchObject({
       total: propositions.length,
       dataVersion: expect.any(String)

@@ -1,0 +1,193 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:5985381793fd401f7fc3052c",
+  "versionId": "ver:d25ea24be09e066d",
+  "certHash": "sha256:32b44f65057a9c888d3b233575906faeb4ef18e0270fa8e11c013b91f5ca11d2",
+  "canonicalProposition": "Ryan 등은 245명의 LGBT White·Latino 21~25세 청년 단면연구에서 부모 주도 SOCE와 외부 전환개입 동시 보고 집단의 lifetime suicide attempt 비율을 62.8%(무 SOCE 22.0%)로 보고했고, SOCE 효과성 근거 부족을 인용했다",
+  "originalClaim": "전환치료/SOCE의 효과성 근거와 위해 관련 측정.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "PMC full-text XML을 NCBI E-utilities로 가져와 Ryan 등 연구의 표본, 표 3 수치, 문헌검토 문장을 전사.",
+    "sample": "LGBT White·Latino young adults 245명(분석 표 N=239), 연령 21~25세; 부모 주도 SOCE 및 외부 전환개입 회고 보고 집단",
+    "aggregationBasis": "단면연구 표본의 집단별 lifetime suicidal attempt 비율 및 논문 서론의 SOCE 효과성 근거 평가 인용",
+    "producer": "Ryan C, Toomey RB, Diaz RM, Russell ST"
+  },
+  "sixW": {
+    "who": "Ryan 등 연구진과 21~25세 LGBT White·Latino young adults 표본",
+    "when": "2018년 전자출판, 2020년 Journal of Homosexuality 권호 수록",
+    "where": "NCBI PMC full-text XML에 수록된 Journal of Homosexuality 논문",
+    "what": "부모 주도 SOCE와 외부 전환개입 동시 보고 집단의 lifetime suicidal attempt 62.8%, 무 SOCE 집단 22.0%, SOCE 효과성 근거 부족 인용",
+    "how": "단면 설문에서 청소년기 SOCE 노출과 청년기 정신건강·적응 지표를 회고 보고로 측정",
+    "why": [
+      {
+        "reason": "청소년기 부모 주도 SOCE와 청년기 건강·적응 지표의 관련성을 조사하기 위한 연구라고 제시됐다.",
+        "statedBy": "Ryan 등"
+      }
+    ]
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "NCBI E-utilities PMC XML HTTP 200에서 표본 245명, 22.0%, 62.8%, 효과성 근거 부족 문구를 확인했다. 위해는 단면연구의 관련성이고, 효과성 문구는 논문이 선행 검토를 인용한 문장으로 한정했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222",
+      "title": "Parent-Initiated Sexual Orientation Change Efforts With LGBT Adolescents",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Abstract"
+      },
+      "shortQuote": "245 LGBT White and Latino young adults",
+      "quoteHash": "sha256:ea0ce1a59f588da66dc97e7d1809bbec2574089f418f62752233e8ceed4ea16b",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 초록에서 표본 확인.",
+      "independenceGroupId": "pmc10371222-ryan-soce",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 Ryan 등 논문의 표본 설명.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "PMC 수록 동료심사 논문 원문 XML.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222",
+      "title": "Parent-Initiated Sexual Orientation Change Efforts With LGBT Adolescents",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Existing research and field consensus"
+      },
+      "shortQuote": "lack of credible evidence of effectiveness",
+      "quoteHash": "sha256:6b5770104c6fe1b65519c38355b0e89590c1df6b944477c276f529f2050a1c06",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 서론에서 효과성 근거 문구 확인.",
+      "independenceGroupId": "pmc10371222-ryan-soce",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 Ryan 등 논문의 선행연구 평가 인용.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "PMC 수록 동료심사 논문 원문 XML.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222",
+      "title": "Parent-Initiated Sexual Orientation Change Efforts With LGBT Adolescents",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Table 3"
+      },
+      "shortQuote": "22.0 %",
+      "quoteHash": "sha256:7f412ca3ec8c2f5ad51b2173a4038d5b3b1398d41467bc95b3a81997b70ca7e3",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 표 3 무 SOCE 집단 suicide attempt 비율 확인.",
+      "independenceGroupId": "pmc10371222-ryan-soce",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 Ryan 등 논문의 표 3 수치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "PMC 수록 동료심사 논문 원문 XML.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222",
+      "title": "Parent-Initiated Sexual Orientation Change Efforts With LGBT Adolescents",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Table 3"
+      },
+      "shortQuote": "62.8 %",
+      "quoteHash": "sha256:71678b1e1e1fa10e8ed23a2da38b2d5683649f8dc5012bc02b5c6e817d2b126b",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "api",
+      "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 표 3 동시 보고 집단 suicide attempt 비율 확인.",
+      "independenceGroupId": "pmc10371222-ryan-soce",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 Ryan 등 논문의 표 3 수치.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "PMC 수록 동료심사 논문 원문 XML.",
+      "sourceType": "aggregator",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "Ryan 등 연구는 단면·회고 설문이라 SOCE가 자살시도 증가를 직접 원인으로 만들었다고 결론낼 수 없고, 효과성 평가는 선행 검토 인용이다.",
+      "response": "canonical을 관련성 및 인용된 효과성 근거 부족으로 제한했고 causation·정책 결론을 저장하지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "전환치료 비판 논증이 아니라 한 논문 원문에서 확인되는 표본, 표 수치, 인용 문장만 보존했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "효과성 근거와 위해 관련 지표를 모두 출처의 문장 범위 안에서 조건부로 적었다.",
+      "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "APA/SAMHSA 원 URL이 아니라 NCBI PMC HTTP 200 원문 XML에서 확인 가능한 Ryan 논문 문구만 사용했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "blocked APA/SAMHSA topic page와 403 자료는 쓰지 않았다. SOCE 위해는 단면 관련성으로, 효과성은 논문이 선행 검토를 요약한 문장으로 한정했다.",
+      "adoptedReason": "Ryan 등 PMC 원문이 표본·표 3 비율·효과성 근거 부족 문구를 모두 제공한다.",
+      "rejectedAlternatives": "전환치료 금지 찬반 주장, 특정 종교·집단 평가, 효과 없음의 독립 실험 결론은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity",
+      "medical_or_financial_harm",
+      "scientific_contested"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+  },
+  "undeterminedItems": [
+    "전환치료 효과성을 직접 측정한 독립 무작위시험 수치는 이 기록에서 확인하지 않았다. 효과성 부분은 Ryan 등 논문이 선행 검토를 인용한 문장으로만 보존한다."
+  ],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "Ryan 등 연구는 21~25세 White·Latino LGBT 표본의 회고 단면자료이며 인과 추론으로 확장할 수 없다. 효과성 근거 부족 문구는 Ryan 등 논문이 선행 검토를 요약·인용한 내용이다.",
+  "tags": [
+    "SOCE",
+    "전환치료",
+    "정신건강",
+    "자살시도",
+    "측정"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}

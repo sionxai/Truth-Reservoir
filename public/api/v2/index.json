@@ -647,6 +647,199 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:5985381793fd401f7fc3052c",
+      "versionId": "ver:d25ea24be09e066d",
+      "certHash": "sha256:32b44f65057a9c888d3b233575906faeb4ef18e0270fa8e11c013b91f5ca11d2",
+      "canonicalProposition": "Ryan 등은 245명의 LGBT White·Latino 21~25세 청년 단면연구에서 부모 주도 SOCE와 외부 전환개입 동시 보고 집단의 lifetime suicide attempt 비율을 62.8%(무 SOCE 22.0%)로 보고했고, SOCE 효과성 근거 부족을 인용했다",
+      "originalClaim": "전환치료/SOCE의 효과성 근거와 위해 관련 측정.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "PMC full-text XML을 NCBI E-utilities로 가져와 Ryan 등 연구의 표본, 표 3 수치, 문헌검토 문장을 전사.",
+        "sample": "LGBT White·Latino young adults 245명(분석 표 N=239), 연령 21~25세; 부모 주도 SOCE 및 외부 전환개입 회고 보고 집단",
+        "aggregationBasis": "단면연구 표본의 집단별 lifetime suicidal attempt 비율 및 논문 서론의 SOCE 효과성 근거 평가 인용",
+        "producer": "Ryan C, Toomey RB, Diaz RM, Russell ST"
+      },
+      "sixW": {
+        "who": "Ryan 등 연구진과 21~25세 LGBT White·Latino young adults 표본",
+        "when": "2018년 전자출판, 2020년 Journal of Homosexuality 권호 수록",
+        "where": "NCBI PMC full-text XML에 수록된 Journal of Homosexuality 논문",
+        "what": "부모 주도 SOCE와 외부 전환개입 동시 보고 집단의 lifetime suicidal attempt 62.8%, 무 SOCE 집단 22.0%, SOCE 효과성 근거 부족 인용",
+        "how": "단면 설문에서 청소년기 SOCE 노출과 청년기 정신건강·적응 지표를 회고 보고로 측정",
+        "why": [
+          {
+            "reason": "청소년기 부모 주도 SOCE와 청년기 건강·적응 지표의 관련성을 조사하기 위한 연구라고 제시됐다.",
+            "statedBy": "Ryan 등"
+          }
+        ]
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "NCBI E-utilities PMC XML HTTP 200에서 표본 245명, 22.0%, 62.8%, 효과성 근거 부족 문구를 확인했다. 위해는 단면연구의 관련성이고, 효과성 문구는 논문이 선행 검토를 인용한 문장으로 한정했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222",
+          "title": "Parent-Initiated Sexual Orientation Change Efforts With LGBT Adolescents",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Abstract"
+          },
+          "shortQuote": "245 LGBT White and Latino young adults",
+          "quoteHash": "sha256:ea0ce1a59f588da66dc97e7d1809bbec2574089f418f62752233e8ceed4ea16b",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 초록에서 표본 확인.",
+          "independenceGroupId": "pmc10371222-ryan-soce",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 Ryan 등 논문의 표본 설명.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "PMC 수록 동료심사 논문 원문 XML.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222",
+          "title": "Parent-Initiated Sexual Orientation Change Efforts With LGBT Adolescents",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Existing research and field consensus"
+          },
+          "shortQuote": "lack of credible evidence of effectiveness",
+          "quoteHash": "sha256:6b5770104c6fe1b65519c38355b0e89590c1df6b944477c276f529f2050a1c06",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 서론에서 효과성 근거 문구 확인.",
+          "independenceGroupId": "pmc10371222-ryan-soce",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 Ryan 등 논문의 선행연구 평가 인용.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "PMC 수록 동료심사 논문 원문 XML.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222",
+          "title": "Parent-Initiated Sexual Orientation Change Efforts With LGBT Adolescents",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Table 3"
+          },
+          "shortQuote": "22.0 %",
+          "quoteHash": "sha256:7f412ca3ec8c2f5ad51b2173a4038d5b3b1398d41467bc95b3a81997b70ca7e3",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 표 3 무 SOCE 집단 suicide attempt 비율 확인.",
+          "independenceGroupId": "pmc10371222-ryan-soce",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 Ryan 등 논문의 표 3 수치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "PMC 수록 동료심사 논문 원문 XML.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222",
+          "title": "Parent-Initiated Sexual Orientation Change Efforts With LGBT Adolescents",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Table 3"
+          },
+          "shortQuote": "62.8 %",
+          "quoteHash": "sha256:71678b1e1e1fa10e8ed23a2da38b2d5683649f8dc5012bc02b5c6e817d2b126b",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 표 3 동시 보고 집단 suicide attempt 비율 확인.",
+          "independenceGroupId": "pmc10371222-ryan-soce",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 Ryan 등 논문의 표 3 수치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "PMC 수록 동료심사 논문 원문 XML.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "Ryan 등 연구는 단면·회고 설문이라 SOCE가 자살시도 증가를 직접 원인으로 만들었다고 결론낼 수 없고, 효과성 평가는 선행 검토 인용이다.",
+          "response": "canonical을 관련성 및 인용된 효과성 근거 부족으로 제한했고 causation·정책 결론을 저장하지 않았다.",
+          "errorsFound": 0,
+          "framingChecks": "전환치료 비판 논증이 아니라 한 논문 원문에서 확인되는 표본, 표 수치, 인용 문장만 보존했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "효과성 근거와 위해 관련 지표를 모두 출처의 문장 범위 안에서 조건부로 적었다.",
+          "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "APA/SAMHSA 원 URL이 아니라 NCBI PMC HTTP 200 원문 XML에서 확인 가능한 Ryan 논문 문구만 사용했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "blocked APA/SAMHSA topic page와 403 자료는 쓰지 않았다. SOCE 위해는 단면 관련성으로, 효과성은 논문이 선행 검토를 요약한 문장으로 한정했다.",
+          "adoptedReason": "Ryan 등 PMC 원문이 표본·표 3 비율·효과성 근거 부족 문구를 모두 제공한다.",
+          "rejectedAlternatives": "전환치료 금지 찬반 주장, 특정 종교·집단 평가, 효과 없음의 독립 실험 결론은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity",
+          "medical_or_financial_harm",
+          "scientific_contested"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+      },
+      "undeterminedItems": [
+        "전환치료 효과성을 직접 측정한 독립 무작위시험 수치는 이 기록에서 확인하지 않았다. 효과성 부분은 Ryan 등 논문이 선행 검토를 인용한 문장으로만 보존한다."
+      ],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "Ryan 등 연구는 21~25세 White·Latino LGBT 표본의 회고 단면자료이며 인과 추론으로 확장할 수 없다. 효과성 근거 부족 문구는 Ryan 등 논문이 선행 검토를 요약·인용한 내용이다.",
+      "tags": [
+        "SOCE",
+        "전환치료",
+        "정신건강",
+        "자살시도",
+        "측정"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:22abb3226ba88d6589e75013",
       "versionId": "ver:8d0a10e0a02fe94a",
       "certHash": "sha256:bd1c9e2ad3633625d680a7382c825174aea0a9fd9872c41c44e1fe8668cc5ac4",
@@ -1181,6 +1374,167 @@
       ],
       "createdAt": "2026-06-16T00:00:00Z",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:4b794b8163eb2161d4a9b949",
+      "versionId": "ver:c30e8a6cb0b9466c",
+      "certHash": "sha256:d631168809593f03b96d54e305ea7661dc10f52191e25e0c4a3fc68536ec6029",
+      "canonicalProposition": "CDC는 HIV 치료로 바이러스 부하가 검출불가 상태가 되면 성관계를 통한 HIV 전파가 발생하지 않는다고 설명하며, 이를 Undetectable = Untransmittable로 표기했다",
+      "originalClaim": "HIV 치료와 U=U에 관한 CDC 설명.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "CDC HIV treatment page를 curl로 가져와 undetectable viral load와 성관계 전파 관련 문장을 전사.",
+        "sample": "HIV 치료로 검출불가 바이러스 부하를 달성한 사람에 관한 CDC 치료 안내",
+        "aggregationBasis": "CDC가 안내문에 제시한 전파 가능성 문장",
+        "producer": "U.S. Centers for Disease Control and Prevention"
+      },
+      "sixW": {
+        "who": "HIV 치료를 통해 검출불가 바이러스 부하를 달성한 사람",
+        "when": "CDC 치료 안내 페이지의 2026-06-19 확인 시점",
+        "where": "CDC HIV Treatment page",
+        "what": "검출불가 바이러스 부하 상태에서는 성관계를 통한 HIV 전파가 발생하지 않는다고 CDC가 설명",
+        "how": "HIV 치료가 체내 바이러스 양을 줄여 검출불가 상태를 만들 수 있다는 안내와 함께 제시",
+        "why": []
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "CDC 치료 페이지 HTTP 200 본문에서 “undetectable viral load”와 “will not transmit HIV through sex” 및 “Undetectable = Untransmittable” 문구를 확인했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.cdc.gov/hiv/treatment/index.html",
+          "title": "HIV Treatment",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Treatment"
+          },
+          "shortQuote": "undetectable viral load",
+          "quoteHash": "sha256:4b1689933e14d69c930d05b4d5ebfd8318e798e87888fb2a8e653be55e2f2100",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, 치료로 검출불가 바이러스 부하 가능 문구 확인.",
+          "independenceGroupId": "cdc-hiv-treatment-u-u",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC 치료 안내의 바이러스 부하 문구.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC HIV 치료 안내.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/hiv/treatment/index.html",
+          "title": "HIV Treatment",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Treatment"
+          },
+          "shortQuote": "will not transmit HIV through sex",
+          "quoteHash": "sha256:2f9759198ae1a41030327a4e19232f78626a66a2f770214997ac95f55738633d",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, 성관계 전파 문구 확인.",
+          "independenceGroupId": "cdc-hiv-treatment-u-u",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC 치료 안내의 U=U 문구.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC HIV 치료 안내.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/hiv/treatment/index.html",
+          "title": "HIV Treatment",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Treatment"
+          },
+          "shortQuote": "Undetectable = Untransmittable",
+          "quoteHash": "sha256:1b770b7d84443e1a2cb59699f6bd9f49acae12d71d0d87b5a07882e3207b7791",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, U=U 표기 확인.",
+          "independenceGroupId": "cdc-hiv-treatment-u-u",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC 치료 안내의 약어 표기.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC HIV 치료 안내.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "CDC 문구는 성관계 전파에 관한 설명이며, 주사기 공유 등 다른 전파경로나 치료 접근성을 포함하지 않는다.",
+          "response": "canonical에 “성관계” 범위를 명시하고 다른 경로·정책 결론은 저장하지 않았다.",
+          "errorsFound": 0,
+          "framingChecks": "낙인 완화나 반박 구도를 쓰지 않고 CDC가 제시한 조건부 전파 문장만 기록했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "조건(검출불가 바이러스 부하)과 범위(성관계 전파)를 함께 기록했다.",
+          "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "CDC의 기관 지위가 아니라 HTTP 200 본문 문구를 근거로 삼았다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "U=U 문구를 성관계 전파 범위에 한정하고, 주사기 공유나 임신 관련 추가 설명은 제외했다.",
+          "adoptedReason": "CDC 치료 페이지가 조건과 전파 범위를 직접 명시한다.",
+          "rejectedAlternatives": "HIV 일반 전파위험 전체, 개인 치료순응도 평가, 낙인 반박 문구는 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity",
+          "medical_or_financial_harm"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "CDC 문구는 검출불가 바이러스 부하 상태와 성관계 전파에 한정한다. 주사기 공유 등 다른 경로의 위험 감소 정도는 이 명제에 포함하지 않는다.",
+      "tags": [
+        "HIV",
+        "UU",
+        "CDC",
+        "치료",
+        "측정"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
     },
     {
       "certVersion": "2.1",
@@ -4689,6 +5043,173 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:3ae444edbb297bea65e9cd78",
+      "versionId": "ver:723a90e7542f5ec3",
+      "certHash": "sha256:8cd1cc3f9195278ebf0d06b1770bec838edcdff1f805fe625184faed338c816a",
+      "canonicalProposition": "King 등은 2008년 LGB 정신건강 체계적 문헌고찰·메타분석에서 28편(25개 연구), 이성애자 214,344명과 비이성애자 11,971명의 자료를 추출했고, LGB의 lifetime suicide attempt pooled RR을 2.47(CI 1.87, 3.28)로 보고했다",
+      "originalClaim": "LGB 정신건강 격차에 관한 메타분석 측정값.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "NCBI E-utilities PMC XML로 BMC Psychiatry systematic review/meta-analysis 원문을 가져와 연구 수, 표본 수, pooled risk ratio를 전사.",
+        "sample": "1966년 1월부터 2005년 4월까지 검색된 문헌 중 포함 기준을 충족한 28편(25개 연구), 이성애자 214,344명, 비이성애자 11,971명",
+        "aggregationBasis": "체계적 문헌고찰과 메타분석의 포함 연구 수, 추출 표본 수, lifetime suicide attempt pooled risk ratio",
+        "producer": "King M 등"
+      },
+      "sixW": {
+        "who": "King 등 연구진이 검토한 LGB 및 이성애자 비교 연구 대상자",
+        "when": "2008년 BMC Psychiatry 논문",
+        "where": "NCBI PMC full-text XML에 수록된 BMC Psychiatry 논문",
+        "what": "28편(25개 연구), 이성애자 214,344명, 비이성애자 11,971명, lifetime suicide attempt pooled RR 2.47(CI 1.87, 3.28)",
+        "how": "여러 데이터베이스와 회색문헌을 검색해 포함 연구를 선정하고 메타분석을 수행",
+        "why": [
+          {
+            "reason": "LGB 사람들이 정신질환·물질남용·자살·자살사고·고의적 자해 위험이 더 높은지 정량화하려는 목적이라고 논문이 밝혔다.",
+            "statedBy": "King 등"
+          }
+        ]
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "NCBI E-utilities PubMed 및 PMC XML HTTP 200에서 28(25 studies), 214,344, 11,971, pooled RR 2.47(CI 1.87, 3.28)를 verbatim 확인했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2533652",
+          "title": "A systematic review of mental disorder, suicide, and deliberate self harm in lesbian, gay and bisexual people",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Results"
+          },
+          "shortQuote": "28 (25 studies) met inclusion criteria",
+          "quoteHash": "sha256:a59c75e5b892445fad0a01387bfee714e49c356204132197ecd04a52050de147",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 포함 연구 수 확인.",
+          "independenceGroupId": "pmc2533652-king-lgb",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 King 등 메타분석의 포함 연구 수.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "BMC Psychiatry 체계적 문헌고찰·메타분석 원문 XML.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2533652",
+          "title": "A systematic review of mental disorder, suicide, and deliberate self harm in lesbian, gay and bisexual people",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Results"
+          },
+          "shortQuote": "214,344 heterosexual and 11,971 non heterosexual people",
+          "quoteHash": "sha256:2c4ea1e117aa23cfe9b8d43869bf2cabc650e02f11f96e479fddcc2ab351456a",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, 추출 표본 수 확인.",
+          "independenceGroupId": "pmc2533652-king-lgb",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 King 등 메타분석의 추출 표본 수.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "BMC Psychiatry 체계적 문헌고찰·메타분석 원문 XML.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2533652",
+          "title": "A systematic review of mental disorder, suicide, and deliberate self harm in lesbian, gay and bisexual people",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Results"
+          },
+          "shortQuote": "2.47 (CI 1.87, 3.28)",
+          "quoteHash": "sha256:9f99d7f6ab0f733659c3aa4c7c2797aa5077ea7dbce2cd57cf4f6f103bd65cc1",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L NCBI E-utilities PMC XML HTTP 200, lifetime suicide attempt pooled RR 확인.",
+          "independenceGroupId": "pmc2533652-king-lgb",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 King 등 메타분석의 pooled risk ratio.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "BMC Psychiatry 체계적 문헌고찰·메타분석 원문 XML.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "메타분석은 관찰연구들을 종합하므로 minority stress가 모든 정신건강 격차의 직접 원인이라는 결론을 단독으로 입증하지 않는다.",
+          "response": "canonical을 포함 연구 수, 표본 수, pooled RR 측정값으로 제한하고 원인론은 sixW.why의 논문 목적 진술에만 귀속했다.",
+          "errorsFound": 0,
+          "framingChecks": "LGB 집단 평가나 원인 단정을 제거하고 메타분석의 표본·위험비만 기록했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "비교군과 LGB/비이성애자 표본 수를 함께 제시해 상대 수치의 범위를 명확히 했다.",
+          "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "BMC Psychiatry 게재 사실보다 NCBI HTTP 200 원문 수치 확인을 기준으로 삼았다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "minority stress 관련 해석은 독립 결론으로 쓰지 않고, 정신건강 격차 메타분석의 측정 결과만 저장했다.",
+          "adoptedReason": "King 등 원문이 포함 연구 수, 표본 수, pooled RR과 CI를 직접 제시한다.",
+          "rejectedAlternatives": "정체성이 정신건강 문제의 원인이라는 표현, 사회정책 논증, 다른 명제와의 연결은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity",
+          "medical_or_financial_harm",
+          "scientific_contested"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "King 등 2008 메타분석의 포함 연구와 기간(1966년 1월~2005년 4월)에 한정한다. 관찰연구 종합 결과이며 minority stress 또는 성적 지향 자체의 인과효과를 별도로 식별한 기록이 아니다.",
+      "tags": [
+        "LGB",
+        "정신건강",
+        "메타분석",
+        "자살시도",
+        "측정"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
       "versionId": "ver:665020fbc261a02c",
       "certHash": "sha256:5bca190d6a96becc15d270559821c495ed5ee8fa5af6e2c214f4e185e4e3b714",
@@ -4929,6 +5450,192 @@
       ],
       "createdAt": "2026-06-16T00:00:00Z",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:24094c14f92b5c8fb482e57d",
+      "versionId": "ver:5da547549f83ee8a",
+      "certHash": "sha256:a5c1c9a303cd77fb6b18d4d827860c08fbd9d3da528da5bc7bb27de9a8b4acce",
+      "canonicalProposition": "CDC는 미국 2022년 신규 HIV 감염 추정치 31,800건 중 71%(22,500건), 미국 및 6개 영토·자유연합주 2022년 HIV 진단 37,981명 중 70%(26,749명)가 gay and bisexual men 범주였다고 보고했다",
+      "originalClaim": "미국 MSM/gay and bisexual men HIV 부담 수치.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "CDC HIV Data and Research fact page를 curl로 가져와 2022년 신규 감염 추정치와 진단 수치를 전사.",
+        "sample": "2022년 미국 신규 HIV 감염 추정치 및 미국·6개 영토·자유연합주의 HIV 진단자",
+        "aggregationBasis": "CDC가 제시한 범주별 수와 전체 대비 비율",
+        "producer": "U.S. Centers for Disease Control and Prevention"
+      },
+      "sixW": {
+        "who": "CDC가 분류한 gay and bisexual men 범주의 사람들",
+        "when": "2022년",
+        "where": "미국 및 CDC가 명시한 6개 영토·자유연합주",
+        "what": "신규 HIV 감염 추정치 31,800건 중 71%(22,500건), HIV 진단 37,981명 중 70%(26,749명)",
+        "how": "CDC HIV 감시·추정 자료를 범주별로 집계하여 fact page에 게시",
+        "why": []
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "CDC 페이지 curl HTTP 200 본문에서 31,800·71%·22,500 및 37,981·70%·26,749를 verbatim 확인했다. CDC가 생산한 공중보건 통계로 기록한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.cdc.gov/hiv/data-research/facts-stats/gay-bisexual-men.html",
+          "title": "HIV and Gay and Bisexual Men",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "New HIV infections"
+          },
+          "shortQuote": "31,800 estimated new HIV infections",
+          "quoteHash": "sha256:8188660ff5742eb2714fc7c291db58eaec2573a81b78a3776e67f1c6124ad740",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, 본문에서 신규 감염 전체 추정치 확인.",
+          "independenceGroupId": "cdc-msm-2022",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC fact page의 2022년 신규 감염 수치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "미국 CDC HIV 감시 통계.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/hiv/data-research/facts-stats/gay-bisexual-men.html",
+          "title": "HIV and Gay and Bisexual Men",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "New HIV infections"
+          },
+          "shortQuote": "71% (22,500) were among gay",
+          "quoteHash": "sha256:24135083caaee2ca2d79f74a37341df1a68e3c94fedabfd105a8b0636e71b9f1",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, 본문에서 신규 감염 범주 수치 확인.",
+          "independenceGroupId": "cdc-msm-2022",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC fact page의 2022년 신규 감염 범주 비율.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "미국 CDC HIV 감시 통계.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/hiv/data-research/facts-stats/gay-bisexual-men.html",
+          "title": "HIV and Gay and Bisexual Men",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "HIV diagnoses"
+          },
+          "shortQuote": "37,981 people who received an HIV diagnosis",
+          "quoteHash": "sha256:b36cff003d04b03af07298bcd05212d6a52d563e6653457e585df33819c9cb74",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, 본문에서 진단 전체 수치 확인.",
+          "independenceGroupId": "cdc-msm-2022",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC fact page의 2022년 진단 수치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "미국 CDC HIV 감시 통계.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/hiv/data-research/facts-stats/gay-bisexual-men.html",
+          "title": "HIV and Gay and Bisexual Men",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "HIV diagnoses"
+          },
+          "shortQuote": "70% (26,749) were among gay",
+          "quoteHash": "sha256:7189a36cbc35cb65d8528a8b5117a97034ef389e07741e156ef52468297a0307",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, 본문에서 진단 범주 수치 확인.",
+          "independenceGroupId": "cdc-msm-2022",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC fact page의 2022년 진단 범주 비율.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "미국 CDC HIV 감시 통계.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "CDC의 gay and bisexual men 범주는 감염경로·성행동·정체성 요소가 섞여 있을 수 있어 개인 수준 위험으로 해석하면 과잉 일반화가 된다.",
+          "response": "명제를 CDC 범주·연도·지역의 집계치로 제한하고 개인 또는 정체성의 원인 주장으로 확장하지 않았다.",
+          "errorsFound": 0,
+          "framingChecks": "행동 기반 역학 사실을 그대로 적고 정체성 비난, 반박 프레이밍, 다른 명제와의 연결을 제거했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "감염·진단 수치를 같은 출처에서 함께 기록하고 평가 문구를 넣지 않았다.",
+          "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "CDC 생산 통계이지만 권위 호소가 아니라 페이지 본문 HTTP 200 확인 수치에 의존했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "CDC fact page 본문에서 load-bearing 수치를 모두 확인했다. footnote의 주입약물 동시 보고 범위는 limitations에만 적었다.",
+          "adoptedReason": "CDC 페이지가 전체수·비율·범주별 수를 모두 직접 제공한다.",
+          "rejectedAlternatives": "성적 지향 자체가 원인이라는 문구, 위험성 논쟁 반박 문구, 인구학적 위협 해석은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity",
+          "medical_or_financial_harm"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "CDC 범주형 감시 통계로, 개인의 원인·위험을 말하지 않는다. CDC footnote는 남성 간 성접촉 및 주입약물 사용을 함께 보고한 사례가 범주에 포함될 수 있음을 밝힌다.",
+      "tags": [
+        "HIV",
+        "CDC",
+        "MSM",
+        "미국",
+        "역학",
+        "측정"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
     },
     {
       "certVersion": "2.1",
@@ -5397,6 +6104,334 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:efddfa77db78be598d007d7e",
+      "versionId": "ver:ef8a21b927148cce",
+      "certHash": "sha256:fe5baf64fc345652e47617fcecb1f210329973965c6608a77de67dbd26a57d8f",
+      "canonicalProposition": "CDC HIV Nexus는 처방대로 사용할 때 경구·주사 PrEP가 성관계 HIV 감염 위험을 약 99% 낮추고, 경구 PrEP가 주사 약물 사용 관련 HIV 감염 위험을 최소 74% 낮춘다고 설명했다",
+      "originalClaim": "PrEP HIV 예방효과 수치.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "CDC HIV Nexus PrEP clinical guidance page를 curl로 가져와 성관계 및 주사 약물 사용 관련 효과 추정치를 전사.",
+        "sample": "CDC HIV Nexus가 안내하는 처방대로 복용 또는 투여되는 PrEP 사용 상황",
+        "aggregationBasis": "CDC 안내문에 제시된 위험 감소 추정치",
+        "producer": "U.S. Centers for Disease Control and Prevention"
+      },
+      "sixW": {
+        "who": "처방대로 경구 또는 주사 PrEP를 사용하는 사람",
+        "when": "CDC HIV Nexus PrEP 안내 페이지의 2026-06-19 확인 시점",
+        "where": "CDC HIV Nexus Clinical Guidance for PrEP",
+        "what": "성관계 HIV 위험 약 99% 감소, 주사 약물 사용 관련 HIV 위험 최소 74% 감소",
+        "how": "CDC가 PrEP 약제 사용을 조건으로 예방효과 추정치를 안내",
+        "why": []
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "CDC HIV Nexus page HTTP 200 본문에서 about 99%와 at least 74%를 verbatim 확인했다. 처방대로 사용할 때라는 조건을 canonical에 포함했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.cdc.gov/hivnexus/hcp/prep/index.html",
+          "title": "Clinical Guidance for PrEP",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Effectiveness"
+          },
+          "shortQuote": "reduce the risk of getting HIV from sex by about 99%",
+          "quoteHash": "sha256:f5aab3a37ca6b0563529fcc81623de1770cd9094e0a9f35eaf87098421c7de36",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HIV Nexus HTML HTTP 200, 성관계 관련 PrEP 효과 수치 확인.",
+          "independenceGroupId": "cdc-prep-guidance",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC HIV Nexus 지침의 성관계 관련 효과 추정치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC 임상 지침.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/hivnexus/hcp/prep/index.html",
+          "title": "Clinical Guidance for PrEP",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Effectiveness"
+          },
+          "shortQuote": "by at least 74%",
+          "quoteHash": "sha256:589150729f03c0399afac1369db58ab9223172f177603e35658adc14dfc97344",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HIV Nexus HTML HTTP 200, 주사 약물 사용 관련 PrEP 효과 수치 확인.",
+          "independenceGroupId": "cdc-prep-guidance",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC HIV Nexus 지침의 주사 약물 사용 관련 효과 추정치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC 임상 지침.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "PrEP 효과는 처방대로 사용한다는 조건과 노출 유형에 따라 달라지며, 모든 HIV 노출 상황의 보편 수치가 아니다.",
+          "response": "canonical에 처방대로 사용 조건과 노출 유형별 수치를 함께 적었다.",
+          "errorsFound": 0,
+          "framingChecks": "예방효과 수치를 행동 평가나 논쟁 반박 없이 임상 안내 범위로만 표현했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "성관계와 주사 약물 사용 관련 수치를 둘 다 기록해 선택적 과장을 줄였다.",
+          "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "CDC 지침 권위가 아니라 HTTP 200 본문 수치 확인에 근거했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "기존 404 CDC URL은 사용하지 않고 fetch 가능한 HIV Nexus clinical guidance로 대체했다.",
+          "adoptedReason": "CDC HIV Nexus page가 99%와 74% 수치를 같은 문단에서 직접 제시한다.",
+          "rejectedAlternatives": "PrEP가 모든 상황에서 완전 보호한다는 문구, 복용자 평가, 차별적 프레이밍은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity",
+          "medical_or_financial_harm"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "수치는 CDC가 “처방대로 사용할 때”라고 제한한 예방효과 추정치다. 복용·투여 지속성, 노출 유형, 약제별 적응증 차이는 별도 평가가 필요하다.",
+      "tags": [
+        "PrEP",
+        "HIV",
+        "CDC",
+        "예방효과",
+        "측정"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:3f30934e8dae7bc3452ab43a",
+      "versionId": "ver:b51886c03b44025c",
+      "certHash": "sha256:17c510230458c1e88f6f016ba559681205c31901daab0f877b604b10627990b1",
+      "canonicalProposition": "Kelley 등은 2017년 논문에서 HIV 음성 MSM 중 CRAI 참여자 41명과 항문성교 경험이 없는 대조군 21명을 비교했고, 직장 노출의 HIV 전파확률 모델 추정치를 질 노출 대비 약 18배·음경 노출 대비 약 50배로 제시했다",
+      "originalClaim": "직장 점막 HIV 감수성 및 노출별 전파확률 모델 추정치.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "Nature Mucosal Immunology HTML 논문을 curl로 가져와 초록·서론의 표본 수와 전파확률 모델 추정 배율을 전사.",
+        "sample": "HIV 음성 MSM CRAI 참여자 41명 및 항문성교 경험이 없는 대조군 21명; 논문이 인용한 노출별 HIV 전파확률 모델",
+        "aggregationBasis": "논문 표본 수 및 모델 기반 노출별 상대 전파확률 배율",
+        "producer": "Kelley CF 등"
+      },
+      "sixW": {
+        "who": "Kelley 등 연구진, HIV 음성 MSM CRAI 참여자 41명, 항문성교 경험이 없는 대조군 21명",
+        "when": "2017년 논문 게시",
+        "where": "Mucosal Immunology/Nature 논문",
+        "what": "41명 대 21명의 직장 점막 비교 및 직장 노출 HIV 전파확률의 약 18배·약 50배 모델 추정",
+        "how": "대상자를 모집해 직장 점막 면역·미생물군 특성을 비교하고 기존 전파확률 모델 추정치를 서론에서 인용",
+        "why": [
+          {
+            "reason": "CRAI 참여 MSM의 직장 점막 면역환경을 특성화하기 위한 연구로 제시됐다.",
+            "statedBy": "Kelley CF 등"
+          }
+        ]
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "Nature HTML curl HTTP 200 본문에서 41명·21명 및 약 18배·약 50배 문구를 확인했다. 배율은 해당 논문이 설명한 모델 추정치로 한정했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.nature.com/articles/mi201697",
+          "title": "The rectal mucosa and condomless receptive anal intercourse in HIV-negative MSM",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Abstract"
+          },
+          "shortQuote": "Forty-one HIV-negative MSM engaging in CRAI",
+          "quoteHash": "sha256:b86b3637cbe46dbb34d254ba14ebff1c49b8541645fe98bf68a79f47ae05d704",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L Nature HTML HTTP 200, 초록에서 CRAI 참여자 수 확인.",
+          "independenceGroupId": "nature-mi201697",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 논문의 표본 수.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Mucosal Immunology 게재 연구논문.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://www.nature.com/articles/mi201697",
+          "title": "The rectal mucosa and condomless receptive anal intercourse in HIV-negative MSM",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Abstract"
+          },
+          "shortQuote": "21 men who never engaged",
+          "quoteHash": "sha256:851152404f5707b707faf87bd2e16fc0709833174694dd918d3d772513fd9be6",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L Nature HTML HTTP 200, 초록에서 대조군 수 확인.",
+          "independenceGroupId": "nature-mi201697",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 논문의 대조군 수.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Mucosal Immunology 게재 연구논문.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://www.nature.com/articles/mi201697",
+          "title": "The rectal mucosa and condomless receptive anal intercourse in HIV-negative MSM",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Introduction"
+          },
+          "shortQuote": "∼18-fold increase",
+          "quoteHash": "sha256:4539b9e10818ae077eeac1690c1699ff8522f08ce9639ffb59f6d8071438dc32",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L Nature HTML HTTP 200, 서론에서 직장 대 질 노출 배율 확인.",
+          "independenceGroupId": "nature-mi201697",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 논문의 전파확률 모델 추정 배율.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Mucosal Immunology 게재 연구논문.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://www.nature.com/articles/mi201697",
+          "title": "The rectal mucosa and condomless receptive anal intercourse in HIV-negative MSM",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Introduction"
+          },
+          "shortQuote": "approximate 50-fold increase",
+          "quoteHash": "sha256:74bcb9943ca2b3f58d4a12d4f593e0390e56ccbd8a43f81bd30ca1027a83cc82",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L Nature HTML HTTP 200, 서론에서 직장 대 음경 노출 배율 확인.",
+          "independenceGroupId": "nature-mi201697",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 논문의 전파확률 모델 추정 배율.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Mucosal Immunology 게재 연구논문.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "논문의 배율은 모델 추정과 인용 문헌에 기반하며, 모든 성행동이나 개인 위험을 직접 측정한 값이 아니다.",
+          "response": "canonical에 모델 추정치임을 명시하고 표본 비교와 노출별 상대 배율로 범위를 제한했다.",
+          "errorsFound": 0,
+          "framingChecks": "감염 위험을 정체성 판단이나 반박 구도 없이 점막 노출 및 모델 추정치로만 표현했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "표본 수와 모델 배율을 함께 기록하고 한쪽 해석으로 확장하지 않았다.",
+          "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "Nature 게재 여부가 아니라 HTTP 200 본문에서 직접 확인한 문구를 근거로 삼았다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "직장 점막 관련 인과 결론을 일반화하지 않고 연구 표본과 모델 추정 배율만 저장했다.",
+          "adoptedReason": "논문 초록·서론이 표본 수와 배율을 명시한다.",
+          "rejectedAlternatives": "특정 정체성 자체가 취약하다는 표현, 성행동 평가, 다른 명제의 입증·반박 연결은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity",
+          "medical_or_financial_harm",
+          "scientific_contested"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "배율은 Kelley 등 논문이 설명한 기존 모델 추정치이며 개인별 전파확률이 아니다. CRAI 참여 MSM과 대조군 표본은 특정 연구 표본으로 일반 인구 전체를 대표하지 않는다.",
+      "tags": [
+        "HIV",
+        "직장점막",
+        "MSM",
+        "전파확률",
+        "측정"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:a39e2dc6072bbda67817ead7",
       "versionId": "ver:d2c8b826bd96a024",
       "certHash": "sha256:5814de050149ecffeaa999a10d0f51b21fd6e107df341c1dd4123fa30198dde7",
@@ -5554,6 +6589,171 @@
       ],
       "createdAt": "2026-06-16",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:3e54ea51d8411beb551b399c",
+      "versionId": "ver:359e75664c834789",
+      "certHash": "sha256:1408e35b1b5601b7e8cb8afcc5ad573075baad610f2a1afc812872cf20223805",
+      "canonicalProposition": "Bailey와 Pillard는 1991년 남성 동성애 프로밴드 친족 표본에서 평가 가능한 친족 중 일란성 공동쌍생아 52%(29/56), 이란성 공동쌍생아 22%(12/54), 입양 형제 11%(6/57)가 동성애자로 평가됐다고 보고했다",
+      "originalClaim": "성적 지향 쌍생아 일치율에 관한 측정값.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "PubMed E-utilities로 가져온 Bailey·Pillard 1991 논문 초록의 친족별 평가 결과를 전사.",
+        "sample": "동성애 남성 프로밴드의 평가 가능한 일란성 공동쌍생아 56명, 이란성 공동쌍생아 54명, 입양 형제 57명",
+        "aggregationBasis": "친족 유형별 동성애자로 평가된 수/평가 가능 수 및 비율",
+        "producer": "Bailey JM, Pillard RC"
+      },
+      "sixW": {
+        "who": "Bailey JM, Pillard RC 및 동성애 남성 프로밴드의 친족 표본",
+        "when": "1991년 논문 초록에 보고된 측정",
+        "where": "PubMed 수록 Archives of General Psychiatry 논문 초록",
+        "what": "일란성 공동쌍생아 52%(29/56), 이란성 공동쌍생아 22%(12/54), 입양 형제 11%(6/57)의 동성애자 평가 비율",
+        "how": "homophile publications를 통해 프로밴드를 모집하고 친족의 성적 지향을 직접 또는 프로밴드 보고로 평가",
+        "why": [
+          {
+            "reason": "남성 성적 지향의 유전 연구라고 논문 제목과 초록이 제시했다.",
+            "statedBy": "Bailey JM, Pillard RC"
+          }
+        ]
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "PubMed E-utilities HTTP 200 응답에서 52%(29/56), 22%(12/54), 11%(6/57)를 verbatim 확인했다. 단, 초록 기반이고 모집 방식이 대표표본이 아니므로 일반화는 제한했다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=1845227&retmode=xml",
+          "title": "A genetic study of male sexual orientation",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Abstract"
+          },
+          "shortQuote": "52% (29/56) of monozygotic cotwins",
+          "quoteHash": "sha256:d4e327a835f0214154637ef667f8bc250d567bdc3fd1d65041599233634d5e5e",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L PubMed E-utilities HTTP 200, abstract XML에서 수치 확인.",
+          "independenceGroupId": "pubmed-1845227",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 논문 초록의 일란성 공동쌍생아 수치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "PubMed 수록 정신의학 논문 초록.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=1845227&retmode=xml",
+          "title": "A genetic study of male sexual orientation",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Abstract"
+          },
+          "shortQuote": "22% (12/54) of dizygotic cotwins",
+          "quoteHash": "sha256:de84fed44c56e0573bc45fee09354742d6a2c42d2d9d962074ae6cfb38021fc5",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L PubMed E-utilities HTTP 200, abstract XML에서 수치 확인.",
+          "independenceGroupId": "pubmed-1845227",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 논문 초록의 이란성 공동쌍생아 수치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "PubMed 수록 정신의학 논문 초록.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=1845227&retmode=xml",
+          "title": "A genetic study of male sexual orientation",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Abstract"
+          },
+          "shortQuote": "11% (6/57) of adoptive brothers",
+          "quoteHash": "sha256:83860828eda89ac073da3691fbb0b3de0b337628254fcab216e7f3ce709335c0",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "api",
+          "retrievalLimitations": "curl -L PubMed E-utilities HTTP 200, abstract XML에서 수치 확인.",
+          "independenceGroupId": "pubmed-1845227",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 논문 초록의 입양 형제 수치.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "PubMed 수록 정신의학 논문 초록.",
+          "sourceType": "aggregator",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "쌍생아 표본은 homophile publications를 통한 모집이라 모집 편향이 있을 수 있고, 일치율은 성적 지향의 원인을 단정하지 않는다.",
+          "response": "명제를 친족 유형별 보고 비율로 제한하고 유전·환경 원인 결론을 저장하지 않았다.",
+          "errorsFound": 0,
+          "framingChecks": "유전 결정론, 정체성 평가, 사회적 의미 부여 문구를 제거하고 표본·분모·분자를 함께 표기했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "쌍생아 일치율을 원인론으로 확대하지 않고 표본 제한을 limitations에 명시했다.",
+          "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "PubMed 색인 권위가 아니라 HTTP 200으로 받은 초록의 수치 문자열을 근거로 삼았다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "제2조에 따라 성적 지향에 대한 해석이나 논쟁적 결론을 배제하고 논문 초록의 측정값만 남겼다.",
+          "adoptedReason": "세 친족 유형의 분모·분자가 동일 초록에서 직접 확인된다.",
+          "rejectedAlternatives": "성적 지향의 원인이 유전이라는 결론, 집단 일반화, 정체성 가치판단은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity",
+          "scientific_contested"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "Bailey·Pillard 1991 초록의 평가 가능 친족에 대한 비율만 기록한다. 모집은 homophile publications 기반이며 대표표본이 아니고, 측정값은 유전·환경 원인 또는 개인 예측으로 확장되지 않는다.",
+      "tags": [
+        "성적지향",
+        "쌍생아연구",
+        "측정",
+        "민감주제"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
     },
     {
       "certVersion": "2.1",
@@ -5715,18 +6915,204 @@
       ],
       "createdAt": "2026-06-16T00:00:00Z",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:3a2ae5d9219c9be87de14ae7",
+      "versionId": "ver:f9926fe061667e6a",
+      "certHash": "sha256:5aace2078e01858469c62a649db72c60236263c7648a92cfc20105b514677950",
+      "canonicalProposition": "CDC 2021 STI Treatment Guidelines는 검토 연구들에서 WSWM의 STI 비율이 WSW보다 높고 WSM과 비슷했으며, WSW의 53%~97%가 과거 남성 성파트너, 5%~28%가 전년도 남성 성파트너를 보고했다고 정리했다",
+      "originalClaim": "WSW·WSWM·WSM 관련 STI 상대위험과 파트너 이력 수치.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "CDC STI Treatment Guidelines WSW 섹션을 curl로 가져와 검토 연구 요약 문장과 범위 수치를 전사.",
+        "sample": "CDC가 2021 STI Treatment Guidelines에서 인용한 WSW, WSWM, WSM 관련 연구들",
+        "aggregationBasis": "지침 내 문헌검토 요약 및 보고 범위",
+        "producer": "U.S. Centers for Disease Control and Prevention"
+      },
+      "sixW": {
+        "who": "CDC STI Treatment Guidelines가 검토한 WSW, WSWM, WSM 연구 대상자",
+        "when": "2021년 CDC STI Treatment Guidelines",
+        "where": "CDC Sexually Transmitted Infections Treatment Guidelines WSW 섹션",
+        "what": "WSWM은 WSW보다 STI 비율이 높고 WSM과 비슷하며, WSW 중 53%~97%는 과거 남성 파트너, 5%~28%는 전년도 남성 파트너를 보고",
+        "how": "CDC가 기존 연구 결과를 지침 섹션에서 요약",
+        "why": []
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "CDC 지침 HTML HTTP 200 본문에서 WSWM 상대 STI 비율 및 53%~97%, 5%~28% 범위를 확인했다. 지침의 문헌요약이므로 원 연구별 세부 추정은 이 기록에 포함하지 않았다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.cdc.gov/std/treatment-guidelines/wsw.htm",
+          "title": "Women Who Have Sex with Women (WSW)",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "STI Treatment Guidelines"
+          },
+          "shortQuote": "WSWM experience higher rates of STIs",
+          "quoteHash": "sha256:00c48577c16eddd60c863dd8beb8886cb0b9a686e99e5bd99a0883407927227a",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, WSWM 상대 STI 비율 문구 확인.",
+          "independenceGroupId": "cdc-wsw-guidelines",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC 지침의 상대 비율 요약.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC STI 진료지침.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/std/treatment-guidelines/wsw.htm",
+          "title": "Women Who Have Sex with Women (WSW)",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "STI Treatment Guidelines"
+          },
+          "shortQuote": "rates comparable with women who have sex with men",
+          "quoteHash": "sha256:766a7f46e157beec4dfc5486af826a929f0a6c85b1d8d6ba4fdd2a75eecc767b",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, WSM 비교 문구 확인.",
+          "independenceGroupId": "cdc-wsw-guidelines",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC 지침의 비교 집단 요약.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC STI 진료지침.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/std/treatment-guidelines/wsw.htm",
+          "title": "Women Who Have Sex with Women (WSW)",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "STI Treatment Guidelines"
+          },
+          "shortQuote": "53%–97%",
+          "quoteHash": "sha256:0540790160d3096a0f151c489ac233337a34532e2d6289fe805b9c49610c13be",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, 과거 남성 파트너 범위 확인.",
+          "independenceGroupId": "cdc-wsw-guidelines",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC 지침의 과거 남성 파트너 범위.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC STI 진료지침.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.cdc.gov/std/treatment-guidelines/wsw.htm",
+          "title": "Women Who Have Sex with Women (WSW)",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "STI Treatment Guidelines"
+          },
+          "shortQuote": "5%–28%",
+          "quoteHash": "sha256:9f84c278ab9ea792a6f2256c8a3b5bc4dec59092389fe88bc1f4c1e6dc34fab4",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L CDC HTML HTTP 200, 전년도 남성 파트너 범위 확인.",
+          "independenceGroupId": "cdc-wsw-guidelines",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 CDC 지침의 전년도 남성 파트너 범위.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "CDC STI 진료지침.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "WSW/WSWM 용어와 STI 비율은 연구 설계·파트너 이력·검사 접근성에 영향을 받으므로 정체성 자체의 위험으로 해석하면 부정확하다.",
+          "response": "CDC 지침의 문헌요약과 파트너 이력 범위만 기록하고 원인·정체성 평가를 배제했다.",
+          "errorsFound": 0,
+          "framingChecks": "행동·파트너 이력 기반 역학 문장을 유지하고 반박 프레이밍 없이 상대 비율과 범위만 적었다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "WSW, WSWM, WSM 비교를 지침 표현 범위 안에서 함께 기록했다.",
+          "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "CDC 지침 권위가 아니라 fetch 가능한 본문 문구와 수치를 근거로 삼았다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "CDC WSW 섹션의 상대 STI 비율과 파트너 이력 수치를 전사했다. 개인 또는 정체성 위험으로 확장하지 않았다.",
+          "adoptedReason": "CDC 지침 본문이 비교 문장과 범위 수치를 직접 제공한다.",
+          "rejectedAlternatives": "“성적 지향이 원인이 아니다”식 반박 구도와 집단 평가 표현은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity",
+          "medical_or_financial_harm"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "CDC 지침의 문헌요약이며 원 연구별 표본, STI 종류, 검사 방식 차이는 이 기록에 포함하지 않는다. WSW·WSWM·WSM 범주는 행동과 파트너 이력에 관한 연구 범주로만 사용된다.",
+      "tags": [
+        "STI",
+        "WSW",
+        "WSWM",
+        "CDC",
+        "진료지침",
+        "측정"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
     }
   ],
   "meta": {
-    "total": 36,
+    "total": 44,
     "dataVersion": "2026.07.02",
     "certVersion": "2.1",
     "generatedAt": "2026-07-02",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalEntries": 36,
-      "totalAssessed": 35,
+      "totalEntries": 44,
+      "totalAssessed": 43,
       "openCorrectionRequests": 0
     },
     "propositions": [
@@ -5747,6 +7133,10 @@
         "path": "/api/v2/propositions/stmt-38c8e4c00c63fa0fc9b00eb3.json"
       },
       {
+        "propositionId": "stmt:5985381793fd401f7fc3052c",
+        "path": "/api/v2/propositions/stmt-5985381793fd401f7fc3052c.json"
+      },
+      {
         "propositionId": "stmt:22abb3226ba88d6589e75013",
         "path": "/api/v2/propositions/stmt-22abb3226ba88d6589e75013.json"
       },
@@ -5757,6 +7147,10 @@
       {
         "propositionId": "stmt:b18e2813819c4fb0e23830f6",
         "path": "/api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json"
+      },
+      {
+        "propositionId": "stmt:4b794b8163eb2161d4a9b949",
+        "path": "/api/v2/propositions/stmt-4b794b8163eb2161d4a9b949.json"
       },
       {
         "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
@@ -5847,8 +7241,16 @@
         "path": "/api/v2/propositions/stmt-5525ea7692e7f4eea17971f5.json"
       },
       {
+        "propositionId": "stmt:3ae444edbb297bea65e9cd78",
+        "path": "/api/v2/propositions/stmt-3ae444edbb297bea65e9cd78.json"
+      },
+      {
         "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
         "path": "/api/v2/propositions/stmt-4f96ea07a89511c2ea0a86a3.json"
+      },
+      {
+        "propositionId": "stmt:24094c14f92b5c8fb482e57d",
+        "path": "/api/v2/propositions/stmt-24094c14f92b5c8fb482e57d.json"
       },
       {
         "propositionId": "stmt:c44501dcb97869b23fbe8942",
@@ -5867,12 +7269,28 @@
         "path": "/api/v2/propositions/stmt-40340515225f7adf44e242f3.json"
       },
       {
+        "propositionId": "stmt:efddfa77db78be598d007d7e",
+        "path": "/api/v2/propositions/stmt-efddfa77db78be598d007d7e.json"
+      },
+      {
+        "propositionId": "stmt:3f30934e8dae7bc3452ab43a",
+        "path": "/api/v2/propositions/stmt-3f30934e8dae7bc3452ab43a.json"
+      },
+      {
         "propositionId": "stmt:a39e2dc6072bbda67817ead7",
         "path": "/api/v2/propositions/stmt-a39e2dc6072bbda67817ead7.json"
       },
       {
+        "propositionId": "stmt:3e54ea51d8411beb551b399c",
+        "path": "/api/v2/propositions/stmt-3e54ea51d8411beb551b399c.json"
+      },
+      {
         "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
         "path": "/api/v2/propositions/stmt-b9a4dcf237affc17c1a51fe6.json"
+      },
+      {
+        "propositionId": "stmt:3a2ae5d9219c9be87de14ae7",
+        "path": "/api/v2/propositions/stmt-3a2ae5d9219c9be87de14ae7.json"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-02",
-    "total": 36,
+    "total": 44,
     "note": "Compact manifest for client-side filtering; fetch full records at /api/v2/propositions/{dashId}.json"
   },
   "records": [
@@ -601,6 +601,109 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "propositionId": "stmt:24094c14f92b5c8fb482e57d",
+      "path": "/api/v2/propositions/stmt-24094c14f92b5c8fb482e57d.json",
+      "canonical": "CDC는 미국 2022년 신규 HIV 감염 추정치 31,800건 중 71%(22,500건), 미국 및 6개 영토·자유연합주 2022년 HIV 진단 37,981명 중 70%(26,749명)가 gay and bisexual men 범주였다고 보고했다",
+      "tags": [
+        "미국",
+        "역학",
+        "측정",
+        "CDC",
+        "HIV",
+        "MSM"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:3a2ae5d9219c9be87de14ae7",
+      "path": "/api/v2/propositions/stmt-3a2ae5d9219c9be87de14ae7.json",
+      "canonical": "CDC 2021 STI Treatment Guidelines는 검토 연구들에서 WSWM의 STI 비율이 WSW보다 높고 WSM과 비슷했으며, WSW의 53%~97%가 과거 남성 성파트너, 5%~28%가 전년도 남성 성파트너를 보고했다고 정리했다",
+      "tags": [
+        "진료지침",
+        "측정",
+        "CDC",
+        "STI",
+        "WSW",
+        "WSWM"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:3ae444edbb297bea65e9cd78",
+      "path": "/api/v2/propositions/stmt-3ae444edbb297bea65e9cd78.json",
+      "canonical": "King 등은 2008년 LGB 정신건강 체계적 문헌고찰·메타분석에서 28편(25개 연구), 이성애자 214,344명과 비이성애자 11,971명의 자료를 추출했고, LGB의 lifetime suicide attempt pooled RR을 2.47(CI 1.87, 3.28)로 보고했다",
+      "tags": [
+        "메타분석",
+        "자살시도",
+        "정신건강",
+        "측정",
+        "LGB"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:3e54ea51d8411beb551b399c",
+      "path": "/api/v2/propositions/stmt-3e54ea51d8411beb551b399c.json",
+      "canonical": "Bailey와 Pillard는 1991년 남성 동성애 프로밴드 친족 표본에서 평가 가능한 친족 중 일란성 공동쌍생아 52%(29/56), 이란성 공동쌍생아 22%(12/54), 입양 형제 11%(6/57)가 동성애자로 평가됐다고 보고했다",
+      "tags": [
+        "민감주제",
+        "성적지향",
+        "쌍생아연구",
+        "측정"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:3f30934e8dae7bc3452ab43a",
+      "path": "/api/v2/propositions/stmt-3f30934e8dae7bc3452ab43a.json",
+      "canonical": "Kelley 등은 2017년 논문에서 HIV 음성 MSM 중 CRAI 참여자 41명과 항문성교 경험이 없는 대조군 21명을 비교했고, 직장 노출의 HIV 전파확률 모델 추정치를 질 노출 대비 약 18배·음경 노출 대비 약 50배로 제시했다",
+      "tags": [
+        "전파확률",
+        "직장점막",
+        "측정",
+        "HIV",
+        "MSM"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:4b794b8163eb2161d4a9b949",
+      "path": "/api/v2/propositions/stmt-4b794b8163eb2161d4a9b949.json",
+      "canonical": "CDC는 HIV 치료로 바이러스 부하가 검출불가 상태가 되면 성관계를 통한 HIV 전파가 발생하지 않는다고 설명하며, 이를 Undetectable = Untransmittable로 표기했다",
+      "tags": [
+        "측정",
+        "치료",
+        "CDC",
+        "HIV",
+        "UU"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
       "propositionId": "stmt:5525ea7692e7f4eea17971f5",
       "path": "/api/v2/propositions/stmt-5525ea7692e7f4eea17971f5.json",
       "canonical": "2026년 6월 국내 증시에서 신용거래융자 잔고는 6월 17일 37조8005억 원으로 집계됐고, 6월 9일 하루 반대매매(강제청산) 금액은 1,698억 원이었으며, 코스피는 6월 18일 사상 처음으로 종가 9,063.84로 9,000선을 돌파했다",
@@ -614,6 +717,40 @@
       ],
       "claimNature": "measurement",
       "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:5985381793fd401f7fc3052c",
+      "path": "/api/v2/propositions/stmt-5985381793fd401f7fc3052c.json",
+      "canonical": "Ryan 등은 245명의 LGBT White·Latino 21~25세 청년 단면연구에서 부모 주도 SOCE와 외부 전환개입 동시 보고 집단의 lifetime suicide attempt 비율을 62.8%(무 SOCE 22.0%)로 보고했고, SOCE 효과성 근거 부족을 인용했다",
+      "tags": [
+        "자살시도",
+        "전환치료",
+        "정신건강",
+        "측정",
+        "SOCE"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:efddfa77db78be598d007d7e",
+      "path": "/api/v2/propositions/stmt-efddfa77db78be598d007d7e.json",
+      "canonical": "CDC HIV Nexus는 처방대로 사용할 때 경구·주사 PrEP가 성관계 HIV 감염 위험을 약 99% 낮추고, 경구 PrEP가 주사 약물 사용 관련 HIV 감염 위험을 최소 74% 낮춘다고 설명했다",
+      "tags": [
+        "예방효과",
+        "측정",
+        "CDC",
+        "HIV",
+        "PrEP"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "fully_reliable",
       "status": "active",
       "asOfDate": "2026-06-19",
       "updatedAt": "2026-06-19"

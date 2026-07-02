@@ -1,0 +1,191 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:3f30934e8dae7bc3452ab43a",
+  "versionId": "ver:b51886c03b44025c",
+  "certHash": "sha256:17c510230458c1e88f6f016ba559681205c31901daab0f877b604b10627990b1",
+  "canonicalProposition": "Kelley 등은 2017년 논문에서 HIV 음성 MSM 중 CRAI 참여자 41명과 항문성교 경험이 없는 대조군 21명을 비교했고, 직장 노출의 HIV 전파확률 모델 추정치를 질 노출 대비 약 18배·음경 노출 대비 약 50배로 제시했다",
+  "originalClaim": "직장 점막 HIV 감수성 및 노출별 전파확률 모델 추정치.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "Nature Mucosal Immunology HTML 논문을 curl로 가져와 초록·서론의 표본 수와 전파확률 모델 추정 배율을 전사.",
+    "sample": "HIV 음성 MSM CRAI 참여자 41명 및 항문성교 경험이 없는 대조군 21명; 논문이 인용한 노출별 HIV 전파확률 모델",
+    "aggregationBasis": "논문 표본 수 및 모델 기반 노출별 상대 전파확률 배율",
+    "producer": "Kelley CF 등"
+  },
+  "sixW": {
+    "who": "Kelley 등 연구진, HIV 음성 MSM CRAI 참여자 41명, 항문성교 경험이 없는 대조군 21명",
+    "when": "2017년 논문 게시",
+    "where": "Mucosal Immunology/Nature 논문",
+    "what": "41명 대 21명의 직장 점막 비교 및 직장 노출 HIV 전파확률의 약 18배·약 50배 모델 추정",
+    "how": "대상자를 모집해 직장 점막 면역·미생물군 특성을 비교하고 기존 전파확률 모델 추정치를 서론에서 인용",
+    "why": [
+      {
+        "reason": "CRAI 참여 MSM의 직장 점막 면역환경을 특성화하기 위한 연구로 제시됐다.",
+        "statedBy": "Kelley CF 등"
+      }
+    ]
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "Nature HTML curl HTTP 200 본문에서 41명·21명 및 약 18배·약 50배 문구를 확인했다. 배율은 해당 논문이 설명한 모델 추정치로 한정했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.nature.com/articles/mi201697",
+      "title": "The rectal mucosa and condomless receptive anal intercourse in HIV-negative MSM",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Abstract"
+      },
+      "shortQuote": "Forty-one HIV-negative MSM engaging in CRAI",
+      "quoteHash": "sha256:b86b3637cbe46dbb34d254ba14ebff1c49b8541645fe98bf68a79f47ae05d704",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L Nature HTML HTTP 200, 초록에서 CRAI 참여자 수 확인.",
+      "independenceGroupId": "nature-mi201697",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 논문의 표본 수.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Mucosal Immunology 게재 연구논문.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/mi201697",
+      "title": "The rectal mucosa and condomless receptive anal intercourse in HIV-negative MSM",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Abstract"
+      },
+      "shortQuote": "21 men who never engaged",
+      "quoteHash": "sha256:851152404f5707b707faf87bd2e16fc0709833174694dd918d3d772513fd9be6",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L Nature HTML HTTP 200, 초록에서 대조군 수 확인.",
+      "independenceGroupId": "nature-mi201697",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 논문의 대조군 수.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Mucosal Immunology 게재 연구논문.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/mi201697",
+      "title": "The rectal mucosa and condomless receptive anal intercourse in HIV-negative MSM",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Introduction"
+      },
+      "shortQuote": "∼18-fold increase",
+      "quoteHash": "sha256:4539b9e10818ae077eeac1690c1699ff8522f08ce9639ffb59f6d8071438dc32",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L Nature HTML HTTP 200, 서론에서 직장 대 질 노출 배율 확인.",
+      "independenceGroupId": "nature-mi201697",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 논문의 전파확률 모델 추정 배율.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Mucosal Immunology 게재 연구논문.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/mi201697",
+      "title": "The rectal mucosa and condomless receptive anal intercourse in HIV-negative MSM",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Introduction"
+      },
+      "shortQuote": "approximate 50-fold increase",
+      "quoteHash": "sha256:74bcb9943ca2b3f58d4a12d4f593e0390e56ccbd8a43f81bd30ca1027a83cc82",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L Nature HTML HTTP 200, 서론에서 직장 대 음경 노출 배율 확인.",
+      "independenceGroupId": "nature-mi201697",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 논문의 전파확률 모델 추정 배율.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Mucosal Immunology 게재 연구논문.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "논문의 배율은 모델 추정과 인용 문헌에 기반하며, 모든 성행동이나 개인 위험을 직접 측정한 값이 아니다.",
+      "response": "canonical에 모델 추정치임을 명시하고 표본 비교와 노출별 상대 배율로 범위를 제한했다.",
+      "errorsFound": 0,
+      "framingChecks": "감염 위험을 정체성 판단이나 반박 구도 없이 점막 노출 및 모델 추정치로만 표현했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "표본 수와 모델 배율을 함께 기록하고 한쪽 해석으로 확장하지 않았다.",
+      "result": "측정 범위와 한계를 함께 적고, 위험·우월·원인 단정으로 확장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "Nature 게재 여부가 아니라 HTTP 200 본문에서 직접 확인한 문구를 근거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "직장 점막 관련 인과 결론을 일반화하지 않고 연구 표본과 모델 추정 배율만 저장했다.",
+      "adoptedReason": "논문 초록·서론이 표본 수와 배율을 명시한다.",
+      "rejectedAlternatives": "특정 정체성 자체가 취약하다는 표현, 성행동 평가, 다른 명제의 입증·반박 연결은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity",
+      "medical_or_financial_harm",
+      "scientific_contested"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 기록은 특정 집단 전체에 대한 평가가 아니라 명시된 표본·기간·측정방법에 한정된 측정값만 보존한다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "배율은 Kelley 등 논문이 설명한 기존 모델 추정치이며 개인별 전파확률이 아니다. CRAI 참여 MSM과 대조군 표본은 특정 연구 표본으로 일반 인구 전체를 대표하지 않는다.",
+  "tags": [
+    "HIV",
+    "직장점막",
+    "MSM",
+    "전파확률",
+    "측정"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}
