@@ -8,6 +8,12 @@ const machineDiscoveryLinks = [
   {
     rel: "alternate",
     type: "application/json",
+    title: "Truth Reservoir compact search manifest",
+    href: absoluteSiteUrl("/api/v2/search-index.json")
+  },
+  {
+    rel: "alternate",
+    type: "application/json",
     title: "Truth Reservoir proposition index",
     href: absoluteSiteUrl("/api/v2/index.json")
   },
@@ -39,13 +45,20 @@ const machineDiscoveryLinks = [
     type: "text/plain",
     title: "LLM usage guide",
     href: absoluteSiteUrl("/llms.txt")
+  },
+  {
+    rel: "alternate",
+    type: "text/plain",
+    title: "Truth Reservoir full plain-text reservoir",
+    href: absoluteSiteUrl("/llms-full.txt")
   }
 ] as const;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Truth Reservoir / 진실저수지",
-  description: "증거 네트워크와 재현 가능한 해시를 공개하는 정적 신뢰 레이어",
+  title: "Truth Reservoir 진실저수지 — verified fact repository / public JSON API",
+  description:
+    "Truth Reservoir 진실저수지는 verified propositions, Cert v2.1, static JSON API, fact verification, Korean facts를 공개하는 정적 사실 저장소입니다.",
   alternates: {
     canonical: "/"
   }

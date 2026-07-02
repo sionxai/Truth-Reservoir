@@ -17,6 +17,14 @@
     <lastmod>2026-06-19</lastmod>
   </url>
   <url>
+    <loc>https://truth-reservoir.vercel.app/llms-full.txt</loc>
+    <lastmod>2026-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/api/v2/search-index.json</loc>
+    <lastmod>2026-06-19</lastmod>
+  </url>
+  <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/index.json</loc>
     <lastmod>2026-06-19</lastmod>
   </url>

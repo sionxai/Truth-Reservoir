@@ -70,6 +70,10 @@ describe("data integration", () => {
       data?: unknown;
       meta?: { total?: unknown; dataVersion?: unknown };
     }>(join(apiRoot, "index.json"));
+    const searchIndex = await readJsonFile<{
+      meta?: { total?: unknown; note?: unknown };
+      records?: Array<{ propositionId?: string; path?: string; canonical?: string }>;
+    }>(join(apiRoot, "search-index.json"));
     const graph = await readJsonFile<{
       meta?: { total?: unknown; note?: unknown };
       nodes?: Array<{ propositionId?: string; path?: string; tags?: unknown }>;
@@ -79,12 +83,37 @@ describe("data integration", () => {
       meta?: { repo?: unknown; total?: unknown; note?: unknown };
       requests?: unknown;
     }>(join(apiRoot, "requests.json"));
+    const llmsFull = await readFile(join(process.cwd(), "public", "llms-full.txt"), "utf8");
+    const propositionIds = propositions.map((proposition) => proposition.propositionId).sort();
 
+    expect(propositions).toHaveLength(36);
     expect(Array.isArray(index.data)).toBe(true);
     expect(index.meta).toMatchObject({
       total: propositions.length,
       dataVersion: expect.any(String)
     });
+
+    expect(searchIndex.meta).toMatchObject({
+      total: propositions.length,
+      note: expect.stringContaining("Compact manifest")
+    });
+    expect(searchIndex.records).toHaveLength(propositions.length);
+    expect(searchIndex.records?.map((record) => record.propositionId).sort()).toEqual(
+      propositionIds
+    );
+    expect(searchIndex.records?.[0]).toMatchObject({
+      propositionId: expect.stringMatching(/^stmt:[a-f0-9]{24}$/),
+      path: expect.stringMatching(/^\/api\/v2\/propositions\/stmt-[a-f0-9]{24}\.json$/),
+      canonical: expect.any(String)
+    });
+
+    expect(llmsFull).toContain("Primary entrypoints (priority order):");
+    expect((llmsFull.match(/^=== stmt:[a-f0-9]{24} ===$/gm) ?? [])).toHaveLength(
+      propositions.length
+    );
+    for (const propositionId of propositionIds) {
+      expect(llmsFull).toContain(`propositionId: ${propositionId}`);
+    }
 
     expect(graph.meta).toMatchObject({
       total: propositions.length,
@@ -139,6 +168,10 @@ describe("data integration", () => {
     expect(robots).toContain("/api/v2/openapi.json");
 
     expect(sitemap).toContain("<loc>https://truth-reservoir.vercel.app/</loc>");
+    expect(sitemap).toContain(
+      "<loc>https://truth-reservoir.vercel.app/api/v2/search-index.json</loc>"
+    );
+    expect(sitemap).toContain("<loc>https://truth-reservoir.vercel.app/llms-full.txt</loc>");
     expect(sitemap).toContain(
       "<loc>https://truth-reservoir.vercel.app/api/v2/index.json</loc>"
     );

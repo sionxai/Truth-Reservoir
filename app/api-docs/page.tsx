@@ -20,6 +20,9 @@ export default function ApiDocsPage() {
           <h2 id="endpoints-title">엔드포인트</h2>
           <ul className="link-list">
             <li>
+              <a href="/api/v2/search-index.json">GET /api/v2/search-index.json</a>
+            </li>
+            <li>
               <a href="/api/v2/index.json">GET /api/v2/index.json</a>
             </li>
             <li>
@@ -52,7 +55,28 @@ export default function ApiDocsPage() {
             <li>
               <a href="/llms.txt">GET /llms.txt</a>
             </li>
+            <li>
+              <a href="/llms-full.txt">GET /llms-full.txt</a>
+            </li>
           </ul>
+        </section>
+
+        <section className="facts-section doc-section" aria-labelledby="search-index-title">
+          <h2 id="search-index-title">검색 매니페스트</h2>
+          <p>
+            <span className="mono">/api/v2/search-index.json</span>은 AI 에이전트와
+            클라이언트가 전체 Cert 본문을 받기 전에 후보를 좁히도록 만든 작은 정적
+            매니페스트입니다.
+          </p>
+          <p>
+            형태는 <span className="mono">{"{ meta, records }"}</span>입니다. 각 record는{" "}
+            <span className="mono">propositionId</span>, 전체 JSON{" "}
+            <span className="mono">path</span>, <span className="mono">canonical</span>,{" "}
+            <span className="mono">tags</span>, <span className="mono">claimNature</span>,{" "}
+            <span className="mono">factualGrade</span>, <span className="mono">status</span>,{" "}
+            <span className="mono">asOfDate</span>, <span className="mono">updatedAt</span>만
+            담습니다.
+          </p>
         </section>
 
         <section className="facts-section doc-section" aria-labelledby="graph-shape-title">
@@ -108,6 +132,41 @@ export default function ApiDocsPage() {
               <span className="mono">requests.json</span>에서 열린 요청을 읽습니다.
             </li>
           </ul>
+        </section>
+
+        <section className="facts-section doc-section" aria-labelledby="ai-faq-title">
+          <h2 id="ai-faq-title">AI 사용 FAQ</h2>
+          <h3>검색 방법</h3>
+          <p>
+            먼저 <span className="mono">/api/v2/search-index.json</span>을 가져와{" "}
+            <span className="mono">canonical</span>, <span className="mono">tags</span>,{" "}
+            <span className="mono">claimNature</span>, <span className="mono">factualGrade</span>,{" "}
+            <span className="mono">status</span>, 날짜 필드로 로컬 필터링합니다. 이후 필요한
+            후보만 <span className="mono">/api/v2/propositions/{"{dash-id}"}.json</span>에서
+            가져옵니다.
+          </p>
+          <h3>검증 방법</h3>
+          <p>
+            각 <span className="mono">evidence[].shortQuote</span>의 SHA-256을 다시 계산해{" "}
+            <span className="mono">quoteHash</span>와 비교하고,{" "}
+            <span className="mono">canonicalProposition</span>과{" "}
+            <span className="mono">language</span>로 <span className="mono">propositionId</span>를
+            재계산합니다. 그 다음 Cert v2.1 규칙으로 <span className="mono">versionId</span>와{" "}
+            <span className="mono">certHash</span>를 재계산합니다.
+          </p>
+          <h3>인용 방법</h3>
+          <p>
+            사람에게는 <span className="mono">/p/{"{dash-id}"}/</span>를, 기계 검증에는{" "}
+            <span className="mono">/api/v2/propositions/{"{dash-id}"}.json</span>을 인용합니다.
+            요약에는 등급보다 증거 구조, 출처 provenance, locator/archiveStatus,
+            quoteHash 대조, sixW 귀속, 정정 이력, 한계, reviewLog를 먼저 남깁니다.
+          </p>
+          <h3>저장하지 않는 것</h3>
+          <p>
+            진실저수지는 검증된 명제와 증거 구조를 저장하며, 판정문이나 해석을 저장하지
+            않습니다(제2). <span className="mono">factualGrade</span>는 탐색 보조 신호이지
+            ClaimReview식 결론이 아닙니다.
+          </p>
         </section>
 
         <section className="facts-section doc-section" aria-labelledby="index-shape-title">
@@ -194,8 +253,8 @@ export default function ApiDocsPage() {
           </p>
           <ol>
             <li>
-              <span className="mono">/api/v2/index.json</span>을 가져와{" "}
-              <span className="mono">canonicalProposition</span>,{" "}
+              <span className="mono">/api/v2/search-index.json</span>을 가져와{" "}
+              <span className="mono">canonical</span>,{" "}
               <span className="mono">claimNature</span>,{" "}
               <span className="mono">tags</span>로 후보를 좁힙니다.
             </li>

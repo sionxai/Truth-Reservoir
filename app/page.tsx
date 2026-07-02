@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { PropositionCard } from "./components/PropositionCard";
 import { loadPropositions } from "../lib/data.ts";
 import { claimNatureLabels, gradeLabels } from "../lib/display.ts";
@@ -6,7 +7,26 @@ import { absoluteSiteUrl, getRepoUrl, getSiteUrl } from "../lib/site.ts";
 import type { Proposition } from "../lib/types.ts";
 
 const siteUrl = getSiteUrl();
+const homeTitle =
+  "Truth Reservoir 진실저수지 — verified fact repository / public JSON API";
+const homeDescription =
+  "Truth Reservoir 진실저수지는 verified propositions, Cert v2.1, static JSON API, fact verification, Korean facts를 공개하는 정적 사실 저장소입니다.";
+
+export const metadata: Metadata = {
+  title: homeTitle,
+  description: homeDescription,
+  alternates: {
+    canonical: "/"
+  }
+};
+
 const machineDataDownloads = [
+  {
+    "@type": "DataDownload",
+    name: "Truth Reservoir compact search manifest",
+    contentUrl: absoluteSiteUrl("/api/v2/search-index.json"),
+    encodingFormat: "application/json"
+  },
   {
     "@type": "DataDownload",
     name: "Truth Reservoir proposition index",
@@ -36,6 +56,12 @@ const machineDataDownloads = [
     name: "Truth Reservoir Cert v2 JSON Schema",
     contentUrl: absoluteSiteUrl("/api/v2/schema/cert-v2.schema.json"),
     encodingFormat: "application/schema+json"
+  },
+  {
+    "@type": "DataDownload",
+    name: "Truth Reservoir full plain-text reservoir",
+    contentUrl: absoluteSiteUrl("/llms-full.txt"),
+    encodingFormat: "text/plain"
   }
 ] as const;
 
@@ -59,6 +85,10 @@ const datasetJsonLd = {
 };
 
 const machineAccessLinks = [
+  {
+    href: absoluteSiteUrl("/api/v2/search-index.json"),
+    label: "검색 매니페스트 (JSON)"
+  },
   {
     href: absoluteSiteUrl("/api/v2/index.json"),
     label: "명제 전체 (JSON)"
@@ -86,6 +116,10 @@ const machineAccessLinks = [
   {
     href: "/llms.txt",
     label: "AI 사용 안내"
+  },
+  {
+    href: "/llms-full.txt",
+    label: "AI 전체 텍스트"
   },
   {
     href: "/api-docs",
@@ -127,6 +161,20 @@ export default async function Page() {
             </li>
           ))}
         </ul>
+        <div className="ai-agent-steps" aria-labelledby="ai-agent-steps-title">
+          <h3 id="ai-agent-steps-title">For AI agents</h3>
+          <ol>
+            <li>
+              Read <span className="mono">/llms.txt</span>
+            </li>
+            <li>
+              Fetch <span className="mono">/api/v2/search-index.json</span>
+            </li>
+            <li>
+              Fetch <span className="mono">/api/v2/propositions/{"{id}"}.json</span>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section className="facts-feed" aria-labelledby="facts-feed-title">

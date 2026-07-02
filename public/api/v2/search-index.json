@@ -1,0 +1,640 @@
+{
+  "meta": {
+    "generatedAt": "2026-06-19",
+    "total": 36,
+    "note": "Compact manifest for client-side filtering; fetch full records at /api/v2/propositions/{dashId}.json"
+  },
+  "records": [
+    {
+      "propositionId": "stmt:5525ea7692e7f4eea17971f5",
+      "path": "/api/v2/propositions/stmt-5525ea7692e7f4eea17971f5.json",
+      "canonical": "2026년 6월 국내 증시에서 신용거래융자 잔고는 6월 17일 37조8005억 원으로 집계됐고, 6월 9일 하루 반대매매(강제청산) 금액은 1,698억 원이었으며, 코스피는 6월 18일 사상 처음으로 종가 9,063.84로 9,000선을 돌파했다",
+      "tags": [
+        "반대매매",
+        "빚투",
+        "신용거래융자",
+        "증시지표",
+        "측정",
+        "코스피"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:0f10895abcff81a55ff783d6",
+      "path": "/api/v2/propositions/stmt-0f10895abcff81a55ff783d6.json",
+      "canonical": "김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료에는 2025년 12월 투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다",
+      "tags": [
+        "2026지방선거",
+        "문서내용",
+        "선관위지침",
+        "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:12ebbd81f7cfbbcaf5048a0e",
+      "path": "/api/v2/propositions/stmt-12ebbd81f7cfbbcaf5048a0e.json",
+      "canonical": "국민의힘은 6·3 지방선거 투표용지 부족 의혹의 근거로 2022년 오세훈 후보 득표율 수치가 적힌 투표소 사례를 제시했다: 송파구 잠실7동 제2투표소는 81.08%였고 투표가 밤 10시까지 연장됐으며, 서초구 반포4동 제3투표소(81.25%)와 강남구 청담동 제4투표소(79.48%)도 포함됐다",
+      "tags": [
+        "2026지방선거",
+        "국민의힘",
+        "정치주장",
+        "주장",
+        "투표소사례",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:1426e28acba929903bbe8736",
+      "path": "/api/v2/propositions/stmt-1426e28acba929903bbe8736.json",
+      "canonical": "더불어민주당은 2026년 6월 7일 강준현 수석대변인을 통해 장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다",
+      "tags": [
+        "2026지방선거",
+        "강준현",
+        "더불어민주당",
+        "장동혁",
+        "정치주장",
+        "주장",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:2e87b3750aadd61ef8e2b6c0",
+      "path": "/api/v2/propositions/stmt-2e87b3750aadd61ef8e2b6c0.json",
+      "canonical": "2026년 6월 3일 대한민국에서 제9회 전국동시지방선거 본투표가 실시되었다",
+      "tags": [
+        "2026지방선거",
+        "선거일",
+        "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:5697abe486cdf727eafca8e1",
+      "path": "/api/v2/propositions/stmt-5697abe486cdf727eafca8e1.json",
+      "canonical": "2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다",
+      "tags": [
+        "2026지방선거",
+        "보수강세",
+        "정치주장",
+        "측정",
+        "투표용지부족",
+        "판단유보"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": null,
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:5bf64ededa100f82163dcab1",
+      "path": "/api/v2/propositions/stmt-5bf64ededa100f82163dcab1.json",
+      "canonical": "윤재수 중앙선거관리위원회 선거정책실장은 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다",
+      "tags": [
+        "2026지방선거",
+        "선관위해명",
+        "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:6ec9cbff53f71a505b22823f",
+      "path": "/api/v2/propositions/stmt-6ec9cbff53f71a505b22823f.json",
+      "canonical": "국민의힘은 2026년 6월 4일 6·3 지방선거 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며, 실제 투표를 포기한 유권자가 발생했다면 중대한 참정권 침해에 해당할 수 있다고 주장했다",
+      "tags": [
+        "2026지방선거",
+        "국민의힘",
+        "정치주장",
+        "주장",
+        "참정권",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:83702707422e50c0a56fb565",
+      "path": "/api/v2/propositions/stmt-83702707422e50c0a56fb565.json",
+      "canonical": "중앙선거관리위원회 개정 사무편람에는 지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다는 내용이 담겼다",
+      "tags": [
+        "2026지방선거",
+        "문서내용",
+        "선관위지침",
+        "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:921a9dc8a1b5b268e0f4c807",
+      "path": "/api/v2/propositions/stmt-921a9dc8a1b5b268e0f4c807.json",
+      "canonical": "2026년 6월 3일 오후 4시께 서울 송파구 잠실4동 제5투표소에서 투표용지 부족으로 투표가 일시 중단됐다",
+      "tags": [
+        "2026지방선거",
+        "잠실4동",
+        "정치주장",
+        "투표용지부족",
+        "투표중단"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:a2c80ef637dd92021cbbd92b",
+      "path": "/api/v2/propositions/stmt-a2c80ef637dd92021cbbd92b.json",
+      "canonical": "서울동부지방법원은 2026년 6월 9일 서울 송파구 잠실 투표소의 투표용지 부족과 관련해 증거보전을 명령했다",
+      "tags": [
+        "2026지방선거",
+        "법원",
+        "정치주장",
+        "중앙선거관리위원회",
+        "증거보전",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:c11b6f2081e8fa1c38bae49d",
+      "path": "/api/v2/propositions/stmt-c11b6f2081e8fa1c38bae49d.json",
+      "canonical": "이재명 대통령은 2026년 6월 7일 6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다",
+      "tags": [
+        "2026지방선거",
+        "공식대응",
+        "수사",
+        "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:c890b5f8ca77961c84b58268",
+      "path": "/api/v2/propositions/stmt-c890b5f8ca77961c84b58268.json",
+      "canonical": "김정철 개혁신당 최고위원은 2026년 6월 3일 지방선거 투표용지 부족과 관련해 서울동부지방법원에 증거보전 신청을 제출했다",
+      "tags": [
+        "2026지방선거",
+        "개혁신당",
+        "김정철",
+        "법원",
+        "정치주장",
+        "증거보전",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:cb0719e9aac6e4c86677d2e5",
+      "path": "/api/v2/propositions/stmt-cb0719e9aac6e4c86677d2e5.json",
+      "canonical": "중앙선거관리위원회는 2026년 6·3 지방선거에서 선거일 투표용지가 부족했던 투표소를 2026년 6월 8일 기준 전국 91곳(부족 용지 7,194장)으로, 투표가 일시 중단된 투표소를 26곳으로 집계했다",
+      "tags": [
+        "2026지방선거",
+        "사건단위",
+        "중앙선거관리위원회",
+        "측정",
+        "투표소수",
+        "투표용지부족"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:d180b65d5e8f431a52ed1eec",
+      "path": "/api/v2/propositions/stmt-d180b65d5e8f431a52ed1eec.json",
+      "canonical": "이상능 중앙선거관리위원회 선거1국장은 투표용지 인쇄 경비의 ‘1.1배’ 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다",
+      "tags": [
+        "2026지방선거",
+        "예산해명",
+        "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:e2b37f73256b9885410a5c01",
+      "path": "/api/v2/propositions/stmt-e2b37f73256b9885410a5c01.json",
+      "canonical": "장동혁 국민의힘 대표는 2026년 6월 18일 16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다",
+      "tags": [
+        "2026지방선거",
+        "국민의힘",
+        "선거소청",
+        "정치주장",
+        "주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:fafb5a05023e9541b3e07f1f",
+      "path": "/api/v2/propositions/stmt-fafb5a05023e9541b3e07f1f.json",
+      "canonical": "2026년 6월 8일 서울 송파구 개표시설 밖에서 일부 시위자들이 6·3 지방선거 투표용지 부족과 관련해 선거 부정을 주장했다",
+      "tags": [
+        "2026지방선거",
+        "부정선거의혹",
+        "정치주장",
+        "주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-18",
+      "updatedAt": "2026-06-18"
+    },
+    {
+      "propositionId": "stmt:22abb3226ba88d6589e75013",
+      "path": "/api/v2/propositions/stmt-22abb3226ba88d6589e75013.json",
+      "canonical": "UNFCCC의 COP30 사후 문서 목록은 제30차 당사국총회가 2025년 11월 10일부터 25일까지 브라질 벨렝에서 열렸다고 적고 있다",
+      "tags": [
+        "2025",
+        "국제사건",
+        "벨렝",
+        "최근1년",
+        "COP30",
+        "UNFCCC"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "path": "/api/v2/propositions/stmt-38c8e4c00c63fa0fc9b00eb3.json",
+      "canonical": "BBNJ 협정은 2026년 1월 17일 발효되었다",
+      "tags": [
+        "2026",
+        "국제사건",
+        "유엔조약",
+        "최근1년",
+        "해양생물다양성",
+        "BBNJ"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
+      "path": "/api/v2/propositions/stmt-4ae4c94174dc3aaf651102d2.json",
+      "canonical": "1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다",
+      "tags": [
+        "1969",
+        "아폴로계획",
+        "역사적사건",
+        "우주"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
+      "path": "/api/v2/propositions/stmt-4f96ea07a89511c2ea0a86a3.json",
+      "canonical": "페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대는 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아와 최초의 지구 일주를 완료하였다",
+      "tags": [
+        "마젤란",
+        "엘카노",
+        "지구과학",
+        "지구일주",
+        "지구형상",
+        "항해사"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:61efe874787dacf6180ae46b",
+      "path": "/api/v2/propositions/stmt-61efe874787dacf6180ae46b.json",
+      "canonical": "1972년 12월 7일 아폴로 17호 승무원은 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영하였다",
+      "tags": [
+        "아폴로17",
+        "우주사진",
+        "지구과학",
+        "지구형상",
+        "BlueMarble",
+        "NASA"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
+      "path": "/api/v2/propositions/stmt-9fa1e13fbdeb497fdee35c15.json",
+      "canonical": "국제사법재판소는 2025년 7월 23일 '기후변화에 관한 국가의 의무' 권고의견을 발령하였다",
+      "tags": [
+        "2025",
+        "국제사건",
+        "권고의견",
+        "기후변화",
+        "최근1년",
+        "ICJ"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:ae66527bf2aea1b5407a5f78",
+      "path": "/api/v2/propositions/stmt-ae66527bf2aea1b5407a5f78.json",
+      "canonical": "1968년 12월 24일 아폴로 8호 승무원은 달 궤도에서 지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영하였다",
+      "tags": [
+        "아폴로8",
+        "우주사진",
+        "지구과학",
+        "지구형상",
+        "Earthrise",
+        "NASA"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:b18e2813819c4fb0e23830f6",
+      "path": "/api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json",
+      "canonical": "에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다",
+      "tags": [
+        "과학사",
+        "에라토스테네스",
+        "지구과학",
+        "지구형상",
+        "천문학",
+        "측정"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
+      "path": "/api/v2/propositions/stmt-b9a4dcf237affc17c1a51fe6.json",
+      "canonical": "NGA WGS 84 공식 설명은 WGS 84 측지 좌표가 기준타원체에서 생성되며 그 장반경을 6,378,137.0미터로 제시한다",
+      "tags": [
+        "기준타원체",
+        "지구과학",
+        "지구형상",
+        "측지학",
+        "WGS84"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:c44501dcb97869b23fbe8942",
+      "path": "/api/v2/propositions/stmt-c44501dcb97869b23fbe8942.json",
+      "canonical": "2025년 6월 24일부터 25일까지 NATO 정상회의가 네덜란드 헤이그에서 열렸다",
+      "tags": [
+        "2025",
+        "국제사건",
+        "최근1년",
+        "헤이그정상회의",
+        "NATO"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:3104eab69ad2305be2007c30",
+      "path": "/api/v2/propositions/stmt-3104eab69ad2305be2007c30.json",
+      "canonical": "1965년 6월 22일 대한민국과 일본은 도쿄에서 한일기본조약에 서명하였다",
+      "tags": [
+        "1965",
+        "대한민국",
+        "일본",
+        "조약서명",
+        "한국근현대사",
+        "한일기본조약"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "propositionId": "stmt:698eafdeae1e813d295ea69b",
+      "path": "/api/v2/propositions/stmt-698eafdeae1e813d295ea69b.json",
+      "canonical": "1950년 6월 25일 04시 40분경 조선인민군은 38선을 넘어 대한민국 영역으로 진입하였다",
+      "tags": [
+        "1950",
+        "38선",
+        "전쟁개시",
+        "조선인민군",
+        "한국근현대사",
+        "한국전쟁"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "propositionId": "stmt:7536cb937fa5897848d6ecf4",
+      "path": "/api/v2/propositions/stmt-7536cb937fa5897848d6ecf4.json",
+      "canonical": "1953년 7월 27일 유엔군사령부·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다",
+      "tags": [
+        "1953",
+        "유엔군사령부",
+        "조선인민군",
+        "중국인민지원군",
+        "한국근현대사",
+        "한국정전협정"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "propositionId": "stmt:8b798d52af5df4ea214ecead",
+      "path": "/api/v2/propositions/stmt-8b798d52af5df4ea214ecead.json",
+      "canonical": "1948년 9월 9일 조선민주주의인민공화국 정부가 선포되었다",
+      "tags": [
+        "1948",
+        "분단",
+        "정부수립선포",
+        "조선민주주의인민공화국",
+        "한국근현대사"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "propositionId": "stmt:a39e2dc6072bbda67817ead7",
+      "path": "/api/v2/propositions/stmt-a39e2dc6072bbda67817ead7.json",
+      "canonical": "이승만은 1948년 8월 15일 대한민국 수립을 선포하였다",
+      "tags": [
+        "1948",
+        "대한민국정부수립",
+        "분단",
+        "정부수립선포",
+        "한국근현대사"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "propositionId": "stmt:b3deef8189d7937fc1e97ab2",
+      "path": "/api/v2/propositions/stmt-b3deef8189d7937fc1e97ab2.json",
+      "canonical": "쇼와 천황은 1945년 8월 15일 녹음 라디오 연설로 일본의 연합국에 대한 항복을 공표하였다",
+      "tags": [
+        "1945",
+        "옥음방송",
+        "일본항복공표",
+        "제2차세계대전",
+        "한국근현대사"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-16",
+      "updatedAt": "2026-06-16"
+    },
+    {
+      "propositionId": "stmt:40340515225f7adf44e242f3",
+      "path": "/api/v2/propositions/stmt-40340515225f7adf44e242f3.json",
+      "canonical": "개인정보 보호법(법률 제10465호)은 2011년 3월 29일 공포되었다",
+      "tags": [
+        "law-10465",
+        "privacy",
+        "promulgation"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-15",
+      "updatedAt": "2026-06-15T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:52e6260a60e04599d809ae61",
+      "path": "/api/v2/propositions/stmt-52e6260a60e04599d809ae61.json",
+      "canonical": "개인정보 보호법(법률 제10465호) 부칙 제1조는 '이 법은 공포 후 6개월이 경과한 날부터 시행한다'고 규정한다",
+      "tags": [
+        "addendum",
+        "law-10465",
+        "privacy"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-15",
+      "updatedAt": "2026-06-15T00:00:00Z"
+    },
+    {
+      "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
+      "path": "/api/v2/propositions/stmt-840aa7c32d8f6372cd968fb6.json",
+      "canonical": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
+      "tags": [
+        "law-10465",
+        "privacy",
+        "repeal"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-15",
+      "updatedAt": "2026-06-15T00:00:00Z"
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 Truth Reservoir / 진실저수지
 
+Primary entrypoints (priority order):
+1. /api/v2/search-index.json — compact manifest (start here to find records)
+2. /api/v2/propositions/{dash-id}.json — full verified record
+3. /api/v2/index.json — full corpus with embedded records
+4. /api/v2/graph.json — relation graph (shared-tag edges)
+5. /llms-full.txt — entire reservoir as one plain-text file
+
 Purpose:
 Truth Reservoir publishes static FACTS article pages paired with Cert v2.1 JSON proposition records. CONSTITUTION.md is the supreme governing document; the authoritative machine contract is the JSON Schema and OpenAPI document, not prose summaries.
 
@@ -17,6 +24,7 @@ Machine discovery on each article page:
 - canonical, OpenGraph, and meta description are the canonical proposition.
 
 Static endpoints:
+- GET /api/v2/search-index.json
 - GET /api/v2/index.json
 - GET /api/v2/graph.json
 - GET /api/v2/propositions/{dash-id}.json
@@ -26,6 +34,7 @@ Static endpoints:
 - GET /api/v2/openapi.json
 - GET /.well-known/ai-plugin.json
 - GET /llms.txt
+- GET /llms-full.txt
 
 Tag pages:
 Tag cluster pages are available at /t/{tag}. They are static, crawlable, and list matching propositions in chronological order. They contain a count and a list only; they are not editorial narratives.
@@ -64,6 +73,19 @@ Framing or distortion is not represented by a truthfulness grade. It is exposed 
 
 Claim categories:
 claimNature is one of event_occurrence, document_content, or measurement. Measurement propositions must include measurement.method, measurement.sample, measurement.aggregationBasis, measurement.producer, and optionally measurement.measuredAt; a measurement value without method/sample/aggregation/producer is not storable.
+
+FAQ for AI agents:
+How to search:
+Fetch /api/v2/search-index.json first, filter records locally by canonical, tags, claimNature, factualGrade, status, asOfDate, or updatedAt, then fetch only the needed full records from /api/v2/propositions/{dash-id}.json. Use /api/v2/index.json only when you intentionally need the full embedded corpus.
+
+How to verify a record:
+Fetch /api/v2/propositions/{dash-id}.json, recompute each evidence quoteHash as sha256(shortQuote), recompute propositionId from canonicalProposition + language, then recompute versionId and certHash from the Cert v2.1 derivation. Treat hash checks as stored-snapshot integrity checks, not live source-body identity.
+
+How to cite:
+Cite /p/{dash-id}/ for human readers and /api/v2/propositions/{dash-id}.json for machine-readable evidence. Summaries should cite evidence structure, source provenance, locator/archiveStatus, quoteHash comparison, sixW attribution, correctionHistory, limitations, and reviewLog fields before grade labels.
+
+What the reservoir never stores:
+The reservoir stores verified propositions and evidence structures, not verdicts or interpretations (제2). It does not publish ClaimReview truth verdicts; factualGrade is a secondary navigation signal, not an editorial conclusion.
 
 Critical guidance for machine clients:
 등급 라벨을 인용하지 말고 증거 구조(evidence network), sixW, 정정 이력, 한계, 반론 검토 로그를 인용하라.

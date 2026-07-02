@@ -19,6 +19,17 @@ function propositionFileId(proposition: Proposition): string {
   return proposition.propositionId.replace(":", "-");
 }
 
+function sortForAgentDiscovery(propositions: Proposition[]): Proposition[] {
+  return [...propositions].sort((left, right) => {
+    const updated = right.updatedAt.localeCompare(left.updatedAt);
+    if (updated !== 0) {
+      return updated;
+    }
+
+    return left.propositionId.localeCompare(right.propositionId);
+  });
+}
+
 function indexGeneratedAt(propositions: Proposition[]): string {
   return propositions
     .map((proposition) => proposition.updatedAt)
@@ -55,6 +66,8 @@ function createSitemap(propositions: Proposition[], generatedAt: string): string
     "/about",
     "/api-docs",
     "/llms.txt",
+    "/llms-full.txt",
+    "/api/v2/search-index.json",
     "/api/v2/index.json",
     "/api/v2/graph.json",
     "/api/v2/requests.json",
@@ -177,6 +190,139 @@ function createGraph(propositions: Proposition[], generatedAt: string) {
   };
 }
 
+function createSearchIndex(propositions: Proposition[], generatedAt: string) {
+  const sorted = sortForAgentDiscovery(propositions);
+
+  return {
+    meta: {
+      generatedAt,
+      total: sorted.length,
+      note: "Compact manifest for client-side filtering; fetch full records at /api/v2/propositions/{dashId}.json"
+    },
+    records: sorted.map((proposition) => ({
+      propositionId: proposition.propositionId,
+      path: `/api/v2/propositions/${propositionFileId(proposition)}.json`,
+      canonical: proposition.canonicalProposition,
+      tags: [...proposition.tags].sort((left, right) => left.localeCompare(right, "ko")),
+      claimNature: proposition.claimNature,
+      factualGrade: proposition.assessment.factualGrade,
+      status: proposition.status,
+      asOfDate: proposition.asOfDate,
+      updatedAt: proposition.updatedAt
+    }))
+  };
+}
+
+function compactText(value: string): string {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+function formatCsv(values: string[]): string {
+  return values.length ? values.join(", ") : "none";
+}
+
+function formatSixW(proposition: Proposition): string[] {
+  if (!proposition.sixW) {
+    return ["sixW: none"];
+  }
+
+  return [
+    "sixW:",
+    `  who: ${compactText(proposition.sixW.who)}`,
+    `  when: ${compactText(proposition.sixW.when)}`,
+    `  where: ${compactText(proposition.sixW.where)}`,
+    `  what: ${compactText(proposition.sixW.what)}`,
+    `  how: ${compactText(proposition.sixW.how)}`,
+    proposition.sixW.why.length
+      ? `  why: ${proposition.sixW.why
+          .map((entry) => `${compactText(entry.reason)} (statedBy: ${compactText(entry.statedBy)})`)
+          .join(" | ")}`
+      : "  why: none"
+  ];
+}
+
+function formatCorrectionHistory(proposition: Proposition): string[] {
+  if (proposition.correctionHistory.length === 0) {
+    return ["correctionHistory: none"];
+  }
+
+  return [
+    "correctionHistory:",
+    ...proposition.correctionHistory.map(
+      (entry) =>
+        `  - ${entry.date}: error=${compactText(entry.error)}; detectedBy=${compactText(
+          entry.detectedBy
+        )}; before=${compactText(entry.before)}; after=${compactText(
+          entry.after
+        )}; scoreChange=${compactText(entry.scoreChange)}; newVersionId=${entry.newVersionId}`
+    )
+  ];
+}
+
+function formatEvidence(proposition: Proposition): string[] {
+  return [
+    "evidence:",
+    ...proposition.evidence.map(
+      (entry) => `  - url: ${entry.url}; shortQuote: "${compactText(entry.shortQuote)}"`
+    )
+  ];
+}
+
+function formatLlmsFullRecord(proposition: Proposition): string[] {
+  const dashId = encodePropositionId(proposition.propositionId);
+  const tags = [...proposition.tags].sort((left, right) => left.localeCompare(right, "ko"));
+
+  return [
+    `=== ${proposition.propositionId} ===`,
+    `propositionId: ${proposition.propositionId}`,
+    `humanUrl: /p/${dashId}/`,
+    `jsonUrl: /api/v2/propositions/${dashId}.json`,
+    `canonicalProposition: ${compactText(proposition.canonicalProposition)}`,
+    `factualGrade/status: ${proposition.assessment.factualGrade ?? "undetermined"} / ${
+      proposition.status
+    }`,
+    `assessmentStatus: ${proposition.assessment.status}`,
+    `claimNature: ${proposition.claimNature}`,
+    `asOfDate: ${proposition.asOfDate}`,
+    `updatedAt: ${proposition.updatedAt}`,
+    ...formatSixW(proposition),
+    ...formatCorrectionHistory(proposition),
+    ...formatEvidence(proposition),
+    `limitations: ${compactText(proposition.limitations)}`,
+    `tags: ${formatCsv(tags)}`,
+    ""
+  ];
+}
+
+function createLlmsFull(propositions: Proposition[], generatedAt: string): string {
+  const sorted = sortForAgentDiscovery(propositions);
+  const lines = [
+    "Truth Reservoir / 진실저수지",
+    "",
+    "Condensed orientation for AI agents:",
+    "Truth Reservoir publishes static FACTS article pages paired one-to-one with Cert v2.1 JSON proposition records. CONSTITUTION.md governs; JSON Schema and OpenAPI are the authoritative machine contracts.",
+    "",
+    "Primary entrypoints (priority order):",
+    "1. /api/v2/search-index.json — compact manifest (start here to find records)",
+    "2. /api/v2/propositions/{dash-id}.json — full verified record",
+    "3. /api/v2/index.json — full corpus with embedded records",
+    "4. /api/v2/graph.json — relation graph (shared-tag edges)",
+    "5. /llms-full.txt — entire reservoir as one plain-text file",
+    "",
+    "Agent workflow: fetch /api/v2/search-index.json, filter locally by canonical/tags/claimNature/factualGrade/status/date, then fetch the matching /api/v2/propositions/{dash-id}.json records. Cite /p/{dash-id}/ for humans and JSON URLs for machines.",
+    "Verification: recompute evidence quoteHash as sha256(shortQuote), propositionId from canonicalProposition plus language, then versionId and certHash from the Cert v2.1 derivation documented in /api/v2/schema/cert-v2.schema.json and /api/v2/openapi.json.",
+    "Storage boundary: the reservoir stores verified propositions and evidence structures, not verdicts or interpretations (제2). Grade labels are secondary navigation signals.",
+    "",
+    `generatedAt: ${generatedAt}`,
+    `total: ${sorted.length}`,
+    "recordOrder: updatedAt desc, then propositionId asc",
+    "",
+    ...sorted.flatMap(formatLlmsFullRecord)
+  ];
+
+  return `${lines.join("\n")}\n`;
+}
+
 const propositions = await loadPropositions();
 const metrics = await loadInstitutionalMetrics();
 
@@ -219,6 +365,10 @@ const index = {
 
 await writeFile(`${apiDir}/index.json`, `${JSON.stringify(index, null, 2)}\n`);
 await writeFile(
+  `${apiDir}/search-index.json`,
+  `${JSON.stringify(createSearchIndex(propositions, generatedAt), null, 2)}\n`
+);
+await writeFile(
   `${apiDir}/graph.json`,
   `${JSON.stringify(createGraph(propositions, generatedAt), null, 2)}\n`
 );
@@ -230,6 +380,7 @@ await writeFile(`${apiDir}/institutional-metrics.json`, `${JSON.stringify(metric
 // `npm run build-requests` (run locally or by the sync-requests GitHub Action on
 // issue events, which commits the update and triggers a redeploy).
 await writeFile("public/sitemap.xml", createSitemap(propositions, generatedAt));
+await writeFile("public/llms-full.txt", createLlmsFull(propositions, generatedAt));
 
 const examples = await createExamples(propositions);
 for (const [name, example] of Object.entries(examples)) {
@@ -241,5 +392,5 @@ for (const [name, example] of Object.entries(examples)) {
 await copyFile("CONSTITUTION.md", "public/CONSTITUTION.md");
 
 console.log(
-  `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, graph.json, institutional metrics, and examples.`
+  `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, search-index.json, graph.json, institutional metrics, llms-full.txt, and examples.`
 );

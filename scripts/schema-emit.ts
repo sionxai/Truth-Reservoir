@@ -70,6 +70,26 @@ const openapi = {
         }
       }
     },
+    "/api/v2/search-index.json": {
+      get: {
+        summary: "Compact proposition manifest for client-side filtering",
+        description:
+          "Small static manifest for AI agents and other clients that need to find records before fetching full Cert v2 JSON documents.",
+        responses: {
+          "200": {
+            description:
+              "Compact manifest: { meta, records }. Fetch full records at /api/v2/propositions/{dashId}.json.",
+            content: {
+              "application/json": {
+                schema: {
+                  $ref: "#/components/schemas/SearchIndex"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v2/propositions/{propositionId}.json": {
       get: {
         summary: "Fetch one Cert v2 proposition document",
@@ -155,12 +175,95 @@ const openapi = {
         summary: "This OpenAPI 3.1 document",
         responses: { "200": { description: "OpenAPI document" } }
       }
+    },
+    "/llms-full.txt": {
+      get: {
+        summary: "Plain-text full reservoir for AI ingestion",
+        description:
+          "A build-time generated text file containing condensed orientation plus every proposition record in a compact readable block.",
+        responses: {
+          "200": {
+            description: "Plain-text full reservoir export",
+            content: {
+              "text/plain": {
+                schema: { type: "string" }
+              }
+            }
+          }
+        }
+      }
     }
   },
   components: {
     schemas: {
       CertV2: certJsonSchema,
       InstitutionalMetrics: metricsJsonSchema,
+      SearchIndex: {
+        type: "object",
+        required: ["meta", "records"],
+        properties: {
+          meta: {
+            type: "object",
+            required: ["generatedAt", "total", "note"],
+            properties: {
+              generatedAt: { type: "string" },
+              total: { type: "integer", minimum: 0 },
+              note: { type: "string" }
+            }
+          },
+          records: {
+            type: "array",
+            items: {
+              type: "object",
+              required: [
+                "propositionId",
+                "path",
+                "canonical",
+                "tags",
+                "claimNature",
+                "factualGrade",
+                "status",
+                "asOfDate",
+                "updatedAt"
+              ],
+              properties: {
+                propositionId: { type: "string", pattern: "^stmt:[a-f0-9]{24}$" },
+                path: { type: "string" },
+                canonical: { type: "string" },
+                tags: {
+                  type: "array",
+                  items: { type: "string" }
+                },
+                claimNature: {
+                  type: "string",
+                  enum: ["event_occurrence", "document_content", "measurement"]
+                },
+                factualGrade: {
+                  anyOf: [
+                    {
+                      type: "string",
+                      enum: [
+                        "fully_reliable",
+                        "largely_reliable",
+                        "mixed",
+                        "largely_unreliable",
+                        "not_reliable"
+                      ]
+                    },
+                    { type: "null" }
+                  ]
+                },
+                status: {
+                  type: "string",
+                  enum: ["active", "superseded", "retracted", "needs_review"]
+                },
+                asOfDate: { type: "string" },
+                updatedAt: { type: "string" }
+              }
+            }
+          }
+        }
+      },
       RequestsMirror: {
         type: "object",
         required: ["meta", "requests"],
