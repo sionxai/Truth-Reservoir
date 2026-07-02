@@ -196,24 +196,6 @@
       "updatedAt": "2026-07-02"
     },
     {
-      "propositionId": "stmt:5697abe486cdf727eafca8e1",
-      "path": "/api/v2/propositions/stmt-5697abe486cdf727eafca8e1.json",
-      "canonical": "2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다",
-      "tags": [
-        "2026지방선거",
-        "보수강세",
-        "정치주장",
-        "측정",
-        "투표용지부족",
-        "판단유보"
-      ],
-      "claimNature": "measurement",
-      "factualGrade": null,
-      "status": "active",
-      "asOfDate": "2026-06-18",
-      "updatedAt": "2026-07-02"
-    },
-    {
       "propositionId": "stmt:5bf64ededa100f82163dcab1",
       "path": "/api/v2/propositions/stmt-5bf64ededa100f82163dcab1.json",
       "canonical": "윤재수 중앙선거관리위원회 선거정책실장은 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다",
@@ -734,6 +716,23 @@
       ],
       "claimNature": "measurement",
       "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "propositionId": "stmt:a37cb535bf2ed93375d15095",
+      "path": "/api/v2/propositions/stmt-a37cb535bf2ed93375d15095.json",
+      "canonical": "Gallup은 2025년 전화조사에서 미국 성인 9.0%가 LGBTQ+로 자기식별한다고 추정했으며, 이는 Gallup이 같은 항목을 처음 측정한 2012년 3.5%보다 높다.",
+      "tags": [
+        "demographic-identity",
+        "gallup",
+        "lgbtq",
+        "polling",
+        "united-states"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "fully_reliable",
       "status": "active",
       "asOfDate": "2026-06-19",
       "updatedAt": "2026-06-19"

@@ -209,18 +209,6 @@
       ]
     },
     {
-      "propositionId": "stmt:5697abe486cdf727eafca8e1",
-      "path": "/p/stmt-5697abe486cdf727eafca8e1/",
-      "tags": [
-        "2026지방선거",
-        "보수강세",
-        "정치주장",
-        "측정",
-        "투표용지부족",
-        "판단유보"
-      ]
-    },
-    {
       "propositionId": "stmt:5985381793fd401f7fc3052c",
       "path": "/p/stmt-5985381793fd401f7fc3052c/",
       "tags": [
@@ -355,6 +343,17 @@
         "중앙선거관리위원회",
         "증거보전",
         "투표용지부족"
+      ]
+    },
+    {
+      "propositionId": "stmt:a37cb535bf2ed93375d15095",
+      "path": "/p/stmt-a37cb535bf2ed93375d15095/",
+      "tags": [
+        "demographic-identity",
+        "gallup",
+        "lgbtq",
+        "polling",
+        "united-states"
       ]
     },
     {
@@ -541,15 +540,6 @@
     },
     {
       "from": "stmt:0f10895abcff81a55ff783d6",
-      "to": "stmt:5697abe486cdf727eafca8e1",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:0f10895abcff81a55ff783d6",
       "to": "stmt:5bf64ededa100f82163dcab1",
       "sharedTags": [
         "2026지방선거",
@@ -677,15 +667,6 @@
     },
     {
       "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
-      "to": "stmt:5697abe486cdf727eafca8e1",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
       "to": "stmt:5bf64ededa100f82163dcab1",
       "sharedTags": [
         "2026지방선거",
@@ -790,15 +771,6 @@
     {
       "from": "stmt:1426e28acba929903bbe8736",
       "to": "stmt:2e87b3750aadd61ef8e2b6c0",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:1426e28acba929903bbe8736",
-      "to": "stmt:5697abe486cdf727eafca8e1",
       "sharedTags": [
         "2026지방선거",
         "정치주장",
@@ -981,13 +953,6 @@
     },
     {
       "from": "stmt:24094c14f92b5c8fb482e57d",
-      "to": "stmt:5697abe486cdf727eafca8e1",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:24094c14f92b5c8fb482e57d",
       "to": "stmt:5985381793fd401f7fc3052c",
       "sharedTags": [
         "측정"
@@ -1014,15 +979,6 @@
         "측정",
         "CDC",
         "HIV"
-      ]
-    },
-    {
-      "from": "stmt:2e87b3750aadd61ef8e2b6c0",
-      "to": "stmt:5697abe486cdf727eafca8e1",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
       ]
     },
     {
@@ -1220,13 +1176,6 @@
     },
     {
       "from": "stmt:3a2ae5d9219c9be87de14ae7",
-      "to": "stmt:5697abe486cdf727eafca8e1",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:3a2ae5d9219c9be87de14ae7",
       "to": "stmt:5985381793fd401f7fc3052c",
       "sharedTags": [
         "측정"
@@ -1284,13 +1233,6 @@
     },
     {
       "from": "stmt:3ae444edbb297bea65e9cd78",
-      "to": "stmt:5697abe486cdf727eafca8e1",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:3ae444edbb297bea65e9cd78",
       "to": "stmt:5985381793fd401f7fc3052c",
       "sharedTags": [
         "자살시도",
@@ -1342,13 +1284,6 @@
     },
     {
       "from": "stmt:3e54ea51d8411beb551b399c",
-      "to": "stmt:5697abe486cdf727eafca8e1",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:3e54ea51d8411beb551b399c",
       "to": "stmt:5985381793fd401f7fc3052c",
       "sharedTags": [
         "측정"
@@ -1386,13 +1321,6 @@
     {
       "from": "stmt:3f30934e8dae7bc3452ab43a",
       "to": "stmt:5525ea7692e7f4eea17971f5",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:3f30934e8dae7bc3452ab43a",
-      "to": "stmt:5697abe486cdf727eafca8e1",
       "sharedTags": [
         "측정"
       ]
@@ -1445,13 +1373,6 @@
     {
       "from": "stmt:4b794b8163eb2161d4a9b949",
       "to": "stmt:5525ea7692e7f4eea17971f5",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:4b794b8163eb2161d4a9b949",
-      "to": "stmt:5697abe486cdf727eafca8e1",
       "sharedTags": [
         "측정"
       ]
@@ -1528,13 +1449,6 @@
     },
     {
       "from": "stmt:5525ea7692e7f4eea17971f5",
-      "to": "stmt:5697abe486cdf727eafca8e1",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:5525ea7692e7f4eea17971f5",
       "to": "stmt:5985381793fd401f7fc3052c",
       "sharedTags": [
         "측정"
@@ -1559,126 +1473,6 @@
       "to": "stmt:efddfa77db78be598d007d7e",
       "sharedTags": [
         "측정"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:5985381793fd401f7fc3052c",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:5bf64ededa100f82163dcab1",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:6ec9cbff53f71a505b22823f",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:83702707422e50c0a56fb565",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:921a9dc8a1b5b268e0f4c807",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:a2c80ef637dd92021cbbd92b",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:b18e2813819c4fb0e23830f6",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:c11b6f2081e8fa1c38bae49d",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:c890b5f8ca77961c84b58268",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:cb0719e9aac6e4c86677d2e5",
-      "sharedTags": [
-        "2026지방선거",
-        "측정",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:d180b65d5e8f431a52ed1eec",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:e2b37f73256b9885410a5c01",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:efddfa77db78be598d007d7e",
-      "sharedTags": [
-        "측정"
-      ]
-    },
-    {
-      "from": "stmt:5697abe486cdf727eafca8e1",
-      "to": "stmt:fafb5a05023e9541b3e07f1f",
-      "sharedTags": [
-        "2026지방선거",
-        "정치주장",
-        "투표용지부족"
       ]
     },
     {

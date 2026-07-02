@@ -1,0 +1,172 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:a37cb535bf2ed93375d15095",
+  "versionId": "ver:ae9cf70f9b042cc2",
+  "certHash": "sha256:579ca1304b2d5e9e0b17f3b97afe2fc6d9c1d6a210ba855bcba2013ac267095f",
+  "canonicalProposition": "Gallup은 2025년 전화조사에서 미국 성인 9.0%가 LGBTQ+로 자기식별한다고 추정했으며, 이는 Gallup이 같은 항목을 처음 측정한 2012년 3.5%보다 높다.",
+  "originalClaim": "Gallup의 미국 성인 LGBTQ+ 자기식별 비율은 2025년 9.0%, 2012년 3.5%였다.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "미국 성인 대상 전화조사에서 성적 지향·성별 정체성 자기식별 응답을 집계한 Gallup Poll Social Series 추정치",
+    "sample": "2025년 미국 50개 주와 워싱턴 D.C. 거주 성인 13,454명 무작위 표본",
+    "aggregationBasis": "응답자가 heterosexual, lesbian, gay, bisexual, transgender, something else 중 자기식별한 범주를 성인 표본 단위로 집계",
+    "producer": "Gallup, Inc.",
+    "measuredAt": "2025-12-31"
+  },
+  "sixW": {
+    "who": "Gallup이 조사한 미국 성인 응답자",
+    "when": "2025년 조사, 2012년 최초 측정값과 비교",
+    "where": "미국 50개 주 및 워싱턴 D.C.",
+    "what": "성인 응답자 중 LGBTQ+ 자기식별 비율 9.0%와 2012년 3.5% 비교",
+    "how": "전화 인터뷰에서 자기식별 범주를 묻고 표본 응답을 비율로 집계",
+    "why": [
+      {
+        "reason": "Gallup은 각 조사에서 응답자에게 heterosexual, lesbian, gay, bisexual, transgender 또는 something else 자기식별 여부를 묻는다고 설명한다.",
+        "statedBy": "Gallup"
+      }
+    ]
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-06-19",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "Gallup 원문 HTML을 curl HTTP 200으로 확인했고, 9%, 3.5%, 13,454명 수치가 모두 같은 페이지의 본문 또는 방법론에 직접 표시되어 있다. 명제는 Gallup의 측정값으로 한정한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx",
+      "title": "LGBTQ+ Identification Holds at 9% in U.S.",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Lead paragraph"
+      },
+      "shortQuote": "Gallup estimates that 9% of U.S. adults",
+      "quoteHash": "sha256:a3cc9ed32aa942e2ddbc3eca6368c9c00ac56da083289302fab3c29e938f006c",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed returned HTTP 200 on 2026-06-19; quoted text is in the HTML body.",
+      "independenceGroupId": "gallup-2026-lgbtq-poll",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "Gallup is the producer of the survey estimate and the publisher of the quoted page.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Gallup is a polling organization publishing its own survey methodology and results.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "Polling estimates depend on response, weighting, and self-report methodology."
+        ],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx",
+      "title": "LGBTQ+ Identification Holds at 9% in U.S.",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Lead paragraph"
+      },
+      "shortQuote": "more than double the 3.5% from 2012",
+      "quoteHash": "sha256:fea7a449d79feca8d758908de78cc2a76a3a8cf564d8521e3cf0942c0ad1f825",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed returned HTTP 200 on 2026-06-19; quoted text is in the HTML body.",
+      "independenceGroupId": "gallup-2026-lgbtq-poll",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "Same primary Gallup page used for the historical comparison number.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "Gallup publishes the trend comparison as part of its own polling series.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "Trend comparisons depend on consistent questionnaire and weighting practice."
+        ],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx",
+      "title": "LGBTQ+ Identification Holds at 9% in U.S.",
+      "retrievedAt": "2026-06-19",
+      "locator": {
+        "section": "Methodology"
+      },
+      "shortQuote": "random sample of 13,454 adults",
+      "quoteHash": "sha256:7d31db2f54ab0478bc511c203b682063a5fcfb32b9d0afa4ab399a766ffcbaaa",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "curl -L --compressed returned HTTP 200 on 2026-06-19; methodology text is present in the HTML.",
+      "independenceGroupId": "gallup-2026-lgbtq-poll",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "Same primary Gallup page used for the sample description.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "The producer reports the sample size and geographic coverage.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "Reported sample details have not been independently audited in this record."
+        ],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "전화조사 자기응답은 비응답, 사회적 바람직성, 조사 모드의 영향을 받을 수 있다.",
+      "response": "명제는 인구의 참값이 아니라 Gallup이 공개한 2025년 자기식별 조사 추정치와 2012년 비교값으로 한정했다.",
+      "errorsFound": 1,
+      "framingChecks": "출산율, 인구위협, 다른 명제와의 정합성, 반박 목적의 문구를 모두 배제했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "동일한 문장 구조로 증가 또는 감소 어느 쪽도 평가하지 않도록 숫자와 조사 범위만 남겼다.",
+      "result": "가치판단 없이 조사 생산자, 연도, 표본, 측정값만 제시한다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "Gallup 권위만으로 채택하지 않고 curl HTTP 200 원문에서 수치와 방법론 문구를 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "(인간 검수자 식별자)",
+      "date": "2026-06-19",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "초안의 논증적 연결과 생식 가능 인구 관련 문구를 삭제하고 Gallup 측정값 단위로 재작성했다.",
+      "adoptedReason": "단일 조사 생산자의 공개 측정값을 사건단위로 보존하는 것이 제2 원칙에 부합한다.",
+      "rejectedAlternatives": "세대·성별 해석, 출산율 해석, 다른 성소수자 관련 명제와의 논증 연결은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "demographic_identity"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 명제는 Gallup의 특정 자기식별 조사 추정치에 한정하며 개인이나 집단의 가치 평가를 포함하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "자기식별 조사이므로 응답 거부, 표본 가중, 조사 모드, 문항 이해의 영향을 받을 수 있다. 이 기록은 Gallup 원문에 표시된 수치를 보존하며 별도 재가중이나 원자료 재분석은 하지 않았다.",
+  "tags": [
+    "lgbtq",
+    "polling",
+    "gallup",
+    "united-states",
+    "demographic-identity"
+  ],
+  "createdAt": "2026-06-19",
+  "updatedAt": "2026-06-19"
+}

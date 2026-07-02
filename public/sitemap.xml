@@ -109,6 +109,14 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
+    <loc>https://truth-reservoir.vercel.app/p/stmt-a37cb535bf2ed93375d15095</loc>
+    <lastmod>2026-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/verify/stmt-a37cb535bf2ed93375d15095</loc>
+    <lastmod>2026-06-19</lastmod>
+  </url>
+  <url>
     <loc>https://truth-reservoir.vercel.app/p/stmt-4b794b8163eb2161d4a9b949</loc>
     <lastmod>2026-06-19</lastmod>
   </url>
@@ -155,14 +163,6 @@
   <url>
     <loc>https://truth-reservoir.vercel.app/verify/stmt-cb0719e9aac6e4c86677d2e5</loc>
     <lastmod>2026-06-18</lastmod>
-  </url>
-  <url>
-    <loc>https://truth-reservoir.vercel.app/p/stmt-5697abe486cdf727eafca8e1</loc>
-    <lastmod>2026-07-02</lastmod>
-  </url>
-  <url>
-    <loc>https://truth-reservoir.vercel.app/verify/stmt-5697abe486cdf727eafca8e1</loc>
-    <lastmod>2026-07-02</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/p/stmt-a2c80ef637dd92021cbbd92b</loc>
@@ -533,10 +533,6 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
-    <loc>https://truth-reservoir.vercel.app/t/%EB%B3%B4%EC%88%98%EA%B0%95%EC%84%B8</loc>
-    <lastmod>2026-07-02</lastmod>
-  </url>
-  <url>
     <loc>https://truth-reservoir.vercel.app/t/%EB%B6%80%EC%A0%95%EC%84%A0%EA%B1%B0%EC%9D%98%ED%98%B9</loc>
     <lastmod>2026-07-02</lastmod>
   </url>
@@ -789,10 +785,6 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
-    <loc>https://truth-reservoir.vercel.app/t/%ED%8C%90%EB%8B%A8%EC%9C%A0%EB%B3%B4</loc>
-    <lastmod>2026-07-02</lastmod>
-  </url>
-  <url>
     <loc>https://truth-reservoir.vercel.app/t/%ED%8F%90%EC%A7%80</loc>
     <lastmod>2026-07-02</lastmod>
   </url>
@@ -841,8 +833,16 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
+    <loc>https://truth-reservoir.vercel.app/t/demographic-identity</loc>
+    <lastmod>2026-06-19</lastmod>
+  </url>
+  <url>
     <loc>https://truth-reservoir.vercel.app/t/Earthrise</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/t/gallup</loc>
+    <lastmod>2026-06-19</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/HIV</loc>
@@ -857,6 +857,10 @@
     <lastmod>2026-06-19</lastmod>
   </url>
   <url>
+    <loc>https://truth-reservoir.vercel.app/t/lgbtq</loc>
+    <lastmod>2026-06-19</lastmod>
+  </url>
+  <url>
     <loc>https://truth-reservoir.vercel.app/t/MSM</loc>
     <lastmod>2026-06-19</lastmod>
   </url>
@@ -867,6 +871,10 @@
   <url>
     <loc>https://truth-reservoir.vercel.app/t/NATO</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/t/polling</loc>
+    <lastmod>2026-06-19</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/PrEP</loc>
@@ -883,6 +891,10 @@
   <url>
     <loc>https://truth-reservoir.vercel.app/t/UNFCCC</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/t/united-states</loc>
+    <lastmod>2026-06-19</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/UU</loc>

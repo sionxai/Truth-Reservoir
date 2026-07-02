@@ -297,33 +297,6 @@ evidence:
 limitations: '시행일=9월 30일' 계산은 2차 출처 불일치가 있어 이 명제는 계산일이 아니라 원문 문구만 고정한다.
 tags: 개인정보보호, 법률제10465호, 부칙
 
-=== stmt:5697abe486cdf727eafca8e1 ===
-propositionId: stmt:5697abe486cdf727eafca8e1
-humanUrl: /p/stmt-5697abe486cdf727eafca8e1/
-jsonUrl: /api/v2/propositions/stmt-5697abe486cdf727eafca8e1.json
-canonicalProposition: 2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다
-factualGrade/status: undetermined / active
-assessmentStatus: undetermined
-claimNature: measurement
-asOfDate: 2026-06-18
-updatedAt: 2026-07-02
-sixW:
-  who: 진실저수지 검수 기록
-  when: 2026년 6월 18일 기준
-  where: 6·3 지방선거 투표용지 부족 투표소 91곳 및 fetch 가능한 공개 보도 범위
-  what: 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 사실로 확정되지 않았다고 기록했다
-  how: fetch 가능한 보도와 기존 91곳 지역분포 명제를 대조해 필요한 데이터 공개 여부를 점검했다
-  why: none
-correctionHistory: none
-evidence:
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "전통적인 보수 강세 지역이라는 점에 국민의힘이 주목"
-  - url: https://www.fnnews.com/news/202606040629007170; shortQuote: "잠실7동 제2투표소는 81.08%의 득표율을 보였다"
-  - url: https://www.hankyung.com/article/2026060456627; shortQuote: "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다"
-  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "투표용지가 부족했던 투표소 91곳은"
-  - url: https://www.khan.co.kr/article/202606082110001; shortQuote: "경기 23곳, 인천 11곳, 대구 4곳"
-limitations: 본 저수지는 편중을 사실로도, 비편중을 사실로도 저장하지 않는다. 검증된 분포(shortage-region-list-91)와 국민의힘 주장(ppp-conservative-concentration-claim)은 별도 보관한다. 표적·인과·부정선거 판단은 저장하지 않는다(제2).
-tags: 2026지방선거, 보수강세, 정치주장, 측정, 투표용지부족, 판단유보
-
 === stmt:5bf64ededa100f82163dcab1 ===
 propositionId: stmt:5bf64ededa100f82163dcab1
 humanUrl: /p/stmt-5bf64ededa100f82163dcab1/
@@ -1064,6 +1037,31 @@ evidence:
   - url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=10371222; shortQuote: "62.8 %"
 limitations: Ryan 등 연구는 21~25세 White·Latino LGBT 표본의 회고 단면자료이며 인과 추론으로 확장할 수 없다. 효과성 근거 부족 문구는 Ryan 등 논문이 선행 검토를 요약·인용한 내용이다.
 tags: 자살시도, 전환치료, 정신건강, 측정, SOCE
+
+=== stmt:a37cb535bf2ed93375d15095 ===
+propositionId: stmt:a37cb535bf2ed93375d15095
+humanUrl: /p/stmt-a37cb535bf2ed93375d15095/
+jsonUrl: /api/v2/propositions/stmt-a37cb535bf2ed93375d15095.json
+canonicalProposition: Gallup은 2025년 전화조사에서 미국 성인 9.0%가 LGBTQ+로 자기식별한다고 추정했으며, 이는 Gallup이 같은 항목을 처음 측정한 2012년 3.5%보다 높다.
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-06-19
+updatedAt: 2026-06-19
+sixW:
+  who: Gallup이 조사한 미국 성인 응답자
+  when: 2025년 조사, 2012년 최초 측정값과 비교
+  where: 미국 50개 주 및 워싱턴 D.C.
+  what: 성인 응답자 중 LGBTQ+ 자기식별 비율 9.0%와 2012년 3.5% 비교
+  how: 전화 인터뷰에서 자기식별 범주를 묻고 표본 응답을 비율로 집계
+  why: Gallup은 각 조사에서 응답자에게 heterosexual, lesbian, gay, bisexual, transgender 또는 something else 자기식별 여부를 묻는다고 설명한다. (statedBy: Gallup)
+correctionHistory: none
+evidence:
+  - url: https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx; shortQuote: "Gallup estimates that 9% of U.S. adults"
+  - url: https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx; shortQuote: "more than double the 3.5% from 2012"
+  - url: https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx; shortQuote: "random sample of 13,454 adults"
+limitations: 자기식별 조사이므로 응답 거부, 표본 가중, 조사 모드, 문항 이해의 영향을 받을 수 있다. 이 기록은 Gallup 원문에 표시된 수치를 보존하며 별도 재가중이나 원자료 재분석은 하지 않았다.
+tags: demographic-identity, gallup, lgbtq, polling, united-states
 
 === stmt:efddfa77db78be598d007d7e ===
 propositionId: stmt:efddfa77db78be598d007d7e

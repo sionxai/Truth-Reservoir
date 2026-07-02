@@ -1,7 +1,7 @@
 {
   "totalEntries": 44,
-  "totalAssessed": 43,
-  "totalUndetermined": 1,
+  "totalAssessed": 44,
+  "totalUndetermined": 0,
   "totalRetracted": 0,
   "measuredErrorRate": {
     "value": null,

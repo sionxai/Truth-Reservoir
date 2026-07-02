@@ -1377,6 +1377,178 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:a37cb535bf2ed93375d15095",
+      "versionId": "ver:ae9cf70f9b042cc2",
+      "certHash": "sha256:579ca1304b2d5e9e0b17f3b97afe2fc6d9c1d6a210ba855bcba2013ac267095f",
+      "canonicalProposition": "Gallup은 2025년 전화조사에서 미국 성인 9.0%가 LGBTQ+로 자기식별한다고 추정했으며, 이는 Gallup이 같은 항목을 처음 측정한 2012년 3.5%보다 높다.",
+      "originalClaim": "Gallup의 미국 성인 LGBTQ+ 자기식별 비율은 2025년 9.0%, 2012년 3.5%였다.",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "미국 성인 대상 전화조사에서 성적 지향·성별 정체성 자기식별 응답을 집계한 Gallup Poll Social Series 추정치",
+        "sample": "2025년 미국 50개 주와 워싱턴 D.C. 거주 성인 13,454명 무작위 표본",
+        "aggregationBasis": "응답자가 heterosexual, lesbian, gay, bisexual, transgender, something else 중 자기식별한 범주를 성인 표본 단위로 집계",
+        "producer": "Gallup, Inc.",
+        "measuredAt": "2025-12-31"
+      },
+      "sixW": {
+        "who": "Gallup이 조사한 미국 성인 응답자",
+        "when": "2025년 조사, 2012년 최초 측정값과 비교",
+        "where": "미국 50개 주 및 워싱턴 D.C.",
+        "what": "성인 응답자 중 LGBTQ+ 자기식별 비율 9.0%와 2012년 3.5% 비교",
+        "how": "전화 인터뷰에서 자기식별 범주를 묻고 표본 응답을 비율로 집계",
+        "why": [
+          {
+            "reason": "Gallup은 각 조사에서 응답자에게 heterosexual, lesbian, gay, bisexual, transgender 또는 something else 자기식별 여부를 묻는다고 설명한다.",
+            "statedBy": "Gallup"
+          }
+        ]
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-06-19",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "fully_reliable",
+        "status": "assessed",
+        "gradeRationale": "Gallup 원문 HTML을 curl HTTP 200으로 확인했고, 9%, 3.5%, 13,454명 수치가 모두 같은 페이지의 본문 또는 방법론에 직접 표시되어 있다. 명제는 Gallup의 측정값으로 한정한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx",
+          "title": "LGBTQ+ Identification Holds at 9% in U.S.",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Lead paragraph"
+          },
+          "shortQuote": "Gallup estimates that 9% of U.S. adults",
+          "quoteHash": "sha256:a3cc9ed32aa942e2ddbc3eca6368c9c00ac56da083289302fab3c29e938f006c",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed returned HTTP 200 on 2026-06-19; quoted text is in the HTML body.",
+          "independenceGroupId": "gallup-2026-lgbtq-poll",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "Gallup is the producer of the survey estimate and the publisher of the quoted page.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Gallup is a polling organization publishing its own survey methodology and results.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "Polling estimates depend on response, weighting, and self-report methodology."
+            ],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx",
+          "title": "LGBTQ+ Identification Holds at 9% in U.S.",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Lead paragraph"
+          },
+          "shortQuote": "more than double the 3.5% from 2012",
+          "quoteHash": "sha256:fea7a449d79feca8d758908de78cc2a76a3a8cf564d8521e3cf0942c0ad1f825",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed returned HTTP 200 on 2026-06-19; quoted text is in the HTML body.",
+          "independenceGroupId": "gallup-2026-lgbtq-poll",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "Same primary Gallup page used for the historical comparison number.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "Gallup publishes the trend comparison as part of its own polling series.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "Trend comparisons depend on consistent questionnaire and weighting practice."
+            ],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://news.gallup.com/poll/702206/lgbtq-identification-holds.aspx",
+          "title": "LGBTQ+ Identification Holds at 9% in U.S.",
+          "retrievedAt": "2026-06-19",
+          "locator": {
+            "section": "Methodology"
+          },
+          "shortQuote": "random sample of 13,454 adults",
+          "quoteHash": "sha256:7d31db2f54ab0478bc511c203b682063a5fcfb32b9d0afa4ab399a766ffcbaaa",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "curl -L --compressed returned HTTP 200 on 2026-06-19; methodology text is present in the HTML.",
+          "independenceGroupId": "gallup-2026-lgbtq-poll",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "Same primary Gallup page used for the sample description.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "The producer reports the sample size and geographic coverage.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "Reported sample details have not been independently audited in this record."
+            ],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "전화조사 자기응답은 비응답, 사회적 바람직성, 조사 모드의 영향을 받을 수 있다.",
+          "response": "명제는 인구의 참값이 아니라 Gallup이 공개한 2025년 자기식별 조사 추정치와 2012년 비교값으로 한정했다.",
+          "errorsFound": 1,
+          "framingChecks": "출산율, 인구위협, 다른 명제와의 정합성, 반박 목적의 문구를 모두 배제했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "동일한 문장 구조로 증가 또는 감소 어느 쪽도 평가하지 않도록 숫자와 조사 범위만 남겼다.",
+          "result": "가치판단 없이 조사 생산자, 연도, 표본, 측정값만 제시한다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "Gallup 권위만으로 채택하지 않고 curl HTTP 200 원문에서 수치와 방법론 문구를 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "(인간 검수자 식별자)",
+          "date": "2026-06-19",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "초안의 논증적 연결과 생식 가능 인구 관련 문구를 삭제하고 Gallup 측정값 단위로 재작성했다.",
+          "adoptedReason": "단일 조사 생산자의 공개 측정값을 사건단위로 보존하는 것이 제2 원칙에 부합한다.",
+          "rejectedAlternatives": "세대·성별 해석, 출산율 해석, 다른 성소수자 관련 명제와의 논증 연결은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "demographic_identity"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 명제는 Gallup의 특정 자기식별 조사 추정치에 한정하며 개인이나 집단의 가치 평가를 포함하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "자기식별 조사이므로 응답 거부, 표본 가중, 조사 모드, 문항 이해의 영향을 받을 수 있다. 이 기록은 Gallup 원문에 표시된 수치를 보존하며 별도 재가중이나 원자료 재분석은 하지 않았다.",
+      "tags": [
+        "lgbtq",
+        "polling",
+        "gallup",
+        "united-states",
+        "demographic-identity"
+      ],
+      "createdAt": "2026-06-19",
+      "updatedAt": "2026-06-19"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:4b794b8163eb2161d4a9b949",
       "versionId": "ver:c30e8a6cb0b9466c",
       "certHash": "sha256:d631168809593f03b96d54e305ea7661dc10f52191e25e0c4a3fc68536ec6029",
@@ -2368,232 +2540,6 @@
       ],
       "createdAt": "2026-06-18",
       "updatedAt": "2026-06-18"
-    },
-    {
-      "certVersion": "2.1",
-      "propositionId": "stmt:5697abe486cdf727eafca8e1",
-      "versionId": "ver:843e4caa4b5ad206",
-      "certHash": "sha256:ef6f1069abffefd6c72c26c1ca53099d4bd2f1d94c22e1cada8381ba93f96e94",
-      "canonicalProposition": "2026년 6월 18일 기준, 6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 부족 투표소 전체의 정파 성향과 전국 기준선을 대조한 재현 가능한 분석이 공개되지 않아 사실로 확정되지 않았다",
-      "originalClaim": "6·3 지방선거 투표용지 부족이 보수 강세 지역에 정파적으로 집중됐는지에 대한 경험적 상태.",
-      "claimNature": "measurement",
-      "measurement": {
-        "method": "2026-06-18 현재 fetch 가능한 보도와 기존 91곳 지역분포 명제를 대조해 보수 강세 집중 여부를 판단하기 위한 필요 데이터 공개 여부를 점검했다.",
-        "sample": "6·3 지방선거 투표용지 부족 투표소 91곳 및 국민의힘이 보도에서 제시한 일부 보수 강세 투표소 사례",
-        "aggregationBasis": "부족 투표소 전체의 정파 성향, 전국 투표소 정파 분포 기준선, 재현 가능한 통계 분석의 공개 여부",
-        "producer": "진실저수지 검수 기록",
-        "measuredAt": "2026-06-18"
-      },
-      "sixW": {
-        "who": "진실저수지 검수 기록",
-        "when": "2026년 6월 18일 기준",
-        "where": "6·3 지방선거 투표용지 부족 투표소 91곳 및 fetch 가능한 공개 보도 범위",
-        "what": "투표용지 부족이 보수 강세 지역에 정파적으로 편중됐는지는 사실로 확정되지 않았다고 기록했다",
-        "how": "fetch 가능한 보도와 기존 91곳 지역분포 명제를 대조해 필요한 데이터 공개 여부를 점검했다",
-        "why": []
-      },
-      "classification": "M",
-      "language": "ko",
-      "asOfDate": "2026-06-18",
-      "status": "active",
-      "reviewMode": "human_reviewed",
-      "assessment": {
-        "factualGrade": null,
-        "status": "undetermined",
-        "gradeRationale": "편중 주장은 극단 사례 일부에 의존하며 91곳 전수 정파성향·전국 기준선 대조 분석이 부재하다. 경합하는 비표적(인쇄기준·투표율) 설명도 정량 검증되지 않았다. 따라서 편중 여부는 현재 재현 가능한 증거로 확정·반증 모두 불가하다.",
-        "rubricVersion": "rubric-3.0",
-        "pipelineVersion": "pipeline-3.0"
-      },
-      "evidence": [
-        {
-          "url": "https://www.fnnews.com/news/202606040629007170",
-          "title": "보수 강세에 집중된 투표용지 부족 지역…국민의힘 \"참정권 침해\" 공세",
-          "retrievedAt": "2026-06-18",
-          "locator": {
-            "section": "본문"
-          },
-          "shortQuote": "전통적인 보수 강세 지역이라는 점에 국민의힘이 주목",
-          "quoteHash": "sha256:b1bddd616db1e68f46555fa06c053821bf0a98303a19ddb8f084027881a71fae",
-          "archiveStatus": "archive_attempt_recommended",
-          "retrievalMethod": "crawler",
-          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 이 문장은 보수 강세 귀속을 저수지의 사실판정이 아니라 국민의힘의 주목 지점으로 귀속한다.",
-          "independenceGroupId": "fnnews-20260604-ppp-conservative-attribution",
-          "independenceLevel": "partially_independent",
-          "independenceNote": "파이낸셜뉴스가 한국경제 보도를 인용한 보수 강세 지역 귀속 문장이라 독립 출처 수를 과대계산하지 않는다.",
-          "sourceCompetence": "relevant",
-          "competenceNote": "투표용지 부족 사태와 정치권 반응을 보도한 관련 언론 출처다.",
-          "sourceType": "secondary_report",
-          "sourceProvenance": {
-            "productionIndependence": "independent",
-            "productionConcerns": [
-              "보수 강세 지역 귀속은 기사 안에서 한국경제 보도를 인용한다.",
-              "이 증거는 주장 존재 확인에만 사용하고 집중 여부의 분석 증거로 사용하지 않는다."
-            ],
-            "requiresMethodologyAudit": false
-          }
-        },
-        {
-          "url": "https://www.fnnews.com/news/202606040629007170",
-          "title": "보수 강세에 집중된 투표용지 부족 지역…국민의힘 \"참정권 침해\" 공세",
-          "retrievedAt": "2026-06-18",
-          "locator": {
-            "section": "본문"
-          },
-          "shortQuote": "잠실7동 제2투표소는 81.08%의 득표율을 보였다",
-          "quoteHash": "sha256:0216fb0a786c94c790050638177cfcd46ee3cac7d6c0751dee0ff6f9f631f763",
-          "archiveStatus": "archive_attempt_recommended",
-          "retrievalMethod": "crawler",
-          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 이 문장은 국민의힘 의혹 보도에서 제시된 일부 사례의 수치 확인에만 사용한다.",
-          "independenceGroupId": "fnnews-20260604-ppp-precinct-example",
-          "independenceLevel": "shared_origin",
-          "independenceNote": "같은 파이낸셜뉴스 기사에서 국민의힘 보수 강세 의혹의 예시 수치를 확인한다. 독립 출처 수를 늘리지는 않는다.",
-          "sourceCompetence": "relevant",
-          "competenceNote": "투표용지 부족 사태와 일부 투표소 사례를 보도한 관련 언론 출처다.",
-          "sourceType": "secondary_report",
-          "sourceProvenance": {
-            "productionIndependence": "independent",
-            "productionConcerns": [
-              "일부 사례는 대표성 있는 전수 분석이 아니므로 편중 결론의 근거로 사용하지 않는다."
-            ],
-            "requiresMethodologyAudit": false
-          }
-        },
-        {
-          "url": "https://www.hankyung.com/article/2026060456627",
-          "title": "\"하필…\" 용지 부족 투표소, 알고 보니 '오세훈 초강세 지역'",
-          "retrievedAt": "2026-06-18",
-          "locator": {
-            "section": "본문"
-          },
-          "shortQuote": "국민의힘 강세 지역에서 문제가 집중됐다는 의혹을 제기했다",
-          "quoteHash": "sha256:63b76c70753792c021b40e93bcde5f8826bec8ff3c4a42f8d1529da2327a0e35",
-          "archiveStatus": "archive_attempt_recommended",
-          "retrievalMethod": "crawler",
-          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 한국경제는 이 대목을 송언석 국민의힘 원내대표의 의혹 제기로 귀속한다.",
-          "independenceGroupId": "hankyung-20260604-ppp-conservative-concentration-claim",
-          "independenceLevel": "independent",
-          "independenceNote": "국민의힘 강세 지역 집중 의혹 제기를 직접 보도한 fetch 가능 언론 출처다.",
-          "sourceCompetence": "relevant",
-          "competenceNote": "투표용지 부족 사태와 국민의힘 주장을 보도한 관련 언론 출처다.",
-          "sourceType": "secondary_report",
-          "sourceProvenance": {
-            "productionIndependence": "independent",
-            "productionConcerns": [
-              "기사에는 분석적 표현이 포함되어 있어 주장 존재 확인에만 사용한다."
-            ],
-            "requiresMethodologyAudit": false
-          }
-        },
-        {
-          "url": "https://www.khan.co.kr/article/202606082110001",
-          "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
-          "retrievedAt": "2026-06-18",
-          "locator": {
-            "section": "본문"
-          },
-          "shortQuote": "투표용지가 부족했던 투표소 91곳은",
-          "quoteHash": "sha256:3f2fe7087c15e851df348d44b04943f1589753360c57125b20bc8c55dd077c22",
-          "archiveStatus": "archive_attempt_recommended",
-          "retrievalMethod": "crawler",
-          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 이 문장은 전수 분석 필요 모집단의 규모 확인에 사용한다.",
-          "independenceGroupId": "khan-20260608-nec-91-region",
-          "independenceLevel": "independent",
-          "independenceNote": "선관위 2026-06-08 지역별 집계를 보도한 fetch 가능 언론 출처다.",
-          "sourceCompetence": "relevant",
-          "competenceNote": "투표용지 부족 투표소 91곳 집계와 지역별 분포를 보도했다.",
-          "sourceType": "secondary_report",
-          "sourceProvenance": {
-            "productionIndependence": "independent",
-            "productionConcerns": [
-              "선관위 원자료 직접 fetch가 아니라 언론 전재에 의존한다."
-            ],
-            "requiresMethodologyAudit": true
-          }
-        },
-        {
-          "url": "https://www.khan.co.kr/article/202606082110001",
-          "title": "사흘 전엔 50곳이라더니···선관위 “선거 당일 투표용지 부족 투표소 91곳”",
-          "retrievedAt": "2026-06-18",
-          "locator": {
-            "section": "본문"
-          },
-          "shortQuote": "경기 23곳, 인천 11곳, 대구 4곳",
-          "quoteHash": "sha256:0e48850f0cc506878476c8812e80fb8e648d3f68fd133231a7157da6cd8e5c51",
-          "archiveStatus": "archive_attempt_recommended",
-          "retrievalMethod": "crawler",
-          "retrievalLimitations": "curl -L --compressed HTTP 200으로 본문을 로드했고 shortQuote가 원문에 그대로 존재했다. 지역분포가 서울 일부 사례로만 환원되지 않음을 확인하는 보조 증거다.",
-          "independenceGroupId": "khan-20260608-nec-91-region",
-          "independenceLevel": "shared_origin",
-          "independenceNote": "같은 경향신문 기사에서 지역별 세부 수치를 추가 확인한다. 독립 출처 수를 늘리지는 않는다.",
-          "sourceCompetence": "relevant",
-          "competenceNote": "경기·인천·대구 수치를 직접 보도했다.",
-          "sourceType": "secondary_report",
-          "sourceProvenance": {
-            "productionIndependence": "independent",
-            "productionConcerns": [
-              "선관위 원자료 직접 fetch가 아니라 언론 전재에 의존한다."
-            ],
-            "requiresMethodologyAudit": true
-          }
-        }
-      ],
-      "reviewLog": {
-        "redteam": {
-          "strongestCounterargument": "공개된 통계분석을 찾지 못했다는 사실만으로 실제 편중이 없다고 결론낼 수 없고, 일부 보수 강세 사례는 실제로 존재한다.",
-          "response": "일부 사례와 91곳 지역분포는 각각 별도 사실로 보존하되, 전체 91곳 정파성향과 전국 기준선 대조 분석이 없으므로 편중 여부를 undetermined로 저장했다.",
-          "errorsFound": 0,
-          "framingChecks": "집중됐다, 집중되지 않았다, 표적이었다, 부정선거였다는 verdict 표현을 모두 배제했다."
-        },
-        "symmetry": {
-          "checked": true,
-          "method": "국민의힘 주장 명제, 국민의힘 예시 투표소 명제, 선관위 91곳 지역분포 명제를 함께 대조했다.",
-          "pairedPropositionId": "stmt:6ec9cbff53f71a505b22823f",
-          "result": "대칭 점검 완료 — 주장 존재와 분포 사실은 보존하되 보수 강세 집중 여부는 판단유보로 기록했다."
-        },
-        "authorityCheck": {
-          "checked": true,
-          "note": "정당의 의혹 제기나 언론의 분석적 제목을 전수 통계 분석으로 간주하지 않았다."
-        },
-        "humanReview": {
-          "reviewer": "(인간 검수자 식별자)",
-          "date": "2026-06-18",
-          "checksPerformed": [
-            "omission",
-            "asymmetry",
-            "framing",
-            "authority_assumption"
-          ],
-          "reviewMemo": "정치·선거·측정 사안이라 human_reviewed 레인으로 분류했다. 2026-06-18 파이낸셜뉴스·한국경제·경향신문 본문을 curl -L --compressed HTTP 200으로 확인했고 shortQuote를 verbatim 확인했다. 91곳 전체 정파성향과 전국 기준선 대조 통계분석은 fetch 가능한 출처에서 확인하지 못했다. 2026-07-02 v0.7 양식 정규화: sixW 백필(기존 내용에서만 파생)·태그 한글 표준화·표기 통일. 사실 내용 불변.",
-          "adoptedReason": "편중 여부 자체는 재현 가능한 전수 분석이 없어 판단유보로 저장하는 것이 제6조와 제7조에 부합한다.",
-          "rejectedAlternatives": "보수 강세 지역에 집중됐다는 결론, 보수 강세 지역에 집중되지 않았다는 반대 결론, 투표율 기반 기계적 설명, 표적·인과·부정선거 판단은 제외했다."
-        }
-      },
-      "sensitive": {
-        "sensitive": true,
-        "sensitivityReason": [
-          "political_claim"
-        ],
-        "legalStatus": "unknown",
-        "presumptionNotice": "이 명제는 2026-06-18 기준 보수 강세 지역 편중 여부의 경험적 상태가 판단유보임을 기록하며, 특정 정당 지역 표적 여부·고의성·부정선거 여부에 관한 사실 또는 법적 판단은 미확정이다."
-      },
-      "undeterminedItems": [
-        "91곳(또는 140곳) 전체 투표소의 정파 성향 데이터",
-        "전국 투표소 정파 분포 기준선(base rate)",
-        "편중에 대한 재현 가능한 통계 분석"
-      ],
-      "correctionHistory": [],
-      "openCorrectionRequests": 0,
-      "limitations": "본 저수지는 편중을 사실로도, 비편중을 사실로도 저장하지 않는다. 검증된 분포(shortage-region-list-91)와 국민의힘 주장(ppp-conservative-concentration-claim)은 별도 보관한다. 표적·인과·부정선거 판단은 저장하지 않는다(제2).",
-      "tags": [
-        "2026지방선거",
-        "투표용지부족",
-        "보수강세",
-        "판단유보",
-        "측정",
-        "정치주장"
-      ],
-      "createdAt": "2026-06-18",
-      "updatedAt": "2026-07-02"
     },
     {
       "certVersion": "2.1",
@@ -3961,8 +3907,8 @@
     {
       "certVersion": "2.1",
       "propositionId": "stmt:6ec9cbff53f71a505b22823f",
-      "versionId": "ver:0293836ef71f8d4a",
-      "certHash": "sha256:6827128d65dd23249bdd4e0a45b4041a327d63a2a7e6b823413559080a6d5fdd",
+      "versionId": "ver:a8d25abd81717c4f",
+      "certHash": "sha256:d37ad6eabf213d2b1a1cb1c3b5e737aabf192a8735c317e40e4d85477f59167b",
       "canonicalProposition": "국민의힘은 2026년 6월 4일 6·3 지방선거 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며, 실제 투표를 포기한 유권자가 발생했다면 중대한 참정권 침해에 해당할 수 있다고 주장했다",
       "originalClaim": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 국민의힘의 정치적 문제 제기와 참정권 침해 주장.",
       "claimNature": "event_occurrence",
@@ -4134,7 +4080,10 @@
         "legalStatus": "unknown",
         "presumptionNotice": "이 명제는 국민의힘 주장의 존재만 기록하며, 보수 지역 표적 여부·고의성·부정선거 여부에 관한 사실 또는 법적 판단은 미확정이다."
       },
-      "undeterminedItems": [],
+      "undeterminedItems": [
+        "이 주장의 진위(부족이 보수 강세 지역에 정파적으로 편중됐는지)는 2026-06-18 기준 확정되지 않았다. 확정에는 부족 투표소(91곳 또는 140곳) 전체의 정파 성향, 전국 투표소 정파 분포 기준선(base rate), 편중에 대한 재현 가능한 통계 분석이 필요하나 공개되지 않았다.",
+        "저수지는 편중을 사실로도 비편중을 사실로도 저장하지 않는다(제6·제7)."
+      ],
       "correctionHistory": [],
       "openCorrectionRequests": 0,
       "limitations": "이 명제는 국민의힘 '주장의 존재'만 기록한다. 선관위 검증 분포(91곳)는 보수 강세 지역에 국한되지 않으며 경기 23곳·인천 11곳·전남 2곳·전북 1곳 등에도 분포한다(shortage-region-list-91 참조). 송파구 20곳이 최다인 것은 사실이나, 분포가 특정 정당 지역을 표적했는지 여부는 미확정이며 본 저수지는 인과·표적·부정선거 판단을 저장하지 않는다(제2).",
@@ -7112,7 +7061,7 @@
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
       "totalEntries": 44,
-      "totalAssessed": 43,
+      "totalAssessed": 44,
       "openCorrectionRequests": 0
     },
     "propositions": [
@@ -7149,6 +7098,10 @@
         "path": "/api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json"
       },
       {
+        "propositionId": "stmt:a37cb535bf2ed93375d15095",
+        "path": "/api/v2/propositions/stmt-a37cb535bf2ed93375d15095.json"
+      },
+      {
         "propositionId": "stmt:4b794b8163eb2161d4a9b949",
         "path": "/api/v2/propositions/stmt-4b794b8163eb2161d4a9b949.json"
       },
@@ -7171,10 +7124,6 @@
       {
         "propositionId": "stmt:cb0719e9aac6e4c86677d2e5",
         "path": "/api/v2/propositions/stmt-cb0719e9aac6e4c86677d2e5.json"
-      },
-      {
-        "propositionId": "stmt:5697abe486cdf727eafca8e1",
-        "path": "/api/v2/propositions/stmt-5697abe486cdf727eafca8e1.json"
       },
       {
         "propositionId": "stmt:a2c80ef637dd92021cbbd92b",

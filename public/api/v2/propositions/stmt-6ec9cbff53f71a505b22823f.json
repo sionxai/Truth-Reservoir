@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:6ec9cbff53f71a505b22823f",
-  "versionId": "ver:0293836ef71f8d4a",
-  "certHash": "sha256:6827128d65dd23249bdd4e0a45b4041a327d63a2a7e6b823413559080a6d5fdd",
+  "versionId": "ver:a8d25abd81717c4f",
+  "certHash": "sha256:d37ad6eabf213d2b1a1cb1c3b5e737aabf192a8735c317e40e4d85477f59167b",
   "canonicalProposition": "국민의힘은 2026년 6월 4일 6·3 지방선거 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며, 실제 투표를 포기한 유권자가 발생했다면 중대한 참정권 침해에 해당할 수 있다고 주장했다",
   "originalClaim": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 국민의힘의 정치적 문제 제기와 참정권 침해 주장.",
   "claimNature": "event_occurrence",
@@ -174,7 +174,10 @@
     "legalStatus": "unknown",
     "presumptionNotice": "이 명제는 국민의힘 주장의 존재만 기록하며, 보수 지역 표적 여부·고의성·부정선거 여부에 관한 사실 또는 법적 판단은 미확정이다."
   },
-  "undeterminedItems": [],
+  "undeterminedItems": [
+    "이 주장의 진위(부족이 보수 강세 지역에 정파적으로 편중됐는지)는 2026-06-18 기준 확정되지 않았다. 확정에는 부족 투표소(91곳 또는 140곳) 전체의 정파 성향, 전국 투표소 정파 분포 기준선(base rate), 편중에 대한 재현 가능한 통계 분석이 필요하나 공개되지 않았다.",
+    "저수지는 편중을 사실로도 비편중을 사실로도 저장하지 않는다(제6·제7)."
+  ],
   "correctionHistory": [],
   "openCorrectionRequests": 0,
   "limitations": "이 명제는 국민의힘 '주장의 존재'만 기록한다. 선관위 검증 분포(91곳)는 보수 강세 지역에 국한되지 않으며 경기 23곳·인천 11곳·전남 2곳·전북 1곳 등에도 분포한다(shortage-region-list-91 참조). 송파구 20곳이 최다인 것은 사실이나, 분포가 특정 정당 지역을 표적했는지 여부는 미확정이며 본 저수지는 인과·표적·부정선거 판단을 저장하지 않는다(제2).",
