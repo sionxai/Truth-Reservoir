@@ -4,6 +4,7 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { CertV2Schema } from "../schema/cert-v2.ts";
 import { loadPropositionFile, loadPropositions, listPropositionFiles } from "../lib/data.ts";
+import { entityRegistry, entityRoute } from "../lib/entities.ts";
 import { encodePropositionId } from "../lib/ids.ts";
 import { tagRoute, uniqueTags } from "../lib/propositions.ts";
 import { applyDerivedHashes, verifyPropositionHashes } from "../lib/verify.ts";
@@ -79,6 +80,17 @@ describe("data integration", () => {
       nodes?: Array<{ propositionId?: string; path?: string; tags?: unknown }>;
       edges?: Array<{ from?: string; to?: string; sharedTags?: unknown }>;
     }>(join(apiRoot, "graph.json"));
+    const entities = await readJsonFile<{
+      meta?: { total?: unknown; note?: unknown };
+      entities?: Array<{
+        name?: string;
+        slug?: string;
+        path?: string;
+        propositionCount?: number;
+        propositionIds?: string[];
+        roles?: { who?: string[]; statedBy?: string[] };
+      }>;
+    }>(join(apiRoot, "entities.json"));
     const requests = await readJsonFile<{
       meta?: { repo?: unknown; total?: unknown; note?: unknown };
       requests?: unknown;
@@ -132,6 +144,24 @@ describe("data integration", () => {
       expect((edge.sharedTags as unknown[]).length).toBeGreaterThan(0);
     }
 
+    const registry = entityRegistry(propositions);
+    expect(entities.meta).toMatchObject({
+      total: registry.size,
+      note: expect.stringContaining("sixW.who/statedBy")
+    });
+    expect(entities.entities).toHaveLength(registry.size);
+    expect(entities.entities?.map((entity) => entity.name).sort()).toEqual(
+      [...registry.keys()].sort()
+    );
+    for (const entity of entities.entities ?? []) {
+      expect(entity.slug).toMatch(/^e-[A-Za-z0-9_-]+$/);
+      expect(entity.path).toBe(`/e/${entity.slug}`);
+      expect(entity.propositionCount).toBe(entity.propositionIds?.length);
+      expect(entity.propositionIds?.length).toBeGreaterThan(0);
+      expect(Array.isArray(entity.roles?.who)).toBe(true);
+      expect(Array.isArray(entity.roles?.statedBy)).toBe(true);
+    }
+
     for (const proposition of propositions) {
       const dashId = encodePropositionId(proposition.propositionId);
       const published = await readJsonFile(join(apiRoot, "propositions", `${dashId}.json`));
@@ -141,11 +171,14 @@ describe("data integration", () => {
 
     const openapiPath = join(apiRoot, "openapi.json");
     const certSchemaPath = join(apiRoot, "schema", "cert-v2.schema.json");
-    const openapi = await readJsonFile<{ openapi?: string }>(openapiPath);
+    const openapi = await readJsonFile<{ openapi?: string; paths?: Record<string, unknown> }>(
+      openapiPath
+    );
 
     expect(existsSync(openapiPath)).toBe(true);
     expect(existsSync(certSchemaPath)).toBe(true);
     expect(openapi.openapi).toBe("3.1.0");
+    expect(openapi.paths).toHaveProperty("/api/v2/entities.json");
     await expect(readJsonFile(certSchemaPath)).resolves.toEqual(expect.any(Object));
 
     expect(Array.isArray(requests.requests)).toBe(true);
@@ -180,6 +213,9 @@ describe("data integration", () => {
       "<loc>https://truth-reservoir.vercel.app/api/v2/graph.json</loc>"
     );
     expect(sitemap).toContain(
+      "<loc>https://truth-reservoir.vercel.app/api/v2/entities.json</loc>"
+    );
+    expect(sitemap).toContain(
       "<loc>https://truth-reservoir.vercel.app/api/v2/requests.json</loc>"
     );
     expect(sitemap).toContain(
@@ -198,6 +234,12 @@ describe("data integration", () => {
     for (const tag of uniqueTags(propositions)) {
       expect(sitemap).toContain(
         `<loc>https://truth-reservoir.vercel.app${tagRoute(tag)}</loc>`
+      );
+    }
+
+    for (const entry of entityRegistry(propositions).values()) {
+      expect(sitemap).toContain(
+        `<loc>https://truth-reservoir.vercel.app${entityRoute(entry.slug)}</loc>`
       );
     }
   });

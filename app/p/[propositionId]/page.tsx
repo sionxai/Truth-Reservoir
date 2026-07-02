@@ -9,6 +9,17 @@ import {
   sourceHostname
 } from "../../../lib/display.ts";
 import { loadPropositions } from "../../../lib/data.ts";
+import {
+  entityRegistry,
+  entitiesForProposition,
+  entityForRawValue,
+  linkEntityNamesInText,
+  roleLabel,
+  type EntityRegistryEntry,
+  type EntityRole,
+  type EntityTextSegment,
+  type PropositionEntity
+} from "../../../lib/entities.ts";
 import { decodePropositionId, encodePropositionId } from "../../../lib/ids.ts";
 import { relatedPropositions, type RelatedProposition } from "../../../lib/relations.ts";
 import { absoluteSiteUrl, getRepoUrl } from "../../../lib/site.ts";
@@ -72,6 +83,9 @@ export default async function PropositionDetailPage({ params }: PageProps) {
   const dashId = encodePropositionId(proposition.propositionId);
   const jsonPath = propositionJsonPath(dashId);
   const jsonUrl = absoluteSiteUrl(jsonPath);
+  const registry = entityRegistry(propositions);
+  const propositionEntities = entitiesForProposition(proposition, registry);
+  const canonicalSegments = linkEntityNamesInText(proposition.canonicalProposition, registry);
   const related = relatedPropositions(proposition, propositions);
   const relatedLinks = related.map((item) =>
     absoluteSiteUrl(`/p/${encodePropositionId(item.proposition.propositionId)}/`)
@@ -104,8 +118,10 @@ export default async function PropositionDetailPage({ params }: PageProps) {
               <time dateTime={proposition.asOfDate}>{proposition.asOfDate}</time> 기준
             </span>
           </div>
-          <h1>{proposition.canonicalProposition}</h1>
+          <h1>{renderEntityTextSegments(canonicalSegments)}</h1>
         </header>
+
+        <RelatedEntitiesRow entities={propositionEntities} />
 
         {proposition.sixW ? (
           <section className="facts-section" aria-labelledby="sixw-title">
@@ -113,7 +129,13 @@ export default async function PropositionDetailPage({ params }: PageProps) {
             <dl className="facts-dl sixw-dl">
               <div>
                 <dt>누가</dt>
-                <dd>{proposition.sixW.who}</dd>
+                <dd>
+                  <StructuredEntityLink
+                    raw={proposition.sixW.who}
+                    registry={registry}
+                    role="who"
+                  />
+                </dd>
               </div>
               <div>
                 <dt>언제</dt>
@@ -138,7 +160,10 @@ export default async function PropositionDetailPage({ params }: PageProps) {
                     <ul className="why-list">
                       {whyItems.map((item) => (
                         <li key={`${item.statedBy}:${item.reason}`}>
-                          <span className="attribution-badge">{item.statedBy}가 밝힌 사유</span>
+                          <AttributionEntityBadge
+                            registry={registry}
+                            statedBy={item.statedBy}
+                          />
                           <span>{item.reason}</span>
                         </li>
                       ))}
@@ -247,6 +272,89 @@ export default async function PropositionDetailPage({ params }: PageProps) {
         <RelatedFactsSection related={related} />
       </article>
     </main>
+  );
+}
+
+function renderEntityTextSegments(segments: EntityTextSegment[]) {
+  return segments.map((segment, index) => {
+    if (!segment.entity) {
+      return <span key={`${segment.text}:${index}`}>{segment.text}</span>;
+    }
+
+    return (
+      <Link
+        className="entity-inline-link"
+        href={segment.entity.path}
+        key={`${segment.text}:${index}`}
+      >
+        {segment.text}
+      </Link>
+    );
+  });
+}
+
+function RelatedEntitiesRow({ entities }: { entities: PropositionEntity[] }) {
+  if (!entities.length) {
+    return null;
+  }
+
+  return (
+    <nav className="related-entity-row" aria-label="관련 엔티티">
+      <span className="related-entity-row__label">관련 엔티티</span>
+      <ul>
+        {entities.map((entity) => (
+          <li key={entity.name}>
+            <Link href={entity.path}>
+              {entity.name}
+              <span>{entity.roles.map(roleLabel).join(" · ")}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
+function StructuredEntityLink({
+  raw,
+  role,
+  registry
+}: {
+  raw: string;
+  role: EntityRole;
+  registry: Map<string, EntityRegistryEntry>;
+}) {
+  const entity = entityForRawValue(raw, role, registry);
+
+  if (!entity) {
+    return raw;
+  }
+
+  return (
+    <Link className="entity-field-link" href={entity.path}>
+      {raw}
+    </Link>
+  );
+}
+
+function AttributionEntityBadge({
+  statedBy,
+  registry
+}: {
+  statedBy: string;
+  registry: Map<string, EntityRegistryEntry>;
+}) {
+  const entity = entityForRawValue(statedBy, "statedBy", registry);
+  const label = `${statedBy}가 밝힌 사유`;
+
+  if (!entity) {
+    return <span className="attribution-badge">{label}</span>;
+  }
+
+  return (
+    <Link className="attribution-badge attribution-badge--link" href={entity.path}>
+      {label}
+    </Link>
   );
 }
 

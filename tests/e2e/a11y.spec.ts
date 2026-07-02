@@ -1,17 +1,26 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
 import { loadPropositions } from "../../lib/data.ts";
+import { entityRegistry } from "../../lib/entities.ts";
 import { encodePropositionId } from "../../lib/ids.ts";
 import type { Proposition } from "../../lib/types.ts";
 import { findPredecessorSeed } from "../test-utils.ts";
 
 let predecessor: Proposition;
 let predecessorDashId: string;
+let centralElectionCommissionSlug: string;
 
 test.beforeAll(async () => {
   const propositions = await loadPropositions();
   predecessor = findPredecessorSeed(propositions);
   predecessorDashId = encodePropositionId(predecessor.propositionId);
+  const central = entityRegistry(propositions).get("중앙선거관리위원회");
+
+  if (!central) {
+    throw new Error("Expected 중앙선거관리위원회 entity to exist");
+  }
+
+  centralElectionCommissionSlug = central.slug;
 });
 
 async function expectNoCriticalA11yViolations(page: Page) {
@@ -45,6 +54,13 @@ test("detail page has no critical a11y violations", async ({ page }) => {
 test("verify page has no critical a11y violations", async ({ page }) => {
   await page.goto(`/verify/${predecessorDashId}`);
   await expect(page.getByText(/일치/).first()).toBeVisible();
+
+  await expectNoCriticalA11yViolations(page);
+});
+
+test("entity hub has no critical a11y violations", async ({ page }) => {
+  await page.goto(`/e/${centralElectionCommissionSlug}`);
+  await expect(page.getByRole("heading", { name: "중앙선거관리위원회" })).toBeVisible();
 
   await expectNoCriticalA11yViolations(page);
 });

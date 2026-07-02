@@ -1,6 +1,7 @@
 import { copyFile, mkdir, rm, writeFile } from "node:fs/promises";
 import { CertV2Schema } from "../schema/cert-v2.ts";
 import { loadInstitutionalMetrics, loadPropositions } from "../lib/data.ts";
+import { entityRegistry, entityRoute } from "../lib/entities.ts";
 import { encodePropositionId } from "../lib/ids.ts";
 import { propositionsWithTag, tagRoute, uniqueTags } from "../lib/propositions.ts";
 import { sharedTags } from "../lib/relations.ts";
@@ -70,6 +71,7 @@ function createSitemap(propositions: Proposition[], generatedAt: string): string
     "/api/v2/search-index.json",
     "/api/v2/index.json",
     "/api/v2/graph.json",
+    "/api/v2/entities.json",
     "/api/v2/requests.json",
     "/api/v2/openapi.json",
     "/api/v2/schema/cert-v2.schema.json"
@@ -92,10 +94,24 @@ function createSitemap(propositions: Proposition[], generatedAt: string): string
     return { path: tagRoute(tag), lastmod: lastmod ?? generatedAt };
   });
 
+  const byId = new Map(propositions.map((proposition) => [proposition.propositionId, proposition]));
+  const entityPaths = [...entityRegistry(propositions).values()].map((entry) => {
+    const lastmod = entry.propositionIds
+      .flatMap((propositionId) => {
+        const proposition = byId.get(propositionId);
+
+        return proposition ? [proposition.updatedAt] : [];
+      })
+      .sort((left, right) => right.localeCompare(left))[0];
+
+    return { path: entityRoute(entry.slug), lastmod: lastmod ?? generatedAt };
+  });
+
   const entries = [
     ...staticPaths.map((path) => ({ path, lastmod: generatedAt })),
     ...propositionPaths,
-    ...tagPaths
+    ...tagPaths,
+    ...entityPaths
   ];
 
   return [
@@ -105,6 +121,27 @@ function createSitemap(propositions: Proposition[], generatedAt: string): string
     "</urlset>",
     ""
   ].join("\n");
+}
+
+function createEntities(propositions: Proposition[], generatedAt: string) {
+  const registry = entityRegistry(propositions);
+  const entities = [...registry.entries()].map(([name, entry]) => ({
+    name,
+    slug: entry.slug,
+    path: entityRoute(entry.slug),
+    propositionCount: entry.propositionIds.length,
+    propositionIds: entry.propositionIds,
+    roles: entry.roles
+  }));
+
+  return {
+    meta: {
+      generatedAt,
+      total: entities.length,
+      note: "sixW.who/statedBy 기반 결정론적 파생; cert 원본 미저장; 탐색 허브(제15)"
+    },
+    entities
+  };
 }
 
 async function createExamples(propositions: Proposition[]): Promise<Record<string, Proposition>> {
@@ -307,11 +344,13 @@ function createLlmsFull(propositions: Proposition[], generatedAt: string): strin
     "2. /api/v2/propositions/{dash-id}.json — full verified record",
     "3. /api/v2/index.json — full corpus with embedded records",
     "4. /api/v2/graph.json — relation graph (shared-tag edges)",
-    "5. /llms-full.txt — entire reservoir as one plain-text file",
+    "5. /api/v2/entities.json — derived entity hubs from sixW.who/statedBy",
+    "6. /llms-full.txt — entire reservoir as one plain-text file",
     "",
     "Agent workflow: fetch /api/v2/search-index.json, filter locally by canonical/tags/claimNature/factualGrade/status/date, then fetch the matching /api/v2/propositions/{dash-id}.json records. Cite /p/{dash-id}/ for humans and JSON URLs for machines.",
     "Verification: recompute evidence quoteHash as sha256(shortQuote), propositionId from canonicalProposition plus language, then versionId and certHash from the Cert v2.1 derivation documented in /api/v2/schema/cert-v2.schema.json and /api/v2/openapi.json.",
     "Storage boundary: the reservoir stores verified propositions and evidence structures, not verdicts or interpretations (제2). Grade labels are secondary navigation signals.",
+    "Entity hubs: /e/{slug}/ pages and /api/v2/entities.json are deterministic derived navigation layers from sixW.who and sixW.why[].statedBy only. They are not entity profiles and assert no facts about the entity itself (제15).",
     "",
     `generatedAt: ${generatedAt}`,
     `total: ${sorted.length}`,
@@ -356,6 +395,11 @@ const index = {
       totalAssessed: metrics.totalAssessed,
       openCorrectionRequests: metrics.correctionMetrics.openCorrectionRequests
     },
+    entities: {
+      path: "/api/v2/entities.json",
+      status: "derived",
+      note: "sixW.who/statedBy 기반 탐색 허브; Cert 원본에는 저장되지 않음"
+    },
     propositions: propositions.map((proposition) => ({
       propositionId: proposition.propositionId,
       path: `/api/v2/propositions/${propositionFileId(proposition)}.json`
@@ -371,6 +415,10 @@ await writeFile(
 await writeFile(
   `${apiDir}/graph.json`,
   `${JSON.stringify(createGraph(propositions, generatedAt), null, 2)}\n`
+);
+await writeFile(
+  `${apiDir}/entities.json`,
+  `${JSON.stringify(createEntities(propositions, generatedAt), null, 2)}\n`
 );
 await writeFile(`${apiDir}/institutional-metrics.json`, `${JSON.stringify(metrics, null, 2)}\n`);
 // NOTE: requests.json is NOT regenerated here. The deploy build must stay
@@ -392,5 +440,5 @@ for (const [name, example] of Object.entries(examples)) {
 await copyFile("CONSTITUTION.md", "public/CONSTITUTION.md");
 
 console.log(
-  `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, search-index.json, graph.json, institutional metrics, llms-full.txt, and examples.`
+  `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, search-index.json, graph.json, entities.json, institutional metrics, llms-full.txt, and examples.`
 );

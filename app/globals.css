@@ -721,6 +721,78 @@ button.secondary,
   font-weight: 800;
 }
 
+.entity-page {
+  display: grid;
+  gap: 18px;
+  max-width: 920px;
+}
+
+.entity-page__header {
+  border-bottom: 1px solid var(--color-border);
+  display: grid;
+  gap: 10px;
+  padding-bottom: 18px;
+}
+
+.entity-page__header h1,
+.entity-page__header p {
+  margin: 0;
+}
+
+.entity-page__header h1 {
+  font-size: clamp(1.7rem, 3.8vw, 2.8rem);
+  line-height: 1.2;
+}
+
+.entity-page__header p:not(.eyebrow) {
+  color: var(--color-muted);
+}
+
+.entity-disclosure {
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-md);
+  color: var(--color-text) !important;
+  padding: 10px 12px;
+}
+
+.entity-proposition-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entity-proposition-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-lg);
+  color: var(--color-text);
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.entity-proposition-card:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.entity-proposition-card__meta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.entity-proposition-card__title {
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .facts-detail-page {
   max-width: 920px;
 }
@@ -741,6 +813,55 @@ button.secondary,
   font-size: clamp(1.9rem, 4.6vw, 3.4rem);
   line-height: 1.16;
   margin: 0;
+}
+
+.entity-inline-link,
+.entity-field-link {
+  color: var(--color-link);
+}
+
+.related-entity-row {
+  border-bottom: 1px solid var(--color-border);
+  display: grid;
+  gap: 10px;
+  padding-bottom: 18px;
+}
+
+.related-entity-row__label {
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.related-entity-row ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.related-entity-row a {
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-sm);
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  font-weight: 800;
+  gap: 6px;
+  line-height: 1.2;
+  min-height: 30px;
+  padding: 6px 8px;
+  text-decoration: none;
+}
+
+.related-entity-row a span {
+  color: var(--color-muted);
+}
+
+.attribution-badge--link {
+  color: var(--color-link);
 }
 
 .institutional-strip {

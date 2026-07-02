@@ -1,0 +1,476 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-02",
+    "total": 30,
+    "note": "sixW.who/statedBy 기반 결정론적 파생; cert 원본 미저장; 탐색 허브(제15)"
+  },
+  "entities": [
+    {
+      "name": "국민의힘",
+      "slug": "e-6rWt66-87J2Y7Z6Y",
+      "path": "/e/e-6rWt66-87J2Y7Z6Y",
+      "propositionCount": 2,
+      "propositionIds": [
+        "stmt:12ebbd81f7cfbbcaf5048a0e",
+        "stmt:6ec9cbff53f71a505b22823f"
+      ],
+      "roles": {
+        "who": [
+          "stmt:12ebbd81f7cfbbcaf5048a0e",
+          "stmt:6ec9cbff53f71a505b22823f"
+        ],
+        "statedBy": [
+          "stmt:12ebbd81f7cfbbcaf5048a0e",
+          "stmt:6ec9cbff53f71a505b22823f"
+        ]
+      }
+    },
+    {
+      "name": "국제사법재판소",
+      "slug": "e-6rWt7KCc7IKs67KV7J6s7YyQ7IaM",
+      "path": "/e/e-6rWt7KCc7IKs67KV7J6s7YyQ7IaM",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:9fa1e13fbdeb497fdee35c15"
+      ],
+      "roles": {
+        "who": [
+          "stmt:9fa1e13fbdeb497fdee35c15"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "김정철 개혁신당 최고위원",
+      "slug": "e-6rmA7KCV7LKgIOqwnO2YgeyLoOuLuSDstZzqs6DsnITsm5A",
+      "path": "/e/e-6rmA7KCV7LKgIOqwnO2YgeyLoOuLuSDstZzqs6DsnITsm5A",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:c890b5f8ca77961c84b58268"
+      ],
+      "roles": {
+        "who": [
+          "stmt:c890b5f8ca77961c84b58268"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "대한민국",
+      "slug": "e-64yA7ZWc66-86rWt",
+      "path": "/e/e-64yA7ZWc66-86rWt",
+      "propositionCount": 2,
+      "propositionIds": [
+        "stmt:52e6260a60e04599d809ae61",
+        "stmt:840aa7c32d8f6372cd968fb6"
+      ],
+      "roles": {
+        "who": [
+          "stmt:52e6260a60e04599d809ae61",
+          "stmt:840aa7c32d8f6372cd968fb6"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "대한민국 선거관리 체계",
+      "slug": "e-64yA7ZWc66-86rWtIOyEoOqxsOq0gOumrCDssrTqs4Q",
+      "path": "/e/e-64yA7ZWc66-86rWtIOyEoOqxsOq0gOumrCDssrTqs4Q",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:2e87b3750aadd61ef8e2b6c0"
+      ],
+      "roles": {
+        "who": [
+          "stmt:2e87b3750aadd61ef8e2b6c0"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "대한민국 정부",
+      "slug": "e-64yA7ZWc66-86rWtIOygleu2gA",
+      "path": "/e/e-64yA7ZWc66-86rWtIOygleu2gA",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:40340515225f7adf44e242f3"
+      ],
+      "roles": {
+        "who": [
+          "stmt:40340515225f7adf44e242f3"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "더불어민주당",
+      "slug": "e-642U67aI7Ja066-87KO864u5",
+      "path": "/e/e-642U67aI7Ja066-87KO864u5",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:1426e28acba929903bbe8736"
+      ],
+      "roles": {
+        "who": [
+          "stmt:1426e28acba929903bbe8736"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "서울 송파구 잠실4동 제5투표소",
+      "slug": "e-7ISc7Jq4IOyGoe2MjOq1rCDsnqDsi6Q064-ZIOygnDXtiKztkZzshow",
+      "path": "/e/e-7ISc7Jq4IOyGoe2MjOq1rCDsnqDsi6Q064-ZIOygnDXtiKztkZzshow",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:921a9dc8a1b5b268e0f4c807"
+      ],
+      "roles": {
+        "who": [
+          "stmt:921a9dc8a1b5b268e0f4c807"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "서울동부지방법원",
+      "slug": "e-7ISc7Jq464-Z67aA7KeA67Cp67KV7JuQ",
+      "path": "/e/e-7ISc7Jq464-Z67aA7KeA67Cp67KV7JuQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:a2c80ef637dd92021cbbd92b"
+      ],
+      "roles": {
+        "who": [
+          "stmt:a2c80ef637dd92021cbbd92b"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "쇼와 천황",
+      "slug": "e-7Ie87JmAIOyynO2ZqQ",
+      "path": "/e/e-7Ie87JmAIOyynO2ZqQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:b3deef8189d7937fc1e97ab2"
+      ],
+      "roles": {
+        "who": [
+          "stmt:b3deef8189d7937fc1e97ab2"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "아폴로 17호 승무원",
+      "slug": "e-7JWE7Y-066GcIDE37Zi4IOyKueustOybkA",
+      "path": "/e/e-7JWE7Y-066GcIDE37Zi4IOyKueustOybkA",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:61efe874787dacf6180ae46b"
+      ],
+      "roles": {
+        "who": [
+          "stmt:61efe874787dacf6180ae46b"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "아폴로 8호 승무원",
+      "slug": "e-7JWE7Y-066GcIDjtmLgg7Iq566y07JuQ",
+      "path": "/e/e-7JWE7Y-066GcIDjtmLgg7Iq566y07JuQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:ae66527bf2aea1b5407a5f78"
+      ],
+      "roles": {
+        "who": [
+          "stmt:ae66527bf2aea1b5407a5f78"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "에라토스테네스",
+      "slug": "e-7JeQ65287Yag7Iqk7YWM64Sk7Iqk",
+      "path": "/e/e-7JeQ65287Yag7Iqk7YWM64Sk7Iqk",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:b18e2813819c4fb0e23830f6"
+      ],
+      "roles": {
+        "who": [
+          "stmt:b18e2813819c4fb0e23830f6"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "윤재수 중앙선거관리위원회 선거정책실장",
+      "slug": "e-7Jyk7J6s7IiYIOykkeyVmeyEoOqxsOq0gOumrOychOybkO2ajCDshKDqsbDsoJXssYXsi6TsnqU",
+      "path": "/e/e-7Jyk7J6s7IiYIOykkeyVmeyEoOqxsOq0gOumrOychOybkO2ajCDshKDqsbDsoJXssYXsi6TsnqU",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:5bf64ededa100f82163dcab1"
+      ],
+      "roles": {
+        "who": [
+          "stmt:5bf64ededa100f82163dcab1"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "이상능 중앙선거관리위원회 선거1국장",
+      "slug": "e-7J207IOB64qlIOykkeyVmeyEoOqxsOq0gOumrOychOybkO2ajCDshKDqsbAx6rWt7J6l",
+      "path": "/e/e-7J207IOB64qlIOykkeyVmeyEoOqxsOq0gOumrOychOybkO2ajCDshKDqsbAx6rWt7J6l",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:d180b65d5e8f431a52ed1eec"
+      ],
+      "roles": {
+        "who": [
+          "stmt:d180b65d5e8f431a52ed1eec"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "이승만",
+      "slug": "e-7J207Iq566eM",
+      "path": "/e/e-7J207Iq566eM",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:a39e2dc6072bbda67817ead7"
+      ],
+      "roles": {
+        "who": [
+          "stmt:a39e2dc6072bbda67817ead7"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "이재명 대통령",
+      "slug": "e-7J207J6s66qFIOuMgO2GteuguQ",
+      "path": "/e/e-7J207J6s66qFIOuMgO2GteuguQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:c11b6f2081e8fa1c38bae49d"
+      ],
+      "roles": {
+        "who": [
+          "stmt:c11b6f2081e8fa1c38bae49d"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "장동혁 국민의힘 대표",
+      "slug": "e-7J6l64-Z7ZiBIOq1reuvvOydmO2emCDrjIDtkZw",
+      "path": "/e/e-7J6l64-Z7ZiBIOq1reuvvOydmO2emCDrjIDtkZw",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:e2b37f73256b9885410a5c01"
+      ],
+      "roles": {
+        "who": [
+          "stmt:e2b37f73256b9885410a5c01"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "조선민주주의인민공화국 정부",
+      "slug": "e-7KGw7ISg66-87KO87KO87J2Y7J2466-86rO17ZmU6rWtIOygleu2gA",
+      "path": "/e/e-7KGw7ISg66-87KO87KO87J2Y7J2466-86rO17ZmU6rWtIOygleu2gA",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:8b798d52af5df4ea214ecead"
+      ],
+      "roles": {
+        "who": [
+          "stmt:8b798d52af5df4ea214ecead"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "조선인민군",
+      "slug": "e-7KGw7ISg7J2466-86rWw",
+      "path": "/e/e-7KGw7ISg7J2466-86rWw",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:698eafdeae1e813d295ea69b"
+      ],
+      "roles": {
+        "who": [
+          "stmt:698eafdeae1e813d295ea69b"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "중앙선거관리위원회",
+      "slug": "e-7KSR7JWZ7ISg6rGw6rSA66as7JyE7JuQ7ZqM",
+      "path": "/e/e-7KSR7JWZ7ISg6rGw6rSA66as7JyE7JuQ7ZqM",
+      "propositionCount": 5,
+      "propositionIds": [
+        "stmt:0f10895abcff81a55ff783d6",
+        "stmt:5bf64ededa100f82163dcab1",
+        "stmt:83702707422e50c0a56fb565",
+        "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:d180b65d5e8f431a52ed1eec"
+      ],
+      "roles": {
+        "who": [
+          "stmt:0f10895abcff81a55ff783d6",
+          "stmt:83702707422e50c0a56fb565",
+          "stmt:cb0719e9aac6e4c86677d2e5"
+        ],
+        "statedBy": [
+          "stmt:5bf64ededa100f82163dcab1",
+          "stmt:cb0719e9aac6e4c86677d2e5",
+          "stmt:d180b65d5e8f431a52ed1eec"
+        ]
+      }
+    },
+    {
+      "name": "Bailey JM, Pillard RC",
+      "slug": "e-QmFpbGV5IEpNLCBQaWxsYXJkIFJD",
+      "path": "/e/e-QmFpbGV5IEpNLCBQaWxsYXJkIFJD",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:3e54ea51d8411beb551b399c"
+      ],
+      "roles": {
+        "who": [],
+        "statedBy": [
+          "stmt:3e54ea51d8411beb551b399c"
+        ]
+      }
+    },
+    {
+      "name": "BBNJ 협정",
+      "slug": "e-QkJOSiDtmJHsoJU",
+      "path": "/e/e-QkJOSiDtmJHsoJU",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:38c8e4c00c63fa0fc9b00eb3"
+      ],
+      "roles": {
+        "who": [
+          "stmt:38c8e4c00c63fa0fc9b00eb3"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "Gallup",
+      "slug": "e-R2FsbHVw",
+      "path": "/e/e-R2FsbHVw",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:a37cb535bf2ed93375d15095"
+      ],
+      "roles": {
+        "who": [],
+        "statedBy": [
+          "stmt:a37cb535bf2ed93375d15095"
+        ]
+      }
+    },
+    {
+      "name": "Kelley CF 등",
+      "slug": "e-S2VsbGV5IENGIOuTsQ",
+      "path": "/e/e-S2VsbGV5IENGIOuTsQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:3f30934e8dae7bc3452ab43a"
+      ],
+      "roles": {
+        "who": [],
+        "statedBy": [
+          "stmt:3f30934e8dae7bc3452ab43a"
+        ]
+      }
+    },
+    {
+      "name": "King 등",
+      "slug": "e-S2luZyDrk7E",
+      "path": "/e/e-S2luZyDrk7E",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:3ae444edbb297bea65e9cd78"
+      ],
+      "roles": {
+        "who": [],
+        "statedBy": [
+          "stmt:3ae444edbb297bea65e9cd78"
+        ]
+      }
+    },
+    {
+      "name": "NATO",
+      "slug": "e-TkFUTw",
+      "path": "/e/e-TkFUTw",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:c44501dcb97869b23fbe8942"
+      ],
+      "roles": {
+        "who": [
+          "stmt:c44501dcb97869b23fbe8942"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "NGA",
+      "slug": "e-TkdB",
+      "path": "/e/e-TkdB",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:b9a4dcf237affc17c1a51fe6"
+      ],
+      "roles": {
+        "who": [
+          "stmt:b9a4dcf237affc17c1a51fe6"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "Ryan 등",
+      "slug": "e-UnlhbiDrk7E",
+      "path": "/e/e-UnlhbiDrk7E",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:5985381793fd401f7fc3052c"
+      ],
+      "roles": {
+        "who": [],
+        "statedBy": [
+          "stmt:5985381793fd401f7fc3052c"
+        ]
+      }
+    },
+    {
+      "name": "UNFCCC",
+      "slug": "e-VU5GQ0ND",
+      "path": "/e/e-VU5GQ0ND",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:22abb3226ba88d6589e75013"
+      ],
+      "roles": {
+        "who": [
+          "stmt:22abb3226ba88d6589e75013"
+        ],
+        "statedBy": []
+      }
+    }
+  ]
+}

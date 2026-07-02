@@ -29,6 +29,9 @@ export default function ApiDocsPage() {
               <a href="/api/v2/graph.json">GET /api/v2/graph.json</a>
             </li>
             <li>
+              <a href="/api/v2/entities.json">GET /api/v2/entities.json</a>
+            </li>
+            <li>
               <a href="/api/v2/requests.json">GET /api/v2/requests.json</a>
             </li>
             <li>
@@ -94,6 +97,23 @@ export default function ApiDocsPage() {
           </p>
         </section>
 
+        <section className="facts-section doc-section" aria-labelledby="entities-shape-title">
+          <h2 id="entities-shape-title">엔티티 허브</h2>
+          <p>
+            <span className="mono">/api/v2/entities.json</span>은{" "}
+            <span className="mono">sixW.who</span>와{" "}
+            <span className="mono">sixW.why[].statedBy</span>의 정확한 문자열에서만 빌드
+            시점에 결정론적으로 파생한 탐색 허브입니다. 이 레이어는 Cert 원본에는 저장되지
+            않으며 엔티티 자체에 관한 사실 주장이나 프로필이 아닙니다(제15).
+          </p>
+          <p>
+            형태는 <span className="mono">{"{ meta, entities }"}</span>입니다. 각 entity는{" "}
+            <span className="mono">name</span>, <span className="mono">slug</span>, 페이지{" "}
+            <span className="mono">path</span>, 등장 명제 수,{" "}
+            <span className="mono">propositionIds</span>, 역할별 명제 id 목록을 담습니다.
+          </p>
+        </section>
+
         <section className="facts-section doc-section" aria-labelledby="request-lane-title">
           <h2 id="request-lane-title">요청 레인</h2>
           <p>
@@ -144,6 +164,13 @@ export default function ApiDocsPage() {
             <span className="mono">status</span>, 날짜 필드로 로컬 필터링합니다. 이후 필요한
             후보만 <span className="mono">/api/v2/propositions/{"{dash-id}"}.json</span>에서
             가져옵니다.
+          </p>
+          <h3>엔티티 허브 사용 방법</h3>
+          <p>
+            <span className="mono">/api/v2/entities.json</span> 또는{" "}
+            <span className="mono">/e/{"{slug}"}/</span>는 정확히 파생된 엔티티 문자열에서
+            명제 목록으로 이동하기 위한 경로입니다. 인물·조직·법률·통계 속성을 추론하는
+            프로필로 사용하지 않습니다.
           </p>
           <h3>검증 방법</h3>
           <p>

@@ -5,7 +5,8 @@ Primary entrypoints (priority order):
 2. /api/v2/propositions/{dash-id}.json — full verified record
 3. /api/v2/index.json — full corpus with embedded records
 4. /api/v2/graph.json — relation graph (shared-tag edges)
-5. /llms-full.txt — entire reservoir as one plain-text file
+5. /api/v2/entities.json — derived entity hubs from sixW.who/statedBy
+6. /llms-full.txt — entire reservoir as one plain-text file
 
 Purpose:
 Truth Reservoir publishes static FACTS article pages paired with Cert v2.1 JSON proposition records. CONSTITUTION.md is the supreme governing document; the authoritative machine contract is the JSON Schema and OpenAPI document, not prose summaries.
@@ -27,6 +28,7 @@ Static endpoints:
 - GET /api/v2/search-index.json
 - GET /api/v2/index.json
 - GET /api/v2/graph.json
+- GET /api/v2/entities.json
 - GET /api/v2/propositions/{dash-id}.json
 - GET /api/v2/institutional-metrics.json
 - GET /api/v2/requests.json
@@ -39,8 +41,14 @@ Static endpoints:
 Tag pages:
 Tag cluster pages are available at /t/{tag}. They are static, crawlable, and list matching propositions in chronological order. They contain a count and a list only; they are not editorial narratives.
 
+Entity hub pages:
+Entity hub pages are available at /e/{slug}. They are static, crawlable collection pages derived only from exact sixW.who and sixW.why[].statedBy strings. They list propositions where the entity string appears and show the role as 누가 or 밝힌 주체. They are navigation hubs only, not Person/Organization profiles, and assert no facts about the entity itself (제15).
+
 Derived relation graph:
 GET /api/v2/graph.json publishes deterministic cross-links derived at build time from tag intersections. Nodes expose propositionId, human page path, and tags. Edges are undirected, deduped by propositionId order, and include sharedTags. This graph is a derived navigation layer only; it is not stored in Cert originals and is not editorial selection.
+
+Derived entity registry:
+GET /api/v2/entities.json publishes deterministic entity hubs derived at build time from structured sixW.who and sixW.why[].statedBy fields only. Entity slugs are stable URL-safe encodings of normalized names. This registry is not stored in Cert originals and is not an assertion layer.
 
 Live base URL:
 https://truth-reservoir.vercel.app
@@ -77,6 +85,9 @@ claimNature is one of event_occurrence, document_content, or measurement. Measur
 FAQ for AI agents:
 How to search:
 Fetch /api/v2/search-index.json first, filter records locally by canonical, tags, claimNature, factualGrade, status, asOfDate, or updatedAt, then fetch only the needed full records from /api/v2/propositions/{dash-id}.json. Use /api/v2/index.json only when you intentionally need the full embedded corpus.
+
+How to use entity hubs:
+Use /api/v2/entities.json or /e/{slug}/ only to navigate from an exact derived entity string to proposition records. Do not infer biographical, organizational, legal, or statistical properties from an entity hub page.
 
 How to verify a record:
 Fetch /api/v2/propositions/{dash-id}.json, recompute each evidence quoteHash as sha256(shortQuote), recompute propositionId from canonicalProposition + language, then recompute versionId and certHash from the Cert v2.1 derivation. Treat hash checks as stored-snapshot integrity checks, not live source-body identity.

@@ -7064,6 +7064,11 @@
       "totalAssessed": 44,
       "openCorrectionRequests": 0
     },
+    "entities": {
+      "path": "/api/v2/entities.json",
+      "status": "derived",
+      "note": "sixW.who/statedBy 기반 탐색 허브; Cert 원본에는 저장되지 않음"
+    },
     "propositions": [
       {
         "propositionId": "stmt:4ae4c94174dc3aaf651102d2",

@@ -146,6 +146,25 @@ const openapi = {
         }
       }
     },
+    "/api/v2/entities.json": {
+      get: {
+        summary: "Fetch the deterministic entity hub registry",
+        description:
+          "Derived from exact sixW.who and sixW.why[].statedBy strings at build time. Entities are navigation hubs only and are not stored in Cert originals.",
+        responses: {
+          "200": {
+            description: "Static derived entity registry",
+            content: {
+              "application/json": {
+                schema: {
+                  $ref: "#/components/schemas/EntityRegistry"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v2/requests.json": {
       get: {
         summary: "List public fact-data requests",
@@ -360,6 +379,61 @@ const openapi = {
                   type: "array",
                   minItems: 1,
                   items: { type: "string" }
+                }
+              }
+            }
+          }
+        }
+      },
+      EntityRegistry: {
+        type: "object",
+        required: ["meta", "entities"],
+        properties: {
+          meta: {
+            type: "object",
+            required: ["generatedAt", "total", "note"],
+            properties: {
+              generatedAt: { type: "string" },
+              total: { type: "integer", minimum: 0 },
+              note: { type: "string" }
+            }
+          },
+          entities: {
+            type: "array",
+            items: {
+              type: "object",
+              required: [
+                "name",
+                "slug",
+                "path",
+                "propositionCount",
+                "propositionIds",
+                "roles"
+              ],
+              properties: {
+                name: { type: "string" },
+                slug: { type: "string", pattern: "^e-[A-Za-z0-9_-]+$" },
+                path: { type: "string", pattern: "^/e/e-[A-Za-z0-9_-]+$" },
+                propositionCount: { type: "integer", minimum: 1 },
+                propositionIds: {
+                  type: "array",
+                  minItems: 1,
+                  items: { type: "string", pattern: "^stmt:[a-f0-9]{24}$" }
+                },
+                roles: {
+                  type: "object",
+                  required: ["who", "statedBy"],
+                  properties: {
+                    who: {
+                      type: "array",
+                      items: { type: "string", pattern: "^stmt:[a-f0-9]{24}$" }
+                    },
+                    statedBy: {
+                      type: "array",
+                      items: { type: "string", pattern: "^stmt:[a-f0-9]{24}$" }
+                    }
+                  },
+                  additionalProperties: false
                 }
               }
             }
