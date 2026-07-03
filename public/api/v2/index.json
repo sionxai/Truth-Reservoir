@@ -3589,6 +3589,186 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:ee1b50f655876f2f4da585e8",
+      "versionId": "ver:8ca5625427988338",
+      "certHash": "sha256:610a1885acfe52e46b1ef9ddcffa471f674aff29e3b8a25c04d09cfc34461c15",
+      "canonicalProposition": "국회 국정조사 특별위원회는 2026년 7월 2일 시위대 봉쇄 27일 만에 서울 송파구 올림픽공원 핸드볼경기장(6·3 지방선거 개표소)에 진입해 보관 중이던 약 247만장의 유·무효 투표용지와 투표함을 현장검증했고, 여야 위원들은 투표함 외부 반출 여부를 두고 이견을 보였다",
+      "originalClaim": "국회 국정조사 특위가 봉쇄됐던 올림픽공원 개표소에 진입해 보관된 투표용지·투표함을 현장검증했다.",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "국회 국정조사 특별위원회",
+        "when": "2026년 7월 2일",
+        "where": "서울 송파구 올림픽공원 핸드볼경기장(6·3 지방선거 개표소)",
+        "what": "보관 중이던 약 247만장의 유·무효 투표용지와 투표함을 현장검증했고, 여야 위원들이 투표함 외부 반출 여부를 두고 이견을 보였다",
+        "how": "시위대 봉쇄 27일 만에 경기장 내부에 진입해 현장검증했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-02",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "봉쇄 27일 만의 내부 진입, 약 247만장 유·무효 투표용지·투표함 보관, 외부 반출 여부 이견이 파이낸셜뉴스 오늘자(2026-07-02) 본문 curl HTTP 200에서 verbatim 확인된다. 진행 중인 국정조사 사안으로 후속 사실이 추가·정정될 수 있다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.fnnews.com/news/202607021502023344",
+          "title": "국조특위, 봉쇄 27일 만에 '올공' 내부 진입...투표함 반출 여부 이견",
+          "retrievedAt": "2026-07-02",
+          "locator": {
+            "section": "제목/본문"
+          },
+          "shortQuote": "봉쇄 27일 만에",
+          "quoteHash": "sha256:ae763063e0b8480421d50accce600b9b5cf7ba583ac71bf8c90007ca469fdd6b",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "파이낸셜뉴스 본문 curl HTTP 200으로 로드했고 문구가 원문에 그대로 존재했다.",
+          "independenceGroupId": "fnnews-20260702-olympic-park-entry",
+          "independenceLevel": "independent",
+          "independenceNote": "국조특위 진입을 보도한 fetch 가능 언론 출처.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "국정조사 현장검증을 보도한 관련 출처.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.fnnews.com/news/202607021502023344",
+          "title": "국조특위, 봉쇄 27일 만에 '올공' 내부 진입...투표함 반출 여부 이견",
+          "retrievedAt": "2026-07-02",
+          "locator": {
+            "section": "제목/본문"
+          },
+          "shortQuote": "반출 여부 이견",
+          "quoteHash": "sha256:df8a9ad51185d42af5c51b60b9f6b2acb7c61853328c321a8b6ceaa8e0b95beb",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "같은 기사에서 여야 반출 여부 이견 문구를 verbatim 확인했다.",
+          "independenceGroupId": "fnnews-20260702-olympic-park-entry",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 기사의 별도 문구(반출 이견).",
+          "sourceCompetence": "relevant",
+          "competenceNote": "국정조사 현장검증을 보도한 관련 출처.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.fnnews.com/news/202607021820277783",
+          "title": "국조특위, 올림픽공원 개표소 투표함 상태 점검",
+          "retrievedAt": "2026-07-02",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "약 247만장에 달하는 유·무효",
+          "quoteHash": "sha256:b2d204e38701e3e9c92c3a26ae4936a017699a8df5b3fb704f0e52984f1af9a6",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "파이낸셜뉴스 본문 curl HTTP 200으로 로드했고 보관 수량 문구가 원문에 그대로 존재했다.",
+          "independenceGroupId": "fnnews-20260702-olympic-park-inspect",
+          "independenceLevel": "independent",
+          "independenceNote": "보관 투표용지 수량을 보도한 별개 기사.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "개표소 투표함·투표용지 상태를 보도한 관련 출처.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://www.fnnews.com/news/202607021820277783",
+          "title": "국조특위, 올림픽공원 개표소 투표함 상태 점검",
+          "retrievedAt": "2026-07-02",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "투표함 외부 반출 여부를 두고 다소 이견",
+          "quoteHash": "sha256:314d957194db80cb434bf0f8c693e8704a07eca14eed4d03a105dd4c51af90e4",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "같은 기사에서 반출 여부 이견 문구를 verbatim 확인했다.",
+          "independenceGroupId": "fnnews-20260702-olympic-park-inspect",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 기사의 별도 문구(반출 이견).",
+          "sourceCompetence": "relevant",
+          "competenceNote": "개표소 현장검증을 보도한 관련 출처.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "'247만장 투표용지 보관'을 '무더기 발견'으로 프레이밍하면 은닉·부정 서사로 오염될 수 있다.",
+          "response": "해당 장소가 6·3 지방선거 개표소이고 투표용지·투표함이 원래 보관돼 있었다는 사실, 봉쇄 27일 만의 진입·현장검증 사실만 기록했다. '발견'·'은닉' 표현을 배제했다.",
+          "errorsFound": 0,
+          "framingChecks": "부정선거·은닉·조작 해석을 배제하고 진입·보관 수량·반출 이견이라는 관찰 사실만 기록했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "진입·보관 사실과 별도로 윤상현 위원장의 '그대로 보존' 발언을 claimed-by-X 명제로 분리해 함께 보관한다.",
+          "result": "관찰 사실과 발언을 분리하고 부정 여부 결론을 저장하지 않았다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "특위·선관위의 권위가 아니라 fetch 가능한 보도 문구만 증거로 삼았다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-02",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "사용자가 '올림픽공원 투표용지 무더기 발견'으로 전달했으나, 원문 검증 결과 해당 장소는 6·3 개표소이고 봉쇄됐던 곳에 국조특위가 7/2 진입해 보관 투표용지·투표함을 현장검증한 사건임. '발견' 프레이밍을 제거하고 관찰 사실로 재구성. 4개 shortQuote를 파이낸셜뉴스 2건에서 curl HTTP 200 verbatim 확인.",
+          "adoptedReason": "봉쇄 27일 만의 진입·약 247만장 보관·반출 이견이 오늘자 복수 기사에서 직접 확인된다.",
+          "rejectedAlternatives": "'투표용지가 공원에서 무더기로 발견됐다', '은닉됐다', '부정 증거다'라는 프레이밍·결론은 사실과 다르거나 판단 영역이라 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "ongoing_litigation"
+        ],
+        "legalStatus": "pending",
+        "presumptionNotice": "이 명제는 국정조사 현장검증의 관찰 가능한 사실만 기록하며, 부정선거 여부나 책임 소재에 관한 판단은 미확정이다. 진행 중인 조사로 후속 정정이 있을 수 있다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "진행 중인 국정조사 사안으로 오늘자(2026-07-02) 보도 기준이며 후속 사실이 추가·정정될 수 있다. 약 247만장은 유·무효를 합한 보관 수량이며 개표 결과와는 별개다. 1차 특위 자료 직접 fetch는 하지 않았고 언론 전재에 의존했다.",
+      "tags": [
+        "2026지방선거",
+        "투표용지부족",
+        "국정조사",
+        "올림픽공원",
+        "국회",
+        "사건단위"
+      ],
+      "createdAt": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:12ebbd81f7cfbbcaf5048a0e",
       "versionId": "ver:44b3fe9cf6d6fb76",
       "certHash": "sha256:4c039558af59484a5304249bc674e40e52f5a9214f1e74fe22277d0242bd9486",
@@ -4471,6 +4651,139 @@
         "증거보전"
       ],
       "createdAt": "2026-06-18",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "versionId": "ver:620486aa88bba35d",
+      "certHash": "sha256:deff2c970afb2201f4cebd2a1510285fa9e0bd6ad0b6c1964389413900bd29e9",
+      "canonicalProposition": "윤상현 국회 국정조사 특별위원회 위원장(국민의힘)은 2026년 7월 2일 올림픽공원 개표소 현장검증 후 조시훈 전 송파구 선관위 사무국장이 마지막에 문을 닫았고 이날 열었을 때 투표지와 투표함이 그대로 보존돼 있었다고 밝혔다",
+      "originalClaim": "윤상현 특위 위원장이 현장검증 후 투표지·투표함이 그대로 보존돼 있었다고 발언했다.",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "윤상현 국회 국정조사 특별위원회 위원장(국민의힘)",
+        "when": "2026년 7월 2일",
+        "where": "서울 송파구 올림픽공원 개표소 현장검증 후 기자회견",
+        "what": "조시훈 전 송파구 선관위 사무국장이 마지막에 문을 닫았고 이날 열었을 때 투표지와 투표함이 그대로 보존돼 있었다고 밝혔다",
+        "how": "현장검증을 마친 뒤 기자들과 만나 발언했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-02",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "윤상현 위원장의 '투표지와 투표함이 그대로 보존돼있었다' 발언과 조시훈 전 사무국장 관련 문구가 파이낸셜뉴스 오늘자 본문 curl HTTP 200에서 verbatim 확인된다. 명제는 발언의 존재만 확인하며 보존 여부의 진위는 평가하지 않는다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.fnnews.com/news/202607021820277783",
+          "title": "국조특위, 올림픽공원 개표소 투표함 상태 점검",
+          "retrievedAt": "2026-07-02",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "투표지와 투표함이 그대로 보존돼있었다",
+          "quoteHash": "sha256:fc132a4ef9d2311c34d3e4e7fcca27136e19a6a06f3d006b1d0c2c7970186c22",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "파이낸셜뉴스 본문 curl HTTP 200으로 로드했고 발언 문구가 원문에 그대로 존재했다.",
+          "independenceGroupId": "fnnews-20260702-yoon-statement",
+          "independenceLevel": "independent",
+          "independenceNote": "윤상현 위원장 발언을 보도한 fetch 가능 출처.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "현장검증 후 위원장 발언을 보도한 관련 출처.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.fnnews.com/news/202607021820277783",
+          "title": "국조특위, 올림픽공원 개표소 투표함 상태 점검",
+          "retrievedAt": "2026-07-02",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "조시훈 전 송파구 선관위 사무국장이 마지막에",
+          "quoteHash": "sha256:6e6090d514d8bb0bf8196a093af6112be55b3b994b7b638722bd5c0ff37bdc47",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "같은 기사에서 조시훈 전 사무국장 관련 발언 문구를 verbatim 확인했다.",
+          "independenceGroupId": "fnnews-20260702-yoon-statement",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "동일 기사의 별도 문구(조시훈 전 사무국장 관련).",
+          "sourceCompetence": "relevant",
+          "competenceNote": "위원장 발언을 보도한 관련 출처.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "부정 의혹을 제기해온 국민의힘 측 위원장의 '보존' 발언을 저수지가 담으면 '부정 없었다'는 결론으로 오독될 수 있다.",
+          "response": "명제는 윤상현이 그렇게 밝혔다는 발언의 존재만 claimed-by-X로 기록하고, 실제 보존 여부·부정 여부는 평가하지 않는다.",
+          "errorsFound": 0,
+          "framingChecks": "'부정 없었다'·'깨끗했다' 결론 표현을 배제하고 '밝혔다'로 한정했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "이 발언과 별도로 국조특위 현장검증 관찰 사실 및 선거 부정 의혹 주장 명제들을 함께 보관한다.",
+          "result": "발언 존재와 사실 판정을 분리했다."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "위원장이라는 권위를 사실 판정으로 전환하지 않고 발언 존재 확인에만 사용했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-02",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국조특위 현장검증(별도 명제)과 분리해 위원장 발언만 claimed-by-X로 기록. 발언 주체가 부정 의혹 제기 측(국민의힘)이라는 점을 감안하되, 저수지는 발언의 존재만 담고 진위는 판정하지 않는다. shortQuote 2건 파이낸셜뉴스 curl HTTP 200 verbatim 확인.",
+          "adoptedReason": "윤상현 위원장의 보존 발언이 오늘자 기사 본문에서 직접 확인된다.",
+          "rejectedAlternatives": "'투표지가 보존됐으므로 부정이 없었다'는 결론은 발언의 진위 판정이라 저장하지 않았다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "living_person",
+          "ongoing_litigation"
+        ],
+        "legalStatus": "pending",
+        "presumptionNotice": "이 명제는 윤상현 위원장 발언의 존재만 기록하며, 투표지·투표함의 실제 보존 여부나 부정선거 여부에 관한 판단은 미확정이다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "발언 존재만 기록하며 보존 여부의 독립 검증은 아니다. 진행 중인 국정조사 사안으로 후속 정정이 있을 수 있다.",
+      "tags": [
+        "2026지방선거",
+        "투표용지부족",
+        "국정조사",
+        "올림픽공원",
+        "정치주장",
+        "주장"
+      ],
+      "createdAt": "2026-07-02",
       "updatedAt": "2026-07-02"
     },
     {
@@ -7053,15 +7366,15 @@
     }
   ],
   "meta": {
-    "total": 44,
+    "total": 46,
     "dataVersion": "2026.07.02",
     "certVersion": "2.1",
     "generatedAt": "2026-07-02",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalEntries": 44,
-      "totalAssessed": 44,
+      "totalEntries": 46,
+      "totalAssessed": 46,
       "openCorrectionRequests": 0
     },
     "entities": {
@@ -7163,6 +7476,10 @@
         "path": "/api/v2/propositions/stmt-5bf64ededa100f82163dcab1.json"
       },
       {
+        "propositionId": "stmt:ee1b50f655876f2f4da585e8",
+        "path": "/api/v2/propositions/stmt-ee1b50f655876f2f4da585e8.json"
+      },
+      {
         "propositionId": "stmt:12ebbd81f7cfbbcaf5048a0e",
         "path": "/api/v2/propositions/stmt-12ebbd81f7cfbbcaf5048a0e.json"
       },
@@ -7181,6 +7498,10 @@
       {
         "propositionId": "stmt:c890b5f8ca77961c84b58268",
         "path": "/api/v2/propositions/stmt-c890b5f8ca77961c84b58268.json"
+      },
+      {
+        "propositionId": "stmt:29c85dfda2751f0ac6e0fa1a",
+        "path": "/api/v2/propositions/stmt-29c85dfda2751f0ac6e0fa1a.json"
       },
       {
         "propositionId": "stmt:7536cb937fa5897848d6ecf4",

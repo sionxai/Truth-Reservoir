@@ -17,7 +17,7 @@ Storage boundary: the reservoir stores verified propositions and evidence struct
 Entity hubs: /e/{slug}/ pages and /api/v2/entities.json are deterministic derived navigation layers from sixW.who and sixW.why[].statedBy only. They are not entity profiles and assert no facts about the entity itself (제15).
 
 generatedAt: 2026-07-02
-total: 44
+total: 46
 recordOrder: updatedAt desc, then propositionId asc
 
 === stmt:0f10895abcff81a55ff783d6 ===
@@ -125,6 +125,30 @@ evidence:
   - url: https://unfccc.int/cop30/ifp; shortQuote: "Hangar Convention and Fair Centre of the Amazon"
 limitations: UNFCCC 참가자 안내 페이지는 회의 예정 날짜를 2025년 11월 10-21일로 표시하지만, 사후 문서 목록의 회의 보고서 제목은 10-25일을 표시한다. 이 명제는 그 사후 문서 목록의 문구를 저장하는 문서 내용 명제다.
 tags: 2025, 국제사건, 벨렝, 최근1년, COP30, UNFCCC
+
+=== stmt:29c85dfda2751f0ac6e0fa1a ===
+propositionId: stmt:29c85dfda2751f0ac6e0fa1a
+humanUrl: /p/stmt-29c85dfda2751f0ac6e0fa1a/
+jsonUrl: /api/v2/propositions/stmt-29c85dfda2751f0ac6e0fa1a.json
+canonicalProposition: 윤상현 국회 국정조사 특별위원회 위원장(국민의힘)은 2026년 7월 2일 올림픽공원 개표소 현장검증 후 조시훈 전 송파구 선관위 사무국장이 마지막에 문을 닫았고 이날 열었을 때 투표지와 투표함이 그대로 보존돼 있었다고 밝혔다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 윤상현 국회 국정조사 특별위원회 위원장(국민의힘)
+  when: 2026년 7월 2일
+  where: 서울 송파구 올림픽공원 개표소 현장검증 후 기자회견
+  what: 조시훈 전 송파구 선관위 사무국장이 마지막에 문을 닫았고 이날 열었을 때 투표지와 투표함이 그대로 보존돼 있었다고 밝혔다
+  how: 현장검증을 마친 뒤 기자들과 만나 발언했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202607021820277783; shortQuote: "투표지와 투표함이 그대로 보존돼있었다"
+  - url: https://www.fnnews.com/news/202607021820277783; shortQuote: "조시훈 전 송파구 선관위 사무국장이 마지막에"
+limitations: 발언 존재만 기록하며 보존 여부의 독립 검증은 아니다. 진행 중인 국정조사 사안으로 후속 정정이 있을 수 있다.
+tags: 2026지방선거, 국정조사, 올림픽공원, 정치주장, 주장, 투표용지부족
 
 === stmt:2e87b3750aadd61ef8e2b6c0 ===
 propositionId: stmt:2e87b3750aadd61ef8e2b6c0
@@ -812,6 +836,32 @@ evidence:
   - url: https://www.hani.co.kr/arti/politics/politics_general/1264064.html; shortQuote: "16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자"
 limitations: 같은 기사에 정점식 원내대표 등은 7곳 한정 소청 의견을 냈다고 보도되어 국민의힘 내부 입장은 단일하지 않았다. 장동혁 대표의 16개 광역단체 소청 주장 자체를 같은 문장으로 확인할 수 있는 fetch 가능한 독립 2차 출처는 이번 재검수에서 확인하지 못했다.
 tags: 2026지방선거, 국민의힘, 선거소청, 정치주장, 주장, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:ee1b50f655876f2f4da585e8 ===
+propositionId: stmt:ee1b50f655876f2f4da585e8
+humanUrl: /p/stmt-ee1b50f655876f2f4da585e8/
+jsonUrl: /api/v2/propositions/stmt-ee1b50f655876f2f4da585e8.json
+canonicalProposition: 국회 국정조사 특별위원회는 2026년 7월 2일 시위대 봉쇄 27일 만에 서울 송파구 올림픽공원 핸드볼경기장(6·3 지방선거 개표소)에 진입해 보관 중이던 약 247만장의 유·무효 투표용지와 투표함을 현장검증했고, 여야 위원들은 투표함 외부 반출 여부를 두고 이견을 보였다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 국회 국정조사 특별위원회
+  when: 2026년 7월 2일
+  where: 서울 송파구 올림픽공원 핸드볼경기장(6·3 지방선거 개표소)
+  what: 보관 중이던 약 247만장의 유·무효 투표용지와 투표함을 현장검증했고, 여야 위원들이 투표함 외부 반출 여부를 두고 이견을 보였다
+  how: 시위대 봉쇄 27일 만에 경기장 내부에 진입해 현장검증했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202607021502023344; shortQuote: "봉쇄 27일 만에"
+  - url: https://www.fnnews.com/news/202607021502023344; shortQuote: "반출 여부 이견"
+  - url: https://www.fnnews.com/news/202607021820277783; shortQuote: "약 247만장에 달하는 유·무효"
+  - url: https://www.fnnews.com/news/202607021820277783; shortQuote: "투표함 외부 반출 여부를 두고 다소 이견"
+limitations: 진행 중인 국정조사 사안으로 오늘자(2026-07-02) 보도 기준이며 후속 사실이 추가·정정될 수 있다. 약 247만장은 유·무효를 합한 보관 수량이며 개표 결과와는 별개다. 1차 특위 자료 직접 fetch는 하지 않았고 언론 전재에 의존했다.
+tags: 2026지방선거, 국정조사, 국회, 사건단위, 올림픽공원, 투표용지부족
 
 === stmt:fafb5a05023e9541b3e07f1f ===
 propositionId: stmt:fafb5a05023e9541b3e07f1f

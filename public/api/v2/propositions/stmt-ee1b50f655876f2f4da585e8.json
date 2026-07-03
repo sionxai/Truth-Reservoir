@@ -1,0 +1,180 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:ee1b50f655876f2f4da585e8",
+  "versionId": "ver:8ca5625427988338",
+  "certHash": "sha256:610a1885acfe52e46b1ef9ddcffa471f674aff29e3b8a25c04d09cfc34461c15",
+  "canonicalProposition": "국회 국정조사 특별위원회는 2026년 7월 2일 시위대 봉쇄 27일 만에 서울 송파구 올림픽공원 핸드볼경기장(6·3 지방선거 개표소)에 진입해 보관 중이던 약 247만장의 유·무효 투표용지와 투표함을 현장검증했고, 여야 위원들은 투표함 외부 반출 여부를 두고 이견을 보였다",
+  "originalClaim": "국회 국정조사 특위가 봉쇄됐던 올림픽공원 개표소에 진입해 보관된 투표용지·투표함을 현장검증했다.",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "국회 국정조사 특별위원회",
+    "when": "2026년 7월 2일",
+    "where": "서울 송파구 올림픽공원 핸드볼경기장(6·3 지방선거 개표소)",
+    "what": "보관 중이던 약 247만장의 유·무효 투표용지와 투표함을 현장검증했고, 여야 위원들이 투표함 외부 반출 여부를 두고 이견을 보였다",
+    "how": "시위대 봉쇄 27일 만에 경기장 내부에 진입해 현장검증했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-02",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "봉쇄 27일 만의 내부 진입, 약 247만장 유·무효 투표용지·투표함 보관, 외부 반출 여부 이견이 파이낸셜뉴스 오늘자(2026-07-02) 본문 curl HTTP 200에서 verbatim 확인된다. 진행 중인 국정조사 사안으로 후속 사실이 추가·정정될 수 있다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.fnnews.com/news/202607021502023344",
+      "title": "국조특위, 봉쇄 27일 만에 '올공' 내부 진입...투표함 반출 여부 이견",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "제목/본문"
+      },
+      "shortQuote": "봉쇄 27일 만에",
+      "quoteHash": "sha256:ae763063e0b8480421d50accce600b9b5cf7ba583ac71bf8c90007ca469fdd6b",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "파이낸셜뉴스 본문 curl HTTP 200으로 로드했고 문구가 원문에 그대로 존재했다.",
+      "independenceGroupId": "fnnews-20260702-olympic-park-entry",
+      "independenceLevel": "independent",
+      "independenceNote": "국조특위 진입을 보도한 fetch 가능 언론 출처.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "국정조사 현장검증을 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.fnnews.com/news/202607021502023344",
+      "title": "국조특위, 봉쇄 27일 만에 '올공' 내부 진입...투표함 반출 여부 이견",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "제목/본문"
+      },
+      "shortQuote": "반출 여부 이견",
+      "quoteHash": "sha256:df8a9ad51185d42af5c51b60b9f6b2acb7c61853328c321a8b6ceaa8e0b95beb",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "같은 기사에서 여야 반출 여부 이견 문구를 verbatim 확인했다.",
+      "independenceGroupId": "fnnews-20260702-olympic-park-entry",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 기사의 별도 문구(반출 이견).",
+      "sourceCompetence": "relevant",
+      "competenceNote": "국정조사 현장검증을 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.fnnews.com/news/202607021820277783",
+      "title": "국조특위, 올림픽공원 개표소 투표함 상태 점검",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "약 247만장에 달하는 유·무효",
+      "quoteHash": "sha256:b2d204e38701e3e9c92c3a26ae4936a017699a8df5b3fb704f0e52984f1af9a6",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "파이낸셜뉴스 본문 curl HTTP 200으로 로드했고 보관 수량 문구가 원문에 그대로 존재했다.",
+      "independenceGroupId": "fnnews-20260702-olympic-park-inspect",
+      "independenceLevel": "independent",
+      "independenceNote": "보관 투표용지 수량을 보도한 별개 기사.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "개표소 투표함·투표용지 상태를 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.fnnews.com/news/202607021820277783",
+      "title": "국조특위, 올림픽공원 개표소 투표함 상태 점검",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "투표함 외부 반출 여부를 두고 다소 이견",
+      "quoteHash": "sha256:314d957194db80cb434bf0f8c693e8704a07eca14eed4d03a105dd4c51af90e4",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "같은 기사에서 반출 여부 이견 문구를 verbatim 확인했다.",
+      "independenceGroupId": "fnnews-20260702-olympic-park-inspect",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "동일 기사의 별도 문구(반출 이견).",
+      "sourceCompetence": "relevant",
+      "competenceNote": "개표소 현장검증을 보도한 관련 출처.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "'247만장 투표용지 보관'을 '무더기 발견'으로 프레이밍하면 은닉·부정 서사로 오염될 수 있다.",
+      "response": "해당 장소가 6·3 지방선거 개표소이고 투표용지·투표함이 원래 보관돼 있었다는 사실, 봉쇄 27일 만의 진입·현장검증 사실만 기록했다. '발견'·'은닉' 표현을 배제했다.",
+      "errorsFound": 0,
+      "framingChecks": "부정선거·은닉·조작 해석을 배제하고 진입·보관 수량·반출 이견이라는 관찰 사실만 기록했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "진입·보관 사실과 별도로 윤상현 위원장의 '그대로 보존' 발언을 claimed-by-X 명제로 분리해 함께 보관한다.",
+      "result": "관찰 사실과 발언을 분리하고 부정 여부 결론을 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "특위·선관위의 권위가 아니라 fetch 가능한 보도 문구만 증거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-02",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "사용자가 '올림픽공원 투표용지 무더기 발견'으로 전달했으나, 원문 검증 결과 해당 장소는 6·3 개표소이고 봉쇄됐던 곳에 국조특위가 7/2 진입해 보관 투표용지·투표함을 현장검증한 사건임. '발견' 프레이밍을 제거하고 관찰 사실로 재구성. 4개 shortQuote를 파이낸셜뉴스 2건에서 curl HTTP 200 verbatim 확인.",
+      "adoptedReason": "봉쇄 27일 만의 진입·약 247만장 보관·반출 이견이 오늘자 복수 기사에서 직접 확인된다.",
+      "rejectedAlternatives": "'투표용지가 공원에서 무더기로 발견됐다', '은닉됐다', '부정 증거다'라는 프레이밍·결론은 사실과 다르거나 판단 영역이라 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 국정조사 현장검증의 관찰 가능한 사실만 기록하며, 부정선거 여부나 책임 소재에 관한 판단은 미확정이다. 진행 중인 조사로 후속 정정이 있을 수 있다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "진행 중인 국정조사 사안으로 오늘자(2026-07-02) 보도 기준이며 후속 사실이 추가·정정될 수 있다. 약 247만장은 유·무효를 합한 보관 수량이며 개표 결과와는 별개다. 1차 특위 자료 직접 fetch는 하지 않았고 언론 전재에 의존했다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "국정조사",
+    "올림픽공원",
+    "국회",
+    "사건단위"
+  ],
+  "createdAt": "2026-07-02",
+  "updatedAt": "2026-07-02"
+}

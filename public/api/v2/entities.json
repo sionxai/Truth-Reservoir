@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-02",
-    "total": 30,
+    "total": 32,
     "note": "sixW.who/statedBy 기반 결정론적 파생; cert 원본 미저장; 탐색 허브(제15)"
   },
   "entities": [
@@ -36,6 +36,21 @@
       "roles": {
         "who": [
           "stmt:9fa1e13fbdeb497fdee35c15"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "국회 국정조사 특별위원회",
+      "slug": "e-6rWt7ZqMIOq1reygleyhsOyCrCDtirnrs4TsnITsm5Dtmow",
+      "path": "/e/e-6rWt7ZqMIOq1reygleyhsOyCrCDtirnrs4TsnITsm5Dtmow",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:ee1b50f655876f2f4da585e8"
+      ],
+      "roles": {
+        "who": [
+          "stmt:ee1b50f655876f2f4da585e8"
         ],
         "statedBy": []
       }
@@ -203,6 +218,21 @@
       "roles": {
         "who": [
           "stmt:b18e2813819c4fb0e23830f6"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "윤상현 국회 국정조사 특별위원회 위원장",
+      "slug": "e-7Jyk7IOB7ZiEIOq1re2ajCDqta3soJXsobDsgqwg7Yq567OE7JyE7JuQ7ZqMIOychOybkOyepQ",
+      "path": "/e/e-7Jyk7IOB7ZiEIOq1re2ajCDqta3soJXsobDsgqwg7Yq567OE7JyE7JuQ7ZqMIOychOybkOyepQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:29c85dfda2751f0ac6e0fa1a"
+      ],
+      "roles": {
+        "who": [
+          "stmt:29c85dfda2751f0ac6e0fa1a"
         ],
         "statedBy": []
       }

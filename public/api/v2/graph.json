@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-02",
-    "total": 44,
+    "total": 46,
     "note": "태그 교집합 기반 결정론적 파생 관계; cert 원본에는 저장되지 않음"
   },
   "nodes": [
@@ -64,6 +64,18 @@
         "CDC",
         "HIV",
         "MSM"
+      ]
+    },
+    {
+      "propositionId": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "path": "/p/stmt-29c85dfda2751f0ac6e0fa1a/",
+      "tags": [
+        "2026지방선거",
+        "국정조사",
+        "올림픽공원",
+        "정치주장",
+        "주장",
+        "투표용지부족"
       ]
     },
     {
@@ -486,6 +498,18 @@
       ]
     },
     {
+      "propositionId": "stmt:ee1b50f655876f2f4da585e8",
+      "path": "/p/stmt-ee1b50f655876f2f4da585e8/",
+      "tags": [
+        "2026지방선거",
+        "국정조사",
+        "국회",
+        "사건단위",
+        "올림픽공원",
+        "투표용지부족"
+      ]
+    },
+    {
       "propositionId": "stmt:efddfa77db78be598d007d7e",
       "path": "/p/stmt-efddfa77db78be598d007d7e/",
       "tags": [
@@ -522,6 +546,15 @@
     {
       "from": "stmt:0f10895abcff81a55ff783d6",
       "to": "stmt:1426e28acba929903bbe8736",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0f10895abcff81a55ff783d6",
+      "to": "stmt:29c85dfda2751f0ac6e0fa1a",
       "sharedTags": [
         "2026지방선거",
         "정치주장",
@@ -638,6 +671,14 @@
     },
     {
       "from": "stmt:0f10895abcff81a55ff783d6",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0f10895abcff81a55ff783d6",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
@@ -658,6 +699,16 @@
     },
     {
       "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
+      "to": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
       "to": "stmt:2e87b3750aadd61ef8e2b6c0",
       "sharedTags": [
         "2026지방선거",
@@ -755,6 +806,14 @@
         "국민의힘",
         "정치주장",
         "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -770,6 +829,16 @@
     },
     {
       "from": "stmt:1426e28acba929903bbe8736",
+      "to": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:1426e28acba929903bbe8736",
       "to": "stmt:2e87b3750aadd61ef8e2b6c0",
       "sharedTags": [
         "2026지방선거",
@@ -865,6 +934,14 @@
         "2026지방선거",
         "정치주장",
         "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:1426e28acba929903bbe8736",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -982,6 +1059,126 @@
       ]
     },
     {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:2e87b3750aadd61ef8e2b6c0",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:5bf64ededa100f82163dcab1",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:6ec9cbff53f71a505b22823f",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:83702707422e50c0a56fb565",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:921a9dc8a1b5b268e0f4c807",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:a2c80ef637dd92021cbbd92b",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:c11b6f2081e8fa1c38bae49d",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:c890b5f8ca77961c84b58268",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:d180b65d5e8f431a52ed1eec",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:e2b37f73256b9885410a5c01",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "국정조사",
+        "올림픽공원",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:fafb5a05023e9541b3e07f1f",
+      "sharedTags": [
+        "2026지방선거",
+        "정치주장",
+        "주장",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:2e87b3750aadd61ef8e2b6c0",
       "to": "stmt:5bf64ededa100f82163dcab1",
       "sharedTags": [
@@ -1074,6 +1271,14 @@
         "2026지방선거",
         "정치주장",
         "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:2e87b3750aadd61ef8e2b6c0",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -1584,6 +1789,14 @@
     },
     {
       "from": "stmt:5bf64ededa100f82163dcab1",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:5bf64ededa100f82163dcab1",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
@@ -1722,6 +1935,14 @@
     },
     {
       "from": "stmt:6ec9cbff53f71a505b22823f",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:6ec9cbff53f71a505b22823f",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
@@ -1820,6 +2041,14 @@
     },
     {
       "from": "stmt:83702707422e50c0a56fb565",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:83702707422e50c0a56fb565",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
@@ -1900,6 +2129,14 @@
     },
     {
       "from": "stmt:921a9dc8a1b5b268e0f4c807",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:921a9dc8a1b5b268e0f4c807",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
@@ -1963,6 +2200,14 @@
         "2026지방선거",
         "정치주장",
         "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:a2c80ef637dd92021cbbd92b",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -2061,6 +2306,14 @@
     },
     {
       "from": "stmt:c11b6f2081e8fa1c38bae49d",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:c11b6f2081e8fa1c38bae49d",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
@@ -2097,6 +2350,14 @@
     },
     {
       "from": "stmt:c890b5f8ca77961c84b58268",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:c890b5f8ca77961c84b58268",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
@@ -2119,6 +2380,15 @@
       "sharedTags": [
         "2026지방선거",
         "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:cb0719e9aac6e4c86677d2e5",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "사건단위",
         "투표용지부족"
       ]
     },
@@ -2150,11 +2420,27 @@
     },
     {
       "from": "stmt:d180b65d5e8f431a52ed1eec",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d180b65d5e8f431a52ed1eec",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
         "정치주장",
         "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:e2b37f73256b9885410a5c01",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -2166,6 +2452,14 @@
         "정치주장",
         "주장",
         "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ee1b50f655876f2f4da585e8",
+      "to": "stmt:fafb5a05023e9541b3e07f1f",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     }

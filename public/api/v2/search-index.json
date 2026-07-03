@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-02",
-    "total": 44,
+    "total": 46,
     "note": "Compact manifest for client-side filtering; fetch full records at /api/v2/propositions/{dashId}.json"
   },
   "records": [
@@ -76,6 +76,24 @@
       "factualGrade": "fully_reliable",
       "status": "active",
       "asOfDate": "2026-06-16",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "path": "/api/v2/propositions/stmt-29c85dfda2751f0ac6e0fa1a.json",
+      "canonical": "윤상현 국회 국정조사 특별위원회 위원장(국민의힘)은 2026년 7월 2일 올림픽공원 개표소 현장검증 후 조시훈 전 송파구 선관위 사무국장이 마지막에 문을 닫았고 이날 열었을 때 투표지와 투표함이 그대로 보존돼 있었다고 밝혔다",
+      "tags": [
+        "2026지방선거",
+        "국정조사",
+        "올림픽공원",
+        "정치주장",
+        "주장",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
       "updatedAt": "2026-07-02"
     },
     {
@@ -562,6 +580,24 @@
       "factualGrade": "largely_reliable",
       "status": "active",
       "asOfDate": "2026-06-18",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:ee1b50f655876f2f4da585e8",
+      "path": "/api/v2/propositions/stmt-ee1b50f655876f2f4da585e8.json",
+      "canonical": "국회 국정조사 특별위원회는 2026년 7월 2일 시위대 봉쇄 27일 만에 서울 송파구 올림픽공원 핸드볼경기장(6·3 지방선거 개표소)에 진입해 보관 중이던 약 247만장의 유·무효 투표용지와 투표함을 현장검증했고, 여야 위원들은 투표함 외부 반출 여부를 두고 이견을 보였다",
+      "tags": [
+        "2026지방선거",
+        "국정조사",
+        "국회",
+        "사건단위",
+        "올림픽공원",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
       "updatedAt": "2026-07-02"
     },
     {
