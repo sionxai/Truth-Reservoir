@@ -64,3 +64,13 @@ test("entity hub has no critical a11y violations", async ({ page }) => {
 
   await expectNoCriticalA11yViolations(page);
 });
+
+test("woven topic page has no critical a11y violations", async ({ page }) => {
+  // ASCII tag: the Next dev server can't match a non-ASCII param against decoded
+  // generateStaticParams entries (dev-only 500 with output:'export'); the static
+  // export renders every tag page. HIV covers the woven layout for the axe scan.
+  await page.goto("/t/HIV/");
+  await expect(page.getByRole("heading", { level: 1, name: "HIV" })).toBeVisible();
+
+  await expectNoCriticalA11yViolations(page);
+});

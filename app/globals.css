@@ -721,6 +721,132 @@ button.secondary,
   font-weight: 800;
 }
 
+/* Woven long-form topic page (/t/{tag}) — reads like an article, contains only
+   verified atomic facts in deterministic event-date order (제14). No generated prose. */
+.topic-page {
+  display: grid;
+  gap: 20px;
+  max-width: 760px;
+}
+
+.topic-page__header {
+  border-bottom: 1px solid var(--color-border);
+  display: grid;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.topic-page__header h1 {
+  font-size: clamp(1.9rem, 4.6vw, 3.2rem);
+  line-height: 1.16;
+  margin: 0;
+}
+
+.topic-page__meta {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.topic-page__disclosure {
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-md);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 12px 14px;
+}
+
+.topic-body {
+  display: grid;
+  gap: 22px;
+}
+
+.topic-fact-group {
+  display: grid;
+  gap: 14px;
+}
+
+.topic-month-heading {
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin: 8px 0 0;
+  padding-bottom: 6px;
+}
+
+.topic-fact {
+  display: grid;
+  gap: 8px;
+}
+
+.topic-fact__text {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.topic-fact__meta {
+  align-items: center;
+  color: var(--color-muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.84rem;
+  gap: 8px;
+  margin: 0;
+}
+
+.topic-fact__who,
+.topic-fact__when,
+.topic-fact__sources {
+  color: var(--color-muted);
+}
+
+.topic-fact__link {
+  color: var(--color-link);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.topic-fact__link:hover {
+  text-decoration: underline;
+}
+
+.topic-fact__corrections {
+  display: grid;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topic-fact__corrections li {
+  color: var(--color-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.topic-fact__corrections-label,
+.topic-fact__undetermined-label {
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-sm);
+  font-size: 0.72rem;
+  font-weight: 800;
+  margin-right: 6px;
+  padding: 2px 6px;
+}
+
+.topic-fact__undetermined {
+  color: var(--color-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
 .entity-page {
   display: grid;
   gap: 18px;

@@ -142,6 +142,24 @@
         }
       }
     },
+    "/api/v2/topics.json": {
+      "get": {
+        "summary": "Fetch the deterministic topic collection registry",
+        "description": "Derived from tags at build time. Each topic aggregates propositions sharing a tag, ordered by event date parsed from sixW.when (제14). Topics are a derived navigation layer and are not stored in Cert originals.",
+        "responses": {
+          "200": {
+            "description": "Static derived topic registry",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TopicRegistry"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v2/requests.json": {
       "get": {
         "summary": "List public fact-data requests",
@@ -1412,6 +1430,98 @@
                     }
                   },
                   "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "TopicRegistry": {
+        "type": "object",
+        "required": [
+          "meta",
+          "topics"
+        ],
+        "properties": {
+          "meta": {
+            "type": "object",
+            "required": [
+              "generatedAt",
+              "total",
+              "note"
+            ],
+            "properties": {
+              "generatedAt": {
+                "type": "string"
+              },
+              "total": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          },
+          "topics": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "tag",
+                "path",
+                "count",
+                "dateRange",
+                "propositionIds"
+              ],
+              "properties": {
+                "tag": {
+                  "type": "string"
+                },
+                "path": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "dateRange": {
+                  "type": "object",
+                  "required": [
+                    "from",
+                    "to"
+                  ],
+                  "properties": {
+                    "from": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "to": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "propositionIds": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^stmt:[a-f0-9]{24}$"
+                  }
                 }
               }
             }

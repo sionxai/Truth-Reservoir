@@ -4,6 +4,8 @@ import { entityRegistry, type EntityRegistryEntry } from "../../lib/entities.ts"
 import { encodePropositionId } from "../../lib/ids.ts";
 import { sortByUpdatedDesc } from "../../lib/propositions.ts";
 import { relatedPropositions } from "../../lib/relations.ts";
+import { tagRoute } from "../../lib/propositions.ts";
+import { eventDateKey, monthBucketLabel, topicSummary } from "../../lib/topics.ts";
 import type { Proposition } from "../../lib/types.ts";
 import { findBallotShortageSeed, findPredecessorSeed } from "../test-utils.ts";
 
@@ -78,7 +80,9 @@ test("E2 detail page exposes a FACTS article for humans and crawlers", async ({
   await expect(
     page.getByRole("link", { name: "중앙선거관리위원회가 밝힌 사유" })
   ).toHaveAttribute("href", `/e/${centralElectionCommission.slug}/`);
-  await expect(page.locator("h1 .entity-inline-link")).toHaveCount(0);
+  await expect(
+    page.locator("h1 .entity-inline-link", { hasText: "중앙선거관리위원회" })
+  ).toHaveAttribute("href", `/e/${centralElectionCommission.slug}/`);
   await expect(page.getByRole("heading", { name: "관련 FACTS" })).toBeVisible();
   await expect(
     page.getByText("태그 교집합으로 자동 선정됩니다 — 편집자가 고르지 않습니다")
@@ -157,4 +161,76 @@ test("E6 entity hub lists propositions without profile claims", async ({ page })
 
     await expect(card).toHaveAttribute("href", `/p/${dashId}/`);
   }
+});
+
+test("E7 topic page is a woven long-form view in deterministic event-date order", async ({
+  page
+}) => {
+  // ASCII tag: the Next dev server (output:'export') cannot match a non-ASCII param
+  // against decoded generateStaticParams entries, so a Korean tag 500s in dev only
+  // (the static-export build renders every tag page fine — see `next build`). HIV
+  // exercises the full woven view: multiple facts, year-only dates that emit no
+  // false-precision month heading, a real month bucket, and the propositionId
+  // tie-break between two same-date facts.
+  const tag = "HIV";
+  const summary = topicSummary(tag, propositions);
+  const byId = new Map(propositions.map((item) => [item.propositionId, item]));
+  const ordered = summary.propositionIds.map((id) => byId.get(id)!);
+
+  await page.goto(tagRoute(tag));
+
+  // Header: tag as H1, meta row (count · date range · source total), disclosure.
+  await expect(page.getByRole("heading", { level: 1, name: tag })).toBeVisible();
+  await expect(page.getByText(`사실 ${summary.count}개`)).toBeVisible();
+  await expect(
+    page.getByText(`날짜범위 ${summary.dateRange.from}~${summary.dateRange.to}`)
+  ).toBeVisible();
+  await expect(page.getByText(`출처 합계 ${summary.sourceTotal}`)).toBeVisible();
+  await expect(
+    page.getByText(
+      "이 페이지는 태그가 같은 검증된 사실을 사건 발생 시점 순으로 자동 집계합니다. 서사·해석은 없으며 편집자가 배열하지 않습니다. 각 문장은 독립 검증된 명제이며 클릭하면 원문·출처로 이동합니다."
+    )
+  ).toBeVisible();
+
+  // Woven view, not a card grid: fact paragraphs are visible and there is no card list.
+  await expect(page.locator(".facts-card-list")).toHaveCount(0);
+  await expect(page.locator(".facts-card")).toHaveCount(0);
+  await expect(page.locator(".topic-fact__text")).toHaveCount(ordered.length);
+
+  // The first fact paragraph (deterministic order) is server-rendered and visible.
+  const first = ordered[0];
+  await expect(page.locator(".topic-fact__text").first()).toHaveText(
+    first.canonicalProposition
+  );
+  // Each fact links to its /p/{dashId}/ page.
+  const firstDashId = encodePropositionId(first.propositionId);
+  await expect(
+    page.locator(".topic-fact", { hasText: first.canonicalProposition }).getByRole("link", {
+      name: "원문 →"
+    })
+  ).toHaveAttribute("href", `/p/${firstDashId}/`);
+
+  // Neutral auto-derived month subheadings appear (no thematic labels).
+  const buckets: string[] = [];
+  let lastBucket: string | null = null;
+  for (const proposition of ordered) {
+    const bucket = monthBucketLabel(eventDateKey(proposition));
+    if (bucket && bucket !== lastBucket) {
+      buckets.push(bucket);
+      lastBucket = bucket;
+    }
+  }
+  for (const bucket of buckets) {
+    await expect(page.getByRole("heading", { level: 2, name: bucket })).toBeVisible();
+  }
+
+  // CollectionPage JSON-LD lists member pages, asserts no verdict about the topic.
+  const jsonLd = await page.locator('script[type="application/ld+json"]').innerText();
+  const parsed = JSON.parse(jsonLd) as {
+    "@type": string;
+    hasPart: Array<{ url: string }>;
+  };
+  expect(parsed["@type"]).toBe("CollectionPage");
+  expect(parsed.hasPart).toHaveLength(ordered.length);
+  expect(parsed.hasPart[0].url).toContain(`/p/${firstDashId}/`);
 });

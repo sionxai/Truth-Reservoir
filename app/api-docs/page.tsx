@@ -32,6 +32,9 @@ export default function ApiDocsPage() {
               <a href="/api/v2/entities.json">GET /api/v2/entities.json</a>
             </li>
             <li>
+              <a href="/api/v2/topics.json">GET /api/v2/topics.json</a>
+            </li>
+            <li>
               <a href="/api/v2/requests.json">GET /api/v2/requests.json</a>
             </li>
             <li>
@@ -111,6 +114,25 @@ export default function ApiDocsPage() {
             <span className="mono">name</span>, <span className="mono">slug</span>, 페이지{" "}
             <span className="mono">path</span>, 등장 명제 수,{" "}
             <span className="mono">propositionIds</span>, 역할별 명제 id 목록을 담습니다.
+          </p>
+        </section>
+
+        <section className="facts-section doc-section" aria-labelledby="topics-shape-title">
+          <h2 id="topics-shape-title">주제 집계</h2>
+          <p>
+            <span className="mono">/api/v2/topics.json</span>은 태그를 공유하는 검증된
+            사실을 빌드 시점에 결정론적으로 파생·집계한 주제 목록입니다. 각 topic의 명제는{" "}
+            <span className="mono">sixW.when</span>에서 파싱한 사건 발생 시점 순으로
+            정렬되며(제14), 이 레이어는 Cert 원본에는 저장되지 않습니다(제8).
+          </p>
+          <p>
+            형태는 <span className="mono">{"{ meta, topics }"}</span>입니다. 각 topic은{" "}
+            <span className="mono">tag</span>, 사람용 <span className="mono">path</span>{" "}
+            (<span className="mono">/t/{"{tag}"}</span>), <span className="mono">count</span>,{" "}
+            <span className="mono">dateRange</span>(from/to), 그리고 사건 시점 순으로 정렬된{" "}
+            <span className="mono">propositionIds</span>를 담습니다. 사람용 페이지는 같은
+            순서로 짜인 롱폼 주제 페이지이며, 편집자가 배열하거나 사실 사이에 서사를 넣지
+            않습니다.
           </p>
         </section>
 

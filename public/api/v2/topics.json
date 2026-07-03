@@ -1,0 +1,1712 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-02",
+    "total": 132,
+    "note": "태그 기반 결정론적 파생 주제 집계; 사건 시점 순; cert 원본 미저장"
+  },
+  "topics": [
+    {
+      "tag": "1945",
+      "path": "/t/1945",
+      "count": 1,
+      "dateRange": {
+        "from": "1945-08-15",
+        "to": "1945-08-15"
+      },
+      "propositionIds": [
+        "stmt:b3deef8189d7937fc1e97ab2"
+      ]
+    },
+    {
+      "tag": "1948",
+      "path": "/t/1948",
+      "count": 2,
+      "dateRange": {
+        "from": "1948-08-15",
+        "to": "1948-09-09"
+      },
+      "propositionIds": [
+        "stmt:a39e2dc6072bbda67817ead7",
+        "stmt:8b798d52af5df4ea214ecead"
+      ]
+    },
+    {
+      "tag": "1950",
+      "path": "/t/1950",
+      "count": 1,
+      "dateRange": {
+        "from": "1950-06-25",
+        "to": "1950-06-25"
+      },
+      "propositionIds": [
+        "stmt:698eafdeae1e813d295ea69b"
+      ]
+    },
+    {
+      "tag": "1953",
+      "path": "/t/1953",
+      "count": 1,
+      "dateRange": {
+        "from": "1953-07-27",
+        "to": "1953-07-27"
+      },
+      "propositionIds": [
+        "stmt:7536cb937fa5897848d6ecf4"
+      ]
+    },
+    {
+      "tag": "1965",
+      "path": "/t/1965",
+      "count": 1,
+      "dateRange": {
+        "from": "1965-06-22",
+        "to": "1965-06-22"
+      },
+      "propositionIds": [
+        "stmt:3104eab69ad2305be2007c30"
+      ]
+    },
+    {
+      "tag": "1969",
+      "path": "/t/1969",
+      "count": 1,
+      "dateRange": {
+        "from": "1969-07-20",
+        "to": "1969-07-20"
+      },
+      "propositionIds": [
+        "stmt:4ae4c94174dc3aaf651102d2"
+      ]
+    },
+    {
+      "tag": "2025",
+      "path": "/t/2025",
+      "count": 3,
+      "dateRange": {
+        "from": "2025-06-24",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:c44501dcb97869b23fbe8942",
+        "stmt:9fa1e13fbdeb497fdee35c15",
+        "stmt:22abb3226ba88d6589e75013"
+      ]
+    },
+    {
+      "tag": "2026",
+      "path": "/t/2026",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-01-17",
+        "to": "2026-01-17"
+      },
+      "propositionIds": [
+        "stmt:38c8e4c00c63fa0fc9b00eb3"
+      ]
+    },
+    {
+      "tag": "2026지방선거",
+      "path": "/t/2026%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0",
+      "count": 17,
+      "dateRange": {
+        "from": "2025-12-01",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:0f10895abcff81a55ff783d6",
+        "stmt:2e87b3750aadd61ef8e2b6c0",
+        "stmt:921a9dc8a1b5b268e0f4c807",
+        "stmt:c890b5f8ca77961c84b58268",
+        "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:1426e28acba929903bbe8736",
+        "stmt:c11b6f2081e8fa1c38bae49d",
+        "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:12ebbd81f7cfbbcaf5048a0e",
+        "stmt:5bf64ededa100f82163dcab1",
+        "stmt:83702707422e50c0a56fb565",
+        "stmt:d180b65d5e8f431a52ed1eec",
+        "stmt:e2b37f73256b9885410a5c01",
+        "stmt:29c85dfda2751f0ac6e0fa1a",
+        "stmt:ee1b50f655876f2f4da585e8"
+      ]
+    },
+    {
+      "tag": "38선",
+      "path": "/t/38%EC%84%A0",
+      "count": 1,
+      "dateRange": {
+        "from": "1950-06-25",
+        "to": "1950-06-25"
+      },
+      "propositionIds": [
+        "stmt:698eafdeae1e813d295ea69b"
+      ]
+    },
+    {
+      "tag": "강준현",
+      "path": "/t/%EA%B0%95%EC%A4%80%ED%98%84",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-07",
+        "to": "2026-06-07"
+      },
+      "propositionIds": [
+        "stmt:1426e28acba929903bbe8736"
+      ]
+    },
+    {
+      "tag": "개인정보보호",
+      "path": "/t/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8",
+      "count": 3,
+      "dateRange": {
+        "from": "2011-03-29",
+        "to": "2011-03-29"
+      },
+      "propositionIds": [
+        "stmt:40340515225f7adf44e242f3",
+        "stmt:52e6260a60e04599d809ae61",
+        "stmt:840aa7c32d8f6372cd968fb6"
+      ]
+    },
+    {
+      "tag": "개혁신당",
+      "path": "/t/%EA%B0%9C%ED%98%81%EC%8B%A0%EB%8B%B9",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-06-03"
+      },
+      "propositionIds": [
+        "stmt:c890b5f8ca77961c84b58268"
+      ]
+    },
+    {
+      "tag": "공식대응",
+      "path": "/t/%EA%B3%B5%EC%8B%9D%EB%8C%80%EC%9D%91",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-07",
+        "to": "2026-06-07"
+      },
+      "propositionIds": [
+        "stmt:c11b6f2081e8fa1c38bae49d"
+      ]
+    },
+    {
+      "tag": "공포",
+      "path": "/t/%EA%B3%B5%ED%8F%AC",
+      "count": 1,
+      "dateRange": {
+        "from": "2011-03-29",
+        "to": "2011-03-29"
+      },
+      "propositionIds": [
+        "stmt:40340515225f7adf44e242f3"
+      ]
+    },
+    {
+      "tag": "과학사",
+      "path": "/t/%EA%B3%BC%ED%95%99%EC%82%AC",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:b18e2813819c4fb0e23830f6"
+      ]
+    },
+    {
+      "tag": "국민의힘",
+      "path": "/t/%EA%B5%AD%EB%AF%BC%EC%9D%98%ED%9E%98",
+      "count": 3,
+      "dateRange": {
+        "from": "2026-06-04",
+        "to": "2026-06-18"
+      },
+      "propositionIds": [
+        "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:12ebbd81f7cfbbcaf5048a0e",
+        "stmt:e2b37f73256b9885410a5c01"
+      ]
+    },
+    {
+      "tag": "국정조사",
+      "path": "/t/%EA%B5%AD%EC%A0%95%EC%A1%B0%EC%82%AC",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-07-02",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:29c85dfda2751f0ac6e0fa1a",
+        "stmt:ee1b50f655876f2f4da585e8"
+      ]
+    },
+    {
+      "tag": "국제사건",
+      "path": "/t/%EA%B5%AD%EC%A0%9C%EC%82%AC%EA%B1%B4",
+      "count": 4,
+      "dateRange": {
+        "from": "2025-06-24",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:c44501dcb97869b23fbe8942",
+        "stmt:9fa1e13fbdeb497fdee35c15",
+        "stmt:38c8e4c00c63fa0fc9b00eb3",
+        "stmt:22abb3226ba88d6589e75013"
+      ]
+    },
+    {
+      "tag": "국회",
+      "path": "/t/%EA%B5%AD%ED%9A%8C",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-07-02",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:ee1b50f655876f2f4da585e8"
+      ]
+    },
+    {
+      "tag": "권고의견",
+      "path": "/t/%EA%B6%8C%EA%B3%A0%EC%9D%98%EA%B2%AC",
+      "count": 1,
+      "dateRange": {
+        "from": "2025-07-23",
+        "to": "2025-07-23"
+      },
+      "propositionIds": [
+        "stmt:9fa1e13fbdeb497fdee35c15"
+      ]
+    },
+    {
+      "tag": "기준타원체",
+      "path": "/t/%EA%B8%B0%EC%A4%80%ED%83%80%EC%9B%90%EC%B2%B4",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:b9a4dcf237affc17c1a51fe6"
+      ]
+    },
+    {
+      "tag": "기후변화",
+      "path": "/t/%EA%B8%B0%ED%9B%84%EB%B3%80%ED%99%94",
+      "count": 1,
+      "dateRange": {
+        "from": "2025-07-23",
+        "to": "2025-07-23"
+      },
+      "propositionIds": [
+        "stmt:9fa1e13fbdeb497fdee35c15"
+      ]
+    },
+    {
+      "tag": "김정철",
+      "path": "/t/%EA%B9%80%EC%A0%95%EC%B2%A0",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-06-03"
+      },
+      "propositionIds": [
+        "stmt:c890b5f8ca77961c84b58268"
+      ]
+    },
+    {
+      "tag": "대한민국",
+      "path": "/t/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+      "count": 1,
+      "dateRange": {
+        "from": "1965-06-22",
+        "to": "1965-06-22"
+      },
+      "propositionIds": [
+        "stmt:3104eab69ad2305be2007c30"
+      ]
+    },
+    {
+      "tag": "대한민국정부수립",
+      "path": "/t/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%A0%95%EB%B6%80%EC%88%98%EB%A6%BD",
+      "count": 1,
+      "dateRange": {
+        "from": "1948-08-15",
+        "to": "1948-08-15"
+      },
+      "propositionIds": [
+        "stmt:a39e2dc6072bbda67817ead7"
+      ]
+    },
+    {
+      "tag": "더불어민주당",
+      "path": "/t/%EB%8D%94%EB%B6%88%EC%96%B4%EB%AF%BC%EC%A3%BC%EB%8B%B9",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-07",
+        "to": "2026-06-07"
+      },
+      "propositionIds": [
+        "stmt:1426e28acba929903bbe8736"
+      ]
+    },
+    {
+      "tag": "마젤란",
+      "path": "/t/%EB%A7%88%EC%A0%A4%EB%9E%80",
+      "count": 1,
+      "dateRange": {
+        "from": "1519-01-01",
+        "to": "1519-01-01"
+      },
+      "propositionIds": [
+        "stmt:4f96ea07a89511c2ea0a86a3"
+      ]
+    },
+    {
+      "tag": "메타분석",
+      "path": "/t/%EB%A9%94%ED%83%80%EB%B6%84%EC%84%9D",
+      "count": 1,
+      "dateRange": {
+        "from": "2008-01-01",
+        "to": "2008-01-01"
+      },
+      "propositionIds": [
+        "stmt:3ae444edbb297bea65e9cd78"
+      ]
+    },
+    {
+      "tag": "문서내용",
+      "path": "/t/%EB%AC%B8%EC%84%9C%EB%82%B4%EC%9A%A9",
+      "count": 2,
+      "dateRange": {
+        "from": "2025-12-01",
+        "to": "2026-06-18"
+      },
+      "propositionIds": [
+        "stmt:0f10895abcff81a55ff783d6",
+        "stmt:83702707422e50c0a56fb565"
+      ]
+    },
+    {
+      "tag": "미국",
+      "path": "/t/%EB%AF%B8%EA%B5%AD",
+      "count": 1,
+      "dateRange": {
+        "from": "2022-01-01",
+        "to": "2022-01-01"
+      },
+      "propositionIds": [
+        "stmt:24094c14f92b5c8fb482e57d"
+      ]
+    },
+    {
+      "tag": "민감주제",
+      "path": "/t/%EB%AF%BC%EA%B0%90%EC%A3%BC%EC%A0%9C",
+      "count": 1,
+      "dateRange": {
+        "from": "1991-01-01",
+        "to": "1991-01-01"
+      },
+      "propositionIds": [
+        "stmt:3e54ea51d8411beb551b399c"
+      ]
+    },
+    {
+      "tag": "반대매매",
+      "path": "/t/%EB%B0%98%EB%8C%80%EB%A7%A4%EB%A7%A4",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-01"
+      },
+      "propositionIds": [
+        "stmt:5525ea7692e7f4eea17971f5"
+      ]
+    },
+    {
+      "tag": "법률제10465호",
+      "path": "/t/%EB%B2%95%EB%A5%A0%EC%A0%9C10465%ED%98%B8",
+      "count": 3,
+      "dateRange": {
+        "from": "2011-03-29",
+        "to": "2011-03-29"
+      },
+      "propositionIds": [
+        "stmt:40340515225f7adf44e242f3",
+        "stmt:52e6260a60e04599d809ae61",
+        "stmt:840aa7c32d8f6372cd968fb6"
+      ]
+    },
+    {
+      "tag": "법원",
+      "path": "/t/%EB%B2%95%EC%9B%90",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-06-09"
+      },
+      "propositionIds": [
+        "stmt:c890b5f8ca77961c84b58268",
+        "stmt:a2c80ef637dd92021cbbd92b"
+      ]
+    },
+    {
+      "tag": "벨렝",
+      "path": "/t/%EB%B2%A8%EB%A0%9D",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:22abb3226ba88d6589e75013"
+      ]
+    },
+    {
+      "tag": "부정선거의혹",
+      "path": "/t/%EB%B6%80%EC%A0%95%EC%84%A0%EA%B1%B0%EC%9D%98%ED%98%B9",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-08",
+        "to": "2026-06-08"
+      },
+      "propositionIds": [
+        "stmt:fafb5a05023e9541b3e07f1f"
+      ]
+    },
+    {
+      "tag": "부칙",
+      "path": "/t/%EB%B6%80%EC%B9%99",
+      "count": 1,
+      "dateRange": {
+        "from": "2011-03-29",
+        "to": "2011-03-29"
+      },
+      "propositionIds": [
+        "stmt:52e6260a60e04599d809ae61"
+      ]
+    },
+    {
+      "tag": "분단",
+      "path": "/t/%EB%B6%84%EB%8B%A8",
+      "count": 2,
+      "dateRange": {
+        "from": "1948-08-15",
+        "to": "1948-09-09"
+      },
+      "propositionIds": [
+        "stmt:a39e2dc6072bbda67817ead7",
+        "stmt:8b798d52af5df4ea214ecead"
+      ]
+    },
+    {
+      "tag": "빚투",
+      "path": "/t/%EB%B9%9A%ED%88%AC",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-01"
+      },
+      "propositionIds": [
+        "stmt:5525ea7692e7f4eea17971f5"
+      ]
+    },
+    {
+      "tag": "사건단위",
+      "path": "/t/%EC%82%AC%EA%B1%B4%EB%8B%A8%EC%9C%84",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:ee1b50f655876f2f4da585e8"
+      ]
+    },
+    {
+      "tag": "선거소청",
+      "path": "/t/%EC%84%A0%EA%B1%B0%EC%86%8C%EC%B2%AD",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-18",
+        "to": "2026-06-18"
+      },
+      "propositionIds": [
+        "stmt:e2b37f73256b9885410a5c01"
+      ]
+    },
+    {
+      "tag": "선거일",
+      "path": "/t/%EC%84%A0%EA%B1%B0%EC%9D%BC",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-06-03"
+      },
+      "propositionIds": [
+        "stmt:2e87b3750aadd61ef8e2b6c0"
+      ]
+    },
+    {
+      "tag": "선관위지침",
+      "path": "/t/%EC%84%A0%EA%B4%80%EC%9C%84%EC%A7%80%EC%B9%A8",
+      "count": 2,
+      "dateRange": {
+        "from": "2025-12-01",
+        "to": "2026-06-18"
+      },
+      "propositionIds": [
+        "stmt:0f10895abcff81a55ff783d6",
+        "stmt:83702707422e50c0a56fb565"
+      ]
+    },
+    {
+      "tag": "선관위해명",
+      "path": "/t/%EC%84%A0%EA%B4%80%EC%9C%84%ED%95%B4%EB%AA%85",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-18",
+        "to": "2026-06-18"
+      },
+      "propositionIds": [
+        "stmt:5bf64ededa100f82163dcab1"
+      ]
+    },
+    {
+      "tag": "성적지향",
+      "path": "/t/%EC%84%B1%EC%A0%81%EC%A7%80%ED%96%A5",
+      "count": 1,
+      "dateRange": {
+        "from": "1991-01-01",
+        "to": "1991-01-01"
+      },
+      "propositionIds": [
+        "stmt:3e54ea51d8411beb551b399c"
+      ]
+    },
+    {
+      "tag": "수사",
+      "path": "/t/%EC%88%98%EC%82%AC",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-07",
+        "to": "2026-06-07"
+      },
+      "propositionIds": [
+        "stmt:c11b6f2081e8fa1c38bae49d"
+      ]
+    },
+    {
+      "tag": "신용거래융자",
+      "path": "/t/%EC%8B%A0%EC%9A%A9%EA%B1%B0%EB%9E%98%EC%9C%B5%EC%9E%90",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-01"
+      },
+      "propositionIds": [
+        "stmt:5525ea7692e7f4eea17971f5"
+      ]
+    },
+    {
+      "tag": "쌍생아연구",
+      "path": "/t/%EC%8C%8D%EC%83%9D%EC%95%84%EC%97%B0%EA%B5%AC",
+      "count": 1,
+      "dateRange": {
+        "from": "1991-01-01",
+        "to": "1991-01-01"
+      },
+      "propositionIds": [
+        "stmt:3e54ea51d8411beb551b399c"
+      ]
+    },
+    {
+      "tag": "아폴로17",
+      "path": "/t/%EC%95%84%ED%8F%B4%EB%A1%9C17",
+      "count": 1,
+      "dateRange": {
+        "from": "1972-12-07",
+        "to": "1972-12-07"
+      },
+      "propositionIds": [
+        "stmt:61efe874787dacf6180ae46b"
+      ]
+    },
+    {
+      "tag": "아폴로8",
+      "path": "/t/%EC%95%84%ED%8F%B4%EB%A1%9C8",
+      "count": 1,
+      "dateRange": {
+        "from": "1968-12-24",
+        "to": "1968-12-24"
+      },
+      "propositionIds": [
+        "stmt:ae66527bf2aea1b5407a5f78"
+      ]
+    },
+    {
+      "tag": "아폴로계획",
+      "path": "/t/%EC%95%84%ED%8F%B4%EB%A1%9C%EA%B3%84%ED%9A%8D",
+      "count": 1,
+      "dateRange": {
+        "from": "1969-07-20",
+        "to": "1969-07-20"
+      },
+      "propositionIds": [
+        "stmt:4ae4c94174dc3aaf651102d2"
+      ]
+    },
+    {
+      "tag": "에라토스테네스",
+      "path": "/t/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:b18e2813819c4fb0e23830f6"
+      ]
+    },
+    {
+      "tag": "엘카노",
+      "path": "/t/%EC%97%98%EC%B9%B4%EB%85%B8",
+      "count": 1,
+      "dateRange": {
+        "from": "1519-01-01",
+        "to": "1519-01-01"
+      },
+      "propositionIds": [
+        "stmt:4f96ea07a89511c2ea0a86a3"
+      ]
+    },
+    {
+      "tag": "역사적사건",
+      "path": "/t/%EC%97%AD%EC%82%AC%EC%A0%81%EC%82%AC%EA%B1%B4",
+      "count": 1,
+      "dateRange": {
+        "from": "1969-07-20",
+        "to": "1969-07-20"
+      },
+      "propositionIds": [
+        "stmt:4ae4c94174dc3aaf651102d2"
+      ]
+    },
+    {
+      "tag": "역학",
+      "path": "/t/%EC%97%AD%ED%95%99",
+      "count": 1,
+      "dateRange": {
+        "from": "2022-01-01",
+        "to": "2022-01-01"
+      },
+      "propositionIds": [
+        "stmt:24094c14f92b5c8fb482e57d"
+      ]
+    },
+    {
+      "tag": "예방효과",
+      "path": "/t/%EC%98%88%EB%B0%A9%ED%9A%A8%EA%B3%BC",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-19",
+        "to": "2026-06-19"
+      },
+      "propositionIds": [
+        "stmt:efddfa77db78be598d007d7e"
+      ]
+    },
+    {
+      "tag": "예산해명",
+      "path": "/t/%EC%98%88%EC%82%B0%ED%95%B4%EB%AA%85",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-18",
+        "to": "2026-06-18"
+      },
+      "propositionIds": [
+        "stmt:d180b65d5e8f431a52ed1eec"
+      ]
+    },
+    {
+      "tag": "옥음방송",
+      "path": "/t/%EC%98%A5%EC%9D%8C%EB%B0%A9%EC%86%A1",
+      "count": 1,
+      "dateRange": {
+        "from": "1945-08-15",
+        "to": "1945-08-15"
+      },
+      "propositionIds": [
+        "stmt:b3deef8189d7937fc1e97ab2"
+      ]
+    },
+    {
+      "tag": "올림픽공원",
+      "path": "/t/%EC%98%AC%EB%A6%BC%ED%94%BD%EA%B3%B5%EC%9B%90",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-07-02",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:29c85dfda2751f0ac6e0fa1a",
+        "stmt:ee1b50f655876f2f4da585e8"
+      ]
+    },
+    {
+      "tag": "우주",
+      "path": "/t/%EC%9A%B0%EC%A3%BC",
+      "count": 1,
+      "dateRange": {
+        "from": "1969-07-20",
+        "to": "1969-07-20"
+      },
+      "propositionIds": [
+        "stmt:4ae4c94174dc3aaf651102d2"
+      ]
+    },
+    {
+      "tag": "우주사진",
+      "path": "/t/%EC%9A%B0%EC%A3%BC%EC%82%AC%EC%A7%84",
+      "count": 2,
+      "dateRange": {
+        "from": "1968-12-24",
+        "to": "1972-12-07"
+      },
+      "propositionIds": [
+        "stmt:ae66527bf2aea1b5407a5f78",
+        "stmt:61efe874787dacf6180ae46b"
+      ]
+    },
+    {
+      "tag": "유엔군사령부",
+      "path": "/t/%EC%9C%A0%EC%97%94%EA%B5%B0%EC%82%AC%EB%A0%B9%EB%B6%80",
+      "count": 1,
+      "dateRange": {
+        "from": "1953-07-27",
+        "to": "1953-07-27"
+      },
+      "propositionIds": [
+        "stmt:7536cb937fa5897848d6ecf4"
+      ]
+    },
+    {
+      "tag": "유엔조약",
+      "path": "/t/%EC%9C%A0%EC%97%94%EC%A1%B0%EC%95%BD",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-01-17",
+        "to": "2026-01-17"
+      },
+      "propositionIds": [
+        "stmt:38c8e4c00c63fa0fc9b00eb3"
+      ]
+    },
+    {
+      "tag": "일본",
+      "path": "/t/%EC%9D%BC%EB%B3%B8",
+      "count": 1,
+      "dateRange": {
+        "from": "1965-06-22",
+        "to": "1965-06-22"
+      },
+      "propositionIds": [
+        "stmt:3104eab69ad2305be2007c30"
+      ]
+    },
+    {
+      "tag": "일본항복공표",
+      "path": "/t/%EC%9D%BC%EB%B3%B8%ED%95%AD%EB%B3%B5%EA%B3%B5%ED%91%9C",
+      "count": 1,
+      "dateRange": {
+        "from": "1945-08-15",
+        "to": "1945-08-15"
+      },
+      "propositionIds": [
+        "stmt:b3deef8189d7937fc1e97ab2"
+      ]
+    },
+    {
+      "tag": "자살시도",
+      "path": "/t/%EC%9E%90%EC%82%B4%EC%8B%9C%EB%8F%84",
+      "count": 2,
+      "dateRange": {
+        "from": "2008-01-01",
+        "to": "2018-01-01"
+      },
+      "propositionIds": [
+        "stmt:3ae444edbb297bea65e9cd78",
+        "stmt:5985381793fd401f7fc3052c"
+      ]
+    },
+    {
+      "tag": "잠실4동",
+      "path": "/t/%EC%9E%A0%EC%8B%A44%EB%8F%99",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-06-03"
+      },
+      "propositionIds": [
+        "stmt:921a9dc8a1b5b268e0f4c807"
+      ]
+    },
+    {
+      "tag": "장동혁",
+      "path": "/t/%EC%9E%A5%EB%8F%99%ED%98%81",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-07",
+        "to": "2026-06-07"
+      },
+      "propositionIds": [
+        "stmt:1426e28acba929903bbe8736"
+      ]
+    },
+    {
+      "tag": "전쟁개시",
+      "path": "/t/%EC%A0%84%EC%9F%81%EA%B0%9C%EC%8B%9C",
+      "count": 1,
+      "dateRange": {
+        "from": "1950-06-25",
+        "to": "1950-06-25"
+      },
+      "propositionIds": [
+        "stmt:698eafdeae1e813d295ea69b"
+      ]
+    },
+    {
+      "tag": "전파확률",
+      "path": "/t/%EC%A0%84%ED%8C%8C%ED%99%95%EB%A5%A0",
+      "count": 1,
+      "dateRange": {
+        "from": "2017-01-01",
+        "to": "2017-01-01"
+      },
+      "propositionIds": [
+        "stmt:3f30934e8dae7bc3452ab43a"
+      ]
+    },
+    {
+      "tag": "전환치료",
+      "path": "/t/%EC%A0%84%ED%99%98%EC%B9%98%EB%A3%8C",
+      "count": 1,
+      "dateRange": {
+        "from": "2018-01-01",
+        "to": "2018-01-01"
+      },
+      "propositionIds": [
+        "stmt:5985381793fd401f7fc3052c"
+      ]
+    },
+    {
+      "tag": "정부수립선포",
+      "path": "/t/%EC%A0%95%EB%B6%80%EC%88%98%EB%A6%BD%EC%84%A0%ED%8F%AC",
+      "count": 2,
+      "dateRange": {
+        "from": "1948-08-15",
+        "to": "1948-09-09"
+      },
+      "propositionIds": [
+        "stmt:a39e2dc6072bbda67817ead7",
+        "stmt:8b798d52af5df4ea214ecead"
+      ]
+    },
+    {
+      "tag": "정신건강",
+      "path": "/t/%EC%A0%95%EC%8B%A0%EA%B1%B4%EA%B0%95",
+      "count": 2,
+      "dateRange": {
+        "from": "2008-01-01",
+        "to": "2018-01-01"
+      },
+      "propositionIds": [
+        "stmt:3ae444edbb297bea65e9cd78",
+        "stmt:5985381793fd401f7fc3052c"
+      ]
+    },
+    {
+      "tag": "정치주장",
+      "path": "/t/%EC%A0%95%EC%B9%98%EC%A3%BC%EC%9E%A5",
+      "count": 15,
+      "dateRange": {
+        "from": "2025-12-01",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:0f10895abcff81a55ff783d6",
+        "stmt:2e87b3750aadd61ef8e2b6c0",
+        "stmt:921a9dc8a1b5b268e0f4c807",
+        "stmt:c890b5f8ca77961c84b58268",
+        "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:1426e28acba929903bbe8736",
+        "stmt:c11b6f2081e8fa1c38bae49d",
+        "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:12ebbd81f7cfbbcaf5048a0e",
+        "stmt:5bf64ededa100f82163dcab1",
+        "stmt:83702707422e50c0a56fb565",
+        "stmt:d180b65d5e8f431a52ed1eec",
+        "stmt:e2b37f73256b9885410a5c01",
+        "stmt:29c85dfda2751f0ac6e0fa1a"
+      ]
+    },
+    {
+      "tag": "제2차세계대전",
+      "path": "/t/%EC%A0%9C2%EC%B0%A8%EC%84%B8%EA%B3%84%EB%8C%80%EC%A0%84",
+      "count": 1,
+      "dateRange": {
+        "from": "1945-08-15",
+        "to": "1945-08-15"
+      },
+      "propositionIds": [
+        "stmt:b3deef8189d7937fc1e97ab2"
+      ]
+    },
+    {
+      "tag": "조선민주주의인민공화국",
+      "path": "/t/%EC%A1%B0%EC%84%A0%EB%AF%BC%EC%A3%BC%EC%A3%BC%EC%9D%98%EC%9D%B8%EB%AF%BC%EA%B3%B5%ED%99%94%EA%B5%AD",
+      "count": 1,
+      "dateRange": {
+        "from": "1948-09-09",
+        "to": "1948-09-09"
+      },
+      "propositionIds": [
+        "stmt:8b798d52af5df4ea214ecead"
+      ]
+    },
+    {
+      "tag": "조선인민군",
+      "path": "/t/%EC%A1%B0%EC%84%A0%EC%9D%B8%EB%AF%BC%EA%B5%B0",
+      "count": 2,
+      "dateRange": {
+        "from": "1950-06-25",
+        "to": "1953-07-27"
+      },
+      "propositionIds": [
+        "stmt:698eafdeae1e813d295ea69b",
+        "stmt:7536cb937fa5897848d6ecf4"
+      ]
+    },
+    {
+      "tag": "조약서명",
+      "path": "/t/%EC%A1%B0%EC%95%BD%EC%84%9C%EB%AA%85",
+      "count": 1,
+      "dateRange": {
+        "from": "1965-06-22",
+        "to": "1965-06-22"
+      },
+      "propositionIds": [
+        "stmt:3104eab69ad2305be2007c30"
+      ]
+    },
+    {
+      "tag": "주장",
+      "path": "/t/%EC%A3%BC%EC%9E%A5",
+      "count": 6,
+      "dateRange": {
+        "from": "2026-06-04",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:1426e28acba929903bbe8736",
+        "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:12ebbd81f7cfbbcaf5048a0e",
+        "stmt:e2b37f73256b9885410a5c01",
+        "stmt:29c85dfda2751f0ac6e0fa1a"
+      ]
+    },
+    {
+      "tag": "중국인민지원군",
+      "path": "/t/%EC%A4%91%EA%B5%AD%EC%9D%B8%EB%AF%BC%EC%A7%80%EC%9B%90%EA%B5%B0",
+      "count": 1,
+      "dateRange": {
+        "from": "1953-07-27",
+        "to": "1953-07-27"
+      },
+      "propositionIds": [
+        "stmt:7536cb937fa5897848d6ecf4"
+      ]
+    },
+    {
+      "tag": "중앙선거관리위원회",
+      "path": "/t/%EC%A4%91%EC%95%99%EC%84%A0%EA%B1%B0%EA%B4%80%EB%A6%AC%EC%9C%84%EC%9B%90%ED%9A%8C",
+      "count": 10,
+      "dateRange": {
+        "from": "2025-12-01",
+        "to": "2026-06-18"
+      },
+      "propositionIds": [
+        "stmt:0f10895abcff81a55ff783d6",
+        "stmt:2e87b3750aadd61ef8e2b6c0",
+        "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:c11b6f2081e8fa1c38bae49d",
+        "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:5bf64ededa100f82163dcab1",
+        "stmt:83702707422e50c0a56fb565",
+        "stmt:d180b65d5e8f431a52ed1eec",
+        "stmt:e2b37f73256b9885410a5c01"
+      ]
+    },
+    {
+      "tag": "증거보전",
+      "path": "/t/%EC%A6%9D%EA%B1%B0%EB%B3%B4%EC%A0%84",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-06-09"
+      },
+      "propositionIds": [
+        "stmt:c890b5f8ca77961c84b58268",
+        "stmt:a2c80ef637dd92021cbbd92b"
+      ]
+    },
+    {
+      "tag": "증시지표",
+      "path": "/t/%EC%A6%9D%EC%8B%9C%EC%A7%80%ED%91%9C",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-01"
+      },
+      "propositionIds": [
+        "stmt:5525ea7692e7f4eea17971f5"
+      ]
+    },
+    {
+      "tag": "지구과학",
+      "path": "/t/%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%99",
+      "count": 5,
+      "dateRange": {
+        "from": "1519-01-01",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:4f96ea07a89511c2ea0a86a3",
+        "stmt:ae66527bf2aea1b5407a5f78",
+        "stmt:61efe874787dacf6180ae46b",
+        "stmt:b18e2813819c4fb0e23830f6",
+        "stmt:b9a4dcf237affc17c1a51fe6"
+      ]
+    },
+    {
+      "tag": "지구일주",
+      "path": "/t/%EC%A7%80%EA%B5%AC%EC%9D%BC%EC%A3%BC",
+      "count": 1,
+      "dateRange": {
+        "from": "1519-01-01",
+        "to": "1519-01-01"
+      },
+      "propositionIds": [
+        "stmt:4f96ea07a89511c2ea0a86a3"
+      ]
+    },
+    {
+      "tag": "지구형상",
+      "path": "/t/%EC%A7%80%EA%B5%AC%ED%98%95%EC%83%81",
+      "count": 5,
+      "dateRange": {
+        "from": "1519-01-01",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:4f96ea07a89511c2ea0a86a3",
+        "stmt:ae66527bf2aea1b5407a5f78",
+        "stmt:61efe874787dacf6180ae46b",
+        "stmt:b18e2813819c4fb0e23830f6",
+        "stmt:b9a4dcf237affc17c1a51fe6"
+      ]
+    },
+    {
+      "tag": "직장점막",
+      "path": "/t/%EC%A7%81%EC%9E%A5%EC%A0%90%EB%A7%89",
+      "count": 1,
+      "dateRange": {
+        "from": "2017-01-01",
+        "to": "2017-01-01"
+      },
+      "propositionIds": [
+        "stmt:3f30934e8dae7bc3452ab43a"
+      ]
+    },
+    {
+      "tag": "진료지침",
+      "path": "/t/%EC%A7%84%EB%A3%8C%EC%A7%80%EC%B9%A8",
+      "count": 1,
+      "dateRange": {
+        "from": "2021-01-01",
+        "to": "2021-01-01"
+      },
+      "propositionIds": [
+        "stmt:3a2ae5d9219c9be87de14ae7"
+      ]
+    },
+    {
+      "tag": "참정권",
+      "path": "/t/%EC%B0%B8%EC%A0%95%EA%B6%8C",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-04",
+        "to": "2026-06-04"
+      },
+      "propositionIds": [
+        "stmt:6ec9cbff53f71a505b22823f"
+      ]
+    },
+    {
+      "tag": "천문학",
+      "path": "/t/%EC%B2%9C%EB%AC%B8%ED%95%99",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:b18e2813819c4fb0e23830f6"
+      ]
+    },
+    {
+      "tag": "최근1년",
+      "path": "/t/%EC%B5%9C%EA%B7%BC1%EB%85%84",
+      "count": 4,
+      "dateRange": {
+        "from": "2025-06-24",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:c44501dcb97869b23fbe8942",
+        "stmt:9fa1e13fbdeb497fdee35c15",
+        "stmt:38c8e4c00c63fa0fc9b00eb3",
+        "stmt:22abb3226ba88d6589e75013"
+      ]
+    },
+    {
+      "tag": "측정",
+      "path": "/t/%EC%B8%A1%EC%A0%95",
+      "count": 11,
+      "dateRange": {
+        "from": "1991-01-01",
+        "to": "2026-06-19"
+      },
+      "propositionIds": [
+        "stmt:3e54ea51d8411beb551b399c",
+        "stmt:3ae444edbb297bea65e9cd78",
+        "stmt:3f30934e8dae7bc3452ab43a",
+        "stmt:5985381793fd401f7fc3052c",
+        "stmt:3a2ae5d9219c9be87de14ae7",
+        "stmt:24094c14f92b5c8fb482e57d",
+        "stmt:5525ea7692e7f4eea17971f5",
+        "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:b18e2813819c4fb0e23830f6",
+        "stmt:4b794b8163eb2161d4a9b949",
+        "stmt:efddfa77db78be598d007d7e"
+      ]
+    },
+    {
+      "tag": "측지학",
+      "path": "/t/%EC%B8%A1%EC%A7%80%ED%95%99",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:b9a4dcf237affc17c1a51fe6"
+      ]
+    },
+    {
+      "tag": "치료",
+      "path": "/t/%EC%B9%98%EB%A3%8C",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-19",
+        "to": "2026-06-19"
+      },
+      "propositionIds": [
+        "stmt:4b794b8163eb2161d4a9b949"
+      ]
+    },
+    {
+      "tag": "코스피",
+      "path": "/t/%EC%BD%94%EC%8A%A4%ED%94%BC",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-01"
+      },
+      "propositionIds": [
+        "stmt:5525ea7692e7f4eea17971f5"
+      ]
+    },
+    {
+      "tag": "투표소사례",
+      "path": "/t/%ED%88%AC%ED%91%9C%EC%86%8C%EC%82%AC%EB%A1%80",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-18",
+        "to": "2026-06-18"
+      },
+      "propositionIds": [
+        "stmt:12ebbd81f7cfbbcaf5048a0e"
+      ]
+    },
+    {
+      "tag": "투표소수",
+      "path": "/t/%ED%88%AC%ED%91%9C%EC%86%8C%EC%88%98",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-06-03"
+      },
+      "propositionIds": [
+        "stmt:cb0719e9aac6e4c86677d2e5"
+      ]
+    },
+    {
+      "tag": "투표용지부족",
+      "path": "/t/%ED%88%AC%ED%91%9C%EC%9A%A9%EC%A7%80%EB%B6%80%EC%A1%B1",
+      "count": 17,
+      "dateRange": {
+        "from": "2025-12-01",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:0f10895abcff81a55ff783d6",
+        "stmt:2e87b3750aadd61ef8e2b6c0",
+        "stmt:921a9dc8a1b5b268e0f4c807",
+        "stmt:c890b5f8ca77961c84b58268",
+        "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:1426e28acba929903bbe8736",
+        "stmt:c11b6f2081e8fa1c38bae49d",
+        "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:12ebbd81f7cfbbcaf5048a0e",
+        "stmt:5bf64ededa100f82163dcab1",
+        "stmt:83702707422e50c0a56fb565",
+        "stmt:d180b65d5e8f431a52ed1eec",
+        "stmt:e2b37f73256b9885410a5c01",
+        "stmt:29c85dfda2751f0ac6e0fa1a",
+        "stmt:ee1b50f655876f2f4da585e8"
+      ]
+    },
+    {
+      "tag": "투표중단",
+      "path": "/t/%ED%88%AC%ED%91%9C%EC%A4%91%EB%8B%A8",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-03",
+        "to": "2026-06-03"
+      },
+      "propositionIds": [
+        "stmt:921a9dc8a1b5b268e0f4c807"
+      ]
+    },
+    {
+      "tag": "폐지",
+      "path": "/t/%ED%8F%90%EC%A7%80",
+      "count": 1,
+      "dateRange": {
+        "from": "2011-03-29",
+        "to": "2011-03-29"
+      },
+      "propositionIds": [
+        "stmt:840aa7c32d8f6372cd968fb6"
+      ]
+    },
+    {
+      "tag": "한국근현대사",
+      "path": "/t/%ED%95%9C%EA%B5%AD%EA%B7%BC%ED%98%84%EB%8C%80%EC%82%AC",
+      "count": 6,
+      "dateRange": {
+        "from": "1945-08-15",
+        "to": "1965-06-22"
+      },
+      "propositionIds": [
+        "stmt:b3deef8189d7937fc1e97ab2",
+        "stmt:a39e2dc6072bbda67817ead7",
+        "stmt:8b798d52af5df4ea214ecead",
+        "stmt:698eafdeae1e813d295ea69b",
+        "stmt:7536cb937fa5897848d6ecf4",
+        "stmt:3104eab69ad2305be2007c30"
+      ]
+    },
+    {
+      "tag": "한국전쟁",
+      "path": "/t/%ED%95%9C%EA%B5%AD%EC%A0%84%EC%9F%81",
+      "count": 1,
+      "dateRange": {
+        "from": "1950-06-25",
+        "to": "1950-06-25"
+      },
+      "propositionIds": [
+        "stmt:698eafdeae1e813d295ea69b"
+      ]
+    },
+    {
+      "tag": "한국정전협정",
+      "path": "/t/%ED%95%9C%EA%B5%AD%EC%A0%95%EC%A0%84%ED%98%91%EC%A0%95",
+      "count": 1,
+      "dateRange": {
+        "from": "1953-07-27",
+        "to": "1953-07-27"
+      },
+      "propositionIds": [
+        "stmt:7536cb937fa5897848d6ecf4"
+      ]
+    },
+    {
+      "tag": "한일기본조약",
+      "path": "/t/%ED%95%9C%EC%9D%BC%EA%B8%B0%EB%B3%B8%EC%A1%B0%EC%95%BD",
+      "count": 1,
+      "dateRange": {
+        "from": "1965-06-22",
+        "to": "1965-06-22"
+      },
+      "propositionIds": [
+        "stmt:3104eab69ad2305be2007c30"
+      ]
+    },
+    {
+      "tag": "항해사",
+      "path": "/t/%ED%95%AD%ED%95%B4%EC%82%AC",
+      "count": 1,
+      "dateRange": {
+        "from": "1519-01-01",
+        "to": "1519-01-01"
+      },
+      "propositionIds": [
+        "stmt:4f96ea07a89511c2ea0a86a3"
+      ]
+    },
+    {
+      "tag": "해양생물다양성",
+      "path": "/t/%ED%95%B4%EC%96%91%EC%83%9D%EB%AC%BC%EB%8B%A4%EC%96%91%EC%84%B1",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-01-17",
+        "to": "2026-01-17"
+      },
+      "propositionIds": [
+        "stmt:38c8e4c00c63fa0fc9b00eb3"
+      ]
+    },
+    {
+      "tag": "헤이그정상회의",
+      "path": "/t/%ED%97%A4%EC%9D%B4%EA%B7%B8%EC%A0%95%EC%83%81%ED%9A%8C%EC%9D%98",
+      "count": 1,
+      "dateRange": {
+        "from": "2025-06-24",
+        "to": "2025-06-24"
+      },
+      "propositionIds": [
+        "stmt:c44501dcb97869b23fbe8942"
+      ]
+    },
+    {
+      "tag": "BBNJ",
+      "path": "/t/BBNJ",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-01-17",
+        "to": "2026-01-17"
+      },
+      "propositionIds": [
+        "stmt:38c8e4c00c63fa0fc9b00eb3"
+      ]
+    },
+    {
+      "tag": "BlueMarble",
+      "path": "/t/BlueMarble",
+      "count": 1,
+      "dateRange": {
+        "from": "1972-12-07",
+        "to": "1972-12-07"
+      },
+      "propositionIds": [
+        "stmt:61efe874787dacf6180ae46b"
+      ]
+    },
+    {
+      "tag": "CDC",
+      "path": "/t/CDC",
+      "count": 4,
+      "dateRange": {
+        "from": "2021-01-01",
+        "to": "2026-06-19"
+      },
+      "propositionIds": [
+        "stmt:3a2ae5d9219c9be87de14ae7",
+        "stmt:24094c14f92b5c8fb482e57d",
+        "stmt:4b794b8163eb2161d4a9b949",
+        "stmt:efddfa77db78be598d007d7e"
+      ]
+    },
+    {
+      "tag": "COP30",
+      "path": "/t/COP30",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:22abb3226ba88d6589e75013"
+      ]
+    },
+    {
+      "tag": "demographic-identity",
+      "path": "/t/demographic-identity",
+      "count": 1,
+      "dateRange": {
+        "from": "2012-01-01",
+        "to": "2012-01-01"
+      },
+      "propositionIds": [
+        "stmt:a37cb535bf2ed93375d15095"
+      ]
+    },
+    {
+      "tag": "Earthrise",
+      "path": "/t/Earthrise",
+      "count": 1,
+      "dateRange": {
+        "from": "1968-12-24",
+        "to": "1968-12-24"
+      },
+      "propositionIds": [
+        "stmt:ae66527bf2aea1b5407a5f78"
+      ]
+    },
+    {
+      "tag": "gallup",
+      "path": "/t/gallup",
+      "count": 1,
+      "dateRange": {
+        "from": "2012-01-01",
+        "to": "2012-01-01"
+      },
+      "propositionIds": [
+        "stmt:a37cb535bf2ed93375d15095"
+      ]
+    },
+    {
+      "tag": "HIV",
+      "path": "/t/HIV",
+      "count": 4,
+      "dateRange": {
+        "from": "2017-01-01",
+        "to": "2026-06-19"
+      },
+      "propositionIds": [
+        "stmt:3f30934e8dae7bc3452ab43a",
+        "stmt:24094c14f92b5c8fb482e57d",
+        "stmt:4b794b8163eb2161d4a9b949",
+        "stmt:efddfa77db78be598d007d7e"
+      ]
+    },
+    {
+      "tag": "ICJ",
+      "path": "/t/ICJ",
+      "count": 1,
+      "dateRange": {
+        "from": "2025-07-23",
+        "to": "2025-07-23"
+      },
+      "propositionIds": [
+        "stmt:9fa1e13fbdeb497fdee35c15"
+      ]
+    },
+    {
+      "tag": "LGB",
+      "path": "/t/LGB",
+      "count": 1,
+      "dateRange": {
+        "from": "2008-01-01",
+        "to": "2008-01-01"
+      },
+      "propositionIds": [
+        "stmt:3ae444edbb297bea65e9cd78"
+      ]
+    },
+    {
+      "tag": "lgbtq",
+      "path": "/t/lgbtq",
+      "count": 1,
+      "dateRange": {
+        "from": "2012-01-01",
+        "to": "2012-01-01"
+      },
+      "propositionIds": [
+        "stmt:a37cb535bf2ed93375d15095"
+      ]
+    },
+    {
+      "tag": "MSM",
+      "path": "/t/MSM",
+      "count": 2,
+      "dateRange": {
+        "from": "2017-01-01",
+        "to": "2022-01-01"
+      },
+      "propositionIds": [
+        "stmt:3f30934e8dae7bc3452ab43a",
+        "stmt:24094c14f92b5c8fb482e57d"
+      ]
+    },
+    {
+      "tag": "NASA",
+      "path": "/t/NASA",
+      "count": 2,
+      "dateRange": {
+        "from": "1968-12-24",
+        "to": "1972-12-07"
+      },
+      "propositionIds": [
+        "stmt:ae66527bf2aea1b5407a5f78",
+        "stmt:61efe874787dacf6180ae46b"
+      ]
+    },
+    {
+      "tag": "NATO",
+      "path": "/t/NATO",
+      "count": 1,
+      "dateRange": {
+        "from": "2025-06-24",
+        "to": "2025-06-24"
+      },
+      "propositionIds": [
+        "stmt:c44501dcb97869b23fbe8942"
+      ]
+    },
+    {
+      "tag": "polling",
+      "path": "/t/polling",
+      "count": 1,
+      "dateRange": {
+        "from": "2012-01-01",
+        "to": "2012-01-01"
+      },
+      "propositionIds": [
+        "stmt:a37cb535bf2ed93375d15095"
+      ]
+    },
+    {
+      "tag": "PrEP",
+      "path": "/t/PrEP",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-19",
+        "to": "2026-06-19"
+      },
+      "propositionIds": [
+        "stmt:efddfa77db78be598d007d7e"
+      ]
+    },
+    {
+      "tag": "SOCE",
+      "path": "/t/SOCE",
+      "count": 1,
+      "dateRange": {
+        "from": "2018-01-01",
+        "to": "2018-01-01"
+      },
+      "propositionIds": [
+        "stmt:5985381793fd401f7fc3052c"
+      ]
+    },
+    {
+      "tag": "STI",
+      "path": "/t/STI",
+      "count": 1,
+      "dateRange": {
+        "from": "2021-01-01",
+        "to": "2021-01-01"
+      },
+      "propositionIds": [
+        "stmt:3a2ae5d9219c9be87de14ae7"
+      ]
+    },
+    {
+      "tag": "UNFCCC",
+      "path": "/t/UNFCCC",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:22abb3226ba88d6589e75013"
+      ]
+    },
+    {
+      "tag": "united-states",
+      "path": "/t/united-states",
+      "count": 1,
+      "dateRange": {
+        "from": "2012-01-01",
+        "to": "2012-01-01"
+      },
+      "propositionIds": [
+        "stmt:a37cb535bf2ed93375d15095"
+      ]
+    },
+    {
+      "tag": "UU",
+      "path": "/t/UU",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-19",
+        "to": "2026-06-19"
+      },
+      "propositionIds": [
+        "stmt:4b794b8163eb2161d4a9b949"
+      ]
+    },
+    {
+      "tag": "WGS84",
+      "path": "/t/WGS84",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-16",
+        "to": "2026-06-16"
+      },
+      "propositionIds": [
+        "stmt:b9a4dcf237affc17c1a51fe6"
+      ]
+    },
+    {
+      "tag": "WSW",
+      "path": "/t/WSW",
+      "count": 1,
+      "dateRange": {
+        "from": "2021-01-01",
+        "to": "2021-01-01"
+      },
+      "propositionIds": [
+        "stmt:3a2ae5d9219c9be87de14ae7"
+      ]
+    },
+    {
+      "tag": "WSWM",
+      "path": "/t/WSWM",
+      "count": 1,
+      "dateRange": {
+        "from": "2021-01-01",
+        "to": "2021-01-01"
+      },
+      "propositionIds": [
+        "stmt:3a2ae5d9219c9be87de14ae7"
+      ]
+    }
+  ]
+}

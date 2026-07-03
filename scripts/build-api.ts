@@ -6,6 +6,7 @@ import { encodePropositionId } from "../lib/ids.ts";
 import { propositionsWithTag, tagRoute, uniqueTags } from "../lib/propositions.ts";
 import { sharedTags } from "../lib/relations.ts";
 import { absoluteSiteUrl } from "../lib/site.ts";
+import { allTopicSummaries } from "../lib/topics.ts";
 import { applyDerivedHashes } from "../lib/verify.ts";
 import type { Proposition } from "../lib/types.ts";
 
@@ -72,6 +73,7 @@ function createSitemap(propositions: Proposition[], generatedAt: string): string
     "/api/v2/index.json",
     "/api/v2/graph.json",
     "/api/v2/entities.json",
+    "/api/v2/topics.json",
     "/api/v2/requests.json",
     "/api/v2/openapi.json",
     "/api/v2/schema/cert-v2.schema.json"
@@ -141,6 +143,25 @@ function createEntities(propositions: Proposition[], generatedAt: string) {
       note: "sixW.who/statedBy 기반 결정론적 파생; cert 원본 미저장; 탐색 허브(제15)"
     },
     entities
+  };
+}
+
+function createTopics(propositions: Proposition[], generatedAt: string) {
+  const topics = allTopicSummaries(propositions).map((summary) => ({
+    tag: summary.tag,
+    path: summary.path,
+    count: summary.count,
+    dateRange: summary.dateRange,
+    propositionIds: summary.propositionIds
+  }));
+
+  return {
+    meta: {
+      generatedAt,
+      total: topics.length,
+      note: "태그 기반 결정론적 파생 주제 집계; 사건 시점 순; cert 원본 미저장"
+    },
+    topics
   };
 }
 
@@ -345,7 +366,8 @@ function createLlmsFull(propositions: Proposition[], generatedAt: string): strin
     "3. /api/v2/index.json — full corpus with embedded records",
     "4. /api/v2/graph.json — relation graph (shared-tag edges)",
     "5. /api/v2/entities.json — derived entity hubs from sixW.who/statedBy",
-    "6. /llms-full.txt — entire reservoir as one plain-text file",
+    "6. /api/v2/topics.json — derived topic collections (tag-based, event-date ordered)",
+    "7. /llms-full.txt — entire reservoir as one plain-text file",
     "",
     "Agent workflow: fetch /api/v2/search-index.json, filter locally by canonical/tags/claimNature/factualGrade/status/date, then fetch the matching /api/v2/propositions/{dash-id}.json records. Cite /p/{dash-id}/ for humans and JSON URLs for machines.",
     "Verification: recompute evidence quoteHash as sha256(shortQuote), propositionId from canonicalProposition plus language, then versionId and certHash from the Cert v2.1 derivation documented in /api/v2/schema/cert-v2.schema.json and /api/v2/openapi.json.",
@@ -420,6 +442,10 @@ await writeFile(
   `${apiDir}/entities.json`,
   `${JSON.stringify(createEntities(propositions, generatedAt), null, 2)}\n`
 );
+await writeFile(
+  `${apiDir}/topics.json`,
+  `${JSON.stringify(createTopics(propositions, generatedAt), null, 2)}\n`
+);
 await writeFile(`${apiDir}/institutional-metrics.json`, `${JSON.stringify(metrics, null, 2)}\n`);
 // NOTE: requests.json is NOT regenerated here. The deploy build must stay
 // network-free/deterministic — a GitHub API call in the critical build path made
@@ -440,5 +466,5 @@ for (const [name, example] of Object.entries(examples)) {
 await copyFile("CONSTITUTION.md", "public/CONSTITUTION.md");
 
 console.log(
-  `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, search-index.json, graph.json, entities.json, institutional metrics, llms-full.txt, and examples.`
+  `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, search-index.json, graph.json, entities.json, topics.json, institutional metrics, llms-full.txt, and examples.`
 );

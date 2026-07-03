@@ -9,7 +9,8 @@ Primary entrypoints (priority order):
 3. /api/v2/index.json — full corpus with embedded records
 4. /api/v2/graph.json — relation graph (shared-tag edges)
 5. /api/v2/entities.json — derived entity hubs from sixW.who/statedBy
-6. /llms-full.txt — entire reservoir as one plain-text file
+6. /api/v2/topics.json — derived topic collections (tag-based, event-date ordered)
+7. /llms-full.txt — entire reservoir as one plain-text file
 
 Agent workflow: fetch /api/v2/search-index.json, filter locally by canonical/tags/claimNature/factualGrade/status/date, then fetch the matching /api/v2/propositions/{dash-id}.json records. Cite /p/{dash-id}/ for humans and JSON URLs for machines.
 Verification: recompute evidence quoteHash as sha256(shortQuote), propositionId from canonicalProposition plus language, then versionId and certHash from the Cert v2.1 derivation documented in /api/v2/schema/cert-v2.schema.json and /api/v2/openapi.json.

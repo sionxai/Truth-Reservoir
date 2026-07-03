@@ -6,7 +6,8 @@ Primary entrypoints (priority order):
 3. /api/v2/index.json — full corpus with embedded records
 4. /api/v2/graph.json — relation graph (shared-tag edges)
 5. /api/v2/entities.json — derived entity hubs from sixW.who/statedBy
-6. /llms-full.txt — entire reservoir as one plain-text file
+6. /api/v2/topics.json — derived topic collections (tag-based, ordered by event date)
+7. /llms-full.txt — entire reservoir as one plain-text file
 
 Purpose:
 Truth Reservoir publishes static FACTS article pages paired with Cert v2.1 JSON proposition records. CONSTITUTION.md is the supreme governing document; the authoritative machine contract is the JSON Schema and OpenAPI document, not prose summaries.
@@ -29,6 +30,7 @@ Static endpoints:
 - GET /api/v2/index.json
 - GET /api/v2/graph.json
 - GET /api/v2/entities.json
+- GET /api/v2/topics.json
 - GET /api/v2/propositions/{dash-id}.json
 - GET /api/v2/institutional-metrics.json
 - GET /api/v2/requests.json
@@ -39,7 +41,7 @@ Static endpoints:
 - GET /llms-full.txt
 
 Tag pages:
-Tag cluster pages are available at /t/{tag}. They are static, crawlable, and list matching propositions in chronological order. They contain a count and a list only; they are not editorial narratives.
+Tag cluster pages are available at /t/{tag}. They are static, crawlable woven topic pages that auto-aggregate every verified fact sharing the tag, in deterministic event-date order derived from sixW.when (제14). Each fact block shows only the proposition's own stored text and metadata plus a link to its /p/{dash-id}/ page; the renderer authors no connective narrative between facts (제2). Neutral auto-derived month subheadings (e.g. "2026년 6월") may appear but no thematic labels. The machine mirror of these collections is /api/v2/topics.json. They are not editorial narratives.
 
 Entity hub pages:
 Entity hub pages are available at /e/{slug}. They are static, crawlable collection pages derived only from exact sixW.who and sixW.why[].statedBy strings. They list propositions where the entity string appears and show the role as 누가 or 밝힌 주체. They are navigation hubs only, not Person/Organization profiles, and assert no facts about the entity itself (제15).

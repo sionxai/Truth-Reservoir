@@ -7,6 +7,7 @@ import { loadPropositionFile, loadPropositions, listPropositionFiles } from "../
 import { entityRegistry, entityRoute } from "../lib/entities.ts";
 import { encodePropositionId } from "../lib/ids.ts";
 import { tagRoute, uniqueTags } from "../lib/propositions.ts";
+import { topicSummary } from "../lib/topics.ts";
 import { applyDerivedHashes, verifyPropositionHashes } from "../lib/verify.ts";
 import { readJsonFile } from "./test-utils.ts";
 
@@ -91,6 +92,16 @@ describe("data integration", () => {
         roles?: { who?: string[]; statedBy?: string[] };
       }>;
     }>(join(apiRoot, "entities.json"));
+    const topics = await readJsonFile<{
+      meta?: { total?: unknown; note?: unknown };
+      topics?: Array<{
+        tag?: string;
+        path?: string;
+        count?: number;
+        dateRange?: { from?: string | null; to?: string | null };
+        propositionIds?: string[];
+      }>;
+    }>(join(apiRoot, "topics.json"));
     const requests = await readJsonFile<{
       meta?: { repo?: unknown; total?: unknown; note?: unknown };
       requests?: unknown;
@@ -162,6 +173,23 @@ describe("data integration", () => {
       expect(Array.isArray(entity.roles?.statedBy)).toBe(true);
     }
 
+    // Derived topics.json: exists, covers every tag once, and each topic's
+    // propositionIds are in the deterministic event-date order (제14).
+    const allTags = uniqueTags(propositions);
+    expect(topics.meta).toMatchObject({
+      total: allTags.length,
+      note: expect.stringContaining("사건 시점 순")
+    });
+    expect(topics.topics?.map((topic) => topic.tag).sort()).toEqual([...allTags].sort());
+    for (const topic of topics.topics ?? []) {
+      expect(topic.tag).toBeTruthy();
+      const expected = topicSummary(topic.tag as string, propositions);
+      expect(topic.path).toBe(tagRoute(topic.tag as string));
+      expect(topic.count).toBe(expected.count);
+      expect(topic.propositionIds).toEqual(expected.propositionIds);
+      expect(topic.dateRange).toEqual(expected.dateRange);
+    }
+
     for (const proposition of propositions) {
       const dashId = encodePropositionId(proposition.propositionId);
       const published = await readJsonFile(join(apiRoot, "propositions", `${dashId}.json`));
@@ -179,6 +207,7 @@ describe("data integration", () => {
     expect(existsSync(certSchemaPath)).toBe(true);
     expect(openapi.openapi).toBe("3.1.0");
     expect(openapi.paths).toHaveProperty("/api/v2/entities.json");
+    expect(openapi.paths).toHaveProperty("/api/v2/topics.json");
     await expect(readJsonFile(certSchemaPath)).resolves.toEqual(expect.any(Object));
 
     expect(Array.isArray(requests.requests)).toBe(true);
@@ -214,6 +243,9 @@ describe("data integration", () => {
     );
     expect(sitemap).toContain(
       "<loc>https://truth-reservoir.vercel.app/api/v2/entities.json</loc>"
+    );
+    expect(sitemap).toContain(
+      "<loc>https://truth-reservoir.vercel.app/api/v2/topics.json</loc>"
     );
     expect(sitemap).toContain(
       "<loc>https://truth-reservoir.vercel.app/api/v2/requests.json</loc>"
