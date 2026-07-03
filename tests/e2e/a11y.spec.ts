@@ -39,7 +39,7 @@ async function expectNoCriticalA11yViolations(page: Page) {
 
 test("home has no critical a11y violations", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "사건 피드" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "명제 탐색" })).toBeVisible();
 
   await expectNoCriticalA11yViolations(page);
 });

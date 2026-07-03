@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { PropositionCard } from "./components/PropositionCard";
+import { TopicThumbnail } from "./components/TopicThumbnail";
 import { loadPropositions } from "../lib/data.ts";
 import { claimNatureLabels, gradeLabels } from "../lib/display.ts";
-import { sortByUpdatedDesc, tagRoute, uniqueTags } from "../lib/propositions.ts";
+import { HERO_TOPIC_COUNT, type HomeTopicTile, topicTiles } from "../lib/home-topics.ts";
 import { absoluteSiteUrl, getRepoUrl, getSiteUrl } from "../lib/site.ts";
-import type { Proposition } from "../lib/types.ts";
 
 const siteUrl = getSiteUrl();
 const homeTitle =
   "Truth Reservoir 진실저수지 — verified fact repository / public JSON API";
 const homeDescription =
   "Truth Reservoir 진실저수지는 verified propositions, Cert v2.1, static JSON API, fact verification, Korean facts를 공개하는 정적 사실 저장소입니다.";
+const TOPIC_GRID_BATCH_SIZE = 12;
+const SEARCH_RESULT_BATCH_SIZE = 20;
 
 export const metadata: Metadata = {
   title: homeTitle,
@@ -127,13 +128,52 @@ const machineAccessLinks = [
   }
 ] as const;
 
+function scriptJson(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 function jsonLdMarkup(data: unknown): { __html: string } {
-  return { __html: JSON.stringify(data).replace(/</g, "\\u003c") };
+  return { __html: scriptJson(data) };
+}
+
+function jsonScriptMarkup(data: unknown): { __html: string } {
+  return { __html: scriptJson(data) };
+}
+
+function dateRangeLabel(tile: HomeTopicTile): string {
+  if (!tile.dateRange.from || !tile.dateRange.to) {
+    return "날짜범위 미상";
+  }
+
+  return `날짜범위 ${tile.dateRange.from}~${tile.dateRange.to}`;
+}
+
+function TopicTileLink({
+  tile,
+  variant
+}: {
+  tile: HomeTopicTile;
+  variant: "large" | "small";
+}) {
+  return (
+    <a className={`topic-tile topic-tile--${variant}`} data-topic-tile={variant} href={tile.path}>
+      <TopicThumbnail tag={tile.tag} variant={variant} />
+      <span className="topic-tile__body">
+        <span className="topic-tile__tag">{tile.tag}</span>
+        <span className="topic-tile__meta">
+          {variant === "large" ? `사실 ${tile.count}개 · ${dateRangeLabel(tile)}` : `사실 ${tile.count}개`}
+        </span>
+      </span>
+    </a>
+  );
 }
 
 export default async function Page() {
-  const propositions = sortByUpdatedDesc(await loadPropositions());
-  const tags = uniqueTags(propositions);
+  const propositions = await loadPropositions();
+  const tiles = topicTiles(propositions);
+  const heroTiles = tiles.slice(0, HERO_TOPIC_COUNT);
+  const allTopicTiles = tiles.slice(HERO_TOPIC_COUNT);
+  const initialTopicTiles = allTopicTiles.slice(0, TOPIC_GRID_BATCH_SIZE);
 
   return (
     <main className="page">
@@ -146,6 +186,102 @@ export default async function Page() {
         <h1 id="home-title">
           판정하지 않는 사실 저장소 — 모든 문장은 검증된 JSON에서 생성됩니다
         </h1>
+      </section>
+
+      <section className="topic-hero" aria-labelledby="topic-hero-title">
+        <div className="section-heading">
+          <p className="eyebrow">주제</p>
+          <h2 id="topic-hero-title">주제</h2>
+        </div>
+        <div className="topic-hero__grid">
+          {heroTiles.map((tile) => (
+            <TopicTileLink key={tile.tag} tile={tile} variant="large" />
+          ))}
+        </div>
+      </section>
+
+      <section className="proposition-search" aria-labelledby="proposition-search-title">
+        <div className="section-heading">
+          <p className="eyebrow">명제</p>
+          <h2 id="proposition-search-title">명제 탐색</h2>
+        </div>
+
+        <form className="feed-search__controls proposition-search__controls" data-feed-search-form>
+          <label className="field field--wide">
+            <span>검색어</span>
+            <input
+              autoComplete="off"
+              data-feed-query
+              placeholder="명제 또는 태그"
+              type="search"
+            />
+          </label>
+
+          <label className="field">
+            <span>성격</span>
+            <select data-feed-claim-nature defaultValue="all">
+              <option value="all">전체</option>
+              {Object.entries(claimNatureLabels).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="field">
+            <span>라벨</span>
+            <select data-feed-grade defaultValue="all">
+              <option value="all">전체</option>
+              {Object.entries(gradeLabels).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+              <option value="undetermined">판단유보</option>
+            </select>
+          </label>
+
+          <div className="feed-search__actions">
+            <button className="secondary" type="reset">
+              초기화
+            </button>
+          </div>
+        </form>
+
+        <p className="feed-search__status" data-feed-status aria-live="polite">
+          검증 명제 {propositions.length}건
+        </p>
+        <p className="search-default-prompt" data-search-empty>
+          명제는 검색하거나 위 주제로 탐색하세요
+        </p>
+        <div className="search-results" data-search-results />
+        <div className="infinite-scroll-sentinel" data-search-sentinel hidden aria-hidden="true" />
+        <script dangerouslySetInnerHTML={{ __html: feedSearchScript(propositions.length) }} />
+      </section>
+
+      <section className="all-topics" aria-labelledby="all-topics-title">
+        <div className="section-heading">
+          <p className="eyebrow">전체</p>
+          <h2 id="all-topics-title">모든 주제</h2>
+        </div>
+        <div className="topics-grid" data-topics-grid>
+          {initialTopicTiles.map((tile) => (
+            <TopicTileLink key={tile.tag} tile={tile} variant="small" />
+          ))}
+        </div>
+        <div
+          className="infinite-scroll-sentinel"
+          data-topics-sentinel
+          hidden={allTopicTiles.length <= initialTopicTiles.length}
+          aria-hidden="true"
+        />
+        <script
+          id="home-topic-tiles"
+          type="application/json"
+          dangerouslySetInnerHTML={jsonScriptMarkup(allTopicTiles)}
+        />
+        <script dangerouslySetInnerHTML={{ __html: topicGridScript() }} />
       </section>
 
       <section className="machine-access-compact" aria-labelledby="machine-access-title">
@@ -175,157 +311,411 @@ export default async function Page() {
             </li>
           </ol>
         </div>
-      </section>
-
-      <section className="facts-feed" aria-labelledby="facts-feed-title">
-        <section className="feed-search" aria-labelledby="feed-search-title">
-          <div className="section-heading">
-            <p className="eyebrow">찾기</p>
-            <h2 id="feed-search-title">사건 찾기</h2>
-            <p>
-              검색어는 명제 문장과 태그에만 적용됩니다. 필터는 이미 렌더링된 사건 카드를
-              화면에서만 숨기거나 다시 보여줍니다.
-            </p>
-          </div>
-
-          <form className="feed-search__controls" data-feed-search-form>
-            <label className="field field--wide">
-              <span>검색어</span>
-              <input
-                autoComplete="off"
-                data-feed-query
-                placeholder="명제 또는 태그"
-                type="search"
-              />
-            </label>
-
-            <label className="field">
-              <span>성격</span>
-              <select data-feed-claim-nature defaultValue="all">
-                <option value="all">전체</option>
-                {Object.entries(claimNatureLabels).map(([value, label]) => (
-                  <option key={value} value={value}>
-                    {label}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            <label className="field">
-              <span>라벨</span>
-              <select data-feed-grade defaultValue="all">
-                <option value="all">전체</option>
-                {Object.entries(gradeLabels).map(([value, label]) => (
-                  <option key={value} value={value}>
-                    {label}
-                  </option>
-                ))}
-                <option value="undetermined">판단유보</option>
-              </select>
-            </label>
-
-            <div className="feed-search__actions">
-              <button className="secondary" type="reset">
-                초기화
-              </button>
-            </div>
-          </form>
-
-          <p className="feed-search__status" data-feed-status aria-live="polite">
-            전체 {propositions.length}건
-          </p>
-
-          {tags.length ? (
-            <nav className="tag-index" aria-labelledby="tag-index-title">
-              <h3 id="tag-index-title">태그</h3>
-              <ul className="tag-list">
-                {tags.map((tag) => (
-                  <li key={tag}>
-                    <a href={tagRoute(tag)}>{tag}</a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ) : null}
-        </section>
-
-        <div className="section-heading">
-          <p className="eyebrow">FACTS 기사</p>
-          <h2 id="facts-feed-title">사건 피드</h2>
-        </div>
-        <div className="facts-card-list">
-          {propositions.map((proposition) => (
-            <div
-              className="facts-card-shell"
-              data-claim-nature={proposition.claimNature}
-              data-feed-item
-              data-grade={proposition.assessment.factualGrade ?? "undetermined"}
-              data-search-text={searchTextFor(proposition)}
-              key={proposition.propositionId}
-            >
-              <PropositionCard proposition={proposition} />
-            </div>
-          ))}
-        </div>
-        <script dangerouslySetInnerHTML={{ __html: feedSearchScript(propositions.length) }} />
+        <p className="machine-access__footer-link">
+          <a href="/api/v2/index.json">전체 명제 목록 (JSON)</a>
+        </p>
       </section>
     </main>
   );
 }
 
-function searchTextFor(proposition: Proposition): string {
-  return [proposition.canonicalProposition, ...proposition.tags]
-    .join(" ")
-    .toLocaleLowerCase("ko")
-    .normalize("NFC");
-}
-
 function feedSearchScript(totalCount: number): string {
+  const gradeLabelsForScript = { ...gradeLabels, undetermined: "판단유보" };
+
   return `
 (() => {
   const form = document.querySelector("[data-feed-search-form]");
-  const items = Array.from(document.querySelectorAll("[data-feed-item]"));
   const queryInput = document.querySelector("[data-feed-query]");
   const claimNatureSelect = document.querySelector("[data-feed-claim-nature]");
   const gradeSelect = document.querySelector("[data-feed-grade]");
   const status = document.querySelector("[data-feed-status]");
+  const prompt = document.querySelector("[data-search-empty]");
+  const results = document.querySelector("[data-search-results]");
+  const sentinel = document.querySelector("[data-search-sentinel]");
+  const claimNatureLabels = ${scriptJson(claimNatureLabels)};
+  const gradeLabels = ${scriptJson(gradeLabelsForScript)};
+  const gradeTones = {
+    fully_reliable: "success",
+    largely_reliable: "primary",
+    mixed: "warning",
+    largely_unreliable: "danger",
+    not_reliable: "danger",
+    undetermined: "muted"
+  };
+  const batchSize = ${SEARCH_RESULT_BATCH_SIZE};
+  let records = null;
+  let matches = [];
+  let renderedCount = 0;
+  let requestToken = 0;
+  let active = false;
 
-  if (!form || !queryInput || !claimNatureSelect || !gradeSelect || items.length === 0) {
+  if (!form || !queryInput || !claimNatureSelect || !gradeSelect || !status || !prompt || !results || !sentinel) {
     return;
   }
 
   const normalize = (value) => String(value || "").toLocaleLowerCase("ko").normalize("NFC").trim();
+  const isDefaultState = () =>
+    normalize(queryInput.value) === "" && claimNatureSelect.value === "all" && gradeSelect.value === "all";
 
-  const applyFilters = () => {
-    const query = normalize(queryInput.value);
-    const claimNature = claimNatureSelect.value;
-    const grade = gradeSelect.value;
-    let visibleCount = 0;
+  const humanPathFor = (record) => {
+    const match = String(record.path || "").match(/\\/api\\/v2\\/propositions\\/([^/]+)\\.json$/);
+    const dashId = match ? match[1] : String(record.propositionId || "").replace(/^stmt:/, "stmt-");
+    return "/p/" + dashId + "/";
+  };
 
-    for (const item of items) {
-      const matchesText = !query || normalize(item.dataset.searchText).includes(query);
-      const matchesClaimNature = claimNature === "all" || item.dataset.claimNature === claimNature;
-      const matchesGrade = grade === "all" || item.dataset.grade === grade;
-      const visible = matchesText && matchesClaimNature && matchesGrade;
-
-      item.hidden = !visible;
-      if (visible) {
-        visibleCount += 1;
-      }
+  const loadIndex = async () => {
+    if (records) {
+      return records;
     }
 
-    if (status) {
-      status.textContent =
-        visibleCount === ${totalCount} && !query && claimNature === "all" && grade === "all"
-          ? "전체 ${totalCount}건"
-          : visibleCount + "건 표시 · 전체 ${totalCount}건";
+    const response = await fetch("/api/v2/search-index.json");
+    if (!response.ok) {
+      throw new Error("Failed to load search index: " + response.status + " " + response.statusText);
+    }
+
+    const payload = await response.json();
+    records = Array.isArray(payload.records) ? payload.records : [];
+    return records;
+  };
+
+  const updateStatus = () => {
+    if (!active) {
+      status.textContent = "검증 명제 ${totalCount}건";
+      return;
+    }
+
+    status.textContent = renderedCount + "건 표시 · 전체 " + matches.length + "건";
+  };
+
+  const clearResults = () => {
+    results.replaceChildren();
+    renderedCount = 0;
+    sentinel.hidden = true;
+  };
+
+  const setDefaultState = () => {
+    requestToken += 1;
+    active = false;
+    matches = [];
+    clearResults();
+    prompt.hidden = false;
+    prompt.textContent = "명제는 검색하거나 위 주제로 탐색하세요";
+    updateStatus();
+  };
+
+  const createResultCard = (record) => {
+    const gradeKey = record.factualGrade || "undetermined";
+    const article = document.createElement("article");
+    const badgeRow = document.createElement("div");
+    const gradeBadge = document.createElement("span");
+    const claimNatureBadge = document.createElement("span");
+    const title = document.createElement("h2");
+    const link = document.createElement("a");
+
+    article.className = "facts-card search-result-card";
+    badgeRow.className = "facts-card__badges";
+    gradeBadge.className = "grade-badge grade-badge--" + (gradeTones[gradeKey] || "muted");
+    gradeBadge.dataset.grade = gradeKey;
+    gradeBadge.textContent = gradeLabels[gradeKey] || gradeKey;
+    claimNatureBadge.className = "mini-badge";
+    claimNatureBadge.textContent = claimNatureLabels[record.claimNature] || record.claimNature || "분류 미상";
+    link.href = humanPathFor(record);
+    link.textContent = record.canonical || record.propositionId || "명제";
+
+    title.append(link);
+    badgeRow.append(gradeBadge, claimNatureBadge);
+    article.append(badgeRow, title);
+
+    return article;
+  };
+
+  const loadMoreResults = () => {
+    if (!active || renderedCount >= matches.length) {
+      sentinel.hidden = true;
+      updateStatus();
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    const nextCount = Math.min(renderedCount + batchSize, matches.length);
+
+    for (const record of matches.slice(renderedCount, nextCount)) {
+      fragment.append(createResultCard(record));
+    }
+
+    results.append(fragment);
+    renderedCount = nextCount;
+    sentinel.hidden = renderedCount >= matches.length;
+    updateStatus();
+  };
+
+  const applySearch = async () => {
+    if (isDefaultState()) {
+      setDefaultState();
+      return;
+    }
+
+    const token = ++requestToken;
+    active = true;
+    clearResults();
+    prompt.hidden = false;
+    prompt.textContent = "불러오는 중입니다";
+    status.textContent = "검색 중";
+
+    try {
+      const loadedRecords = await loadIndex();
+      if (token !== requestToken) {
+        return;
+      }
+
+      const query = normalize(queryInput.value);
+      const claimNature = claimNatureSelect.value;
+      const grade = gradeSelect.value;
+
+      matches = loadedRecords.filter((record) => {
+        const searchText = normalize([record.canonical, ...(record.tags || [])].join(" "));
+        const recordGrade = record.factualGrade || "undetermined";
+        const matchesText = !query || searchText.includes(query);
+        const matchesClaimNature = claimNature === "all" || record.claimNature === claimNature;
+        const matchesGrade = grade === "all" || recordGrade === grade;
+
+        return matchesText && matchesClaimNature && matchesGrade;
+      });
+
+      prompt.hidden = matches.length > 0;
+      prompt.textContent = matches.length > 0 ? "" : "조건에 맞는 명제가 없습니다";
+      loadMoreResults();
+      updateStatus();
+    } catch (error) {
+      if (token !== requestToken) {
+        return;
+      }
+
+      console.error(error);
+      matches = [];
+      prompt.hidden = false;
+      prompt.textContent = "검색 색인을 불러오지 못했습니다.";
+      status.textContent = "검색 오류";
     }
   };
 
-  form.addEventListener("input", applyFilters);
-  form.addEventListener("change", applyFilters);
-  form.addEventListener("reset", () => window.setTimeout(applyFilters, 0));
-  applyFilters();
+  form.addEventListener("submit", (event) => event.preventDefault());
+  form.addEventListener("input", applySearch);
+  form.addEventListener("change", applySearch);
+  form.addEventListener("reset", () => window.setTimeout(setDefaultState, 0));
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        loadMoreResults();
+      }
+    });
+    observer.observe(sentinel);
+  }
+})();
+`;
+}
+
+function topicGridScript(): string {
+  return `
+(() => {
+  const data = document.getElementById("home-topic-tiles");
+  const grid = document.querySelector("[data-topics-grid]");
+  const sentinel = document.querySelector("[data-topics-sentinel]");
+  const batchSize = ${TOPIC_GRID_BATCH_SIZE};
+
+  if (!data || !grid || !sentinel) {
+    return;
+  }
+
+  let tiles = [];
+  try {
+    tiles = JSON.parse(data.textContent || "[]");
+  } catch (error) {
+    console.error(error);
+    return;
+  }
+
+  let renderedCount = grid.querySelectorAll("[data-topic-tile]").length;
+  const svgNs = "http://www.w3.org/2000/svg";
+
+  const hashTag = (tag) => {
+    let hash = 2166136261;
+    for (const grapheme of Array.from(String(tag || "").normalize("NFC"))) {
+      hash ^= grapheme.codePointAt(0) || 0;
+      hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
+  };
+
+  const partsFor = (tag) => {
+    const hash = hashTag(tag);
+    return {
+      hash,
+      hueA: hash % 360,
+      hueB: ((hash >>> 8) + 90) % 360,
+      motif: hash % 3,
+      initial: Array.from(String(tag || "").normalize("NFC"))[0] || "#",
+      rotation: ((hash >>> 16) % 24) - 12
+    };
+  };
+
+  const svgElement = (name, attrs = {}) => {
+    const element = document.createElementNS(svgNs, name);
+    for (const [key, value] of Object.entries(attrs)) {
+      element.setAttribute(key, String(value));
+    }
+    return element;
+  };
+
+  const createTopicThumbnail = (tag) => {
+    const parts = partsFor(tag);
+    const gradientId = "topic-thumb-client-" + parts.hash.toString(16) + "-" + renderedCount;
+    const svg = svgElement("svg", {
+      "aria-label": tag,
+      class: "topic-thumb topic-thumb--small",
+      role: "img",
+      viewBox: "0 0 120 90",
+      xmlns: svgNs
+    });
+    const defs = svgElement("defs");
+    const gradient = svgElement("linearGradient", { id: gradientId, x1: "0", x2: "1", y1: "0", y2: "1" });
+    const stopA = svgElement("stop", { offset: "0%", "stop-color": "hsl(" + parts.hueA + " 68% 32%)" });
+    const stopB = svgElement("stop", { offset: "100%", "stop-color": "hsl(" + parts.hueB + " 62% 24%)" });
+    const background = svgElement("rect", { fill: "url(#" + gradientId + ")", height: "90", rx: "8", width: "120" });
+    const text = svgElement("text", {
+      "dominant-baseline": "middle",
+      fill: "white",
+      "font-family": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "font-size": "32",
+      "font-weight": "800",
+      opacity: "0.96",
+      "text-anchor": "middle",
+      x: "60",
+      y: "47"
+    });
+
+    gradient.append(stopA, stopB);
+    defs.append(gradient);
+    svg.append(defs, background);
+
+    if (parts.motif === 0) {
+      svg.append(
+        svgElement("circle", { cx: "24", cy: "24", fill: "none", opacity: "0.72", r: "34", stroke: "white", "stroke-width": "9" }),
+        svgElement("circle", { cx: "96", cy: "66", fill: "none", opacity: "0.34", r: "28", stroke: "white", "stroke-width": "7" })
+      );
+    } else if (parts.motif === 1) {
+      svg.append(
+        svgElement("path", {
+          d: "M-8 72 C24 36 42 28 70 42 S104 56 128 18",
+          fill: "none",
+          opacity: "0.54",
+          stroke: "white",
+          "stroke-linecap": "round",
+          "stroke-width": "12"
+        }),
+        svgElement("path", {
+          d: "M-4 22 C28 46 54 52 86 38 S112 20 126 30",
+          fill: "none",
+          opacity: "0.28",
+          stroke: "white",
+          "stroke-linecap": "round",
+          "stroke-width": "8"
+        })
+      );
+    } else {
+      svg.append(
+        svgElement("rect", {
+          fill: "white",
+          height: "82",
+          opacity: "0.2",
+          rx: "5",
+          transform: "rotate(" + parts.rotation + " 60 45)",
+          width: "22",
+          x: "18",
+          y: "4"
+        }),
+        svgElement("rect", {
+          fill: "white",
+          height: "82",
+          opacity: "0.34",
+          rx: "5",
+          transform: "rotate(" + parts.rotation + " 60 45)",
+          width: "22",
+          x: "50",
+          y: "4"
+        }),
+        svgElement("rect", {
+          fill: "white",
+          height: "82",
+          opacity: "0.18",
+          rx: "5",
+          transform: "rotate(" + parts.rotation + " 60 45)",
+          width: "22",
+          x: "82",
+          y: "4"
+        })
+      );
+    }
+
+    text.textContent = parts.initial;
+    svg.append(text);
+    return svg;
+  };
+
+  const createTopicTile = (tile) => {
+    const link = document.createElement("a");
+    const body = document.createElement("span");
+    const tag = document.createElement("span");
+    const meta = document.createElement("span");
+
+    link.className = "topic-tile topic-tile--small";
+    link.dataset.topicTile = "small";
+    link.href = tile.path;
+    body.className = "topic-tile__body";
+    tag.className = "topic-tile__tag";
+    tag.textContent = tile.tag;
+    meta.className = "topic-tile__meta";
+    meta.textContent = "사실 " + tile.count + "개";
+
+    body.append(tag, meta);
+    link.append(createTopicThumbnail(tile.tag), body);
+    return link;
+  };
+
+  const appendMoreTiles = () => {
+    if (renderedCount >= tiles.length) {
+      sentinel.hidden = true;
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    const nextCount = Math.min(renderedCount + batchSize, tiles.length);
+
+    for (const tile of tiles.slice(renderedCount, nextCount)) {
+      fragment.append(createTopicTile(tile));
+    }
+
+    grid.append(fragment);
+    renderedCount = nextCount;
+    sentinel.hidden = renderedCount >= tiles.length;
+  };
+
+  if (renderedCount >= tiles.length) {
+    sentinel.hidden = true;
+    return;
+  }
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        appendMoreTiles();
+      }
+    });
+    observer.observe(sentinel);
+  } else {
+    appendMoreTiles();
+  }
 })();
 `;
 }

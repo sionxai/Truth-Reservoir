@@ -1,8 +1,8 @@
 import { expect, test } from "@playwright/test";
 import { loadPropositions } from "../../lib/data.ts";
 import { entityRegistry, type EntityRegistryEntry } from "../../lib/entities.ts";
+import { HERO_TOPIC_COUNT, topicTiles } from "../../lib/home-topics.ts";
 import { encodePropositionId } from "../../lib/ids.ts";
-import { sortByUpdatedDesc } from "../../lib/propositions.ts";
 import { relatedPropositions } from "../../lib/relations.ts";
 import { tagRoute } from "../../lib/propositions.ts";
 import { eventDateKey, monthBucketLabel, topicSummary } from "../../lib/topics.ts";
@@ -32,19 +32,38 @@ test.beforeAll(async () => {
   centralElectionCommission = central;
 });
 
-test("E1 home shows the server-rendered FACTS feed and machine links", async ({ page }) => {
+test("E1 home shows topic-first discovery, search, and machine links", async ({ page }) => {
   await page.goto("/");
-  const [newest] = sortByUpdatedDesc(propositions);
+  const tiles = topicTiles(propositions);
+  const electionTile = tiles.find(
+    (tile) => tile.tag === "2026지방선거" || tile.tag === "투표용지부족"
+  );
+
+  if (!electionTile) {
+    throw new Error("Expected a 6·3 local-election topic tile");
+  }
 
   await expect(
     page.getByRole("heading", {
       name: "판정하지 않는 사실 저장소 — 모든 문장은 검증된 JSON에서 생성됩니다"
     })
   ).toBeVisible();
-  await expect(page.getByRole("heading", { name: "사건 피드" })).toBeVisible();
+  // E1 was updated for the topic-first homepage; the old flat feed is no longer default-rendered.
+  await expect(page.locator(".topic-hero .topic-tile--large")).toHaveCount(HERO_TOPIC_COUNT);
+  await expect(
+    page.locator(".topic-hero .topic-tile--large", { hasText: electionTile.tag })
+  ).toHaveAttribute("href", electionTile.path);
+  await expect(page.getByRole("heading", { name: "명제 탐색" })).toBeVisible();
+  await expect(page.getByText(`검증 명제 ${propositions.length}건`)).toBeVisible();
+  await expect(page.getByText("명제는 검색하거나 위 주제로 탐색하세요")).toBeVisible();
+  await expect(page.locator(".facts-card-list")).toHaveCount(0);
+  await expect(page.locator(".facts-card")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "OpenAPI 계약" })).toBeVisible();
   await expect(page.getByRole("link", { name: "MCP 서버" })).toBeVisible();
-  await expect(page.locator(".facts-card").first()).toContainText(newest.canonicalProposition);
+  await page.getByLabel("검색어").fill(ballotShortage.canonicalProposition);
+  await expect(page.locator(".search-results .facts-card").first()).toContainText(
+    ballotShortage.canonicalProposition
+  );
 });
 
 test("E2 detail page exposes a FACTS article for humans and crawlers", async ({
