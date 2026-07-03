@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:efddfa77db78be598d007d7e",
-  "versionId": "ver:ef8a21b927148cce",
-  "certHash": "sha256:fe5baf64fc345652e47617fcecb1f210329973965c6608a77de67dbd26a57d8f",
+  "versionId": "ver:c412436c43b1e945",
+  "certHash": "sha256:a9b6c1f9b525d2547bbb7352fc1566a525a0a4ebe5fcd3842436939f13e85e87",
   "canonicalProposition": "CDC HIV Nexus는 처방대로 사용할 때 경구·주사 PrEP가 성관계 HIV 감염 위험을 약 99% 낮추고, 경구 PrEP가 주사 약물 사용 관련 HIV 감염 위험을 최소 74% 낮춘다고 설명했다",
   "originalClaim": "PrEP HIV 예방효과 수치.",
   "claimNature": "measurement",
@@ -99,7 +99,7 @@
       "note": "CDC 지침 권위가 아니라 HTTP 200 본문 수치 확인에 근거했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-19",
       "checksPerformed": [
         "omission",

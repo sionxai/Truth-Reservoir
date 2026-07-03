@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:3e54ea51d8411beb551b399c",
-  "versionId": "ver:359e75664c834789",
-  "certHash": "sha256:1408e35b1b5601b7e8cb8afcc5ad573075baad610f2a1afc812872cf20223805",
+  "versionId": "ver:a904b76e00669b8d",
+  "certHash": "sha256:df4a3010eb5c33c2347bd07922725fcb1bbc5f9e492a6c914f7a2852d0287c9a",
   "canonicalProposition": "Bailey와 Pillard는 1991년 남성 동성애 프로밴드 친족 표본에서 평가 가능한 친족 중 일란성 공동쌍생아 52%(29/56), 이란성 공동쌍생아 22%(12/54), 입양 형제 11%(6/57)가 동성애자로 평가됐다고 보고했다",
   "originalClaim": "성적 지향 쌍생아 일치율에 관한 측정값.",
   "claimNature": "measurement",
@@ -128,7 +128,7 @@
       "note": "PubMed 색인 권위가 아니라 HTTP 200으로 받은 초록의 수치 문자열을 근거로 삼았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-19",
       "checksPerformed": [
         "omission",

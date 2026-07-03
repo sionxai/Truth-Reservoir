@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:a37cb535bf2ed93375d15095",
-  "versionId": "ver:ae9cf70f9b042cc2",
-  "certHash": "sha256:579ca1304b2d5e9e0b17f3b97afe2fc6d9c1d6a210ba855bcba2013ac267095f",
+  "versionId": "ver:c730f3de424a0a26",
+  "certHash": "sha256:03a63f651214e63aa3c6b556e6412c4cb01b7b633f5b56d91578c907b68d41ec",
   "canonicalProposition": "Gallup은 2025년 전화조사에서 미국 성인 9.0%가 LGBTQ+로 자기식별한다고 추정했으며, 이는 Gallup이 같은 항목을 처음 측정한 2012년 3.5%보다 높다.",
   "originalClaim": "Gallup의 미국 성인 LGBTQ+ 자기식별 비율은 2025년 9.0%, 2012년 3.5%였다.",
   "claimNature": "measurement",
@@ -135,7 +135,7 @@
       "note": "Gallup 권위만으로 채택하지 않고 curl HTTP 200 원문에서 수치와 방법론 문구를 확인했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-19",
       "checksPerformed": [
         "omission",

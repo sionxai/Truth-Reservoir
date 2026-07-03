@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:5985381793fd401f7fc3052c",
-  "versionId": "ver:d25ea24be09e066d",
-  "certHash": "sha256:32b44f65057a9c888d3b233575906faeb4ef18e0270fa8e11c013b91f5ca11d2",
+  "versionId": "ver:f8433a587047ec56",
+  "certHash": "sha256:09abb1202dc46f3e273d13a1f10df683390e41ed3eb05c4af61931f7947d713e",
   "canonicalProposition": "Ryan 등은 245명의 LGBT White·Latino 21~25세 청년 단면연구에서 부모 주도 SOCE와 외부 전환개입 동시 보고 집단의 lifetime suicide attempt 비율을 62.8%(무 SOCE 22.0%)로 보고했고, SOCE 효과성 근거 부족을 인용했다",
   "originalClaim": "전환치료/SOCE의 효과성 근거와 위해 관련 측정.",
   "claimNature": "measurement",
@@ -152,7 +152,7 @@
       "note": "APA/SAMHSA 원 URL이 아니라 NCBI PMC HTTP 200 원문 XML에서 확인 가능한 Ryan 논문 문구만 사용했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-19",
       "checksPerformed": [
         "omission",

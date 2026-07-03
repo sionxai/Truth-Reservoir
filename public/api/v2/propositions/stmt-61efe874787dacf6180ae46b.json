@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:61efe874787dacf6180ae46b",
-  "versionId": "ver:e9284aedce9de196",
-  "certHash": "sha256:cfed29b844361726c933e1b713dfa2dd114dab726a48b337180581304e8bd7f9",
+  "versionId": "ver:bb50f0e53685eca0",
+  "certHash": "sha256:61cf56983c4bf798d62816b434e3f34a4780caab1ac3710c48d17fdeddbe5ff8",
   "canonicalProposition": "1972년 12월 7일 아폴로 17호 승무원은 지구 전체가 원형으로 보이는 사진(NASA AS17-148-22727, 'The Blue Marble')을 촬영하였다",
   "originalClaim": "아폴로 17호 승무원이 1972년 12월 7일 지구 전체가 원형으로 보이는 'The Blue Marble' 사진을 촬영했다는 요약.",
   "claimNature": "event_occurrence",
@@ -132,7 +132,7 @@
       "note": "NASA 권위만으로 결론을 채택하지 않고 EOL 카탈로그의 이미지 ID·캡션·표시 이미지와 Earth Observatory의 보조 설명을 분리 확인했다. 세트 전체에서는 WGS84, Apollo 8, 항해사, 에라토스테네스 측정법이 서로 다른 증거 유형으로 수렴한다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

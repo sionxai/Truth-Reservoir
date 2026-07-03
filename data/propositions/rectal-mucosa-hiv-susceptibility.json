@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:3f30934e8dae7bc3452ab43a",
-  "versionId": "ver:b51886c03b44025c",
-  "certHash": "sha256:17c510230458c1e88f6f016ba559681205c31901daab0f877b604b10627990b1",
+  "versionId": "ver:759d70b84bc77c31",
+  "certHash": "sha256:98819bc1f5b929fa7a99862c2bcf5092f9dccd49457f86b6cc6b5b46f3015ab3",
   "canonicalProposition": "Kelley 등은 2017년 논문에서 HIV 음성 MSM 중 CRAI 참여자 41명과 항문성교 경험이 없는 대조군 21명을 비교했고, 직장 노출의 HIV 전파확률 모델 추정치를 질 노출 대비 약 18배·음경 노출 대비 약 50배로 제시했다",
   "originalClaim": "직장 점막 HIV 감수성 및 노출별 전파확률 모델 추정치.",
   "claimNature": "measurement",
@@ -152,7 +152,7 @@
       "note": "Nature 게재 여부가 아니라 HTTP 200 본문에서 직접 확인한 문구를 근거로 삼았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-19",
       "checksPerformed": [
         "omission",

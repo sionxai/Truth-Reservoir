@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:c11b6f2081e8fa1c38bae49d",
-  "versionId": "ver:504522bdc3f36714",
-  "certHash": "sha256:1d0ec6dd5f74c5ded35490930b2695ff75294e1a7e7ee7b5930d351185264cef",
+  "versionId": "ver:b6f7b45d329cf68a",
+  "certHash": "sha256:4bc7d336f8bc2bd89e56ccf3b60c8979ea97b9b377dc85d82c464afef4a4e5d4",
   "canonicalProposition": "이재명 대통령은 2026년 6월 7일 6·3 지방선거 투표용지 부족 사태에 대해 검찰과 경찰의 합동조사를 지시했다",
   "originalClaim": "공식 대응 및 균형 명제.",
   "claimNature": "event_occurrence",
@@ -117,7 +117,7 @@
       "note": "대통령 발언을 최종 판단 권위로 사용하지 않았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

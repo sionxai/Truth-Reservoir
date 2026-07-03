@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:6ec9cbff53f71a505b22823f",
-  "versionId": "ver:a8d25abd81717c4f",
-  "certHash": "sha256:d37ad6eabf213d2b1a1cb1c3b5e737aabf192a8735c317e40e4d85477f59167b",
+  "versionId": "ver:d1fef8b587135aea",
+  "certHash": "sha256:2ff0548120f8a00a7df90f63146533f6cab58e1f88521499f74f3e2b28fc5f4d",
   "canonicalProposition": "국민의힘은 2026년 6월 4일 6·3 지방선거 투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 점에 주목하며, 실제 투표를 포기한 유권자가 발생했다면 중대한 참정권 침해에 해당할 수 있다고 주장했다",
   "originalClaim": "투표용지 부족 투표소 상당수가 전통적 보수 강세 지역이라는 국민의힘의 정치적 문제 제기와 참정권 침해 주장.",
   "claimNature": "event_occurrence",
@@ -153,7 +153,7 @@
       "note": "정당의 문제 제기와 언론의 분석적 보도를 사실 판정으로 전환하지 않고 주장 존재 확인에만 사용했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

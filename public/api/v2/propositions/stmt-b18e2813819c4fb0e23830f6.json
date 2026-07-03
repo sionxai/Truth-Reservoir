@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:b18e2813819c4fb0e23830f6",
-  "versionId": "ver:f40b4e55702acc99",
-  "certHash": "sha256:8374479950c46337d13088c3d5f24bc2388de32c5b47971d2232b5a901acdb22",
+  "versionId": "ver:c70e5738ed0a473b",
+  "certHash": "sha256:46e53978c0d0c872b305576edcd88b532e4c566896f925add91d27bb3074942e",
   "canonicalProposition": "에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다",
   "originalClaim": "에라토스테네스가 기원전 약 240년경 그림자 각도 차이로 지구 둘레를 추정하는 측정을 수행했다는 요약.",
   "claimNature": "event_occurrence",
@@ -207,7 +207,7 @@
       "note": "NOAA, Britannica, arXiv를 권위로만 수용하지 않고, 인용문이 실제로 방법·장소·연대만 지지하는지 확인했다. NOAA 항목은 자동 재-fetch가 가능한 독립 앵커이고, Britannica 항목들은 유능하지만 같은 출판사 원천으로 묶어 보조 증거로만 계산한다. 지구 형상 결론이나 수치 정확도는 이 명제에 넣지 않았고, 세트 전체의 다른 사진·측지·항해 증거와 유형 수렴만 제공한다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

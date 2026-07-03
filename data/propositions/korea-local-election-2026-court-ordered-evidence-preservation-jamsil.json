@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:a2c80ef637dd92021cbbd92b",
-  "versionId": "ver:71568d6f1e4d921c",
-  "certHash": "sha256:7b05bf60306532b19d7c8c09f5432a7002a01a4bef2e4e8c94cb265ec5c6de0a",
+  "versionId": "ver:dd2f84aae45418ab",
+  "certHash": "sha256:f1159bc842c219abf18c8419ede637b26cc701d809d53255e138a7131f49daeb",
   "canonicalProposition": "서울동부지방법원은 2026년 6월 9일 서울 송파구 잠실 투표소의 투표용지 부족과 관련해 증거보전을 명령했다",
   "originalClaim": "증거보전 신청→일부 인용→6-10 현장검증 중 검증 가능한 부분.",
   "claimNature": "event_occurrence",
@@ -93,7 +93,7 @@
       "note": "법원 보도 내용을 절차 사실 확인에만 사용했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:5525ea7692e7f4eea17971f5",
-  "versionId": "ver:535683ec8206219b",
-  "certHash": "sha256:8d0b01194d3d50e33fd90025ea916e72ea665cb61c310f54b512cd01d93be26e",
+  "versionId": "ver:8dde729a4f53ad23",
+  "certHash": "sha256:bf724acce96d9c48ded4f372440b3196ce47f79940cbad8389f922ac30efc71f",
   "canonicalProposition": "2026년 6월 국내 증시에서 신용거래융자 잔고는 6월 17일 37조8005억 원으로 집계됐고, 6월 9일 하루 반대매매(강제청산) 금액은 1,698억 원이었으며, 코스피는 6월 18일 사상 처음으로 종가 9,063.84로 9,000선을 돌파했다",
   "originalClaim": "코스피 9,000 돌파 국면의 신용융자·반대매매 등 빚투 관련 지표.",
   "claimNature": "measurement",
@@ -124,7 +124,7 @@
       "note": "협회·거래소·언론의 권위가 아니라 fetch 가능한 본문 수치를 증거로 삼았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-19",
       "checksPerformed": [
         "omission",

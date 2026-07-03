@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:c890b5f8ca77961c84b58268",
-  "versionId": "ver:199837373a5ec465",
-  "certHash": "sha256:0d40e04804744c244ba5171f62b4a8de83cb7af1d000758055020c49e5d94045",
+  "versionId": "ver:84329f73480e35d9",
+  "certHash": "sha256:92d16ce46f98b609fbdb773430c31b64d29d0638bc6bf097d8707efa796ded16",
   "canonicalProposition": "김정철 개혁신당 최고위원은 2026년 6월 3일 지방선거 투표용지 부족과 관련해 서울동부지방법원에 증거보전 신청을 제출했다",
   "originalClaim": "개혁신당의 증거보전 신청.",
   "claimNature": "event_occurrence",
@@ -69,7 +69,7 @@
       "note": "개혁신당 직함은 신청 주체 식별에만 사용했고 신청 내용의 타당성은 판단하지 않았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

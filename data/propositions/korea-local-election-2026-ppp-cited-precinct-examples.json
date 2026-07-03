@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:12ebbd81f7cfbbcaf5048a0e",
-  "versionId": "ver:55c386690f4debcf",
-  "certHash": "sha256:317b832d304263d27eecbab47fd8dd7362691d6cee10ce655c3f925160bfde74",
+  "versionId": "ver:44b3fe9cf6d6fb76",
+  "certHash": "sha256:4c039558af59484a5304249bc674e40e52f5a9214f1e74fe22277d0242bd9486",
   "canonicalProposition": "국민의힘은 6·3 지방선거 투표용지 부족 의혹의 근거로 2022년 오세훈 후보 득표율 수치가 적힌 투표소 사례를 제시했다: 송파구 잠실7동 제2투표소는 81.08%였고 투표가 밤 10시까지 연장됐으며, 서초구 반포4동 제3투표소(81.25%)와 강남구 청담동 제4투표소(79.48%)도 포함됐다",
   "originalClaim": "국민의힘이 투표용지 부족 의혹의 근거로 제시한 과거 보수 강세 투표소 사례와 2022년 오세훈 후보 득표율 수치.",
   "claimNature": "event_occurrence",
@@ -279,7 +279,7 @@
       "note": "정당의 의혹 제기와 언론의 분석적 보도를 권위로 삼아 인과·표적·부정선거 판단으로 전환하지 않았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:0f10895abcff81a55ff783d6",
-  "versionId": "ver:506f8ad7230a5600",
-  "certHash": "sha256:dcc11af84b926273bcea98891ed11bc664a2031c2bc9a99d4d6f5b11cdac599c",
+  "versionId": "ver:1e93c730342016d5",
+  "certHash": "sha256:87c891e6864d2fbad0b4728bc18b9731907111687c086fe811b90b29a92761c5",
   "canonicalProposition": "김승수·김민건 국민의힘 의원실이 확보한 중앙선거관리위원회 자료에는 2025년 12월 투표용지 하한 기준을 선거인수 60%에서 50%로 낮추고 사무편람에 반영했다는 내용이 담겼다",
   "originalClaim": "선관위가 투표용지 인쇄 하한 기준을 기존 60%에서 50%로 변경했다.",
   "claimNature": "document_content",
@@ -117,7 +117,7 @@
       "note": "선관위 자료라는 권위를 직접 확정하지 않고 fetch 가능한 보도와 한계를 함께 기록했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:8b798d52af5df4ea214ecead",
-  "versionId": "ver:7d4e461acc163dc9",
-  "certHash": "sha256:dc4c628d07a8f0862b9fbae6b895e4791af9f46e95b100a2b5ad31639c1f393f",
+  "versionId": "ver:3804a62963f1f809",
+  "certHash": "sha256:6234658c46ed78baff62a2fb5ed782bbaafc64c9f24b56f8a13206dcfcfe3f74",
   "canonicalProposition": "1948년 9월 9일 조선민주주의인민공화국 정부가 선포되었다",
   "originalClaim": "1948년 9월 9일 조선민주주의인민공화국 정부 수립이 선포되었다.",
   "claimNature": "event_occurrence",
@@ -125,7 +125,7 @@
       "note": "북한 공식 권위나 남한 공식 권위 어느 쪽도 면제하지 않고, fetch 가능한 공개 출처의 문장만 확인했다. 분단 프레이밍 위험으로 인간 검수 레인에 배치했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

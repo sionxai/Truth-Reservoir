@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
-  "versionId": "ver:6756472340086cc2",
-  "certHash": "sha256:539a989b5020159854e380d7de38cb5abd702fd873b06e736e5ae16ab79845c8",
+  "versionId": "ver:40f2b032fb261629",
+  "certHash": "sha256:0b9db8754e4d2fda409052a9e644d24f1bb62e34a6c05a2b64e7aaecc7dcf18b",
   "canonicalProposition": "NGA WGS 84 공식 설명은 WGS 84 측지 좌표가 기준타원체에서 생성되며 그 장반경을 6,378,137.0미터로 제시한다",
   "originalClaim": "NGA WGS 84 공식 설명이 기준타원체와 장반경 6,378,137.0미터를 제시한다는 요약.",
   "claimNature": "document_content",
@@ -126,7 +126,7 @@
       "note": "NGA 권위를 근거로 지구 형상을 판정하지 않았다. 표준 생산기관의 공식 페이지에서 문구와 수치를 직접 확인했으며, 항목 세트 전체에서는 NASA 사진, 역사 기록, 고대 측정 방법 등 서로 다른 증거 유형이 수렴하도록 구성했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
-  "versionId": "ver:da58f11aaf98631e",
-  "certHash": "sha256:6a57f9c20d8719beef693d5cf008b7dc1b5b506a05243c5845d55ec3a524c08d",
+  "versionId": "ver:d3c5dd2d499d4969",
+  "certHash": "sha256:49ce60159956a4b57178de5e0efe9044e93192c744c2419ee1b1bf2d490ed68c",
   "canonicalProposition": "1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다",
   "originalClaim": "닐 암스트롱과 버즈 올드린이 1969년 7월 20일 아폴로 11호 이글을 달 고요의 바다에 착륙시켰다는 요약.",
   "claimNature": "event_occurrence",
@@ -146,7 +146,7 @@
       "note": "두 독립 자동 검토자가 모두 1차 출처를 수용했으나, 인간 검수자가 'NASA라는 권위 때문에 통과시킨 것 아닌가'를 재검토함. 결론: 착륙 사실은 NASA 권위가 아니라 비-NASA 독립 증거(역반사경·소련 추적·타국 촬영·월석)로 성립함을 확인. 권위 기반 면제 아님."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-15",
       "checksPerformed": [
         "omission",

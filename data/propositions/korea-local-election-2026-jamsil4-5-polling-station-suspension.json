@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:921a9dc8a1b5b268e0f4c807",
-  "versionId": "ver:b3ca5fbe49506f6f",
-  "certHash": "sha256:eb1df938a1f20cd27702c221f6ada62d4a7981cb1bc9ccf1c742c0aacb18b2ed",
+  "versionId": "ver:cba9e04eedb3b7ec",
+  "certHash": "sha256:3520be3c788d72feb1acb5fd35ff59528f7000b5772f3f0472af4f4d517d4ff0",
   "canonicalProposition": "2026년 6월 3일 오후 4시께 서울 송파구 잠실4동 제5투표소에서 투표용지 부족으로 투표가 일시 중단됐다",
   "originalClaim": "6-3 일부 투표소 투표용지 소진→투표 중단·지연.",
   "claimNature": "event_occurrence",
@@ -69,7 +69,7 @@
       "note": "동아일보 보도를 현장 사건 확인에만 사용하고 법적 책임 판단 권위로 사용하지 않았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:83702707422e50c0a56fb565",
-  "versionId": "ver:1f711a468eb69774",
-  "certHash": "sha256:1372855b328f8ceefca9ed9f54f9018dc3e06e8f605ae0667e4e740f50047804",
+  "versionId": "ver:0f824f8daa3cf803",
+  "certHash": "sha256:2239023b2a8d2f6c65a93df6ed6ff1e2d0632a9d9dc1613c7be14f9a56588849",
   "canonicalProposition": "중앙선거관리위원회 개정 사무편람에는 지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다는 내용이 담겼다",
   "originalClaim": "인쇄 하한 기준 60%→50% 내부지침 변경.",
   "claimNature": "document_content",
@@ -93,7 +93,7 @@
       "note": "중앙선관위 문서 권위를 직접 확정하지 않고 fetch 가능한 보도만 증거로 삼았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:5bf64ededa100f82163dcab1",
-  "versionId": "ver:9d9f9d781a9446e6",
-  "certHash": "sha256:53291669b1e957d20e2cfff3b5e4c2e28ab9d4cb91138c8c7d5cf3feefc3938d",
+  "versionId": "ver:f28e541b188d3bb7",
+  "certHash": "sha256:bc4d2c7a311927def2a94d040a110c1301912cdd79af4a4b1b62f6feb0c4ec2e",
   "canonicalProposition": "윤재수 중앙선거관리위원회 선거정책실장은 사전투표율 증가로 선거일 투표용지를 전체 선거인 수의 50%를 기준으로 인쇄했다고 설명했다",
   "originalClaim": "선관위 “예상보다 높은 투표율로 준비분(50%) 초과” 해명.",
   "claimNature": "event_occurrence",
@@ -74,7 +74,7 @@
       "note": "선관위 직함은 발화자 식별에만 사용했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:3104eab69ad2305be2007c30",
-  "versionId": "ver:7faf5d2bb1274398",
-  "certHash": "sha256:d7015b0a0ca4d33a1f6025b3aa177a0228d1e173cd8a6ed7be0e1b5719727ee6",
+  "versionId": "ver:e1eed4c25400d983",
+  "certHash": "sha256:1f97dc069037ed30406bfdfa90115a150da8c2197a0ac960449ca8753cd8a0b7",
   "canonicalProposition": "1965년 6월 22일 대한민국과 일본은 도쿄에서 한일기본조약에 서명하였다",
   "originalClaim": "1965년 6월 22일 대한민국과 일본은 한일기본조약에 서명하였다.",
   "claimNature": "event_occurrence",
@@ -95,7 +95,7 @@
       "note": "유엔 조약집 원문을 날짜·당사자 확인에만 사용했고, 조약 해석의 최종 권위로 사용하지 않았다. 식민 배상 해석의 정치적 쟁점 때문에 인간 검수 레인으로 분류했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

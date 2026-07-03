@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:a39e2dc6072bbda67817ead7",
-  "versionId": "ver:d2c8b826bd96a024",
-  "certHash": "sha256:5814de050149ecffeaa999a10d0f51b21fd6e107df341c1dd4123fa30198dde7",
+  "versionId": "ver:6c997b7d5479114b",
+  "certHash": "sha256:6a99f334eb446520cba45daf03bbf4e60d22f9d954fad9d5b4c0a210b41fc3ca",
   "canonicalProposition": "이승만은 1948년 8월 15일 대한민국 수립을 선포하였다",
   "originalClaim": "1948년 8월 15일 대한민국 정부 수립이 공식 선포되었다.",
   "claimNature": "event_occurrence",
@@ -125,7 +125,7 @@
       "note": "공식성과 정통성 판단을 권위 출처로 대체하지 않고, 날짜·행위 문장만 확인했다. 분단 관련 프레이밍 위험으로 인간 검수 레인에 배치했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:e2b37f73256b9885410a5c01",
-  "versionId": "ver:89378ad1981d4aa1",
-  "certHash": "sha256:3972a324c8b447d664ca8dad05cd5d04e9054a668fb58dc9b0a090db5dfb7c99",
+  "versionId": "ver:40033d6a855548a1",
+  "certHash": "sha256:d2d45ae2af993bbc964d8f12561d4e556ea2e8f7a4034d019c897ddd95103637",
   "canonicalProposition": "장동혁 국민의힘 대표는 2026년 6월 18일 16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다",
   "originalClaim": "장동혁 국민의힘 대표 전국 재선거 주장.",
   "claimNature": "event_occurrence",
@@ -69,7 +69,7 @@
       "note": "정당 대표의 주장을 사실 판정으로 전환하지 않았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

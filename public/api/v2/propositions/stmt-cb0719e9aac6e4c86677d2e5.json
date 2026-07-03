@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:cb0719e9aac6e4c86677d2e5",
-  "versionId": "ver:4eff3e9ed829a9f9",
-  "certHash": "sha256:ab695e095ea86e7627ff2ea70c34034e6ea438585903950aed84a5e7e61e42e6",
+  "versionId": "ver:965f7d817d16dc9a",
+  "certHash": "sha256:e0c9b11dd217486eeecddcb8dab2ce0b9eecf06866b9e760e50a487abb799390",
   "canonicalProposition": "중앙선거관리위원회는 2026년 6·3 지방선거에서 선거일 투표용지가 부족했던 투표소를 2026년 6월 8일 기준 전국 91곳(부족 용지 7,194장)으로, 투표가 일시 중단된 투표소를 26곳으로 집계했다",
   "originalClaim": "6·3 지방선거 투표용지 부족 사태의 규모(부족 투표소 수·부족 용지 매수·중단 투표소 수).",
   "claimNature": "measurement",
@@ -201,7 +201,7 @@
       "note": "선관위 발표라는 권위에 기대지 않고 fetch 가능한 기사 문구만 증거로 삼았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:b3deef8189d7937fc1e97ab2",
-  "versionId": "ver:4dd5d8d7f10e2dde",
-  "certHash": "sha256:2c2b8aa649c0754d0e1475cf9e65fde9b21230c8591a22bda2d02ab26a7da599",
+  "versionId": "ver:4a567411b4064362",
+  "certHash": "sha256:86dd5dd3a1f79ba30fd8d8c0f30c90e90de719b04f6d56418f6c8b271da577b9",
   "canonicalProposition": "쇼와 천황은 1945년 8월 15일 녹음 라디오 연설로 일본의 연합국에 대한 항복을 공표하였다",
   "originalClaim": "1945년 8월 15일 일본 정부는 연합국에 대한 항복 의사를 공표하였다.",
   "claimNature": "event_occurrence",
@@ -125,7 +125,7 @@
       "note": "권위 있는 공식 사료가 아니라 fetch 가능한 공개 출처를 앵커로 삼았기 때문에 자동 레인으로 두지 않고 인간 검수 레인에 배치했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

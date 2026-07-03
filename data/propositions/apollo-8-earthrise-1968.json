@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:ae66527bf2aea1b5407a5f78",
-  "versionId": "ver:ee530131b876b9c1",
-  "certHash": "sha256:0d06f11d5b1c645189cc765dcff31289365c405aaa896f926f3cabba09dacdec",
+  "versionId": "ver:8a197b7faafbc259",
+  "certHash": "sha256:57b8bb1f162c18da47a3a6eb57f4d7366aa7aea0c97fc20e88e07f9008824d6a",
   "canonicalProposition": "1968년 12월 24일 아폴로 8호 승무원은 달 궤도에서 지구가 달 지평선 위로 떠오르는 사진(NASA AS08-14-2383)을 촬영하였다",
   "originalClaim": "아폴로 8호 승무원이 1968년 12월 24일 달 궤도에서 Earthrise 사진을 촬영했다는 요약.",
   "claimNature": "event_occurrence",
@@ -156,7 +156,7 @@
       "note": "NASA라는 권위만으로 수용하지 않고, EOL 원본 사진 카탈로그의 이미지 ID·캡션, SVS의 사진 ID 대조, APOD의 기념일 설명을 분리해 확인했다. 세트 전체에서는 WGS84 측지 표준, Apollo 17 전지구 사진, 항해사, 고대 측정법이 서로 다른 유형으로 수렴한다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

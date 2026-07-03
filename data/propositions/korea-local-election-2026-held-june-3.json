@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:2e87b3750aadd61ef8e2b6c0",
-  "versionId": "ver:3c1bc0e7c97d2bdb",
-  "certHash": "sha256:bcbb10a8046ae5a2957c38152a96d6920b60d11ea466f771676fbdec6d6e51f5",
+  "versionId": "ver:122aafc5f793750b",
+  "certHash": "sha256:19befb188060f1ab2100886d35ca91bcbe4fed85a72f7a5022a3f3fbbba7e38c",
   "canonicalProposition": "2026년 6월 3일 대한민국에서 제9회 전국동시지방선거 본투표가 실시되었다",
   "originalClaim": "제9회 지방선거는 2026-06-03 전국 실시.",
   "claimNature": "event_occurrence",
@@ -117,7 +117,7 @@
       "note": "언론 보도를 실시 사실 확인에만 사용했고 선거의 적법성 판단 권위로 사용하지 않았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

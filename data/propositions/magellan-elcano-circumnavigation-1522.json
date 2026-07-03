@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:4f96ea07a89511c2ea0a86a3",
-  "versionId": "ver:665020fbc261a02c",
-  "certHash": "sha256:5bca190d6a96becc15d270559821c495ed5ee8fa5af6e2c214f4e185e4e3b714",
+  "versionId": "ver:d2bab7d06c987c4f",
+  "certHash": "sha256:f1b7a7475bc4a45871d03503220bd24217a20381a67acaed98635fc8c99541c9",
   "canonicalProposition": "페르디난드 마젤란이 시작하고 후안 세바스티안 엘카노가 완수한 원정대는 1519년 서쪽으로 출발하여 1522년 스페인으로 돌아와 최초의 지구 일주를 완료하였다",
   "originalClaim": "마젤란이 시작하고 엘카노가 완수한 원정대가 1519~1522년 최초의 지구 일주를 완료했다는 요약.",
   "claimNature": "event_occurrence",
@@ -207,7 +207,7 @@
       "note": "UNESCO와 Britannica 권위만으로 의미를 확정하지 않고, 인용문이 실제로 1519-1522년 항해, 엘카노 완료, 최초 일주 완료, 마젤란 사망 한계를 각각 지지하는지 확인했다. UNESCO 항목은 자동 재-fetch가 가능한 독립 앵커이고, Britannica 항목들은 유능하지만 같은 출판사 원천으로 묶어 보조 증거로만 계산한다. 세트 전체에서는 이 역사 항해 증거가 NASA 사진·NGA 측지 표준·고대 측정법과 다른 유형으로 수렴한다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

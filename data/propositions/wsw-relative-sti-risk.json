@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:3a2ae5d9219c9be87de14ae7",
-  "versionId": "ver:f9926fe061667e6a",
-  "certHash": "sha256:5aace2078e01858469c62a649db72c60236263c7648a92cfc20105b514677950",
+  "versionId": "ver:f6b5880134dd5b8b",
+  "certHash": "sha256:23acc8f9288ec3a8ad385eef18050b2ef3c620c31d478a66051dfb5d2e3b7883",
   "canonicalProposition": "CDC 2021 STI Treatment Guidelines는 검토 연구들에서 WSWM의 STI 비율이 WSW보다 높고 WSM과 비슷했으며, WSW의 53%~97%가 과거 남성 성파트너, 5%~28%가 전년도 남성 성파트너를 보고했다고 정리했다",
   "originalClaim": "WSW·WSWM·WSM 관련 STI 상대위험과 파트너 이력 수치.",
   "claimNature": "measurement",
@@ -147,7 +147,7 @@
       "note": "CDC 지침 권위가 아니라 fetch 가능한 본문 문구와 수치를 근거로 삼았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-19",
       "checksPerformed": [
         "omission",

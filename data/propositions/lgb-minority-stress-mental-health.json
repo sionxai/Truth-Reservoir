@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:3ae444edbb297bea65e9cd78",
-  "versionId": "ver:723a90e7542f5ec3",
-  "certHash": "sha256:8cd1cc3f9195278ebf0d06b1770bec838edcdff1f805fe625184faed338c816a",
+  "versionId": "ver:d27e25db4626c421",
+  "certHash": "sha256:b7bf53559ea53adc842d5762533db1cdb8db8b5bbf95bf1b832a4d492b0138e7",
   "canonicalProposition": "King 등은 2008년 LGB 정신건강 체계적 문헌고찰·메타분석에서 28편(25개 연구), 이성애자 214,344명과 비이성애자 11,971명의 자료를 추출했고, LGB의 lifetime suicide attempt pooled RR을 2.47(CI 1.87, 3.28)로 보고했다",
   "originalClaim": "LGB 정신건강 격차에 관한 메타분석 측정값.",
   "claimNature": "measurement",
@@ -128,7 +128,7 @@
       "note": "BMC Psychiatry 게재 사실보다 NCBI HTTP 200 원문 수치 확인을 기준으로 삼았다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-19",
       "checksPerformed": [
         "omission",

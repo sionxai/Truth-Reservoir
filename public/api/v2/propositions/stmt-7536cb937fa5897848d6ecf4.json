@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:7536cb937fa5897848d6ecf4",
-  "versionId": "ver:6f7ff8736e49a3e1",
-  "certHash": "sha256:f79a4557bd356c0224f4f6a4a903384fe137ea172ab9e1efafb9173c7216c97d",
+  "versionId": "ver:60922d6e2d88a59b",
+  "certHash": "sha256:856a309f6b976976db25e334f63e0290c24d3e71a2a404c2fb84b867a8131311",
   "canonicalProposition": "1953년 7월 27일 유엔군사령부·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다",
   "originalClaim": "1953년 7월 27일 국제연합군·조선인민군·중국인민지원군 대표가 한국 정전협정에 서명하였다.",
   "claimNature": "event_occurrence",
@@ -152,7 +152,7 @@
       "note": "유엔군사령부나 특정 참전국의 권위로 협정의 의미를 판단하지 않고, 서명 사실과 당사자 표기만 확인했다. 전쟁·정전체제 프레이밍 위험으로 인간 검수 레인에 배치했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",

@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:840aa7c32d8f6372cd968fb6",
-  "versionId": "ver:b8da1e3ee6ceeb53",
-  "certHash": "sha256:11c6e6d12819efabeea2796959c2c2989b47fd7ae85c6ee98bb882f660dba420",
+  "versionId": "ver:dddc17339685e485",
+  "certHash": "sha256:ee3f06cb9656e0a12939a0c122183d1020ffa6eb5967858840d91f0781ef69fc",
   "canonicalProposition": "개인정보 보호법은 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다",
   "originalClaim": "개인정보 보호법이 구 '공공기관의 개인정보보호에 관한 법률'을 폐지하고 그 후신으로 제정되었다는 요약.",
   "claimNature": "document_content",
@@ -69,7 +69,7 @@
       "note": "공식 법령 출처를 사용하되 후신 표현의 해석 요소를 별도로 제한했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-15",
       "checksPerformed": [
         "omission",

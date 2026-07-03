@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:1426e28acba929903bbe8736",
-  "versionId": "ver:a1578f0b77f0507c",
-  "certHash": "sha256:dfcb5f425de8fb9b21b91cfcf77dbffb3a50cc2bffd6b676472e9fbc8d037743",
+  "versionId": "ver:04eb0a4a844267b4",
+  "certHash": "sha256:6d1a477c9ca06cc5e7a5111d0a6b6a4245b4f1c0cceecba1704f777c5a34d52c",
   "canonicalProposition": "더불어민주당은 2026년 6월 7일 강준현 수석대변인을 통해 장동혁 대표의 재선거 주장과 관련해 민주당에서 논의한 적이 없고 장 대표 혼자 요구한 것이 아닌가라며, 선관위의 독립적 지위와 개혁기구 검토를 언급했다",
   "originalClaim": "장동혁 국민의힘 대표의 재선거 주장에 대한 더불어민주당의 반박 입장.",
   "claimNature": "event_occurrence",
@@ -150,7 +150,7 @@
       "note": "정당 대변인 발언을 권위 있는 사실판정으로 사용하지 않고 입장 표명의 존재로만 기록했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

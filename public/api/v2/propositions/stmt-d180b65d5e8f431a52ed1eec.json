@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:d180b65d5e8f431a52ed1eec",
-  "versionId": "ver:77fb3a60b6409238",
-  "certHash": "sha256:a7831da8470d64db7dc21ed078ff52c08abed459d38a8f3fcff1abe1b4d847a8",
+  "versionId": "ver:e0da2bfeee8c8af8",
+  "certHash": "sha256:48104254b13e67b35d5bfd3151c0ad2c30ba0ce6ca0a6ef4c2b93b50b022c1d8",
   "canonicalProposition": "이상능 중앙선거관리위원회 선거1국장은 투표용지 인쇄 경비의 ‘1.1배’ 기준은 인쇄 경비 산출을 위한 기준일 뿐이라고 설명했다",
   "originalClaim": "선관위 인쇄 예산 관련 해명.",
   "claimNature": "event_occurrence",
@@ -74,7 +74,7 @@
       "note": "발화자 직책은 식별 정보이며 설명의 진실성을 보증하지 않는다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-18",
       "checksPerformed": [
         "omission",

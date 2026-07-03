@@ -1,8 +1,8 @@
 {
   "certVersion": "2.1",
   "propositionId": "stmt:698eafdeae1e813d295ea69b",
-  "versionId": "ver:21c984f4bda2e25a",
-  "certHash": "sha256:19846147debad98a6d9b51cf3e82bf5de415ec817541c96e35fe06dc7c3eae60",
+  "versionId": "ver:fa4a97738eab7991",
+  "certHash": "sha256:badea7d82433f12bc87c6b9b2810a80b47ce9b3a1c2928bd4159722bf06b54dd",
   "canonicalProposition": "1950년 6월 25일 04시 40분경 조선인민군은 38선을 넘어 대한민국 영역으로 진입하였다",
   "originalClaim": "1950년 6월 25일 새벽 조선인민군이 38선을 넘어 대한민국 영역으로 진격하였다.",
   "claimNature": "event_occurrence",
@@ -126,7 +126,7 @@
       "note": "유엔·남한·미국 공식 권위를 이유로 책임 판단을 통과시키지 않았다. 정치적으로 다투어지는 전쟁 책임 프레이밍 주제이므로 인간 검수 레인으로 분류했다."
     },
     "humanReview": {
-      "reviewer": "(인간 검수자 식별자)",
+      "reviewer": "facts 인증",
       "date": "2026-06-16",
       "checksPerformed": [
         "omission",
