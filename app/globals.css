@@ -898,6 +898,16 @@ button.secondary,
   padding: 12px 14px;
 }
 
+.topic-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topic-page__copy {
+  justify-self: start;
+}
+
 .topic-body {
   display: grid;
   gap: 22px;

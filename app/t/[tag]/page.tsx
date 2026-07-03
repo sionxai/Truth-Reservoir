@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GradeBadge } from "../../components/GradeBadge";
-import { claimNatureLabels } from "../../../lib/display.ts";
+import { claimNatureLabels, gradeLabel } from "../../../lib/display.ts";
 import { loadPropositions } from "../../../lib/data.ts";
 import { encodePropositionId } from "../../../lib/ids.ts";
 import { sourceCount, tagRoute, uniqueTags } from "../../../lib/propositions.ts";
@@ -52,6 +52,7 @@ export default async function TagPage({ params }: PageProps) {
   const summary = topicSummary(tag, propositions);
   const ordered = summary.orderedPropositions;
   const collectionJsonLd = buildCollectionJsonLd(tag, ordered);
+  const fullText = buildTopicPlainText(tag, summary, ordered);
 
   // Neutral month subheadings (제14): computed purely from the derived date. We walk
   // the already-ordered list and emit a heading only when the auto-derived "YYYY년 M월"
@@ -76,7 +77,24 @@ export default async function TagPage({ params }: PageProps) {
           <span>출처 합계 {summary.sourceTotal}</span>
         </p>
         <p className="topic-page__disclosure">{DISCLOSURE}</p>
+        <div className="topic-page__actions">
+          <button
+            type="button"
+            className="secondary topic-page__copy"
+            data-copy-fulltext
+            aria-live="polite"
+          >
+            전문 복사하기
+          </button>
+        </div>
       </header>
+
+      <script
+        id="topic-fulltext"
+        type="application/json"
+        dangerouslySetInnerHTML={jsonScriptMarkup(fullText)}
+      />
+      <script dangerouslySetInnerHTML={{ __html: copyFullTextScript() }} />
 
       <div className="topic-body">
         {ordered.map((proposition) => {
@@ -192,6 +210,136 @@ function buildCollectionJsonLd(tag: string, ordered: Proposition[]) {
 
 function jsonLdMarkup(data: unknown): { __html: string } {
   return { __html: JSON.stringify(data).replace(/</g, "\\u003c") };
+}
+
+function jsonScriptMarkup(data: unknown): { __html: string } {
+  return { __html: JSON.stringify(data).replace(/</g, "\\u003c") };
+}
+
+// Deterministic (제14) plain-text rendering of the woven topic article, in the exact
+// event-date order shown on the page. Carries the disclosure so the "no editorial
+// arrangement" context travels with any copied/pasted text. Asserts no verdict about
+// the topic — it is a faithful text mirror of the rendered facts.
+function buildTopicPlainText(
+  tag: string,
+  summary: ReturnType<typeof topicSummary>,
+  ordered: Proposition[]
+): string {
+  const lines: string[] = [];
+
+  lines.push(tag);
+  lines.push(
+    `사실 ${summary.count}개 · ${formatDateRange(summary.dateRange)} · 출처 합계 ${summary.sourceTotal}`
+  );
+  lines.push(`출처: ${absoluteSiteUrl(tagRoute(tag))}`);
+  lines.push("");
+  lines.push(DISCLOSURE);
+  lines.push("");
+
+  let lastBucket: string | null = null;
+
+  for (const proposition of ordered) {
+    const bucket = monthBucketLabel(eventDateKey(proposition));
+    if (bucket !== null && bucket !== lastBucket) {
+      lastBucket = bucket;
+      lines.push(`## ${bucket}`);
+      lines.push("");
+    }
+
+    lines.push(proposition.canonicalProposition);
+
+    const whoText = proposition.sixW?.who?.trim();
+    const whenText = proposition.sixW?.when?.trim();
+    const metaParts: string[] = [];
+    if (whoText) {
+      metaParts.push(whoText);
+    }
+    metaParts.push(whenText ? whenText : `${proposition.asOfDate} 기준`);
+    metaParts.push(gradeLabel(proposition.assessment.factualGrade));
+    metaParts.push(claimNatureLabels[proposition.claimNature]);
+    metaParts.push(`출처 ${sourceCount(proposition)}`);
+    lines.push(`· ${metaParts.join(" · ")}`);
+    lines.push(`원문: ${absoluteSiteUrl(`/p/${encodePropositionId(proposition.propositionId)}/`)}`);
+
+    for (const correction of proposition.correctionHistory) {
+      lines.push(`정정: ${correction.before} → ${correction.after}`);
+    }
+    if (proposition.undeterminedItems.length) {
+      lines.push(`판단유보: ${proposition.undeterminedItems.join(" · ")}`);
+    }
+
+    lines.push("");
+  }
+
+  lines.push("— 진실저수지(Truth Reservoir) · 판정하지 않는 검증 사실 저장소");
+
+  return `${lines.join("\n").trim()}\n`;
+}
+
+// Inline client script: copies the full-text island to the clipboard with a graceful
+// fallback for non-secure contexts, and flashes button feedback.
+function copyFullTextScript(): string {
+  return `
+(() => {
+  const button = document.querySelector("[data-copy-fulltext]");
+  const island = document.getElementById("topic-fulltext");
+  if (!button || !island) {
+    return;
+  }
+
+  let text = "";
+  try {
+    text = JSON.parse(island.textContent || '""');
+  } catch (error) {
+    console.error(error);
+    return;
+  }
+
+  const defaultLabel = button.textContent;
+  let resetTimer = null;
+
+  const flash = (message) => {
+    button.textContent = message;
+    if (resetTimer) {
+      window.clearTimeout(resetTimer);
+    }
+    resetTimer = window.setTimeout(() => {
+      button.textContent = defaultLabel;
+    }, 2000);
+  };
+
+  const fallbackCopy = () => {
+    const area = document.createElement("textarea");
+    area.value = text;
+    area.setAttribute("readonly", "");
+    area.style.position = "fixed";
+    area.style.top = "-1000px";
+    document.body.appendChild(area);
+    area.select();
+    let ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch (error) {
+      ok = false;
+    }
+    document.body.removeChild(area);
+    return ok;
+  };
+
+  button.addEventListener("click", async () => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        flash("복사됨");
+        return;
+      }
+    } catch (error) {
+      // fall through to the execCommand fallback below
+    }
+    flash(fallbackCopy() ? "복사됨" : "복사 실패");
+  });
+})();
+`;
 }
 
 function decodeTag(tag: string): string {

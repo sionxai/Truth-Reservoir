@@ -211,6 +211,18 @@ test("E7 topic page is a woven long-form view in deterministic event-date order"
     )
   ).toBeVisible();
 
+  // 전문 복사하기: the button is wired to a deterministic full-text mirror of the woven
+  // article, embedded as a JSON island so the copied text equals the rendered facts.
+  // We assert the button and the island content (first fact + tag + reservoir footer);
+  // the clipboard write itself is a standard browser API fired on a real user gesture
+  // (headless clipboard success is environment-dependent and not asserted here).
+  await expect(page.getByRole("button", { name: "전문 복사하기" })).toBeVisible();
+  const fullTextIsland = await page.locator("#topic-fulltext").textContent();
+  const fullText = JSON.parse(fullTextIsland ?? '""') as string;
+  expect(fullText).toContain(tag);
+  expect(fullText).toContain(ordered[0].canonicalProposition);
+  expect(fullText).toContain("진실저수지");
+
   // Woven view, not a card grid: fact paragraphs are visible and there is no card list.
   await expect(page.locator(".facts-card-list")).toHaveCount(0);
   await expect(page.locator(".facts-card")).toHaveCount(0);
