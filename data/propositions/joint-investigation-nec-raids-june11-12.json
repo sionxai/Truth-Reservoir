@@ -1,0 +1,139 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:f9f1fe47c4a18f9de210c3ec",
+  "versionId": "ver:268cba154b22b1c3",
+  "certHash": "sha256:e909653ffc15ba0b3ccf4b5987a6d172a1ecbce8c5d0f26c50ba1ef373e044f2",
+  "canonicalProposition": "검경 합동수사본부는 6·3 지방선거 투표용지 부족 사태와 관련해 송파·서초·강남·광진·동작구선관위 등 7곳을 공직선거법 위반·직무유기·업무상 횡령·배임 등 혐의로 압수수색하고, 6월 12일 선관위 서버에 대한 압수수색을 이어가며 확보한 압수물 분석에 착수했다고 보도됐다",
+  "originalClaim": "합수본, 선관위·구선관위 등 7곳(공직선거법 위반·직무유기·횡령·배임) 압수수색, 서버 압수수색 이틀째, 압수물 분석 착수.",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "검경 합동수사본부(합수본)",
+    "when": "2026년 6월 11~12일(서버 압수수색 이틀째)",
+    "where": "중앙선거관리위원회 및 송파·서초·강남·광진·동작구선관위 등 7곳",
+    "what": "선관위 관련 7곳을 공직선거법 위반·직무유기·업무상 횡령·배임 등 혐의로 압수수색하고, 선관위 서버 압수수색을 이어가며 확보한 압수물 분석에 착수했다",
+    "how": "법원 영장에 따라 압수수색을 집행하고 압수물 분석 작업에 착수했다",
+    "why": [
+      {
+        "reason": "투표용지 부족 사태의 진상 규명을 위한 것",
+        "statedBy": "검경 합동수사본부(파이낸셜뉴스·아시아투데이 보도 문맥)"
+      }
+    ]
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-02",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "파이낸셜뉴스(연합뉴스) 본문에서 '송파·서초·강남·광진·동작구선관위 등 7곳' 압수수색과 혐의가, 아시아투데이 본문에서 '선관위 서버 압수수색 진행 중'이 각각 curl HTTP 200으로 verbatim 확인된다. 영장·수사 기록 원문은 확인하지 못해 largely_reliable로 유지했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.fnnews.com/news/202606121051502798",
+      "title": "‘투표지 부족’ 합수본, 선관위 압수물 분석…서버 압수수색 계속",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "송파·서초·강남·광진·동작구선관위 등 7곳에 대해 공직선거법 위반, 직무 유기, 업무상 횡령·배임 등 혐의로 압수수색했다",
+      "quoteHash": "sha256:3523b2b74efa17d80e357f4338f69024d4d91aa4f705c3c5432e7a324c2b309e",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "파이낸셜뉴스(연합뉴스) 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "fnnews-20260612-raid-7",
+      "independenceLevel": "independent",
+      "independenceNote": "압수수색 대상·혐의를 보도한 자동 fetch 가능 언론 출처(연합뉴스 제공)다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "수사기관의 압수수색을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260612010004362",
+      "title": "‘투표지 부족’ 합수본, 선관위 서버 이틀째 압수수색…압수물 분석 착수",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "이날 선관위 서버에 대한 압수수색을 진행 중이다",
+      "quoteHash": "sha256:6d42521df570671297fe79b7998efbaa0bf6eb98a4d1964e6f25ea093e5f9fba",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "아시아투데이 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "asiatoday-20260612-server-raid",
+      "independenceLevel": "independent",
+      "independenceNote": "선관위 서버 압수수색 지속을 보도한 별개 언론 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "선관위 서버 강제수사를 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "압수수색·수사 착수는 혐의가 확인·기소·유죄로 확정된 것을 뜻하지 않으며, 영장·수사 기록 원문은 확인하지 못했다.",
+      "response": "압수수색과 압수물 분석 착수라는 절차 사실만 저장하고 혐의의 성립·유죄를 판정하지 않았다. 혐의명은 수사기관이 적용한 혐의로 귀속했다.",
+      "errorsFound": 0,
+      "framingChecks": "압수수색·수사 착수를 부정선거·유죄 확정으로 해석하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "수사 절차 사실과 별도로 선관위 해명·법적 미확정성 명제를 함께 보관한다.",
+      "result": "대칭 점검 완료 — 수사 절차와 무죄추정을 분리하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "수사기관 발표라는 권위에 기대지 않고 fetch 가능한 기사 문구만 증거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-02",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 7곳 압수수색·혐의명과 서버 압수수색 지속을 파이낸셜뉴스·아시아투데이 curl HTTP 200 본문에서 verbatim 확인했다. 이재명 대통령의 6·7 합동조사 지시(기존 명제)와 다른, 실제 압수수색 집행 사건이다.",
+      "adoptedReason": "두 출처 본문에서 압수수색 대상·혐의·서버 수사가 확인된다.",
+      "rejectedAlternatives": "압수물 목록·영장 발부 판사·구체적 피의자는 원문 미확인으로 절차 사실만 저장했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "criminal_allegation",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "allegation",
+    "presumptionNotice": "이 명제는 수사기관의 압수수색·수사 착수라는 절차 사실만 기록하며, 적용 혐의는 미확정이고 관련자는 무죄로 추정된다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "영장·수사 기록 원문을 직접 fetch하지 못해 언론 전재에 의존한다. 압수수색·수사 착수는 혐의 성립·기소·유죄와 무관하며 관련자는 무죄로 추정된다. 이 사건은 이재명 대통령의 6월 7일 합동조사 지시(별개 명제)에 따른 후속 집행이며 지시 자체와 구분된다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "정치주장",
+    "수사",
+    "압수수색",
+    "사건단위"
+  ],
+  "createdAt": "2026-07-02",
+  "updatedAt": "2026-07-02"
+}

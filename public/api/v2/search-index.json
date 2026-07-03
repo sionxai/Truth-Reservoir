@@ -1,10 +1,46 @@
 {
   "meta": {
     "generatedAt": "2026-07-02",
-    "total": 46,
+    "total": 60,
     "note": "Compact manifest for client-side filtering; fetch full records at /api/v2/propositions/{dashId}.json"
   },
   "records": [
+    {
+      "propositionId": "stmt:0010711e717716056a9118a7",
+      "path": "/api/v2/propositions/stmt-0010711e717716056a9118a7.json",
+      "canonical": "한국일보는 6·3 지방선거에서 투표용지 인쇄량이 유권자 수의 50% 미만이었던 투표소가 전국 1,371곳(전국 투표소의 9.6%)에 달했다고 단독 보도했다",
+      "tags": [
+        "2026지방선거",
+        "사건단위",
+        "정치주장",
+        "측정",
+        "투표소수",
+        "투표용지부족"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:0a58cbf2ef6649107049e597",
+      "path": "/api/v2/propositions/stmt-0a58cbf2ef6649107049e597.json",
+      "canonical": "국회는 2026년 6월 18일 본회의에서 '제9회 전국동시지방선거 투표용지 부족 사태 등 국민참정권 침해 진상규명 및 선거관리 개혁을 위한 국정조사계획서'를 여야 합의로 의결해 18일부터 45일간 국정조사를 실시하기로 하고, 특별위원회를 더불어민주당 9명·국민의힘 7명·비교섭단체 2명 등 18명으로 구성하며 위원장은 국민의힘 윤상현 의원이 맡았다",
+      "tags": [
+        "2026지방선거",
+        "국정조사",
+        "국회",
+        "사건단위",
+        "정치주장",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
     {
       "propositionId": "stmt:0f10895abcff81a55ff783d6",
       "path": "/api/v2/propositions/stmt-0f10895abcff81a55ff783d6.json",
@@ -132,6 +168,24 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "propositionId": "stmt:3324d300d2efb6d8dcbbdc4c",
+      "path": "/api/v2/propositions/stmt-3324d300d2efb6d8dcbbdc4c.json",
+      "canonical": "중앙선거관리위원회는 6·3 지방선거 투표용지 부족 사태의 원인·책임 소재 규명을 위해 6월 10일부터 19일까지 시민단체·법조계·언론계·학계 추천 외부 인사 6명으로 구성되고 한국여성변호사회 회장을 지낸 조현욱 변호사가 위원장을 맡는 '투표지 부족 사태 진상규명위원회'를 운영한다고 밝혔다",
+      "tags": [
+        "2026지방선거",
+        "사건단위",
+        "정치주장",
+        "중앙선거관리위원회",
+        "진상규명위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
       "propositionId": "stmt:38c8e4c00c63fa0fc9b00eb3",
       "path": "/api/v2/propositions/stmt-38c8e4c00c63fa0fc9b00eb3.json",
       "canonical": "BBNJ 협정은 2026년 1월 17일 발효되었다",
@@ -165,6 +219,44 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "propositionId": "stmt:48afea861840a1d07ad8d250",
+      "path": "/api/v2/propositions/stmt-48afea861840a1d07ad8d250.json",
+      "canonical": "송언석 국민의힘 의원 분석 자료에 따르면 서울 송파구는 구청장 선거 투표용지 인쇄 단가를 예산 편성 당시 장당 30원으로 적용했으나 실제로는 50% 비싼 장당 45원을 적용했고, 그 결과 30원 단가로는 약 42만4천200장을 인쇄할 수 있었으나 인쇄 물량이 28만800장에 그친 것으로 계산됐다고 파이낸셜뉴스가 보도했다",
+      "tags": [
+        "2026지방선거",
+        "국민의힘",
+        "문서내용",
+        "사건단위",
+        "송파구",
+        "예산",
+        "정치주장",
+        "투표용지부족"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:495acd373d4c3a4c610127ac",
+      "path": "/api/v2/propositions/stmt-495acd373d4c3a4c610127ac.json",
+      "canonical": "중앙선거관리위원회는 6·3 지방선거 본투표 당일 투표용지 부족이 예상돼 추가 물량을 송부한 투표소가 전국 140곳으로 집계됐다고 발표했다(전국 투표소 총 1만4288개)",
+      "tags": [
+        "2026지방선거",
+        "사건단위",
+        "중앙선거관리위원회",
+        "측정",
+        "투표소수",
+        "투표용지부족"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
       "propositionId": "stmt:4ae4c94174dc3aaf651102d2",
       "path": "/api/v2/propositions/stmt-4ae4c94174dc3aaf651102d2.json",
       "canonical": "1969년 7월 20일 20:17:40 UTC, 닐 암스트롱과 버즈 올드린은 아폴로 11호 달 착륙선 이글(Eagle)을 조종하여 달의 고요의 바다(Mare Tranquillitatis) 지역(0.67416°N, 23.47314°E)에 착륙하였다",
@@ -178,6 +270,24 @@
       "factualGrade": "fully_reliable",
       "status": "active",
       "asOfDate": "2026-06-16",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:4f11124d8afde3e1fa6d0050",
+      "path": "/api/v2/propositions/stmt-4f11124d8afde3e1fa6d0050.json",
+      "canonical": "노태악 중앙선거관리위원장은 2026년 6월 5일 투표용지 부족 사태에 대한 대국민 사과에서 '이 모든 사태에 대한 책임을 통감하면서 저 역시 중앙선거관리위원장직에서 물러나겠습니다'라며 사퇴 의사를 밝혔고, 허철훈 사무총장도 사의를 표명했다",
+      "tags": [
+        "2026지방선거",
+        "사건단위",
+        "사퇴",
+        "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
       "updatedAt": "2026-07-02"
     },
     {
@@ -303,6 +413,25 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "propositionId": "stmt:75fc8d303885c2159f99099d",
+      "path": "/api/v2/propositions/stmt-75fc8d303885c2159f99099d.json",
+      "canonical": "한국갤럽은 2026년 6월 9~11일 전국 만 18세 이상 1,002명 전화조사에서 6·3 지방선거 투표용지 부족에 따른 '전면 재선거' 주장에 찬성 44%·반대 48%(20·30대는 찬성 60% 이상)로, 사태 인식은 '부실한 선거 관리·참정권 침해' 67%·'불법적 선거 개입·부정선거 시도 증거' 25%로 집계했다고 발표했다",
+      "tags": [
+        "2026지방선거",
+        "사건단위",
+        "여론조사",
+        "재선거",
+        "측정",
+        "투표용지부족",
+        "한국갤럽"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
       "propositionId": "stmt:83702707422e50c0a56fb565",
       "path": "/api/v2/propositions/stmt-83702707422e50c0a56fb565.json",
       "canonical": "중앙선거관리위원회 개정 사무편람에는 지방선거 선거일 투표용지 인쇄 하한을 선거인수의 50%로 산정할 수 있다는 내용이 담겼다",
@@ -388,6 +517,26 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "propositionId": "stmt:a2b9f8780cb8ba76b3f3771c",
+      "path": "/api/v2/propositions/stmt-a2b9f8780cb8ba76b3f3771c.json",
+      "canonical": "국민의힘 송언석 의원은 중앙선거관리위원회 제출 자료를 분석해 선관위가 6·3 지방선거 투표용지 인쇄 예산을 총 145억1957만원 편성했으나 편성액의 56.5%인 82억498만원만 집행했고, 지역별 집행률은 울산이 90.3%로 가장 높고 세종이 27.2%로 가장 낮았다고 밝혔다고 파이낸셜뉴스가 보도했다",
+      "tags": [
+        "2026지방선거",
+        "국민의힘",
+        "문서내용",
+        "사건단위",
+        "예산",
+        "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
       "propositionId": "stmt:a2c80ef637dd92021cbbd92b",
       "path": "/api/v2/propositions/stmt-a2c80ef637dd92021cbbd92b.json",
       "canonical": "서울동부지방법원은 2026년 6월 9일 서울 송파구 잠실 투표소의 투표용지 부족과 관련해 증거보전을 명령했다",
@@ -441,6 +590,25 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "propositionId": "stmt:b0b35403a2822612a749bbd1",
+      "path": "/api/v2/propositions/stmt-b0b35403a2822612a749bbd1.json",
+      "canonical": "나경원 국민의힘 의원은 2026년 6월 5일 페이스북에서 6·3 지방선거 투표용지 부족 사태를 두고 선거 무효에 해당할 만큼 중대한 하자라며 선거 승패와 상관없이 전면 재선거가 치러져야 한다고 주장했다고 조선일보(다음 재게재)가 보도했다",
+      "tags": [
+        "2026지방선거",
+        "국민의힘",
+        "사건단위",
+        "재선거",
+        "정치주장",
+        "주장",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
       "propositionId": "stmt:b18e2813819c4fb0e23830f6",
       "path": "/api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json",
       "canonical": "에라토스테네스는 기원전 약 240년경 시에네와 알렉산드리아에서 하지 정오의 태양 그림자 각도 차이를 이용해 지구 둘레를 추정하는 측정을 수행하였다",
@@ -473,6 +641,25 @@
       "factualGrade": "fully_reliable",
       "status": "active",
       "asOfDate": "2026-06-16",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:b76037b935bcd6803ab934ab",
+      "path": "/api/v2/propositions/stmt-b76037b935bcd6803ab934ab.json",
+      "canonical": "서울동부지방법원 민사51단독(김지연 부장판사)은 2026년 6월 12일 김정철 개혁신당 최고위원이 추가로 신청한 증거보전 가운데 잠실7동 제2투표소 투표용지 보관상자의 폐기물 처리 업체·인계 시기·폐기 일시 사실조회 등 일부를 인용하고, 올림픽공원 핸드볼경기장에 보관된 투표지·투표함 등에 대한 검증 신청은 기각했다",
+      "tags": [
+        "2026지방선거",
+        "개혁신당",
+        "법원",
+        "사건단위",
+        "정치주장",
+        "증거보전",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
       "updatedAt": "2026-07-02"
     },
     {
@@ -564,6 +751,43 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "propositionId": "stmt:d78f27d3e447961d8e0f492b",
+      "path": "/api/v2/propositions/stmt-d78f27d3e447961d8e0f492b.json",
+      "canonical": "뉴데일리가 여론조사기관 '리서치웰'에 의뢰해 2026년 6월 10~11일 전국 만 18세 이상 남녀 1004명을 자동응답(ARS) 방식(응답률 2.7%, 표본오차 ±3.1%포인트·95% 신뢰수준)으로 조사한 결과, 중앙선거관리위원회 해체 찬성 70.4%·반대 17.7%, 사전투표제 폐지 찬성 53.3%로 집계됐다고 보도했다",
+      "tags": [
+        "2026지방선거",
+        "사건단위",
+        "여론조사",
+        "중앙선거관리위원회",
+        "측정",
+        "투표용지부족"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:dc42960aa42792c924b4d58b",
+      "path": "/api/v2/propositions/stmt-dc42960aa42792c924b4d58b.json",
+      "canonical": "국가법령정보센터(law.go.kr)의 공직선거법은 제224조에서 선거에 관한 규정 위반이 있어도 선거 결과에 영향을 미쳤다고 인정하는 때에 한하여 선거의 전부·일부 무효 또는 당선 무효를 결정·판결하고, 제219조에서 지방선거 선거 효력에 이의가 있는 선거인·정당·후보자는 선거일부터 14일 이내에 소청하도록, 제222조 제2항에서 지방선거 선거소청 기각·각하 결정 등에 불복하는 소청인은 결정서를 받은 날부터 10일 이내에 소를 제기하도록 규정한다",
+      "tags": [
+        "2026지방선거",
+        "공직선거법",
+        "문서내용",
+        "사건단위",
+        "선거소송",
+        "선거소청",
+        "투표용지부족"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "fully_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
       "propositionId": "stmt:e2b37f73256b9885410a5c01",
       "path": "/api/v2/propositions/stmt-e2b37f73256b9885410a5c01.json",
       "canonical": "장동혁 국민의힘 대표는 2026년 6월 18일 16개 광역단체 모두 중앙선거관리위원회에 선거소청을 제기하자고 주장했다",
@@ -592,6 +816,44 @@
         "국회",
         "사건단위",
         "올림픽공원",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:f08703cdaffb0328c82f293c",
+      "path": "/api/v2/propositions/stmt-f08703cdaffb0328c82f293c.json",
+      "canonical": "나경원 국민의힘 의원은 선거 결과와 무관하게 선거를 전면 또는 일부 무효로 할 수 있도록 하는 내용의 공직선거법 일부개정안을 대표발의했다고 2026년 6월 12일 밝혔다",
+      "tags": [
+        "2026지방선거",
+        "공직선거법",
+        "국민의힘",
+        "사건단위",
+        "재선거",
+        "정치주장",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-02",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "propositionId": "stmt:f9f1fe47c4a18f9de210c3ec",
+      "path": "/api/v2/propositions/stmt-f9f1fe47c4a18f9de210c3ec.json",
+      "canonical": "검경 합동수사본부는 6·3 지방선거 투표용지 부족 사태와 관련해 송파·서초·강남·광진·동작구선관위 등 7곳을 공직선거법 위반·직무유기·업무상 횡령·배임 등 혐의로 압수수색하고, 6월 12일 선관위 서버에 대한 압수수색을 이어가며 확보한 압수물 분석에 착수했다고 보도됐다",
+      "tags": [
+        "2026지방선거",
+        "사건단위",
+        "수사",
+        "압수수색",
+        "정치주장",
+        "중앙선거관리위원회",
         "투표용지부족"
       ],
       "claimNature": "event_occurrence",

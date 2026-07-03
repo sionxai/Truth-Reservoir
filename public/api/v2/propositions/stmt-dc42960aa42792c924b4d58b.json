@@ -1,0 +1,157 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:dc42960aa42792c924b4d58b",
+  "versionId": "ver:39408d5547252a97",
+  "certHash": "sha256:e26ed4274422a8c92baa98842e7a18689a1a6f89b604394ad0ee158bc9077dfa",
+  "canonicalProposition": "국가법령정보센터(law.go.kr)의 공직선거법은 제224조에서 선거에 관한 규정 위반이 있어도 선거 결과에 영향을 미쳤다고 인정하는 때에 한하여 선거의 전부·일부 무효 또는 당선 무효를 결정·판결하고, 제219조에서 지방선거 선거 효력에 이의가 있는 선거인·정당·후보자는 선거일부터 14일 이내에 소청하도록, 제222조 제2항에서 지방선거 선거소청 기각·각하 결정 등에 불복하는 소청인은 결정서를 받은 날부터 10일 이내에 소를 제기하도록 규정한다",
+  "originalClaim": "공직선거법 제224조(선거무효 요건: 결과 영향 인정 시)·제219조(선거소청 14일)·제222조(선거소송 10일) 조문 내용.",
+  "claimNature": "document_content",
+  "sixW": {
+    "who": "국가법령정보센터(law.go.kr) 게시 공직선거법",
+    "when": "2026-07-02 조회 시점의 현행 조문",
+    "where": "공직선거법 제224조·제219조·제222조",
+    "what": "제224조는 선거 결과에 영향을 미쳤다고 인정하는 때에 한하여 선거 전부·일부 무효 또는 당선 무효를 결정·판결한다고, 제219조는 선거 효력에 이의가 있는 선거인·정당·후보자가 선거일부터 14일 이내에 소청하도록, 제222조 제2항은 지방선거 선거소청 기각·각하 결정 등에 불복 시 결정서를 받은 날부터 10일 이내에 소를 제기하도록 규정한다",
+    "how": "국가법령정보센터에 게시된 현행 공직선거법 조문으로 기재되어 있다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-02",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "fully_reliable",
+    "status": "assessed",
+    "gradeRationale": "국가법령정보센터(law.go.kr) 공직선거법 페이지에서 제224조 '선거의 결과에 영향을 미쳤다고 인정하는 때에 한하여', 제219조 '선거일부터 14일 이내에' 소청, 제222조 '10일 이내에' 소 제기 문구가 모두 curl HTTP 200으로 verbatim 확인된다. 1차 법령 원문 출처다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=900673751&chrClsCd=010202",
+      "title": "공직선거법 — 국가법령정보센터",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "제224조(선거무효의 판결 등)"
+      },
+      "shortQuote": "선거의 결과에 영향을 미쳤다고 인정하는 때에 한하여 선거의 전부나 일부의 무효",
+      "quoteHash": "sha256:df039a686a0ac4c91c70adc9ceb16e929f93fb565e151d4c9becbc0af6fe1e53",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "official_gazette",
+      "retrievalLimitations": "국가법령정보센터 공직선거법 페이지가 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "lawgokr-public-election-act",
+      "independenceLevel": "independent",
+      "independenceNote": "공직선거법 조문 원문을 게시하는 1차 법령 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "법령 원문을 게시하는 국가 공식 법령정보 출처다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=900673751&chrClsCd=010202",
+      "title": "공직선거법 — 국가법령정보센터",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "제219조(선거소청)"
+      },
+      "shortQuote": "선거의 효력에 관하여 이의가 있는 선거인",
+      "quoteHash": "sha256:35df4e042ccbd9cb5e4d748a7be65bc6a0f191cf6442a033feffe3954d1877a0",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "official_gazette",
+      "retrievalLimitations": "같은 페이지 제219조에서 선거소청 규정 문구를 verbatim 확인했다. '선거일부터 14일 이내에' 문구도 같은 조에서 확인했다.",
+      "independenceGroupId": "lawgokr-public-election-act",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "위 제224조와 동일 법령 페이지의 별도 조문(제219조)이다. 독립 출처로 중복 계산하지 않는다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "선거소청 절차를 규정한 법령 원문이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=900673751&chrClsCd=010202",
+      "title": "공직선거법 — 국가법령정보센터",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "제222조(선거소송)"
+      },
+      "shortQuote": "부터 10일 이내에",
+      "quoteHash": "sha256:d7e3e3d42e2943c4a0a31767e92fe9f61154ff64c243025ba186abbe5c0af1e8",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "official_gazette",
+      "retrievalLimitations": "같은 페이지 제222조 선거소송 규정에서 '결정서를 받은 날 … 부터 10일 이내에' 문구를 verbatim 확인했다. 짧은 verbatim 문구로 확인했다.",
+      "independenceGroupId": "lawgokr-public-election-act",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "위 제224조·제219조와 동일 법령 페이지의 별도 조문(제222조)이다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "선거소송 제소 기간을 규정한 법령 원문이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "조문 내용 저장이 곧 이번 사태에 어떤 조문이 적용되는지·소청이 실제 제기·인용됐는지를 말해주지 않는다.",
+      "response": "조문의 문언 내용만 저장하고 이번 사태에 대한 적용·결과는 판정하지 않았다. 소청·소송의 실제 제기 여부는 별개 사건 명제로 분리한다.",
+      "errorsFound": 0,
+      "framingChecks": "조문 문언만 기록하고 이번 선거의 무효·유효 결론을 저장하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "현행법 조문(무효 요건: 결과 영향 인정)을 그대로 담아, 나경원 개정안(결과 무관 무효)과 대비할 수 있게 했다.",
+      "result": "대칭 점검 완료 — 현행법과 개정안 주장을 분리 기록하고 적용 결론을 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "법령 원문 출처이나 조문 인용 범위를 15단어 이하 verbatim으로 한정해 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-02",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 제224조 무효 요건·제219조 소청 14일·제222조 소송 10일 문구를 국가법령정보센터 curl HTTP 200 페이지에서 verbatim 확인했다. 세 조문은 같은 법령 문서의 서로 다른 조로, 한 문서 사건으로 통합했다.",
+      "adoptedReason": "국가법령정보센터 원문에서 세 조문 문언이 모두 직접 확인된다.",
+      "rejectedAlternatives": "각 조의 항·호 전문과 개정 연혁은 15단어 제한상 핵심 문언만 저장했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 현행 법령 조문의 문언만 기록하며, 이번 6·3 지방선거에 대한 무효·소청·소송의 적용 결과는 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "조문 문언만 저장했으며 이번 사태에 대한 실제 적용·소청·소송 결과는 판정하지 않는다. 각 조의 항·호 전문은 15단어 verbatim 제한상 핵심 문언만 담았다. 현행 제224조는 '결과에 영향을 미쳤다고 인정하는 때에 한하여' 무효를 규정하며, 이와 대비되는 나경원 개정안(결과 무관 무효)은 별개 명제로 보관한다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "공직선거법",
+    "선거소청",
+    "선거소송",
+    "문서내용",
+    "사건단위"
+  ],
+  "createdAt": "2026-07-02",
+  "updatedAt": "2026-07-02"
+}

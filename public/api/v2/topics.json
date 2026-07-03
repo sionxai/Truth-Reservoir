@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-02",
-    "total": 132,
+    "total": 142,
     "note": "태그 기반 결정론적 파생 주제 집계; 사건 시점 순; cert 원본 미저장"
   },
   "topics": [
@@ -107,28 +107,42 @@
     {
       "tag": "2026지방선거",
       "path": "/t/2026%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0",
-      "count": 17,
+      "count": 31,
       "dateRange": {
         "from": "2025-12-01",
         "to": "2026-07-02"
       },
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
+        "stmt:75fc8d303885c2159f99099d",
+        "stmt:d78f27d3e447961d8e0f492b",
+        "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:2e87b3750aadd61ef8e2b6c0",
         "stmt:921a9dc8a1b5b268e0f4c807",
         "stmt:c890b5f8ca77961c84b58268",
         "stmt:cb0719e9aac6e4c86677d2e5",
         "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:4f11124d8afde3e1fa6d0050",
+        "stmt:b0b35403a2822612a749bbd1",
         "stmt:1426e28acba929903bbe8736",
         "stmt:c11b6f2081e8fa1c38bae49d",
         "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:0010711e717716056a9118a7",
+        "stmt:495acd373d4c3a4c610127ac",
         "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:3324d300d2efb6d8dcbbdc4c",
+        "stmt:b76037b935bcd6803ab934ab",
+        "stmt:f08703cdaffb0328c82f293c",
+        "stmt:48afea861840a1d07ad8d250",
+        "stmt:a2b9f8780cb8ba76b3f3771c",
+        "stmt:0a58cbf2ef6649107049e597",
         "stmt:12ebbd81f7cfbbcaf5048a0e",
         "stmt:5bf64ededa100f82163dcab1",
         "stmt:83702707422e50c0a56fb565",
         "stmt:d180b65d5e8f431a52ed1eec",
         "stmt:e2b37f73256b9885410a5c01",
         "stmt:29c85dfda2751f0ac6e0fa1a",
+        "stmt:dc42960aa42792c924b4d58b",
         "stmt:ee1b50f655876f2f4da585e8"
       ]
     },
@@ -173,13 +187,14 @@
     {
       "tag": "개혁신당",
       "path": "/t/%EA%B0%9C%ED%98%81%EC%8B%A0%EB%8B%B9",
-      "count": 1,
+      "count": 2,
       "dateRange": {
         "from": "2026-06-03",
-        "to": "2026-06-03"
+        "to": "2026-06-12"
       },
       "propositionIds": [
-        "stmt:c890b5f8ca77961c84b58268"
+        "stmt:c890b5f8ca77961c84b58268",
+        "stmt:b76037b935bcd6803ab934ab"
       ]
     },
     {
@@ -192,6 +207,19 @@
       },
       "propositionIds": [
         "stmt:c11b6f2081e8fa1c38bae49d"
+      ]
+    },
+    {
+      "tag": "공직선거법",
+      "path": "/t/%EA%B3%B5%EC%A7%81%EC%84%A0%EA%B1%B0%EB%B2%95",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-06-12",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:f08703cdaffb0328c82f293c",
+        "stmt:dc42960aa42792c924b4d58b"
       ]
     },
     {
@@ -221,13 +249,17 @@
     {
       "tag": "국민의힘",
       "path": "/t/%EA%B5%AD%EB%AF%BC%EC%9D%98%ED%9E%98",
-      "count": 3,
+      "count": 7,
       "dateRange": {
         "from": "2026-06-04",
         "to": "2026-06-18"
       },
       "propositionIds": [
         "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:b0b35403a2822612a749bbd1",
+        "stmt:f08703cdaffb0328c82f293c",
+        "stmt:48afea861840a1d07ad8d250",
+        "stmt:a2b9f8780cb8ba76b3f3771c",
         "stmt:12ebbd81f7cfbbcaf5048a0e",
         "stmt:e2b37f73256b9885410a5c01"
       ]
@@ -235,12 +267,13 @@
     {
       "tag": "국정조사",
       "path": "/t/%EA%B5%AD%EC%A0%95%EC%A1%B0%EC%82%AC",
-      "count": 2,
+      "count": 3,
       "dateRange": {
-        "from": "2026-07-02",
+        "from": "2026-06-18",
         "to": "2026-07-02"
       },
       "propositionIds": [
+        "stmt:0a58cbf2ef6649107049e597",
         "stmt:29c85dfda2751f0ac6e0fa1a",
         "stmt:ee1b50f655876f2f4da585e8"
       ]
@@ -263,12 +296,13 @@
     {
       "tag": "국회",
       "path": "/t/%EA%B5%AD%ED%9A%8C",
-      "count": 1,
+      "count": 2,
       "dateRange": {
-        "from": "2026-07-02",
+        "from": "2026-06-18",
         "to": "2026-07-02"
       },
       "propositionIds": [
+        "stmt:0a58cbf2ef6649107049e597",
         "stmt:ee1b50f655876f2f4da585e8"
       ]
     },
@@ -383,14 +417,17 @@
     {
       "tag": "문서내용",
       "path": "/t/%EB%AC%B8%EC%84%9C%EB%82%B4%EC%9A%A9",
-      "count": 2,
+      "count": 5,
       "dateRange": {
         "from": "2025-12-01",
-        "to": "2026-06-18"
+        "to": "2026-07-02"
       },
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
-        "stmt:83702707422e50c0a56fb565"
+        "stmt:48afea861840a1d07ad8d250",
+        "stmt:a2b9f8780cb8ba76b3f3771c",
+        "stmt:83702707422e50c0a56fb565",
+        "stmt:dc42960aa42792c924b4d58b"
       ]
     },
     {
@@ -446,14 +483,15 @@
     {
       "tag": "법원",
       "path": "/t/%EB%B2%95%EC%9B%90",
-      "count": 2,
+      "count": 3,
       "dateRange": {
         "from": "2026-06-03",
-        "to": "2026-06-09"
+        "to": "2026-06-12"
       },
       "propositionIds": [
         "stmt:c890b5f8ca77961c84b58268",
-        "stmt:a2c80ef637dd92021cbbd92b"
+        "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:b76037b935bcd6803ab934ab"
       ]
     },
     {
@@ -520,26 +558,65 @@
     {
       "tag": "사건단위",
       "path": "/t/%EC%82%AC%EA%B1%B4%EB%8B%A8%EC%9C%84",
-      "count": 2,
+      "count": 16,
       "dateRange": {
-        "from": "2026-06-03",
+        "from": "2026-06-01",
         "to": "2026-07-02"
       },
       "propositionIds": [
+        "stmt:75fc8d303885c2159f99099d",
+        "stmt:d78f27d3e447961d8e0f492b",
+        "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:4f11124d8afde3e1fa6d0050",
+        "stmt:b0b35403a2822612a749bbd1",
+        "stmt:0010711e717716056a9118a7",
+        "stmt:495acd373d4c3a4c610127ac",
+        "stmt:3324d300d2efb6d8dcbbdc4c",
+        "stmt:b76037b935bcd6803ab934ab",
+        "stmt:f08703cdaffb0328c82f293c",
+        "stmt:48afea861840a1d07ad8d250",
+        "stmt:a2b9f8780cb8ba76b3f3771c",
+        "stmt:0a58cbf2ef6649107049e597",
+        "stmt:dc42960aa42792c924b4d58b",
         "stmt:ee1b50f655876f2f4da585e8"
+      ]
+    },
+    {
+      "tag": "사퇴",
+      "path": "/t/%EC%82%AC%ED%87%B4",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-05",
+        "to": "2026-06-05"
+      },
+      "propositionIds": [
+        "stmt:4f11124d8afde3e1fa6d0050"
+      ]
+    },
+    {
+      "tag": "선거소송",
+      "path": "/t/%EC%84%A0%EA%B1%B0%EC%86%8C%EC%86%A1",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-07-02",
+        "to": "2026-07-02"
+      },
+      "propositionIds": [
+        "stmt:dc42960aa42792c924b4d58b"
       ]
     },
     {
       "tag": "선거소청",
       "path": "/t/%EC%84%A0%EA%B1%B0%EC%86%8C%EC%B2%AD",
-      "count": 1,
+      "count": 2,
       "dateRange": {
         "from": "2026-06-18",
-        "to": "2026-06-18"
+        "to": "2026-07-02"
       },
       "propositionIds": [
-        "stmt:e2b37f73256b9885410a5c01"
+        "stmt:e2b37f73256b9885410a5c01",
+        "stmt:dc42960aa42792c924b4d58b"
       ]
     },
     {
@@ -592,14 +669,27 @@
       ]
     },
     {
-      "tag": "수사",
-      "path": "/t/%EC%88%98%EC%82%AC",
+      "tag": "송파구",
+      "path": "/t/%EC%86%A1%ED%8C%8C%EA%B5%AC",
       "count": 1,
       "dateRange": {
-        "from": "2026-06-07",
+        "from": "2026-06-17",
+        "to": "2026-06-17"
+      },
+      "propositionIds": [
+        "stmt:48afea861840a1d07ad8d250"
+      ]
+    },
+    {
+      "tag": "수사",
+      "path": "/t/%EC%88%98%EC%82%AC",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-06-01",
         "to": "2026-06-07"
       },
       "propositionIds": [
+        "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:c11b6f2081e8fa1c38bae49d"
       ]
     },
@@ -664,6 +754,18 @@
       ]
     },
     {
+      "tag": "압수수색",
+      "path": "/t/%EC%95%95%EC%88%98%EC%88%98%EC%83%89",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-01"
+      },
+      "propositionIds": [
+        "stmt:f9f1fe47c4a18f9de210c3ec"
+      ]
+    },
+    {
       "tag": "에라토스테네스",
       "path": "/t/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4",
       "count": 1,
@@ -685,6 +787,19 @@
       },
       "propositionIds": [
         "stmt:4f96ea07a89511c2ea0a86a3"
+      ]
+    },
+    {
+      "tag": "여론조사",
+      "path": "/t/%EC%97%AC%EB%A1%A0%EC%A1%B0%EC%82%AC",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-01"
+      },
+      "propositionIds": [
+        "stmt:75fc8d303885c2159f99099d",
+        "stmt:d78f27d3e447961d8e0f492b"
       ]
     },
     {
@@ -721,6 +836,19 @@
       },
       "propositionIds": [
         "stmt:efddfa77db78be598d007d7e"
+      ]
+    },
+    {
+      "tag": "예산",
+      "path": "/t/%EC%98%88%EC%82%B0",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-06-17",
+        "to": "2026-06-17"
+      },
+      "propositionIds": [
+        "stmt:48afea861840a1d07ad8d250",
+        "stmt:a2b9f8780cb8ba76b3f3771c"
       ]
     },
     {
@@ -871,6 +999,20 @@
       ]
     },
     {
+      "tag": "재선거",
+      "path": "/t/%EC%9E%AC%EC%84%A0%EA%B1%B0",
+      "count": 3,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-12"
+      },
+      "propositionIds": [
+        "stmt:75fc8d303885c2159f99099d",
+        "stmt:b0b35403a2822612a749bbd1",
+        "stmt:f08703cdaffb0328c82f293c"
+      ]
+    },
+    {
       "tag": "전쟁개시",
       "path": "/t/%EC%A0%84%EC%9F%81%EA%B0%9C%EC%8B%9C",
       "count": 1,
@@ -935,21 +1077,31 @@
     {
       "tag": "정치주장",
       "path": "/t/%EC%A0%95%EC%B9%98%EC%A3%BC%EC%9E%A5",
-      "count": 15,
+      "count": 25,
       "dateRange": {
         "from": "2025-12-01",
         "to": "2026-07-02"
       },
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
+        "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:2e87b3750aadd61ef8e2b6c0",
         "stmt:921a9dc8a1b5b268e0f4c807",
         "stmt:c890b5f8ca77961c84b58268",
         "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:4f11124d8afde3e1fa6d0050",
+        "stmt:b0b35403a2822612a749bbd1",
         "stmt:1426e28acba929903bbe8736",
         "stmt:c11b6f2081e8fa1c38bae49d",
         "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:0010711e717716056a9118a7",
         "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:3324d300d2efb6d8dcbbdc4c",
+        "stmt:b76037b935bcd6803ab934ab",
+        "stmt:f08703cdaffb0328c82f293c",
+        "stmt:48afea861840a1d07ad8d250",
+        "stmt:a2b9f8780cb8ba76b3f3771c",
+        "stmt:0a58cbf2ef6649107049e597",
         "stmt:12ebbd81f7cfbbcaf5048a0e",
         "stmt:5bf64ededa100f82163dcab1",
         "stmt:83702707422e50c0a56fb565",
@@ -1010,13 +1162,14 @@
     {
       "tag": "주장",
       "path": "/t/%EC%A3%BC%EC%9E%A5",
-      "count": 6,
+      "count": 7,
       "dateRange": {
         "from": "2026-06-04",
         "to": "2026-07-02"
       },
       "propositionIds": [
         "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:b0b35403a2822612a749bbd1",
         "stmt:1426e28acba929903bbe8736",
         "stmt:fafb5a05023e9541b3e07f1f",
         "stmt:12ebbd81f7cfbbcaf5048a0e",
@@ -1039,18 +1192,24 @@
     {
       "tag": "중앙선거관리위원회",
       "path": "/t/%EC%A4%91%EC%95%99%EC%84%A0%EA%B1%B0%EA%B4%80%EB%A6%AC%EC%9C%84%EC%9B%90%ED%9A%8C",
-      "count": 10,
+      "count": 16,
       "dateRange": {
         "from": "2025-12-01",
         "to": "2026-06-18"
       },
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
+        "stmt:d78f27d3e447961d8e0f492b",
+        "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:2e87b3750aadd61ef8e2b6c0",
         "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:4f11124d8afde3e1fa6d0050",
         "stmt:c11b6f2081e8fa1c38bae49d",
         "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:495acd373d4c3a4c610127ac",
         "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:3324d300d2efb6d8dcbbdc4c",
+        "stmt:a2b9f8780cb8ba76b3f3771c",
         "stmt:5bf64ededa100f82163dcab1",
         "stmt:83702707422e50c0a56fb565",
         "stmt:d180b65d5e8f431a52ed1eec",
@@ -1060,14 +1219,15 @@
     {
       "tag": "증거보전",
       "path": "/t/%EC%A6%9D%EA%B1%B0%EB%B3%B4%EC%A0%84",
-      "count": 2,
+      "count": 3,
       "dateRange": {
         "from": "2026-06-03",
-        "to": "2026-06-09"
+        "to": "2026-06-12"
       },
       "propositionIds": [
         "stmt:c890b5f8ca77961c84b58268",
-        "stmt:a2c80ef637dd92021cbbd92b"
+        "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:b76037b935bcd6803ab934ab"
       ]
     },
     {
@@ -1151,6 +1311,18 @@
       ]
     },
     {
+      "tag": "진상규명위원회",
+      "path": "/t/%EC%A7%84%EC%83%81%EA%B7%9C%EB%AA%85%EC%9C%84%EC%9B%90%ED%9A%8C",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-10",
+        "to": "2026-06-10"
+      },
+      "propositionIds": [
+        "stmt:3324d300d2efb6d8dcbbdc4c"
+      ]
+    },
+    {
       "tag": "참정권",
       "path": "/t/%EC%B0%B8%EC%A0%95%EA%B6%8C",
       "count": 1,
@@ -1192,7 +1364,7 @@
     {
       "tag": "측정",
       "path": "/t/%EC%B8%A1%EC%A0%95",
-      "count": 11,
+      "count": 15,
       "dateRange": {
         "from": "1991-01-01",
         "to": "2026-06-19"
@@ -1205,7 +1377,11 @@
         "stmt:3a2ae5d9219c9be87de14ae7",
         "stmt:24094c14f92b5c8fb482e57d",
         "stmt:5525ea7692e7f4eea17971f5",
+        "stmt:75fc8d303885c2159f99099d",
+        "stmt:d78f27d3e447961d8e0f492b",
         "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:0010711e717716056a9118a7",
+        "stmt:495acd373d4c3a4c610127ac",
         "stmt:b18e2813819c4fb0e23830f6",
         "stmt:4b794b8163eb2161d4a9b949",
         "stmt:efddfa77db78be598d007d7e"
@@ -1262,40 +1438,56 @@
     {
       "tag": "투표소수",
       "path": "/t/%ED%88%AC%ED%91%9C%EC%86%8C%EC%88%98",
-      "count": 1,
+      "count": 3,
       "dateRange": {
         "from": "2026-06-03",
-        "to": "2026-06-03"
+        "to": "2026-06-09"
       },
       "propositionIds": [
-        "stmt:cb0719e9aac6e4c86677d2e5"
+        "stmt:cb0719e9aac6e4c86677d2e5",
+        "stmt:0010711e717716056a9118a7",
+        "stmt:495acd373d4c3a4c610127ac"
       ]
     },
     {
       "tag": "투표용지부족",
       "path": "/t/%ED%88%AC%ED%91%9C%EC%9A%A9%EC%A7%80%EB%B6%80%EC%A1%B1",
-      "count": 17,
+      "count": 31,
       "dateRange": {
         "from": "2025-12-01",
         "to": "2026-07-02"
       },
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
+        "stmt:75fc8d303885c2159f99099d",
+        "stmt:d78f27d3e447961d8e0f492b",
+        "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:2e87b3750aadd61ef8e2b6c0",
         "stmt:921a9dc8a1b5b268e0f4c807",
         "stmt:c890b5f8ca77961c84b58268",
         "stmt:cb0719e9aac6e4c86677d2e5",
         "stmt:6ec9cbff53f71a505b22823f",
+        "stmt:4f11124d8afde3e1fa6d0050",
+        "stmt:b0b35403a2822612a749bbd1",
         "stmt:1426e28acba929903bbe8736",
         "stmt:c11b6f2081e8fa1c38bae49d",
         "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:0010711e717716056a9118a7",
+        "stmt:495acd373d4c3a4c610127ac",
         "stmt:a2c80ef637dd92021cbbd92b",
+        "stmt:3324d300d2efb6d8dcbbdc4c",
+        "stmt:b76037b935bcd6803ab934ab",
+        "stmt:f08703cdaffb0328c82f293c",
+        "stmt:48afea861840a1d07ad8d250",
+        "stmt:a2b9f8780cb8ba76b3f3771c",
+        "stmt:0a58cbf2ef6649107049e597",
         "stmt:12ebbd81f7cfbbcaf5048a0e",
         "stmt:5bf64ededa100f82163dcab1",
         "stmt:83702707422e50c0a56fb565",
         "stmt:d180b65d5e8f431a52ed1eec",
         "stmt:e2b37f73256b9885410a5c01",
         "stmt:29c85dfda2751f0ac6e0fa1a",
+        "stmt:dc42960aa42792c924b4d58b",
         "stmt:ee1b50f655876f2f4da585e8"
       ]
     },
@@ -1321,6 +1513,18 @@
       },
       "propositionIds": [
         "stmt:840aa7c32d8f6372cd968fb6"
+      ]
+    },
+    {
+      "tag": "한국갤럽",
+      "path": "/t/%ED%95%9C%EA%B5%AD%EA%B0%A4%EB%9F%BD",
+      "count": 1,
+      "dateRange": {
+        "from": "2026-06-01",
+        "to": "2026-06-01"
+      },
+      "propositionIds": [
+        "stmt:75fc8d303885c2159f99099d"
       ]
     },
     {

@@ -18,8 +18,55 @@ Storage boundary: the reservoir stores verified propositions and evidence struct
 Entity hubs: /e/{slug}/ pages and /api/v2/entities.json are deterministic derived navigation layers from sixW.who and sixW.why[].statedBy only. They are not entity profiles and assert no facts about the entity itself (제15).
 
 generatedAt: 2026-07-02
-total: 46
+total: 60
 recordOrder: updatedAt desc, then propositionId asc
+
+=== stmt:0010711e717716056a9118a7 ===
+propositionId: stmt:0010711e717716056a9118a7
+humanUrl: /p/stmt-0010711e717716056a9118a7/
+jsonUrl: /api/v2/propositions/stmt-0010711e717716056a9118a7.json
+canonicalProposition: 한국일보는 6·3 지방선거에서 투표용지 인쇄량이 유권자 수의 50% 미만이었던 투표소가 전국 1,371곳(전국 투표소의 9.6%)에 달했다고 단독 보도했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 한국일보(단독 보도)
+  when: 2026-06-09 보도
+  where: 6·3 지방선거 전국 투표소
+  what: 투표용지 인쇄량이 유권자 수의 50% 미만이었던 투표소가 전국 1,371곳(전국 투표소의 9.6%)에 달했다고 보도했다
+  how: 한국일보가 확보한 자료를 근거로 50% 미만 투표소 수와 비율을 집계해 단독 보도했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.hankookilbo.com/news/article/A2026060911080000641; shortQuote: "50% 미만이었던 투표소가 1,371곳에 달한 것으로 드러났다"
+limitations: 한국일보 단독 보도로 집계 원자료와 산정 방법을 다른 출처로 교차 확인하지 못했다. 1,371곳(50% 미만 인쇄)은 선관위 집계 부족 91곳(별개 명제)·추가 물량 송부 140곳(별개 명제)과 다른 지표이며 혼동해서는 안 된다. 인쇄량 50% 미만이 고의·부정을 의미하지는 않는다.
+tags: 2026지방선거, 사건단위, 정치주장, 측정, 투표소수, 투표용지부족
+
+=== stmt:0a58cbf2ef6649107049e597 ===
+propositionId: stmt:0a58cbf2ef6649107049e597
+humanUrl: /p/stmt-0a58cbf2ef6649107049e597/
+jsonUrl: /api/v2/propositions/stmt-0a58cbf2ef6649107049e597.json
+canonicalProposition: 국회는 2026년 6월 18일 본회의에서 '제9회 전국동시지방선거 투표용지 부족 사태 등 국민참정권 침해 진상규명 및 선거관리 개혁을 위한 국정조사계획서'를 여야 합의로 의결해 18일부터 45일간 국정조사를 실시하기로 하고, 특별위원회를 더불어민주당 9명·국민의힘 7명·비교섭단체 2명 등 18명으로 구성하며 위원장은 국민의힘 윤상현 의원이 맡았다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 국회(본회의)
+  when: 2026년 6월 18일 의결, 18일부터 45일간 국정조사
+  where: 국회 본회의 및 국정조사특별위원회
+  what: 투표용지 부족 사태 국정조사계획서를 여야 합의로 의결하고, 특위를 더불어민주당 9명·국민의힘 7명·비교섭단체 2명 등 18명으로 구성하며 위원장은 국민의힘 윤상현 의원이 맡았다
+  how: 본회의에서 국정조사계획서를 여야 합의로 의결하고 특위를 구성했다
+  why: 투표용지 부족 사태 등 국민참정권 침해 진상규명 및 선거관리 개혁을 위한 것 (statedBy: 국회(국정조사계획서 제목 문언))
+correctionHistory: none
+evidence:
+  - url: https://www.khan.co.kr/article/202606181638001/; shortQuote: "국회 국정조사가 18일부터 45일간 실시된다. 국정조사특별위원회 위원장은 윤상현"
+  - url: https://www.etoday.co.kr/news/view/2595017; shortQuote: "더불어민주당 9명, 국민의힘 7명, 비교섭단체 2명 등 18명으로 꾸려진다"
+limitations: 본회의 회의록·국정조사계획서 원문을 직접 fetch하지 못해 언론 전재에 의존한다. 국정조사 의결은 절차 착수일 뿐 조사 결과·부정선거 여부와 무관하다. 이 사건은 국정조사 특위의 7월 2일 올림픽공원 현장검증(별개 명제)에 앞선 의결·구성 단계다.
+tags: 2026지방선거, 국정조사, 국회, 사건단위, 정치주장, 투표용지부족
 
 === stmt:0f10895abcff81a55ff783d6 ===
 propositionId: stmt:0f10895abcff81a55ff783d6
@@ -200,6 +247,30 @@ evidence:
 limitations: 이 명제는 1965년 6월 22일 조약 서명 사실에 한정한다. 청구권·배상·개인청구권·식민지배 불법성 해석은 별개 쟁점이며 본 명제에 저장하지 않았다.
 tags: 1965, 대한민국, 일본, 조약서명, 한국근현대사, 한일기본조약
 
+=== stmt:3324d300d2efb6d8dcbbdc4c ===
+propositionId: stmt:3324d300d2efb6d8dcbbdc4c
+humanUrl: /p/stmt-3324d300d2efb6d8dcbbdc4c/
+jsonUrl: /api/v2/propositions/stmt-3324d300d2efb6d8dcbbdc4c.json
+canonicalProposition: 중앙선거관리위원회는 6·3 지방선거 투표용지 부족 사태의 원인·책임 소재 규명을 위해 6월 10일부터 19일까지 시민단체·법조계·언론계·학계 추천 외부 인사 6명으로 구성되고 한국여성변호사회 회장을 지낸 조현욱 변호사가 위원장을 맡는 '투표지 부족 사태 진상규명위원회'를 운영한다고 밝혔다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 중앙선거관리위원회
+  when: 2026년 6월 10일~19일(운영 기간)
+  where: 중앙선거관리위원회 '투표지 부족 사태 진상규명위원회'
+  what: 시민단체·법조계·언론계·학계 추천 외부 인사 6명으로 구성되고 조현욱 변호사가 위원장을 맡는 진상규명위원회를 6월 10~19일 운영한다고 밝혔다
+  how: 외부 인사로 진상규명위원회를 구성해 운영 계획을 발표했다
+  why: 투표용지 부족 사태의 원인과 책임 소재를 규명하기 위한 것 (statedBy: 중앙선거관리위원회)
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606090501132196; shortQuote: "오는 10일부터 19일까지 '투표지 부족 사태 진상규명위원회'를 운영한다"
+  - url: https://www.fnnews.com/news/202606090501132196; shortQuote: "학계 추천 외부 인사 6명으로 구성되며, 한국여성변호사회 회장을 지낸 조현욱 변호사가 위원장을 맡는다"
+limitations: 선관위 발표 원문을 직접 fetch하지 못해 언론 전재에 의존한다. 위원회는 사태 당사자인 선관위가 구성한 자체 기구로 독립성 평가는 별개 문제이며 이 명제는 구성·운영 사실만 기록한다. 위원 6명 개별 명단은 저장하지 않았다.
+tags: 2026지방선거, 사건단위, 정치주장, 중앙선거관리위원회, 진상규명위원회, 투표용지부족
+
 === stmt:38c8e4c00c63fa0fc9b00eb3 ===
 propositionId: stmt:38c8e4c00c63fa0fc9b00eb3
 humanUrl: /p/stmt-38c8e4c00c63fa0fc9b00eb3/
@@ -247,6 +318,54 @@ evidence:
 limitations: 공포일 확인에 한정하며 법률의 시행 효과나 사회적 평가는 판단하지 않는다.
 tags: 개인정보보호, 공포, 법률제10465호
 
+=== stmt:48afea861840a1d07ad8d250 ===
+propositionId: stmt:48afea861840a1d07ad8d250
+humanUrl: /p/stmt-48afea861840a1d07ad8d250/
+jsonUrl: /api/v2/propositions/stmt-48afea861840a1d07ad8d250.json
+canonicalProposition: 송언석 국민의힘 의원 분석 자료에 따르면 서울 송파구는 구청장 선거 투표용지 인쇄 단가를 예산 편성 당시 장당 30원으로 적용했으나 실제로는 50% 비싼 장당 45원을 적용했고, 그 결과 30원 단가로는 약 42만4천200장을 인쇄할 수 있었으나 인쇄 물량이 28만800장에 그친 것으로 계산됐다고 파이낸셜뉴스가 보도했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 국민의힘 송언석 의원(파이낸셜뉴스 보도)
+  when: 2026-06-17 보도
+  where: 서울 송파구 구청장 선거 투표용지 인쇄 단가에 관한 송언석 의원실 분석 자료
+  what: 송파구가 인쇄 단가를 예산 편성 시 장당 30원으로 적용했으나 실제로는 50% 비싼 장당 45원을 적용했고, 30원 기준 약 42만4천200장을 인쇄할 수 있었으나 인쇄 물량이 28만800장에 그친 것으로 계산됐다
+  how: 송언석 의원이 선관위 제출 자료를 분석해 단가 차이에 따른 인쇄 물량 감소를 계산한 결과를 공개하고 언론이 보도했다
+  why: 예산 단가와 실제 적용 단가의 차이가 투표용지 인쇄량 감소로 이어졌음을 지적하려는 것 (statedBy: 국민의힘 송언석 의원(파이낸셜뉴스 보도 문맥))
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606170515222493; shortQuote: "'장당 30원'으로 적용했으나, 실제로는 그보다 50% 비싼 '장당 45원'으로 적용"
+  - url: https://www.fnnews.com/news/202606170515222493; shortQuote: "인쇄 물량은 결과적으로 28만800장에 그쳤다"
+limitations: 선관위 인쇄 계약 원자료와 의원실 계산식을 직접 fetch하지 못해 단가·물량을 독립 검증하지 못했다. 42만4천200장은 '30원 단가를 유지했을 때 가능했을 물량'이라는 송언석 의원의 가정 계산이며 실제 인쇄량은 28만800장으로 보도됐다. 단가 상향이 인쇄 축소의 고의·부정을 의미하지는 않는다.
+tags: 2026지방선거, 국민의힘, 문서내용, 사건단위, 송파구, 예산, 정치주장, 투표용지부족
+
+=== stmt:495acd373d4c3a4c610127ac ===
+propositionId: stmt:495acd373d4c3a4c610127ac
+humanUrl: /p/stmt-495acd373d4c3a4c610127ac/
+jsonUrl: /api/v2/propositions/stmt-495acd373d4c3a4c610127ac.json
+canonicalProposition: 중앙선거관리위원회는 6·3 지방선거 본투표 당일 투표용지 부족이 예상돼 추가 물량을 송부한 투표소가 전국 140곳으로 집계됐다고 발표했다(전국 투표소 총 1만4288개)
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 중앙선거관리위원회
+  when: 2026-06-09 보도(6·3 본투표 당일 기준)
+  where: 전국 투표소(총 1만4288개 중 140곳)
+  what: 본투표 당일 투표용지 부족이 예상돼 추가 물량을 송부한 투표소가 전국 140곳으로 집계됐다고 발표했다
+  how: 본투표 당일 투표용지 부족 예상 투표소에 추가 물량을 송부하고 그 투표소 수를 집계해 발표했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606090501132196; shortQuote: "추가 물량을 송부한 투표소는 전국 140곳으로 집계됐다"
+  - url: https://www.fnnews.com/news/202606090501132196; shortQuote: "전국 투표소는 총 1만4288개였다"
+limitations: 선관위 1차 발표 원문을 직접 fetch하지 못해 언론 전재에 의존한다. '추가 송부 140곳'은 선관위 집계 부족 91곳(별개 명제)·한국일보 보도 50% 미만 인쇄 1,371곳(별개 명제)과 다른 지표이며 혼동해서는 안 된다.
+tags: 2026지방선거, 사건단위, 중앙선거관리위원회, 측정, 투표소수, 투표용지부족
+
 === stmt:4ae4c94174dc3aaf651102d2 ===
 propositionId: stmt:4ae4c94174dc3aaf651102d2
 humanUrl: /p/stmt-4ae4c94174dc3aaf651102d2/
@@ -272,6 +391,30 @@ evidence:
   - url: https://lroc.im-ldi.com/featured_sites/51; shortQuote: "Mare Tranquillitatis [0.67416° N, 23.47314° E]"
 limitations: 착륙 시각은 출처에 따라 20:17(분 단위)~20:17:40(초 단위) UTC로 표기되며, 본 명제는 가장 정밀한 1차 출처(NASA NSSDCA) 기준 20:17:40을 채택. 좌표는 LROC Featured Sites가 제시한 0.67416° N, 23.47314° E와 일치하며, 후대 LRO 이미지 기반 확정값이므로 1969년 당시 추정 좌표와는 정밀도 차이가 있을 수 있음.
 tags: 1969, 아폴로계획, 역사적사건, 우주
+
+=== stmt:4f11124d8afde3e1fa6d0050 ===
+propositionId: stmt:4f11124d8afde3e1fa6d0050
+humanUrl: /p/stmt-4f11124d8afde3e1fa6d0050/
+jsonUrl: /api/v2/propositions/stmt-4f11124d8afde3e1fa6d0050.json
+canonicalProposition: 노태악 중앙선거관리위원장은 2026년 6월 5일 투표용지 부족 사태에 대한 대국민 사과에서 '이 모든 사태에 대한 책임을 통감하면서 저 역시 중앙선거관리위원장직에서 물러나겠습니다'라며 사퇴 의사를 밝혔고, 허철훈 사무총장도 사의를 표명했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 노태악 중앙선거관리위원장, 허철훈 사무총장
+  when: 2026년 6월 5일(선거 이틀 만)
+  where: 중앙선거관리위원회 대국민 사과
+  what: 노태악 위원장이 '책임을 통감하면서 중앙선거관리위원장직에서 물러나겠다'며 사퇴 의사를 밝혔고, 허철훈 사무총장도 사의를 표명했다
+  how: 투표용지 부족 사태에 대한 대국민 사과 자리에서 사퇴·사의 의사를 밝혔다
+  why: 투표용지 부족 사태에 대한 책임을 통감하기 때문 (statedBy: 노태악 중앙선거관리위원장)
+correctionHistory: none
+evidence:
+  - url: https://imnews.imbc.com/replay/2026/nw1700/article/6828050_36981.html; shortQuote: "이 모든 사태에 대한 책임을 통감하면서 저 역시 중앙선거관리위원장직에서 물러나겠습니다"
+  - url: https://imnews.imbc.com/replay/2026/nw1700/article/6828050_36981.html; shortQuote: "노태악 중앙선거관리위원장과 허철훈 사무총장은 사의를 표명했습니다"
+limitations: 사퇴·사의 '의사 표명' 사실만 저장했으며 이후 사퇴 수리·철회·후속 인사는 이 보도로 확인하지 못했다. 사퇴 의사 표명이 책임의 법적 성립이나 부정선거를 의미하지는 않는다.
+tags: 2026지방선거, 사건단위, 사퇴, 정치주장, 중앙선거관리위원회, 투표용지부족
 
 === stmt:4f96ea07a89511c2ea0a86a3 ===
 propositionId: stmt:4f96ea07a89511c2ea0a86a3
@@ -449,6 +592,33 @@ evidence:
 limitations: 이 명제는 정전협정 서명 행위에 한정한다. 대한민국은 협정 서명자로 기재되지 않았다는 사실을 함께 유의해야 한다. 정전협정의 법적 효과, 평화협정 부재, 전쟁의 종료 여부에 관한 해석은 포함하지 않는다.
 tags: 1953, 유엔군사령부, 조선인민군, 중국인민지원군, 한국근현대사, 한국정전협정
 
+=== stmt:75fc8d303885c2159f99099d ===
+propositionId: stmt:75fc8d303885c2159f99099d
+humanUrl: /p/stmt-75fc8d303885c2159f99099d/
+jsonUrl: /api/v2/propositions/stmt-75fc8d303885c2159f99099d.json
+canonicalProposition: 한국갤럽은 2026년 6월 9~11일 전국 만 18세 이상 1,002명 전화조사에서 6·3 지방선거 투표용지 부족에 따른 '전면 재선거' 주장에 찬성 44%·반대 48%(20·30대는 찬성 60% 이상)로, 사태 인식은 '부실한 선거 관리·참정권 침해' 67%·'불법적 선거 개입·부정선거 시도 증거' 25%로 집계했다고 발표했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 한국갤럽
+  when: 조사 2026년 6월 9~11일
+  where: 전국(만 18세 이상)
+  what: '전면 재선거' 주장 찬성 44%·반대 48%(20·30대 찬성 60% 이상), 사태 인식 '부실한 선거 관리·참정권 침해' 67%·'불법적 선거 개입·부정선거 시도 증거' 25%로 집계했다
+  how: 전국 성인 1,002명 전화조사 응답 비율을 집계해 발표했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606121110010099; shortQuote: "한국갤럽이 지난 9~11일 전국 만 18세 이상 1천2명을 상대로"
+  - url: https://www.fnnews.com/news/202606121033296171; shortQuote: "전면 재선거 찬성 44%·반대 48%"
+  - url: https://www.fnnews.com/news/202606121033296171; shortQuote: "2030의 전면 재선거 찬성률은 60%를 웃도는"
+  - url: https://weekly.khan.co.kr/article/202606121204001/; shortQuote: "인식한다는 응답자가 전체 67%였고"
+  - url: https://weekly.khan.co.kr/article/202606121204001/; shortQuote: "25% 부정선거"
+limitations: 한국갤럽 자체 조사로 의뢰처와 조사기관이 동일하다. 원 데이터셋·교차집계표(PDF)와 세부 방법론(응답률 등)은 fetchable 출처로 확인하지 않았다. 여론조사 수치는 표본·방법에 따라 달라지는 측정값이며 민심의 확정 사실이 아니다. 주간경향 표제는 관리부실:부정선거를 75:25로 요약하나 본문은 부실 관리·참정권 침해 67%로 세분한다. 뉴데일리·리서치웰 등 다른 조사는 방법·결과가 달라 별개 명제로 보관한다.
+tags: 2026지방선거, 사건단위, 여론조사, 재선거, 측정, 투표용지부족, 한국갤럽
+
 === stmt:83702707422e50c0a56fb565 ===
 propositionId: stmt:83702707422e50c0a56fb565
 humanUrl: /p/stmt-83702707422e50c0a56fb565/
@@ -567,6 +737,30 @@ evidence:
 limitations: 이 명제는 권고의견 발령 일자와 사건명에만 한정한다. 권고의견의 법적 구속력, 개별 국가 책임, 배상 가능성은 별도 법률 해석 영역이다.
 tags: 2025, 국제사건, 권고의견, 기후변화, 최근1년, ICJ
 
+=== stmt:a2b9f8780cb8ba76b3f3771c ===
+propositionId: stmt:a2b9f8780cb8ba76b3f3771c
+humanUrl: /p/stmt-a2b9f8780cb8ba76b3f3771c/
+jsonUrl: /api/v2/propositions/stmt-a2b9f8780cb8ba76b3f3771c.json
+canonicalProposition: 국민의힘 송언석 의원은 중앙선거관리위원회 제출 자료를 분석해 선관위가 6·3 지방선거 투표용지 인쇄 예산을 총 145억1957만원 편성했으나 편성액의 56.5%인 82억498만원만 집행했고, 지역별 집행률은 울산이 90.3%로 가장 높고 세종이 27.2%로 가장 낮았다고 밝혔다고 파이낸셜뉴스가 보도했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 국민의힘 송언석 의원(파이낸셜뉴스 보도)
+  when: 2026-06-17 보도
+  where: 중앙선거관리위원회 제출 자료를 분석한 송언석 의원실 자료
+  what: 선관위가 투표용지 인쇄 예산을 총 145억1957만원 편성했으나 편성액의 56.5%인 82억498만원만 집행했고, 지역별 집행률은 울산 90.3%로 최고·세종 27.2%로 최저였다고 밝혔다
+  how: 송언석 의원이 선관위 제출 자료를 분석한 결과를 공개하고 언론이 이를 보도했다
+  why: 예산 편성·집행 내역과 지역별 집행률 편차를 통해 투표용지 인쇄 축소 실태를 지적하려는 것 (statedBy: 국민의힘 송언석 의원(파이낸셜뉴스 보도 문맥))
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606170515222493; shortQuote: "총 145억1천957만원을 편성했지만, 편성액의 56.5% 수준인 82억498만원만 실제 집행"
+  - url: https://www.fnnews.com/news/202606170515222493; shortQuote: "울산이 90.3%로 가장 높았고 제주(79.2%), 경남(75.2%), 강원(71.7%), 대전(71.1%)"
+limitations: 선관위 원예산 자료와 송언석 의원실 분석 원문을 직접 fetch하지 못해 편성·집행액과 집행률 산정 방식을 독립 검증하지 못했다. 수치는 송언석 의원이 분석·발표한 값이며, 낮은 집행률이 인쇄 축소의 고의·부정을 의미하지는 않는다. 선관위는 '1.1배 기준은 경비 산출 기준일 뿐'·'사전투표율 증가로 50% 기준 인쇄'라고 해명한 바 있으며 이는 별개 명제로 보관한다.
+tags: 2026지방선거, 국민의힘, 문서내용, 사건단위, 예산, 정치주장, 중앙선거관리위원회, 투표용지부족
+
 === stmt:a2c80ef637dd92021cbbd92b ===
 propositionId: stmt:a2c80ef637dd92021cbbd92b
 humanUrl: /p/stmt-a2c80ef637dd92021cbbd92b/
@@ -642,6 +836,29 @@ evidence:
 limitations: NASA/JSC EOL 사진 카탈로그의 공개 텍스트에서는 AS08-14-2383의 Date taken 필드가 비어 있었다. 1968-12-24 날짜는 NASA APOD의 2018-12-24 기념일 문구와 NASA SVS의 Apollo 8 Earthrise 재구성 문맥으로 보강했다. 촬영자를 특정 개인으로 단정하지 않고 Apollo 8 승무원으로 표현했다.
 tags: 아폴로8, 우주사진, 지구과학, 지구형상, Earthrise, NASA
 
+=== stmt:b0b35403a2822612a749bbd1 ===
+propositionId: stmt:b0b35403a2822612a749bbd1
+humanUrl: /p/stmt-b0b35403a2822612a749bbd1/
+jsonUrl: /api/v2/propositions/stmt-b0b35403a2822612a749bbd1.json
+canonicalProposition: 나경원 국민의힘 의원은 2026년 6월 5일 페이스북에서 6·3 지방선거 투표용지 부족 사태를 두고 선거 무효에 해당할 만큼 중대한 하자라며 선거 승패와 상관없이 전면 재선거가 치러져야 한다고 주장했다고 조선일보(다음 재게재)가 보도했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 나경원 국민의힘 의원
+  when: 2026년 6월 5일
+  where: 나경원 의원 페이스북(조선일보 보도, 다음 재게재)
+  what: 6·3 지방선거 투표용지 부족 사태를 '선거 무효에 해당할 만큼 중대한 하자'라며 '선거 승패와 상관없이 전면 재선거가 치러지도록 해야 한다'고 주장했다
+  how: 페이스북에 글을 올려 전면 재선거를 주장했다
+  why: 투표용지 부족이 선거 무효에 해당할 만큼 중대한 하자라는 것 (statedBy: 나경원 국민의힘 의원)
+correctionHistory: none
+evidence:
+  - url: https://v.daum.net/v/20260605122105376; shortQuote: "“선거 무효에 해당할 만큼 중대한 하자”라며 “선거 승패와 상관없이 전면 재선거가 치러지도록 해야 한다”"
+limitations: 나경원 의원 페이스북 원문을 직접 fetch하지 못해 조선일보(다음 재게재) 보도 인용에 의존한다. '전면 재선거'는 정치적 주장이며 법적으로 확정된 것이 아니다. 선관위와 여당은 부정선거 증거가 없다는 취지로 반박한 바 있으며 이는 별개 명제로 보관한다.
+tags: 2026지방선거, 국민의힘, 사건단위, 재선거, 정치주장, 주장, 투표용지부족
+
 === stmt:b18e2813819c4fb0e23830f6 ===
 propositionId: stmt:b18e2813819c4fb0e23830f6
 humanUrl: /p/stmt-b18e2813819c4fb0e23830f6/
@@ -694,6 +911,30 @@ evidence:
   - url: https://en.wikipedia.org/wiki/Surrender_of_Japan; shortQuote: "on 15 August announcing the surrender"
 limitations: 이 명제는 1945년 8월 15일 항복 공표 행위에 한정한다. 한국의 식민지 지배 종료, 해방의 의미, 1945년 9월 2일 항복문서 서명, 전후 점령 절차는 별도 명제로 분리해야 한다.
 tags: 1945, 옥음방송, 일본항복공표, 제2차세계대전, 한국근현대사
+
+=== stmt:b76037b935bcd6803ab934ab ===
+propositionId: stmt:b76037b935bcd6803ab934ab
+humanUrl: /p/stmt-b76037b935bcd6803ab934ab/
+jsonUrl: /api/v2/propositions/stmt-b76037b935bcd6803ab934ab.json
+canonicalProposition: 서울동부지방법원 민사51단독(김지연 부장판사)은 2026년 6월 12일 김정철 개혁신당 최고위원이 추가로 신청한 증거보전 가운데 잠실7동 제2투표소 투표용지 보관상자의 폐기물 처리 업체·인계 시기·폐기 일시 사실조회 등 일부를 인용하고, 올림픽공원 핸드볼경기장에 보관된 투표지·투표함 등에 대한 검증 신청은 기각했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 서울동부지방법원 민사51단독(김지연 부장판사)
+  when: 2026년 6월 12일
+  where: 서울동부지방법원(대상: 잠실7동 제2투표소 보관상자, 올림픽공원 핸드볼경기장 보관 투표지·투표함)
+  what: 김정철 개혁신당 최고위원의 추가 증거보전 신청 중 잠실7동 제2투표소 투표용지 보관상자의 폐기 경위(업체 상호·인계 시기·폐기 일시) 사실조회 등 일부를 인용하고, 올림픽공원 핸드볼경기장 보관 투표지·투표함 검증 신청은 기각했다
+  how: 법원이 추가 증거보전 신청에 대해 일부 인용·일부 기각 결정을 내렸다
+  why: 기각 부분은 증거보전 필요성이 없다는 취지 (statedBy: 서울동부지방법원(법률신문 보도 문맥))
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606121600462255; shortQuote: "김정철 개혁신당 최고위원이 추가로 신청한 증거보전 대상 가운데 일부를 받아들였다"
+  - url: https://www.lawtimes.co.kr/news/articleView.html?idxno=221988; shortQuote: "투표용지 보관 상자를 인계받은 폐기물 처리 업체의 상호와 업체에 인계한 시기, 폐기 일시"
+limitations: 법원 결정문 원문을 직접 fetch하지 못해 인용·기각된 세부 항목의 정확한 전체 범위는 확정하지 못했다. 이 결정은 기존 6월 9일 증거보전 명령·6월 3일 김정철 최초 신청과 구분되는 6월 12일 추가 신청에 대한 결정이다. 일부 인용은 증거보전 필요성 판단일 뿐 부정선거를 확인한 것이 아니다.
+tags: 2026지방선거, 개혁신당, 법원, 사건단위, 정치주장, 증거보전, 투표용지부족
 
 === stmt:b9a4dcf237affc17c1a51fe6 ===
 propositionId: stmt:b9a4dcf237affc17c1a51fe6
@@ -815,6 +1056,56 @@ evidence:
 limitations: 예산 편성액·집행액·집행률 원자료는 확인하지 못했다. 이상능 국장의 1.1배 경비 기준 발언을 같은 취지로 싣는 fetch 가능한 추가 독립 출처는 이번 재검수에서 확인하지 못했다.
 tags: 2026지방선거, 예산해명, 정치주장, 중앙선거관리위원회, 투표용지부족
 
+=== stmt:d78f27d3e447961d8e0f492b ===
+propositionId: stmt:d78f27d3e447961d8e0f492b
+humanUrl: /p/stmt-d78f27d3e447961d8e0f492b/
+jsonUrl: /api/v2/propositions/stmt-d78f27d3e447961d8e0f492b.json
+canonicalProposition: 뉴데일리가 여론조사기관 '리서치웰'에 의뢰해 2026년 6월 10~11일 전국 만 18세 이상 남녀 1004명을 자동응답(ARS) 방식(응답률 2.7%, 표본오차 ±3.1%포인트·95% 신뢰수준)으로 조사한 결과, 중앙선거관리위원회 해체 찬성 70.4%·반대 17.7%, 사전투표제 폐지 찬성 53.3%로 집계됐다고 보도했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 리서치웰(뉴데일리 의뢰)
+  when: 조사 2026년 6월 10~11일
+  where: 전국(만 18세 이상)
+  what: 중앙선거관리위원회 해체 찬성 70.4%·반대 17.7%, 사전투표제 폐지 찬성 53.3%로 집계됐다
+  how: 전국 만 18세 이상 남녀 1004명을 자동응답(ARS) 방식으로 조사해 응답 비율을 집계했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.newdaily.co.kr/site/data/html/2026/06/12/2026061200136.html; shortQuote: "뉴데일리가 여론조사기관 '리서치웰'에 의뢰한 여론조사 결과가 발표됐다"
+  - url: https://www.newdaily.co.kr/site/data/html/2026/06/12/2026061200136.html; shortQuote: "선관위 해체에 찬성한다는 응답은 70.4%로 집계됐다"
+  - url: https://www.newdaily.co.kr/site/data/html/2026/06/12/2026061200136.html; shortQuote: "자동응답(ARS) 방식으로 진행됐다. 응답률은 2.7%다. 표본오차는 95% 신뢰수준에 ±3.1%포인트다"
+limitations: 의뢰처가 특정 성향 매체(뉴데일리)이고 응답률이 2.7%로 매우 낮으며 ARS 방식이라 대표성 한계가 크다. 다른 언론의 교차 보도를 확인하지 못했고 리서치웰 원자료도 확인하지 못했다. 응답률·방법이 다른 한국갤럽 조사(자체 조사, CATI, 응답률 11.3%)와 결과가 달라 별개 명제로 보관한다. 여론조사 수치는 측정값이며 민심의 확정 사실이 아니다.
+tags: 2026지방선거, 사건단위, 여론조사, 중앙선거관리위원회, 측정, 투표용지부족
+
+=== stmt:dc42960aa42792c924b4d58b ===
+propositionId: stmt:dc42960aa42792c924b4d58b
+humanUrl: /p/stmt-dc42960aa42792c924b4d58b/
+jsonUrl: /api/v2/propositions/stmt-dc42960aa42792c924b4d58b.json
+canonicalProposition: 국가법령정보센터(law.go.kr)의 공직선거법은 제224조에서 선거에 관한 규정 위반이 있어도 선거 결과에 영향을 미쳤다고 인정하는 때에 한하여 선거의 전부·일부 무효 또는 당선 무효를 결정·판결하고, 제219조에서 지방선거 선거 효력에 이의가 있는 선거인·정당·후보자는 선거일부터 14일 이내에 소청하도록, 제222조 제2항에서 지방선거 선거소청 기각·각하 결정 등에 불복하는 소청인은 결정서를 받은 날부터 10일 이내에 소를 제기하도록 규정한다
+factualGrade/status: fully_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 국가법령정보센터(law.go.kr) 게시 공직선거법
+  when: 2026-07-02 조회 시점의 현행 조문
+  where: 공직선거법 제224조·제219조·제222조
+  what: 제224조는 선거 결과에 영향을 미쳤다고 인정하는 때에 한하여 선거 전부·일부 무효 또는 당선 무효를 결정·판결한다고, 제219조는 선거 효력에 이의가 있는 선거인·정당·후보자가 선거일부터 14일 이내에 소청하도록, 제222조 제2항은 지방선거 선거소청 기각·각하 결정 등에 불복 시 결정서를 받은 날부터 10일 이내에 소를 제기하도록 규정한다
+  how: 국가법령정보센터에 게시된 현행 공직선거법 조문으로 기재되어 있다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=900673751&chrClsCd=010202; shortQuote: "선거의 결과에 영향을 미쳤다고 인정하는 때에 한하여 선거의 전부나 일부의 무효"
+  - url: https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=900673751&chrClsCd=010202; shortQuote: "선거의 효력에 관하여 이의가 있는 선거인"
+  - url: https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=900673751&chrClsCd=010202; shortQuote: "부터 10일 이내에"
+limitations: 조문 문언만 저장했으며 이번 사태에 대한 실제 적용·소청·소송 결과는 판정하지 않는다. 각 조의 항·호 전문은 15단어 verbatim 제한상 핵심 문언만 담았다. 현행 제224조는 '결과에 영향을 미쳤다고 인정하는 때에 한하여' 무효를 규정하며, 이와 대비되는 나경원 개정안(결과 무관 무효)은 별개 명제로 보관한다.
+tags: 2026지방선거, 공직선거법, 문서내용, 사건단위, 선거소송, 선거소청, 투표용지부족
+
 === stmt:e2b37f73256b9885410a5c01 ===
 propositionId: stmt:e2b37f73256b9885410a5c01
 humanUrl: /p/stmt-e2b37f73256b9885410a5c01/
@@ -863,6 +1154,54 @@ evidence:
   - url: https://www.fnnews.com/news/202607021820277783; shortQuote: "투표함 외부 반출 여부를 두고 다소 이견"
 limitations: 진행 중인 국정조사 사안으로 오늘자(2026-07-02) 보도 기준이며 후속 사실이 추가·정정될 수 있다. 약 247만장은 유·무효를 합한 보관 수량이며 개표 결과와는 별개다. 1차 특위 자료 직접 fetch는 하지 않았고 언론 전재에 의존했다.
 tags: 2026지방선거, 국정조사, 국회, 사건단위, 올림픽공원, 투표용지부족
+
+=== stmt:f08703cdaffb0328c82f293c ===
+propositionId: stmt:f08703cdaffb0328c82f293c
+humanUrl: /p/stmt-f08703cdaffb0328c82f293c/
+jsonUrl: /api/v2/propositions/stmt-f08703cdaffb0328c82f293c.json
+canonicalProposition: 나경원 국민의힘 의원은 선거 결과와 무관하게 선거를 전면 또는 일부 무효로 할 수 있도록 하는 내용의 공직선거법 일부개정안을 대표발의했다고 2026년 6월 12일 밝혔다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 나경원 국민의힘 의원
+  when: 2026년 6월 12일(발의 사실 공개)
+  where: 국회(공직선거법 일부개정안 대표발의)
+  what: 선거 결과와 무관하게 선거를 전면 또는 일부 무효로 할 수 있도록 하는 내용의 공직선거법 일부개정안을 대표발의했다고 밝혔다
+  how: 공직선거법 일부개정안을 대표발의하고 그 사실을 공개했다
+  why: 투표용지 부족 사태 등 참정권 침해 시 선거 결과와 무관하게 선거를 무효화할 수 있도록 하려는 것 (statedBy: 나경원 국민의힘 의원(헤럴드경제·MBC 보도 문맥))
+correctionHistory: none
+evidence:
+  - url: https://biz.heraldcorp.com/article/10770107; shortQuote: "‘선거 결과와 무관하게 선거를 무효로 한다’는 내용을 담은 공직선거법 일부개정안을 대표발의했다고 12일 밝혔다"
+  - url: https://imnews.imbc.com/news/2026/politics/article/6829753_36911.html; shortQuote: "선거를 전면 또는 일부 무효화할 수 있도록 하는 내용의 공직선거법 개정안을 발의했습니다"
+limitations: 개정안 원문·의안번호를 직접 fetch하지 못해 보도 인용에 의존한다. 발의는 입법 성사가 아니며 개정안 통과 여부는 미확정이다. 현행 공직선거법 제224조는 '선거 결과에 영향을 미쳤다고 인정하는 때에 한하여' 무효를 규정하고 있어 개정안은 이와 대비되는 별개 명제로 보관한다.
+tags: 2026지방선거, 공직선거법, 국민의힘, 사건단위, 재선거, 정치주장, 투표용지부족
+
+=== stmt:f9f1fe47c4a18f9de210c3ec ===
+propositionId: stmt:f9f1fe47c4a18f9de210c3ec
+humanUrl: /p/stmt-f9f1fe47c4a18f9de210c3ec/
+jsonUrl: /api/v2/propositions/stmt-f9f1fe47c4a18f9de210c3ec.json
+canonicalProposition: 검경 합동수사본부는 6·3 지방선거 투표용지 부족 사태와 관련해 송파·서초·강남·광진·동작구선관위 등 7곳을 공직선거법 위반·직무유기·업무상 횡령·배임 등 혐의로 압수수색하고, 6월 12일 선관위 서버에 대한 압수수색을 이어가며 확보한 압수물 분석에 착수했다고 보도됐다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-02
+updatedAt: 2026-07-02
+sixW:
+  who: 검경 합동수사본부(합수본)
+  when: 2026년 6월 11~12일(서버 압수수색 이틀째)
+  where: 중앙선거관리위원회 및 송파·서초·강남·광진·동작구선관위 등 7곳
+  what: 선관위 관련 7곳을 공직선거법 위반·직무유기·업무상 횡령·배임 등 혐의로 압수수색하고, 선관위 서버 압수수색을 이어가며 확보한 압수물 분석에 착수했다
+  how: 법원 영장에 따라 압수수색을 집행하고 압수물 분석 작업에 착수했다
+  why: 투표용지 부족 사태의 진상 규명을 위한 것 (statedBy: 검경 합동수사본부(파이낸셜뉴스·아시아투데이 보도 문맥))
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606121051502798; shortQuote: "송파·서초·강남·광진·동작구선관위 등 7곳에 대해 공직선거법 위반, 직무 유기, 업무상 횡령·배임 등 혐의로 압수수색했다"
+  - url: https://www.asiatoday.co.kr/kn/view.php?key=20260612010004362; shortQuote: "이날 선관위 서버에 대한 압수수색을 진행 중이다"
+limitations: 영장·수사 기록 원문을 직접 fetch하지 못해 언론 전재에 의존한다. 압수수색·수사 착수는 혐의 성립·기소·유죄와 무관하며 관련자는 무죄로 추정된다. 이 사건은 이재명 대통령의 6월 7일 합동조사 지시(별개 명제)에 따른 후속 집행이며 지시 자체와 구분된다.
+tags: 2026지방선거, 사건단위, 수사, 압수수색, 정치주장, 중앙선거관리위원회, 투표용지부족
 
 === stmt:fafb5a05023e9541b3e07f1f ===
 propositionId: stmt:fafb5a05023e9541b3e07f1f

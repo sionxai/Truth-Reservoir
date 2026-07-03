@@ -1,0 +1,138 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:0a58cbf2ef6649107049e597",
+  "versionId": "ver:225fa973e42628fd",
+  "certHash": "sha256:753ea4b85c3a92f3507dc957a265ef8f392cb13e4dc69f25c3ee945b67a94f41",
+  "canonicalProposition": "국회는 2026년 6월 18일 본회의에서 '제9회 전국동시지방선거 투표용지 부족 사태 등 국민참정권 침해 진상규명 및 선거관리 개혁을 위한 국정조사계획서'를 여야 합의로 의결해 18일부터 45일간 국정조사를 실시하기로 하고, 특별위원회를 더불어민주당 9명·국민의힘 7명·비교섭단체 2명 등 18명으로 구성하며 위원장은 국민의힘 윤상현 의원이 맡았다",
+  "originalClaim": "국회 6·18 본회의, 투표용지 부족 국정조사계획서 여야 합의 의결(18일부터 45일), 특위 18명(민주 9·국힘 7·비교섭 2), 위원장 윤상현.",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "국회(본회의)",
+    "when": "2026년 6월 18일 의결, 18일부터 45일간 국정조사",
+    "where": "국회 본회의 및 국정조사특별위원회",
+    "what": "투표용지 부족 사태 국정조사계획서를 여야 합의로 의결하고, 특위를 더불어민주당 9명·국민의힘 7명·비교섭단체 2명 등 18명으로 구성하며 위원장은 국민의힘 윤상현 의원이 맡았다",
+    "how": "본회의에서 국정조사계획서를 여야 합의로 의결하고 특위를 구성했다",
+    "why": [
+      {
+        "reason": "투표용지 부족 사태 등 국민참정권 침해 진상규명 및 선거관리 개혁을 위한 것",
+        "statedBy": "국회(국정조사계획서 제목 문언)"
+      }
+    ]
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-02",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "경향신문 본문에서 '국정조사 18일부터 45일간 실시'·'위원장 윤상현'과 계획서 제목·여야 합의 의결이, 이투데이 본문에서 '민주당 9명·국민의힘 7명·비교섭단체 2명 등 18명 구성'이 각각 curl HTTP 200으로 verbatim 확인된다. 본회의 회의록 원문은 확인하지 못해 largely_reliable로 유지했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.khan.co.kr/article/202606181638001/",
+      "title": "국회, ‘투표용지 부족 사태’ 국정조사 의결…6·3 선거 보름만",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "국회 국정조사가 18일부터 45일간 실시된다. 국정조사특별위원회 위원장은 윤상현",
+      "quoteHash": "sha256:7bbf812ae13a92e1e0048241ffc708d23f191d7352563a851f3739d50694e136",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "경향신문 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 계획서 제목·여야 합의 의결 문구도 같은 본문에서 확인했다. 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "khan-20260618-state-investigation",
+      "independenceLevel": "independent",
+      "independenceNote": "국정조사 의결·기간·위원장을 보도한 자동 fetch 가능 언론 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "국회 국정조사 의결을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.etoday.co.kr/news/view/2595017",
+      "title": "‘투표용지 부족’ 선관위 국정조사 45일 착수…위원장엔 국힘 윤상현",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "더불어민주당 9명, 국민의힘 7명, 비교섭단체 2명 등 18명으로 꾸려진다",
+      "quoteHash": "sha256:2e6618378baf294f1fac1565dcb015a74f37d5eda36e3f746033b1cf976daf51",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "이투데이 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "etoday-20260618-committee-composition",
+      "independenceLevel": "independent",
+      "independenceNote": "특위 구성 인원을 보도한 별개 언론 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "국정조사 특위 구성을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "본회의 회의록·국정조사계획서 원문을 확인하지 못했고, 국정조사 의결이 곧 부정선거 확인을 뜻하지 않는다.",
+      "response": "국정조사 의결·기간·특위 구성이라는 절차 사실만 저장하고 조사 결과·부정선거 여부를 판정하지 않았다. 계획서 제목은 국회가 붙인 문언으로 귀속했다.",
+      "errorsFound": 0,
+      "framingChecks": "국정조사 착수를 부정선거 확인으로 해석하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "국정조사는 여야 합의로 의결됐고 특위는 여당 다수·야당 위원장 구조임을 함께 기록해 어느 한쪽만 부각하지 않았다.",
+      "result": "대칭 점검 완료 — 여야 합의·특위 구성을 균형 있게 기록하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "국회 발표라는 권위에 기대지 않고 fetch 가능한 기사 문구만 증거로 삼았다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-02",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 국정조사 18일부터 45일·위원장 윤상현·특위 18명(민주 9·국힘 7·비교섭 2)을 경향·이투데이 curl HTTP 200 본문에서 verbatim 확인했다. 7·2 현장검증(기존 명제)과 다른 6·18 국정조사 의결 사건이다.",
+      "adoptedReason": "두 출처 본문에서 의결·기간·위원장·특위 구성이 확인된다.",
+      "rejectedAlternatives": "여야 간사 명단·증인 채택 세부는 15단어 제한상 핵심 구성만 저장했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 국회 국정조사 의결·구성의 관찰 가능한 사실만 기록하며, 조사 결과·부정선거 여부·책임 소재에 관한 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "본회의 회의록·국정조사계획서 원문을 직접 fetch하지 못해 언론 전재에 의존한다. 국정조사 의결은 절차 착수일 뿐 조사 결과·부정선거 여부와 무관하다. 이 사건은 국정조사 특위의 7월 2일 올림픽공원 현장검증(별개 명제)에 앞선 의결·구성 단계다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "국회",
+    "국정조사",
+    "정치주장",
+    "사건단위"
+  ],
+  "createdAt": "2026-07-02",
+  "updatedAt": "2026-07-02"
+}

@@ -1,0 +1,144 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:a2b9f8780cb8ba76b3f3771c",
+  "versionId": "ver:d930c7ddc5cf66d7",
+  "certHash": "sha256:247880545615a4d2f749800654794bc60b2769f1e0b29be0a0e63c5498a536ed",
+  "canonicalProposition": "국민의힘 송언석 의원은 중앙선거관리위원회 제출 자료를 분석해 선관위가 6·3 지방선거 투표용지 인쇄 예산을 총 145억1957만원 편성했으나 편성액의 56.5%인 82억498만원만 집행했고, 지역별 집행률은 울산이 90.3%로 가장 높고 세종이 27.2%로 가장 낮았다고 밝혔다고 파이낸셜뉴스가 보도했다",
+  "originalClaim": "송언석 의원 분석: 투표용지 인쇄 예산 총 145억1957만원 편성·82억498만원(56.5%) 집행, 지역별 집행률 울산 90.3%~세종 27.2%.",
+  "claimNature": "document_content",
+  "sixW": {
+    "who": "국민의힘 송언석 의원(파이낸셜뉴스 보도)",
+    "when": "2026-06-17 보도",
+    "where": "중앙선거관리위원회 제출 자료를 분석한 송언석 의원실 자료",
+    "what": "선관위가 투표용지 인쇄 예산을 총 145억1957만원 편성했으나 편성액의 56.5%인 82억498만원만 집행했고, 지역별 집행률은 울산 90.3%로 최고·세종 27.2%로 최저였다고 밝혔다",
+    "how": "송언석 의원이 선관위 제출 자료를 분석한 결과를 공개하고 언론이 이를 보도했다",
+    "why": [
+      {
+        "reason": "예산 편성·집행 내역과 지역별 집행률 편차를 통해 투표용지 인쇄 축소 실태를 지적하려는 것",
+        "statedBy": "국민의힘 송언석 의원(파이낸셜뉴스 보도 문맥)"
+      }
+    ]
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-02",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "파이낸셜뉴스 본문에서 송언석 의원 분석 자료의 편성액 145억1957만원·집행액 82억498만원(56.5%)과 지역별 집행률(울산 90.3%·세종 27.2%)이 verbatim 확인된다. 선관위 원자료와 의원실 분석 원문은 직접 fetch하지 못해, 수치를 현실이 아니라 송언석 의원이 분석·주장한 값으로 귀속했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.fnnews.com/news/202606170515222493",
+      "title": "6·3 지선 투표용지 인쇄예산 56.5%만 집행…송언석 “선관위 예산 주먹구구”",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "총 145억1천957만원을 편성했지만, 편성액의 56.5% 수준인 82억498만원만 실제 집행",
+      "quoteHash": "sha256:763c7ac80f848daf2a3923b9a77b1b95970938d9de8c4cd34e9101aff1ddbbb7",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "파이낸셜뉴스 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 원문 전체가 아니라 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "fnnews-20260617-song-budget",
+      "independenceLevel": "independent",
+      "independenceNote": "송언석 의원 분석 자료를 보도한 자동 fetch 가능 언론 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "국회의원 분석 자료와 선관위 예산 내역을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "party_interested",
+        "productionConcerns": [
+          "원자료가 야당(국민의힘) 의원실 분석이라 산정 방식·해석에 정파적 이해가 개입될 수 있다"
+        ],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.fnnews.com/news/202606170515222493",
+      "title": "6·3 지선 투표용지 인쇄예산 56.5%만 집행…송언석 “선관위 예산 주먹구구”",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "울산이 90.3%로 가장 높았고 제주(79.2%), 경남(75.2%), 강원(71.7%), 대전(71.1%)",
+      "quoteHash": "sha256:ed434c417c9d540b12de4eec9defb936d28f784c27f50c996463563f9aa1febd",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "지역별 집행률 문구를 같은 기사 본문에서 verbatim 확인했다. 세종 27.2%는 같은 문단('세종(27.2%)')에서 확인했다.",
+      "independenceGroupId": "fnnews-20260617-song-budget",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "위 편성·집행액과 동일 기사의 별도 문구(지역별 집행률)다. 독립 출처로 중복 계산하지 않는다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "지역별 예산 집행률을 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "party_interested",
+        "productionConcerns": [
+          "야당 의원실 분석 수치로 산정 방식에 정파적 이해가 개입될 수 있다"
+        ],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "선관위 원자료와 의원실 분석 원문을 직접 확인하지 못해 편성·집행액과 집행률 산정 방식을 독립 검증하지 못했고, 낮은 집행률이 곧 고의 인쇄 축소를 의미하지도 않는다.",
+      "response": "수치를 현실이 아니라 송언석 의원이 분석·발표한 값으로 귀속하고, 집행률과 인쇄 축소·부정선거를 인과로 연결하지 않았다. 야당 의원실 분석이라는 생산 주체의 정파적 이해를 provenance와 한계에 명시했다.",
+      "errorsFound": 0,
+      "framingChecks": "예산 미집행·낮은 집행률을 고의·부정으로 연결하지 않고 분석 자료의 수치 주장만 기록했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "야당 의원 분석 주장과 별도로 선관위의 '1.1배는 경비 산출 기준일 뿐'·'50% 기준 인쇄' 해명 명제를 함께 보관한다.",
+      "result": "대칭 점검 완료 — 주장·해명·법적 미확정성을 분리하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "국회의원 직책은 식별 정보이며 분석 수치의 정확성을 보증하지 않는다. 선관위 원자료 미확인분은 한계로 남겼다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-02",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 편성액 145억1957만원·집행액 82억498만원(56.5%)·지역별 집행률(울산 90.3%~세종 27.2%)은 파이낸셜뉴스 curl HTTP 200 본문에서 verbatim 확인했다. 송언석 의원 분석 자료라는 한 문서 사건으로 통합했다.",
+      "adoptedReason": "파이낸셜뉴스 본문에서 편성·집행액과 지역별 집행률이 직접 확인된다.",
+      "rejectedAlternatives": "선관위 원예산서·의원실 분석 원문 수치는 직접 fetch하지 못해 '보도된 분석 자료 내용'으로 한정했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 국회의원 분석 자료의 관찰 가능한 수치 주장만 기록하며, 예산 미집행의 고의성·부정선거 여부·책임 소재에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "선관위 원예산 자료와 송언석 의원실 분석 원문을 직접 fetch하지 못해 편성·집행액과 집행률 산정 방식을 독립 검증하지 못했다. 수치는 송언석 의원이 분석·발표한 값이며, 낮은 집행률이 인쇄 축소의 고의·부정을 의미하지는 않는다. 선관위는 '1.1배 기준은 경비 산출 기준일 뿐'·'사전투표율 증가로 50% 기준 인쇄'라고 해명한 바 있으며 이는 별개 명제로 보관한다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "국민의힘",
+    "중앙선거관리위원회",
+    "정치주장",
+    "예산",
+    "문서내용",
+    "사건단위"
+  ],
+  "createdAt": "2026-07-02",
+  "updatedAt": "2026-07-02"
+}

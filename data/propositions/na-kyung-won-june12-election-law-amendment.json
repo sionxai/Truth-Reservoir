@@ -1,0 +1,139 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:f08703cdaffb0328c82f293c",
+  "versionId": "ver:b67074d7501adf48",
+  "certHash": "sha256:3fdbbd41f85c16f3efb02109b7e4fb11e233d343f3e5c95f1d4ed94699c5f812",
+  "canonicalProposition": "나경원 국민의힘 의원은 선거 결과와 무관하게 선거를 전면 또는 일부 무효로 할 수 있도록 하는 내용의 공직선거법 일부개정안을 대표발의했다고 2026년 6월 12일 밝혔다",
+  "originalClaim": "나경원, 선거 결과 무관 선거 무효(전면·일부) 가능하게 하는 공직선거법 개정안 6·12 대표발의.",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "나경원 국민의힘 의원",
+    "when": "2026년 6월 12일(발의 사실 공개)",
+    "where": "국회(공직선거법 일부개정안 대표발의)",
+    "what": "선거 결과와 무관하게 선거를 전면 또는 일부 무효로 할 수 있도록 하는 내용의 공직선거법 일부개정안을 대표발의했다고 밝혔다",
+    "how": "공직선거법 일부개정안을 대표발의하고 그 사실을 공개했다",
+    "why": [
+      {
+        "reason": "투표용지 부족 사태 등 참정권 침해 시 선거 결과와 무관하게 선거를 무효화할 수 있도록 하려는 것",
+        "statedBy": "나경원 국민의힘 의원(헤럴드경제·MBC 보도 문맥)"
+      }
+    ]
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-02",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "헤럴드경제 본문에서 '선거 결과와 무관하게 선거를 무효로 한다'는 공직선거법 일부개정안 대표발의(12일 밝힘)가, MBC 본문에서 '전면 또는 일부 무효화할 수 있도록 하는' 개정안 발의가 각각 curl HTTP 200으로 verbatim 확인된다. 법안 원문은 직접 fetch하지 못해 보도 인용으로 귀속했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://biz.heraldcorp.com/article/10770107",
+      "title": "나경원 “투표지 부족하면 결과 무관 선거 무효”…선거법 개정 추진",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "‘선거 결과와 무관하게 선거를 무효로 한다’는 내용을 담은 공직선거법 일부개정안을 대표발의했다고 12일 밝혔다",
+      "quoteHash": "sha256:fd080ca0c8a5e9d0fe34f7196e799fa095e94d619491bb4ade1e2c7cb564ef09",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "헤럴드경제 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "herald-20260612-na-amendment",
+      "independenceLevel": "independent",
+      "independenceNote": "나경원 의원의 개정안 대표발의를 보도한 자동 fetch 가능 언론 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "국회의원 법안 발의를 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://imnews.imbc.com/news/2026/politics/article/6829753_36911.html",
+      "title": "나경원 “내가 오세훈이었다면 재선거 선언할 것”…‘부실선거 땐 무효’ 법안 발의",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "선거를 전면 또는 일부 무효화할 수 있도록 하는 내용의 공직선거법 개정안을 발의했습니다",
+      "quoteHash": "sha256:68c84898a914fb0e747fb476100ea1b8cbd58a910e2f3900a21e61323e3033f6",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "MBC 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "imbc-20260612-na-amendment",
+      "independenceLevel": "independent",
+      "independenceNote": "같은 발의 사실을 '전면 또는 일부 무효화'로 보도한 별개 언론 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "개정안의 무효화 범위를 보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "법안 원문·의안번호를 확인하지 못해 개정안의 정확한 조문 내용을 독립 검증하지 못했고, 발의는 입법 성사가 아니다.",
+      "response": "발의 사실만 저장하고 입법 성사·법적 효력은 저장하지 않았다. 두 출처의 '무효'·'전면 또는 일부 무효화' 표현을 각각 귀속했다.",
+      "errorsFound": 0,
+      "framingChecks": "법안 발의 사실만 기록하고 개정안의 정당성·통과 여부를 판정하지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "야당 개정안 발의와 별도로 현행 공직선거법 제224조(선거무효 요건) 명제를 함께 보관해 현행법과 대비할 수 있게 했다.",
+      "result": "대칭 점검 완료 — 개정안 발의와 현행법을 분리 기록하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "국회의원 직책은 식별 정보이며 개정안 통과·타당성을 보증하지 않는다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-02",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. 나경원 의원의 공직선거법 개정안 대표발의(6·12 공개)를 헤럴드경제·MBC curl HTTP 200 본문에서 verbatim 확인했다. 6·5 재선거 주장과 다른 별개 사건(법안 발의)이다.",
+      "adoptedReason": "두 출처 본문에서 개정안 발의와 무효화 범위가 확인된다.",
+      "rejectedAlternatives": "법안 의안번호·조문 전문·입증책임 전환 세부 내용은 원문 미확인으로 발의 사실만 저장했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 국회의원 법안 발의의 관찰 가능한 사실만 기록하며, 개정안의 통과·타당성·부정선거 여부에 관한 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "개정안 원문·의안번호를 직접 fetch하지 못해 보도 인용에 의존한다. 발의는 입법 성사가 아니며 개정안 통과 여부는 미확정이다. 현행 공직선거법 제224조는 '선거 결과에 영향을 미쳤다고 인정하는 때에 한하여' 무효를 규정하고 있어 개정안은 이와 대비되는 별개 명제로 보관한다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "국민의힘",
+    "정치주장",
+    "공직선거법",
+    "재선거",
+    "사건단위"
+  ],
+  "createdAt": "2026-07-02",
+  "updatedAt": "2026-07-02"
+}

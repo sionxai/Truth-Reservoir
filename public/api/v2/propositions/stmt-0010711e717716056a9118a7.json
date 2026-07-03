@@ -1,0 +1,117 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:0010711e717716056a9118a7",
+  "versionId": "ver:072efb32396d0f5f",
+  "certHash": "sha256:8281c64f6ed97775c33d4263f6a2dd3658296f85b9f19729f99931c9354cb4ef",
+  "canonicalProposition": "한국일보는 6·3 지방선거에서 투표용지 인쇄량이 유권자 수의 50% 미만이었던 투표소가 전국 1,371곳(전국 투표소의 9.6%)에 달했다고 단독 보도했다",
+  "originalClaim": "한국일보 단독: 투표용지 인쇄량이 유권자 50% 미만인 투표소 전국 1,371곳(9.6%).",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "한국일보가 확보한 자료를 전사한 단독 보도를 인용해, 투표용지 인쇄량이 유권자 수의 50% 미만인 투표소 수와 전국 투표소 대비 비율을 집계했다.",
+    "sample": "6·3 지방선거 전국 투표소 중 투표용지 인쇄량이 유권자 수의 50% 미만이었던 투표소",
+    "aggregationBasis": "전국 투표소 단순 집계(50% 미만 투표소 수 및 전체 대비 비율)",
+    "producer": "한국일보 단독 보도(집계 원자료는 기사에 명시된 범위로 한정)",
+    "measuredAt": "2026-06-09"
+  },
+  "sixW": {
+    "who": "한국일보(단독 보도)",
+    "when": "2026-06-09 보도",
+    "where": "6·3 지방선거 전국 투표소",
+    "what": "투표용지 인쇄량이 유권자 수의 50% 미만이었던 투표소가 전국 1,371곳(전국 투표소의 9.6%)에 달했다고 보도했다",
+    "how": "한국일보가 확보한 자료를 근거로 50% 미만 투표소 수와 비율을 집계해 단독 보도했다",
+    "why": []
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-07-02",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "한국일보 본문에서 '50% 미만이었던 투표소가 1,371곳'과 '9.6%'가 curl HTTP 200으로 verbatim 확인된다. 집계 원자료는 단독 보도이므로 다른 출처로 교차 확인하지 못했고, 수치를 현실이 아니라 한국일보가 보도한 측정값으로 귀속했다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.hankookilbo.com/news/article/A2026060911080000641",
+      "title": "[단독] 투표용지 유권자 50% 미만 인쇄 투표소 1,371곳",
+      "retrievedAt": "2026-07-02",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "50% 미만이었던 투표소가 1,371곳에 달한 것으로 드러났다",
+      "quoteHash": "sha256:e6dea564e07065b1ad4c1359eb94b4b5242d165e2d0b4469a022850e3ffc9ae5",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "한국일보 기사 본문이 curl HTTP 200으로 로드되었고 shortQuote가 원문에 그대로 존재했다. 9.6% 비율도 같은 본문에서 확인했다. 15단어 이하 shortQuote와 locator로 확인했다.",
+      "independenceGroupId": "hankookilbo-20260609-1371",
+      "independenceLevel": "independent",
+      "independenceNote": "50% 미만 인쇄 투표소 수를 단독 보도한 자동 fetch 가능 언론 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "투표용지 인쇄 규모를 집계·보도한 관련 출처다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "단독 보도로 집계 원자료·산정 기준을 다른 출처로 교차 확인하지 못했다"
+        ],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "단독 보도라 집계 원자료·산정 방법을 독립 확인할 수 없고, 인쇄량 50% 미만이 곧 부정·고의를 뜻하지도 않는다. 별개 지표인 부족 91곳·추가 송부 140곳과 혼동될 수 있다.",
+      "response": "수치를 현실이 아니라 한국일보가 보도한 측정값으로 귀속하고, measurement 블록에 집계 범위·주체를 명시했다. 1,371곳(50% 미만 인쇄)은 부족 91곳·추가 송부 140곳과 다른 지표임을 한계에 명시했다.",
+      "errorsFound": 0,
+      "framingChecks": "인쇄량 규모라는 측정 사실만 기록하고 고의·부정선거 해석은 배제했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "인쇄 규모 측정과 별도로 선관위의 '50% 기준 인쇄'·'1.1배 경비 기준' 해명 명제를 함께 보관한다.",
+      "result": "대칭 점검 완료 — 주장·해명·법적 미확정성을 분리하고 결론 명제를 저장하지 않았다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "언론 단독 집계라는 점을 provenance에 명시하고 원자료 미확인분은 한계로 남겼다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-02",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·선거·진행 중 조사 사안이라 human_reviewed 레인으로 분류했다. '1,371곳'과 '9.6%'를 한국일보 curl HTTP 200 본문에서 verbatim 확인했다. 이는 부족 91곳·추가 송부 140곳과 다른 별개 지표(50% 미만 인쇄 투표소)여서 별개 사건으로 분리했다.",
+      "adoptedReason": "한국일보 본문에서 50% 미만 인쇄 투표소 1,371곳·9.6%가 직접 확인된다.",
+      "rejectedAlternatives": "집계 원자료·시도별 분포는 기사에서 15단어 이하로 확정하기 어려워 총계·비율만 저장했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 언론이 집계·보도한 측정값만 기록하며, 인쇄 규모의 고의성·부정선거 여부·책임 소재에 관한 법적 판단은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "한국일보 단독 보도로 집계 원자료와 산정 방법을 다른 출처로 교차 확인하지 못했다. 1,371곳(50% 미만 인쇄)은 선관위 집계 부족 91곳(별개 명제)·추가 물량 송부 140곳(별개 명제)과 다른 지표이며 혼동해서는 안 된다. 인쇄량 50% 미만이 고의·부정을 의미하지는 않는다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "측정",
+    "정치주장",
+    "투표소수",
+    "사건단위"
+  ],
+  "createdAt": "2026-07-02",
+  "updatedAt": "2026-07-02"
+}
