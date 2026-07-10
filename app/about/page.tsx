@@ -11,9 +11,10 @@ export default async function AboutPage() {
           <p className="eyebrow">원칙</p>
           <h1>진실저수지 원칙</h1>
           <p>
-            진실저수지는 “믿어라”가 아니라 “재현하라”를 목표로 합니다. 라벨은 “진실”
-            판정이 아니라 “검증 가능” 상태와 현 시점 기준 사실 신뢰도를 보조적으로
-            보여주는 신호입니다.
+            진실저수지는 명제·증거·검수·정정의 provenance 원장과 그것을 사람이 읽을 수
+            있게 렌더링한 리더입니다. “믿어라”가 아니라 “재현하라”를 목표로 합니다.
+            라벨은 “진실” 판정이 아니라 “검증 가능” 상태와 현 시점 기준 사실 신뢰도를
+            보조적으로 보여주는 신호입니다.
           </p>
         </header>
 
@@ -60,6 +61,28 @@ export default async function AboutPage() {
             라벨은 저장된 증거 스냅샷과 공개 절차가 재현 가능하다는 신호입니다. 출처 URL의
             현재 본문 동일성이나 명제의 영구 확정성을 보장하지 않습니다. 원문 동일성은
             보존본과 직접 대조해야 합니다.
+          </p>
+        </section>
+
+        <section className="facts-section doc-section" aria-labelledby="governance-title">
+          <h2 id="governance-title">운영 규범과 라이선스</h2>
+          <p>
+            전환 정책, 신규 발행 동결, 검수 책임 모델, 알려진 한계는{" "}
+            <a
+              href="https://github.com/sionxai/Truth-Reservoir/blob/main/GOVERNANCE.md"
+              rel="noopener noreferrer"
+            >
+              GOVERNANCE.md
+            </a>
+            에 공개되어 있습니다. 코드는 MIT, 자체 작성 데이터·문서는 CC BY 4.0이며 제3자
+            인용문은 라이선스 부여 대상이 아닙니다 —{" "}
+            <a
+              href="https://github.com/sionxai/Truth-Reservoir/blob/main/LICENSE-DATA.md"
+              rel="noopener noreferrer"
+            >
+              LICENSE-DATA.md
+            </a>
+            .
           </p>
         </section>
       </article>
