@@ -209,7 +209,10 @@ function TopicTileLink({
       <span className="topic-tile__body">
         <span className="topic-tile__tag">{tile.tag}</span>
         <span className="topic-tile__meta">
-          {variant === "large" ? `사실 ${tile.count}개 · ${dateRangeLabel(tile)}` : `사실 ${tile.count}개`}
+          {variant === "large"
+            ? `사실 ${tile.count}개 · ${dateRangeLabel(tile)} · `
+            : `사실 ${tile.count}개 · `}
+          <time dateTime={tile.lastUpdated}>최종 수정 {tile.lastUpdated}</time>
         </span>
       </span>
     </a>
@@ -735,6 +738,7 @@ function topicGridScript(): string {
     const body = document.createElement("span");
     const tag = document.createElement("span");
     const meta = document.createElement("span");
+    const lastUpdated = document.createElement("time");
 
     link.className = "topic-tile topic-tile--small";
     link.dataset.topicTile = "small";
@@ -743,7 +747,9 @@ function topicGridScript(): string {
     tag.className = "topic-tile__tag";
     tag.textContent = tile.tag;
     meta.className = "topic-tile__meta";
-    meta.textContent = "사실 " + tile.count + "개";
+    lastUpdated.dateTime = tile.lastUpdated;
+    lastUpdated.textContent = "최종 수정 " + tile.lastUpdated;
+    meta.append(document.createTextNode("사실 " + tile.count + "개 · "), lastUpdated);
 
     body.append(tag, meta);
     link.append(createTopicThumbnail(tile.tag), body);

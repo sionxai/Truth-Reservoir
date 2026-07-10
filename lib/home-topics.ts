@@ -22,6 +22,7 @@ export interface HomeTopicTile {
   count: number;
   dateRange: { from: string | null; to: string | null };
   latestDate: string;
+  lastUpdated: string;
 }
 
 export function isEligibleTopicTag(tag: string): boolean {
@@ -88,6 +89,11 @@ export function topicTiles(propositions: Proposition[]): HomeTopicTile[] {
         .filter((key) => key.known)
         .map((key) => key.sortable)
         .sort((left, right) => left.localeCompare(right));
+      const lastUpdated = group.reduce(
+        (latest, proposition) =>
+          proposition.updatedAt > latest ? proposition.updatedAt : latest,
+        ""
+      );
 
       return {
         tag,
@@ -97,7 +103,8 @@ export function topicTiles(propositions: Proposition[]): HomeTopicTile[] {
           from: knownDates[0] ?? null,
           to: knownDates[knownDates.length - 1] ?? null
         },
-        latestDate: knownDates[knownDates.length - 1] ?? "0000-00-00"
+        latestDate: knownDates[knownDates.length - 1] ?? "0000-00-00",
+        lastUpdated
       };
     })
     .sort((left, right) => {

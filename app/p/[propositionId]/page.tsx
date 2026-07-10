@@ -30,6 +30,13 @@ type PageProps = {
   params: Promise<{ propositionId: string }>;
 };
 
+const reviewCheckLabels = {
+  omission: "누락",
+  asymmetry: "비대칭",
+  framing: "프레이밍",
+  authority_assumption: "권위 가정"
+} as const;
+
 export async function generateStaticParams() {
   const propositions = await loadPropositions();
 
@@ -262,6 +269,8 @@ export default async function PropositionDetailPage({ params }: PageProps) {
           </ol>
         </section>
 
+        <ReviewLogSection reviewLog={proposition.reviewLog} />
+
         <section className="facts-section" aria-labelledby="corrections-title">
           <h2 id="corrections-title">무엇이 바뀌었나</h2>
           <CorrectionTable corrections={proposition.correctionHistory} />
@@ -307,6 +316,126 @@ export default async function PropositionDetailPage({ params }: PageProps) {
       </article>
     </main>
   );
+}
+
+function ReviewLogSection({ reviewLog }: { reviewLog: Proposition["reviewLog"] }) {
+  const performedChecks = reviewLog.humanReview.checksPerformed.map(
+    (check) => reviewCheckLabels[check]
+  );
+
+  return (
+    <section className="facts-section doc-section review-log" aria-labelledby="review-log-title">
+      <h2 id="review-log-title">검수 기록</h2>
+      <p>
+        검수 과정의 기록 원문입니다. 저수지는 이 기록의 재현 가능성을 공개할 뿐, 진실성
+        판정을 하지 않습니다(제2조).
+      </p>
+
+      <div className="review-log__groups">
+        <section className="review-log__group" aria-labelledby="review-log-redteam-title">
+          <h3 id="review-log-redteam-title">레드팀</h3>
+          <dl className="facts-dl compact-dl">
+            <div>
+              <dt>가장 강한 반론</dt>
+              <dd>{displayReviewText(reviewLog.redteam.strongestCounterargument)}</dd>
+            </div>
+            <div>
+              <dt>응답</dt>
+              <dd>{displayReviewText(reviewLog.redteam.response)}</dd>
+            </div>
+            <div>
+              <dt>발견된 오류</dt>
+              <dd>{reviewLog.redteam.errorsFound}</dd>
+            </div>
+            <div>
+              <dt>프레이밍 점검</dt>
+              <dd>{displayReviewText(reviewLog.redteam.framingChecks)}</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section className="review-log__group" aria-labelledby="review-log-symmetry-title">
+          <h3 id="review-log-symmetry-title">대칭성 점검</h3>
+          <dl className="facts-dl compact-dl">
+            <div>
+              <dt>수행 여부</dt>
+              <dd>{reviewLog.symmetry.checked ? "수행" : "미수행"}</dd>
+            </div>
+            <div>
+              <dt>방법</dt>
+              <dd>{displayReviewText(reviewLog.symmetry.method)}</dd>
+            </div>
+            <div>
+              <dt>결과</dt>
+              <dd>{displayReviewText(reviewLog.symmetry.result)}</dd>
+            </div>
+            {reviewLog.symmetry.pairedPropositionId ? (
+              <div>
+                <dt>연결 명제</dt>
+                <dd>
+                  <Link
+                    href={`/p/${encodePropositionId(reviewLog.symmetry.pairedPropositionId)}/`}
+                  >
+                    {reviewLog.symmetry.pairedPropositionId}
+                  </Link>
+                </dd>
+              </div>
+            ) : null}
+          </dl>
+        </section>
+
+        <section className="review-log__group" aria-labelledby="review-log-authority-title">
+          <h3 id="review-log-authority-title">권위 점검</h3>
+          <dl className="facts-dl compact-dl">
+            <div>
+              <dt>수행 여부</dt>
+              <dd>{reviewLog.authorityCheck.checked ? "수행" : "미수행"}</dd>
+            </div>
+            <div>
+              <dt>메모</dt>
+              <dd>{displayReviewText(reviewLog.authorityCheck.note)}</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section className="review-log__group" aria-labelledby="review-log-human-title">
+          <h3 id="review-log-human-title">인간 검수</h3>
+          <dl className="facts-dl compact-dl">
+            <div>
+              <dt>검수자</dt>
+              <dd>{displayReviewText(reviewLog.humanReview.reviewer)}</dd>
+            </div>
+            <div>
+              <dt>검수일</dt>
+              <dd>
+                <time dateTime={reviewLog.humanReview.date}>{reviewLog.humanReview.date}</time>
+              </dd>
+            </div>
+            <div>
+              <dt>수행 점검</dt>
+              <dd>{performedChecks.length ? performedChecks.join(" · ") : "—"}</dd>
+            </div>
+            <div>
+              <dt>검수 메모</dt>
+              <dd>{displayReviewText(reviewLog.humanReview.reviewMemo)}</dd>
+            </div>
+            <div>
+              <dt>채택 사유</dt>
+              <dd>{displayReviewText(reviewLog.humanReview.adoptedReason)}</dd>
+            </div>
+            <div>
+              <dt>기각한 대안</dt>
+              <dd>{displayReviewText(reviewLog.humanReview.rejectedAlternatives)}</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </section>
+  );
+}
+
+function displayReviewText(value: string): string {
+  return value.trim() ? value : "—";
 }
 
 function renderEntityTextSegments(segments: EntityTextSegment[]) {

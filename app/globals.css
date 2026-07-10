@@ -1429,6 +1429,21 @@ button.secondary:hover,
   margin: 0;
 }
 
+.review-log__groups {
+  display: grid;
+  gap: 24px;
+}
+
+.review-log__group {
+  display: grid;
+  gap: 12px;
+}
+
+.review-log__group h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
 .why-list {
   display: grid;
   gap: 8px;

@@ -83,6 +83,9 @@ test("E2 detail page exposes a FACTS article for humans and crawlers", async ({
   await expect(page.getByRole("heading", { name: "측정 정보" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "민감 사안 고지" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "어떻게 확인했나" })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { level: 2, name: "검수 기록", exact: true })
+  ).toBeVisible();
   await expect(page.getByText(ballotShortage.evidence[0].shortQuote)).toBeVisible();
   await expect(page.getByRole("heading", { name: "한계" })).toBeVisible();
   await expect(page.getByText(ballotShortage.limitations)).toBeVisible();
@@ -195,6 +198,11 @@ test("E7 topic page is a woven long-form view in deterministic event-date order"
   const summary = topicSummary(tag, propositions);
   const byId = new Map(propositions.map((item) => [item.propositionId, item]));
   const ordered = summary.propositionIds.map((id) => byId.get(id)!);
+  const lastUpdated = ordered.reduce(
+    (latest, proposition) =>
+      proposition.updatedAt > latest ? proposition.updatedAt : latest,
+    ""
+  );
 
   await page.goto(tagRoute(tag));
 
@@ -205,6 +213,9 @@ test("E7 topic page is a woven long-form view in deterministic event-date order"
     page.getByText(`날짜범위 ${summary.dateRange.from}~${summary.dateRange.to}`)
   ).toBeVisible();
   await expect(page.getByText(`출처 합계 ${summary.sourceTotal}`)).toBeVisible();
+  await expect(page.locator(".topic-page__meta time")).toHaveText(
+    `최종 수정 ${lastUpdated}`
+  );
   await expect(
     page.getByText(
       "이 페이지는 태그가 같은 검증된 사실을 사건 발생 시점 순으로 자동 집계합니다. 서사·해석은 없으며 편집자가 배열하지 않습니다. 각 문장은 독립 검증된 명제이며 클릭하면 원문·출처로 이동합니다."

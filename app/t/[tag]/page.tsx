@@ -51,6 +51,11 @@ export default async function TagPage({ params }: PageProps) {
 
   const summary = topicSummary(tag, propositions);
   const ordered = summary.orderedPropositions;
+  const lastUpdated = ordered.reduce(
+    (latest, proposition) =>
+      proposition.updatedAt > latest ? proposition.updatedAt : latest,
+    ""
+  );
   const collectionJsonLd = buildCollectionJsonLd(tag, ordered);
   const fullText = buildTopicPlainText(tag, summary, ordered);
 
@@ -75,6 +80,10 @@ export default async function TagPage({ params }: PageProps) {
           <span>{formatDateRange(summary.dateRange)}</span>
           <span aria-hidden="true"> · </span>
           <span>출처 합계 {summary.sourceTotal}</span>
+          <span aria-hidden="true"> · </span>
+          <span>
+            <time dateTime={lastUpdated}>최종 수정 {lastUpdated}</time>
+          </span>
         </p>
         <p className="topic-page__disclosure">{DISCLOSURE}</p>
         <div className="topic-page__actions">
