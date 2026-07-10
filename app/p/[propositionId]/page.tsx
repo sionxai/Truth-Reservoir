@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GradeBadge } from "../../components/GradeBadge";
+import { buildFactualLead } from "../../../lib/article.ts";
 import {
   claimNatureLabels,
   formatDateTime,
@@ -92,6 +93,7 @@ export default async function PropositionDetailPage({ params }: PageProps) {
   );
   const articleJsonLd = buildArticleJsonLd(proposition, dashId, jsonUrl, relatedLinks);
   const issueUrl = buildCorrectionIssueUrl(getRepoUrl(), proposition);
+  const factualLead = buildFactualLead(proposition);
   const whyItems =
     proposition.sixW?.why.filter((item) => item.statedBy.trim() && item.reason.trim()) ?? [];
 
@@ -124,11 +126,40 @@ export default async function PropositionDetailPage({ params }: PageProps) {
           <h1>{renderEntityTextSegments(canonicalSegments)}</h1>
         </header>
 
+        <section className="facts-lead" aria-label="사실 리드">
+          {factualLead ? (
+            <>
+              <p>{factualLead.lead}</p>
+              {factualLead.howSentence ? <p>{factualLead.howSentence}</p> : null}
+            </>
+          ) : (
+            <div className="facts-lead__fallback">
+              <p>
+                이 레코드는 새 FACTS 기사 형식(사실 리드) 준비중입니다. 아래 원본 기록으로
+                확인하세요.
+              </p>
+            </div>
+          )}
+        </section>
+
         <RelatedEntitiesRow entities={propositionEntities} />
+
+        {whyItems.length ? (
+          <section className="facts-section" aria-labelledby="stated-reasons-title">
+            <h2 id="stated-reasons-title">당사자가 밝힌 사유</h2>
+            <ul className="stated-reason-list">
+              {whyItems.map((item) => (
+                <li key={`${item.statedBy}:${item.reason}`}>
+                  <strong>{item.statedBy}</strong>: “{item.reason}”
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
         {proposition.sixW ? (
           <section className="facts-section" aria-labelledby="sixw-title">
-            <h2 id="sixw-title">육하원칙</h2>
+            <h2 id="sixw-title">사건 기록(육하원칙)</h2>
             <dl className="facts-dl sixw-dl">
               <div>
                 <dt>누가</dt>
@@ -178,11 +209,6 @@ export default async function PropositionDetailPage({ params }: PageProps) {
           </section>
         ) : null}
 
-        <section className="facts-section" aria-labelledby="corrections-title">
-          <h2 id="corrections-title">집계·정정 이력</h2>
-          <CorrectionTable corrections={proposition.correctionHistory} />
-        </section>
-
         {proposition.measurement ? (
           <section className="facts-section facts-section--small" aria-labelledby="measurement-title">
             <h2 id="measurement-title">측정 정보</h2>
@@ -228,12 +254,17 @@ export default async function PropositionDetailPage({ params }: PageProps) {
         ) : null}
 
         <section className="facts-section" aria-labelledby="evidence-title">
-          <h2 id="evidence-title">증거</h2>
+          <h2 id="evidence-title">어떻게 확인했나</h2>
           <ol className="evidence-list">
             {proposition.evidence.map((evidence, index) => (
               <EvidenceListItem evidence={evidence} index={index} key={`${evidence.url}:${index}`} />
             ))}
           </ol>
+        </section>
+
+        <section className="facts-section" aria-labelledby="corrections-title">
+          <h2 id="corrections-title">무엇이 바뀌었나</h2>
+          <CorrectionTable corrections={proposition.correctionHistory} />
         </section>
 
         <section className="facts-section" aria-labelledby="limitations-title">

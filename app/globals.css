@@ -1247,6 +1247,24 @@ button.secondary:hover,
   margin: 0;
 }
 
+.facts-lead {
+  display: grid;
+  gap: 10px;
+}
+
+.facts-lead p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.facts-lead__fallback {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-lg);
+  padding: 20px;
+}
+
 .legacy-grade-caption {
   color: #5b6573;
   font-size: 0.875rem;
@@ -1422,6 +1440,17 @@ button.secondary:hover,
 .why-list li {
   display: grid;
   gap: 6px;
+}
+
+.stated-reason-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 24px;
+}
+
+.stated-reason-list li {
+  line-height: 1.7;
 }
 
 .attribution-badge {

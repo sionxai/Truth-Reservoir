@@ -78,11 +78,11 @@ test("E2 detail page exposes a FACTS article for humans and crawlers", async ({
   await expect(page.getByRole("heading", { name: "육하원칙" })).toBeVisible();
   await expect(page.getByText("누가", { exact: true })).toBeVisible();
   await expect(page.getByText("중앙선거관리위원회가 밝힌 사유")).toBeVisible();
-  await expect(page.getByRole("heading", { name: "집계·정정 이력" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "무엇이 바뀌었나" })).toBeVisible();
   await expect(page.getByText("투표용지 부족 투표소 50곳", { exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "측정 정보" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "민감 사안 고지" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "증거" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "어떻게 확인했나" })).toBeVisible();
   await expect(page.getByText(ballotShortage.evidence[0].shortQuote)).toBeVisible();
   await expect(page.getByRole("heading", { name: "한계" })).toBeVisible();
   await expect(page.getByText(ballotShortage.limitations)).toBeVisible();
