@@ -12,6 +12,41 @@ const homeDescription =
   "Truth Reservoir 진실저수지는 verified propositions, Cert v2.1, static JSON API, fact verification, Korean facts를 공개하는 정적 사실 저장소입니다.";
 const TOPIC_GRID_BATCH_SIZE = 12;
 const SEARCH_RESULT_BATCH_SIZE = 20;
+const TOPIC_GRAPHICS: Readonly<Record<string, string>> = {
+  "2026지방선거": "/graphics/topic-2026지방선거.webp",
+  한국근현대사: "/graphics/topic-한국근현대사.webp",
+  지구과학: "/graphics/topic-지구과학.webp",
+  CDC: "/graphics/topic-CDC.webp",
+  국제사건: "/graphics/topic-국제사건.webp",
+  개인정보보호: "/graphics/topic-개인정보보호.webp"
+};
+
+const homeGuideCards = [
+  {
+    image: "/graphics/section-humans.webp",
+    imageAlt: "책과 돋보기 3D 오브젝트",
+    title: "사람을 위한 FACTS",
+    description: "육하원칙·정정이력·출처가 한 기사에",
+    href: "/about",
+    linkLabel: "소개 보기"
+  },
+  {
+    image: "/graphics/section-ai.webp",
+    imageAlt: "칩과 데이터 노드 3D 오브젝트",
+    title: "AI를 위한 데이터",
+    description: "llms.txt와 JSON API로 전체 레코드 접근",
+    href: "/llms.txt",
+    linkLabel: "AI 사용 안내"
+  },
+  {
+    image: "/graphics/section-verify.webp",
+    imageAlt: "방패와 체크마크와 체인 3D 오브젝트",
+    title: "재현 가능한 검증",
+    description: "모든 인용은 원문과 sha256 해시로 재검증",
+    href: "/api-docs",
+    linkLabel: "API 문서 보기"
+  }
+] as const;
 
 export const metadata: Metadata = {
   title: homeTitle,
@@ -155,9 +190,22 @@ function TopicTileLink({
   tile: HomeTopicTile;
   variant: "large" | "small";
 }) {
+  const graphic = TOPIC_GRAPHICS[tile.tag];
+
   return (
     <a className={`topic-tile topic-tile--${variant}`} data-topic-tile={variant} href={tile.path}>
-      <TopicThumbnail tag={tile.tag} variant={variant} />
+      {graphic ? (
+        <img
+          alt={`${tile.tag} 3D 오브젝트`}
+          className={`topic-thumb topic-thumb--${variant}`}
+          height={720}
+          loading="lazy"
+          src={graphic}
+          width={720}
+        />
+      ) : (
+        <TopicThumbnail tag={tile.tag} variant={variant} />
+      )}
       <span className="topic-tile__body">
         <span className="topic-tile__tag">{tile.tag}</span>
         <span className="topic-tile__meta">
@@ -182,10 +230,44 @@ export default async function Page() {
         dangerouslySetInnerHTML={jsonLdMarkup(datasetJsonLd)}
       />
       <section className="home-identity" aria-labelledby="home-title">
-        <p className="eyebrow">Truth Reservoir / 진실저수지</p>
-        <h1 id="home-title">
-          판정하지 않는 사실 저장소 — 모든 문장은 검증된 JSON에서 생성됩니다
-        </h1>
+        <div className="home-identity__copy">
+          <p className="eyebrow">Truth Reservoir / 진실저수지</p>
+          <h1 id="home-title">
+            판정하지 않는 사실 저장소 — 모든 문장은 검증된 JSON에서 생성됩니다
+          </h1>
+        </div>
+        <img
+          alt="저수지 위에 떠 있는 데이터 블록과 검증 체크마크 3D 일러스트"
+          className="home-identity__visual"
+          height={1066}
+          loading="eager"
+          src="/graphics/hero-reservoir.webp"
+          width={1600}
+        />
+      </section>
+
+      <section className="home-guide" aria-labelledby="home-guide-title">
+        <div className="section-heading">
+          <p className="eyebrow">안내</p>
+          <h2 id="home-guide-title">저수지 사용법</h2>
+        </div>
+        <div className="home-guide__grid">
+          {homeGuideCards.map((card) => (
+            <article className="home-guide-card" key={card.href}>
+              <img
+                alt={card.imageAlt}
+                className="home-guide-card__image"
+                height={720}
+                loading="lazy"
+                src={card.image}
+                width={720}
+              />
+              <h3>{card.title}</h3>
+              <p>{card.description}</p>
+              <a href={card.href}>{card.linkLabel}</a>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="topic-hero" aria-labelledby="topic-hero-title">
