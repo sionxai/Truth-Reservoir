@@ -24,6 +24,7 @@ import {
 import { decodePropositionId, encodePropositionId } from "../../../lib/ids.ts";
 import { relatedPropositions, type RelatedProposition } from "../../../lib/relations.ts";
 import { absoluteSiteUrl, getRepoUrl } from "../../../lib/site.ts";
+import { loadSummaries, summaryFor } from "../../../lib/summaries.ts";
 import type { Correction, EvidenceItem, Proposition } from "../../../lib/types.ts";
 
 type PageProps = {
@@ -101,6 +102,7 @@ export default async function PropositionDetailPage({ params }: PageProps) {
   const articleJsonLd = buildArticleJsonLd(proposition, dashId, jsonUrl, relatedLinks);
   const issueUrl = buildCorrectionIssueUrl(getRepoUrl(), proposition);
   const factualLead = buildFactualLead(proposition);
+  const aiSummary = summaryFor(await loadSummaries(), proposition);
   const whyItems =
     proposition.sixW?.why.filter((item) => item.statedBy.trim() && item.reason.trim()) ?? [];
 
@@ -132,6 +134,18 @@ export default async function PropositionDetailPage({ params }: PageProps) {
           </p>
           <h1>{renderEntityTextSegments(canonicalSegments)}</h1>
         </header>
+
+        {aiSummary ? (
+          <section className="ai-summary" aria-labelledby="ai-summary-title">
+            <p className="ai-summary__label" id="ai-summary-title">
+              AI 요약
+              <span className="ai-summary__disclaimer">
+                아래 검증 기록이 정본이며, 이 요약은 검증 대상이 아닙니다
+              </span>
+            </p>
+            <p className="ai-summary__text">{aiSummary.summary}</p>
+          </section>
+        ) : null}
 
         <section className="facts-lead" aria-label="사실 리드">
           {factualLead ? (

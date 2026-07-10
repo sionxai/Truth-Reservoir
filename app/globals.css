@@ -1247,6 +1247,39 @@ button.secondary:hover,
   margin: 0;
 }
 
+.ai-summary {
+  background: #f0f6ff;
+  border: 1px solid #d6e6fd;
+  border-radius: var(--tr-radius-lg);
+  display: grid;
+  gap: 10px;
+  padding: 20px 22px;
+}
+
+.ai-summary__label {
+  align-items: baseline;
+  color: var(--color-link);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  gap: 10px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.ai-summary__disclaimer {
+  color: #5b6573;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.ai-summary__text {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
 .facts-lead {
   display: grid;
   gap: 10px;
