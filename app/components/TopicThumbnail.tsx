@@ -37,6 +37,7 @@ function thumbnailParts(tag: string): ThumbnailParts {
 export function TopicThumbnail({ tag, variant = "large" }: TopicThumbnailProps) {
   const parts = thumbnailParts(tag);
   const gradientId = `topic-thumb-${hashTag(tag).toString(16)}-${variant}`;
+  const motifColor = `hsl(${parts.hueA} 32% 54%)`;
   const textSize = variant === "large" ? 38 : 32;
 
   return (
@@ -49,15 +50,15 @@ export function TopicThumbnail({ tag, variant = "large" }: TopicThumbnailProps) 
     >
       <defs>
         <linearGradient id={gradientId} x1="0" x2="1" y1="0" y2="1">
-          <stop offset="0%" stopColor={`hsl(${parts.hueA} 68% 32%)`} />
-          <stop offset="100%" stopColor={`hsl(${parts.hueB} 62% 24%)`} />
+          <stop offset="0%" stopColor={`hsl(${parts.hueA} 42% 90%)`} />
+          <stop offset="100%" stopColor={`hsl(${parts.hueB} 38% 84%)`} />
         </linearGradient>
       </defs>
       <rect fill={`url(#${gradientId})`} height="90" rx="8" width="120" />
       {parts.motif === 0 ? (
         <>
-          <circle cx="24" cy="24" fill="none" opacity="0.72" r="34" stroke="white" strokeWidth="9" />
-          <circle cx="96" cy="66" fill="none" opacity="0.34" r="28" stroke="white" strokeWidth="7" />
+          <circle cx="24" cy="24" fill="none" opacity="0.3" r="34" stroke={motifColor} strokeWidth="9" />
+          <circle cx="96" cy="66" fill="none" opacity="0.2" r="28" stroke={motifColor} strokeWidth="7" />
         </>
       ) : null}
       {parts.motif === 1 ? (
@@ -65,16 +66,16 @@ export function TopicThumbnail({ tag, variant = "large" }: TopicThumbnailProps) 
           <path
             d="M-8 72 C24 36 42 28 70 42 S104 56 128 18"
             fill="none"
-            opacity="0.54"
-            stroke="white"
+            opacity="0.26"
+            stroke={motifColor}
             strokeLinecap="round"
             strokeWidth="12"
           />
           <path
             d="M-4 22 C28 46 54 52 86 38 S112 20 126 30"
             fill="none"
-            opacity="0.28"
-            stroke="white"
+            opacity="0.18"
+            stroke={motifColor}
             strokeLinecap="round"
             strokeWidth="8"
           />
@@ -83,9 +84,9 @@ export function TopicThumbnail({ tag, variant = "large" }: TopicThumbnailProps) 
       {parts.motif === 2 ? (
         <>
           <rect
-            fill="white"
+            fill={motifColor}
             height="82"
-            opacity="0.2"
+            opacity="0.14"
             rx="5"
             transform={`rotate(${parts.rotation} 60 45)`}
             width="22"
@@ -93,9 +94,9 @@ export function TopicThumbnail({ tag, variant = "large" }: TopicThumbnailProps) 
             y="4"
           />
           <rect
-            fill="white"
+            fill={motifColor}
             height="82"
-            opacity="0.34"
+            opacity="0.22"
             rx="5"
             transform={`rotate(${parts.rotation} 60 45)`}
             width="22"
@@ -103,9 +104,9 @@ export function TopicThumbnail({ tag, variant = "large" }: TopicThumbnailProps) 
             y="4"
           />
           <rect
-            fill="white"
+            fill={motifColor}
             height="82"
-            opacity="0.18"
+            opacity="0.12"
             rx="5"
             transform={`rotate(${parts.rotation} 60 45)`}
             width="22"
@@ -116,8 +117,8 @@ export function TopicThumbnail({ tag, variant = "large" }: TopicThumbnailProps) 
       ) : null}
       <text
         dominantBaseline="middle"
-        fill="white"
-        fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        fill="#333d4b"
+        fontFamily="'Pretendard Variable', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         fontSize={textSize}
         fontWeight="800"
         opacity="0.96"

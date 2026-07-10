@@ -118,6 +118,9 @@ export default async function PropositionDetailPage({ params }: PageProps) {
               <time dateTime={proposition.asOfDate}>{proposition.asOfDate}</time> 기준
             </span>
           </div>
+          <p className="legacy-grade-caption">
+            Cert v2.1·헌법 v0.7 기준 구체계 기록 — 현행 검증 기록 형식이 아님
+          </p>
           <h1>{renderEntityTextSegments(canonicalSegments)}</h1>
         </header>
 
@@ -379,7 +382,6 @@ function RelatedFactsSection({ related }: { related: RelatedProposition[] }) {
             <li key={item.proposition.propositionId}>
               <a className="related-facts-card" href={`/p/${relatedDashId}/`}>
                 <span className="related-facts-card__top">
-                  <GradeBadge grade={item.proposition.assessment.factualGrade} />
                   <span className="mini-badge">
                     <time dateTime={item.proposition.asOfDate}>{item.proposition.asOfDate}</time>{" "}
                     기준

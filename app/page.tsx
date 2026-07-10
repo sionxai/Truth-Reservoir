@@ -320,8 +320,6 @@ export default async function Page() {
 }
 
 function feedSearchScript(totalCount: number): string {
-  const gradeLabelsForScript = { ...gradeLabels, undetermined: "판단유보" };
-
   return `
 (() => {
   const form = document.querySelector("[data-feed-search-form]");
@@ -333,15 +331,6 @@ function feedSearchScript(totalCount: number): string {
   const results = document.querySelector("[data-search-results]");
   const sentinel = document.querySelector("[data-search-sentinel]");
   const claimNatureLabels = ${scriptJson(claimNatureLabels)};
-  const gradeLabels = ${scriptJson(gradeLabelsForScript)};
-  const gradeTones = {
-    fully_reliable: "success",
-    largely_reliable: "primary",
-    mixed: "warning",
-    largely_unreliable: "danger",
-    not_reliable: "danger",
-    undetermined: "muted"
-  };
   const batchSize = ${SEARCH_RESULT_BATCH_SIZE};
   let records = null;
   let matches = [];
@@ -404,26 +393,21 @@ function feedSearchScript(totalCount: number): string {
   };
 
   const createResultCard = (record) => {
-    const gradeKey = record.factualGrade || "undetermined";
     const article = document.createElement("article");
     const badgeRow = document.createElement("div");
-    const gradeBadge = document.createElement("span");
     const claimNatureBadge = document.createElement("span");
     const title = document.createElement("h2");
     const link = document.createElement("a");
 
     article.className = "facts-card search-result-card";
     badgeRow.className = "facts-card__badges";
-    gradeBadge.className = "grade-badge grade-badge--" + (gradeTones[gradeKey] || "muted");
-    gradeBadge.dataset.grade = gradeKey;
-    gradeBadge.textContent = gradeLabels[gradeKey] || gradeKey;
     claimNatureBadge.className = "mini-badge";
     claimNatureBadge.textContent = claimNatureLabels[record.claimNature] || record.claimNature || "분류 미상";
     link.href = humanPathFor(record);
     link.textContent = record.canonical || record.propositionId || "명제";
 
     title.append(link);
-    badgeRow.append(gradeBadge, claimNatureBadge);
+    badgeRow.append(claimNatureBadge);
     article.append(badgeRow, title);
 
     return article;
@@ -571,6 +555,7 @@ function topicGridScript(): string {
   const createTopicThumbnail = (tag) => {
     const parts = partsFor(tag);
     const gradientId = "topic-thumb-client-" + parts.hash.toString(16) + "-" + renderedCount;
+    const motifColor = "hsl(" + parts.hueA + " 32% 54%)";
     const svg = svgElement("svg", {
       "aria-label": tag,
       class: "topic-thumb topic-thumb--small",
@@ -580,13 +565,13 @@ function topicGridScript(): string {
     });
     const defs = svgElement("defs");
     const gradient = svgElement("linearGradient", { id: gradientId, x1: "0", x2: "1", y1: "0", y2: "1" });
-    const stopA = svgElement("stop", { offset: "0%", "stop-color": "hsl(" + parts.hueA + " 68% 32%)" });
-    const stopB = svgElement("stop", { offset: "100%", "stop-color": "hsl(" + parts.hueB + " 62% 24%)" });
+    const stopA = svgElement("stop", { offset: "0%", "stop-color": "hsl(" + parts.hueA + " 42% 90%)" });
+    const stopB = svgElement("stop", { offset: "100%", "stop-color": "hsl(" + parts.hueB + " 38% 84%)" });
     const background = svgElement("rect", { fill: "url(#" + gradientId + ")", height: "90", rx: "8", width: "120" });
     const text = svgElement("text", {
       "dominant-baseline": "middle",
-      fill: "white",
-      "font-family": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      fill: "#333d4b",
+      "font-family": "'Pretendard Variable', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
       "font-size": "32",
       "font-weight": "800",
       opacity: "0.96",
@@ -601,24 +586,24 @@ function topicGridScript(): string {
 
     if (parts.motif === 0) {
       svg.append(
-        svgElement("circle", { cx: "24", cy: "24", fill: "none", opacity: "0.72", r: "34", stroke: "white", "stroke-width": "9" }),
-        svgElement("circle", { cx: "96", cy: "66", fill: "none", opacity: "0.34", r: "28", stroke: "white", "stroke-width": "7" })
+        svgElement("circle", { cx: "24", cy: "24", fill: "none", opacity: "0.3", r: "34", stroke: motifColor, "stroke-width": "9" }),
+        svgElement("circle", { cx: "96", cy: "66", fill: "none", opacity: "0.2", r: "28", stroke: motifColor, "stroke-width": "7" })
       );
     } else if (parts.motif === 1) {
       svg.append(
         svgElement("path", {
           d: "M-8 72 C24 36 42 28 70 42 S104 56 128 18",
           fill: "none",
-          opacity: "0.54",
-          stroke: "white",
+          opacity: "0.26",
+          stroke: motifColor,
           "stroke-linecap": "round",
           "stroke-width": "12"
         }),
         svgElement("path", {
           d: "M-4 22 C28 46 54 52 86 38 S112 20 126 30",
           fill: "none",
-          opacity: "0.28",
-          stroke: "white",
+          opacity: "0.18",
+          stroke: motifColor,
           "stroke-linecap": "round",
           "stroke-width": "8"
         })
@@ -626,9 +611,9 @@ function topicGridScript(): string {
     } else {
       svg.append(
         svgElement("rect", {
-          fill: "white",
+          fill: motifColor,
           height: "82",
-          opacity: "0.2",
+          opacity: "0.14",
           rx: "5",
           transform: "rotate(" + parts.rotation + " 60 45)",
           width: "22",
@@ -636,9 +621,9 @@ function topicGridScript(): string {
           y: "4"
         }),
         svgElement("rect", {
-          fill: "white",
+          fill: motifColor,
           height: "82",
-          opacity: "0.34",
+          opacity: "0.22",
           rx: "5",
           transform: "rotate(" + parts.rotation + " 60 45)",
           width: "22",
@@ -646,9 +631,9 @@ function topicGridScript(): string {
           y: "4"
         }),
         svgElement("rect", {
-          fill: "white",
+          fill: motifColor,
           height: "82",
-          opacity: "0.18",
+          opacity: "0.12",
           rx: "5",
           transform: "rotate(" + parts.rotation + " 60 45)",
           width: "22",

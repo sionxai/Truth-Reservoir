@@ -3,7 +3,6 @@ import { claimNatureLabels } from "../../lib/display.ts";
 import { encodePropositionId } from "../../lib/ids.ts";
 import { sourceCount, tagRoute } from "../../lib/propositions.ts";
 import type { Proposition } from "../../lib/types.ts";
-import { GradeBadge } from "./GradeBadge";
 
 interface PropositionCardProps {
   proposition: Proposition;
@@ -16,7 +15,6 @@ export function PropositionCard({ proposition }: PropositionCardProps) {
   return (
     <article className="facts-card">
       <div className="facts-card__badges">
-        <GradeBadge grade={proposition.assessment.factualGrade} />
         <span className="mini-badge">{claimNatureLabels[proposition.claimNature]}</span>
       </div>
 
