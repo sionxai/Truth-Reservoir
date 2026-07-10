@@ -38,6 +38,30 @@ describe("buildFactualLead", () => {
     expect(result?.lead).toBe("2026년 6월 3일, 서울에서 기록을 공개했다.");
   });
 
+  it("strips parenthetical detail from what in the lead only", () => {
+    const result = buildFactualLead(
+      cert("event_occurrence", {
+        what: "투표용지가 부족(전국 7,194장 부족), 26곳에서 투표 일시 중단(최소 4분~최대 105분)했다"
+      })
+    );
+
+    expect(result?.lead).toBe(
+      "2026년 6월 3일, 서울에서 투표용지가 부족, 26곳에서 투표 일시 중단했다."
+    );
+  });
+
+  it("strips nested parentheticals and keeps how untouched", () => {
+    const result = buildFactualLead(
+      cert("event_occurrence", {
+        what: "집계를 발표(부록(표 3) 포함)했다",
+        how: "공식 문서(관보)로 공개했다"
+      })
+    );
+
+    expect(result?.lead).toBe("2026년 6월 3일, 서울에서 집계를 발표했다.");
+    expect(result?.howSentence).toBe("공식 문서(관보)로 공개했다.");
+  });
+
   it("shortens when at the first parenthesis for the lead only", () => {
     const result = buildFactualLead(
       cert("event_occurrence", {
