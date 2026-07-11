@@ -1,0 +1,135 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:05b9abdca503067b1fd433ec",
+  "versionId": "ver:a607c0fbe9093475",
+  "certHash": "sha256:f70b3ca36cc6eede93bad2c5be1f2bf1da134e19af1d1346096b830cc3ea087e",
+  "canonicalProposition": "국제형사재판소(ICC)는 2023년 3월 17일 블라디미르 푸틴 러시아 대통령과 마리야 리보바-벨로바에 대해 우크라이나 점령지 아동 불법 이송 전쟁범죄 혐의로 체포영장을 발부했다",
+  "originalClaim": "러시아-우크라이나 전쟁 주제 신설(국제법 골격).",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "국제형사재판소(ICC) 전심재판부 II",
+    "when": "2023년 3월 17일",
+    "where": "국제형사재판소(네덜란드 헤이그)",
+    "what": "푸틴 러시아 대통령과 마리야 리보바-벨로바에 대해 우크라이나 점령지 아동 불법 이송 전쟁범죄 혐의로 체포영장을 발부했다",
+    "how": "전심재판부가 두 사람에 대한 체포영장을 발부했다고 공표했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "유엔 공식 뉴스가 2023년 3월 17일 발부일과 대상 2인, 아동 불법 이송 전쟁범죄 혐의를 fetch 가능하게 확인하고 ICC 공식 보도자료가 원출처다. 이는 영장 발부 사실이며 유무죄 판단이 아니다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://news.un.org/en/story/2023/03/1134732",
+      "title": "Russia: International Criminal Court issues arrest warrant for Putin",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "allegedly responsible for the war crime of unlawful deportation",
+      "quoteHash": "sha256:81454f36c09fb54203e389cf52a8febc8ff64108ff3945330a421ac15da6647a",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "유엔 공식 뉴스를 HTTP 200으로 확인해 발부일(2023-03-17)·대상 2인·아동 불법 이송 혐의를 재대조했다.",
+      "independenceGroupId": "icc-warrant-20230317",
+      "independenceLevel": "independent",
+      "independenceNote": "ICC와 별개 기구인 유엔이 발부 사실을 보도해 재대조 가능하다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "국제 형사사법 사안을 보도하는 유엔 공식 뉴스다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.icc-cpi.int/news/situation-ukraine-icc-judges-issue-arrest-warrants-against-vladimir-vladimirovich-putin-and",
+      "title": "Situation in Ukraine: ICC judges issue arrest warrants against Vladimir Vladimirovich Putin and Maria Alekseyevna Lvova-Belova",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "unlawful deportation of population (children) ... from occupied areas of Ukraine to the Russian Federation",
+      "quoteHash": "sha256:3f809f283f2ca05405e52bff5131517cebaf11a1523466c6d3ef32de467d052b",
+      "archiveStatus": "unavailable",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "ICC 공식 보도자료가 원출처이나 자동 fetch(WebFetch)에서 HTTP 403으로 차단돼 재대조하지 못했다. 동일 내용을 fetch 가능한 유엔 공식 뉴스가 확인한다(제5).",
+      "independenceGroupId": "icc-warrant-official-20230317",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "영장을 발부한 ICC의 공식 보도자료다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "영장 발부 기관의 1차 발표다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "자동 fetch 차단(403)"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "영장 발부를 담으면 저수지가 푸틴의 유죄를 전제한 것으로 읽힐 수 있다.",
+      "response": "명제는 ICC가 혐의로 영장을 '발부했다'는 절차 사실만 기록하고 유무죄를 담지 않았다. 러시아가 ICC 관할을 부인하는 점을 limitations에 명시했다.",
+      "errorsFound": 0,
+      "framingChecks": "'전범'·'무고' 어느 규정도 저수지 목소리로 쓰지 않고 혐의(allegedly)를 귀속했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "영장 발부(본 명제)와 러시아의 관할 부인(limitations)을 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "ICC를 최종 유죄 판단 권위로 쓰지 않고 '영장 발부 사실'의 근거로만 사용했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·형사·생존 인물·진행 중 사안이라 human_reviewed 레인. ICC 원문은 403이라 fetch 가능한 유엔 공식 뉴스를 핵심 앵커로 삼았다(제5).",
+      "adoptedReason": "fetch 가능한 유엔 공식 뉴스가 발부일·대상·혐의를 확인한다.",
+      "rejectedAlternatives": "영장이 곧 유죄라거나 반대로 정치적 조작이라는 결론은 담지 않았다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person",
+      "criminal_allegation",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 ICC가 혐의로 체포영장을 발부했다는 절차 사실만 기록한다. 대상자는 유죄가 확정되지 않았으며 무죄로 추정된다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "영장은 혐의이며 유죄 판단이 아니다. 러시아는 ICC 로마규정 당사국이 아니며 재판소의 관할과 영장을 부인한다. 신병 확보·재판은 이뤄지지 않았다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "ICC",
+    "국제법",
+    "러시아"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

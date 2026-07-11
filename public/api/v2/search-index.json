@@ -1,10 +1,127 @@
 {
   "meta": {
     "generatedAt": "2026-07-12",
-    "total": 64,
+    "total": 71,
     "note": "Compact manifest for client-side filtering; fetch full records at /api/v2/propositions/{dashId}.json"
   },
   "records": [
+    {
+      "propositionId": "stmt:05b9abdca503067b1fd433ec",
+      "path": "/api/v2/propositions/stmt-05b9abdca503067b1fd433ec.json",
+      "canonical": "국제형사재판소(ICC)는 2023년 3월 17일 블라디미르 푸틴 러시아 대통령과 마리야 리보바-벨로바에 대해 우크라이나 점령지 아동 불법 이송 전쟁범죄 혐의로 체포영장을 발부했다",
+      "tags": [
+        "국제법",
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "ICC"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:2e32e51752b91f9184c468af",
+      "path": "/api/v2/propositions/stmt-2e32e51752b91f9184c468af.json",
+      "canonical": "유럽연합 통계청(유로스타트)은 2026년 5월 31일 기준 EU에서 임시보호를 받는 우크라이나 출신 피란민을 약 438만 명으로 집계했다",
+      "tags": [
+        "국제사건",
+        "난민",
+        "러시아우크라이나전쟁",
+        "인도적피해",
+        "측정"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:43bfd6d859ff779fedeec928",
+      "path": "/api/v2/propositions/stmt-43bfd6d859ff779fedeec928.json",
+      "canonical": "블라디미르 푸틴 러시아 대통령은 2022년 2월 24일 우크라이나에 대한 '특별군사작전' 개시 결정을 대국민 연설로 발표했다",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:46c16754bee420a566961aa7",
+      "path": "/api/v2/propositions/stmt-46c16754bee420a566961aa7.json",
+      "canonical": "대한민국 정부는 2022년 2월 28일 러시아의 우크라이나 침공에 대응해 대러 전략물자 수출통제와 주요 러시아 은행 SWIFT 배제 조치 동참을 발표했다",
+      "tags": [
+        "국내영향",
+        "국제사건",
+        "대한민국",
+        "러시아우크라이나전쟁",
+        "제재"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:5dcafd99e98ca83ec2727165",
+      "path": "/api/v2/propositions/stmt-5dcafd99e98ca83ec2727165.json",
+      "canonical": "대한민국 국가정보원은 2024년 10월 18일 러시아 함정이 10월 8~13일 북한 특수부대 약 1,500명을 블라디보스토크로 1차 이송했다고 발표했다",
+      "tags": [
+        "국내영향",
+        "국제사건",
+        "대한민국",
+        "러시아우크라이나전쟁",
+        "북한"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:8e4b4b465805476c14e263ff",
+      "path": "/api/v2/propositions/stmt-8e4b4b465805476c14e263ff.json",
+      "canonical": "유엔 총회는 2022년 3월 2일 긴급특별총회에서 결의 ES-11/1을 찬성 141·반대 5·기권 35로 채택해 러시아의 우크라이나 무력 사용을 규탄하고 러시아군의 즉시 철수를 요구했다",
+      "tags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "문서내용",
+        "유엔"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:8f6705e79eaff0583a1e595a",
+      "path": "/api/v2/propositions/stmt-8f6705e79eaff0583a1e595a.json",
+      "canonical": "OHCHR 인권감시단(HRMMU)은 2022년 2월 전면 침공 이후 2026년 2월(침공 4주년) 기준 우크라이나에서 확인된 민간인 사망자를 최소 15,000명 이상, 부상자를 최소 41,000명 이상으로 집계했다",
+      "tags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "인도적피해",
+        "측정"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
     {
       "propositionId": "stmt:ab60963f623b2a8494f0eb3b",
       "path": "/api/v2/propositions/stmt-ab60963f623b2a8494f0eb3b.json",

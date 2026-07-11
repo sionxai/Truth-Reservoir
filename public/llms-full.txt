@@ -18,8 +18,176 @@ Storage boundary: the reservoir stores verified propositions and evidence struct
 Entity hubs: /e/{slug}/ pages and /api/v2/entities.json are deterministic derived navigation layers from sixW.who and sixW.why[].statedBy only. They are not entity profiles and assert no facts about the entity itself (제15).
 
 generatedAt: 2026-07-12
-total: 64
+total: 71
 recordOrder: updatedAt desc, then propositionId asc
+
+=== stmt:05b9abdca503067b1fd433ec ===
+propositionId: stmt:05b9abdca503067b1fd433ec
+humanUrl: /p/stmt-05b9abdca503067b1fd433ec/
+jsonUrl: /api/v2/propositions/stmt-05b9abdca503067b1fd433ec.json
+canonicalProposition: 국제형사재판소(ICC)는 2023년 3월 17일 블라디미르 푸틴 러시아 대통령과 마리야 리보바-벨로바에 대해 우크라이나 점령지 아동 불법 이송 전쟁범죄 혐의로 체포영장을 발부했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 국제형사재판소(ICC) 전심재판부 II
+  when: 2023년 3월 17일
+  where: 국제형사재판소(네덜란드 헤이그)
+  what: 푸틴 러시아 대통령과 마리야 리보바-벨로바에 대해 우크라이나 점령지 아동 불법 이송 전쟁범죄 혐의로 체포영장을 발부했다
+  how: 전심재판부가 두 사람에 대한 체포영장을 발부했다고 공표했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://news.un.org/en/story/2023/03/1134732; shortQuote: "allegedly responsible for the war crime of unlawful deportation"
+  - url: https://www.icc-cpi.int/news/situation-ukraine-icc-judges-issue-arrest-warrants-against-vladimir-vladimirovich-putin-and; shortQuote: "unlawful deportation of population (children) ... from occupied areas of Ukraine to the Russian Federation"
+limitations: 영장은 혐의이며 유죄 판단이 아니다. 러시아는 ICC 로마규정 당사국이 아니며 재판소의 관할과 영장을 부인한다. 신병 확보·재판은 이뤄지지 않았다.
+tags: 국제법, 국제사건, 러시아, 러시아우크라이나전쟁, ICC
+
+=== stmt:2e32e51752b91f9184c468af ===
+propositionId: stmt:2e32e51752b91f9184c468af
+humanUrl: /p/stmt-2e32e51752b91f9184c468af/
+jsonUrl: /api/v2/propositions/stmt-2e32e51752b91f9184c468af.json
+canonicalProposition: 유럽연합 통계청(유로스타트)은 2026년 5월 31일 기준 EU에서 임시보호를 받는 우크라이나 출신 피란민을 약 438만 명으로 집계했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 유럽연합 통계청(유로스타트)
+  when: 2026년 5월 31일 기준(2026-07-07 데이터 추출)
+  where: 유럽연합(EU) 회원국
+  what: EU에서 임시보호를 받는 우크라이나 출신 피란민을 약 438만 명으로 집계했다
+  how: EU 회원국이 보고한 임시보호 등록 인원을 시점별로 취합했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Temporary_protection_for_persons_fleeing_Ukraine_-_monthly_statistics; shortQuote: "4.38 million non-EU citizens, who fled Ukraine ... were under temporary protection in the EU"
+limitations: 이는 EU 임시보호 등록 인원이며 전 세계 우크라이나 난민(UNHCR 집계 약 570만, 2026-04)이나 국내 실향민(IOM 집계 약 385만, 2026-03)과는 다른 지표다. 등록 기반이라 미등록·왕복 이동은 반영되지 않는다. UNHCR 글로벌 수치는 자동 재대조가 불가해 이 명제의 앵커로 쓰지 않았다.
+tags: 국제사건, 난민, 러시아우크라이나전쟁, 인도적피해, 측정
+
+=== stmt:43bfd6d859ff779fedeec928 ===
+propositionId: stmt:43bfd6d859ff779fedeec928
+humanUrl: /p/stmt-43bfd6d859ff779fedeec928/
+jsonUrl: /api/v2/propositions/stmt-43bfd6d859ff779fedeec928.json
+canonicalProposition: 블라디미르 푸틴 러시아 대통령은 2022년 2월 24일 우크라이나에 대한 '특별군사작전' 개시 결정을 대국민 연설로 발표했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 블라디미르 푸틴 러시아 대통령
+  when: 2022년 2월 24일
+  where: 러시아 대통령 대국민 TV 연설
+  what: 우크라이나에 대한 '특별군사작전' 개시 결정을 발표했다
+  how: 이른 아침 대국민 TV 연설에서 개시 결정을 밝혔다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://theprint.in/world/full-text-of-vladimir-putins-speech-announcing-special-military-operation-in-ukraine/845714/; shortQuote: "I made a decision to carry out a special military operation."
+  - url: http://en.kremlin.ru/events/president/news/67843; shortQuote: "I have decided to conduct a special military operation."
+limitations: 명제는 개시 발표 행위에 한정한다. '특별군사작전'은 러시아 측 용어를 귀속 인용한 것이며 국제사회는 이를 침공으로 규정했다(제2 명제 참조).
+tags: 국제사건, 러시아, 러시아우크라이나전쟁, 우크라이나
+
+=== stmt:46c16754bee420a566961aa7 ===
+propositionId: stmt:46c16754bee420a566961aa7
+humanUrl: /p/stmt-46c16754bee420a566961aa7/
+jsonUrl: /api/v2/propositions/stmt-46c16754bee420a566961aa7.json
+canonicalProposition: 대한민국 정부는 2022년 2월 28일 러시아의 우크라이나 침공에 대응해 대러 전략물자 수출통제와 주요 러시아 은행 SWIFT 배제 조치 동참을 발표했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 대한민국 정부(외교부)
+  when: 2022년 2월 28일
+  where: 대한민국 정부의 대러 제재 동참 발표
+  what: 대러 전략물자 수출통제와 주요 러시아 은행 SWIFT 배제 조치 동참을 발표했다
+  how: 국제사회의 경제제재에 적극 참여하기로 결정했다고 밝혔다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.business-humanrights.org/en/latest-news/skorea-bans-exports-of-strategic-items-to-russia-joins-swift-sanctions-as-a-response-to-russian-aggression-on-ukraine/; shortQuote: "decided to actively participate in the international community's efforts, including economic sanctions"
+  - url: https://www.commerce.gov/news/press-releases/2022/03/joint-statement-republic-koreas-partnership-export-controls-russia; shortQuote: "Joint Statement on the Republic of Korea's Partnership on Export Controls for Russia"
+limitations: 명제는 2022-02-28 동참 발표에 한정한다. 이후 수출통제 품목 확대·제재 대상 은행 목록·이행 세부는 별개 사실이며, 발표가 곧 제재의 완전한 이행을 뜻하지 않는다.
+tags: 국내영향, 국제사건, 대한민국, 러시아우크라이나전쟁, 제재
+
+=== stmt:5dcafd99e98ca83ec2727165 ===
+propositionId: stmt:5dcafd99e98ca83ec2727165
+humanUrl: /p/stmt-5dcafd99e98ca83ec2727165/
+jsonUrl: /api/v2/propositions/stmt-5dcafd99e98ca83ec2727165.json
+canonicalProposition: 대한민국 국가정보원은 2024년 10월 18일 러시아 함정이 10월 8~13일 북한 특수부대 약 1,500명을 블라디보스토크로 1차 이송했다고 발표했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 대한민국 국가정보원
+  when: 2024년 10월 18일
+  where: 국가정보원 발표
+  what: 러시아 함정이 북한 특수부대 약 1,500명을 블라디보스토크로 1차 이송했다고 발표했다
+  how: 러시아 태평양함대 상륙함 등이 10월 8~13일 북한 특수부대를 이송했다고 밝혔다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.aljazeera.com/news/2024/10/18/south-koreas-spy-agency-says-north-korea-sending-troops-to-russia; shortQuote: "transferred 1,500 North Korean special operations forces to the Russian port city of Vladivostok"
+  - url: https://www.twz.com/news-features/south-korea-intelligence-offers-assessment-of-north-korean-troops-fighting-for-russia; shortQuote: "completed the first transfer of approximately 1,500 North Korean special forces"
+limitations: 명제는 국정원의 발표 사실에 한정한다. 국정원은 북한이 총 1만2천 명 파병을 결정한 것으로 판단한다고 밝혔으나 이 총 규모는 매체별로 관계자 귀속이 섞인 계획치이며 후속 이송으로 확인이 필요하다. 발표 시점 북한·러시아는 파병을 즉시 확인하지 않았다.
+tags: 국내영향, 국제사건, 대한민국, 러시아우크라이나전쟁, 북한
+
+=== stmt:8e4b4b465805476c14e263ff ===
+propositionId: stmt:8e4b4b465805476c14e263ff
+humanUrl: /p/stmt-8e4b4b465805476c14e263ff/
+jsonUrl: /api/v2/propositions/stmt-8e4b4b465805476c14e263ff.json
+canonicalProposition: 유엔 총회는 2022년 3월 2일 긴급특별총회에서 결의 ES-11/1을 찬성 141·반대 5·기권 35로 채택해 러시아의 우크라이나 무력 사용을 규탄하고 러시아군의 즉시 철수를 요구했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 유엔 총회
+  when: 2022년 3월 2일
+  where: 유엔 긴급특별총회(제11차)
+  what: 결의 ES-11/1을 찬성 141·반대 5·기권 35로 채택해 러시아를 규탄하고 러시아군의 즉시 철수를 요구했다
+  how: 긴급특별총회 표결로 채택했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://news.un.org/en/story/2022/03/1113152; shortQuote: "141 countries voted in favour ... Five ... against ... 35 abstained."
+  - url: https://www.aljazeera.com/news/2022/3/3/unga-resolution-against-ukraine-invasion-full-text; shortQuote: "immediately, completely and unconditionally withdraw all of its military forces"
+  - url: https://docs.un.org/en/A/RES/ES-11/1; shortQuote: "A/RES/ES-11/1"
+limitations: 총회 결의는 권고적 효력이며 안보리 결의와 달리 법적 강제력이 없다. 반대 5개국은 벨라루스·북한·에리트레아·러시아·시리아로 보도되나 이 명제의 핵심 문언 범위 밖이다.
+tags: 국제법, 국제사건, 러시아우크라이나전쟁, 문서내용, 유엔
+
+=== stmt:8f6705e79eaff0583a1e595a ===
+propositionId: stmt:8f6705e79eaff0583a1e595a
+humanUrl: /p/stmt-8f6705e79eaff0583a1e595a/
+jsonUrl: /api/v2/propositions/stmt-8f6705e79eaff0583a1e595a.json
+canonicalProposition: OHCHR 인권감시단(HRMMU)은 2022년 2월 전면 침공 이후 2026년 2월(침공 4주년) 기준 우크라이나에서 확인된 민간인 사망자를 최소 15,000명 이상, 부상자를 최소 41,000명 이상으로 집계했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: OHCHR 인권감시단(HRMMU)
+  when: 2026년 2월 16일 발표(침공 4주년 기준 누적)
+  where: 우크라이나 전역
+  what: 확인된 민간인 사망자를 최소 15,000명 이상, 부상자를 최소 41,000명 이상으로 집계했다
+  how: 다수 출처 대조로 확인한 사건만 누적 집계했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://ukraine.ohchr.org/en/Civilian-Harm-and-Rights-Violations-Intensify-in-Ukraine-Four-Years-After-Invasion-UN-Human-Rights-Monitors-Say; shortQuote: "conflict-related violence has killed more than 15,000 people and injured more than 41,000"
+  - url: https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-May-2026; shortQuote: "At least 274 civilians were killed and 1,763 injured in Ukraine in May 2026"
+limitations: 이 수치는 OHCHR이 다수 출처로 확인한 최소 집계치이며, OHCHR 스스로 실제 수치가 상당히 더 높을 것이라고 단서를 단다. 4주년(2026-02) 이후로도 매월 증가해(2026년 5월 단월 274명 사망) 현시점 실제 누적은 더 크다. 러시아·우크라이나 정부의 자체 집계 및 군인 사상자는 이 민간인 집계와 별개다.
+tags: 국제사건, 러시아우크라이나전쟁, 인도적피해, 측정
 
 === stmt:ab60963f623b2a8494f0eb3b ===
 propositionId: stmt:ab60963f623b2a8494f0eb3b

@@ -1,0 +1,115 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:2e32e51752b91f9184c468af",
+  "versionId": "ver:298498f727dd90af",
+  "certHash": "sha256:74a418842d35f67c1e0e2a20f2cad2c18d9148f61b16fe952010d444d5c810a6",
+  "canonicalProposition": "유럽연합 통계청(유로스타트)은 2026년 5월 31일 기준 EU에서 임시보호를 받는 우크라이나 출신 피란민을 약 438만 명으로 집계했다",
+  "originalClaim": "러시아-우크라이나 전쟁의 인도적 영향(난민 측정, 현시점·재현가능 지표로 프레이밍).",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "EU 회원국이 부여한 임시보호 지위 등록 인원 취합",
+    "sample": "EU 내 임시보호 지위를 받은 우크라이나 출신 피란민",
+    "aggregationBasis": "2026년 5월 31일 시점 등록 인원 현황",
+    "producer": "유럽연합 통계청(유로스타트) — EU 회원국 보고 취합",
+    "measuredAt": "2026-05-31"
+  },
+  "sixW": {
+    "who": "유럽연합 통계청(유로스타트)",
+    "when": "2026년 5월 31일 기준(2026-07-07 데이터 추출)",
+    "where": "유럽연합(EU) 회원국",
+    "what": "EU에서 임시보호를 받는 우크라이나 출신 피란민을 약 438만 명으로 집계했다",
+    "how": "EU 회원국이 보고한 임시보호 등록 인원을 시점별로 취합했다",
+    "why": []
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "유로스타트 공식 통계 페이지가 2026년 5월 31일 기준 EU 임시보호 우크라이나 피란민 약 438만 명과 국가별 내역(독일 128만·폴란드 97만 등)을 fetch 가능하게 제공한다. 이는 등록 기반 집계이며 전체 난민 규모와는 다른 지표다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Temporary_protection_for_persons_fleeing_Ukraine_-_monthly_statistics",
+      "title": "Temporary protection for persons fleeing Ukraine — monthly statistics",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "4.38 million non-EU citizens, who fled Ukraine ... were under temporary protection in the EU",
+      "quoteHash": "sha256:53c386aebd8e0a8e4844e4add8c2bd691d5de910b61a801e4bf26051bb50f9ea",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "유로스타트 공식 통계 페이지를 HTTP 200으로 확인해 2026-05-31 기준 4.38백만과 국가별 내역을 재대조했다. 데이터 추출일 2026-07-07.",
+      "independenceGroupId": "eurostat-temp-protection-20260531",
+      "independenceLevel": "independent",
+      "independenceNote": "EU 회원국 보고를 취합하는 EU 공식 통계기구의 1차 집계다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "EU 임시보호 통계의 공식 생산기관이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "등록 기반이라 미등록·왕복 이동은 반영되지 않음"
+        ],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "EU 임시보호 438만을 '난민 총수'처럼 제시하면, 유럽 밖 난민과 미등록 인구를 누락한 것으로 오독될 수 있다.",
+      "response": "명제와 measurement에 'EU 임시보호 등록 인원'과 기준일을 명시하고, 전 세계 난민(UNHCR 약 570만)과 다른 지표임을 limitations에 담았다.",
+      "errorsFound": 0,
+      "framingChecks": "'난민 위기'·'대탈출' 같은 평가어를 배제하고 등록 집계치와 지표 범위만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "EU 임시보호(본 명제)와 전 세계 난민·국내 실향민(IDP)의 별개 지표를 limitations에서 구분했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "유로스타트 발표를 현실 그 자체가 아니라 등록 기반 측정값으로 다루고 방법·시점·범위를 감사했다(제13). UNHCR 글로벌 수치는 자동 재대조 불가라 앵커로 쓰지 않고 맥락으로만 남겼다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·측정 사안이라 human_reviewed 레인. 당초 UNHCR 글로벌 난민(약 570만)을 검토했으나 JS 대시보드·PDF라 자동 재대조가 불가(제5)해, fetch 가능한 유로스타트 EU 임시보호 지표로 명제를 재프레이밍했다. UNHCR 수치는 limitations에 맥락으로 보존했다.",
+      "adoptedReason": "fetch 가능한 유로스타트 공식 통계가 기준일·수치·국가별 내역을 재대조 가능하게 제공한다.",
+      "rejectedAlternatives": "재대조 불가한 UNHCR 글로벌 570만을 핵심 앵커로 삼는 것, 그리고 EU 임시보호를 전체 난민 총수로 제시하는 것은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 명제는 유로스타트의 EU 임시보호 등록 인원이라는 측정값만 기록하며, 전 세계 난민 규모나 실제 이동 인구와는 다른 지표다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이는 EU 임시보호 등록 인원이며 전 세계 우크라이나 난민(UNHCR 집계 약 570만, 2026-04)이나 국내 실향민(IOM 집계 약 385만, 2026-03)과는 다른 지표다. 등록 기반이라 미등록·왕복 이동은 반영되지 않는다. UNHCR 글로벌 수치는 자동 재대조가 불가해 이 명제의 앵커로 쓰지 않았다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "측정",
+    "난민",
+    "인도적피해"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

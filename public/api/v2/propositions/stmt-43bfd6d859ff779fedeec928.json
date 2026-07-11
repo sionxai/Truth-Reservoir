@@ -1,0 +1,135 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:43bfd6d859ff779fedeec928",
+  "versionId": "ver:6a6b34ced45214de",
+  "certHash": "sha256:213b3ce04f37a081c21e9b5a9f32df88b5f20a2b30ce52352134878002c926c6",
+  "canonicalProposition": "블라디미르 푸틴 러시아 대통령은 2022년 2월 24일 우크라이나에 대한 '특별군사작전' 개시 결정을 대국민 연설로 발표했다",
+  "originalClaim": "러시아-우크라이나 전쟁 주제 신설(국제 골격).",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "블라디미르 푸틴 러시아 대통령",
+    "when": "2022년 2월 24일",
+    "where": "러시아 대통령 대국민 TV 연설",
+    "what": "우크라이나에 대한 '특별군사작전' 개시 결정을 발표했다",
+    "how": "이른 아침 대국민 TV 연설에서 개시 결정을 밝혔다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "크렘린 공식 영문 연설 기록에 '특별군사작전 개시 결정' 문구가 있고, 이를 전문 전재한 fetch 가능한 매체(ThePrint)가 날짜·문구를 재대조한다. 이는 개시 발표라는 행위 사실이며 작전의 정당성·성격에 대한 판단이 아니다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://theprint.in/world/full-text-of-vladimir-putins-speech-announcing-special-military-operation-in-ukraine/845714/",
+      "title": "Full text of Vladimir Putin's speech announcing 'special military operation' in Ukraine",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "I made a decision to carry out a special military operation.",
+      "quoteHash": "sha256:5325b1184f0a26d99d31703bff13a684d667fdb1f9e6248fccecf5c98378bde8",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "크렘린 공식 연설의 영문 전문을 전재한 페이지를 HTTP 200으로 확인했다. 크렘린 공식역은 'conduct a special military operation'으로 동의어이며 번역 편차만 있다.",
+      "independenceGroupId": "putin-speech-20220224",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "크렘린 공식 연설을 원출처로 하되 독립 매체가 전문을 게재해 재대조 가능하다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "발화 원문 전체를 게재한 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "contested",
+        "productionConcerns": [
+          "원발화 주체가 분쟁 당사자(러시아)다"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "http://en.kremlin.ru/events/president/news/67843",
+      "title": "Address by the President of the Russian Federation",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "I have decided to conduct a special military operation.",
+      "quoteHash": "sha256:8240433643c57b5cbac196fd029c6749a1b808816094a4b075a94ed3b56acecf",
+      "archiveStatus": "unavailable",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "크렘린 공식 영문 연설 기록이나 자동 fetch(WebFetch)에서 빈 응답으로 재대조하지 못했다. fetch 가능한 전문 전재본을 보조 앵커로 사용한다(제5).",
+      "independenceGroupId": "putin-speech-20220224",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "발화 당사자인 크렘린의 공식 기록이다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "원발화의 공식 1차 기록이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "party_interested",
+        "productionConcerns": [
+          "분쟁 당사자의 자기 발표",
+          "자동 fetch 불가"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "'특별군사작전'이라는 러시아 측 용어를 그대로 쓰면 침공을 완곡하게 표현한 것으로 읽힐 수 있다.",
+      "response": "명제는 푸틴이 그 용어로 개시를 '발표한' 발화 사실만 귀속해 기록하고, 저수지가 작전의 성격을 규정하지 않는다. 침공 규탄은 별도 UN 결의 명제로 담았다.",
+      "errorsFound": 0,
+      "framingChecks": "'침략'·'정당한 방어' 등 어느 쪽 규정도 저수지 목소리로 쓰지 않고, 러시아 측 용어는 인용부호로 귀속했다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "러시아 측 발표(본 명제)와 국제사회 규탄(UN 결의 명제)을 함께 담아 한쪽만 수집하지 않았다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "크렘린 공식 기록을 최종 판단이 아니라 '발표 사실'의 근거로만 쓰고 fetch 가능한 전재본으로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·정치·진행 중 무력분쟁 사안이라 human_reviewed 레인. 크렘린 원문은 자동 fetch 불가라 전문 전재본을 fetch 앵커로 삼았다(제5). '특별군사작전' 용어는 귀속 인용으로 처리.",
+      "adoptedReason": "fetch 가능한 전문 전재본이 크렘린 공식 문구와 날짜를 재대조한다.",
+      "rejectedAlternatives": "이 발표가 정당한 작전이라거나 반대로 명백한 침략이라는 규정은 저수지 목소리로 담지 않았다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 러시아 대통령이 개시를 발표했다는 발화 사실만 기록하며, 그 작전의 국제법적 성격은 다른 명제(UN 결의·ICC 영장)로 분리해 다룬다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "명제는 개시 발표 행위에 한정한다. '특별군사작전'은 러시아 측 용어를 귀속 인용한 것이며 국제사회는 이를 침공으로 규정했다(제2 명제 참조).",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "러시아",
+    "우크라이나"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

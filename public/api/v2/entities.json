@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-12",
-    "total": 43,
+    "total": 49,
     "note": "sixW.who/statedBy 기반 결정론적 파생; cert 원본 미저장; 탐색 허브(제15)"
   },
   "entities": [
@@ -73,6 +73,21 @@
       "roles": {
         "who": [
           "stmt:9fa1e13fbdeb497fdee35c15"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "국제형사재판소(ICC) 전심재판부 II",
+      "slug": "e-6rWt7KCc7ZiV7IKs7J6s7YyQ7IaMKElDQykg7KCE7Ius7J6s7YyQ67aAIElJ",
+      "path": "/e/e-6rWt7KCc7ZiV7IKs7J6s7YyQ7IaMKElDQykg7KCE7Ius7J6s7YyQ67aAIElJ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:05b9abdca503067b1fd433ec"
+      ],
+      "roles": {
+        "who": [
+          "stmt:05b9abdca503067b1fd433ec"
         ],
         "statedBy": []
       }
@@ -192,6 +207,21 @@
       }
     },
     {
+      "name": "대한민국 국가정보원",
+      "slug": "e-64yA7ZWc66-86rWtIOq1reqwgOygleuztOybkA",
+      "path": "/e/e-64yA7ZWc66-86rWtIOq1reqwgOygleuztOybkA",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:5dcafd99e98ca83ec2727165"
+      ],
+      "roles": {
+        "who": [
+          "stmt:5dcafd99e98ca83ec2727165"
+        ],
+        "statedBy": []
+      }
+    },
+    {
       "name": "대한민국 선거관리 체계",
       "slug": "e-64yA7ZWc66-86rWtIOyEoOqxsOq0gOumrCDssrTqs4Q",
       "path": "/e/e-64yA7ZWc66-86rWtIOyEoOqxsOq0gOumrCDssrTqs4Q",
@@ -210,13 +240,15 @@
       "name": "대한민국 정부",
       "slug": "e-64yA7ZWc66-86rWtIOygleu2gA",
       "path": "/e/e-64yA7ZWc66-86rWtIOygleu2gA",
-      "propositionCount": 1,
+      "propositionCount": 2,
       "propositionIds": [
-        "stmt:40340515225f7adf44e242f3"
+        "stmt:40340515225f7adf44e242f3",
+        "stmt:46c16754bee420a566961aa7"
       ],
       "roles": {
         "who": [
-          "stmt:40340515225f7adf44e242f3"
+          "stmt:40340515225f7adf44e242f3",
+          "stmt:46c16754bee420a566961aa7"
         ],
         "statedBy": []
       }
@@ -247,6 +279,21 @@
       "roles": {
         "who": [
           "stmt:d78f27d3e447961d8e0f492b"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "블라디미르 푸틴 러시아 대통령",
+      "slug": "e-67iU652865SU66-466W0IO2RuO2LtCDrn6zsi5zslYQg64yA7Ya166C5",
+      "path": "/e/e-67iU652865SU66-466W0IO2RuO2LtCDrn6zsi5zslYQg64yA7Ya166C5",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:43bfd6d859ff779fedeec928"
+      ],
+      "roles": {
+        "who": [
+          "stmt:43bfd6d859ff779fedeec928"
         ],
         "statedBy": []
       }
@@ -355,6 +402,36 @@
       "roles": {
         "who": [
           "stmt:b18e2813819c4fb0e23830f6"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "유럽연합 통계청",
+      "slug": "e-7Jyg65-97Jew7ZWpIO2GteqzhOyyrQ",
+      "path": "/e/e-7Jyg65-97Jew7ZWpIO2GteqzhOyyrQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:2e32e51752b91f9184c468af"
+      ],
+      "roles": {
+        "who": [
+          "stmt:2e32e51752b91f9184c468af"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "유엔 총회",
+      "slug": "e-7Jyg7JeUIOy0ne2ajA",
+      "path": "/e/e-7Jyg7JeUIOy0ne2ajA",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:8e4b4b465805476c14e263ff"
+      ],
+      "roles": {
+        "who": [
+          "stmt:8e4b4b465805476c14e263ff"
         ],
         "statedBy": []
       }
@@ -657,6 +734,21 @@
       "roles": {
         "who": [
           "stmt:b9a4dcf237affc17c1a51fe6"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "OHCHR 인권감시단",
+      "slug": "e-T0hDSFIg7J246raM6rCQ7Iuc64uo",
+      "path": "/e/e-T0hDSFIg7J246raM6rCQ7Iuc64uo",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:8f6705e79eaff0583a1e595a"
+      ],
+      "roles": {
+        "who": [
+          "stmt:8f6705e79eaff0583a1e595a"
         ],
         "statedBy": []
       }

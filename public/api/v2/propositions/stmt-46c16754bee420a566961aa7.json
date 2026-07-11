@@ -1,0 +1,132 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:46c16754bee420a566961aa7",
+  "versionId": "ver:2b1b92d1d45cff11",
+  "certHash": "sha256:a6a0d135638bd09ee46b7e92fba6cd91a7110828d6b2b20d37d233346a39a49f",
+  "canonicalProposition": "대한민국 정부는 2022년 2월 28일 러시아의 우크라이나 침공에 대응해 대러 전략물자 수출통제와 주요 러시아 은행 SWIFT 배제 조치 동참을 발표했다",
+  "originalClaim": "러시아-우크라이나 전쟁의 한국 국내 관련성.",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "대한민국 정부(외교부)",
+    "when": "2022년 2월 28일",
+    "where": "대한민국 정부의 대러 제재 동참 발표",
+    "what": "대러 전략물자 수출통제와 주요 러시아 은행 SWIFT 배제 조치 동참을 발표했다",
+    "how": "국제사회의 경제제재에 적극 참여하기로 결정했다고 밝혔다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "외교부의 2022-02-28 발표(경제제재 동참·전략물자 수출통제·SWIFT 배제 은행 동참)를 로이터 기반 보도가 fetch 가능하게 확인하고, 며칠 뒤 미 상무부와의 수출통제 공동성명이 이를 보강한다. 이는 정책 발표 사실이며 제재의 효과에 대한 판단이 아니다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.business-humanrights.org/en/latest-news/skorea-bans-exports-of-strategic-items-to-russia-joins-swift-sanctions-as-a-response-to-russian-aggression-on-ukraine/",
+      "title": "S.Korea bans exports of strategic items to Russia & joins SWIFT sanctions in response to Russia's aggression on Ukraine",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "decided to actively participate in the international community's efforts, including economic sanctions",
+      "quoteHash": "sha256:60781c0e791744d0da660feb49ee5df07239fe9c38adb55f26bf763daeb2cad6",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "외교부 발표를 인용한 로이터 기반 보도를 HTTP 200으로 확인했다. 발표일 2022-02-28과 조치(전략물자 수출통제·SWIFT 배제 은행 동참)를 재대조했다.",
+      "independenceGroupId": "korea-sanctions-20220228",
+      "independenceLevel": "independent",
+      "independenceNote": "외교부 발표를 인용한 fetch 가능 보도다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "한국의 대러 제재 동참을 보도한 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.commerce.gov/news/press-releases/2022/03/joint-statement-republic-koreas-partnership-export-controls-russia",
+      "title": "Joint Statement on the Republic of Korea's Partnership on Export Controls for Russia",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "제목"
+      },
+      "shortQuote": "Joint Statement on the Republic of Korea's Partnership on Export Controls for Russia",
+      "quoteHash": "sha256:8cb17eae3b4b311b75873e0af0050dba6fefc4519f937aaaa8c2a37ab0463e0e",
+      "archiveStatus": "unavailable",
+      "retrievalMethod": "manual",
+      "retrievalLimitations": "미 상무부 공동성명이 한국의 대러 수출통제 동참을 당사자로 확인하는 1차 자료이나 자동 fetch에서 HTTP 403으로 본문 재대조는 하지 못하고 제목 수준만 확인했다. 핵심 사실은 fetch 가능한 첫 출처가 확인한다(제5).",
+      "independenceGroupId": "korea-export-controls-us-joint",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "한국이 당사자인 미 상무부 공동성명으로 수출통제 동참을 확인한다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "수출통제 공조의 공식 1차 성명이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "자동 fetch 차단(403)"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "제재 동참 발표와 실제 이행·집행은 다를 수 있어, 발표만으로 제재가 작동했다고 오독될 수 있다.",
+      "response": "명제는 정부의 동참 '발표' 사실에 한정하고 제재의 이행 정도나 효과는 담지 않았다. limitations에 이를 명시했다.",
+      "errorsFound": 0,
+      "framingChecks": "제재의 정당성·효과 평가를 제외하고 동참 발표 사실만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "한국의 제재 동참(본 명제)은 러시아 발표·국제 규탄 명제와 같은 사건 계열에서 함께 다룬다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "정부 발표를 최종 판단이 아니라 '발표 사실'의 근거로 쓰고 fetch 가능한 보도로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·외교 정책 사안이라 human_reviewed 레인. 외교부·연합뉴스 원문은 자동 fetch 제약이 있어 로이터 기반 fetch 가능 보도를 핵심 앵커로, 미 상무부 공동성명을 보강으로 삼았다.",
+      "adoptedReason": "fetch 가능한 보도가 발표일·조치를 확인하고 미 정부 공동성명이 수출통제 동참을 보강한다.",
+      "rejectedAlternatives": "한국 제재가 강력했다거나 형식적이었다는 평가는 담지 않았다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 대한민국 정부의 대러 제재 동참 발표 사실만 기록하며, 제재의 이행 정도나 효과는 판단하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "명제는 2022-02-28 동참 발표에 한정한다. 이후 수출통제 품목 확대·제재 대상 은행 목록·이행 세부는 별개 사실이며, 발표가 곧 제재의 완전한 이행을 뜻하지 않는다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "대한민국",
+    "국내영향",
+    "국제사건",
+    "제재"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

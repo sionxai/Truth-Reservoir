@@ -1958,6 +1958,121 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:2e32e51752b91f9184c468af",
+      "versionId": "ver:298498f727dd90af",
+      "certHash": "sha256:74a418842d35f67c1e0e2a20f2cad2c18d9148f61b16fe952010d444d5c810a6",
+      "canonicalProposition": "유럽연합 통계청(유로스타트)은 2026년 5월 31일 기준 EU에서 임시보호를 받는 우크라이나 출신 피란민을 약 438만 명으로 집계했다",
+      "originalClaim": "러시아-우크라이나 전쟁의 인도적 영향(난민 측정, 현시점·재현가능 지표로 프레이밍).",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "EU 회원국이 부여한 임시보호 지위 등록 인원 취합",
+        "sample": "EU 내 임시보호 지위를 받은 우크라이나 출신 피란민",
+        "aggregationBasis": "2026년 5월 31일 시점 등록 인원 현황",
+        "producer": "유럽연합 통계청(유로스타트) — EU 회원국 보고 취합",
+        "measuredAt": "2026-05-31"
+      },
+      "sixW": {
+        "who": "유럽연합 통계청(유로스타트)",
+        "when": "2026년 5월 31일 기준(2026-07-07 데이터 추출)",
+        "where": "유럽연합(EU) 회원국",
+        "what": "EU에서 임시보호를 받는 우크라이나 출신 피란민을 약 438만 명으로 집계했다",
+        "how": "EU 회원국이 보고한 임시보호 등록 인원을 시점별로 취합했다",
+        "why": []
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유로스타트 공식 통계 페이지가 2026년 5월 31일 기준 EU 임시보호 우크라이나 피란민 약 438만 명과 국가별 내역(독일 128만·폴란드 97만 등)을 fetch 가능하게 제공한다. 이는 등록 기반 집계이며 전체 난민 규모와는 다른 지표다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Temporary_protection_for_persons_fleeing_Ukraine_-_monthly_statistics",
+          "title": "Temporary protection for persons fleeing Ukraine — monthly statistics",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "4.38 million non-EU citizens, who fled Ukraine ... were under temporary protection in the EU",
+          "quoteHash": "sha256:53c386aebd8e0a8e4844e4add8c2bd691d5de910b61a801e4bf26051bb50f9ea",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "유로스타트 공식 통계 페이지를 HTTP 200으로 확인해 2026-05-31 기준 4.38백만과 국가별 내역을 재대조했다. 데이터 추출일 2026-07-07.",
+          "independenceGroupId": "eurostat-temp-protection-20260531",
+          "independenceLevel": "independent",
+          "independenceNote": "EU 회원국 보고를 취합하는 EU 공식 통계기구의 1차 집계다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "EU 임시보호 통계의 공식 생산기관이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "등록 기반이라 미등록·왕복 이동은 반영되지 않음"
+            ],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "EU 임시보호 438만을 '난민 총수'처럼 제시하면, 유럽 밖 난민과 미등록 인구를 누락한 것으로 오독될 수 있다.",
+          "response": "명제와 measurement에 'EU 임시보호 등록 인원'과 기준일을 명시하고, 전 세계 난민(UNHCR 약 570만)과 다른 지표임을 limitations에 담았다.",
+          "errorsFound": 0,
+          "framingChecks": "'난민 위기'·'대탈출' 같은 평가어를 배제하고 등록 집계치와 지표 범위만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "EU 임시보호(본 명제)와 전 세계 난민·국내 실향민(IDP)의 별개 지표를 limitations에서 구분했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "유로스타트 발표를 현실 그 자체가 아니라 등록 기반 측정값으로 다루고 방법·시점·범위를 감사했다(제13). UNHCR 글로벌 수치는 자동 재대조 불가라 앵커로 쓰지 않고 맥락으로만 남겼다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·측정 사안이라 human_reviewed 레인. 당초 UNHCR 글로벌 난민(약 570만)을 검토했으나 JS 대시보드·PDF라 자동 재대조가 불가(제5)해, fetch 가능한 유로스타트 EU 임시보호 지표로 명제를 재프레이밍했다. UNHCR 수치는 limitations에 맥락으로 보존했다.",
+          "adoptedReason": "fetch 가능한 유로스타트 공식 통계가 기준일·수치·국가별 내역을 재대조 가능하게 제공한다.",
+          "rejectedAlternatives": "재대조 불가한 UNHCR 글로벌 570만을 핵심 앵커로 삼는 것, 그리고 EU 임시보호를 전체 난민 총수로 제시하는 것은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 명제는 유로스타트의 EU 임시보호 등록 인원이라는 측정값만 기록하며, 전 세계 난민 규모나 실제 이동 인구와는 다른 지표다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이는 EU 임시보호 등록 인원이며 전 세계 우크라이나 난민(UNHCR 집계 약 570만, 2026-04)이나 국내 실향민(IOM 집계 약 385만, 2026-03)과는 다른 지표다. 등록 기반이라 미등록·왕복 이동은 반영되지 않는다. UNHCR 글로벌 수치는 자동 재대조가 불가해 이 명제의 앵커로 쓰지 않았다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "측정",
+        "난민",
+        "인도적피해"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:75fc8d303885c2159f99099d",
       "versionId": "ver:017ebfaeb2d45d41",
       "certHash": "sha256:53c5302ac5a1d745de443c8e2561a1546ff768c55161d7101498869531d4206a",
@@ -2617,6 +2732,141 @@
       ],
       "createdAt": "2026-06-19",
       "updatedAt": "2026-06-19"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:05b9abdca503067b1fd433ec",
+      "versionId": "ver:a607c0fbe9093475",
+      "certHash": "sha256:f70b3ca36cc6eede93bad2c5be1f2bf1da134e19af1d1346096b830cc3ea087e",
+      "canonicalProposition": "국제형사재판소(ICC)는 2023년 3월 17일 블라디미르 푸틴 러시아 대통령과 마리야 리보바-벨로바에 대해 우크라이나 점령지 아동 불법 이송 전쟁범죄 혐의로 체포영장을 발부했다",
+      "originalClaim": "러시아-우크라이나 전쟁 주제 신설(국제법 골격).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "국제형사재판소(ICC) 전심재판부 II",
+        "when": "2023년 3월 17일",
+        "where": "국제형사재판소(네덜란드 헤이그)",
+        "what": "푸틴 러시아 대통령과 마리야 리보바-벨로바에 대해 우크라이나 점령지 아동 불법 이송 전쟁범죄 혐의로 체포영장을 발부했다",
+        "how": "전심재판부가 두 사람에 대한 체포영장을 발부했다고 공표했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유엔 공식 뉴스가 2023년 3월 17일 발부일과 대상 2인, 아동 불법 이송 전쟁범죄 혐의를 fetch 가능하게 확인하고 ICC 공식 보도자료가 원출처다. 이는 영장 발부 사실이며 유무죄 판단이 아니다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://news.un.org/en/story/2023/03/1134732",
+          "title": "Russia: International Criminal Court issues arrest warrant for Putin",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "allegedly responsible for the war crime of unlawful deportation",
+          "quoteHash": "sha256:81454f36c09fb54203e389cf52a8febc8ff64108ff3945330a421ac15da6647a",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "유엔 공식 뉴스를 HTTP 200으로 확인해 발부일(2023-03-17)·대상 2인·아동 불법 이송 혐의를 재대조했다.",
+          "independenceGroupId": "icc-warrant-20230317",
+          "independenceLevel": "independent",
+          "independenceNote": "ICC와 별개 기구인 유엔이 발부 사실을 보도해 재대조 가능하다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "국제 형사사법 사안을 보도하는 유엔 공식 뉴스다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.icc-cpi.int/news/situation-ukraine-icc-judges-issue-arrest-warrants-against-vladimir-vladimirovich-putin-and",
+          "title": "Situation in Ukraine: ICC judges issue arrest warrants against Vladimir Vladimirovich Putin and Maria Alekseyevna Lvova-Belova",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "unlawful deportation of population (children) ... from occupied areas of Ukraine to the Russian Federation",
+          "quoteHash": "sha256:3f809f283f2ca05405e52bff5131517cebaf11a1523466c6d3ef32de467d052b",
+          "archiveStatus": "unavailable",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "ICC 공식 보도자료가 원출처이나 자동 fetch(WebFetch)에서 HTTP 403으로 차단돼 재대조하지 못했다. 동일 내용을 fetch 가능한 유엔 공식 뉴스가 확인한다(제5).",
+          "independenceGroupId": "icc-warrant-official-20230317",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "영장을 발부한 ICC의 공식 보도자료다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "영장 발부 기관의 1차 발표다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "자동 fetch 차단(403)"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "영장 발부를 담으면 저수지가 푸틴의 유죄를 전제한 것으로 읽힐 수 있다.",
+          "response": "명제는 ICC가 혐의로 영장을 '발부했다'는 절차 사실만 기록하고 유무죄를 담지 않았다. 러시아가 ICC 관할을 부인하는 점을 limitations에 명시했다.",
+          "errorsFound": 0,
+          "framingChecks": "'전범'·'무고' 어느 규정도 저수지 목소리로 쓰지 않고 혐의(allegedly)를 귀속했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "영장 발부(본 명제)와 러시아의 관할 부인(limitations)을 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "ICC를 최종 유죄 판단 권위로 쓰지 않고 '영장 발부 사실'의 근거로만 사용했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·형사·생존 인물·진행 중 사안이라 human_reviewed 레인. ICC 원문은 403이라 fetch 가능한 유엔 공식 뉴스를 핵심 앵커로 삼았다(제5).",
+          "adoptedReason": "fetch 가능한 유엔 공식 뉴스가 발부일·대상·혐의를 확인한다.",
+          "rejectedAlternatives": "영장이 곧 유죄라거나 반대로 정치적 조작이라는 결론은 담지 않았다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "living_person",
+          "criminal_allegation",
+          "ongoing_litigation"
+        ],
+        "legalStatus": "pending",
+        "presumptionNotice": "이 명제는 ICC가 혐의로 체포영장을 발부했다는 절차 사실만 기록한다. 대상자는 유죄가 확정되지 않았으며 무죄로 추정된다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "영장은 혐의이며 유죄 판단이 아니다. 러시아는 ICC 로마규정 당사국이 아니며 재판소의 관할과 영장을 부인한다. 신병 확보·재판은 이뤄지지 않았다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "ICC",
+        "국제법",
+        "러시아"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
     },
     {
       "certVersion": "2.1",
@@ -5837,6 +6087,138 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:46c16754bee420a566961aa7",
+      "versionId": "ver:2b1b92d1d45cff11",
+      "certHash": "sha256:a6a0d135638bd09ee46b7e92fba6cd91a7110828d6b2b20d37d233346a39a49f",
+      "canonicalProposition": "대한민국 정부는 2022년 2월 28일 러시아의 우크라이나 침공에 대응해 대러 전략물자 수출통제와 주요 러시아 은행 SWIFT 배제 조치 동참을 발표했다",
+      "originalClaim": "러시아-우크라이나 전쟁의 한국 국내 관련성.",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "대한민국 정부(외교부)",
+        "when": "2022년 2월 28일",
+        "where": "대한민국 정부의 대러 제재 동참 발표",
+        "what": "대러 전략물자 수출통제와 주요 러시아 은행 SWIFT 배제 조치 동참을 발표했다",
+        "how": "국제사회의 경제제재에 적극 참여하기로 결정했다고 밝혔다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "외교부의 2022-02-28 발표(경제제재 동참·전략물자 수출통제·SWIFT 배제 은행 동참)를 로이터 기반 보도가 fetch 가능하게 확인하고, 며칠 뒤 미 상무부와의 수출통제 공동성명이 이를 보강한다. 이는 정책 발표 사실이며 제재의 효과에 대한 판단이 아니다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.business-humanrights.org/en/latest-news/skorea-bans-exports-of-strategic-items-to-russia-joins-swift-sanctions-as-a-response-to-russian-aggression-on-ukraine/",
+          "title": "S.Korea bans exports of strategic items to Russia & joins SWIFT sanctions in response to Russia's aggression on Ukraine",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "decided to actively participate in the international community's efforts, including economic sanctions",
+          "quoteHash": "sha256:60781c0e791744d0da660feb49ee5df07239fe9c38adb55f26bf763daeb2cad6",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "외교부 발표를 인용한 로이터 기반 보도를 HTTP 200으로 확인했다. 발표일 2022-02-28과 조치(전략물자 수출통제·SWIFT 배제 은행 동참)를 재대조했다.",
+          "independenceGroupId": "korea-sanctions-20220228",
+          "independenceLevel": "independent",
+          "independenceNote": "외교부 발표를 인용한 fetch 가능 보도다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "한국의 대러 제재 동참을 보도한 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.commerce.gov/news/press-releases/2022/03/joint-statement-republic-koreas-partnership-export-controls-russia",
+          "title": "Joint Statement on the Republic of Korea's Partnership on Export Controls for Russia",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "제목"
+          },
+          "shortQuote": "Joint Statement on the Republic of Korea's Partnership on Export Controls for Russia",
+          "quoteHash": "sha256:8cb17eae3b4b311b75873e0af0050dba6fefc4519f937aaaa8c2a37ab0463e0e",
+          "archiveStatus": "unavailable",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "미 상무부 공동성명이 한국의 대러 수출통제 동참을 당사자로 확인하는 1차 자료이나 자동 fetch에서 HTTP 403으로 본문 재대조는 하지 못하고 제목 수준만 확인했다. 핵심 사실은 fetch 가능한 첫 출처가 확인한다(제5).",
+          "independenceGroupId": "korea-export-controls-us-joint",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "한국이 당사자인 미 상무부 공동성명으로 수출통제 동참을 확인한다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "수출통제 공조의 공식 1차 성명이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [
+              "자동 fetch 차단(403)"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "제재 동참 발표와 실제 이행·집행은 다를 수 있어, 발표만으로 제재가 작동했다고 오독될 수 있다.",
+          "response": "명제는 정부의 동참 '발표' 사실에 한정하고 제재의 이행 정도나 효과는 담지 않았다. limitations에 이를 명시했다.",
+          "errorsFound": 0,
+          "framingChecks": "제재의 정당성·효과 평가를 제외하고 동참 발표 사실만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "한국의 제재 동참(본 명제)은 러시아 발표·국제 규탄 명제와 같은 사건 계열에서 함께 다룬다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "정부 발표를 최종 판단이 아니라 '발표 사실'의 근거로 쓰고 fetch 가능한 보도로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "정치·외교 정책 사안이라 human_reviewed 레인. 외교부·연합뉴스 원문은 자동 fetch 제약이 있어 로이터 기반 fetch 가능 보도를 핵심 앵커로, 미 상무부 공동성명을 보강으로 삼았다.",
+          "adoptedReason": "fetch 가능한 보도가 발표일·조치를 확인하고 미 정부 공동성명이 수출통제 동참을 보강한다.",
+          "rejectedAlternatives": "한국 제재가 강력했다거나 형식적이었다는 평가는 담지 않았다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 대한민국 정부의 대러 제재 동참 발표 사실만 기록하며, 제재의 이행 정도나 효과는 판단하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "명제는 2022-02-28 동참 발표에 한정한다. 이후 수출통제 품목 확대·제재 대상 은행 목록·이행 세부는 별개 사실이며, 발표가 곧 제재의 완전한 이행을 뜻하지 않는다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "대한민국",
+        "국내영향",
+        "국제사건",
+        "제재"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:7536cb937fa5897848d6ecf4",
       "versionId": "ver:60922d6e2d88a59b",
       "certHash": "sha256:856a309f6b976976db25e334f63e0290c24d3e71a2a404c2fb84b867a8131311",
@@ -8123,6 +8505,141 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:5dcafd99e98ca83ec2727165",
+      "versionId": "ver:376fd36f37a4b717",
+      "certHash": "sha256:7a03f6c816bb8e3125a5a98169575545137214a60aa30031d2ebca3514252a4a",
+      "canonicalProposition": "대한민국 국가정보원은 2024년 10월 18일 러시아 함정이 10월 8~13일 북한 특수부대 약 1,500명을 블라디보스토크로 1차 이송했다고 발표했다",
+      "originalClaim": "러시아-우크라이나 전쟁의 한국 안보 관련성(북한군 파병).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "대한민국 국가정보원",
+        "when": "2024년 10월 18일",
+        "where": "국가정보원 발표",
+        "what": "러시아 함정이 북한 특수부대 약 1,500명을 블라디보스토크로 1차 이송했다고 발표했다",
+        "how": "러시아 태평양함대 상륙함 등이 10월 8~13일 북한 특수부대를 이송했다고 밝혔다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "국정원의 2024-10-18 발표를 알자지라·TWZ 등 fetch 가능한 국제 매체가 '1차 1,500명 이송'으로 직접 인용해 확인한다. 이는 국정원의 발표 사실을 귀속한 것이며 파병 자체를 저수지가 확정한 것이 아니다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.aljazeera.com/news/2024/10/18/south-koreas-spy-agency-says-north-korea-sending-troops-to-russia",
+          "title": "South Korea's spy agency says North Korea sending troops to Russia",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "transferred 1,500 North Korean special operations forces to the Russian port city of Vladivostok",
+          "quoteHash": "sha256:b7ed1c2492b7f74fc681813b59bb8f301128264aaee88effc1a8b6378b050fbe",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "국정원 발표를 인용한 국제 매체를 HTTP 200으로 확인해 발표일(2024-10-18)과 1차 이송 1,500명을 재대조했다.",
+          "independenceGroupId": "nis-nk-troops-20241018",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "국정원 발표를 원출처로 하되 독립 국제 매체가 인용해 재대조 가능하다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "국정원 발표를 당일 보도한 국제 매체다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "원출처가 정보기관 발표라 독립 검증이 제한적"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.twz.com/news-features/south-korea-intelligence-offers-assessment-of-north-korean-troops-fighting-for-russia",
+          "title": "South Korea Intelligence Offers Assessment Of North Korean Troops Fighting For Russia",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "completed the first transfer of approximately 1,500 North Korean special forces",
+          "quoteHash": "sha256:b4c435ecc50d61280e34ded60af8de73fc4e12da11136f55acad96da03ab1fff",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "국정원 평가를 인용한 안보 전문 매체를 HTTP 200으로 확인했다. 같은 기사는 총 규모를 'South Korean officials say will be 12,000'으로 관계자 귀속해 계획치로 전한다.",
+          "independenceGroupId": "nis-nk-troops-20241018",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "국정원 발표를 원출처로 하되 별도 전문 매체가 인용했다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "국방·안보 사안을 다루는 전문 매체다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "총 규모 12,000은 관계자 귀속 계획치"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "정보기관 발표를 그대로 담으면 검증되지 않은 첩보를 사실로 박제할 수 있다.",
+          "response": "명제는 '북한이 파병했다'가 아니라 '국정원이 1차 1,500명 이송을 발표했다'는 발표 사실만 귀속해 기록한다. 총 12,000명은 계획치로 limitations에 귀속했다.",
+          "errorsFound": 1,
+          "framingChecks": "발표 주체(국정원)를 명시하고, 매체별로 귀속이 느슨한 12,000명은 명제 본문에서 빼 계획치로 분리했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "발표 사실만 담고 북한·러시아의 초기 부인/침묵도 limitations에 남겨 한쪽만 수집하지 않았다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "정보기관 발표를 최종 사실로 확정하지 않고 '발표 사실'로 귀속했다. 첩보의 검증 한계를 limitations에 명시했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·안보·정보기관 발표 사안이라 human_reviewed 레인. 1차 이송 1,500명은 국정원 직접 인용으로 견고하나 총 12,000명은 관계자 귀속이라 명제에서 빼고 계획치로 처리했다. 한국 언론 대신 fetch 가능한 국제 매체를 앵커로 삼았다.",
+          "adoptedReason": "fetch 가능한 복수 국제 매체가 국정원의 1차 1,500명 이송 발표를 직접 인용으로 확인한다.",
+          "rejectedAlternatives": "파병이 확정 사실이라거나 반대로 조작이라는 결론, 그리고 12,000명을 확정치로 담는 것은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "ongoing_litigation"
+        ],
+        "legalStatus": "unknown",
+        "presumptionNotice": "이 명제는 국가정보원의 발표 사실만 기록한다. 파병 규모·전개는 정보기관 발표에 근거하며 독립 검증에 한계가 있다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "명제는 국정원의 발표 사실에 한정한다. 국정원은 북한이 총 1만2천 명 파병을 결정한 것으로 판단한다고 밝혔으나 이 총 규모는 매체별로 관계자 귀속이 섞인 계획치이며 후속 이송으로 확인이 필요하다. 발표 시점 북한·러시아는 파병을 즉시 확인하지 않았다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "대한민국",
+        "북한",
+        "국내영향",
+        "국제사건"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:4f11124d8afde3e1fa6d0050",
       "versionId": "ver:e7f1c52157f1d541",
       "certHash": "sha256:72ce103a8d5bc906e8e361fada62a2b61d6085f6a5754e1961a18969993f3aca",
@@ -8258,6 +8775,147 @@
       ],
       "createdAt": "2026-07-02",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:8f6705e79eaff0583a1e595a",
+      "versionId": "ver:7e4e311358d60574",
+      "certHash": "sha256:915b584cd9462b88fdf02d31433a8693288bf62b81bb7c98cf80ee2819f2d25a",
+      "canonicalProposition": "OHCHR 인권감시단(HRMMU)은 2022년 2월 전면 침공 이후 2026년 2월(침공 4주년) 기준 우크라이나에서 확인된 민간인 사망자를 최소 15,000명 이상, 부상자를 최소 41,000명 이상으로 집계했다",
+      "originalClaim": "러시아-우크라이나 전쟁의 인도적 영향(측정, 현시점 반영).",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "다수 출처 대조로 확인(verified)한 사건별 민간인 사상자 집계",
+        "sample": "우크라이나 전역 민간인(정부통제지역·러시아 점령지역), 2022-02-24 전면 침공 이후",
+        "aggregationBasis": "누적 확인 사상자(최소 집계치 — 미확인 사건은 제외)",
+        "producer": "OHCHR / 유엔 우크라이나 인권감시단(HRMMU)",
+        "measuredAt": "2026-02-16"
+      },
+      "sixW": {
+        "who": "OHCHR 인권감시단(HRMMU)",
+        "when": "2026년 2월 16일 발표(침공 4주년 기준 누적)",
+        "where": "우크라이나 전역",
+        "what": "확인된 민간인 사망자를 최소 15,000명 이상, 부상자를 최소 41,000명 이상으로 집계했다",
+        "how": "다수 출처 대조로 확인한 사건만 누적 집계했다",
+        "why": []
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "OHCHR 공식 페이지가 4주년 기준 누적 사망 15,000명 이상·부상 41,000명 이상을 fetch 가능하게 발표하고, 월별 보고가 이후 흐름을 확인한다. OHCHR 스스로 이 수치가 확인된 최소치이며 실제는 더 높다고 단서를 단다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://ukraine.ohchr.org/en/Civilian-Harm-and-Rights-Violations-Intensify-in-Ukraine-Four-Years-After-Invasion-UN-Human-Rights-Monitors-Say",
+          "title": "Civilian Harm and Rights Violations Intensify in Ukraine Four Years After Invasion",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "conflict-related violence has killed more than 15,000 people and injured more than 41,000",
+          "quoteHash": "sha256:b27f28c7c1979efdf7ef94847a556725b495c6da5e7f025d7b9986d197426e83",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "OHCHR 공식 페이지를 HTTP 200으로 확인해 누적 15,000명 이상·41,000명 이상을 재대조했다. 발행 2026-02-16.",
+          "independenceGroupId": "ohchr-casualties-4yr-20260216",
+          "independenceLevel": "independent",
+          "independenceNote": "분쟁 당사국이 아닌 유엔 인권기구의 1차 집계다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "현장 인권감시단의 사상자 집계다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "교전지역 정보 접근 제약으로 확인 지연·누락 가능"
+            ],
+            "requiresMethodologyAudit": true
+          }
+        },
+        {
+          "url": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-May-2026",
+          "title": "Protection of Civilians in Armed Conflict — May 2026",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "At least 274 civilians were killed and 1,763 injured in Ukraine in May 2026",
+          "quoteHash": "sha256:b954d85d4f6f3c7109f9d80e1eff759e1386322c9ead9a1c527abdb98764840f",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "OHCHR 월별 보고를 HTTP 200으로 확인했다. 같은 보고에 'The actual figures are likely higher.' 단서가 있어 4주년 누적치가 최소치임을 뒷받침한다.",
+          "independenceGroupId": "ohchr-casualties-monthly-202605",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "같은 OHCHR HRMMU의 월별 집계로 누적치의 최소성·증가 추세를 확인한다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "동일 인권감시단의 월별 보고다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [
+              "확인된 사건만 집계하는 최소치 방법론"
+            ],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "15,000명을 확정치처럼 제시하면, 실제 사망자가 훨씬 많을 가능성이나 각 측의 다른 집계를 감춘 것으로 오독될 수 있다.",
+          "response": "명제와 measurement에 '확인된 최소치'와 기준일을 명시하고, OHCHR의 '실제는 더 높다' 단서와 각 측 집계 차이를 limitations에 담았다.",
+          "errorsFound": 0,
+          "framingChecks": "'대학살'·'과장' 같은 평가어를 배제하고 확인 집계치와 방법론 한계만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "이 수치가 최소치이며 러시아·우크라이나 측 자체 집계와 다를 수 있음을 대칭적으로 명시했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "OHCHR 발표를 현실 그 자체가 아니라 특정 방법론의 측정값으로 다루고 생산자·집계기준·한계를 감사했다(제4·제13)."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·측정·인명피해 사안이라 human_reviewed 레인. 현시점 반영 요구에 따라 4주년(2026-02) 누적치를 기준으로 삼고 5월까지 월별 증가를 함께 기록했다. OHCHR 페이지는 fetch 가능해 재대조했다.",
+          "adoptedReason": "fetch 가능한 OHCHR 공식 집계와 월별 보고가 최소치·기준일·증가 추세를 확인한다.",
+          "rejectedAlternatives": "이 수치가 완전한 실제 사망자라거나, 반대로 조작이라는 결론은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "scientific_contested"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 명제는 OHCHR의 확인된 최소 집계치라는 측정값만 기록한다. 실제 사상자는 이보다 많을 수 있고 각 측 집계와 다를 수 있다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 수치는 OHCHR이 다수 출처로 확인한 최소 집계치이며, OHCHR 스스로 실제 수치가 상당히 더 높을 것이라고 단서를 단다. 4주년(2026-02) 이후로도 매월 증가해(2026년 5월 단월 274명 사망) 현시점 실제 누적은 더 크다. 러시아·우크라이나 정부의 자체 집계 및 군인 사상자는 이 민간인 집계와 별개다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "측정",
+        "인도적피해"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
     },
     {
       "certVersion": "2.1",
@@ -9237,6 +9895,141 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:43bfd6d859ff779fedeec928",
+      "versionId": "ver:6a6b34ced45214de",
+      "certHash": "sha256:213b3ce04f37a081c21e9b5a9f32df88b5f20a2b30ce52352134878002c926c6",
+      "canonicalProposition": "블라디미르 푸틴 러시아 대통령은 2022년 2월 24일 우크라이나에 대한 '특별군사작전' 개시 결정을 대국민 연설로 발표했다",
+      "originalClaim": "러시아-우크라이나 전쟁 주제 신설(국제 골격).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "블라디미르 푸틴 러시아 대통령",
+        "when": "2022년 2월 24일",
+        "where": "러시아 대통령 대국민 TV 연설",
+        "what": "우크라이나에 대한 '특별군사작전' 개시 결정을 발표했다",
+        "how": "이른 아침 대국민 TV 연설에서 개시 결정을 밝혔다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "크렘린 공식 영문 연설 기록에 '특별군사작전 개시 결정' 문구가 있고, 이를 전문 전재한 fetch 가능한 매체(ThePrint)가 날짜·문구를 재대조한다. 이는 개시 발표라는 행위 사실이며 작전의 정당성·성격에 대한 판단이 아니다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://theprint.in/world/full-text-of-vladimir-putins-speech-announcing-special-military-operation-in-ukraine/845714/",
+          "title": "Full text of Vladimir Putin's speech announcing 'special military operation' in Ukraine",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "I made a decision to carry out a special military operation.",
+          "quoteHash": "sha256:5325b1184f0a26d99d31703bff13a684d667fdb1f9e6248fccecf5c98378bde8",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "크렘린 공식 연설의 영문 전문을 전재한 페이지를 HTTP 200으로 확인했다. 크렘린 공식역은 'conduct a special military operation'으로 동의어이며 번역 편차만 있다.",
+          "independenceGroupId": "putin-speech-20220224",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "크렘린 공식 연설을 원출처로 하되 독립 매체가 전문을 게재해 재대조 가능하다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "발화 원문 전체를 게재한 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "contested",
+            "productionConcerns": [
+              "원발화 주체가 분쟁 당사자(러시아)다"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "http://en.kremlin.ru/events/president/news/67843",
+          "title": "Address by the President of the Russian Federation",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "I have decided to conduct a special military operation.",
+          "quoteHash": "sha256:8240433643c57b5cbac196fd029c6749a1b808816094a4b075a94ed3b56acecf",
+          "archiveStatus": "unavailable",
+          "retrievalMethod": "manual",
+          "retrievalLimitations": "크렘린 공식 영문 연설 기록이나 자동 fetch(WebFetch)에서 빈 응답으로 재대조하지 못했다. fetch 가능한 전문 전재본을 보조 앵커로 사용한다(제5).",
+          "independenceGroupId": "putin-speech-20220224",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "발화 당사자인 크렘린의 공식 기록이다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "원발화의 공식 1차 기록이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "party_interested",
+            "productionConcerns": [
+              "분쟁 당사자의 자기 발표",
+              "자동 fetch 불가"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "'특별군사작전'이라는 러시아 측 용어를 그대로 쓰면 침공을 완곡하게 표현한 것으로 읽힐 수 있다.",
+          "response": "명제는 푸틴이 그 용어로 개시를 '발표한' 발화 사실만 귀속해 기록하고, 저수지가 작전의 성격을 규정하지 않는다. 침공 규탄은 별도 UN 결의 명제로 담았다.",
+          "errorsFound": 0,
+          "framingChecks": "'침략'·'정당한 방어' 등 어느 쪽 규정도 저수지 목소리로 쓰지 않고, 러시아 측 용어는 인용부호로 귀속했다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "러시아 측 발표(본 명제)와 국제사회 규탄(UN 결의 명제)을 함께 담아 한쪽만 수집하지 않았다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "크렘린 공식 기록을 최종 판단이 아니라 '발표 사실'의 근거로만 쓰고 fetch 가능한 전재본으로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·정치·진행 중 무력분쟁 사안이라 human_reviewed 레인. 크렘린 원문은 자동 fetch 불가라 전문 전재본을 fetch 앵커로 삼았다(제5). '특별군사작전' 용어는 귀속 인용으로 처리.",
+          "adoptedReason": "fetch 가능한 전문 전재본이 크렘린 공식 문구와 날짜를 재대조한다.",
+          "rejectedAlternatives": "이 발표가 정당한 작전이라거나 반대로 명백한 침략이라는 규정은 저수지 목소리로 담지 않았다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "living_person"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 러시아 대통령이 개시를 발표했다는 발화 사실만 기록하며, 그 작전의 국제법적 성격은 다른 명제(UN 결의·ICC 영장)로 분리해 다룬다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "명제는 개시 발표 행위에 한정한다. '특별군사작전'은 러시아 측 용어를 귀속 인용한 것이며 국제사회는 이를 침공으로 규정했다(제2 명제 참조).",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "러시아",
+        "우크라이나"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:3e54ea51d8411beb551b399c",
       "versionId": "ver:a904b76e00669b8d",
       "certHash": "sha256:df4a3010eb5c33c2347bd07922725fcb1bbc5f9e492a6c914f7a2852d0287c9a",
@@ -9690,6 +10483,160 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:8e4b4b465805476c14e263ff",
+      "versionId": "ver:21a31a78cd2304ba",
+      "certHash": "sha256:62c98d8b1b0bd12ba76daf23498a4de369257bc04e9f32ee8ca9584ee43eb3bb",
+      "canonicalProposition": "유엔 총회는 2022년 3월 2일 긴급특별총회에서 결의 ES-11/1을 찬성 141·반대 5·기권 35로 채택해 러시아의 우크라이나 무력 사용을 규탄하고 러시아군의 즉시 철수를 요구했다",
+      "originalClaim": "러시아-우크라이나 전쟁 주제 신설(국제법 골격).",
+      "claimNature": "document_content",
+      "sixW": {
+        "who": "유엔 총회",
+        "when": "2022년 3월 2일",
+        "where": "유엔 긴급특별총회(제11차)",
+        "what": "결의 ES-11/1을 찬성 141·반대 5·기권 35로 채택해 러시아를 규탄하고 러시아군의 즉시 철수를 요구했다",
+        "how": "긴급특별총회 표결로 채택했다",
+        "why": []
+      },
+      "classification": "O",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유엔 공식 뉴스가 표결 141-5-35와 철수 요구를, 결의 전문 전재(알자지라)와 유엔 공식 문서 시스템의 지정번호(A/RES/ES-11/1)가 결의 내용을 재대조한다. 이는 결의문의 문언 사실이며 그 정치적 효력에 대한 판단이 아니다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://news.un.org/en/story/2022/03/1113152",
+          "title": "General Assembly resolution demands end to Russian offensive in Ukraine",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "141 countries voted in favour ... Five ... against ... 35 abstained.",
+          "quoteHash": "sha256:e36854eae64072f1049cd74577aa898fa07251e82910df97dfe20c95c00c6a0c",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "유엔 공식 뉴스 페이지를 HTTP 200으로 확인했고 표결 141-5-35와 철수 요구를 재대조했다. 이 페이지는 'ES-11/1' 지정번호는 명시하지 않아 별도 문서 시스템으로 보강했다.",
+          "independenceGroupId": "un-ga-es111-vote",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "표결을 주관한 유엔의 공식 뉴스 서비스다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "표결 주관 기관의 공식 발표다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2022/3/3/unga-resolution-against-ukraine-invasion-full-text",
+          "title": "UN resolution against Ukraine invasion: Full text",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "immediately, completely and unconditionally withdraw all of its military forces",
+          "quoteHash": "sha256:2a68c9739b9186ab6e52e535a453811bf35ab9bfb97571a16755781d312a6853",
+          "archiveStatus": "archive_attempt_recommended",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "결의 전문을 전재한 페이지를 HTTP 200으로 확인해 철수 요구 조항과 141-5-35, 3월 2일을 재대조했다.",
+          "independenceGroupId": "aljazeera-es111-fulltext",
+          "independenceLevel": "independent",
+          "independenceNote": "결의 전문을 독립 매체가 게재해 유엔 발표와 별도로 재대조된다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "결의 전문을 게재한 국제 매체다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://docs.un.org/en/A/RES/ES-11/1",
+          "title": "Resolution ES-11/1 (UN Official Document System)",
+          "retrievedAt": "2026-07-12",
+          "locator": {
+            "section": "문서 지정번호"
+          },
+          "shortQuote": "A/RES/ES-11/1",
+          "quoteHash": "sha256:41b647778ad600eda351dd7f66b6ee025f5b0e1cbee28a0bd1d87309cb4ee7bd",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "유엔 공식 문서 시스템에서 결의 지정번호를 확인했다. 뷰어는 지정번호를 노출하지만 조항 본문 텍스트는 별도 PDF에 있다.",
+          "independenceGroupId": "un-official-document-es111",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "결의 원문을 보관하는 유엔 공식 문서 시스템이다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "결의 원문의 공식 보관처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "결의 채택을 담으면 저수지가 러시아를 규탄하는 입장을 취한 것으로 읽힐 수 있다.",
+          "response": "명제는 총회가 그런 내용의 결의를 그런 표결로 채택했다는 문서 사실만 기록한다. 규탄 주체는 유엔 총회이며 저수지가 아니다. 반대 5개국의 존재도 표결에 포함해 기록했다.",
+          "errorsFound": 0,
+          "framingChecks": "결의의 옳고 그름을 평가하지 않고 채택 사실·표결·요구 문언만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "찬성 141과 반대 5·기권 35를 모두 표기해 표결의 분포를 한쪽으로 축약하지 않았다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "유엔 공식 발표를 결의 내용의 최종 진위가 아니라 '채택 사실'의 근거로 쓰고 전문 전재로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·정치 사안이라 human_reviewed 레인. press.un.org 공식 보도자료는 JS 로드 오류로 재대조 불가라 fetch 가능한 유엔 공식 뉴스와 전문 전재본을 앵커로 삼았다.",
+          "adoptedReason": "fetch 가능한 유엔 공식 뉴스와 전문 전재본이 표결·요구·날짜·지정번호를 일관되게 확인한다.",
+          "rejectedAlternatives": "결의가 곧 국제법적 강제력을 가진다거나 반대로 무의미하다는 평가는 담지 않았다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 유엔 총회 결의의 채택·표결·문언이라는 문서 사실만 기록하며, 결의의 국제법적 효력이나 이행 여부는 판단하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "총회 결의는 권고적 효력이며 안보리 결의와 달리 법적 강제력이 없다. 반대 5개국은 벨라루스·북한·에리트레아·러시아·시리아로 보도되나 이 명제의 핵심 문언 범위 밖이다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "유엔",
+        "국제법",
+        "문서내용"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
       "versionId": "ver:40f2b032fb261629",
       "certHash": "sha256:0b9db8754e4d2fda409052a9e644d24f1bb62e34a6c05a2b64e7aaecc7dcf18b",
@@ -10037,15 +10984,15 @@
     }
   ],
   "meta": {
-    "total": 64,
+    "total": 71,
     "dataVersion": "2026.07.12",
     "certVersion": "2.1",
     "generatedAt": "2026-07-12",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalEntries": 64,
-      "totalAssessed": 64,
+      "totalEntries": 71,
+      "totalAssessed": 71,
       "openCorrectionRequests": 0
     },
     "entities": {
@@ -10103,6 +11050,10 @@
         "path": "/api/v2/propositions/stmt-b18e2813819c4fb0e23830f6.json"
       },
       {
+        "propositionId": "stmt:2e32e51752b91f9184c468af",
+        "path": "/api/v2/propositions/stmt-2e32e51752b91f9184c468af.json"
+      },
+      {
         "propositionId": "stmt:75fc8d303885c2159f99099d",
         "path": "/api/v2/propositions/stmt-75fc8d303885c2159f99099d.json"
       },
@@ -10117,6 +11068,10 @@
       {
         "propositionId": "stmt:4b794b8163eb2161d4a9b949",
         "path": "/api/v2/propositions/stmt-4b794b8163eb2161d4a9b949.json"
+      },
+      {
+        "propositionId": "stmt:05b9abdca503067b1fd433ec",
+        "path": "/api/v2/propositions/stmt-05b9abdca503067b1fd433ec.json"
       },
       {
         "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
@@ -10203,6 +11158,10 @@
         "path": "/api/v2/propositions/stmt-29c85dfda2751f0ac6e0fa1a.json"
       },
       {
+        "propositionId": "stmt:46c16754bee420a566961aa7",
+        "path": "/api/v2/propositions/stmt-46c16754bee420a566961aa7.json"
+      },
+      {
         "propositionId": "stmt:7536cb937fa5897848d6ecf4",
         "path": "/api/v2/propositions/stmt-7536cb937fa5897848d6ecf4.json"
       },
@@ -10259,8 +11218,16 @@
         "path": "/api/v2/propositions/stmt-d78f27d3e447961d8e0f492b.json"
       },
       {
+        "propositionId": "stmt:5dcafd99e98ca83ec2727165",
+        "path": "/api/v2/propositions/stmt-5dcafd99e98ca83ec2727165.json"
+      },
+      {
         "propositionId": "stmt:4f11124d8afde3e1fa6d0050",
         "path": "/api/v2/propositions/stmt-4f11124d8afde3e1fa6d0050.json"
+      },
+      {
+        "propositionId": "stmt:8f6705e79eaff0583a1e595a",
+        "path": "/api/v2/propositions/stmt-8f6705e79eaff0583a1e595a.json"
       },
       {
         "propositionId": "stmt:52e6260a60e04599d809ae61",
@@ -10291,6 +11258,10 @@
         "path": "/api/v2/propositions/stmt-a39e2dc6072bbda67817ead7.json"
       },
       {
+        "propositionId": "stmt:43bfd6d859ff779fedeec928",
+        "path": "/api/v2/propositions/stmt-43bfd6d859ff779fedeec928.json"
+      },
+      {
         "propositionId": "stmt:3e54ea51d8411beb551b399c",
         "path": "/api/v2/propositions/stmt-3e54ea51d8411beb551b399c.json"
       },
@@ -10301,6 +11272,10 @@
       {
         "propositionId": "stmt:48afea861840a1d07ad8d250",
         "path": "/api/v2/propositions/stmt-48afea861840a1d07ad8d250.json"
+      },
+      {
+        "propositionId": "stmt:8e4b4b465805476c14e263ff",
+        "path": "/api/v2/propositions/stmt-8e4b4b465805476c14e263ff.json"
       },
       {
         "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
