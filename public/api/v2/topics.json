@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-07-02",
-    "total": 142,
+    "generatedAt": "2026-07-12",
+    "total": 143,
     "note": "태그 기반 결정론적 파생 주제 집계; 사건 시점 순; cert 원본 미저장"
   },
   "topics": [
@@ -107,7 +107,7 @@
     {
       "tag": "2026지방선거",
       "path": "/t/2026%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0",
-      "count": 31,
+      "count": 35,
       "dateRange": {
         "from": "2025-12-01",
         "to": "2026-07-02"
@@ -115,6 +115,7 @@
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
         "stmt:75fc8d303885c2159f99099d",
+        "stmt:ab60963f623b2a8494f0eb3b",
         "stmt:d78f27d3e447961d8e0f492b",
         "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:2e87b3750aadd61ef8e2b6c0",
@@ -127,6 +128,7 @@
         "stmt:1426e28acba929903bbe8736",
         "stmt:c11b6f2081e8fa1c38bae49d",
         "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:fb21cda0d84b0147a28c49ab",
         "stmt:0010711e717716056a9118a7",
         "stmt:495acd373d4c3a4c610127ac",
         "stmt:a2c80ef637dd92021cbbd92b",
@@ -141,6 +143,8 @@
         "stmt:83702707422e50c0a56fb565",
         "stmt:d180b65d5e8f431a52ed1eec",
         "stmt:e2b37f73256b9885410a5c01",
+        "stmt:d9b09c3ca5957e631d2870c6",
+        "stmt:b9bf9aa9ffcf110da060f382",
         "stmt:29c85dfda2751f0ac6e0fa1a",
         "stmt:dc42960aa42792c924b4d58b",
         "stmt:ee1b50f655876f2f4da585e8"
@@ -319,6 +323,19 @@
       ]
     },
     {
+      "tag": "기관대응",
+      "path": "/t/%EA%B8%B0%EA%B4%80%EB%8C%80%EC%9D%91",
+      "count": 2,
+      "dateRange": {
+        "from": "2026-06-08",
+        "to": "2026-06-19"
+      },
+      "propositionIds": [
+        "stmt:fb21cda0d84b0147a28c49ab",
+        "stmt:d9b09c3ca5957e631d2870c6"
+      ]
+    },
+    {
       "tag": "기준타원체",
       "path": "/t/%EA%B8%B0%EC%A4%80%ED%83%80%EC%9B%90%EC%B2%B4",
       "count": 1,
@@ -483,12 +500,13 @@
     {
       "tag": "법원",
       "path": "/t/%EB%B2%95%EC%9B%90",
-      "count": 3,
+      "count": 4,
       "dateRange": {
-        "from": "2026-06-03",
+        "from": "2026-06-01",
         "to": "2026-06-12"
       },
       "propositionIds": [
+        "stmt:ab60963f623b2a8494f0eb3b",
         "stmt:c890b5f8ca77961c84b58268",
         "stmt:a2c80ef637dd92021cbbd92b",
         "stmt:b76037b935bcd6803ab934ab"
@@ -609,13 +627,14 @@
     {
       "tag": "선거소청",
       "path": "/t/%EC%84%A0%EA%B1%B0%EC%86%8C%EC%B2%AD",
-      "count": 2,
+      "count": 3,
       "dateRange": {
         "from": "2026-06-18",
         "to": "2026-07-02"
       },
       "propositionIds": [
         "stmt:e2b37f73256b9885410a5c01",
+        "stmt:b9bf9aa9ffcf110da060f382",
         "stmt:dc42960aa42792c924b4d58b"
       ]
     },
@@ -683,14 +702,15 @@
     {
       "tag": "수사",
       "path": "/t/%EC%88%98%EC%82%AC",
-      "count": 2,
+      "count": 3,
       "dateRange": {
         "from": "2026-06-01",
-        "to": "2026-06-07"
+        "to": "2026-06-19"
       },
       "propositionIds": [
         "stmt:f9f1fe47c4a18f9de210c3ec",
-        "stmt:c11b6f2081e8fa1c38bae49d"
+        "stmt:c11b6f2081e8fa1c38bae49d",
+        "stmt:d9b09c3ca5957e631d2870c6"
       ]
     },
     {
@@ -1192,13 +1212,14 @@
     {
       "tag": "중앙선거관리위원회",
       "path": "/t/%EC%A4%91%EC%95%99%EC%84%A0%EA%B1%B0%EA%B4%80%EB%A6%AC%EC%9C%84%EC%9B%90%ED%9A%8C",
-      "count": 16,
+      "count": 20,
       "dateRange": {
         "from": "2025-12-01",
-        "to": "2026-06-18"
+        "to": "2026-06-22"
       },
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
+        "stmt:ab60963f623b2a8494f0eb3b",
         "stmt:d78f27d3e447961d8e0f492b",
         "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:2e87b3750aadd61ef8e2b6c0",
@@ -1206,6 +1227,7 @@
         "stmt:4f11124d8afde3e1fa6d0050",
         "stmt:c11b6f2081e8fa1c38bae49d",
         "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:fb21cda0d84b0147a28c49ab",
         "stmt:495acd373d4c3a4c610127ac",
         "stmt:a2c80ef637dd92021cbbd92b",
         "stmt:3324d300d2efb6d8dcbbdc4c",
@@ -1213,18 +1235,21 @@
         "stmt:5bf64ededa100f82163dcab1",
         "stmt:83702707422e50c0a56fb565",
         "stmt:d180b65d5e8f431a52ed1eec",
-        "stmt:e2b37f73256b9885410a5c01"
+        "stmt:e2b37f73256b9885410a5c01",
+        "stmt:d9b09c3ca5957e631d2870c6",
+        "stmt:b9bf9aa9ffcf110da060f382"
       ]
     },
     {
       "tag": "증거보전",
       "path": "/t/%EC%A6%9D%EA%B1%B0%EB%B3%B4%EC%A0%84",
-      "count": 3,
+      "count": 4,
       "dateRange": {
-        "from": "2026-06-03",
+        "from": "2026-06-01",
         "to": "2026-06-12"
       },
       "propositionIds": [
+        "stmt:ab60963f623b2a8494f0eb3b",
         "stmt:c890b5f8ca77961c84b58268",
         "stmt:a2c80ef637dd92021cbbd92b",
         "stmt:b76037b935bcd6803ab934ab"
@@ -1364,10 +1389,10 @@
     {
       "tag": "측정",
       "path": "/t/%EC%B8%A1%EC%A0%95",
-      "count": 15,
+      "count": 16,
       "dateRange": {
         "from": "1991-01-01",
-        "to": "2026-06-19"
+        "to": "2026-06-22"
       },
       "propositionIds": [
         "stmt:3e54ea51d8411beb551b399c",
@@ -1384,7 +1409,8 @@
         "stmt:495acd373d4c3a4c610127ac",
         "stmt:b18e2813819c4fb0e23830f6",
         "stmt:4b794b8163eb2161d4a9b949",
-        "stmt:efddfa77db78be598d007d7e"
+        "stmt:efddfa77db78be598d007d7e",
+        "stmt:b9bf9aa9ffcf110da060f382"
       ]
     },
     {
@@ -1452,7 +1478,7 @@
     {
       "tag": "투표용지부족",
       "path": "/t/%ED%88%AC%ED%91%9C%EC%9A%A9%EC%A7%80%EB%B6%80%EC%A1%B1",
-      "count": 31,
+      "count": 35,
       "dateRange": {
         "from": "2025-12-01",
         "to": "2026-07-02"
@@ -1460,6 +1486,7 @@
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
         "stmt:75fc8d303885c2159f99099d",
+        "stmt:ab60963f623b2a8494f0eb3b",
         "stmt:d78f27d3e447961d8e0f492b",
         "stmt:f9f1fe47c4a18f9de210c3ec",
         "stmt:2e87b3750aadd61ef8e2b6c0",
@@ -1472,6 +1499,7 @@
         "stmt:1426e28acba929903bbe8736",
         "stmt:c11b6f2081e8fa1c38bae49d",
         "stmt:fafb5a05023e9541b3e07f1f",
+        "stmt:fb21cda0d84b0147a28c49ab",
         "stmt:0010711e717716056a9118a7",
         "stmt:495acd373d4c3a4c610127ac",
         "stmt:a2c80ef637dd92021cbbd92b",
@@ -1486,6 +1514,8 @@
         "stmt:83702707422e50c0a56fb565",
         "stmt:d180b65d5e8f431a52ed1eec",
         "stmt:e2b37f73256b9885410a5c01",
+        "stmt:d9b09c3ca5957e631d2870c6",
+        "stmt:b9bf9aa9ffcf110da060f382",
         "stmt:29c85dfda2751f0ac6e0fa1a",
         "stmt:dc42960aa42792c924b4d58b",
         "stmt:ee1b50f655876f2f4da585e8"

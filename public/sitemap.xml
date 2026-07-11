@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://truth-reservoir.vercel.app/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/about</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api-docs</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/llms.txt</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/llms-full.txt</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/search-index.json</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/index.json</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/graph.json</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/entities.json</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/topics.json</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/requests.json</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/openapi.json</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/api/v2/schema/cert-v2.schema.json</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/p/stmt-4ae4c94174dc3aaf651102d2</loc>
@@ -101,6 +101,14 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
+    <loc>https://truth-reservoir.vercel.app/p/stmt-ab60963f623b2a8494f0eb3b</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/verify/stmt-ab60963f623b2a8494f0eb3b</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
     <loc>https://truth-reservoir.vercel.app/p/stmt-b76037b935bcd6803ab934ab</loc>
     <lastmod>2026-07-02</lastmod>
   </url>
@@ -109,12 +117,28 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
+    <loc>https://truth-reservoir.vercel.app/p/stmt-fb21cda0d84b0147a28c49ab</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/verify/stmt-fb21cda0d84b0147a28c49ab</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
     <loc>https://truth-reservoir.vercel.app/p/stmt-8b798d52af5df4ea214ecead</loc>
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/verify/stmt-8b798d52af5df4ea214ecead</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/p/stmt-b9bf9aa9ffcf110da060f382</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/verify/stmt-b9bf9aa9ffcf110da060f382</loc>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/p/stmt-b18e2813819c4fb0e23830f6</loc>
@@ -413,6 +437,14 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
+    <loc>https://truth-reservoir.vercel.app/p/stmt-d9b09c3ca5957e631d2870c6</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/verify/stmt-d9b09c3ca5957e631d2870c6</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
     <loc>https://truth-reservoir.vercel.app/p/stmt-3324d300d2efb6d8dcbbdc4c</loc>
     <lastmod>2026-07-02</lastmod>
   </url>
@@ -566,7 +598,7 @@
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/2026%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/38%EC%84%A0</loc>
@@ -619,6 +651,10 @@
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EA%B6%8C%EA%B3%A0%EC%9D%98%EA%B2%AC</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://truth-reservoir.vercel.app/t/%EA%B8%B0%EA%B4%80%EB%8C%80%EC%9D%91</loc>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EA%B8%B0%EC%A4%80%ED%83%80%EC%9B%90%EC%B2%B4</loc>
@@ -674,7 +710,7 @@
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EB%B2%95%EC%9B%90</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EB%B2%A8%EB%A0%9D</loc>
@@ -710,7 +746,7 @@
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%84%A0%EA%B1%B0%EC%86%8C%EC%B2%AD</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%84%A0%EA%B1%B0%EC%9D%BC</loc>
@@ -734,7 +770,7 @@
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%88%98%EC%82%AC</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%8B%A0%EC%9A%A9%EA%B1%B0%EB%9E%98%EC%9C%B5%EC%9E%90</loc>
@@ -890,11 +926,11 @@
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%A4%91%EC%95%99%EC%84%A0%EA%B1%B0%EA%B4%80%EB%A6%AC%EC%9C%84%EC%9B%90%ED%9A%8C</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%A6%9D%EA%B1%B0%EB%B3%B4%EC%A0%84</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%A6%9D%EC%8B%9C%EC%A7%80%ED%91%9C</loc>
@@ -938,7 +974,7 @@
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%B8%A1%EC%A0%95</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%EC%B8%A1%EC%A7%80%ED%95%99</loc>
@@ -962,7 +998,7 @@
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%ED%88%AC%ED%91%9C%EC%9A%A9%EC%A7%80%EB%B6%80%EC%A1%B1</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/t/%ED%88%AC%ED%91%9C%EC%A4%91%EB%8B%A8</loc>
@@ -1221,8 +1257,12 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
+    <loc>https://truth-reservoir.vercel.app/e/e-7KGw7Z2s64yAIOuMgOuyleybkOyepQ</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
+  <url>
     <loc>https://truth-reservoir.vercel.app/e/e-7KSR7JWZ7ISg6rGw6rSA66as7JyE7JuQ7ZqM</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://truth-reservoir.vercel.app/e/e-7ZWc6rWt6rCk65-9</loc>

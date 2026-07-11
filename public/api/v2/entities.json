@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-07-02",
-    "total": 42,
+    "generatedAt": "2026-07-12",
+    "total": 43,
     "note": "sixW.who/statedBy 기반 결정론적 파생; cert 원본 미저장; 탐색 허브(제15)"
   },
   "entities": [
@@ -480,16 +480,32 @@
       }
     },
     {
+      "name": "조희대 대법원장",
+      "slug": "e-7KGw7Z2s64yAIOuMgOuyleybkOyepQ",
+      "path": "/e/e-7KGw7Z2s64yAIOuMgOuyleybkOyepQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:fb21cda0d84b0147a28c49ab"
+      ],
+      "roles": {
+        "who": [
+          "stmt:fb21cda0d84b0147a28c49ab"
+        ],
+        "statedBy": []
+      }
+    },
+    {
       "name": "중앙선거관리위원회",
       "slug": "e-7KSR7JWZ7ISg6rGw6rSA66as7JyE7JuQ7ZqM",
       "path": "/e/e-7KSR7JWZ7ISg6rGw6rSA66as7JyE7JuQ7ZqM",
-      "propositionCount": 7,
+      "propositionCount": 8,
       "propositionIds": [
         "stmt:0f10895abcff81a55ff783d6",
         "stmt:3324d300d2efb6d8dcbbdc4c",
         "stmt:495acd373d4c3a4c610127ac",
         "stmt:5bf64ededa100f82163dcab1",
         "stmt:83702707422e50c0a56fb565",
+        "stmt:b9bf9aa9ffcf110da060f382",
         "stmt:cb0719e9aac6e4c86677d2e5",
         "stmt:d180b65d5e8f431a52ed1eec"
       ],
@@ -499,6 +515,7 @@
           "stmt:3324d300d2efb6d8dcbbdc4c",
           "stmt:495acd373d4c3a4c610127ac",
           "stmt:83702707422e50c0a56fb565",
+          "stmt:b9bf9aa9ffcf110da060f382",
           "stmt:cb0719e9aac6e4c86677d2e5"
         ],
         "statedBy": [

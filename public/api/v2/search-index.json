@@ -1,10 +1,77 @@
 {
   "meta": {
-    "generatedAt": "2026-07-02",
-    "total": 60,
+    "generatedAt": "2026-07-12",
+    "total": 64,
     "note": "Compact manifest for client-side filtering; fetch full records at /api/v2/propositions/{dashId}.json"
   },
   "records": [
+    {
+      "propositionId": "stmt:ab60963f623b2a8494f0eb3b",
+      "path": "/api/v2/propositions/stmt-ab60963f623b2a8494f0eb3b.json",
+      "canonical": "증거보전 대상이던 잠실 투표용지 보관상자가 송파구선거관리위원회의 폐기업체 인계로 2026년 6월 10일 서울동부지방법원 현장검증에서 확보되지 못했다",
+      "tags": [
+        "2026지방선거",
+        "법원",
+        "중앙선거관리위원회",
+        "증거보전",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:b9bf9aa9ffcf110da060f382",
+      "path": "/api/v2/propositions/stmt-b9bf9aa9ffcf110da060f382.json",
+      "canonical": "중앙선거관리위원회는 2026년 6월 22일 6·3 지방선거 관련 소청이 6월 19일까지 전국 690건(중앙선관위 275건, 17개 시도선관위 415건) 접수됐다고 밝혔다",
+      "tags": [
+        "2026지방선거",
+        "선거소청",
+        "중앙선거관리위원회",
+        "측정",
+        "투표용지부족"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:d9b09c3ca5957e631d2870c6",
+      "path": "/api/v2/propositions/stmt-d9b09c3ca5957e631d2870c6.json",
+      "canonical": "중앙선거관리위원회 투표용지 부족사태 진상규명위원회는 2026년 6월 19일 노태악 전 위원장 등 전·현직 간부 12명의 수사 의뢰와 실무자 6명의 징계를 중앙선관위에 권고했다",
+      "tags": [
+        "2026지방선거",
+        "기관대응",
+        "수사",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:fb21cda0d84b0147a28c49ab",
+      "path": "/api/v2/propositions/stmt-fb21cda0d84b0147a28c49ab.json",
+      "canonical": "조희대 대법원장은 2026년 6월 8일 노태악 중앙선거관리위원장의 사의를 수용해 중앙선관위원 지명을 해제했고 위철환 상임위원이 위원장 직무대행을 맡았다",
+      "tags": [
+        "2026지방선거",
+        "기관대응",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
     {
       "propositionId": "stmt:0010711e717716056a9118a7",
       "path": "/api/v2/propositions/stmt-0010711e717716056a9118a7.json",

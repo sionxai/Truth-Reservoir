@@ -1,0 +1,193 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:d9b09c3ca5957e631d2870c6",
+  "versionId": "ver:edb5609df3f6e7ce",
+  "certHash": "sha256:f1b9811fc2ea25d95d51ba228f6a7a4a27ea5d400a6e04bebdbbc99a759b0dbd",
+  "canonicalProposition": "중앙선거관리위원회 투표용지 부족사태 진상규명위원회는 2026년 6월 19일 노태악 전 위원장 등 전·현직 간부 12명의 수사 의뢰와 실무자 6명의 징계를 중앙선관위에 권고했다",
+  "originalClaim": "진상규명위 결과(커버리지 감사 후속). 우리 기록은 6월 10~19일 운영 계획만 있었다.",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "중앙선거관리위원회 투표용지 부족사태 진상규명위원회(위원장 조현욱)",
+    "when": "2026년 6월 19일",
+    "where": "중앙선거관리위원회 진상규명위원회 브리핑",
+    "what": "노태악 전 위원장 등 전·현직 간부 12명의 수사 의뢰와 실무자 6명의 징계를 중앙선관위에 권고했다",
+    "how": "조사 마지막 날 브리핑에서 선거관리 전반에 총체적 부실이 있었다는 결론과 함께 권고했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "연합뉴스·KBS·한국일보·한겨레가 6월 19일 조현욱 위원장 브리핑의 12명 수사 의뢰·6명 징계 권고를 보도하고, 중앙선관위가 6월 22일 배포한 1쪽 PDF가 총체적 부실 결론과 후속 절차를 뒷받침한다. 이는 권고 사실이며 혐의 인정이나 유죄 판단이 아니다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.nec.go.kr/common/board/Download.do?bcIdx=327447&cbIdx=1090&streFileNm=a6f4b3b4-af45-423e-9fe4-84ab9398bf25.pdf",
+      "title": "진상규명위원회 발표에 대한 중앙선관위 회의 결과",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "선거관리 전반에 총체적 문제가 있었다는 진상규명위원회의 조사결과",
+      "quoteHash": "sha256:45b6ab208af1223927948d950cec9dea3693868e589d284e016cb47dcc74f2d4",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "pdf_extract",
+      "retrievalLimitations": "중앙선관위가 배포한 1쪽 PDF를 HTTP 200으로 받아 텍스트를 추출했다. 6월 19일 브리핑 원문이 아니라 사흘 뒤 중앙선관위 회의 결과이므로 총체적 부실 결론과 후속 징계 절차만 뒷받침하며 12명 수사의뢰·재선거 미권고의 직접 근거로 쓰지 않는다.",
+      "independenceGroupId": "nec-official-response-20260622",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "조사 대상 기관인 중앙선관위가 진상규명위 결과를 받아 발표한 후속 1차 자료다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "중앙선관위는 위원회 조사결과 수령과 후속 회의·징계 절차의 공식 생산기관이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "조사 대상 기관의 사후 발표",
+          "진상규명위 자체 발표문이 아님"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8590626",
+      "title": "중앙선관위원장 등 수사 의뢰 권고…위원장 상근제 도입해야",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "간부 12명에 대한 수사 의뢰를 권고했습니다. 실무자 6명은 자체 징계하라고 했습니다.",
+      "quoteHash": "sha256:6fe8f525ceab7d12dd2794eba28836021a87b09809407c37ed4a41ddafe2351a",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "KBS 원문을 HTTP 200으로 확인했다. 수사의뢰 대상은 '간부 12명', 징계 대상은 '실무자 6명'으로 표현된다. Wayback 저장은 실패했다.",
+      "independenceGroupId": "nec-fact-finding-briefing-20260619",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "조현욱 위원장의 6월 19일 공개 브리핑을 원출처로 하지만 KBS가 독자 영상 리포트를 제작했다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "공영방송의 당일 현장 리포트이며 위원장 직접 발언을 포함한다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 브리핑이라는 동일 원출처를 다른 기사와 공유"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.hankookilbo.com/news/article/A2026061911020004029",
+      "title": "선관위 진상규명위 노태악 등 12명 수사 의뢰 권고... 재선거 권고는 안 하기로",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "국민의힘 등 일각에서 요구하는 서울시장 등에 대한 재선거는 권고하지 않기로 했다.",
+      "quoteHash": "sha256:6f047d96e54afb65fd02d35976d220a0002287b3c8abb4c0e0485a5674996b9b",
+      "archiveStatus": "archive_attempt_recommended",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "한국일보 원문을 HTTP 200으로 확인했다. 본문은 12명 수사의뢰와 실무자 6명 징계 권고도 함께 보도하지만 shortQuote는 재선거 미권고에 한정했다. Wayback 저장은 실패했다.",
+      "independenceGroupId": "nec-fact-finding-briefing-20260619",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 6월 19일 브리핑을 원출처로 하지만 한국일보가 독자 기사를 제작했다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "위원장 브리핑 발언과 권고 내용을 당일 정리한 정치부 기사다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 브리핑이라는 동일 원출처를 다른 기사와 공유"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.hani.co.kr/arti/politics/politics_general/1264336.html",
+      "title": "선관위 진상규명위, 노태악 등 12명 수사 의뢰 권고",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "등 12명을 수사 의뢰 권고한다고 밝혔다.",
+      "quoteHash": "sha256:1912735daa8457c768aaf7137101ae4001cb82c528976f106ec44b0205ffd2f2",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20260623013343/https://www.hani.co.kr/arti/politics/politics_general/1264336.html",
+      "archiveProvider": "internet_archive",
+      "archivedAt": "2026-06-23",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "한겨레 원문을 HTTP 200으로 확인했고 2026-06-23 Internet Archive 스냅샷도 HTTP 200이었다. 기사 메타데이터는 2026-06-19 발표임을 밝히며 실무자 6명 징계 권고도 보도한다.",
+      "independenceGroupId": "nec-fact-finding-briefing-20260619",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "같은 6월 19일 브리핑을 원출처로 한다. 한겨레의 기사 제작은 독립적이지만 사진은 연합뉴스 제공이다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "위원장 브리핑의 대상 명단과 징계 권고를 당일 정리한 정치부 기사다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [
+          "공개 브리핑이라는 동일 원출처를 다른 기사와 공유",
+          "기사 사진은 연합뉴스 제공"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "'수사 의뢰 권고'는 혐의가 입증됐다는 뜻으로 오독될 수 있다.",
+      "response": "명제는 진상규명위가 권고했다는 사실만 기록하고, 수사·징계의 실제 집행이나 유무죄는 담지 않았다. limitations에 미집행을 명시했다.",
+      "errorsFound": 0,
+      "framingChecks": "'총체적 부실'은 위원회의 결론을 귀속해 인용했고 저수지 자신의 평가로 쓰지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "권고 내용에 재선거 미권고까지 함께 담아 한쪽 결론만 수집하지 않았다.",
+      "result": "대칭 점검 완료 — 수사의뢰·징계·재선거 미권고를 모두 기록했다."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "조사 대상 기관인 중앙선관위 PDF는 총체적 부실 결론의 보조 근거로만 쓰고, 권고 세부는 fetch 가능한 복수 언론으로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "정치·형사·생존 인물 사안이라 human_reviewed 레인. 중앙선관위 PDF(1차)는 6월 22일 회의 결과라 총체적 부실 결론만 뒷받침하고, 권고 대상 12명·6명은 6월 19일 브리핑을 보도한 복수 언론으로 확인했다.",
+      "adoptedReason": "복수 fetch 가능 보도가 12명 수사의뢰·6명 징계·재선거 미권고를 일관되게 확인한다.",
+      "rejectedAlternatives": "권고가 곧 유죄라거나 재선거가 확정됐다는 결론은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person",
+      "criminal_allegation"
+    ],
+    "legalStatus": "allegation",
+    "presumptionNotice": "이 명제는 진상규명위원회가 수사 의뢰·징계를 권고했다는 사실만 기록한다. 권고 대상자는 수사·징계가 확정되지 않았으며 무죄로 추정된다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "수사 의뢰·징계는 권고이며 실제 수사 개시·징계 집행 여부는 이 기록에서 확인되지 않았다. 재선거는 권고하지 않았다. 12명·6명의 개별 명단은 이 기록에 담지 않았다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "기관대응",
+    "수사"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

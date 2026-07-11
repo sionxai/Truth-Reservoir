@@ -17,9 +17,108 @@ Verification: recompute evidence quoteHash as sha256(shortQuote), propositionId 
 Storage boundary: the reservoir stores verified propositions and evidence structures, not verdicts or interpretations (제2). Grade labels are secondary navigation signals.
 Entity hubs: /e/{slug}/ pages and /api/v2/entities.json are deterministic derived navigation layers from sixW.who and sixW.why[].statedBy only. They are not entity profiles and assert no facts about the entity itself (제15).
 
-generatedAt: 2026-07-02
-total: 60
+generatedAt: 2026-07-12
+total: 64
 recordOrder: updatedAt desc, then propositionId asc
+
+=== stmt:ab60963f623b2a8494f0eb3b ===
+propositionId: stmt:ab60963f623b2a8494f0eb3b
+humanUrl: /p/stmt-ab60963f623b2a8494f0eb3b/
+jsonUrl: /api/v2/propositions/stmt-ab60963f623b2a8494f0eb3b.json
+canonicalProposition: 증거보전 대상이던 잠실 투표용지 보관상자가 송파구선거관리위원회의 폐기업체 인계로 2026년 6월 10일 서울동부지방법원 현장검증에서 확보되지 못했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 송파구선거관리위원회·서울동부지방법원
+  when: 2026년 6월 9~10일
+  where: 서울 송파구선거관리위원회와 서울동부지방법원 증거보전 절차
+  what: 증거보전 대상이던 투표용지 보관상자가 폐기업체 인계로 6월 10일 현장검증에서 확보되지 못했다
+  how: 송파구선관위가 6월 9일 오후 1시께 폐기업체에 상자를 인계했고 오후 1시51분 증거보전 연락을 받은 뒤에도 회수하지 못했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.fnnews.com/news/202606191616351174; shortQuote: "송파구 선관위는 지난 9일 오후 1시께 폐기업체에 투표용지 보관상자를 포함한 폐기물품을 인계했다."
+  - url: https://imnews.imbc.com/replay/2026/nwdesk/article/6829237_37004.html; shortQuote: "법원이 증거보전 대상으로 지정한 투표용지 보관상자가 현장검증에서 발견되지 않았다."
+limitations: 상자 폐기의 고의성·증거인멸 여부는 판단하지 않는다. 폐기업체·인계 시기·폐기 일시에 대한 법원 사실조회가 진행 중이다.
+tags: 2026지방선거, 법원, 중앙선거관리위원회, 증거보전, 투표용지부족
+
+=== stmt:b9bf9aa9ffcf110da060f382 ===
+propositionId: stmt:b9bf9aa9ffcf110da060f382
+humanUrl: /p/stmt-b9bf9aa9ffcf110da060f382/
+jsonUrl: /api/v2/propositions/stmt-b9bf9aa9ffcf110da060f382.json
+canonicalProposition: 중앙선거관리위원회는 2026년 6월 22일 6·3 지방선거 관련 소청이 6월 19일까지 전국 690건(중앙선관위 275건, 17개 시도선관위 415건) 접수됐다고 밝혔다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 중앙선거관리위원회
+  when: 2026년 6월 22일 발표(6월 19일까지 집계)
+  where: 전국 각급 선거관리위원회
+  what: 6·3 지방선거 관련 소청이 전국 690건 접수됐다고 밝혔다
+  how: 중앙선관위 275건과 17개 시도선관위 415건을 합산한 최종 현황을 공개했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.yna.co.kr/view/AKR20260622134400001; shortQuote: "중앙선관위에 제기된 소청은 275건, 17개 시도선관위에 제기된 소청은 415건이었다."
+  - url: https://imnews.imbc.com/news/2026/politics/article/6832010_36911.html; shortQuote: "중앙선거관리위원회가 6·3 지방선거 결과에 이의를 제기하는 소청이 모두 690건 접수됐다고 밝혔습니다."
+  - url: https://www.newsis.com/view/NISX20260622_0003678803; shortQuote: "중앙선거관리위원회는 전국에서 접수된 6·3 지방선거 관련 소청이 690건이라고 22일 밝혔다."
+limitations: 690건은 6월 19일까지의 누적치이며 6월 29일 기준 709건으로 증가하는 등 시점에 따라 변동한다. 선거소청(17일)·당선소청(18일)·서울시장 당선소청(19일)의 마감일이 달라 단일 마감 기준이 아니다. 원시 접수 목록과 중복 제거·검증 방법은 공개되지 않았다. 접수 건수는 이의제기의 양이며 그 자체가 부정선거의 증거가 아니다.
+tags: 2026지방선거, 선거소청, 중앙선거관리위원회, 측정, 투표용지부족
+
+=== stmt:d9b09c3ca5957e631d2870c6 ===
+propositionId: stmt:d9b09c3ca5957e631d2870c6
+humanUrl: /p/stmt-d9b09c3ca5957e631d2870c6/
+jsonUrl: /api/v2/propositions/stmt-d9b09c3ca5957e631d2870c6.json
+canonicalProposition: 중앙선거관리위원회 투표용지 부족사태 진상규명위원회는 2026년 6월 19일 노태악 전 위원장 등 전·현직 간부 12명의 수사 의뢰와 실무자 6명의 징계를 중앙선관위에 권고했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 중앙선거관리위원회 투표용지 부족사태 진상규명위원회(위원장 조현욱)
+  when: 2026년 6월 19일
+  where: 중앙선거관리위원회 진상규명위원회 브리핑
+  what: 노태악 전 위원장 등 전·현직 간부 12명의 수사 의뢰와 실무자 6명의 징계를 중앙선관위에 권고했다
+  how: 조사 마지막 날 브리핑에서 선거관리 전반에 총체적 부실이 있었다는 결론과 함께 권고했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.nec.go.kr/common/board/Download.do?bcIdx=327447&cbIdx=1090&streFileNm=a6f4b3b4-af45-423e-9fe4-84ab9398bf25.pdf; shortQuote: "선거관리 전반에 총체적 문제가 있었다는 진상규명위원회의 조사결과"
+  - url: https://news.kbs.co.kr/news/pc/view/view.do?ncd=8590626; shortQuote: "간부 12명에 대한 수사 의뢰를 권고했습니다. 실무자 6명은 자체 징계하라고 했습니다."
+  - url: https://www.hankookilbo.com/news/article/A2026061911020004029; shortQuote: "국민의힘 등 일각에서 요구하는 서울시장 등에 대한 재선거는 권고하지 않기로 했다."
+  - url: https://www.hani.co.kr/arti/politics/politics_general/1264336.html; shortQuote: "등 12명을 수사 의뢰 권고한다고 밝혔다."
+limitations: 수사 의뢰·징계는 권고이며 실제 수사 개시·징계 집행 여부는 이 기록에서 확인되지 않았다. 재선거는 권고하지 않았다. 12명·6명의 개별 명단은 이 기록에 담지 않았다.
+tags: 2026지방선거, 기관대응, 수사, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:fb21cda0d84b0147a28c49ab ===
+propositionId: stmt:fb21cda0d84b0147a28c49ab
+humanUrl: /p/stmt-fb21cda0d84b0147a28c49ab/
+jsonUrl: /api/v2/propositions/stmt-fb21cda0d84b0147a28c49ab.json
+canonicalProposition: 조희대 대법원장은 2026년 6월 8일 노태악 중앙선거관리위원장의 사의를 수용해 중앙선관위원 지명을 해제했고 위철환 상임위원이 위원장 직무대행을 맡았다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 조희대 대법원장
+  when: 2026년 6월 8일
+  where: 대법원장의 중앙선관위원 지명·해제 권한 문맥
+  what: 노태악 중앙선거관리위원장의 사의를 수용해 그의 중앙선관위원 지명을 해제했다
+  how: 중앙선관위에 지명 해제를 통보했고 위철환 상임위원이 위원장 직무를 대행하게 됐다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.khan.co.kr/article/202606082103005; shortQuote: "조희대 대법원장이 노태악 중앙선관위원장의 중앙선관위원 지명 해제를 통보해"
+  - url: https://www.yna.co.kr/view/AKR20260608172800004; shortQuote: "조희대 대법원장이 8일 노태악 중앙선거관리위원장이 표명한 사의를 받아들였다."
+limitations: 사의 표명의 자발성 정도나 후속 인사·징계는 이 기록의 범위 밖이다.
+tags: 2026지방선거, 기관대응, 중앙선거관리위원회, 투표용지부족
 
 === stmt:0010711e717716056a9118a7 ===
 propositionId: stmt:0010711e717716056a9118a7

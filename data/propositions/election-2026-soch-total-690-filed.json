@@ -1,0 +1,179 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:b9bf9aa9ffcf110da060f382",
+  "versionId": "ver:f810089ab0fc8efe",
+  "certHash": "sha256:582c51ceab478676c86ab834eb6d7c4a34cfa5bbfc96e877cf1bb05bf14e615f",
+  "canonicalProposition": "중앙선거관리위원회는 2026년 6월 22일 6·3 지방선거 관련 소청이 6월 19일까지 전국 690건(중앙선관위 275건, 17개 시도선관위 415건) 접수됐다고 밝혔다",
+  "originalClaim": "선거소청 실제 접수 규모(커버리지 감사 후속). 우리 기록은 장동혁의 16개 소청 주장만 있었다.",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "각급 선거관리위원회의 소청 접수 집계",
+    "sample": "전국 각급 선거관리위원회에 접수된 6·3 지방선거 관련 소청",
+    "aggregationBasis": "2026년 6월 19일까지 누적 접수 건수(중앙 275 + 시도 415)",
+    "producer": "중앙선거관리위원회·각급 시도선거관리위원회",
+    "measuredAt": "2026-06-19"
+  },
+  "sixW": {
+    "who": "중앙선거관리위원회",
+    "when": "2026년 6월 22일 발표(6월 19일까지 집계)",
+    "where": "전국 각급 선거관리위원회",
+    "what": "6·3 지방선거 관련 소청이 전국 690건 접수됐다고 밝혔다",
+    "how": "중앙선관위 275건과 17개 시도선관위 415건을 합산한 최종 현황을 공개했다",
+    "why": []
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "연합뉴스·뉴스1·MBC·뉴시스가 중앙선관위의 6월 22일 최종 현황(690건=275+415)을 일관되게 보도하고 다수가 아카이브됐다. 다만 이 수치는 6월 19일까지의 누적치이며 집계 시점에 따라 변동한다(측정값의 불완전성, 제13).",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.yna.co.kr/view/AKR20260622134400001",
+      "title": "6·3 지선 소청 총 690건 접수…4년전 지선 대비 15.3배 늘어",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "중앙선관위에 제기된 소청은 275건, 17개 시도선관위에 제기된 소청은 415건이었다.",
+      "quoteHash": "sha256:bf22e1bd63471c6fc12993214a031feb7a31886a3d411b119787c4ff3580ab90",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20260623050619/https://www.yna.co.kr/view/AKR20260622134400001",
+      "archiveProvider": "internet_archive",
+      "archivedAt": "2026-06-23",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "HTTP 200 본문에서 shortQuote를 원문 그대로 확인했다. 같은 본문은 선거소청이 6월 17일, 당선소청이 18일 마감됐고 서울시장 당선소청만 19일까지 접수됐다고 구분한다. 따라서 690건은 6월 17일 단일 마감 기준이 아니라 6월 19일까지의 누적치다.",
+      "independenceGroupId": "nec-soch-final-tally-20260622",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "연합뉴스가 별도 제작한 기사이지만 수치의 원천은 중앙선관위 6월 22일 최종 현황이다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "중앙선관위 소청 최종 현황과 종류별 마감일을 취재·보도한 통신사다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "수치 생산자는 중앙선관위와 각급 선관위이며 기사는 그 최종 현황을 인용한다",
+          "원시 접수 목록과 중복 제거 방법은 공개 본문에서 확인되지 않았다"
+        ],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://imnews.imbc.com/news/2026/politics/article/6832010_36911.html",
+      "title": "선관위, 6·3 지선 소청 총 690건 접수‥4년 전 지선 대비 15배 늘어",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "중앙선거관리위원회가 6·3 지방선거 결과에 이의를 제기하는 소청이 모두 690건 접수됐다고 밝혔습니다.",
+      "quoteHash": "sha256:7ae93751cc4ab9f17a4f1b3a9d47942c530ce3a9060c087cefc6baa38bebfc50",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20260622174423/https://imnews.imbc.com/news/2026/politics/article/6832010_36911.html",
+      "archiveProvider": "internet_archive",
+      "archivedAt": "2026-06-22",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "HTTP 200 본문에서 shortQuote를 원문 그대로 확인했다. 275+415 기준을 '지난 19일까지'로 적어 6월 17일 마감 기준과 구분된다.",
+      "independenceGroupId": "nec-soch-final-tally-20260622",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "MBC가 별도 제작한 기사이지만 수치의 원천은 중앙선관위의 동일 최종 현황이다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "중앙선관위의 지방선거 소청 집계 결과를 보도한 전국 방송사다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "수치 생산자는 중앙선관위와 각급 선관위이며 방송 기사는 그 발표를 인용한다"
+        ],
+        "requiresMethodologyAudit": true
+      }
+    },
+    {
+      "url": "https://www.newsis.com/view/NISX20260622_0003678803",
+      "title": "중앙선관위, 6·3 지방선거 소청 690건 접수…서울시장은 30건",
+      "retrievedAt": "2026-07-12",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "중앙선거관리위원회는 전국에서 접수된 6·3 지방선거 관련 소청이 690건이라고 22일 밝혔다.",
+      "quoteHash": "sha256:b0f2ed07dae3a8b86872c723402035c3698d136506f8fface95356de16e6c2b3",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20260623115804/https://www.newsis.com/view/NISX20260622_0003678803",
+      "archiveProvider": "internet_archive",
+      "archivedAt": "2026-06-23",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "HTTP 200 본문에서 shortQuote와 275·415 내역을 확인했다. 별도 뉴시스 7월 8일 기사가 6월 29일 기준 총 709건으로 후속 집계를 보도해, 690건이 고정 불변 수치가 아니라 특정 시점의 누적치임을 보여준다.",
+      "independenceGroupId": "nec-soch-final-tally-20260622",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "뉴시스가 별도 제작한 기사이지만 수치의 원천은 중앙선관위의 동일 최종 현황이다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "중앙선관위의 최종 현황과 종류별 접수 마감일을 취재·보도한 통신사다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [
+          "수치 생산자는 중앙선관위와 각급 선관위이며 기사는 그 최종 현황을 인용한다",
+          "6월 29일 기준 후속 집계는 709건으로 증가해 측정 시점 고정이 필요하다"
+        ],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "690건을 고정된 사실처럼 제시하면, 이후 709건으로 늘어난 변동을 감춘 것으로 오독될 수 있다.",
+      "response": "명제와 measurement에 '6월 19일까지 집계'를 명시하고 limitations에 6월 29일 709건 증가를 기록해 측정 시점을 고정했다.",
+      "errorsFound": 1,
+      "framingChecks": "'폭증'·'무더기' 같은 평가어를 제거하고 접수 건수만 남겼다. 소청의 정당성은 담지 않았다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "소청 건수는 이의제기의 양이지 부정선거의 증거가 아님을 limitations에 대칭적으로 명시했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "중앙선관위 발표 수치를 그대로 확정하지 않고 measurement 감사(생산자·집계 방법·시점 변동)를 적용했다(제4·제13)."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "측정·정치 사안이라 human_reviewed 레인. 수집 초안이 '6월 17일 마감 기준 690건'과 실제 '6월 19일까지 누적'의 불일치를 지적해 명제·measurement를 6월 19일 기준으로 정정했다. 원시 접수 목록·중복 제거 방법은 미공개라 requiresMethodologyAudit=true.",
+      "adoptedReason": "복수 아카이브된 보도가 690건(275+415)을 일관되게 확인하고 집계 시점을 명시했다.",
+      "rejectedAlternatives": "690건이 고정 최종치라거나 소청 수가 부정선거를 입증한다는 해석은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 소청 접수 건수라는 측정값만 기록한다. 소청의 인용·기각 결과와 선거 효력은 미확정이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "690건은 6월 19일까지의 누적치이며 6월 29일 기준 709건으로 증가하는 등 시점에 따라 변동한다. 선거소청(17일)·당선소청(18일)·서울시장 당선소청(19일)의 마감일이 달라 단일 마감 기준이 아니다. 원시 접수 목록과 중복 제거·검증 방법은 공개되지 않았다. 접수 건수는 이의제기의 양이며 그 자체가 부정선거의 증거가 아니다.",
+  "tags": [
+    "2026지방선거",
+    "투표용지부족",
+    "중앙선거관리위원회",
+    "선거소청",
+    "측정"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

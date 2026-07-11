@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-07-02",
-    "total": 60,
+    "generatedAt": "2026-07-12",
+    "total": 64,
     "note": "태그 교집합 기반 결정론적 파생 관계; cert 원본에는 저장되지 않음"
   },
   "nodes": [
@@ -481,6 +481,17 @@
       ]
     },
     {
+      "propositionId": "stmt:ab60963f623b2a8494f0eb3b",
+      "path": "/p/stmt-ab60963f623b2a8494f0eb3b/",
+      "tags": [
+        "2026지방선거",
+        "법원",
+        "중앙선거관리위원회",
+        "증거보전",
+        "투표용지부족"
+      ]
+    },
+    {
       "propositionId": "stmt:ae66527bf2aea1b5407a5f78",
       "path": "/p/stmt-ae66527bf2aea1b5407a5f78/",
       "tags": [
@@ -553,6 +564,17 @@
       ]
     },
     {
+      "propositionId": "stmt:b9bf9aa9ffcf110da060f382",
+      "path": "/p/stmt-b9bf9aa9ffcf110da060f382/",
+      "tags": [
+        "2026지방선거",
+        "선거소청",
+        "중앙선거관리위원회",
+        "측정",
+        "투표용지부족"
+      ]
+    },
+    {
       "propositionId": "stmt:c11b6f2081e8fa1c38bae49d",
       "path": "/p/stmt-c11b6f2081e8fa1c38bae49d/",
       "tags": [
@@ -620,6 +642,17 @@
         "여론조사",
         "중앙선거관리위원회",
         "측정",
+        "투표용지부족"
+      ]
+    },
+    {
+      "propositionId": "stmt:d9b09c3ca5957e631d2870c6",
+      "path": "/p/stmt-d9b09c3ca5957e631d2870c6/",
+      "tags": [
+        "2026지방선거",
+        "기관대응",
+        "수사",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -706,6 +739,16 @@
         "부정선거의혹",
         "정치주장",
         "주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "propositionId": "stmt:fb21cda0d84b0147a28c49ab",
+      "path": "/p/stmt-fb21cda0d84b0147a28c49ab/",
+      "tags": [
+        "2026지방선거",
+        "기관대응",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -931,6 +974,14 @@
     },
     {
       "from": "stmt:0010711e717716056a9118a7",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0010711e717716056a9118a7",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -953,6 +1004,15 @@
         "2026지방선거",
         "사건단위",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0010711e717716056a9118a7",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "측정",
         "투표용지부족"
       ]
     },
@@ -1001,6 +1061,14 @@
         "2026지방선거",
         "사건단위",
         "측정",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0010711e717716056a9118a7",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -1064,6 +1132,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0010711e717716056a9118a7",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -1218,6 +1294,14 @@
     },
     {
       "from": "stmt:0a58cbf2ef6649107049e597",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0a58cbf2ef6649107049e597",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -1233,6 +1317,14 @@
         "2026지방선거",
         "사건단위",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0a58cbf2ef6649107049e597",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -1278,6 +1370,14 @@
       "sharedTags": [
         "2026지방선거",
         "사건단위",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0a58cbf2ef6649107049e597",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -1336,6 +1436,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0a58cbf2ef6649107049e597",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -1486,6 +1594,15 @@
     },
     {
       "from": "stmt:0f10895abcff81a55ff783d6",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0f10895abcff81a55ff783d6",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -1499,6 +1616,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0f10895abcff81a55ff783d6",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -1543,6 +1669,15 @@
     {
       "from": "stmt:0f10895abcff81a55ff783d6",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0f10895abcff81a55ff783d6",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "중앙선거관리위원회",
@@ -1601,6 +1736,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0f10895abcff81a55ff783d6",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -1737,6 +1881,14 @@
     },
     {
       "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -1752,6 +1904,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -1793,6 +1953,14 @@
     {
       "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "투표용지부족"
@@ -1851,6 +2019,14 @@
         "2026지방선거",
         "정치주장",
         "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:12ebbd81f7cfbbcaf5048a0e",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -1973,6 +2149,14 @@
     },
     {
       "from": "stmt:1426e28acba929903bbe8736",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:1426e28acba929903bbe8736",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -1987,6 +2171,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:1426e28acba929903bbe8736",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -2028,6 +2220,14 @@
     {
       "from": "stmt:1426e28acba929903bbe8736",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:1426e28acba929903bbe8736",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "투표용지부족"
@@ -2084,6 +2284,14 @@
         "2026지방선거",
         "정치주장",
         "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:1426e28acba929903bbe8736",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -2184,6 +2392,13 @@
     {
       "from": "stmt:24094c14f92b5c8fb482e57d",
       "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:24094c14f92b5c8fb482e57d",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
       "sharedTags": [
         "측정"
       ]
@@ -2320,6 +2535,14 @@
     },
     {
       "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -2334,6 +2557,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -2375,6 +2606,14 @@
     {
       "from": "stmt:29c85dfda2751f0ac6e0fa1a",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "투표용지부족"
@@ -2433,6 +2672,14 @@
         "2026지방선거",
         "정치주장",
         "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:29c85dfda2751f0ac6e0fa1a",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -2542,6 +2789,15 @@
     },
     {
       "from": "stmt:2e87b3750aadd61ef8e2b6c0",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:2e87b3750aadd61ef8e2b6c0",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -2555,6 +2811,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:2e87b3750aadd61ef8e2b6c0",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -2599,6 +2864,15 @@
     {
       "from": "stmt:2e87b3750aadd61ef8e2b6c0",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:2e87b3750aadd61ef8e2b6c0",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "중앙선거관리위원회",
@@ -2656,6 +2930,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:2e87b3750aadd61ef8e2b6c0",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -2796,6 +3079,15 @@
     },
     {
       "from": "stmt:3324d300d2efb6d8dcbbdc4c",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:3324d300d2efb6d8dcbbdc4c",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -2811,6 +3103,15 @@
         "2026지방선거",
         "사건단위",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:3324d300d2efb6d8dcbbdc4c",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -2859,6 +3160,15 @@
       "sharedTags": [
         "2026지방선거",
         "사건단위",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:3324d300d2efb6d8dcbbdc4c",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -2918,6 +3228,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:3324d300d2efb6d8dcbbdc4c",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -3004,6 +3323,13 @@
     },
     {
       "from": "stmt:3a2ae5d9219c9be87de14ae7",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3a2ae5d9219c9be87de14ae7",
       "to": "stmt:cb0719e9aac6e4c86677d2e5",
       "sharedTags": [
         "측정"
@@ -3084,6 +3410,13 @@
     },
     {
       "from": "stmt:3ae444edbb297bea65e9cd78",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3ae444edbb297bea65e9cd78",
       "to": "stmt:cb0719e9aac6e4c86677d2e5",
       "sharedTags": [
         "측정"
@@ -3154,6 +3487,13 @@
     },
     {
       "from": "stmt:3e54ea51d8411beb551b399c",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3e54ea51d8411beb551b399c",
       "to": "stmt:cb0719e9aac6e4c86677d2e5",
       "sharedTags": [
         "측정"
@@ -3212,6 +3552,13 @@
     {
       "from": "stmt:3f30934e8dae7bc3452ab43a",
       "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:3f30934e8dae7bc3452ab43a",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
       "sharedTags": [
         "측정"
       ]
@@ -3344,6 +3691,14 @@
     },
     {
       "from": "stmt:48afea861840a1d07ad8d250",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:48afea861840a1d07ad8d250",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -3360,6 +3715,14 @@
         "2026지방선거",
         "사건단위",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:48afea861840a1d07ad8d250",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -3405,6 +3768,14 @@
       "sharedTags": [
         "2026지방선거",
         "사건단위",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:48afea861840a1d07ad8d250",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -3464,6 +3835,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:48afea861840a1d07ad8d250",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -3563,6 +3942,15 @@
     },
     {
       "from": "stmt:495acd373d4c3a4c610127ac",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:495acd373d4c3a4c610127ac",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -3583,6 +3971,16 @@
       "sharedTags": [
         "2026지방선거",
         "사건단위",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:495acd373d4c3a4c610127ac",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "측정",
         "투표용지부족"
       ]
     },
@@ -3632,6 +4030,15 @@
         "사건단위",
         "중앙선거관리위원회",
         "측정",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:495acd373d4c3a4c610127ac",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -3698,6 +4105,15 @@
       ]
     },
     {
+      "from": "stmt:495acd373d4c3a4c610127ac",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:4b794b8163eb2161d4a9b949",
       "to": "stmt:5525ea7692e7f4eea17971f5",
       "sharedTags": [
@@ -3721,6 +4137,13 @@
     {
       "from": "stmt:4b794b8163eb2161d4a9b949",
       "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:4b794b8163eb2161d4a9b949",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
       "sharedTags": [
         "측정"
       ]
@@ -3818,6 +4241,15 @@
     },
     {
       "from": "stmt:4f11124d8afde3e1fa6d0050",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:4f11124d8afde3e1fa6d0050",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -3833,6 +4265,15 @@
         "2026지방선거",
         "사건단위",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:4f11124d8afde3e1fa6d0050",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -3881,6 +4322,15 @@
       "sharedTags": [
         "2026지방선거",
         "사건단위",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:4f11124d8afde3e1fa6d0050",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -3940,6 +4390,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:4f11124d8afde3e1fa6d0050",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -4007,6 +4466,13 @@
     },
     {
       "from": "stmt:5525ea7692e7f4eea17971f5",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:5525ea7692e7f4eea17971f5",
       "to": "stmt:cb0719e9aac6e4c86677d2e5",
       "sharedTags": [
         "측정"
@@ -4036,6 +4502,13 @@
     {
       "from": "stmt:5985381793fd401f7fc3052c",
       "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:5985381793fd401f7fc3052c",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
       "sharedTags": [
         "측정"
       ]
@@ -4119,6 +4592,15 @@
     },
     {
       "from": "stmt:5bf64ededa100f82163dcab1",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:5bf64ededa100f82163dcab1",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -4132,6 +4614,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:5bf64ededa100f82163dcab1",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -4176,6 +4667,15 @@
     {
       "from": "stmt:5bf64ededa100f82163dcab1",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:5bf64ededa100f82163dcab1",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "중앙선거관리위원회",
@@ -4233,6 +4733,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:5bf64ededa100f82163dcab1",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -4339,6 +4848,14 @@
     },
     {
       "from": "stmt:6ec9cbff53f71a505b22823f",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:6ec9cbff53f71a505b22823f",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -4354,6 +4871,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:6ec9cbff53f71a505b22823f",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -4395,6 +4920,14 @@
     {
       "from": "stmt:6ec9cbff53f71a505b22823f",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:6ec9cbff53f71a505b22823f",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "투표용지부족"
@@ -4453,6 +4986,14 @@
         "2026지방선거",
         "정치주장",
         "주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:6ec9cbff53f71a505b22823f",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -4512,6 +5053,14 @@
     },
     {
       "from": "stmt:75fc8d303885c2159f99099d",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:75fc8d303885c2159f99099d",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -4533,6 +5082,15 @@
       "sharedTags": [
         "2026지방선거",
         "사건단위",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:75fc8d303885c2159f99099d",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "측정",
         "투표용지부족"
       ]
     },
@@ -4583,6 +5141,14 @@
     },
     {
       "from": "stmt:75fc8d303885c2159f99099d",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:75fc8d303885c2159f99099d",
       "to": "stmt:dc42960aa42792c924b4d58b",
       "sharedTags": [
         "2026지방선거",
@@ -4642,6 +5208,14 @@
       ]
     },
     {
+      "from": "stmt:75fc8d303885c2159f99099d",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:83702707422e50c0a56fb565",
       "to": "stmt:921a9dc8a1b5b268e0f4c807",
       "sharedTags": [
@@ -4673,6 +5247,15 @@
     },
     {
       "from": "stmt:83702707422e50c0a56fb565",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:83702707422e50c0a56fb565",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -4686,6 +5269,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:83702707422e50c0a56fb565",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -4730,6 +5322,15 @@
     {
       "from": "stmt:83702707422e50c0a56fb565",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:83702707422e50c0a56fb565",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "중앙선거관리위원회",
@@ -4788,6 +5389,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:83702707422e50c0a56fb565",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -4829,6 +5439,14 @@
     },
     {
       "from": "stmt:921a9dc8a1b5b268e0f4c807",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:921a9dc8a1b5b268e0f4c807",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
         "2026지방선거",
@@ -4842,6 +5460,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:921a9dc8a1b5b268e0f4c807",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -4883,6 +5509,14 @@
     {
       "from": "stmt:921a9dc8a1b5b268e0f4c807",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:921a9dc8a1b5b268e0f4c807",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "투표용지부족"
@@ -4941,6 +5575,14 @@
       ]
     },
     {
+      "from": "stmt:921a9dc8a1b5b268e0f4c807",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:9fa1e13fbdeb497fdee35c15",
       "to": "stmt:c44501dcb97869b23fbe8942",
       "sharedTags": [
@@ -4955,6 +5597,15 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:a2b9f8780cb8ba76b3f3771c",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -4977,6 +5628,15 @@
         "2026지방선거",
         "사건단위",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:a2b9f8780cb8ba76b3f3771c",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -5025,6 +5685,15 @@
       "sharedTags": [
         "2026지방선거",
         "사건단위",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:a2b9f8780cb8ba76b3f3771c",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -5092,6 +5761,26 @@
       ]
     },
     {
+      "from": "stmt:a2b9f8780cb8ba76b3f3771c",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:a2c80ef637dd92021cbbd92b",
+      "to": "stmt:ab60963f623b2a8494f0eb3b",
+      "sharedTags": [
+        "2026지방선거",
+        "법원",
+        "중앙선거관리위원회",
+        "증거보전",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:a2c80ef637dd92021cbbd92b",
       "to": "stmt:b0b35403a2822612a749bbd1",
       "sharedTags": [
@@ -5108,6 +5797,15 @@
         "법원",
         "정치주장",
         "증거보전",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:a2c80ef637dd92021cbbd92b",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
         "투표용지부족"
       ]
     },
@@ -5154,6 +5852,15 @@
     {
       "from": "stmt:a2c80ef637dd92021cbbd92b",
       "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:a2c80ef637dd92021cbbd92b",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
       "sharedTags": [
         "2026지방선거",
         "중앙선거관리위원회",
@@ -5216,10 +5923,161 @@
       ]
     },
     {
+      "from": "stmt:a2c80ef637dd92021cbbd92b",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:a39e2dc6072bbda67817ead7",
       "to": "stmt:b3deef8189d7937fc1e97ab2",
       "sharedTags": [
         "한국근현대사"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:b0b35403a2822612a749bbd1",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:b76037b935bcd6803ab934ab",
+      "sharedTags": [
+        "2026지방선거",
+        "법원",
+        "증거보전",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:c11b6f2081e8fa1c38bae49d",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:c890b5f8ca77961c84b58268",
+      "sharedTags": [
+        "2026지방선거",
+        "법원",
+        "증거보전",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:d180b65d5e8f431a52ed1eec",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:dc42960aa42792c924b4d58b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:e2b37f73256b9885410a5c01",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:f08703cdaffb0328c82f293c",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:f9f1fe47c4a18f9de210c3ec",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:fafb5a05023e9541b3e07f1f",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ab60963f623b2a8494f0eb3b",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
       ]
     },
     {
@@ -5245,6 +6103,14 @@
         "2026지방선거",
         "사건단위",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b0b35403a2822612a749bbd1",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -5290,6 +6156,14 @@
       "sharedTags": [
         "2026지방선거",
         "사건단위",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b0b35403a2822612a749bbd1",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -5355,11 +6229,26 @@
       ]
     },
     {
+      "from": "stmt:b0b35403a2822612a749bbd1",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:b18e2813819c4fb0e23830f6",
       "to": "stmt:b9a4dcf237affc17c1a51fe6",
       "sharedTags": [
         "지구과학",
         "지구형상"
+      ]
+    },
+    {
+      "from": "stmt:b18e2813819c4fb0e23830f6",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "측정"
       ]
     },
     {
@@ -5381,6 +6270,14 @@
       "to": "stmt:efddfa77db78be598d007d7e",
       "sharedTags": [
         "측정"
+      ]
+    },
+    {
+      "from": "stmt:b76037b935bcd6803ab934ab",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
       ]
     },
     {
@@ -5433,6 +6330,14 @@
     },
     {
       "from": "stmt:b76037b935bcd6803ab934ab",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b76037b935bcd6803ab934ab",
       "to": "stmt:dc42960aa42792c924b4d58b",
       "sharedTags": [
         "2026지방선거",
@@ -5488,6 +6393,138 @@
       ]
     },
     {
+      "from": "stmt:b76037b935bcd6803ab934ab",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:c11b6f2081e8fa1c38bae49d",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:c890b5f8ca77961c84b58268",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "측정",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:d180b65d5e8f431a52ed1eec",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "측정",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:dc42960aa42792c924b4d58b",
+      "sharedTags": [
+        "2026지방선거",
+        "선거소청",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:e2b37f73256b9885410a5c01",
+      "sharedTags": [
+        "2026지방선거",
+        "선거소청",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:f08703cdaffb0328c82f293c",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:f9f1fe47c4a18f9de210c3ec",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:fafb5a05023e9541b3e07f1f",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:b9bf9aa9ffcf110da060f382",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:c11b6f2081e8fa1c38bae49d",
       "to": "stmt:c890b5f8ca77961c84b58268",
       "sharedTags": [
@@ -5520,6 +6557,16 @@
       "to": "stmt:d78f27d3e447961d8e0f492b",
       "sharedTags": [
         "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:c11b6f2081e8fa1c38bae49d",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "수사",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -5581,6 +6628,15 @@
       ]
     },
     {
+      "from": "stmt:c11b6f2081e8fa1c38bae49d",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:c890b5f8ca77961c84b58268",
       "to": "stmt:cb0719e9aac6e4c86677d2e5",
       "sharedTags": [
@@ -5607,6 +6663,14 @@
     },
     {
       "from": "stmt:c890b5f8ca77961c84b58268",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:c890b5f8ca77961c84b58268",
       "to": "stmt:dc42960aa42792c924b4d58b",
       "sharedTags": [
         "2026지방선거",
@@ -5654,6 +6718,14 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:c890b5f8ca77961c84b58268",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "투표용지부족"
       ]
     },
@@ -5679,6 +6751,15 @@
     },
     {
       "from": "stmt:cb0719e9aac6e4c86677d2e5",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:cb0719e9aac6e4c86677d2e5",
       "to": "stmt:dc42960aa42792c924b4d58b",
       "sharedTags": [
         "2026지방선거",
@@ -5733,6 +6814,15 @@
     {
       "from": "stmt:cb0719e9aac6e4c86677d2e5",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:cb0719e9aac6e4c86677d2e5",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
       "sharedTags": [
         "2026지방선거",
         "중앙선거관리위원회",
@@ -5750,6 +6840,15 @@
     },
     {
       "from": "stmt:d180b65d5e8f431a52ed1eec",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d180b65d5e8f431a52ed1eec",
       "to": "stmt:dc42960aa42792c924b4d58b",
       "sharedTags": [
         "2026지방선거",
@@ -5799,6 +6898,24 @@
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d180b65d5e8f431a52ed1eec",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d78f27d3e447961d8e0f492b",
+      "to": "stmt:d9b09c3ca5957e631d2870c6",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -5861,6 +6978,77 @@
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d78f27d3e447961d8e0f492b",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d9b09c3ca5957e631d2870c6",
+      "to": "stmt:dc42960aa42792c924b4d58b",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d9b09c3ca5957e631d2870c6",
+      "to": "stmt:e2b37f73256b9885410a5c01",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d9b09c3ca5957e631d2870c6",
+      "to": "stmt:ee1b50f655876f2f4da585e8",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d9b09c3ca5957e631d2870c6",
+      "to": "stmt:f08703cdaffb0328c82f293c",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d9b09c3ca5957e631d2870c6",
+      "to": "stmt:f9f1fe47c4a18f9de210c3ec",
+      "sharedTags": [
+        "2026지방선거",
+        "수사",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d9b09c3ca5957e631d2870c6",
+      "to": "stmt:fafb5a05023e9541b3e07f1f",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:d9b09c3ca5957e631d2870c6",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "기관대응",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
@@ -5911,6 +7099,14 @@
       ]
     },
     {
+      "from": "stmt:dc42960aa42792c924b4d58b",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:e2b37f73256b9885410a5c01",
       "to": "stmt:ee1b50f655876f2f4da585e8",
       "sharedTags": [
@@ -5950,6 +7146,15 @@
       ]
     },
     {
+      "from": "stmt:e2b37f73256b9885410a5c01",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:ee1b50f655876f2f4da585e8",
       "to": "stmt:f08703cdaffb0328c82f293c",
       "sharedTags": [
@@ -5976,6 +7181,14 @@
       ]
     },
     {
+      "from": "stmt:ee1b50f655876f2f4da585e8",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:f08703cdaffb0328c82f293c",
       "to": "stmt:f9f1fe47c4a18f9de210c3ec",
       "sharedTags": [
@@ -5995,11 +7208,37 @@
       ]
     },
     {
+      "from": "stmt:f08703cdaffb0328c82f293c",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "투표용지부족"
+      ]
+    },
+    {
       "from": "stmt:f9f1fe47c4a18f9de210c3ec",
       "to": "stmt:fafb5a05023e9541b3e07f1f",
       "sharedTags": [
         "2026지방선거",
         "정치주장",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:f9f1fe47c4a18f9de210c3ec",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
+        "중앙선거관리위원회",
+        "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:fafb5a05023e9541b3e07f1f",
+      "to": "stmt:fb21cda0d84b0147a28c49ab",
+      "sharedTags": [
+        "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
       ]
