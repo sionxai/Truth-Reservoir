@@ -7,6 +7,8 @@ import { loadPropositions } from "../../../lib/data.ts";
 import { encodePropositionId } from "../../../lib/ids.ts";
 import { sourceCount, tagRoute, uniqueTags } from "../../../lib/propositions.ts";
 import { absoluteSiteUrl } from "../../../lib/site.ts";
+import { loadSummaries, summaryFor } from "../../../lib/summaries.ts";
+import { loadTopicArticles, topicArticleFor } from "../../../lib/topic-articles.ts";
 import {
   eventDateKey,
   monthBucketLabel,
@@ -58,6 +60,12 @@ export default async function TagPage({ params }: PageProps) {
   );
   const collectionJsonLd = buildCollectionJsonLd(tag, ordered);
   const fullText = buildTopicPlainText(tag, summary, ordered);
+  const topicArticle = topicArticleFor(await loadTopicArticles(), tag, propositions);
+  // 다사실 주제 기사가 없으면(단일 사실 주제 등) 그 명제의 개별 요약을 재사용한다.
+  const fallbackSummary =
+    !topicArticle && ordered.length === 1
+      ? summaryFor(await loadSummaries(), ordered[0])
+      : null;
 
   // Neutral month subheadings (제14): computed purely from the derived date. We walk
   // the already-ordered list and emit a heading only when the auto-derived "YYYY년 M월"
@@ -104,6 +112,35 @@ export default async function TagPage({ params }: PageProps) {
         dangerouslySetInnerHTML={jsonScriptMarkup(fullText)}
       />
       <script dangerouslySetInnerHTML={{ __html: copyFullTextScript() }} />
+
+      {topicArticle ? (
+        <section className="topic-article" aria-labelledby="topic-article-title">
+          <p className="ai-summary__label" id="topic-article-title">
+            AI 작성 기사
+            <span className="ai-summary__disclaimer">
+              아래 타임라인과 개별 검증 기록이 정본이며, 이 기사는 검증 대상이 아닙니다
+            </span>
+          </p>
+          <div className="ai-summary topic-article__summary">
+            <p className="ai-summary__text">{topicArticle.summary}</p>
+          </div>
+          <div className="topic-article__body">
+            {topicArticle.body.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      ) : fallbackSummary ? (
+        <section className="ai-summary" aria-labelledby="topic-summary-title">
+          <p className="ai-summary__label" id="topic-summary-title">
+            AI 요약
+            <span className="ai-summary__disclaimer">
+              아래 검증 기록이 정본이며, 이 요약은 검증 대상이 아닙니다
+            </span>
+          </p>
+          <p className="ai-summary__text">{fallbackSummary.summary}</p>
+        </section>
+      ) : null}
 
       <div className="topic-body">
         {ordered.map((proposition) => {

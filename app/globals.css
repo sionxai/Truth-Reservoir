@@ -1280,6 +1280,27 @@ button.secondary:hover,
   margin: 0;
 }
 
+.topic-article {
+  display: grid;
+  gap: 16px;
+  margin: 8px 0 40px;
+}
+
+.topic-article__summary {
+  font-weight: 500;
+}
+
+.topic-article__body {
+  display: grid;
+  gap: 14px;
+}
+
+.topic-article__body p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
 .facts-lead {
   display: grid;
   gap: 10px;
