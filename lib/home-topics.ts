@@ -11,8 +11,23 @@ export const FACET_TAGS = new Set([
   "주장",
   "문서내용",
   "최근1년",
-  "민감주제"
+  "민감주제",
+  // generic 카테고리 태그 — 서사 주제가 아니라 분류축이므로 주제 타일에서 제외한다.
+  "국제사건",
+  "국내영향"
 ]);
+
+// 완성(published) 주제 — 의도적으로 기사로 정리한 대표 주제만 홈 주제 카드로 노출한다.
+// 나머지 태그는 명제가 있어도 '준비중'이며, 명제는 검색·타임라인·API로 계속 접근 가능하다.
+// 새 주제를 기사로 완성할 때마다 여기에 추가한다.
+export const PUBLISHED_TOPICS = new Set([
+  "2026지방선거",
+  "러시아우크라이나전쟁"
+]);
+
+export function isPublishedTopic(tag: string): boolean {
+  return PUBLISHED_TOPICS.has(tag);
+}
 
 const PURE_YEAR_TAG = /^\d{4}$/;
 

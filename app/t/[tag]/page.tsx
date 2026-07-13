@@ -7,6 +7,7 @@ import { loadPropositions } from "../../../lib/data.ts";
 import { encodePropositionId } from "../../../lib/ids.ts";
 import { sourceCount, tagRoute, uniqueTags } from "../../../lib/propositions.ts";
 import { absoluteSiteUrl } from "../../../lib/site.ts";
+import { isPublishedTopic } from "../../../lib/home-topics.ts";
 import { loadSummaries, summaryFor } from "../../../lib/summaries.ts";
 import { loadTopicArticles, topicArticleFor } from "../../../lib/topic-articles.ts";
 import {
@@ -60,10 +61,15 @@ export default async function TagPage({ params }: PageProps) {
   );
   const collectionJsonLd = buildCollectionJsonLd(tag, ordered);
   const fullText = buildTopicPlainText(tag, summary, ordered);
-  const topicArticle = topicArticleFor(await loadTopicArticles(), tag, propositions);
+  // 완성(published) 주제만 기사를 노출한다. 준비중 주제는 명제 타임라인만 보이고
+  // '준비중' 안내를 띄운다(자동 초안 파일은 보존하되 렌더하지 않는다).
+  const published = isPublishedTopic(tag);
+  const topicArticle = published
+    ? topicArticleFor(await loadTopicArticles(), tag, propositions)
+    : null;
   // 다사실 주제 기사가 없으면(단일 사실 주제 등) 그 명제의 개별 요약을 재사용한다.
   const fallbackSummary =
-    !topicArticle && ordered.length === 1
+    published && !topicArticle && ordered.length === 1
       ? summaryFor(await loadSummaries(), ordered[0])
       : null;
 
@@ -80,7 +86,7 @@ export default async function TagPage({ params }: PageProps) {
       />
 
       <header className="topic-page__header">
-        <p className="eyebrow">태그 기반 자동 집계 주제</p>
+        <p className="eyebrow">{published ? "주제 기사" : "준비중 주제"}</p>
         <h1>{tag}</h1>
         <p className="topic-page__meta">
           <span>사실 {summary.count}개</span>
@@ -139,6 +145,15 @@ export default async function TagPage({ params }: PageProps) {
             </span>
           </p>
           <p className="ai-summary__text">{fallbackSummary.summary}</p>
+        </section>
+      ) : !published ? (
+        <section className="topic-pending" aria-label="준비중 안내">
+          <p className="topic-pending__title">이 주제는 아직 기사로 정리되지 않았습니다</p>
+          <p>
+            아래는 이 태그로 자동 집계된 검증 명제의 시간순 타임라인입니다. 각 명제는
+            독립적으로 검증돼 있으며 클릭하면 원문·증거·검수 기록으로 이동합니다. 주제
+            기사는 순차적으로 작성됩니다.
+          </p>
         </section>
       ) : null}
 

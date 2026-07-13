@@ -1286,6 +1286,36 @@ button.secondary:hover,
   margin: 8px 0 40px;
 }
 
+.topic-pending {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--tr-radius-lg);
+  color: var(--color-muted);
+  display: grid;
+  gap: 8px;
+  margin: 8px 0 32px;
+  padding: 20px 22px;
+}
+
+.topic-pending__title {
+  color: var(--color-text);
+  font-weight: 700;
+  margin: 0;
+}
+
+.topic-pending p {
+  line-height: 1.7;
+  margin: 0;
+}
+
+.section-note {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin: 6px 0 0;
+  max-width: 640px;
+}
+
 .topic-article__summary {
   font-weight: 500;
 }

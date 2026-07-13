@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { TopicThumbnail } from "./components/TopicThumbnail";
 import { loadPropositions } from "../lib/data.ts";
 import { claimNatureLabels, gradeLabels } from "../lib/display.ts";
-import { HERO_TOPIC_COUNT, type HomeTopicTile, topicTiles } from "../lib/home-topics.ts";
+import { type HomeTopicTile, isPublishedTopic, topicTiles } from "../lib/home-topics.ts";
 import { absoluteSiteUrl, getRepoUrl, getSiteUrl } from "../lib/site.ts";
 
 const siteUrl = getSiteUrl();
@@ -222,8 +222,9 @@ function TopicTileLink({
 export default async function Page() {
   const propositions = await loadPropositions();
   const tiles = topicTiles(propositions);
-  const heroTiles = tiles.slice(0, HERO_TOPIC_COUNT);
-  const allTopicTiles = tiles.slice(HERO_TOPIC_COUNT);
+  // 완성(published) 주제만 대표 카드로. 나머지는 '준비중' — 명제는 아래 명제 탐색·API로 접근 가능.
+  const heroTiles = tiles.filter((tile) => isPublishedTopic(tile.tag));
+  const allTopicTiles = tiles.filter((tile) => !isPublishedTopic(tile.tag));
   const initialTopicTiles = allTopicTiles.slice(0, TOPIC_GRID_BATCH_SIZE);
 
   return (
@@ -347,8 +348,12 @@ export default async function Page() {
 
       <section className="all-topics" aria-labelledby="all-topics-title">
         <div className="section-heading">
-          <p className="eyebrow">전체</p>
-          <h2 id="all-topics-title">모든 주제</h2>
+          <p className="eyebrow">준비중</p>
+          <h2 id="all-topics-title">준비중 주제</h2>
+          <p className="section-note">
+            아직 기사로 정리되지 않은 주제입니다. 검증된 명제는 위 명제 탐색과 각 태그
+            페이지의 타임라인에서 이미 확인할 수 있습니다.
+          </p>
         </div>
         <div className="topics-grid" data-topics-grid>
           {initialTopicTiles.map((tile) => (

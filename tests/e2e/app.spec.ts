@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 import { loadPropositions } from "../../lib/data.ts";
 import { entityRegistry, type EntityRegistryEntry } from "../../lib/entities.ts";
-import { HERO_TOPIC_COUNT, topicTiles } from "../../lib/home-topics.ts";
+import { isPublishedTopic, topicTiles } from "../../lib/home-topics.ts";
 import { encodePropositionId } from "../../lib/ids.ts";
 import { relatedPropositions } from "../../lib/relations.ts";
 import { tagRoute } from "../../lib/propositions.ts";
@@ -35,12 +35,11 @@ test.beforeAll(async () => {
 test("E1 home shows topic-first discovery, search, and machine links", async ({ page }) => {
   await page.goto("/");
   const tiles = topicTiles(propositions);
-  const electionTile = tiles.find(
-    (tile) => tile.tag === "2026지방선거" || tile.tag === "투표용지부족"
-  );
+  const publishedTiles = tiles.filter((tile) => isPublishedTopic(tile.tag));
+  const electionTile = publishedTiles.find((tile) => tile.tag === "2026지방선거");
 
   if (!electionTile) {
-    throw new Error("Expected a 6·3 local-election topic tile");
+    throw new Error("Expected the published 2026지방선거 topic tile");
   }
 
   await expect(
@@ -49,7 +48,7 @@ test("E1 home shows topic-first discovery, search, and machine links", async ({ 
     })
   ).toBeVisible();
   // E1 was updated for the topic-first homepage; the old flat feed is no longer default-rendered.
-  await expect(page.locator(".topic-hero .topic-tile--large")).toHaveCount(HERO_TOPIC_COUNT);
+  await expect(page.locator(".topic-hero .topic-tile--large")).toHaveCount(publishedTiles.length);
   await expect(
     page.locator(".topic-hero .topic-tile--large", { hasText: electionTile.tag })
   ).toHaveAttribute("href", electionTile.path);
