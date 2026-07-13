@@ -1,0 +1,131 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:cbb6c0de3a42f984ab425f73",
+  "versionId": "ver:ba170c61bbfd20f5",
+  "certHash": "sha256:f739c00b767c1f43749f234de1daa5181aaa189dc9739a0ff15262d459bfcfde",
+  "canonicalProposition": "유엔은 우크라이나 보안군과 언론인이 2022년 4월 2일 부차에 진입해 거리 등에서 민간인 시신 수십 구를 발견했다고 기록했다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "유엔(OHCHR·안보리 브리핑)",
+    "when": "2022년 4월 2일",
+    "where": "우크라이나 부차",
+    "what": "보안군과 언론인이 부차에서 민간인 시신 수십 구를 발견했다",
+    "how": "러시아군 철수 후 진입해 거리와 여러 장소, 집단매장지에서 시신을 확인했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "유엔 안보리 공식 회의록과 OHCHR 주제보고서가 부차의 민간인 시신 발견을 fetch 가능하게 기록한다. 명제는 발견 사실에 한정하며 사망 책임은 귀속하지 않는다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://documents.un.org/api/symbol/access?s=S%2FPV.9011&l=en&t=pdf",
+      "title": "S/PV.9011 — Security Council, 9011th meeting: Ukraine",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "Many bodies were also found in a mass grave in the same locality.",
+      "quoteHash": "sha256:db92c7fa89b2712ef11d12351298153f658911f5895cd52563b5cbedece2b557",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "유엔 문서 시스템의 2022-04-05 안전보장이사회 공식 회의록 PDF를 직접 HTTP GET하고 PDF 텍스트를 추출해 인용문을 재대조했다. 해당 문장은 Rosemary DiCarlo 유엔 정무·평화구축 담당 사무차장의 브리핑으로, 직접 현장 감식 보고서가 아니라 공개된 영상과 NGO·언론 보도를 종합한 설명이다. 시신 발견 사실만 수록하며 사망 책임은 이 명제와 자료 항목에서 귀속하지 않는다.",
+      "independenceGroupId": "bucha-civilian-killings-2022-0",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.ohchr.org/sites/default/files/2022-12/2022-12-07-OHCHR-Thematic-Report-Killings-EN.pdf",
+      "title": "Killings of civilians: summary executions and attacks on individual civilians in Kyiv, Chernihiv, and Sumy regions in the context of the Russian Federation’s armed attack against Ukraine",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "saw dozens of dead bodies, first on the streets and then in many other locations",
+      "quoteHash": "sha256:e818a8b986a28e89b7991d9d0785505394a87df99a3401101bc86b289b04467e",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "OHCHR 공식 PDF를 직접 HTTP GET하고 PDF 텍스트를 추출해 인용문을 재대조했다. 해당 문단은 우크라이나 보안군과 국내외 언론인이 2022-04-02 부차에 진입해 본 상황을 OHCHR이 후속 조사·자료 대조로 기록한 것이다. OHCHR의 첫 부차 현장 방문은 2022-04-09이므로 4월 2일 발견 장면 자체에 대한 직접 목격 출처는 아니다. 이 항목은 발견 사실만 뒷받침하며 책임 귀속은 명제 범위 밖이다.",
+      "independenceGroupId": "bucha-civilian-killings-2022-1",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "부차를 담으면 저수지가 가해 책임을 단정한 것으로 읽힐 수 있다.",
+      "response": "명제는 '시신 발견' 사실만 기록하고 책임은 limitations로 명시적으로 분리했다.",
+      "errorsFound": 0,
+      "framingChecks": "'학살'·'조작' 어느 규정도 저수지 목소리로 쓰지 않고 발견 사실만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "발견 사실과 책임 미확정·러시아 부인을 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·형사·인명·진행 사안이라 human_reviewed. 발견 사실만 담고 책임 귀속은 배제(제2). 유엔 안보리 회의록·OHCHR PDF로 재대조.",
+      "adoptedReason": "fetch 가능한 유엔 안보리 회의록과 OHCHR 보고서가 발견 사실을 확인한다.",
+      "rejectedAlternatives": "러시아가 학살했다거나 조작이라는 결론 모두 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "criminal_allegation",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "pending",
+    "presumptionNotice": "이 명제는 민간인 시신이 발견됐다는 사실만 기록한다. 사망 원인·가해 책임은 조사·재판이 진행 중인 미확정 사안이다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "이 명제는 시신 발견 사실에 한정하며, 누가 사망에 책임이 있는지는 귀속하지 않는다(러시아는 관여를 부인). OHCHR의 첫 현장 방문은 4월 9일이며 4월 2일 장면은 후속 조사·자료 대조로 기록됐다. 정확한 사망자 수와 경위는 계속 조사 중이다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "우크라이나",
+    "인도적피해"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

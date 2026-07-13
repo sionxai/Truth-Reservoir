@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-12",
-    "total": 49,
+    "total": 55,
     "note": "sixW.who/statedBy 기반 결정론적 파생; cert 원본 미저장; 탐색 허브(제15)"
   },
   "entities": [
@@ -66,13 +66,30 @@
       "name": "국제사법재판소",
       "slug": "e-6rWt7KCc7IKs67KV7J6s7YyQ7IaM",
       "path": "/e/e-6rWt7KCc7IKs67KV7J6s7YyQ7IaM",
-      "propositionCount": 1,
+      "propositionCount": 2,
       "propositionIds": [
+        "stmt:4a36d4c7113f871e81c45527",
         "stmt:9fa1e13fbdeb497fdee35c15"
       ],
       "roles": {
         "who": [
+          "stmt:4a36d4c7113f871e81c45527",
           "stmt:9fa1e13fbdeb497fdee35c15"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "국제이주기구",
+      "slug": "e-6rWt7KCc7J207KO86riw6rWs",
+      "path": "/e/e-6rWt7KCc7J207KO86riw6rWs",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:18927f96a04d67e8c889cbc7"
+      ],
+      "roles": {
+        "who": [
+          "stmt:18927f96a04d67e8c889cbc7"
         ],
         "statedBy": []
       }
@@ -269,6 +286,51 @@
       }
     },
     {
+      "name": "러시아 대통령실",
+      "slug": "e-65-s7Iuc7JWEIOuMgO2GteugueyLpA",
+      "path": "/e/e-65-s7Iuc7JWEIOuMgO2GteugueyLpA",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:9dc87d551b21bda4491e0ab4"
+      ],
+      "roles": {
+        "who": [
+          "stmt:9dc87d551b21bda4491e0ab4"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "러시아 연방",
+      "slug": "e-65-s7Iuc7JWEIOyXsOuwqQ",
+      "path": "/e/e-65-s7Iuc7JWEIOyXsOuwqQ",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:ad1124db7365b035878f556f"
+      ],
+      "roles": {
+        "who": [
+          "stmt:ad1124db7365b035878f556f"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "러시아군",
+      "slug": "e-65-s7Iuc7JWE6rWw",
+      "path": "/e/e-65-s7Iuc7JWE6rWw",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:415b2658374452edff7e07fd"
+      ],
+      "roles": {
+        "who": [
+          "stmt:415b2658374452edff7e07fd"
+        ],
+        "statedBy": []
+      }
+    },
+    {
       "name": "리서치웰",
       "slug": "e-66as7ISc7LmY7Juw",
       "path": "/e/e-66as7ISc7LmY7Juw",
@@ -407,6 +469,21 @@
       }
     },
     {
+      "name": "유럽연합",
+      "slug": "e-7Jyg65-97Jew7ZWp",
+      "path": "/e/e-7Jyg65-97Jew7ZWp",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:e52ad9c0482a06f3ebd364f4"
+      ],
+      "roles": {
+        "who": [
+          "stmt:e52ad9c0482a06f3ebd364f4"
+        ],
+        "statedBy": []
+      }
+    },
+    {
       "name": "유럽연합 통계청",
       "slug": "e-7Jyg65-97Jew7ZWpIO2GteqzhOyyrQ",
       "path": "/e/e-7Jyg65-97Jew7ZWpIO2GteqzhOyyrQ",
@@ -417,6 +494,21 @@
       "roles": {
         "who": [
           "stmt:2e32e51752b91f9184c468af"
+        ],
+        "statedBy": []
+      }
+    },
+    {
+      "name": "유엔",
+      "slug": "e-7Jyg7JeU",
+      "path": "/e/e-7Jyg7JeU",
+      "propositionCount": 1,
+      "propositionIds": [
+        "stmt:cbb6c0de3a42f984ab425f73"
+      ],
+      "roles": {
+        "who": [
+          "stmt:cbb6c0de3a42f984ab425f73"
         ],
         "statedBy": []
       }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-12",
-    "total": 71,
+    "total": 81,
     "note": "Compact manifest for client-side filtering; fetch full records at /api/v2/propositions/{dashId}.json"
   },
   "records": [
@@ -23,6 +23,23 @@
       "updatedAt": "2026-07-12"
     },
     {
+      "propositionId": "stmt:18927f96a04d67e8c889cbc7",
+      "path": "/api/v2/propositions/stmt-18927f96a04d67e8c889cbc7.json",
+      "canonical": "국제이주기구(IOM)는 2025년 12월 기준 우크라이나 내 국내 실향민(IDP)을 약 371만 2천 명으로 추정했다",
+      "tags": [
+        "국제사건",
+        "난민",
+        "러시아우크라이나전쟁",
+        "인도적피해",
+        "측정"
+      ],
+      "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
       "propositionId": "stmt:2e32e51752b91f9184c468af",
       "path": "/api/v2/propositions/stmt-2e32e51752b91f9184c468af.json",
       "canonical": "유럽연합 통계청(유로스타트)은 2026년 5월 31일 기준 EU에서 임시보호를 받는 우크라이나 출신 피란민을 약 438만 명으로 집계했다",
@@ -34,6 +51,22 @@
         "측정"
       ],
       "claimNature": "measurement",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:415b2658374452edff7e07fd",
+      "path": "/api/v2/propositions/stmt-415b2658374452edff7e07fd.json",
+      "canonical": "국제원자력기구(IAEA)는 2022년 3월 러시아군이 우크라이나 자포리자 원자력발전소 부지를 장악했다고 밝혔다",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ],
+      "claimNature": "event_occurrence",
       "factualGrade": "largely_reliable",
       "status": "active",
       "asOfDate": "2026-07-12",
@@ -67,6 +100,43 @@
         "제재"
       ],
       "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:48463c48ba6bb10ebf38e0ff",
+      "path": "/api/v2/propositions/stmt-48463c48ba6bb10ebf38e0ff.json",
+      "canonical": "러시아와 북한은 2024년 6월 19일 포괄적 전략동반자 조약을 체결했으며 조약은 한쪽에 대한 침략 시 상호 원조를 규정한다",
+      "tags": [
+        "국내영향",
+        "국제사건",
+        "대한민국",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "문서내용",
+        "북한"
+      ],
+      "claimNature": "document_content",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:4a36d4c7113f871e81c45527",
+      "path": "/api/v2/propositions/stmt-4a36d4c7113f871e81c45527.json",
+      "canonical": "국제사법재판소(ICJ)는 2022년 3월 16일 잠정조치 명령으로 러시아에 2022년 2월 24일 시작한 우크라이나 군사작전의 즉시 중단을 명령했다",
+      "tags": [
+        "국제법",
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "문서내용",
+        "유엔"
+      ],
+      "claimNature": "document_content",
       "factualGrade": "largely_reliable",
       "status": "active",
       "asOfDate": "2026-07-12",
@@ -123,6 +193,55 @@
       "updatedAt": "2026-07-12"
     },
     {
+      "propositionId": "stmt:967978c0090167f3ab229161",
+      "path": "/api/v2/propositions/stmt-967978c0090167f3ab229161.json",
+      "canonical": "예브게니 프리고진이 이끄는 바그너 그룹이 2023년 6월 24일 러시아에서 무장 반란을 일으켰다가 같은 날 모스크바 진군을 중단했다",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:96980afc94eb286f3ec2f873",
+      "path": "/api/v2/propositions/stmt-96980afc94eb286f3ec2f873.json",
+      "canonical": "유엔과 튀르키예 중재로 흑해 곡물 이니셔티브(Black Sea Grain Initiative) 서명식이 2022년 7월 22일 이스탄불에서 열렸다",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나",
+        "유엔"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:9dc87d551b21bda4491e0ab4",
+      "path": "/api/v2/propositions/stmt-9dc87d551b21bda4491e0ab4.json",
+      "canonical": "러시아는 2022년 9월 30일 우크라이나의 도네츠크·루한스크·자포리자·헤르손 4개 지역을 러시아에 편입하는 조약의 서명식을 열었다고 발표했다",
+      "tags": [
+        "국제법",
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
       "propositionId": "stmt:ab60963f623b2a8494f0eb3b",
       "path": "/api/v2/propositions/stmt-ab60963f623b2a8494f0eb3b.json",
       "canonical": "증거보전 대상이던 잠실 투표용지 보관상자가 송파구선거관리위원회의 폐기업체 인계로 2026년 6월 10일 서울동부지방법원 현장검증에서 확보되지 못했다",
@@ -132,6 +251,23 @@
         "중앙선거관리위원회",
         "증거보전",
         "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:ad1124db7365b035878f556f",
+      "path": "/api/v2/propositions/stmt-ad1124db7365b035878f556f.json",
+      "canonical": "러시아는 2023년 7월 17일 흑해 곡물 이니셔티브 참여 종료를 발표했다",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나",
+        "유엔"
       ],
       "claimNature": "event_occurrence",
       "factualGrade": "largely_reliable",
@@ -157,6 +293,22 @@
       "updatedAt": "2026-07-12"
     },
     {
+      "propositionId": "stmt:cbb6c0de3a42f984ab425f73",
+      "path": "/api/v2/propositions/stmt-cbb6c0de3a42f984ab425f73.json",
+      "canonical": "유엔은 우크라이나 보안군과 언론인이 2022년 4월 2일 부차에 진입해 거리 등에서 민간인 시신 수십 구를 발견했다고 기록했다",
+      "tags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나",
+        "인도적피해"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
       "propositionId": "stmt:d9b09c3ca5957e631d2870c6",
       "path": "/api/v2/propositions/stmt-d9b09c3ca5957e631d2870c6.json",
       "canonical": "중앙선거관리위원회 투표용지 부족사태 진상규명위원회는 2026년 6월 19일 노태악 전 위원장 등 전·현직 간부 12명의 수사 의뢰와 실무자 6명의 징계를 중앙선관위에 권고했다",
@@ -166,6 +318,22 @@
         "수사",
         "중앙선거관리위원회",
         "투표용지부족"
+      ],
+      "claimNature": "event_occurrence",
+      "factualGrade": "largely_reliable",
+      "status": "active",
+      "asOfDate": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "propositionId": "stmt:e52ad9c0482a06f3ebd364f4",
+      "path": "/api/v2/propositions/stmt-e52ad9c0482a06f3ebd364f4.json",
+      "canonical": "유럽연합(EU)은 2022년 6월 우크라이나에 EU 가입 후보국 지위를 부여했다",
+      "tags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
       ],
       "claimNature": "event_occurrence",
       "factualGrade": "largely_reliable",

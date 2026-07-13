@@ -1,0 +1,131 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:415b2658374452edff7e07fd",
+  "versionId": "ver:587b631794c729dc",
+  "certHash": "sha256:53cfeaded5603ca1153c0237a0b66bde6e5d19dbadd536e3a2581191fff541fb",
+  "canonicalProposition": "국제원자력기구(IAEA)는 2022년 3월 러시아군이 우크라이나 자포리자 원자력발전소 부지를 장악했다고 밝혔다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "러시아군(IAEA 확인)",
+    "when": "2022년 3월 첫째 주",
+    "where": "우크라이나 자포리자 원자력발전소",
+    "what": "러시아군이 자포리자 원자력발전소 부지를 장악했다",
+    "how": "발전소 부지를 군사적으로 통제했다고 IAEA가 확인했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "유엔 공식 뉴스가 IAEA 사무총장 발표를 통해 2022년 3월 러시아군의 자포리자 원전 장악을 fetch 가능하게 확인하고, AP가 초기 점거를 독립 보강한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://news.un.org/en/story/2022/03/1113382",
+      "title": "Russian military control of Ukraine nuclear plants cause for grave concern, nuclear energy agency warns",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "Russian forces that took control of the site last week.",
+      "quoteHash": "sha256:c8e0aaf33f38f9b52fff2a4f9edc8fdf1be432033b81c7fcf50b9b04eac0c56c",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "UN News report dated 6 March 2022 reproducing the IAEA Director General's statement, which in turn attributes operational details to Ukrainian authorities. It supports control during the preceding week but does not give a day in the quoted passage. The linked IAEA HTML statement returned HTTP 403 to direct GET.",
+      "independenceGroupId": "zaporizhzhia-npp-russian-control-2022-0",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://apnews.com/article/russia-ukraine-war-ceasefire-zaporizhzhia-nuclear-power-plant-d45fa1cfde7790f0a8c19e4e997c605c",
+      "title": "What's next for the Zaporizhzhia nuclear power plant after it was highlighted in Ukraine-US talks",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "Russian forces occupied it shortly after Moscow’s February 2022 invasion.",
+      "quoteHash": "sha256:441b7e5a47186e574059f64e51b1bfeb9238222ce5fb97dc4bc71f93cba4d19b",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20250321062458/https://apnews.com/article/russia-ukraine-war-ceasefire-zaporizhzhia-nuclear-power-plant-d45fa1cfde7790f0a8c19e4e997c605c",
+      "archivedAt": "2026-07-12",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "Associated Press retrospective published in March 2025. It independently corroborates early-war occupation but does not state the exact March 2022 date; the contemporaneous UN/IAEA item supplies the narrower timing.",
+      "independenceGroupId": "zaporizhzhia-npp-russian-control-2022-1",
+      "independenceLevel": "independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "장악을 담으면 이후 포격 책임까지 러시아로 단정한 것으로 읽힐 수 있다.",
+      "response": "명제는 부지 장악 사실만 담고 이후 사건은 분리했다.",
+      "errorsFound": 0,
+      "framingChecks": "'점령'의 정당성 평가를 배제하고 통제 사실만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "IAEA 확인과 AP 독립 보도를 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·안보 사안이라 human_reviewed. IAEA 원문은 403이라 fetch 가능한 유엔 공식 뉴스+AP를 앵커로 삼았다.",
+      "adoptedReason": "fetch 가능한 유엔 공식 뉴스와 AP가 장악 사실을 확인한다.",
+      "rejectedAlternatives": "포격 책임이나 안전 위험 정도의 결론은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 원전 부지 장악이라는 사실만 기록하며 안전성·책임에 대한 판단은 담지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "정확한 장악 일자는 인용 범위에서 '전주'로만 표현된다. 원전 운영·안전 상태와 후속 포격 책임 공방은 이 사건과 별개다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "러시아",
+    "우크라이나"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

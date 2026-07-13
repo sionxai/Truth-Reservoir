@@ -1,0 +1,157 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:967978c0090167f3ab229161",
+  "versionId": "ver:7dd7c44735eb1860",
+  "certHash": "sha256:c6af86cd998491e1f98bd728d2527e99f9458f59d152df394f89c9bb3672e629",
+  "canonicalProposition": "예브게니 프리고진이 이끄는 바그너 그룹이 2023년 6월 24일 러시아에서 무장 반란을 일으켰다가 같은 날 모스크바 진군을 중단했다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "예브게니 프리고진·바그너 그룹",
+    "when": "2023년 6월 24일",
+    "where": "러시아(로스토프나도누~모스크바 방면)",
+    "what": "무장 반란을 일으켰다가 같은 날 모스크바 진군을 중단했다",
+    "how": "병력을 이끌고 모스크바로 진군하다 당일 회군을 명령했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "알자지라 당일 보도, 영국 SIS 수장 연설, 러시아 대통령 성명(무장 반란으로 규정)이 사건과 당일 중단을 fetch 가능하게 확인한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.aljazeera.com/news/2023/6/24/wagner-boss-says-march-on-moscow-halted-to-avoid-bloodshed",
+      "title": "Wagner boss calls off march on Moscow, agrees to exile in Belarus",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "Wagner chief Yevgeny Prigozhin ordered his mercenaries to halt their march on Moscow",
+      "quoteHash": "sha256:95a9c064e99423cfd698d2767389b17a568e2a9f3ffa585ce4eb1d82a2e28d7d",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20260607024622id_/https://www.aljazeera.com/news/2023/6/24/wagner-boss-says-march-on-moscow-halted-to-avoid-bloodshed",
+      "archivedAt": "2026-07-12",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "Contemporaneous news report; its account of the halt relies partly on statements by Prigozhin and Belarusian authorities. It describes the same-day halt but does not use the Korean expression '하루 만에'.",
+      "independenceGroupId": "wagner-prigozhin-mutiny-2023-0",
+      "independenceLevel": "independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.gov.uk/government/speeches/speech-by-sir-richard-moore-head-of-sis-19-july-2023",
+      "title": "Speech by Sir Richard Moore, head of SIS, 19 July 2023",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "Prigozhin was marching on Moscow, leading a mutiny",
+      "quoteHash": "sha256:99f3c168b8e24c0096fa22d0e6c3cb0ff7773ad249b2b0ddcfcee49c849b6b28",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "Later UK intelligence-chief speech corroborates Prigozhin's leadership but does not itself state the exact start or halt date; the speech includes political interpretation outside the quoted event description.",
+      "independenceGroupId": "wagner-prigozhin-mutiny-2023-1",
+      "independenceLevel": "independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "http://en.kremlin.ru/events/president/news/71496",
+      "title": "Address to citizens of Russia",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "pushed onto the path of a grave crime – an armed mutiny",
+      "quoteHash": "sha256:1295607c1313fa168dfbbf7616561e2b2c4187ee50d370fc9444701176cd714b",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "Official statement by the Russian president on 24 June 2023 characterizes the event as an armed mutiny; it is a party's framing and does not name Prigozhin in the quoted sentence or document the later halt.",
+      "independenceGroupId": "wagner-prigozhin-mutiny-2023-2",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "party_interested",
+        "productionConcerns": [
+          "분쟁 당사자 발표"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "반란을 담으면 그 동기·배후를 단정한 것으로 읽힐 수 있다.",
+      "response": "명제는 '반란 발생과 당일 중단' 사실만 담고 배후·동기는 분리했다.",
+      "errorsFound": 0,
+      "framingChecks": "동기·배후 해석을 배제하고 관찰 가능한 행위만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "프리고진 측 주장과 러시아 성명을 함께 귀속 인용했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·정치·인물 사안이라 human_reviewed. 알자지라·SIS 연설·크렘린 성명으로 재대조. 러시아 프레이밍은 귀속 처리.",
+      "adoptedReason": "fetch 가능한 복수 출처가 반란 발생과 당일 중단을 확인한다.",
+      "rejectedAlternatives": "반란이 쿠데타 성공/실패였다거나 연출이라는 결론은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person"
+    ],
+    "legalStatus": "unknown",
+    "presumptionNotice": "이 명제는 반란 발생과 당일 중단이라는 사실만 기록하며 배후·동기는 판단하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "반란의 배후·거래(벨라루스 망명 합의 등)와 이후 프리고진 사망은 별개 사실이다. 러시아 성명은 사건을 '무장 반란'으로 규정한 당사자 프레이밍이다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "러시아"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

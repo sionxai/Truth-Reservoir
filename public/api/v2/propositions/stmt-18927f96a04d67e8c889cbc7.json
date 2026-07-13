@@ -1,0 +1,113 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:18927f96a04d67e8c889cbc7",
+  "versionId": "ver:9d09fe0bbf6fd20d",
+  "certHash": "sha256:01d7820be49d4f56fbc97061d4409004a52ee0edc89dfb1d19e2603b11124be3",
+  "canonicalProposition": "국제이주기구(IOM)는 2025년 12월 기준 우크라이나 내 국내 실향민(IDP)을 약 371만 2천 명으로 추정했다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "measurement",
+  "measurement": {
+    "method": "무작위 번호 걸기(RDD) 컴퓨터 보조 전화면접(CATI) — IOM 일반인구조사 22차(선별 40,001명, IDP 후속 1,388명)",
+    "sample": "우크라이나 내 휴대전화 이용 성인 무작위 응답자(크림·4개 주 점령지역 제외)",
+    "aggregationBasis": "UNFPA 2025년 7월 인구 기준선에 조사 비율을 적용한 전국 추정치(천 명 단위 반올림)",
+    "producer": "국제이주기구(IOM) 우크라이나 일반인구조사 22차",
+    "measuredAt": "2025-12-22"
+  },
+  "sixW": {
+    "who": "국제이주기구(IOM)",
+    "when": "2025년 12월 22일 기준(2026년 1월 보고)",
+    "where": "우크라이나 전역(점령지역 제외)",
+    "what": "우크라이나 내 국내 실향민을 약 371만 2천 명으로 추정했다",
+    "how": "전화면접 조사 비율을 인구 기준선에 적용해 추정했다",
+    "why": []
+  },
+  "classification": "M",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "IOM 일반인구조사 22차 보고서가 2025년 12월 기준 IDP 약 371만 2천 명을 fetch 가능한 PDF로 제시한다. 조사 기반 추정치로 점령지역 제외 등 표본 한계가 있다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://reliefweb.int/attachments/be315c4e-7246-5b2d-a869-3df4be004214/IOM_UKR_Internal%20Displacement%20Report_GPS%20R21_December_2025.pdf",
+      "title": "Ukraine Internal Displacement Report — General Population Survey Round 22 (January 2026)",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "As of December 2025, an estimated 3,712,000 de facto IDPs",
+      "quoteHash": "sha256:ac3778cfd36822bebc10e30cb084b3c8ba0115a128b4fc36880d3524264c41f3",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "pdf_extract",
+      "retrievalLimitations": "ReliefWeb hosts the IOM-produced PDF. The live data.unhcr.org situation page embeds its headline dashboard in Power BI, so its displayed value was not text-rechecked. The current IOM artifact reports 3.712 million, not the approximately 3.85 million anticipated in the request. Survey coverage excludes Crimea and occupied areas of four oblasts and is limited to adults reachable by functioning mobile networks; the report warns affected oblast estimates are likely underestimates. The attachment filename says R21/December 2025, while the PDF cover, body, and ReliefWeb record identify Round 22/January 2026.",
+      "independenceGroupId": "iom-ukraine-idp-2026-0",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": true
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "371만을 확정치로 제시하면 점령지역 누락·시점 변동을 감춘 것으로 오독될 수 있다.",
+      "response": "measurement에 방법·표본·시점을 명시하고 한계를 limitations에 담았다.",
+      "errorsFound": 0,
+      "framingChecks": "'대탈출' 같은 평가어를 배제하고 조사 추정치와 방법만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "IOM 추정치와 다른 포털 수치·표본 한계를 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·측정 사안이라 human_reviewed. IOM PDF를 pdf_extract로 재대조. 표본 한계·시점 변동을 limitations에 명시.",
+      "adoptedReason": "fetch 가능한 IOM 보고서 PDF가 기준일·수치·방법을 제시한다.",
+      "rejectedAlternatives": "이 추정치가 완전한 실제 실향 인구라거나 조작이라는 결론은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "not_applicable",
+    "presumptionNotice": "이 명제는 IOM 조사 기반 IDP 추정치라는 측정값만 기록하며 실제 실향 인구와 차이날 수 있다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "조사는 크림과 4개 주 점령지역을 제외하고 휴대전화 도달 성인으로 한정돼 해당 지역 추정치는 과소일 수 있다고 IOM이 단서를 단다. 별도 data.unhcr.org 포털은 다른 시점(약 385만, 2026-03) 수치를 게시해 시점에 따라 변동한다. 국외 난민(별도 명제)과 다른 지표다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "측정",
+    "난민",
+    "인도적피해"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

@@ -18,7 +18,7 @@ Storage boundary: the reservoir stores verified propositions and evidence struct
 Entity hubs: /e/{slug}/ pages and /api/v2/entities.json are deterministic derived navigation layers from sixW.who and sixW.why[].statedBy only. They are not entity profiles and assert no facts about the entity itself (제15).
 
 generatedAt: 2026-07-12
-total: 71
+total: 81
 recordOrder: updatedAt desc, then propositionId asc
 
 === stmt:05b9abdca503067b1fd433ec ===
@@ -45,6 +45,29 @@ evidence:
 limitations: 영장은 혐의이며 유죄 판단이 아니다. 러시아는 ICC 로마규정 당사국이 아니며 재판소의 관할과 영장을 부인한다. 신병 확보·재판은 이뤄지지 않았다.
 tags: 국제법, 국제사건, 러시아, 러시아우크라이나전쟁, ICC
 
+=== stmt:18927f96a04d67e8c889cbc7 ===
+propositionId: stmt:18927f96a04d67e8c889cbc7
+humanUrl: /p/stmt-18927f96a04d67e8c889cbc7/
+jsonUrl: /api/v2/propositions/stmt-18927f96a04d67e8c889cbc7.json
+canonicalProposition: 국제이주기구(IOM)는 2025년 12월 기준 우크라이나 내 국내 실향민(IDP)을 약 371만 2천 명으로 추정했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: measurement
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 국제이주기구(IOM)
+  when: 2025년 12월 22일 기준(2026년 1월 보고)
+  where: 우크라이나 전역(점령지역 제외)
+  what: 우크라이나 내 국내 실향민을 약 371만 2천 명으로 추정했다
+  how: 전화면접 조사 비율을 인구 기준선에 적용해 추정했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://reliefweb.int/attachments/be315c4e-7246-5b2d-a869-3df4be004214/IOM_UKR_Internal%20Displacement%20Report_GPS%20R21_December_2025.pdf; shortQuote: "As of December 2025, an estimated 3,712,000 de facto IDPs"
+limitations: 조사는 크림과 4개 주 점령지역을 제외하고 휴대전화 도달 성인으로 한정돼 해당 지역 추정치는 과소일 수 있다고 IOM이 단서를 단다. 별도 data.unhcr.org 포털은 다른 시점(약 385만, 2026-03) 수치를 게시해 시점에 따라 변동한다. 국외 난민(별도 명제)과 다른 지표다.
+tags: 국제사건, 난민, 러시아우크라이나전쟁, 인도적피해, 측정
+
 === stmt:2e32e51752b91f9184c468af ===
 propositionId: stmt:2e32e51752b91f9184c468af
 humanUrl: /p/stmt-2e32e51752b91f9184c468af/
@@ -67,6 +90,30 @@ evidence:
   - url: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Temporary_protection_for_persons_fleeing_Ukraine_-_monthly_statistics; shortQuote: "4.38 million non-EU citizens, who fled Ukraine ... were under temporary protection in the EU"
 limitations: 이는 EU 임시보호 등록 인원이며 전 세계 우크라이나 난민(UNHCR 집계 약 570만, 2026-04)이나 국내 실향민(IOM 집계 약 385만, 2026-03)과는 다른 지표다. 등록 기반이라 미등록·왕복 이동은 반영되지 않는다. UNHCR 글로벌 수치는 자동 재대조가 불가해 이 명제의 앵커로 쓰지 않았다.
 tags: 국제사건, 난민, 러시아우크라이나전쟁, 인도적피해, 측정
+
+=== stmt:415b2658374452edff7e07fd ===
+propositionId: stmt:415b2658374452edff7e07fd
+humanUrl: /p/stmt-415b2658374452edff7e07fd/
+jsonUrl: /api/v2/propositions/stmt-415b2658374452edff7e07fd.json
+canonicalProposition: 국제원자력기구(IAEA)는 2022년 3월 러시아군이 우크라이나 자포리자 원자력발전소 부지를 장악했다고 밝혔다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 러시아군(IAEA 확인)
+  when: 2022년 3월 첫째 주
+  where: 우크라이나 자포리자 원자력발전소
+  what: 러시아군이 자포리자 원자력발전소 부지를 장악했다
+  how: 발전소 부지를 군사적으로 통제했다고 IAEA가 확인했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://news.un.org/en/story/2022/03/1113382; shortQuote: "Russian forces that took control of the site last week."
+  - url: https://apnews.com/article/russia-ukraine-war-ceasefire-zaporizhzhia-nuclear-power-plant-d45fa1cfde7790f0a8c19e4e997c605c; shortQuote: "Russian forces occupied it shortly after Moscow’s February 2022 invasion."
+limitations: 정확한 장악 일자는 인용 범위에서 '전주'로만 표현된다. 원전 운영·안전 상태와 후속 포격 책임 공방은 이 사건과 별개다.
+tags: 국제사건, 러시아, 러시아우크라이나전쟁, 우크라이나
 
 === stmt:43bfd6d859ff779fedeec928 ===
 propositionId: stmt:43bfd6d859ff779fedeec928
@@ -115,6 +162,53 @@ evidence:
   - url: https://www.commerce.gov/news/press-releases/2022/03/joint-statement-republic-koreas-partnership-export-controls-russia; shortQuote: "Joint Statement on the Republic of Korea's Partnership on Export Controls for Russia"
 limitations: 명제는 2022-02-28 동참 발표에 한정한다. 이후 수출통제 품목 확대·제재 대상 은행 목록·이행 세부는 별개 사실이며, 발표가 곧 제재의 완전한 이행을 뜻하지 않는다.
 tags: 국내영향, 국제사건, 대한민국, 러시아우크라이나전쟁, 제재
+
+=== stmt:48463c48ba6bb10ebf38e0ff ===
+propositionId: stmt:48463c48ba6bb10ebf38e0ff
+humanUrl: /p/stmt-48463c48ba6bb10ebf38e0ff/
+jsonUrl: /api/v2/propositions/stmt-48463c48ba6bb10ebf38e0ff.json
+canonicalProposition: 러시아와 북한은 2024년 6월 19일 포괄적 전략동반자 조약을 체결했으며 조약은 한쪽에 대한 침략 시 상호 원조를 규정한다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 블라디미르 푸틴·김정은
+  when: 2024년 6월 19일
+  where: 북한 평양
+  what: 포괄적 전략동반자 조약을 체결했고 조약은 침략 시 상호 원조를 규정한다
+  how: 정상회담에서 조약에 서명하고 내용을 공표했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: http://en.kremlin.ru/events/president/news/74330; shortQuote: "Vladimir Putin and Kim Jong-un signed a Treaty on Comprehensive Strategic Partnership"
+  - url: http://en.kremlin.ru/events/president/transcripts/74334; shortQuote: "mutual assistance in the event of aggression against one of the parties thereto"
+limitations: 근거는 조약 당사자인 러시아 대통령실 발표(공유 원천)이며 조약 전문 원문은 인용 범위 밖이다. 상호 원조 조항의 발동 요건·실제 이행과 한국 안보에 대한 함의는 별개 사안이다.
+tags: 국내영향, 국제사건, 대한민국, 러시아, 러시아우크라이나전쟁, 문서내용, 북한
+
+=== stmt:4a36d4c7113f871e81c45527 ===
+propositionId: stmt:4a36d4c7113f871e81c45527
+humanUrl: /p/stmt-4a36d4c7113f871e81c45527/
+jsonUrl: /api/v2/propositions/stmt-4a36d4c7113f871e81c45527.json
+canonicalProposition: 국제사법재판소(ICJ)는 2022년 3월 16일 잠정조치 명령으로 러시아에 2022년 2월 24일 시작한 우크라이나 군사작전의 즉시 중단을 명령했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: document_content
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 국제사법재판소(ICJ)
+  when: 2022년 3월 16일
+  where: 국제사법재판소(네덜란드 헤이그)
+  what: 러시아에 우크라이나 군사작전의 즉시 중단을 명령하는 잠정조치를 발령했다
+  how: 제노사이드협약 사건의 잠정조치 명령으로 발령했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://news.un.org/en/story/2022/03/1114052; shortQuote: "shall immediately suspend the military operations that it commenced on 24 February."
+limitations: ICJ 잠정조치는 법적 구속력이 있으나 집행 수단이 제한적이며, 러시아는 이를 이행하지 않았다. 본안 판결과는 별개다.
+tags: 국제법, 국제사건, 러시아, 러시아우크라이나전쟁, 문서내용, 유엔
 
 === stmt:5dcafd99e98ca83ec2727165 ===
 propositionId: stmt:5dcafd99e98ca83ec2727165
@@ -189,6 +283,79 @@ evidence:
 limitations: 이 수치는 OHCHR이 다수 출처로 확인한 최소 집계치이며, OHCHR 스스로 실제 수치가 상당히 더 높을 것이라고 단서를 단다. 4주년(2026-02) 이후로도 매월 증가해(2026년 5월 단월 274명 사망) 현시점 실제 누적은 더 크다. 러시아·우크라이나 정부의 자체 집계 및 군인 사상자는 이 민간인 집계와 별개다.
 tags: 국제사건, 러시아우크라이나전쟁, 인도적피해, 측정
 
+=== stmt:967978c0090167f3ab229161 ===
+propositionId: stmt:967978c0090167f3ab229161
+humanUrl: /p/stmt-967978c0090167f3ab229161/
+jsonUrl: /api/v2/propositions/stmt-967978c0090167f3ab229161.json
+canonicalProposition: 예브게니 프리고진이 이끄는 바그너 그룹이 2023년 6월 24일 러시아에서 무장 반란을 일으켰다가 같은 날 모스크바 진군을 중단했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 예브게니 프리고진·바그너 그룹
+  when: 2023년 6월 24일
+  where: 러시아(로스토프나도누~모스크바 방면)
+  what: 무장 반란을 일으켰다가 같은 날 모스크바 진군을 중단했다
+  how: 병력을 이끌고 모스크바로 진군하다 당일 회군을 명령했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.aljazeera.com/news/2023/6/24/wagner-boss-says-march-on-moscow-halted-to-avoid-bloodshed; shortQuote: "Wagner chief Yevgeny Prigozhin ordered his mercenaries to halt their march on Moscow"
+  - url: https://www.gov.uk/government/speeches/speech-by-sir-richard-moore-head-of-sis-19-july-2023; shortQuote: "Prigozhin was marching on Moscow, leading a mutiny"
+  - url: http://en.kremlin.ru/events/president/news/71496; shortQuote: "pushed onto the path of a grave crime – an armed mutiny"
+limitations: 반란의 배후·거래(벨라루스 망명 합의 등)와 이후 프리고진 사망은 별개 사실이다. 러시아 성명은 사건을 '무장 반란'으로 규정한 당사자 프레이밍이다.
+tags: 국제사건, 러시아, 러시아우크라이나전쟁
+
+=== stmt:96980afc94eb286f3ec2f873 ===
+propositionId: stmt:96980afc94eb286f3ec2f873
+humanUrl: /p/stmt-96980afc94eb286f3ec2f873/
+jsonUrl: /api/v2/propositions/stmt-96980afc94eb286f3ec2f873.json
+canonicalProposition: 유엔과 튀르키예 중재로 흑해 곡물 이니셔티브(Black Sea Grain Initiative) 서명식이 2022년 7월 22일 이스탄불에서 열렸다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 유엔·튀르키예·러시아·우크라이나
+  when: 2022년 7월 22일
+  where: 튀르키예 이스탄불 돌마바흐체 궁전
+  what: 흑해 곡물 이니셔티브 서명식이 열렸다
+  how: 러시아와 우크라이나가 유엔·튀르키예와 각각 별개의 동일 문서에 서명했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://www.un.org/en/black-sea-grain-initiative; shortQuote: "at Dolmabahçe Palace, Istanbul, Türkiye, 22 July 2022."
+  - url: https://www.aljazeera.com/news/2022/7/22/ukraine-grain-export-deal-what-you-need-to-know; shortQuote: "signed separate but identical agreements with UN and Turkish officials"
+limitations: 협정은 러시아와 우크라이나가 유엔·튀르키예와 각각 별개의 동일 문서에 서명한 형식이다. 유엔 페이지 내 다른 위치에는 27일 표기도 있어 날짜 캡션(22일)을 채택했다. 협정 이행·효과는 별개다.
+tags: 국제사건, 러시아, 러시아우크라이나전쟁, 우크라이나, 유엔
+
+=== stmt:9dc87d551b21bda4491e0ab4 ===
+propositionId: stmt:9dc87d551b21bda4491e0ab4
+humanUrl: /p/stmt-9dc87d551b21bda4491e0ab4/
+jsonUrl: /api/v2/propositions/stmt-9dc87d551b21bda4491e0ab4.json
+canonicalProposition: 러시아는 2022년 9월 30일 우크라이나의 도네츠크·루한스크·자포리자·헤르손 4개 지역을 러시아에 편입하는 조약의 서명식을 열었다고 발표했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 러시아 대통령실
+  when: 2022년 9월 30일
+  where: 러시아 모스크바 크렘린
+  what: 우크라이나 4개 지역을 러시아에 편입하는 조약의 서명식을 열었다고 발표했다
+  how: 크렘린에서 편입 조약 서명식을 열고 공표했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: http://en.kremlin.ru/events/president/news/69465; shortQuote: "Today we will sign treaties on the accession"
+  - url: https://documents.un.org/api/symbol/access?s=A%2FRES%2FES-11%2F4&l=en&t=pdf; shortQuote: "attempted illegal annexation of the Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine"
+limitations: 이는 러시아의 일방적 발표이며 우크라이나와 국제사회 다수는 병합을 인정하지 않는다. 유엔 총회는 결의 ES-11/4로 이를 무효로 규정했다. 실효 지배 범위와도 별개다.
+tags: 국제법, 국제사건, 러시아, 러시아우크라이나전쟁, 우크라이나
+
 === stmt:ab60963f623b2a8494f0eb3b ===
 propositionId: stmt:ab60963f623b2a8494f0eb3b
 humanUrl: /p/stmt-ab60963f623b2a8494f0eb3b/
@@ -212,6 +379,30 @@ evidence:
   - url: https://imnews.imbc.com/replay/2026/nwdesk/article/6829237_37004.html; shortQuote: "법원이 증거보전 대상으로 지정한 투표용지 보관상자가 현장검증에서 발견되지 않았다."
 limitations: 상자 폐기의 고의성·증거인멸 여부는 판단하지 않는다. 폐기업체·인계 시기·폐기 일시에 대한 법원 사실조회가 진행 중이다.
 tags: 2026지방선거, 법원, 중앙선거관리위원회, 증거보전, 투표용지부족
+
+=== stmt:ad1124db7365b035878f556f ===
+propositionId: stmt:ad1124db7365b035878f556f
+humanUrl: /p/stmt-ad1124db7365b035878f556f/
+jsonUrl: /api/v2/propositions/stmt-ad1124db7365b035878f556f.json
+canonicalProposition: 러시아는 2023년 7월 17일 흑해 곡물 이니셔티브 참여 종료를 발표했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 러시아 연방
+  when: 2023년 7월 17일
+  where: 러시아의 곡물협정 종료 발표
+  what: 흑해 곡물 이니셔티브 참여를 종료했다
+  how: 협정 연장을 거부하고 참여 종료를 통보했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://news.un.org/en/story/2023/07/1138752; shortQuote: "the termination of the Black Sea Initiative by the Russian Federation."
+  - url: https://apnews.com/article/russia-ukraine-war-grain-food-security-ba7f9146b745337a1948a964cb30331c; shortQuote: "Russia on Monday halted a breakthrough wartime deal"
+limitations: 러시아가 든 종료 사유(자국 농산물·비료 수출 제약 등)는 이 명제에 담지 않았다. 종료의 곡물 가격·식량안보 영향은 별개 사실이다.
+tags: 국제사건, 러시아, 러시아우크라이나전쟁, 우크라이나, 유엔
 
 === stmt:b9bf9aa9ffcf110da060f382 ===
 propositionId: stmt:b9bf9aa9ffcf110da060f382
@@ -238,6 +429,30 @@ evidence:
 limitations: 690건은 6월 19일까지의 누적치이며 6월 29일 기준 709건으로 증가하는 등 시점에 따라 변동한다. 선거소청(17일)·당선소청(18일)·서울시장 당선소청(19일)의 마감일이 달라 단일 마감 기준이 아니다. 원시 접수 목록과 중복 제거·검증 방법은 공개되지 않았다. 접수 건수는 이의제기의 양이며 그 자체가 부정선거의 증거가 아니다.
 tags: 2026지방선거, 선거소청, 중앙선거관리위원회, 측정, 투표용지부족
 
+=== stmt:cbb6c0de3a42f984ab425f73 ===
+propositionId: stmt:cbb6c0de3a42f984ab425f73
+humanUrl: /p/stmt-cbb6c0de3a42f984ab425f73/
+jsonUrl: /api/v2/propositions/stmt-cbb6c0de3a42f984ab425f73.json
+canonicalProposition: 유엔은 우크라이나 보안군과 언론인이 2022년 4월 2일 부차에 진입해 거리 등에서 민간인 시신 수십 구를 발견했다고 기록했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 유엔(OHCHR·안보리 브리핑)
+  when: 2022년 4월 2일
+  where: 우크라이나 부차
+  what: 보안군과 언론인이 부차에서 민간인 시신 수십 구를 발견했다
+  how: 러시아군 철수 후 진입해 거리와 여러 장소, 집단매장지에서 시신을 확인했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://documents.un.org/api/symbol/access?s=S%2FPV.9011&l=en&t=pdf; shortQuote: "Many bodies were also found in a mass grave in the same locality."
+  - url: https://www.ohchr.org/sites/default/files/2022-12/2022-12-07-OHCHR-Thematic-Report-Killings-EN.pdf; shortQuote: "saw dozens of dead bodies, first on the streets and then in many other locations"
+limitations: 이 명제는 시신 발견 사실에 한정하며, 누가 사망에 책임이 있는지는 귀속하지 않는다(러시아는 관여를 부인). OHCHR의 첫 현장 방문은 4월 9일이며 4월 2일 장면은 후속 조사·자료 대조로 기록됐다. 정확한 사망자 수와 경위는 계속 조사 중이다.
+tags: 국제사건, 러시아우크라이나전쟁, 우크라이나, 인도적피해
+
 === stmt:d9b09c3ca5957e631d2870c6 ===
 propositionId: stmt:d9b09c3ca5957e631d2870c6
 humanUrl: /p/stmt-d9b09c3ca5957e631d2870c6/
@@ -263,6 +478,29 @@ evidence:
   - url: https://www.hani.co.kr/arti/politics/politics_general/1264336.html; shortQuote: "등 12명을 수사 의뢰 권고한다고 밝혔다."
 limitations: 수사 의뢰·징계는 권고이며 실제 수사 개시·징계 집행 여부는 이 기록에서 확인되지 않았다. 재선거는 권고하지 않았다. 12명·6명의 개별 명단은 이 기록에 담지 않았다.
 tags: 2026지방선거, 기관대응, 수사, 중앙선거관리위원회, 투표용지부족
+
+=== stmt:e52ad9c0482a06f3ebd364f4 ===
+propositionId: stmt:e52ad9c0482a06f3ebd364f4
+humanUrl: /p/stmt-e52ad9c0482a06f3ebd364f4/
+jsonUrl: /api/v2/propositions/stmt-e52ad9c0482a06f3ebd364f4.json
+canonicalProposition: 유럽연합(EU)은 2022년 6월 우크라이나에 EU 가입 후보국 지위를 부여했다
+factualGrade/status: largely_reliable / active
+assessmentStatus: assessed
+claimNature: event_occurrence
+asOfDate: 2026-07-12
+updatedAt: 2026-07-12
+sixW:
+  who: 유럽연합(EU)
+  when: 2022년 6월
+  where: 유럽연합
+  what: 우크라이나에 EU 가입 후보국 지위를 부여했다
+  how: 유럽이사회 결정으로 후보국 지위를 승인했다
+  why: none
+correctionHistory: none
+evidence:
+  - url: https://enlargement.ec.europa.eu/european-neighbourhood-policy/countries-region/ukraine_en; shortQuote: "Since June 2022, Ukraine has official EU candidate status"
+limitations: 후보국 지위는 가입 협상의 시작이며 정회원 가입과는 다르다. 이후 협상 개시·진행은 별개 사실이다.
+tags: 국제법, 국제사건, 러시아우크라이나전쟁, 우크라이나
 
 === stmt:fb21cda0d84b0147a28c49ab ===
 propositionId: stmt:fb21cda0d84b0147a28c49ab

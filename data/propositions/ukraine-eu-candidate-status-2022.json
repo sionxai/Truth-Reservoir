@@ -1,0 +1,105 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:e52ad9c0482a06f3ebd364f4",
+  "versionId": "ver:d6dcadc8f5a0f0fc",
+  "certHash": "sha256:abf38421fc5994de9703bf46f9608a0fcb5a0ac80cb45a94defa9da90191dba8",
+  "canonicalProposition": "유럽연합(EU)은 2022년 6월 우크라이나에 EU 가입 후보국 지위를 부여했다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "유럽연합(EU)",
+    "when": "2022년 6월",
+    "where": "유럽연합",
+    "what": "우크라이나에 EU 가입 후보국 지위를 부여했다",
+    "how": "유럽이사회 결정으로 후보국 지위를 승인했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "유럽연합 집행위원회 공식 페이지가 2022년 6월 우크라이나의 EU 후보국 지위 부여를 fetch 가능하게 명시한다. 이는 지위 부여 사실이며 가입 완료가 아니다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://enlargement.ec.europa.eu/european-neighbourhood-policy/countries-region/ukraine_en",
+      "title": "Ukraine - Enlargement and Eastern Neighbourhood",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "Since June 2022, Ukraine has official EU candidate status",
+      "quoteHash": "sha256:fc3094b0ce1ff7c8137b9dd60bd14ace1a25f1ff90be067b97c31204030cc8f6",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "European Commission institutional summary; the European Council decision-making body itself is a shared institutional origin, not an independent source.",
+      "independenceGroupId": "ukraine-eu-candidate-status-2022-0",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "후보국 지위를 담으면 가입 확정으로 오독될 수 있다.",
+      "response": "명제는 '후보국 지위 부여'에 한정하고 가입은 limitations로 분리했다.",
+      "errorsFound": 0,
+      "framingChecks": "지위 부여의 상징성 평가를 배제하고 사실만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "지위 부여와 그것이 가입 완료가 아님을 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·정치 사안이라 human_reviewed. 집행위 공식 페이지로 재대조했다.",
+      "adoptedReason": "fetch 가능한 EU 집행위 페이지가 후보국 지위 부여를 확인한다.",
+      "rejectedAlternatives": "가입이 임박했다거나 무산됐다는 전망은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 후보국 지위 부여라는 사실만 기록하며 가입 시점·전망은 판단하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "후보국 지위는 가입 협상의 시작이며 정회원 가입과는 다르다. 이후 협상 개시·진행은 별개 사실이다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "우크라이나",
+    "국제법"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

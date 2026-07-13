@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedAt": "2026-07-12",
-    "total": 71,
+    "total": 81,
     "note": "태그 교집합 기반 결정론적 파생 관계; cert 원본에는 저장되지 않음"
   },
   "nodes": [
@@ -75,6 +75,17 @@
         "정치주장",
         "주장",
         "투표용지부족"
+      ]
+    },
+    {
+      "propositionId": "stmt:18927f96a04d67e8c889cbc7",
+      "path": "/p/stmt-18927f96a04d67e8c889cbc7/",
+      "tags": [
+        "국제사건",
+        "난민",
+        "러시아우크라이나전쟁",
+        "인도적피해",
+        "측정"
       ]
     },
     {
@@ -225,6 +236,16 @@
       ]
     },
     {
+      "propositionId": "stmt:415b2658374452edff7e07fd",
+      "path": "/p/stmt-415b2658374452edff7e07fd/",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
       "propositionId": "stmt:43bfd6d859ff779fedeec928",
       "path": "/p/stmt-43bfd6d859ff779fedeec928/",
       "tags": [
@@ -243,6 +264,19 @@
         "대한민국",
         "러시아우크라이나전쟁",
         "제재"
+      ]
+    },
+    {
+      "propositionId": "stmt:48463c48ba6bb10ebf38e0ff",
+      "path": "/p/stmt-48463c48ba6bb10ebf38e0ff/",
+      "tags": [
+        "국내영향",
+        "국제사건",
+        "대한민국",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "문서내용",
+        "북한"
       ]
     },
     {
@@ -269,6 +303,18 @@
         "측정",
         "투표소수",
         "투표용지부족"
+      ]
+    },
+    {
+      "propositionId": "stmt:4a36d4c7113f871e81c45527",
+      "path": "/p/stmt-4a36d4c7113f871e81c45527/",
+      "tags": [
+        "국제법",
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "문서내용",
+        "유엔"
       ]
     },
     {
@@ -496,6 +542,37 @@
       ]
     },
     {
+      "propositionId": "stmt:967978c0090167f3ab229161",
+      "path": "/p/stmt-967978c0090167f3ab229161/",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "propositionId": "stmt:96980afc94eb286f3ec2f873",
+      "path": "/p/stmt-96980afc94eb286f3ec2f873/",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나",
+        "유엔"
+      ]
+    },
+    {
+      "propositionId": "stmt:9dc87d551b21bda4491e0ab4",
+      "path": "/p/stmt-9dc87d551b21bda4491e0ab4/",
+      "tags": [
+        "국제법",
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
       "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
       "path": "/p/stmt-9fa1e13fbdeb497fdee35c15/",
       "tags": [
@@ -564,6 +641,17 @@
         "중앙선거관리위원회",
         "증거보전",
         "투표용지부족"
+      ]
+    },
+    {
+      "propositionId": "stmt:ad1124db7365b035878f556f",
+      "path": "/p/stmt-ad1124db7365b035878f556f/",
+      "tags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나",
+        "유엔"
       ]
     },
     {
@@ -698,6 +786,16 @@
       ]
     },
     {
+      "propositionId": "stmt:cbb6c0de3a42f984ab425f73",
+      "path": "/p/stmt-cbb6c0de3a42f984ab425f73/",
+      "tags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나",
+        "인도적피해"
+      ]
+    },
+    {
       "propositionId": "stmt:d180b65d5e8f431a52ed1eec",
       "path": "/p/stmt-d180b65d5e8f431a52ed1eec/",
       "tags": [
@@ -755,6 +853,16 @@
         "주장",
         "중앙선거관리위원회",
         "투표용지부족"
+      ]
+    },
+    {
+      "propositionId": "stmt:e52ad9c0482a06f3ebd364f4",
+      "path": "/p/stmt-e52ad9c0482a06f3ebd364f4/",
+      "tags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
       ]
     },
     {
@@ -865,6 +973,13 @@
         "2026지방선거",
         "정치주장",
         "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0010711e717716056a9118a7",
+      "to": "stmt:18927f96a04d67e8c889cbc7",
+      "sharedTags": [
+        "측정"
       ]
     },
     {
@@ -1234,6 +1349,14 @@
     },
     {
       "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:18927f96a04d67e8c889cbc7",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
       "to": "stmt:22abb3226ba88d6589e75013",
       "sharedTags": [
         "국제사건"
@@ -1256,6 +1379,15 @@
     },
     {
       "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:415b2658374452edff7e07fd",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
       "to": "stmt:43bfd6d859ff779fedeec928",
       "sharedTags": [
         "국제사건",
@@ -1268,6 +1400,25 @@
       "to": "stmt:46c16754bee420a566961aa7",
       "sharedTags": [
         "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아",
         "러시아우크라이나전쟁"
       ]
     },
@@ -1298,6 +1449,34 @@
     },
     {
       "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "국제사건"
@@ -1305,9 +1484,35 @@
     },
     {
       "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
       "to": "stmt:c44501dcb97869b23fbe8942",
       "sharedTags": [
         "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:05b9abdca503067b1fd433ec",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -1663,6 +1868,13 @@
     },
     {
       "from": "stmt:0f10895abcff81a55ff783d6",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:0f10895abcff81a55ff783d6",
       "to": "stmt:48afea861840a1d07ad8d250",
       "sharedTags": [
         "2026지방선거",
@@ -1678,6 +1890,13 @@
         "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:0f10895abcff81a55ff783d6",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "문서내용"
       ]
     },
     {
@@ -2470,6 +2689,265 @@
       ]
     },
     {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:22abb3226ba88d6589e75013",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:24094c14f92b5c8fb482e57d",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:2e32e51752b91f9184c468af",
+      "sharedTags": [
+        "국제사건",
+        "난민",
+        "러시아우크라이나전쟁",
+        "인도적피해",
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:3a2ae5d9219c9be87de14ae7",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:3ae444edbb297bea65e9cd78",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:3e54ea51d8411beb551b399c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:3f30934e8dae7bc3452ab43a",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:415b2658374452edff7e07fd",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:43bfd6d859ff779fedeec928",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:46c16754bee420a566961aa7",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:495acd373d4c3a4c610127ac",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:4b794b8163eb2161d4a9b949",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:5525ea7692e7f4eea17971f5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:5985381793fd401f7fc3052c",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:5dcafd99e98ca83ec2727165",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:75fc8d303885c2159f99099d",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:8e4b4b465805476c14e263ff",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:8f6705e79eaff0583a1e595a",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "인도적피해",
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:9fa1e13fbdeb497fdee35c15",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:b18e2813819c4fb0e23830f6",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:b9bf9aa9ffcf110da060f382",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:c44501dcb97869b23fbe8942",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:cb0719e9aac6e4c86677d2e5",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "인도적피해"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:d78f27d3e447961d8e0f492b",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:18927f96a04d67e8c889cbc7",
+      "to": "stmt:efddfa77db78be598d007d7e",
+      "sharedTags": [
+        "측정"
+      ]
+    },
+    {
       "from": "stmt:22abb3226ba88d6589e75013",
       "to": "stmt:2e32e51752b91f9184c468af",
       "sharedTags": [
@@ -2486,6 +2964,13 @@
     },
     {
       "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:415b2658374452edff7e07fd",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
       "to": "stmt:43bfd6d859ff779fedeec928",
       "sharedTags": [
         "국제사건"
@@ -2494,6 +2979,20 @@
     {
       "from": "stmt:22abb3226ba88d6589e75013",
       "to": "stmt:46c16754bee420a566961aa7",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:4a36d4c7113f871e81c45527",
       "sharedTags": [
         "국제사건"
       ]
@@ -2521,6 +3020,27 @@
     },
     {
       "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "2025",
@@ -2530,11 +3050,32 @@
     },
     {
       "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
       "to": "stmt:c44501dcb97869b23fbe8942",
       "sharedTags": [
         "2025",
         "국제사건",
         "최근1년"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:22abb3226ba88d6589e75013",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건"
       ]
     },
     {
@@ -2950,6 +3491,14 @@
     },
     {
       "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:415b2658374452edff7e07fd",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
       "to": "stmt:43bfd6d859ff779fedeec928",
       "sharedTags": [
         "국제사건",
@@ -2966,9 +3515,25 @@
     },
     {
       "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
       "to": "stmt:495acd373d4c3a4c610127ac",
       "sharedTags": [
         "측정"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -3027,9 +3592,41 @@
     },
     {
       "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -3062,9 +3659,26 @@
     },
     {
       "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "인도적피해"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
       "to": "stmt:d78f27d3e447961d8e0f492b",
       "sharedTags": [
         "측정"
+      ]
+    },
+    {
+      "from": "stmt:2e32e51752b91f9184c468af",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -3337,6 +3951,13 @@
     {
       "from": "stmt:3104eab69ad2305be2007c30",
       "to": "stmt:46c16754bee420a566961aa7",
+      "sharedTags": [
+        "대한민국"
+      ]
+    },
+    {
+      "from": "stmt:3104eab69ad2305be2007c30",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
       "sharedTags": [
         "대한민국"
       ]
@@ -3648,6 +4269,13 @@
     },
     {
       "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:415b2658374452edff7e07fd",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
       "to": "stmt:43bfd6d859ff779fedeec928",
       "sharedTags": [
         "국제사건"
@@ -3656,6 +4284,20 @@
     {
       "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
       "to": "stmt:46c16754bee420a566961aa7",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:4a36d4c7113f871e81c45527",
       "sharedTags": [
         "국제사건"
       ]
@@ -3683,6 +4325,27 @@
     },
     {
       "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "국제사건",
@@ -3691,10 +4354,31 @@
     },
     {
       "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
       "to": "stmt:c44501dcb97869b23fbe8942",
       "sharedTags": [
         "국제사건",
         "최근1년"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:38c8e4c00c63fa0fc9b00eb3",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건"
       ]
     },
     {
@@ -4070,10 +4754,159 @@
       ]
     },
     {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:43bfd6d859ff779fedeec928",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:46c16754bee420a566961aa7",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:5dcafd99e98ca83ec2727165",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:8e4b4b465805476c14e263ff",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:8f6705e79eaff0583a1e595a",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:9fa1e13fbdeb497fdee35c15",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:c44501dcb97869b23fbe8942",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:415b2658374452edff7e07fd",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
       "from": "stmt:43bfd6d859ff779fedeec928",
       "to": "stmt:46c16754bee420a566961aa7",
       "sharedTags": [
         "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:43bfd6d859ff779fedeec928",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:43bfd6d859ff779fedeec928",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
         "러시아우크라이나전쟁"
       ]
     },
@@ -4103,6 +4936,35 @@
     },
     {
       "from": "stmt:43bfd6d859ff779fedeec928",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:43bfd6d859ff779fedeec928",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:43bfd6d859ff779fedeec928",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:43bfd6d859ff779fedeec928",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "국제사건"
@@ -4110,9 +4972,55 @@
     },
     {
       "from": "stmt:43bfd6d859ff779fedeec928",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:43bfd6d859ff779fedeec928",
       "to": "stmt:c44501dcb97869b23fbe8942",
       "sharedTags": [
         "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:43bfd6d859ff779fedeec928",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:43bfd6d859ff779fedeec928",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:46c16754bee420a566961aa7",
+      "to": "stmt:48463c48ba6bb10ebf38e0ff",
+      "sharedTags": [
+        "국내영향",
+        "국제사건",
+        "대한민국",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:46c16754bee420a566961aa7",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -4143,9 +5051,41 @@
     },
     {
       "from": "stmt:46c16754bee420a566961aa7",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:46c16754bee420a566961aa7",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:46c16754bee420a566961aa7",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:46c16754bee420a566961aa7",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:46c16754bee420a566961aa7",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -4156,12 +5096,167 @@
       ]
     },
     {
+      "from": "stmt:46c16754bee420a566961aa7",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:46c16754bee420a566961aa7",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:48afea861840a1d07ad8d250",
+      "sharedTags": [
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:5dcafd99e98ca83ec2727165",
+      "sharedTags": [
+        "국내영향",
+        "국제사건",
+        "대한민국",
+        "러시아우크라이나전쟁",
+        "북한"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:83702707422e50c0a56fb565",
+      "sharedTags": [
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:8e4b4b465805476c14e263ff",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:8f6705e79eaff0583a1e595a",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:9fa1e13fbdeb497fdee35c15",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:a2b9f8780cb8ba76b3f3771c",
+      "sharedTags": [
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:c44501dcb97869b23fbe8942",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:dc42960aa42792c924b4d58b",
+      "sharedTags": [
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:48463c48ba6bb10ebf38e0ff",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
       "from": "stmt:48afea861840a1d07ad8d250",
       "to": "stmt:495acd373d4c3a4c610127ac",
       "sharedTags": [
         "2026지방선거",
         "사건단위",
         "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:48afea861840a1d07ad8d250",
+      "to": "stmt:4a36d4c7113f871e81c45527",
+      "sharedTags": [
+        "문서내용"
       ]
     },
     {
@@ -4679,6 +5774,124 @@
         "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:5dcafd99e98ca83ec2727165",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:83702707422e50c0a56fb565",
+      "sharedTags": [
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:8e4b4b465805476c14e263ff",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "문서내용",
+        "유엔"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:8f6705e79eaff0583a1e595a",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "유엔"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:9fa1e13fbdeb497fdee35c15",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:a2b9f8780cb8ba76b3f3771c",
+      "sharedTags": [
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "유엔"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:c44501dcb97869b23fbe8942",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:dc42960aa42792c924b4d58b",
+      "sharedTags": [
+        "문서내용"
+      ]
+    },
+    {
+      "from": "stmt:4a36d4c7113f871e81c45527",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -5353,6 +6566,30 @@
     },
     {
       "from": "stmt:5dcafd99e98ca83ec2727165",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:5dcafd99e98ca83ec2727165",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:5dcafd99e98ca83ec2727165",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:5dcafd99e98ca83ec2727165",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "국제사건"
@@ -5360,9 +6597,33 @@
     },
     {
       "from": "stmt:5dcafd99e98ca83ec2727165",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:5dcafd99e98ca83ec2727165",
       "to": "stmt:c44501dcb97869b23fbe8942",
       "sharedTags": [
         "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:5dcafd99e98ca83ec2727165",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:5dcafd99e98ca83ec2727165",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -6062,6 +7323,32 @@
     },
     {
       "from": "stmt:8e4b4b465805476c14e263ff",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:8e4b4b465805476c14e263ff",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "유엔"
+      ]
+    },
+    {
+      "from": "stmt:8e4b4b465805476c14e263ff",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:8e4b4b465805476c14e263ff",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "국제사건"
@@ -6076,9 +7363,26 @@
     },
     {
       "from": "stmt:8e4b4b465805476c14e263ff",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "유엔"
+      ]
+    },
+    {
+      "from": "stmt:8e4b4b465805476c14e263ff",
       "to": "stmt:c44501dcb97869b23fbe8942",
       "sharedTags": [
         "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:8e4b4b465805476c14e263ff",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -6089,10 +7393,51 @@
       ]
     },
     {
+      "from": "stmt:8e4b4b465805476c14e263ff",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:8f6705e79eaff0583a1e595a",
+      "to": "stmt:967978c0090167f3ab229161",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:8f6705e79eaff0583a1e595a",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:8f6705e79eaff0583a1e595a",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
       "from": "stmt:8f6705e79eaff0583a1e595a",
       "to": "stmt:9fa1e13fbdeb497fdee35c15",
       "sharedTags": [
         "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:8f6705e79eaff0583a1e595a",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -6125,9 +7470,26 @@
     },
     {
       "from": "stmt:8f6705e79eaff0583a1e595a",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "인도적피해"
+      ]
+    },
+    {
+      "from": "stmt:8f6705e79eaff0583a1e595a",
       "to": "stmt:d78f27d3e447961d8e0f492b",
       "sharedTags": [
         "측정"
+      ]
+    },
+    {
+      "from": "stmt:8f6705e79eaff0583a1e595a",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
       ]
     },
     {
@@ -6301,12 +7663,186 @@
       ]
     },
     {
+      "from": "stmt:967978c0090167f3ab229161",
+      "to": "stmt:96980afc94eb286f3ec2f873",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:967978c0090167f3ab229161",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:967978c0090167f3ab229161",
+      "to": "stmt:9fa1e13fbdeb497fdee35c15",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:967978c0090167f3ab229161",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:967978c0090167f3ab229161",
+      "to": "stmt:c44501dcb97869b23fbe8942",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:967978c0090167f3ab229161",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:967978c0090167f3ab229161",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁"
+      ]
+    },
+    {
+      "from": "stmt:96980afc94eb286f3ec2f873",
+      "to": "stmt:9dc87d551b21bda4491e0ab4",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:96980afc94eb286f3ec2f873",
+      "to": "stmt:9fa1e13fbdeb497fdee35c15",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:96980afc94eb286f3ec2f873",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나",
+        "유엔"
+      ]
+    },
+    {
+      "from": "stmt:96980afc94eb286f3ec2f873",
+      "to": "stmt:c44501dcb97869b23fbe8942",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:96980afc94eb286f3ec2f873",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:96980afc94eb286f3ec2f873",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:9dc87d551b21bda4491e0ab4",
+      "to": "stmt:9fa1e13fbdeb497fdee35c15",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:9dc87d551b21bda4491e0ab4",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건",
+        "러시아",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:9dc87d551b21bda4491e0ab4",
+      "to": "stmt:c44501dcb97869b23fbe8942",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:9dc87d551b21bda4491e0ab4",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:9dc87d551b21bda4491e0ab4",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제법",
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:9fa1e13fbdeb497fdee35c15",
+      "to": "stmt:ad1124db7365b035878f556f",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
       "from": "stmt:9fa1e13fbdeb497fdee35c15",
       "to": "stmt:c44501dcb97869b23fbe8942",
       "sharedTags": [
         "2025",
         "국제사건",
         "최근1년"
+      ]
+    },
+    {
+      "from": "stmt:9fa1e13fbdeb497fdee35c15",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:9fa1e13fbdeb497fdee35c15",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건"
       ]
     },
     {
@@ -6796,6 +8332,31 @@
         "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:ad1124db7365b035878f556f",
+      "to": "stmt:c44501dcb97869b23fbe8942",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:ad1124db7365b035878f556f",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
+      ]
+    },
+    {
+      "from": "stmt:ad1124db7365b035878f556f",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
       ]
     },
     {
@@ -7355,6 +8916,20 @@
       ]
     },
     {
+      "from": "stmt:c44501dcb97869b23fbe8942",
+      "to": "stmt:cbb6c0de3a42f984ab425f73",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
+      "from": "stmt:c44501dcb97869b23fbe8942",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건"
+      ]
+    },
+    {
       "from": "stmt:c890b5f8ca77961c84b58268",
       "to": "stmt:cb0719e9aac6e4c86677d2e5",
       "sharedTags": [
@@ -7545,6 +9120,15 @@
         "2026지방선거",
         "중앙선거관리위원회",
         "투표용지부족"
+      ]
+    },
+    {
+      "from": "stmt:cbb6c0de3a42f984ab425f73",
+      "to": "stmt:e52ad9c0482a06f3ebd364f4",
+      "sharedTags": [
+        "국제사건",
+        "러시아우크라이나전쟁",
+        "우크라이나"
       ]
     },
     {

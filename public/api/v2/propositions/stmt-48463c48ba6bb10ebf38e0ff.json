@@ -1,0 +1,137 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:48463c48ba6bb10ebf38e0ff",
+  "versionId": "ver:945f9b360e0df5c5",
+  "certHash": "sha256:60e3c509d337b3a175dc75dbbb42a51c4436af57aaec7241d9928fcc9f42aa94",
+  "canonicalProposition": "러시아와 북한은 2024년 6월 19일 포괄적 전략동반자 조약을 체결했으며 조약은 한쪽에 대한 침략 시 상호 원조를 규정한다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "document_content",
+  "sixW": {
+    "who": "블라디미르 푸틴·김정은",
+    "when": "2024년 6월 19일",
+    "where": "북한 평양",
+    "what": "포괄적 전략동반자 조약을 체결했고 조약은 침략 시 상호 원조를 규정한다",
+    "how": "정상회담에서 조약에 서명하고 내용을 공표했다",
+    "why": []
+  },
+  "classification": "O",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "러시아 대통령실 공식 기록과 정상 성명이 2024-06-19 조약 체결과 상호 원조 조항을 fetch 가능하게 확인한다. 다만 두 출처 모두 조약 당사자(러시아)의 발표로 공유 원천이다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "http://en.kremlin.ru/events/president/news/74330",
+      "title": "Russia-DPRK talks",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "Vladimir Putin and Kim Jong-un signed a Treaty on Comprehensive Strategic Partnership",
+      "quoteHash": "sha256:dc20a35cc35b699c1fb153ad1a3c2e8603329c9a01baa9b1bacf203ec273b09c",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "Official Russian presidential account by one treaty party; it is not independent corroboration and does not reproduce the treaty's full article text.",
+      "independenceGroupId": "dprk-russia-treaty-2024-0",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "party_interested",
+        "productionConcerns": [
+          "분쟁 당사자 발표"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "http://en.kremlin.ru/events/president/transcripts/74334",
+      "title": "Press statements following Russia-DPRK talks",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "mutual assistance in the event of aggression against one of the parties thereto",
+      "quoteHash": "sha256:490720d6f416f3568cc1372856ba874043d81c290cce5263225ec6d74705599a",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "Official post-talk transcript quotes Vladimir Putin's description of the treaty; it is not the treaty text itself and shares origin with the signing record.",
+      "independenceGroupId": "dprk-russia-treaty-2024-1",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "party_interested",
+        "productionConcerns": [
+          "분쟁 당사자 발표"
+        ],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "당사자 발표만으로 조약 내용을 확정하면 일방 프레이밍이 될 수 있다.",
+      "response": "명제는 '체결'과 '공표된 조항'이라는 문서 사실만 담고 이행·함의는 분리했다.",
+      "errorsFound": 0,
+      "framingChecks": "조항의 군사적 함의 평가를 배제하고 공표 문언만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "체결 사실과 당사자 공유 원천이라는 한계를 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·안보·인물 사안이라 human_reviewed. 크렘린 공식 기록·성명으로 재대조하되 당사자 공유 원천임을 명시했다.",
+      "adoptedReason": "fetch 가능한 크렘린 공식 기록과 성명이 체결과 조항을 확인한다.",
+      "rejectedAlternatives": "조약이 즉시 참전 의무를 뜻한다거나 무의미하다는 결론은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "living_person"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 조약 체결과 공표된 상호 원조 조항이라는 문서 사실만 기록한다. 조약의 실제 이행·군사 함의는 판단하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "근거는 조약 당사자인 러시아 대통령실 발표(공유 원천)이며 조약 전문 원문은 인용 범위 밖이다. 상호 원조 조항의 발동 요건·실제 이행과 한국 안보에 대한 함의는 별개 사안이다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "러시아",
+    "북한",
+    "대한민국",
+    "국내영향",
+    "문서내용"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

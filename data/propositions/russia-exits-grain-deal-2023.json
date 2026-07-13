@@ -1,0 +1,132 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:ad1124db7365b035878f556f",
+  "versionId": "ver:cb7aab176fdc9ed1",
+  "certHash": "sha256:e4e16b13c5007435ae525361b33b613ac2f974748ce7628693c986b5b8ffc2d6",
+  "canonicalProposition": "러시아는 2023년 7월 17일 흑해 곡물 이니셔티브 참여 종료를 발표했다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "러시아 연방",
+    "when": "2023년 7월 17일",
+    "where": "러시아의 곡물협정 종료 발표",
+    "what": "흑해 곡물 이니셔티브 참여를 종료했다",
+    "how": "협정 연장을 거부하고 참여 종료를 통보했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "유엔 공식 뉴스가 2023-07-17 러시아의 흑해 이니셔티브 종료를 fetch 가능하게 기록하고, AP가 같은 날 중단을 독립 확인한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://news.un.org/en/story/2023/07/1138752",
+      "title": "UN chief regrets Russia’s decision to withdraw from grain deal",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "the termination of the Black Sea Initiative by the Russian Federation.",
+      "quoteHash": "sha256:94971c63b21fc302252db38e3aed77b3dab88349661454f91be48e26bb034a4c",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "UN News report of the Secretary-General's response, dated 17 July 2023; it is not the Russian Federation's own announcement and therefore supports the externally recorded termination rather than the announcement's exact wording.",
+      "independenceGroupId": "russia-exits-grain-deal-2023-0",
+      "independenceLevel": "partially_independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://apnews.com/article/russia-ukraine-war-grain-food-security-ba7f9146b745337a1948a964cb30331c",
+      "title": "Russia halts landmark deal that allowed Ukraine to export grain at time of growing hunger",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "Russia on Monday halted a breakthrough wartime deal",
+      "quoteHash": "sha256:b829c809e0e4584b765baa6ac0f27901efe4a282a3399d165fae4fded6d57812",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20230717091121/https://apnews.com/article/russia-ukraine-war-grain-food-security-ba7f9146b745337a1948a964cb30331c",
+      "archivedAt": "2026-07-12",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "Associated Press report published 17 July 2023; the quote says Monday rather than repeating the calendar date, which is supplied by the article's publication line and dated captions.",
+      "independenceGroupId": "russia-exits-grain-deal-2023-1",
+      "independenceLevel": "independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "종료를 담으면 러시아 책임을 단정한 것으로 읽힐 수 있다.",
+      "response": "명제는 '참여 종료 발표' 사실만 담고 사유·영향은 분리했다.",
+      "errorsFound": 0,
+      "framingChecks": "종료의 옳고 그름 평가를 배제하고 사실만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "협정 체결(별도 명제)과 종료를 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·외교 사안이라 human_reviewed. 유엔 공식+AP로 재대조했다.",
+      "adoptedReason": "fetch 가능한 유엔 공식 뉴스와 AP가 종료일과 사실을 확인한다.",
+      "rejectedAlternatives": "종료가 정당했다거나 파국적이었다는 평가는 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 러시아의 협정 참여 종료 사실만 기록하며 그 사유·정당성은 판단하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "러시아가 든 종료 사유(자국 농산물·비료 수출 제약 등)는 이 명제에 담지 않았다. 종료의 곡물 가격·식량안보 영향은 별개 사실이다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "유엔",
+    "러시아",
+    "우크라이나"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

@@ -1,0 +1,108 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:4a36d4c7113f871e81c45527",
+  "versionId": "ver:1993c9f69c0e63bf",
+  "certHash": "sha256:5efeebc66a9252de29e8b14131d61e9c8acef7d602cfcbdd9cfc20c0fc26b47a",
+  "canonicalProposition": "국제사법재판소(ICJ)는 2022년 3월 16일 잠정조치 명령으로 러시아에 2022년 2월 24일 시작한 우크라이나 군사작전의 즉시 중단을 명령했다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "document_content",
+  "sixW": {
+    "who": "국제사법재판소(ICJ)",
+    "when": "2022년 3월 16일",
+    "where": "국제사법재판소(네덜란드 헤이그)",
+    "what": "러시아에 우크라이나 군사작전의 즉시 중단을 명령하는 잠정조치를 발령했다",
+    "how": "제노사이드협약 사건의 잠정조치 명령으로 발령했다",
+    "why": []
+  },
+  "classification": "O",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "유엔 공식 뉴스가 ICJ의 2022-03-16 잠정조치(군사작전 즉시 중단 명령)를 fetch 가능하게 확인한다. 이는 명령 발령이라는 문서 사실이며 이행 여부의 판단이 아니다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://news.un.org/en/story/2022/03/1114052",
+      "title": "International Court orders Russia to ‘immediately suspend’ military operations in Ukraine",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "shall immediately suspend the military operations that it commenced on 24 February.",
+      "quoteHash": "sha256:6053314ae3654f851c5adafd2e9774aba4932b436a79a5c5b7981ae0044037da",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "UN News 원문 HTML을 직접 HTTP GET으로 재대조했다. 인용문은 ICJ 명령을 재인용한 것으로 독립된 원사실이 아니다. ICJ 공식 명령 PDF URL은 같은 시점에 Cloudflare HTTP 403을 반환해 직접 재대조하지 못했다.",
+      "independenceGroupId": "icj-provisional-measures-2022-0",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "ICJ 명령을 담으면 저수지가 러시아 유죄를 전제한 것으로 읽힐 수 있다.",
+      "response": "명제는 잠정조치 발령이라는 문서 사실만 기록하고 본안 판단을 담지 않았다.",
+      "errorsFound": 0,
+      "framingChecks": "명령의 정당성 평가를 배제하고 발령 사실·내용만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "ICJ 명령과 러시아의 관할 이의를 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·법·진행 사안이라 human_reviewed. ICJ 원문 PDF는 403이라 fetch 가능한 유엔 공식 뉴스를 앵커로 삼았다.",
+      "adoptedReason": "fetch 가능한 유엔 공식 뉴스가 명령일·내용을 확인한다.",
+      "rejectedAlternatives": "명령이 곧 이행됐다거나 무의미하다는 평가는 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim",
+      "ongoing_litigation"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 ICJ가 잠정조치를 명령했다는 문서 사실만 기록하며 러시아의 이행 여부는 판단하지 않는다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "ICJ 잠정조치는 법적 구속력이 있으나 집행 수단이 제한적이며, 러시아는 이를 이행하지 않았다. 본안 판결과는 별개다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "유엔",
+    "국제법",
+    "문서내용",
+    "러시아"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

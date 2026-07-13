@@ -1,0 +1,132 @@
+{
+  "certVersion": "2.1",
+  "propositionId": "stmt:96980afc94eb286f3ec2f873",
+  "versionId": "ver:914cda01c334038e",
+  "certHash": "sha256:8168ab8acbf1a80bf83a2bed02cae0e31dd43e6c9b85ec4e60188c4c91edfa81",
+  "canonicalProposition": "유엔과 튀르키예 중재로 흑해 곡물 이니셔티브(Black Sea Grain Initiative) 서명식이 2022년 7월 22일 이스탄불에서 열렸다",
+  "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+  "claimNature": "event_occurrence",
+  "sixW": {
+    "who": "유엔·튀르키예·러시아·우크라이나",
+    "when": "2022년 7월 22일",
+    "where": "튀르키예 이스탄불 돌마바흐체 궁전",
+    "what": "흑해 곡물 이니셔티브 서명식이 열렸다",
+    "how": "러시아와 우크라이나가 유엔·튀르키예와 각각 별개의 동일 문서에 서명했다",
+    "why": []
+  },
+  "classification": "F",
+  "language": "ko",
+  "asOfDate": "2026-07-12",
+  "status": "active",
+  "reviewMode": "human_reviewed",
+  "assessment": {
+    "factualGrade": "largely_reliable",
+    "status": "assessed",
+    "gradeRationale": "유엔 공동조정센터 공식 페이지가 2022-07-22 이스탄불 서명식을 fetch 가능하게 기록하고, 알자지라가 러·우가 각각 별개 문서에 서명한 형식을 독립 확인한다.",
+    "rubricVersion": "rubric-3.0",
+    "pipelineVersion": "pipeline-3.0"
+  },
+  "evidence": [
+    {
+      "url": "https://www.un.org/en/black-sea-grain-initiative",
+      "title": "Black Sea Grain Initiative | Joint Coordination Centre | United Nations",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "at Dolmabahçe Palace, Istanbul, Türkiye, 22 July 2022.",
+      "quoteHash": "sha256:2ab8514f89df44b3b2efd1fa4d449e1bcf0cf7bfe26c9f13d41461dd17982f96",
+      "archiveStatus": "not_required_stable_artifact",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "UN Joint Coordination Centre page; the quoted photo caption identifies the signing ceremony's place and date. The same page later says 27 July, so only the dated caption is used here. This is an institutional participant record, not an independent account.",
+      "independenceGroupId": "black-sea-grain-initiative-2022-0",
+      "independenceLevel": "shared_origin",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "domain_expert",
+      "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+      "sourceType": "primary_producer",
+      "sourceProvenance": {
+        "productionIndependence": "govt_produced",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2022/7/22/ukraine-grain-export-deal-what-you-need-to-know",
+      "title": "Russia and Ukraine sign grain export deal: What you should know",
+      "retrievedAt": "2026-07-13",
+      "locator": {
+        "section": "본문"
+      },
+      "shortQuote": "signed separate but identical agreements with UN and Turkish officials",
+      "quoteHash": "sha256:4381007c3153711c87199a096b599265217db1625b686ef7c041a613907e9b0b",
+      "archiveStatus": "archived",
+      "archiveUrl": "https://web.archive.org/web/20220722203606/https://www.aljazeera.com/news/2022/7/22/ukraine-grain-export-deal-what-you-need-to-know",
+      "archivedAt": "2022-07-22",
+      "retrievalMethod": "crawler",
+      "retrievalLimitations": "Al Jazeera report published 22 July 2022. It describes the paired instruments signed separately by Russian and Ukrainian officials, so the canonical uses 'initiative' and does not imply a single Russia-Ukraine bilateral instrument. No archive snapshot was checked because live HTML was fetchable.",
+      "independenceGroupId": "black-sea-grain-initiative-2022-1",
+      "independenceLevel": "independent",
+      "independenceNote": "fetch 가능하게 재대조된 출처다.",
+      "sourceCompetence": "relevant",
+      "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+      "sourceType": "secondary_report",
+      "sourceProvenance": {
+        "productionIndependence": "independent",
+        "productionConcerns": [],
+        "requiresMethodologyAudit": false
+      }
+    }
+  ],
+  "reviewLog": {
+    "redteam": {
+      "strongestCounterargument": "'러·우 협정'이라 쓰면 직접 양자 합의로 오독될 수 있다.",
+      "response": "명제는 '이니셔티브 서명식'으로 쓰고 별개 문서 형식을 limitations에 담았다.",
+      "errorsFound": 0,
+      "framingChecks": "협정의 성패 평가를 배제하고 서명식 개최 사실만 남겼다."
+    },
+    "symmetry": {
+      "checked": true,
+      "method": "서명식과 그 형식적 한계를 함께 기록했다.",
+      "result": "대칭 점검 완료."
+    },
+    "authorityCheck": {
+      "checked": true,
+      "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+    },
+    "humanReview": {
+      "reviewer": "facts 인증",
+      "date": "2026-07-12",
+      "checksPerformed": [
+        "omission",
+        "asymmetry",
+        "framing",
+        "authority_assumption"
+      ],
+      "reviewMemo": "국제·외교 사안이라 human_reviewed. 유엔 공식+알자지라로 재대조했다. 서명 형식(각각 별개 문서)을 limitations에 명시.",
+      "adoptedReason": "fetch 가능한 유엔 공식 페이지와 알자지라가 날짜·형식을 확인한다.",
+      "rejectedAlternatives": "협정이 양자 단일 문서라거나 완전히 성공했다는 서술은 제외했다."
+    }
+  },
+  "sensitive": {
+    "sensitive": true,
+    "sensitivityReason": [
+      "political_claim"
+    ],
+    "legalStatus": "official_record",
+    "presumptionNotice": "이 명제는 서명식 개최라는 사실만 기록한다. 협정은 러·우 양자 단일 문서가 아니라 각각의 동일 문서였다."
+  },
+  "undeterminedItems": [],
+  "correctionHistory": [],
+  "openCorrectionRequests": 0,
+  "limitations": "협정은 러시아와 우크라이나가 유엔·튀르키예와 각각 별개의 동일 문서에 서명한 형식이다. 유엔 페이지 내 다른 위치에는 27일 표기도 있어 날짜 캡션(22일)을 채택했다. 협정 이행·효과는 별개다.",
+  "tags": [
+    "러시아우크라이나전쟁",
+    "국제사건",
+    "유엔",
+    "우크라이나",
+    "러시아"
+  ],
+  "createdAt": "2026-07-12",
+  "updatedAt": "2026-07-12"
+}

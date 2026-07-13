@@ -647,6 +647,269 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:96980afc94eb286f3ec2f873",
+      "versionId": "ver:914cda01c334038e",
+      "certHash": "sha256:8168ab8acbf1a80bf83a2bed02cae0e31dd43e6c9b85ec4e60188c4c91edfa81",
+      "canonicalProposition": "유엔과 튀르키예 중재로 흑해 곡물 이니셔티브(Black Sea Grain Initiative) 서명식이 2022년 7월 22일 이스탄불에서 열렸다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "유엔·튀르키예·러시아·우크라이나",
+        "when": "2022년 7월 22일",
+        "where": "튀르키예 이스탄불 돌마바흐체 궁전",
+        "what": "흑해 곡물 이니셔티브 서명식이 열렸다",
+        "how": "러시아와 우크라이나가 유엔·튀르키예와 각각 별개의 동일 문서에 서명했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유엔 공동조정센터 공식 페이지가 2022-07-22 이스탄불 서명식을 fetch 가능하게 기록하고, 알자지라가 러·우가 각각 별개 문서에 서명한 형식을 독립 확인한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.un.org/en/black-sea-grain-initiative",
+          "title": "Black Sea Grain Initiative | Joint Coordination Centre | United Nations",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "at Dolmabahçe Palace, Istanbul, Türkiye, 22 July 2022.",
+          "quoteHash": "sha256:2ab8514f89df44b3b2efd1fa4d449e1bcf0cf7bfe26c9f13d41461dd17982f96",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "UN Joint Coordination Centre page; the quoted photo caption identifies the signing ceremony's place and date. The same page later says 27 July, so only the dated caption is used here. This is an institutional participant record, not an independent account.",
+          "independenceGroupId": "black-sea-grain-initiative-2022-0",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2022/7/22/ukraine-grain-export-deal-what-you-need-to-know",
+          "title": "Russia and Ukraine sign grain export deal: What you should know",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "signed separate but identical agreements with UN and Turkish officials",
+          "quoteHash": "sha256:4381007c3153711c87199a096b599265217db1625b686ef7c041a613907e9b0b",
+          "archiveStatus": "archived",
+          "archiveUrl": "https://web.archive.org/web/20220722203606/https://www.aljazeera.com/news/2022/7/22/ukraine-grain-export-deal-what-you-need-to-know",
+          "archivedAt": "2022-07-22",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "Al Jazeera report published 22 July 2022. It describes the paired instruments signed separately by Russian and Ukrainian officials, so the canonical uses 'initiative' and does not imply a single Russia-Ukraine bilateral instrument. No archive snapshot was checked because live HTML was fetchable.",
+          "independenceGroupId": "black-sea-grain-initiative-2022-1",
+          "independenceLevel": "independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "'러·우 협정'이라 쓰면 직접 양자 합의로 오독될 수 있다.",
+          "response": "명제는 '이니셔티브 서명식'으로 쓰고 별개 문서 형식을 limitations에 담았다.",
+          "errorsFound": 0,
+          "framingChecks": "협정의 성패 평가를 배제하고 서명식 개최 사실만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "서명식과 그 형식적 한계를 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·외교 사안이라 human_reviewed. 유엔 공식+알자지라로 재대조했다. 서명 형식(각각 별개 문서)을 limitations에 명시.",
+          "adoptedReason": "fetch 가능한 유엔 공식 페이지와 알자지라가 날짜·형식을 확인한다.",
+          "rejectedAlternatives": "협정이 양자 단일 문서라거나 완전히 성공했다는 서술은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 서명식 개최라는 사실만 기록한다. 협정은 러·우 양자 단일 문서가 아니라 각각의 동일 문서였다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "협정은 러시아와 우크라이나가 유엔·튀르키예와 각각 별개의 동일 문서에 서명한 형식이다. 유엔 페이지 내 다른 위치에는 27일 표기도 있어 날짜 캡션(22일)을 채택했다. 협정 이행·효과는 별개다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "유엔",
+        "우크라이나",
+        "러시아"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:cbb6c0de3a42f984ab425f73",
+      "versionId": "ver:ba170c61bbfd20f5",
+      "certHash": "sha256:f739c00b767c1f43749f234de1daa5181aaa189dc9739a0ff15262d459bfcfde",
+      "canonicalProposition": "유엔은 우크라이나 보안군과 언론인이 2022년 4월 2일 부차에 진입해 거리 등에서 민간인 시신 수십 구를 발견했다고 기록했다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "유엔(OHCHR·안보리 브리핑)",
+        "when": "2022년 4월 2일",
+        "where": "우크라이나 부차",
+        "what": "보안군과 언론인이 부차에서 민간인 시신 수십 구를 발견했다",
+        "how": "러시아군 철수 후 진입해 거리와 여러 장소, 집단매장지에서 시신을 확인했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유엔 안보리 공식 회의록과 OHCHR 주제보고서가 부차의 민간인 시신 발견을 fetch 가능하게 기록한다. 명제는 발견 사실에 한정하며 사망 책임은 귀속하지 않는다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://documents.un.org/api/symbol/access?s=S%2FPV.9011&l=en&t=pdf",
+          "title": "S/PV.9011 — Security Council, 9011th meeting: Ukraine",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Many bodies were also found in a mass grave in the same locality.",
+          "quoteHash": "sha256:db92c7fa89b2712ef11d12351298153f658911f5895cd52563b5cbedece2b557",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "유엔 문서 시스템의 2022-04-05 안전보장이사회 공식 회의록 PDF를 직접 HTTP GET하고 PDF 텍스트를 추출해 인용문을 재대조했다. 해당 문장은 Rosemary DiCarlo 유엔 정무·평화구축 담당 사무차장의 브리핑으로, 직접 현장 감식 보고서가 아니라 공개된 영상과 NGO·언론 보도를 종합한 설명이다. 시신 발견 사실만 수록하며 사망 책임은 이 명제와 자료 항목에서 귀속하지 않는다.",
+          "independenceGroupId": "bucha-civilian-killings-2022-0",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.ohchr.org/sites/default/files/2022-12/2022-12-07-OHCHR-Thematic-Report-Killings-EN.pdf",
+          "title": "Killings of civilians: summary executions and attacks on individual civilians in Kyiv, Chernihiv, and Sumy regions in the context of the Russian Federation’s armed attack against Ukraine",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "saw dozens of dead bodies, first on the streets and then in many other locations",
+          "quoteHash": "sha256:e818a8b986a28e89b7991d9d0785505394a87df99a3401101bc86b289b04467e",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "OHCHR 공식 PDF를 직접 HTTP GET하고 PDF 텍스트를 추출해 인용문을 재대조했다. 해당 문단은 우크라이나 보안군과 국내외 언론인이 2022-04-02 부차에 진입해 본 상황을 OHCHR이 후속 조사·자료 대조로 기록한 것이다. OHCHR의 첫 부차 현장 방문은 2022-04-09이므로 4월 2일 발견 장면 자체에 대한 직접 목격 출처는 아니다. 이 항목은 발견 사실만 뒷받침하며 책임 귀속은 명제 범위 밖이다.",
+          "independenceGroupId": "bucha-civilian-killings-2022-1",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "부차를 담으면 저수지가 가해 책임을 단정한 것으로 읽힐 수 있다.",
+          "response": "명제는 '시신 발견' 사실만 기록하고 책임은 limitations로 명시적으로 분리했다.",
+          "errorsFound": 0,
+          "framingChecks": "'학살'·'조작' 어느 규정도 저수지 목소리로 쓰지 않고 발견 사실만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "발견 사실과 책임 미확정·러시아 부인을 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·형사·인명·진행 사안이라 human_reviewed. 발견 사실만 담고 책임 귀속은 배제(제2). 유엔 안보리 회의록·OHCHR PDF로 재대조.",
+          "adoptedReason": "fetch 가능한 유엔 안보리 회의록과 OHCHR 보고서가 발견 사실을 확인한다.",
+          "rejectedAlternatives": "러시아가 학살했다거나 조작이라는 결론 모두 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "criminal_allegation",
+          "ongoing_litigation"
+        ],
+        "legalStatus": "pending",
+        "presumptionNotice": "이 명제는 민간인 시신이 발견됐다는 사실만 기록한다. 사망 원인·가해 책임은 조사·재판이 진행 중인 미확정 사안이다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이 명제는 시신 발견 사실에 한정하며, 누가 사망에 책임이 있는지는 귀속하지 않는다(러시아는 관여를 부인). OHCHR의 첫 현장 방문은 4월 9일이며 4월 2일 장면은 후속 조사·자료 대조로 기록됐다. 정확한 사망자 수와 경위는 계속 조사 중이다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "우크라이나",
+        "인도적피해"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:5985381793fd401f7fc3052c",
       "versionId": "ver:f8433a587047ec56",
       "certHash": "sha256:09abb1202dc46f3e273d13a1f10df683390e41ed3eb05c4af61931f7947d713e",
@@ -1533,6 +1796,143 @@
       ],
       "createdAt": "2026-06-16",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:48463c48ba6bb10ebf38e0ff",
+      "versionId": "ver:945f9b360e0df5c5",
+      "certHash": "sha256:60e3c509d337b3a175dc75dbbb42a51c4436af57aaec7241d9928fcc9f42aa94",
+      "canonicalProposition": "러시아와 북한은 2024년 6월 19일 포괄적 전략동반자 조약을 체결했으며 조약은 한쪽에 대한 침략 시 상호 원조를 규정한다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "document_content",
+      "sixW": {
+        "who": "블라디미르 푸틴·김정은",
+        "when": "2024년 6월 19일",
+        "where": "북한 평양",
+        "what": "포괄적 전략동반자 조약을 체결했고 조약은 침략 시 상호 원조를 규정한다",
+        "how": "정상회담에서 조약에 서명하고 내용을 공표했다",
+        "why": []
+      },
+      "classification": "O",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "러시아 대통령실 공식 기록과 정상 성명이 2024-06-19 조약 체결과 상호 원조 조항을 fetch 가능하게 확인한다. 다만 두 출처 모두 조약 당사자(러시아)의 발표로 공유 원천이다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "http://en.kremlin.ru/events/president/news/74330",
+          "title": "Russia-DPRK talks",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Vladimir Putin and Kim Jong-un signed a Treaty on Comprehensive Strategic Partnership",
+          "quoteHash": "sha256:dc20a35cc35b699c1fb153ad1a3c2e8603329c9a01baa9b1bacf203ec273b09c",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "Official Russian presidential account by one treaty party; it is not independent corroboration and does not reproduce the treaty's full article text.",
+          "independenceGroupId": "dprk-russia-treaty-2024-0",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "party_interested",
+            "productionConcerns": [
+              "분쟁 당사자 발표"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "http://en.kremlin.ru/events/president/transcripts/74334",
+          "title": "Press statements following Russia-DPRK talks",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "mutual assistance in the event of aggression against one of the parties thereto",
+          "quoteHash": "sha256:490720d6f416f3568cc1372856ba874043d81c290cce5263225ec6d74705599a",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "Official post-talk transcript quotes Vladimir Putin's description of the treaty; it is not the treaty text itself and shares origin with the signing record.",
+          "independenceGroupId": "dprk-russia-treaty-2024-1",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "party_interested",
+            "productionConcerns": [
+              "분쟁 당사자 발표"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "당사자 발표만으로 조약 내용을 확정하면 일방 프레이밍이 될 수 있다.",
+          "response": "명제는 '체결'과 '공표된 조항'이라는 문서 사실만 담고 이행·함의는 분리했다.",
+          "errorsFound": 0,
+          "framingChecks": "조항의 군사적 함의 평가를 배제하고 공표 문언만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "체결 사실과 당사자 공유 원천이라는 한계를 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·안보·인물 사안이라 human_reviewed. 크렘린 공식 기록·성명으로 재대조하되 당사자 공유 원천임을 명시했다.",
+          "adoptedReason": "fetch 가능한 크렘린 공식 기록과 성명이 체결과 조항을 확인한다.",
+          "rejectedAlternatives": "조약이 즉시 참전 의무를 뜻한다거나 무의미하다는 결론은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "living_person"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 조약 체결과 공표된 상호 원조 조항이라는 문서 사실만 기록한다. 조약의 실제 이행·군사 함의는 판단하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "근거는 조약 당사자인 러시아 대통령실 발표(공유 원천)이며 조약 전문 원문은 인용 범위 밖이다. 상호 원조 조항의 발동 요건·실제 이행과 한국 안보에 대한 함의는 별개 사안이다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "러시아",
+        "북한",
+        "대한민국",
+        "국내영향",
+        "문서내용"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
     },
     {
       "certVersion": "2.1",
@@ -2975,6 +3375,227 @@
       ],
       "createdAt": "2026-06-16T00:00:00Z",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:4a36d4c7113f871e81c45527",
+      "versionId": "ver:1993c9f69c0e63bf",
+      "certHash": "sha256:5efeebc66a9252de29e8b14131d61e9c8acef7d602cfcbdd9cfc20c0fc26b47a",
+      "canonicalProposition": "국제사법재판소(ICJ)는 2022년 3월 16일 잠정조치 명령으로 러시아에 2022년 2월 24일 시작한 우크라이나 군사작전의 즉시 중단을 명령했다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "document_content",
+      "sixW": {
+        "who": "국제사법재판소(ICJ)",
+        "when": "2022년 3월 16일",
+        "where": "국제사법재판소(네덜란드 헤이그)",
+        "what": "러시아에 우크라이나 군사작전의 즉시 중단을 명령하는 잠정조치를 발령했다",
+        "how": "제노사이드협약 사건의 잠정조치 명령으로 발령했다",
+        "why": []
+      },
+      "classification": "O",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유엔 공식 뉴스가 ICJ의 2022-03-16 잠정조치(군사작전 즉시 중단 명령)를 fetch 가능하게 확인한다. 이는 명령 발령이라는 문서 사실이며 이행 여부의 판단이 아니다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://news.un.org/en/story/2022/03/1114052",
+          "title": "International Court orders Russia to ‘immediately suspend’ military operations in Ukraine",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "shall immediately suspend the military operations that it commenced on 24 February.",
+          "quoteHash": "sha256:6053314ae3654f851c5adafd2e9774aba4932b436a79a5c5b7981ae0044037da",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "UN News 원문 HTML을 직접 HTTP GET으로 재대조했다. 인용문은 ICJ 명령을 재인용한 것으로 독립된 원사실이 아니다. ICJ 공식 명령 PDF URL은 같은 시점에 Cloudflare HTTP 403을 반환해 직접 재대조하지 못했다.",
+          "independenceGroupId": "icj-provisional-measures-2022-0",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "ICJ 명령을 담으면 저수지가 러시아 유죄를 전제한 것으로 읽힐 수 있다.",
+          "response": "명제는 잠정조치 발령이라는 문서 사실만 기록하고 본안 판단을 담지 않았다.",
+          "errorsFound": 0,
+          "framingChecks": "명령의 정당성 평가를 배제하고 발령 사실·내용만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "ICJ 명령과 러시아의 관할 이의를 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·법·진행 사안이라 human_reviewed. ICJ 원문 PDF는 403이라 fetch 가능한 유엔 공식 뉴스를 앵커로 삼았다.",
+          "adoptedReason": "fetch 가능한 유엔 공식 뉴스가 명령일·내용을 확인한다.",
+          "rejectedAlternatives": "명령이 곧 이행됐다거나 무의미하다는 평가는 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "ongoing_litigation"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 ICJ가 잠정조치를 명령했다는 문서 사실만 기록하며 러시아의 이행 여부는 판단하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "ICJ 잠정조치는 법적 구속력이 있으나 집행 수단이 제한적이며, 러시아는 이를 이행하지 않았다. 본안 판결과는 별개다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "유엔",
+        "국제법",
+        "문서내용",
+        "러시아"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:18927f96a04d67e8c889cbc7",
+      "versionId": "ver:9d09fe0bbf6fd20d",
+      "certHash": "sha256:01d7820be49d4f56fbc97061d4409004a52ee0edc89dfb1d19e2603b11124be3",
+      "canonicalProposition": "국제이주기구(IOM)는 2025년 12월 기준 우크라이나 내 국내 실향민(IDP)을 약 371만 2천 명으로 추정했다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "measurement",
+      "measurement": {
+        "method": "무작위 번호 걸기(RDD) 컴퓨터 보조 전화면접(CATI) — IOM 일반인구조사 22차(선별 40,001명, IDP 후속 1,388명)",
+        "sample": "우크라이나 내 휴대전화 이용 성인 무작위 응답자(크림·4개 주 점령지역 제외)",
+        "aggregationBasis": "UNFPA 2025년 7월 인구 기준선에 조사 비율을 적용한 전국 추정치(천 명 단위 반올림)",
+        "producer": "국제이주기구(IOM) 우크라이나 일반인구조사 22차",
+        "measuredAt": "2025-12-22"
+      },
+      "sixW": {
+        "who": "국제이주기구(IOM)",
+        "when": "2025년 12월 22일 기준(2026년 1월 보고)",
+        "where": "우크라이나 전역(점령지역 제외)",
+        "what": "우크라이나 내 국내 실향민을 약 371만 2천 명으로 추정했다",
+        "how": "전화면접 조사 비율을 인구 기준선에 적용해 추정했다",
+        "why": []
+      },
+      "classification": "M",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "IOM 일반인구조사 22차 보고서가 2025년 12월 기준 IDP 약 371만 2천 명을 fetch 가능한 PDF로 제시한다. 조사 기반 추정치로 점령지역 제외 등 표본 한계가 있다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://reliefweb.int/attachments/be315c4e-7246-5b2d-a869-3df4be004214/IOM_UKR_Internal%20Displacement%20Report_GPS%20R21_December_2025.pdf",
+          "title": "Ukraine Internal Displacement Report — General Population Survey Round 22 (January 2026)",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "As of December 2025, an estimated 3,712,000 de facto IDPs",
+          "quoteHash": "sha256:ac3778cfd36822bebc10e30cb084b3c8ba0115a128b4fc36880d3524264c41f3",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "pdf_extract",
+          "retrievalLimitations": "ReliefWeb hosts the IOM-produced PDF. The live data.unhcr.org situation page embeds its headline dashboard in Power BI, so its displayed value was not text-rechecked. The current IOM artifact reports 3.712 million, not the approximately 3.85 million anticipated in the request. Survey coverage excludes Crimea and occupied areas of four oblasts and is limited to adults reachable by functioning mobile networks; the report warns affected oblast estimates are likely underestimates. The attachment filename says R21/December 2025, while the PDF cover, body, and ReliefWeb record identify Round 22/January 2026.",
+          "independenceGroupId": "iom-ukraine-idp-2026-0",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": true
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "371만을 확정치로 제시하면 점령지역 누락·시점 변동을 감춘 것으로 오독될 수 있다.",
+          "response": "measurement에 방법·표본·시점을 명시하고 한계를 limitations에 담았다.",
+          "errorsFound": 0,
+          "framingChecks": "'대탈출' 같은 평가어를 배제하고 조사 추정치와 방법만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "IOM 추정치와 다른 포털 수치·표본 한계를 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·측정 사안이라 human_reviewed. IOM PDF를 pdf_extract로 재대조. 표본 한계·시점 변동을 limitations에 명시.",
+          "adoptedReason": "fetch 가능한 IOM 보고서 PDF가 기준일·수치·방법을 제시한다.",
+          "rejectedAlternatives": "이 추정치가 완전한 실제 실향 인구라거나 조작이라는 결론은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "not_applicable",
+        "presumptionNotice": "이 명제는 IOM 조사 기반 IDP 추정치라는 측정값만 기록하며 실제 실향 인구와 차이날 수 있다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "조사는 크림과 4개 주 점령지역을 제외하고 휴대전화 도달 성인으로 한정돼 해당 지역 추정치는 과소일 수 있다고 IOM이 단서를 단다. 별도 data.unhcr.org 포털은 다른 시점(약 385만, 2026-03) 수치를 게시해 시점에 따라 변동한다. 국외 난민(별도 명제)과 다른 지표다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "측정",
+        "난민",
+        "인도적피해"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
     },
     {
       "certVersion": "2.1",
@@ -9895,6 +10516,273 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:9dc87d551b21bda4491e0ab4",
+      "versionId": "ver:adf86ec05eb8fe42",
+      "certHash": "sha256:d441a66ada6395acb6dec81b9cc9ffcade03bc2f32f5d548eab937df5e46fd4c",
+      "canonicalProposition": "러시아는 2022년 9월 30일 우크라이나의 도네츠크·루한스크·자포리자·헤르손 4개 지역을 러시아에 편입하는 조약의 서명식을 열었다고 발표했다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "러시아 대통령실",
+        "when": "2022년 9월 30일",
+        "where": "러시아 모스크바 크렘린",
+        "what": "우크라이나 4개 지역을 러시아에 편입하는 조약의 서명식을 열었다고 발표했다",
+        "how": "크렘린에서 편입 조약 서명식을 열고 공표했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "러시아 대통령실 공식 기록이 2022-09-30 4개 지역 편입 조약 서명을 fetch 가능하게 발표하고, 유엔 총회 결의 ES-11/4가 이를 '시도된 불법 병합'으로 규정한 대응을 기록한다. 이는 러시아의 발표 사실이며 국제적 승인이 아니다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "http://en.kremlin.ru/events/president/news/69465",
+          "title": "Signing of treaties on accession of Donetsk and Lugansk people's republics and Zaporozhye and Kherson regions to Russia",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Today we will sign treaties on the accession",
+          "quoteHash": "sha256:ca278a543d8c9cecdf0a696b6804d5ec36c0ae5c84d064aecb2392fef32b8649",
+          "archiveStatus": "archived",
+          "archiveUrl": "https://web.archive.org/web/20220930150644/http://en.kremlin.ru/events/president/news/69465",
+          "archivedAt": "2022-07-22",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "러시아 대통령실 원문 HTML을 직접 HTTP GET으로 재대조했다. 제목과 본문은 네 지역을 모두 열거하고 게시 시각을 2022-09-30 16:00으로 표시한다. 이는 러시아 정부의 자체 발표이며 국제적 승인 여부를 입증하지 않는다. 유엔 총회 결의 ES-11/4는 이를 'attempted illegal annexation'으로 규정하고 회원국 등에 지위 변경을 인정하지 말 것을 요청했다. Wayback의 2022-09-30 스냅샷도 HTTP 200으로 열렸다.",
+          "independenceGroupId": "russia-annexation-four-regions-2022-0",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "party_interested",
+            "productionConcerns": [
+              "분쟁 당사자 발표"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://documents.un.org/api/symbol/access?s=A%2FRES%2FES-11%2F4&l=en&t=pdf",
+          "title": "A/RES/ES-11/4 — Territorial integrity of Ukraine: defending the principles of the Charter of the United Nations",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "attempted illegal annexation of the Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine",
+          "quoteHash": "sha256:f6a79a2c70475143ef36a12104aa2c91e9877182b2e35ab22624cdaab40a2275",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "유엔 문서 시스템의 공식 PDF를 직접 HTTP GET하고 PDF 텍스트를 추출해 인용문을 재대조했다. 결의는 2022년 10월 12일 채택되어 9월 30일 러시아 발표 이후의 국제적 대응을 기록한다. 결의의 법적·정치적 평가는 러시아 발표와 별개의 귀속된 유엔 총회 입장이다.",
+          "independenceGroupId": "russia-annexation-four-regions-2022-1",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "러시아 발표를 담으면 병합을 인정한 것으로 읽힐 수 있다.",
+          "response": "명제는 '발표했다'는 사실만 귀속하고 승인 여부는 limitations로 분리했다.",
+          "errorsFound": 0,
+          "framingChecks": "'합병'·'수복' 어느 규정도 저수지 목소리로 쓰지 않았다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "러시아 발표와 유엔 총회의 불법 규정을 병렬로 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·정치·영토 사안이라 human_reviewed. 러시아 발표(fetch)와 유엔 규탄 결의를 함께 담아 한쪽만 수집하지 않았다.",
+          "adoptedReason": "fetch 가능한 크렘린 기록과 유엔 결의가 발표와 국제 대응을 함께 확인한다.",
+          "rejectedAlternatives": "병합이 유효하다거나 실효 지배가 완료됐다는 결론은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "living_person"
+        ],
+        "legalStatus": "unknown",
+        "presumptionNotice": "이 명제는 러시아의 편입 발표 사실만 기록한다. 국제사회 다수는 이를 불법으로 규정하며 승인하지 않았다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "이는 러시아의 일방적 발표이며 우크라이나와 국제사회 다수는 병합을 인정하지 않는다. 유엔 총회는 결의 ES-11/4로 이를 무효로 규정했다. 실효 지배 범위와도 별개다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "러시아",
+        "우크라이나",
+        "국제법"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:ad1124db7365b035878f556f",
+      "versionId": "ver:cb7aab176fdc9ed1",
+      "certHash": "sha256:e4e16b13c5007435ae525361b33b613ac2f974748ce7628693c986b5b8ffc2d6",
+      "canonicalProposition": "러시아는 2023년 7월 17일 흑해 곡물 이니셔티브 참여 종료를 발표했다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "러시아 연방",
+        "when": "2023년 7월 17일",
+        "where": "러시아의 곡물협정 종료 발표",
+        "what": "흑해 곡물 이니셔티브 참여를 종료했다",
+        "how": "협정 연장을 거부하고 참여 종료를 통보했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유엔 공식 뉴스가 2023-07-17 러시아의 흑해 이니셔티브 종료를 fetch 가능하게 기록하고, AP가 같은 날 중단을 독립 확인한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://news.un.org/en/story/2023/07/1138752",
+          "title": "UN chief regrets Russia’s decision to withdraw from grain deal",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "the termination of the Black Sea Initiative by the Russian Federation.",
+          "quoteHash": "sha256:94971c63b21fc302252db38e3aed77b3dab88349661454f91be48e26bb034a4c",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "UN News report of the Secretary-General's response, dated 17 July 2023; it is not the Russian Federation's own announcement and therefore supports the externally recorded termination rather than the announcement's exact wording.",
+          "independenceGroupId": "russia-exits-grain-deal-2023-0",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://apnews.com/article/russia-ukraine-war-grain-food-security-ba7f9146b745337a1948a964cb30331c",
+          "title": "Russia halts landmark deal that allowed Ukraine to export grain at time of growing hunger",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Russia on Monday halted a breakthrough wartime deal",
+          "quoteHash": "sha256:b829c809e0e4584b765baa6ac0f27901efe4a282a3399d165fae4fded6d57812",
+          "archiveStatus": "archived",
+          "archiveUrl": "https://web.archive.org/web/20230717091121/https://apnews.com/article/russia-ukraine-war-grain-food-security-ba7f9146b745337a1948a964cb30331c",
+          "archivedAt": "2026-07-12",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "Associated Press report published 17 July 2023; the quote says Monday rather than repeating the calendar date, which is supplied by the article's publication line and dated captions.",
+          "independenceGroupId": "russia-exits-grain-deal-2023-1",
+          "independenceLevel": "independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "종료를 담으면 러시아 책임을 단정한 것으로 읽힐 수 있다.",
+          "response": "명제는 '참여 종료 발표' 사실만 담고 사유·영향은 분리했다.",
+          "errorsFound": 0,
+          "framingChecks": "종료의 옳고 그름 평가를 배제하고 사실만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "협정 체결(별도 명제)과 종료를 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·외교 사안이라 human_reviewed. 유엔 공식+AP로 재대조했다.",
+          "adoptedReason": "fetch 가능한 유엔 공식 뉴스와 AP가 종료일과 사실을 확인한다.",
+          "rejectedAlternatives": "종료가 정당했다거나 파국적이었다는 평가는 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 러시아의 협정 참여 종료 사실만 기록하며 그 사유·정당성은 판단하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "러시아가 든 종료 사유(자국 농산물·비료 수출 제약 등)는 이 명제에 담지 않았다. 종료의 곡물 가격·식량안보 영향은 별개 사실이다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "유엔",
+        "러시아",
+        "우크라이나"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:43bfd6d859ff779fedeec928",
       "versionId": "ver:6a6b34ced45214de",
       "certHash": "sha256:213b3ce04f37a081c21e9b5a9f32df88b5f20a2b30ce52352134878002c926c6",
@@ -10483,6 +11371,111 @@
     },
     {
       "certVersion": "2.1",
+      "propositionId": "stmt:e52ad9c0482a06f3ebd364f4",
+      "versionId": "ver:d6dcadc8f5a0f0fc",
+      "certHash": "sha256:abf38421fc5994de9703bf46f9608a0fcb5a0ac80cb45a94defa9da90191dba8",
+      "canonicalProposition": "유럽연합(EU)은 2022년 6월 우크라이나에 EU 가입 후보국 지위를 부여했다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "유럽연합(EU)",
+        "when": "2022년 6월",
+        "where": "유럽연합",
+        "what": "우크라이나에 EU 가입 후보국 지위를 부여했다",
+        "how": "유럽이사회 결정으로 후보국 지위를 승인했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유럽연합 집행위원회 공식 페이지가 2022년 6월 우크라이나의 EU 후보국 지위 부여를 fetch 가능하게 명시한다. 이는 지위 부여 사실이며 가입 완료가 아니다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://enlargement.ec.europa.eu/european-neighbourhood-policy/countries-region/ukraine_en",
+          "title": "Ukraine - Enlargement and Eastern Neighbourhood",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Since June 2022, Ukraine has official EU candidate status",
+          "quoteHash": "sha256:fc3094b0ce1ff7c8137b9dd60bd14ace1a25f1ff90be067b97c31204030cc8f6",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "European Commission institutional summary; the European Council decision-making body itself is a shared institutional origin, not an independent source.",
+          "independenceGroupId": "ukraine-eu-candidate-status-2022-0",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "govt_produced",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "후보국 지위를 담으면 가입 확정으로 오독될 수 있다.",
+          "response": "명제는 '후보국 지위 부여'에 한정하고 가입은 limitations로 분리했다.",
+          "errorsFound": 0,
+          "framingChecks": "지위 부여의 상징성 평가를 배제하고 사실만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "지위 부여와 그것이 가입 완료가 아님을 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·정치 사안이라 human_reviewed. 집행위 공식 페이지로 재대조했다.",
+          "adoptedReason": "fetch 가능한 EU 집행위 페이지가 후보국 지위 부여를 확인한다.",
+          "rejectedAlternatives": "가입이 임박했다거나 무산됐다는 전망은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "official_record",
+        "presumptionNotice": "이 명제는 후보국 지위 부여라는 사실만 기록하며 가입 시점·전망은 판단하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "후보국 지위는 가입 협상의 시작이며 정회원 가입과는 다르다. 이후 협상 개시·진행은 별개 사실이다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "우크라이나",
+        "국제법"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
       "propositionId": "stmt:8e4b4b465805476c14e263ff",
       "versionId": "ver:21a31a78cd2304ba",
       "certHash": "sha256:62c98d8b1b0bd12ba76daf23498a4de369257bc04e9f32ee8ca9584ee43eb3bb",
@@ -10631,6 +11624,163 @@
         "유엔",
         "국제법",
         "문서내용"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:967978c0090167f3ab229161",
+      "versionId": "ver:7dd7c44735eb1860",
+      "certHash": "sha256:c6af86cd998491e1f98bd728d2527e99f9458f59d152df394f89c9bb3672e629",
+      "canonicalProposition": "예브게니 프리고진이 이끄는 바그너 그룹이 2023년 6월 24일 러시아에서 무장 반란을 일으켰다가 같은 날 모스크바 진군을 중단했다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "예브게니 프리고진·바그너 그룹",
+        "when": "2023년 6월 24일",
+        "where": "러시아(로스토프나도누~모스크바 방면)",
+        "what": "무장 반란을 일으켰다가 같은 날 모스크바 진군을 중단했다",
+        "how": "병력을 이끌고 모스크바로 진군하다 당일 회군을 명령했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "알자지라 당일 보도, 영국 SIS 수장 연설, 러시아 대통령 성명(무장 반란으로 규정)이 사건과 당일 중단을 fetch 가능하게 확인한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://www.aljazeera.com/news/2023/6/24/wagner-boss-says-march-on-moscow-halted-to-avoid-bloodshed",
+          "title": "Wagner boss calls off march on Moscow, agrees to exile in Belarus",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Wagner chief Yevgeny Prigozhin ordered his mercenaries to halt their march on Moscow",
+          "quoteHash": "sha256:95a9c064e99423cfd698d2767389b17a568e2a9f3ffa585ce4eb1d82a2e28d7d",
+          "archiveStatus": "archived",
+          "archiveUrl": "https://web.archive.org/web/20260607024622id_/https://www.aljazeera.com/news/2023/6/24/wagner-boss-says-march-on-moscow-halted-to-avoid-bloodshed",
+          "archivedAt": "2026-07-12",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "Contemporaneous news report; its account of the halt relies partly on statements by Prigozhin and Belarusian authorities. It describes the same-day halt but does not use the Korean expression '하루 만에'.",
+          "independenceGroupId": "wagner-prigozhin-mutiny-2023-0",
+          "independenceLevel": "independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://www.gov.uk/government/speeches/speech-by-sir-richard-moore-head-of-sis-19-july-2023",
+          "title": "Speech by Sir Richard Moore, head of SIS, 19 July 2023",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Prigozhin was marching on Moscow, leading a mutiny",
+          "quoteHash": "sha256:99f3c168b8e24c0096fa22d0e6c3cb0ff7773ad249b2b0ddcfcee49c849b6b28",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "Later UK intelligence-chief speech corroborates Prigozhin's leadership but does not itself state the exact start or halt date; the speech includes political interpretation outside the quoted event description.",
+          "independenceGroupId": "wagner-prigozhin-mutiny-2023-1",
+          "independenceLevel": "independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "http://en.kremlin.ru/events/president/news/71496",
+          "title": "Address to citizens of Russia",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "pushed onto the path of a grave crime – an armed mutiny",
+          "quoteHash": "sha256:1295607c1313fa168dfbbf7616561e2b2c4187ee50d370fc9444701176cd714b",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "Official statement by the Russian president on 24 June 2023 characterizes the event as an armed mutiny; it is a party's framing and does not name Prigozhin in the quoted sentence or document the later halt.",
+          "independenceGroupId": "wagner-prigozhin-mutiny-2023-2",
+          "independenceLevel": "partially_independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "primary_producer",
+          "sourceProvenance": {
+            "productionIndependence": "party_interested",
+            "productionConcerns": [
+              "분쟁 당사자 발표"
+            ],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "반란을 담으면 그 동기·배후를 단정한 것으로 읽힐 수 있다.",
+          "response": "명제는 '반란 발생과 당일 중단' 사실만 담고 배후·동기는 분리했다.",
+          "errorsFound": 0,
+          "framingChecks": "동기·배후 해석을 배제하고 관찰 가능한 행위만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "프리고진 측 주장과 러시아 성명을 함께 귀속 인용했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·정치·인물 사안이라 human_reviewed. 알자지라·SIS 연설·크렘린 성명으로 재대조. 러시아 프레이밍은 귀속 처리.",
+          "adoptedReason": "fetch 가능한 복수 출처가 반란 발생과 당일 중단을 확인한다.",
+          "rejectedAlternatives": "반란이 쿠데타 성공/실패였다거나 연출이라는 결론은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim",
+          "living_person"
+        ],
+        "legalStatus": "unknown",
+        "presumptionNotice": "이 명제는 반란 발생과 당일 중단이라는 사실만 기록하며 배후·동기는 판단하지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "반란의 배후·거래(벨라루스 망명 합의 등)와 이후 프리고진 사망은 별개 사실이다. 러시아 성명은 사건을 '무장 반란'으로 규정한 당사자 프레이밍이다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "러시아"
       ],
       "createdAt": "2026-07-12",
       "updatedAt": "2026-07-12"
@@ -10981,18 +12131,149 @@
       ],
       "createdAt": "2026-06-19",
       "updatedAt": "2026-06-19"
+    },
+    {
+      "certVersion": "2.1",
+      "propositionId": "stmt:415b2658374452edff7e07fd",
+      "versionId": "ver:587b631794c729dc",
+      "certHash": "sha256:53cfeaded5603ca1153c0237a0b66bde6e5d19dbadd536e3a2581191fff541fb",
+      "canonicalProposition": "국제원자력기구(IAEA)는 2022년 3월 러시아군이 우크라이나 자포리자 원자력발전소 부지를 장악했다고 밝혔다",
+      "originalClaim": "러시아-우크라이나 전쟁 커버리지 확장(1차 배치).",
+      "claimNature": "event_occurrence",
+      "sixW": {
+        "who": "러시아군(IAEA 확인)",
+        "when": "2022년 3월 첫째 주",
+        "where": "우크라이나 자포리자 원자력발전소",
+        "what": "러시아군이 자포리자 원자력발전소 부지를 장악했다",
+        "how": "발전소 부지를 군사적으로 통제했다고 IAEA가 확인했다",
+        "why": []
+      },
+      "classification": "F",
+      "language": "ko",
+      "asOfDate": "2026-07-12",
+      "status": "active",
+      "reviewMode": "human_reviewed",
+      "assessment": {
+        "factualGrade": "largely_reliable",
+        "status": "assessed",
+        "gradeRationale": "유엔 공식 뉴스가 IAEA 사무총장 발표를 통해 2022년 3월 러시아군의 자포리자 원전 장악을 fetch 가능하게 확인하고, AP가 초기 점거를 독립 보강한다.",
+        "rubricVersion": "rubric-3.0",
+        "pipelineVersion": "pipeline-3.0"
+      },
+      "evidence": [
+        {
+          "url": "https://news.un.org/en/story/2022/03/1113382",
+          "title": "Russian military control of Ukraine nuclear plants cause for grave concern, nuclear energy agency warns",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Russian forces that took control of the site last week.",
+          "quoteHash": "sha256:c8e0aaf33f38f9b52fff2a4f9edc8fdf1be432033b81c7fcf50b9b04eac0c56c",
+          "archiveStatus": "not_required_stable_artifact",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "UN News report dated 6 March 2022 reproducing the IAEA Director General's statement, which in turn attributes operational details to Ukrainian authorities. It supports control during the preceding week but does not give a day in the quoted passage. The linked IAEA HTML statement returned HTTP 403 to direct GET.",
+          "independenceGroupId": "zaporizhzhia-npp-russian-control-2022-0",
+          "independenceLevel": "shared_origin",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "domain_expert",
+          "competenceNote": "해당 사안의 공식·전문 생산기관이다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        },
+        {
+          "url": "https://apnews.com/article/russia-ukraine-war-ceasefire-zaporizhzhia-nuclear-power-plant-d45fa1cfde7790f0a8c19e4e997c605c",
+          "title": "What's next for the Zaporizhzhia nuclear power plant after it was highlighted in Ukraine-US talks",
+          "retrievedAt": "2026-07-13",
+          "locator": {
+            "section": "본문"
+          },
+          "shortQuote": "Russian forces occupied it shortly after Moscow’s February 2022 invasion.",
+          "quoteHash": "sha256:441b7e5a47186e574059f64e51b1bfeb9238222ce5fb97dc4bc71f93cba4d19b",
+          "archiveStatus": "archived",
+          "archiveUrl": "https://web.archive.org/web/20250321062458/https://apnews.com/article/russia-ukraine-war-ceasefire-zaporizhzhia-nuclear-power-plant-d45fa1cfde7790f0a8c19e4e997c605c",
+          "archivedAt": "2026-07-12",
+          "retrievalMethod": "crawler",
+          "retrievalLimitations": "Associated Press retrospective published in March 2025. It independently corroborates early-war occupation but does not state the exact March 2022 date; the contemporaneous UN/IAEA item supplies the narrower timing.",
+          "independenceGroupId": "zaporizhzhia-npp-russian-control-2022-1",
+          "independenceLevel": "independent",
+          "independenceNote": "fetch 가능하게 재대조된 출처다.",
+          "sourceCompetence": "relevant",
+          "competenceNote": "해당 사건을 취재·보도한 관련 출처다.",
+          "sourceType": "secondary_report",
+          "sourceProvenance": {
+            "productionIndependence": "independent",
+            "productionConcerns": [],
+            "requiresMethodologyAudit": false
+          }
+        }
+      ],
+      "reviewLog": {
+        "redteam": {
+          "strongestCounterargument": "장악을 담으면 이후 포격 책임까지 러시아로 단정한 것으로 읽힐 수 있다.",
+          "response": "명제는 부지 장악 사실만 담고 이후 사건은 분리했다.",
+          "errorsFound": 0,
+          "framingChecks": "'점령'의 정당성 평가를 배제하고 통제 사실만 남겼다."
+        },
+        "symmetry": {
+          "checked": true,
+          "method": "IAEA 확인과 AP 독립 보도를 함께 기록했다.",
+          "result": "대칭 점검 완료."
+        },
+        "authorityCheck": {
+          "checked": true,
+          "note": "1차 발표를 최종 판단이 아니라 사실의 근거로 쓰고 fetch 가능한 출처로 교차 확인했다."
+        },
+        "humanReview": {
+          "reviewer": "facts 인증",
+          "date": "2026-07-12",
+          "checksPerformed": [
+            "omission",
+            "asymmetry",
+            "framing",
+            "authority_assumption"
+          ],
+          "reviewMemo": "국제·안보 사안이라 human_reviewed. IAEA 원문은 403이라 fetch 가능한 유엔 공식 뉴스+AP를 앵커로 삼았다.",
+          "adoptedReason": "fetch 가능한 유엔 공식 뉴스와 AP가 장악 사실을 확인한다.",
+          "rejectedAlternatives": "포격 책임이나 안전 위험 정도의 결론은 제외했다."
+        }
+      },
+      "sensitive": {
+        "sensitive": true,
+        "sensitivityReason": [
+          "political_claim"
+        ],
+        "legalStatus": "unknown",
+        "presumptionNotice": "이 명제는 원전 부지 장악이라는 사실만 기록하며 안전성·책임에 대한 판단은 담지 않는다."
+      },
+      "undeterminedItems": [],
+      "correctionHistory": [],
+      "openCorrectionRequests": 0,
+      "limitations": "정확한 장악 일자는 인용 범위에서 '전주'로만 표현된다. 원전 운영·안전 상태와 후속 포격 책임 공방은 이 사건과 별개다.",
+      "tags": [
+        "러시아우크라이나전쟁",
+        "국제사건",
+        "러시아",
+        "우크라이나"
+      ],
+      "createdAt": "2026-07-12",
+      "updatedAt": "2026-07-12"
     }
   ],
   "meta": {
-    "total": 71,
+    "total": 81,
     "dataVersion": "2026.07.12",
     "certVersion": "2.1",
     "generatedAt": "2026-07-12",
     "institutionalMetrics": {
       "path": "/api/v2/institutional-metrics.json",
       "status": "unestablished",
-      "totalEntries": 71,
-      "totalAssessed": 71,
+      "totalEntries": 81,
+      "totalAssessed": 81,
       "openCorrectionRequests": 0
     },
     "entities": {
@@ -11018,6 +12299,14 @@
         "path": "/api/v2/propositions/stmt-38c8e4c00c63fa0fc9b00eb3.json"
       },
       {
+        "propositionId": "stmt:96980afc94eb286f3ec2f873",
+        "path": "/api/v2/propositions/stmt-96980afc94eb286f3ec2f873.json"
+      },
+      {
+        "propositionId": "stmt:cbb6c0de3a42f984ab425f73",
+        "path": "/api/v2/propositions/stmt-cbb6c0de3a42f984ab425f73.json"
+      },
+      {
         "propositionId": "stmt:5985381793fd401f7fc3052c",
         "path": "/api/v2/propositions/stmt-5985381793fd401f7fc3052c.json"
       },
@@ -11040,6 +12329,10 @@
       {
         "propositionId": "stmt:8b798d52af5df4ea214ecead",
         "path": "/api/v2/propositions/stmt-8b798d52af5df4ea214ecead.json"
+      },
+      {
+        "propositionId": "stmt:48463c48ba6bb10ebf38e0ff",
+        "path": "/api/v2/propositions/stmt-48463c48ba6bb10ebf38e0ff.json"
       },
       {
         "propositionId": "stmt:b9bf9aa9ffcf110da060f382",
@@ -11076,6 +12369,14 @@
       {
         "propositionId": "stmt:9fa1e13fbdeb497fdee35c15",
         "path": "/api/v2/propositions/stmt-9fa1e13fbdeb497fdee35c15.json"
+      },
+      {
+        "propositionId": "stmt:4a36d4c7113f871e81c45527",
+        "path": "/api/v2/propositions/stmt-4a36d4c7113f871e81c45527.json"
+      },
+      {
+        "propositionId": "stmt:18927f96a04d67e8c889cbc7",
+        "path": "/api/v2/propositions/stmt-18927f96a04d67e8c889cbc7.json"
       },
       {
         "propositionId": "stmt:f9f1fe47c4a18f9de210c3ec",
@@ -11258,6 +12559,14 @@
         "path": "/api/v2/propositions/stmt-a39e2dc6072bbda67817ead7.json"
       },
       {
+        "propositionId": "stmt:9dc87d551b21bda4491e0ab4",
+        "path": "/api/v2/propositions/stmt-9dc87d551b21bda4491e0ab4.json"
+      },
+      {
+        "propositionId": "stmt:ad1124db7365b035878f556f",
+        "path": "/api/v2/propositions/stmt-ad1124db7365b035878f556f.json"
+      },
+      {
         "propositionId": "stmt:43bfd6d859ff779fedeec928",
         "path": "/api/v2/propositions/stmt-43bfd6d859ff779fedeec928.json"
       },
@@ -11274,8 +12583,16 @@
         "path": "/api/v2/propositions/stmt-48afea861840a1d07ad8d250.json"
       },
       {
+        "propositionId": "stmt:e52ad9c0482a06f3ebd364f4",
+        "path": "/api/v2/propositions/stmt-e52ad9c0482a06f3ebd364f4.json"
+      },
+      {
         "propositionId": "stmt:8e4b4b465805476c14e263ff",
         "path": "/api/v2/propositions/stmt-8e4b4b465805476c14e263ff.json"
+      },
+      {
+        "propositionId": "stmt:967978c0090167f3ab229161",
+        "path": "/api/v2/propositions/stmt-967978c0090167f3ab229161.json"
       },
       {
         "propositionId": "stmt:b9a4dcf237affc17c1a51fe6",
@@ -11284,6 +12601,10 @@
       {
         "propositionId": "stmt:3a2ae5d9219c9be87de14ae7",
         "path": "/api/v2/propositions/stmt-3a2ae5d9219c9be87de14ae7.json"
+      },
+      {
+        "propositionId": "stmt:415b2658374452edff7e07fd",
+        "path": "/api/v2/propositions/stmt-415b2658374452edff7e07fd.json"
       }
     ]
   }

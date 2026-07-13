@@ -253,13 +253,14 @@
     {
       "tag": "국내영향",
       "path": "/t/%EA%B5%AD%EB%82%B4%EC%98%81%ED%96%A5",
-      "count": 2,
+      "count": 3,
       "dateRange": {
         "from": "2022-02-28",
         "to": "2024-10-18"
       },
       "propositionIds": [
         "stmt:46c16754bee420a566961aa7",
+        "stmt:48463c48ba6bb10ebf38e0ff",
         "stmt:5dcafd99e98ca83ec2727165"
       ]
     },
@@ -298,20 +299,23 @@
     {
       "tag": "국제법",
       "path": "/t/%EA%B5%AD%EC%A0%9C%EB%B2%95",
-      "count": 2,
+      "count": 5,
       "dateRange": {
         "from": "2022-03-02",
         "to": "2023-03-17"
       },
       "propositionIds": [
         "stmt:8e4b4b465805476c14e263ff",
+        "stmt:4a36d4c7113f871e81c45527",
+        "stmt:e52ad9c0482a06f3ebd364f4",
+        "stmt:9dc87d551b21bda4491e0ab4",
         "stmt:05b9abdca503067b1fd433ec"
       ]
     },
     {
       "tag": "국제사건",
       "path": "/t/%EA%B5%AD%EC%A0%9C%EC%82%AC%EA%B1%B4",
-      "count": 11,
+      "count": 21,
       "dateRange": {
         "from": "2022-02-24",
         "to": "2026-06-16"
@@ -319,11 +323,21 @@
       "propositionIds": [
         "stmt:43bfd6d859ff779fedeec928",
         "stmt:46c16754bee420a566961aa7",
+        "stmt:415b2658374452edff7e07fd",
         "stmt:8e4b4b465805476c14e263ff",
+        "stmt:4a36d4c7113f871e81c45527",
+        "stmt:cbb6c0de3a42f984ab425f73",
+        "stmt:e52ad9c0482a06f3ebd364f4",
+        "stmt:96980afc94eb286f3ec2f873",
+        "stmt:9dc87d551b21bda4491e0ab4",
         "stmt:05b9abdca503067b1fd433ec",
+        "stmt:967978c0090167f3ab229161",
+        "stmt:ad1124db7365b035878f556f",
+        "stmt:48463c48ba6bb10ebf38e0ff",
         "stmt:5dcafd99e98ca83ec2727165",
         "stmt:c44501dcb97869b23fbe8942",
         "stmt:9fa1e13fbdeb497fdee35c15",
+        "stmt:18927f96a04d67e8c889cbc7",
         "stmt:38c8e4c00c63fa0fc9b00eb3",
         "stmt:8f6705e79eaff0583a1e595a",
         "stmt:2e32e51752b91f9184c468af",
@@ -407,19 +421,20 @@
     {
       "tag": "난민",
       "path": "/t/%EB%82%9C%EB%AF%BC",
-      "count": 1,
+      "count": 2,
       "dateRange": {
-        "from": "2026-05-31",
+        "from": "2025-12-22",
         "to": "2026-05-31"
       },
       "propositionIds": [
+        "stmt:18927f96a04d67e8c889cbc7",
         "stmt:2e32e51752b91f9184c468af"
       ]
     },
     {
       "tag": "대한민국",
       "path": "/t/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
-      "count": 3,
+      "count": 4,
       "dateRange": {
         "from": "1965-06-22",
         "to": "2024-10-18"
@@ -427,6 +442,7 @@
       "propositionIds": [
         "stmt:3104eab69ad2305be2007c30",
         "stmt:46c16754bee420a566961aa7",
+        "stmt:48463c48ba6bb10ebf38e0ff",
         "stmt:5dcafd99e98ca83ec2727165"
       ]
     },
@@ -457,20 +473,27 @@
     {
       "tag": "러시아",
       "path": "/t/%EB%9F%AC%EC%8B%9C%EC%95%84",
-      "count": 2,
+      "count": 9,
       "dateRange": {
         "from": "2022-02-24",
-        "to": "2023-03-17"
+        "to": "2024-06-19"
       },
       "propositionIds": [
         "stmt:43bfd6d859ff779fedeec928",
-        "stmt:05b9abdca503067b1fd433ec"
+        "stmt:415b2658374452edff7e07fd",
+        "stmt:4a36d4c7113f871e81c45527",
+        "stmt:96980afc94eb286f3ec2f873",
+        "stmt:9dc87d551b21bda4491e0ab4",
+        "stmt:05b9abdca503067b1fd433ec",
+        "stmt:967978c0090167f3ab229161",
+        "stmt:ad1124db7365b035878f556f",
+        "stmt:48463c48ba6bb10ebf38e0ff"
       ]
     },
     {
       "tag": "러시아우크라이나전쟁",
       "path": "/t/%EB%9F%AC%EC%8B%9C%EC%95%84%EC%9A%B0%ED%81%AC%EB%9D%BC%EC%9D%B4%EB%82%98%EC%A0%84%EC%9F%81",
-      "count": 7,
+      "count": 17,
       "dateRange": {
         "from": "2022-02-24",
         "to": "2026-05-31"
@@ -478,9 +501,19 @@
       "propositionIds": [
         "stmt:43bfd6d859ff779fedeec928",
         "stmt:46c16754bee420a566961aa7",
+        "stmt:415b2658374452edff7e07fd",
         "stmt:8e4b4b465805476c14e263ff",
+        "stmt:4a36d4c7113f871e81c45527",
+        "stmt:cbb6c0de3a42f984ab425f73",
+        "stmt:e52ad9c0482a06f3ebd364f4",
+        "stmt:96980afc94eb286f3ec2f873",
+        "stmt:9dc87d551b21bda4491e0ab4",
         "stmt:05b9abdca503067b1fd433ec",
+        "stmt:967978c0090167f3ab229161",
+        "stmt:ad1124db7365b035878f556f",
+        "stmt:48463c48ba6bb10ebf38e0ff",
         "stmt:5dcafd99e98ca83ec2727165",
+        "stmt:18927f96a04d67e8c889cbc7",
         "stmt:8f6705e79eaff0583a1e595a",
         "stmt:2e32e51752b91f9184c468af"
       ]
@@ -512,13 +545,15 @@
     {
       "tag": "문서내용",
       "path": "/t/%EB%AC%B8%EC%84%9C%EB%82%B4%EC%9A%A9",
-      "count": 6,
+      "count": 8,
       "dateRange": {
         "from": "2022-03-02",
         "to": "2026-07-02"
       },
       "propositionIds": [
         "stmt:8e4b4b465805476c14e263ff",
+        "stmt:4a36d4c7113f871e81c45527",
+        "stmt:48463c48ba6bb10ebf38e0ff",
         "stmt:0f10895abcff81a55ff783d6",
         "stmt:48afea861840a1d07ad8d250",
         "stmt:a2b9f8780cb8ba76b3f3771c",
@@ -630,12 +665,13 @@
     {
       "tag": "북한",
       "path": "/t/%EB%B6%81%ED%95%9C",
-      "count": 1,
+      "count": 2,
       "dateRange": {
-        "from": "2024-10-18",
+        "from": "2024-06-19",
         "to": "2024-10-18"
       },
       "propositionIds": [
+        "stmt:48463c48ba6bb10ebf38e0ff",
         "stmt:5dcafd99e98ca83ec2727165"
       ]
     },
@@ -1027,25 +1063,34 @@
     {
       "tag": "우크라이나",
       "path": "/t/%EC%9A%B0%ED%81%AC%EB%9D%BC%EC%9D%B4%EB%82%98",
-      "count": 1,
+      "count": 7,
       "dateRange": {
         "from": "2022-02-24",
-        "to": "2022-02-24"
+        "to": "2023-07-17"
       },
       "propositionIds": [
-        "stmt:43bfd6d859ff779fedeec928"
+        "stmt:43bfd6d859ff779fedeec928",
+        "stmt:415b2658374452edff7e07fd",
+        "stmt:cbb6c0de3a42f984ab425f73",
+        "stmt:e52ad9c0482a06f3ebd364f4",
+        "stmt:96980afc94eb286f3ec2f873",
+        "stmt:9dc87d551b21bda4491e0ab4",
+        "stmt:ad1124db7365b035878f556f"
       ]
     },
     {
       "tag": "유엔",
       "path": "/t/%EC%9C%A0%EC%97%94",
-      "count": 1,
+      "count": 4,
       "dateRange": {
         "from": "2022-03-02",
-        "to": "2022-03-02"
+        "to": "2023-07-17"
       },
       "propositionIds": [
-        "stmt:8e4b4b465805476c14e263ff"
+        "stmt:8e4b4b465805476c14e263ff",
+        "stmt:4a36d4c7113f871e81c45527",
+        "stmt:96980afc94eb286f3ec2f873",
+        "stmt:ad1124db7365b035878f556f"
       ]
     },
     {
@@ -1075,12 +1120,14 @@
     {
       "tag": "인도적피해",
       "path": "/t/%EC%9D%B8%EB%8F%84%EC%A0%81%ED%94%BC%ED%95%B4",
-      "count": 2,
+      "count": 4,
       "dateRange": {
-        "from": "2026-02-16",
+        "from": "2022-04-02",
         "to": "2026-05-31"
       },
       "propositionIds": [
+        "stmt:cbb6c0de3a42f984ab425f73",
+        "stmt:18927f96a04d67e8c889cbc7",
         "stmt:8f6705e79eaff0583a1e595a",
         "stmt:2e32e51752b91f9184c468af"
       ]
@@ -1529,7 +1576,7 @@
     {
       "tag": "측정",
       "path": "/t/%EC%B8%A1%EC%A0%95",
-      "count": 18,
+      "count": 19,
       "dateRange": {
         "from": "1991-01-01",
         "to": "2026-06-22"
@@ -1541,6 +1588,7 @@
         "stmt:5985381793fd401f7fc3052c",
         "stmt:3a2ae5d9219c9be87de14ae7",
         "stmt:24094c14f92b5c8fb482e57d",
+        "stmt:18927f96a04d67e8c889cbc7",
         "stmt:8f6705e79eaff0583a1e595a",
         "stmt:2e32e51752b91f9184c468af",
         "stmt:5525ea7692e7f4eea17971f5",
