@@ -24,7 +24,9 @@ export default async function AboutPage() {
           <h2 id="constitution-title">헌법 우선</h2>
           <p>
             최상위 규범은 <a href="/CONSTITUTION.md">CONSTITUTION.md</a>입니다. PRD나 하위
-            문서와 충돌하면 헌법이 우선합니다.
+            문서와 충돌하면 헌법이 우선합니다. 헌법의 원칙을 집행 가능한 규칙으로 옮긴
+            것이 <a href="/POLICY.md">기본방침(POLICY.md)</a>이며, 등재 조건·거부 사유·증거
+            요건·검수 레인·정정 절차·품질 지표를 번호 체계로 규정합니다.
           </p>
           <ul>
             <li>제2조: 사실과 해석을 분리하고, 진실성 자체를 등급화하지 않습니다.</li>

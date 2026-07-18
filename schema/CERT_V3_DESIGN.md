@@ -83,7 +83,7 @@ signature = base64url(Ed25519.Sign(privateKey, UTF8(JCS(payload))))
 - attestation은 **content-addressed 불변 파일** 1건 1파일. 수정·삭제 금지, 취소는 새 `approval_revoked` 항목 추가로만.
 - 각 항목에 `sequence`·`previousEntryHash`(해시 체인)·`integratedAt` 부여. 주기적으로 `treeSize`·`headHash`를 담은 **서명된 checkpoint**를 발행하고, checkpoint는 외부 보관처(GitHub Release 등)에 고정한다.
 - 보장 수준은 "불변"이 아니라 **"알려진 checkpoint에 대해 변조 탐지 가능"**이다. 외부에 checkpoint가 보존되지 않으면 말단 절단은 탐지할 수 없다 — 이 한계를 문서화한다.
-- 이해충돌 `declared: true`인 검수자 단독 `publication_approved` 불가(GOVERNANCE §4) — validator 규칙.
+- 이해충돌 `declared: true`인 검수자 단독 `publication_approved` 불가([기본방침 §4.4](../POLICY.md)) — validator 규칙.
 - 경로(정적 export, content-addressed):
 
 ```text

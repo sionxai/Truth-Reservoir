@@ -464,6 +464,7 @@ for (const [name, example] of Object.entries(examples)) {
 // CONSTITUTION.md (repo root) is the single source of truth. Copy it into public/
 // so the served copy can never silently drift from the canonical one (제8).
 await copyFile("CONSTITUTION.md", "public/CONSTITUTION.md");
+await copyFile("POLICY.md", "public/POLICY.md");
 
 console.log(
   `Wrote ${propositions.length} proposition file(s) under propositions/, index.json, search-index.json, graph.json, entities.json, topics.json, institutional metrics, llms-full.txt, and examples.`

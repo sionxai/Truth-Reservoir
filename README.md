@@ -4,7 +4,7 @@
 
 **Live site: https://truth-reservoir.vercel.app**
 
-판정하지 않는 사실 저장소입니다. 모든 FACTS 기사는 검증된 Cert v2.1 JSON 레코드에서 수기 서술 없이 자동 렌더링되며, 모든 인용은 fetch 가능한 원문과 sha256 해시로 재현 가능합니다. 무엇을 기록할지·출처 선택 같은 검수 판단은 reviewLog·정정이력으로 공개합니다. 최상위 규범은 [CONSTITUTION.md](CONSTITUTION.md), 운영 규범은 [GOVERNANCE.md](GOVERNANCE.md)입니다.
+판정하지 않는 사실 저장소입니다. 모든 FACTS 기사는 검증된 Cert v2.1 JSON 레코드에서 수기 서술 없이 자동 렌더링되며, 모든 인용은 fetch 가능한 원문과 sha256 해시로 재현 가능합니다. 무엇을 기록할지·출처 선택 같은 검수 판단은 reviewLog·정정이력으로 공개합니다. 최상위 규범은 [CONSTITUTION.md](CONSTITUTION.md), 운영 규범은 [GOVERNANCE.md](GOVERNANCE.md), 집행 규칙은 [POLICY.md](POLICY.md)(기본방침 — 등재·증거·검수·정정·품질 기준)입니다.
 
 ## For humans
 - [사건 피드](https://truth-reservoir.vercel.app/) — 검증된 FACTS 기사 (육하원칙·정정이력·출처 인용)
